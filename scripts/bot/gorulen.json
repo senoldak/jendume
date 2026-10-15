@@ -344,7 +344,16 @@
     "k59b8ca:ab5a2e787ad8336f": "2026-10-15T12:50:59.336Z",
     "k621881:a0a8b378b50d6972": "2026-10-15T12:50:59.336Z",
     "kd9a613:1b7c42e0f9531805": "2026-10-15T12:50:59.336Z",
-    "k59b8ca:f85c7b4c9f8e0d40": "2026-10-15T12:50:59.336Z"
+    "k59b8ca:f85c7b4c9f8e0d40": "2026-10-15T12:50:59.336Z",
+    "k621881:499353c4137e197c": "2026-10-15T14:18:25.922Z",
+    "k621881:f9e5225493c38032": "2026-10-15T14:18:25.922Z",
+    "kb7f905:a9c52234a8e7474b": "2026-10-15T14:18:25.922Z",
+    "k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
+    "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions": "2026-10-15T14:18:25.922Z",
+    "hf-blog:https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": "2026-10-15T14:18:25.922Z",
+    "k59b8ca:164b480157868dd2": "2026-10-15T14:18:25.922Z",
+    "ke82007:919aeaa11a3388bd": "2026-10-15T14:18:25.922Z",
+    "k59b8ca:0fccab12edaefae4": "2026-10-15T14:18:25.922Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -600,7 +609,11 @@
     "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k621881:a0a8b378b50d6972": "2026-10-15T12:50:59.336Z",
     "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|k621881:a0a8b378b50d6972": "2026-10-15T12:50:59.336Z",
     "haber:buzdolabindan-daha-az-denetlenen-yapay-zeka-buyuk-tehlike|k59b8ca:f85c7b4c9f8e0d40": "2026-10-15T12:50:59.336Z",
-    "haber:matematikte-yapay-zeka-yol-ayrimi-cin-ittifak-kurarken-bati-supheci|k59b8ca:f85c7b4c9f8e0d40": "2026-10-15T12:50:59.336Z"
+    "haber:matematikte-yapay-zeka-yol-ayrimi-cin-ittifak-kurarken-bati-supheci|k59b8ca:f85c7b4c9f8e0d40": "2026-10-15T12:50:59.336Z",
+    "haber:kiyamet-senaryolari-ve-super-zeka-safsatadan-ibaret|k59b8ca:0fccab12edaefae4": "2026-10-15T14:18:25.922Z",
+    "haber:google-dan-gemini-icin-ucret-duvari|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
+    "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
+    "haber:google-deepmind-in-yapay-zekasi-onlarca-cozulmemis-matematik-problemini-cozdu|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1434,6 +1447,40 @@
     "k59b8ca:f85c7b4c9f8e0d40": {
       "puan": 3,
       "zaman": "2026-10-15T12:50:59.336Z"
+    },
+    "k59b8ca:164b480157868dd2": {
+      "puan": 4,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "kb7f905:a9c52234a8e7474b": {
+      "puan": 2,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "k59b8ca:0fccab12edaefae4": {
+      "puan": 3,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "ke82007:919aeaa11a3388bd": {
+      "puan": 4,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "k59b8ca:028cbc2a84b45d09": {
+      "puan": 0,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions": {
+      "puan": 0,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "hf-blog:https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": {
+      "puan": 2,
+      "zaman": "2026-10-15T14:18:25.922Z"
+    }
+  },
+  "yayinlanan": {
+    "kurumsal-is-surecleri-icin-yeni-yapay-zeka-denetim-araclari-tanitildi": {
+      "zaman": "2026-10-15T14:18:25.922Z",
+      "basliklarSifreli": "v1.gGpLRQ+1zMh1l7z3.1CS7hOzH02SBDOnHzU0vidtuLH94cXAR/8vA7kR1gKGJXR3LDiME79E+flWRTm8Gv/0PP/XCWuWpz03BE123802Ap/k4l2rG19K0msSkN4N+Rpw="
     }
   }
 }
