@@ -97,8 +97,33 @@ function ok(x: number, y: number, boyut: number, renk: string) {
   return `<path transform="translate(${x} ${y}) scale(${boyut / 24})" d="M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z" fill="${renk}"/>`;
 }
 
+/** Levhanın içeriği: haber kapağında haberin künyesi, bölüm kapağında bölümün kendisi. */
+interface Levha {
+  title: string;
+  category: string;
+  breaking?: boolean;
+  /** Alt bantta solda duran satır (coğrafya · tarih ya da bölüm açıklaması). */
+  kunye: string;
+}
+
 export function kapakSvg(post: NewsEntry, lang: Locale) {
   const d = post.data;
+  return levhaSvg(
+    { title: d.title, category: d.category, breaking: d.breaking, kunye: [d.bolge, formatDate(d.date, lang)].filter(Boolean).join(' · ') },
+    lang,
+  );
+}
+
+/**
+ * Bölümün ortak kapağı: kendi kapağı bütçe dışında kalan eski haberlerin paylaşım görseli (bkz. src/lib/kapak.mjs).
+ * Başlık yerine bölümün açıklaması, alt bantta "Tüm Haberler" durur.
+ */
+export function bolumKapakSvg(slug: string, lang: Locale) {
+  const kat = getCategory(slug, lang);
+  return levhaSvg({ title: kat.description, category: slug, kunye: SITE.ui[lang].allStories }, lang);
+}
+
+function levhaSvg(d: Levha, lang: Locale) {
   const diger = otherLocale(lang);
   const kat = getCategory(d.category, lang);
   const katDiger = getCategory(d.category, diger);
@@ -155,7 +180,7 @@ export function kapakSvg(post: NewsEntry, lang: Locale) {
   // Kapı bandı: tam genişlik sarı; solda coğrafya · tarih, sağda ok ve adres.
   const bY = 575;
   const bantAyar: MetinAyar = { yuz: 'yari', boyut: 30, renk: R.sign };
-  const kunyeMetin = [d.bolge, formatDate(d.date, lang)].filter(Boolean).join(' · ');
+  const kunyeMetin = d.kunye;
   const kunye = metin(satirlar(kunyeMetin, enMaks - 300, bantAyar, 1)[0], KENAR, bY + 61, bantAyar);
   const adres = 'jendume.com';
   const adresAyar: MetinAyar = { yuz: 'kalin', boyut: 30, renk: R.sign };
@@ -175,4 +200,18 @@ export function kapakAlt(post: NewsEntry, lang: Locale) {
   return `${getCategory(post.data.category, lang).title}: ${post.data.title}`;
 }
 
-export const kapakUrl = (post: NewsEntry, lang: Locale) => `/kapak/${lang}/${post.id}.png`;
+
+// Yayıncı logosu (JSON-LD publisher.logo): 600×60 yatay PNG. Yalnız mevcut marka varlıklarından türetilir:
+// brand/jendume-logo.svg'deki işaret (siyah kare, sarı kare, beyaz J) ve sitedeki yazı markası (Signika Bold, "JEN DUME").
+export const LOGO_G = 600;
+export const LOGO_Y = 60;
+
+export function logoSvg() {
+  const s = LOGO_Y / 128; // işaret 128 birimlik kutuda çizilmiş
+  const isaret =
+    `<g transform="scale(${s})"><rect width="128" height="128" fill="${R.sign}"/>` +
+    `<rect x="84" y="20" width="24" height="24" fill="${R.signal}"/>` +
+    `<path d="M58 30H76V78C76 95 65 104 48 104C37 104 29 98 26 89L40 83C42 88 45 90 49 90C56 90 58 86 58 77V30Z" fill="${R.signText}"/></g>`;
+  const yazi = metin(SITE.displayName, LOGO_Y + 16, 46, { yuz: 'kalin', boyut: 44, renk: R.sign, aralik: 1.4 });
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${LOGO_G}" height="${LOGO_Y}" viewBox="0 0 ${LOGO_G} ${LOGO_Y}">${isaret}${yazi}</svg>`;
+}

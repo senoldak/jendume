@@ -3,9 +3,9 @@ import sitemap from '@astrojs/sitemap';
 import fs from 'node:fs';
 import path from 'node:path';
 import { dizinlenir } from './src/lib/kalite.mjs';
+import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './src/lib/kapak.mjs';
 
 const SITE = 'https://jendume.com';
-const GORSEL_GUN = 14; // src/lib/news.ts ile aynı: kapak yalnız son 14 günün haberlerinde var.
 
 // Gövdesi çok kısa haberler (src/lib/kalite.mjs) noindex alır; site haritasına girmesinler diye ayrıca toplanır.
 const kisaHaberler = new Set();
@@ -16,6 +16,7 @@ function haberBilgisi() {
   for (const lang of ['en', 'tr']) {
     const dir = path.resolve('src/content/haberler', lang);
     if (!fs.existsSync(dir)) continue;
+    const dilHaberleri = [];
     for (const file of fs.readdirSync(dir)) {
       if (!file.endsWith('.md')) continue;
       const md = fs.readFileSync(path.join(dir, file), 'utf8');
@@ -26,14 +27,21 @@ function haberBilgisi() {
       if (Number.isNaN(date.valueOf())) continue;
       const updated = new Date(field('updated') ?? '');
       const id = file.replace(/\.md$/, '');
+      // Kapak seçimi bütün yayımlanmış haberler üzerinden yapılır (kısa haberler dahil; src/lib/news.ts ile aynı).
+      dilHaberleri.push({ id, date, category: field('category') ?? '' });
       if (!dizinlenir(md)) {
         kisaHaberler.add(`${SITE}/${lang}/haber/${id}/`);
         continue;
       }
       map.set(`${SITE}/${lang}/haber/${id}/`, {
         lastmod: (Number.isNaN(updated.valueOf()) ? date : updated).toISOString(),
-        kapak: Date.now() - date.valueOf() <= GORSEL_GUN * 86_400_000 ? `${SITE}/kapak/${lang}/${id}.png` : undefined,
       });
+    }
+    // Kendi kapağı olmayan eski haber bölüm kapağını gösterir (bütçe: src/lib/kapak.mjs).
+    const kapakli = kapakliKimlikler(dilHaberleri);
+    for (const h of dilHaberleri) {
+      const haber = map.get(`${SITE}/${lang}/haber/${h.id}/`);
+      if (haber) haber.kapak = SITE + (kapakli.has(h.id) ? haberKapakYolu(lang, h.id) : bolumKapakYolu(lang, h.category));
     }
   }
   return map;

@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { CategorySlug, Locale } from './site';
+import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './kapak.mjs';
 
 export type NewsEntry =
   | CollectionEntry<'haberler_tr'>
@@ -47,8 +48,28 @@ export function getCategoryUrl(lang: Locale, slug: CategorySlug): string {
   return `/${lang}/kategori/${slug}/`;
 }
 
-// Kapak görseli yalnızca yeni haberlerde üretilir: anasayfa ve Telegram için yeterli.
-// Eski haberler görselsiz yayımlanır; Cloudflare'in 20.000 dosya sınırına yaklaşmayı geciktirir.
-export const GORSEL_GUN = 14;
-export const gorselVar = (tarih: Date | string | number, simdi = new Date()) =>
-  simdi.valueOf() - new Date(tarih).valueOf() <= GORSEL_GUN * 86_400_000;
+// Kapak görseli: her haberin paylaşım görseli (og:image, JSON-LD, RSS) en az 1200 px'tir. Dil başına en yeni
+// KAPAK_BUTCE haber kendi çizilmiş kapağını, daha eskiler bölümün ortak kapağını alır (bütçe: src/lib/kapak.mjs).
+export interface KapakBilgisi {
+  url: string;
+  /** Haberin kendi kapağı mı (true) yoksa bölümün ortak kapağı mı (false)? */
+  ozel: boolean;
+}
+
+const kapakliCache = new Map<Locale, Promise<Set<string>>>();
+export function kapakliHaberler(lang: Locale): Promise<Set<string>> {
+  let set = kapakliCache.get(lang);
+  if (!set) {
+    set = getPublishedPosts(lang).then((posts) => kapakliKimlikler(posts.map((p) => ({ id: p.id, date: p.data.date }))));
+    kapakliCache.set(lang, set);
+  }
+  return set;
+}
+
+export async function kapakBilgisi(post: NewsEntry, lang: Locale): Promise<KapakBilgisi> {
+  const ozel = (await kapakliHaberler(lang)).has(post.id);
+  return { url: ozel ? haberKapakYolu(lang, post.id) : bolumKapakYolu(lang, post.data.category), ozel };
+}
+
+/** Bölüm arşivinde sayfa başına haber (src/pages/[lang]/kategori/[slug]/[...page].astro). */
+export const CATEGORY_PAGE_SIZE = 24;

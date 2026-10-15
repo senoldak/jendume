@@ -190,6 +190,15 @@ export const SITE = {
       productionBulletin:
         'Bu bülten, son bültenden bu yana yayımlanan haberlerden otomatik olarak derlendi.',
       productionLink: 'Yöntem ve düzeltme talepleri: Yayın İlkeleri',
+      breadcrumb: 'Konum',
+      page: 'Sayfa',
+      pagination: 'Sayfalar',
+      prevPage: 'Önceki sayfa',
+      nextPage: 'Sonraki sayfa',
+      share: 'Paylaş',
+      shareOn: 'Şurada paylaş:',
+      copyLink: 'Bağlantıyı kopyala',
+      copied: 'Bağlantı kopyalandı',
     },
     en: {
       home: 'Today',
@@ -223,6 +232,15 @@ export const SITE = {
       productionBulletin:
         'This bulletin was compiled automatically from the stories published since the previous bulletin.',
       productionLink: 'Methods and corrections: Editorial Standards',
+      breadcrumb: 'Breadcrumb',
+      page: 'Page',
+      pagination: 'Pages',
+      prevPage: 'Previous page',
+      nextPage: 'Next page',
+      share: 'Share',
+      shareOn: 'Share on',
+      copyLink: 'Copy link',
+      copied: 'Link copied',
     },
   } satisfies Record<Locale, Record<string, string>>,
 };

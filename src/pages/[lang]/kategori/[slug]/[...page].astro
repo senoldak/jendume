@@ -1,0 +1,137 @@
+---
+// Bölüm arşivi, sayfalı: /{lang}/kategori/{slug}/, /{lang}/kategori/{slug}/2/ … Her sayfanın kendi canonical'ı vardır
+// ve site haritasına girer; hreflang yalnız öteki dilde aynı numaralı sayfa varsa verilir.
+import type { GetStaticPaths, Page } from 'astro';
+import Base from '../../../../layouts/Base.astro';
+import StoryCard from '../../../../components/StoryCard.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import Arrow from '../../../../components/Arrow.astro';
+import {
+  LOCALES,
+  ALL_CATEGORIES,
+  SITE,
+  getCategory,
+  otherLocale,
+  type Locale,
+  type CategorySlug,
+} from '../../../../lib/site';
+import { CATEGORY_PAGE_SIZE, getPostsByCategory, type NewsEntry } from '../../../../lib/news';
+import { categoryCrumbs, collectionGraph } from '../../../../lib/seo';
+import { bolumKapakYolu } from '../../../../lib/kapak.mjs';
+import { KAPAK_G, KAPAK_Y } from '../../../../kapak/ciz';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const paths = [];
+  for (const lang of LOCALES) {
+    for (const cat of ALL_CATEGORIES) {
+      const posts = await getPostsByCategory(lang, cat.slug);
+      const otherCount = (await getPostsByCategory(otherLocale(lang), cat.slug)).length;
+      // Boş bölüm de tek (boş) sayfa olarak üretilir.
+      paths.push(...paginate(posts, { params: { lang, slug: cat.slug }, props: { otherCount }, pageSize: CATEGORY_PAGE_SIZE }));
+    }
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+interface Props {
+  page: Page<NewsEntry>;
+  otherCount: number;
+}
+
+const { lang, slug } = Astro.params as { lang: Locale; slug: CategorySlug };
+const { page, otherCount } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const cat = getCategory(slug, lang);
+const catOther = getCategory(slug, other);
+const posts = page.data;
+const n = page.currentPage;
+
+const basePath = (l: Locale) => `/${l}/kategori/${slug}/`;
+const pagePath = (l: Locale, i: number) => (i <= 1 ? basePath(l) : `${basePath(l)}${i}/`);
+const canonicalPath = pagePath(lang, n);
+const otherHasPage = n === 1 || otherCount > (n - 1) * CATEGORY_PAGE_SIZE;
+const alternates: Partial<Record<Locale | 'x-default', string>> = otherHasPage
+  ? { [lang]: canonicalPath, [other]: pagePath(other, n), 'x-default': pagePath('en', n) }
+  : {};
+
+const pageSuffix = n > 1 ? ` — ${ui.page} ${n}` : '';
+const title = `${cat.title}${pageSuffix}`;
+const description = n > 1 ? `${cat.description} (${ui.page} ${n}/${page.lastPage})` : cat.description;
+const crumbs = categoryCrumbs(lang, slug, n, canonicalPath);
+---
+
+<Base
+  lang={lang}
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  langUrls={{ [lang]: canonicalPath, [other]: otherHasPage ? pagePath(other, n) : basePath(other) }}
+  alternates={alternates}
+  activeCategory={slug}
+  image={bolumKapakYolu(lang, slug)}
+  imageWidth={KAPAK_G}
+  imageHeight={KAPAK_Y}
+  schema={collectionGraph(lang, title, description, canonicalPath, posts, crumbs)}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <header class="section-sign">
+    <span class="code" aria-hidden="true">{cat.code}</span>
+    <h1>
+      {cat.title}
+      <span lang={other}>{catOther.title}</span>
+    </h1>
+    <p class="section-desc">
+      {cat.description}
+      {n > 1 && <span class="section-page">{ui.page} {n}/{page.lastPage}</span>}
+    </p>
+  </header>
+
+  {
+    posts.length > 0 ? (
+      <div class="story-grid">
+        {posts.map((post) => (
+          <StoryCard post={post} lang={lang} />
+        ))}
+      </div>
+    ) : (
+      <p class="empty-state">{ui.emptyCategory}</p>
+    )
+  }
+
+  {
+    page.lastPage > 1 && (
+      <nav class="pagination" aria-label={ui.pagination}>
+        {page.url.prev ? (
+          <a class="pagination-step" href={pagePath(lang, n - 1)} rel="prev">
+            <Arrow dir="right" class="arrow-left" />
+            {ui.prevPage}
+          </a>
+        ) : (
+          <span />
+        )}
+        <ol class="pagination-pages">
+          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((i) => (
+            <li>
+              {i === n ? (
+                <span aria-current="page">{i}</span>
+              ) : (
+                <a href={pagePath(lang, i)} aria-label={`${ui.page} ${i}`}>
+                  {i}
+                </a>
+              )}
+            </li>
+          ))}
+        </ol>
+        {page.url.next ? (
+          <a class="pagination-step" href={pagePath(lang, n + 1)} rel="next">
+            {ui.nextPage}
+            <Arrow dir="right" />
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
+    )
+  }
+</Base>

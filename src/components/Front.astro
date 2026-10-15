@@ -5,9 +5,9 @@ import SignLine from './SignLine.astro';
 import SignHeading from './SignHeading.astro';
 import WhyItMatters from './WhyItMatters.astro';
 import Arrow from './Arrow.astro';
-import { kapakUrl, KAPAK_G, KAPAK_Y } from '../kapak/ciz';
+import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
 import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
-import { getPublishedPosts, getPostUrl, getCategoryUrl, gorselVar } from '../lib/news';
+import { getPublishedPosts, getPostUrl, getCategoryUrl, kapakBilgisi } from '../lib/news';
 
 interface Props {
   lang: Locale;
@@ -19,6 +19,7 @@ const other = otherLocale(lang);
 const posts = await getPublishedPosts(lang);
 
 const leadPost = posts.find((p) => p.data.featured) ?? posts[0];
+const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
 const rest = posts.filter((p) => p.id !== leadPost?.id);
 const latest = rest.slice(0, 4);
 const older = rest.slice(4);
@@ -35,9 +36,9 @@ const board = CATEGORIES.map((cat, i) => {
     <section class="front" aria-labelledby="lead-title">
       <article class="lead">
         {
-          gorselVar(leadPost.data.date) && (
+          leadCover?.ozel && (
             <a class="lead-cover" href={getPostUrl(lang, leadPost.id)} tabindex="-1" aria-hidden="true">
-              <img src={kapakUrl(leadPost, lang)} alt="" width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+              <img src={leadCover.url} alt="" width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
             </a>
           )
         }

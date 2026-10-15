@@ -6,15 +6,18 @@ import SignLine from '../../../components/SignLine.astro';
 import SignHeading from '../../../components/SignHeading.astro';
 import SentezBlok from '../../../components/SentezBlok.astro';
 import Arrow from '../../../components/Arrow.astro';
-import { kapakAlt, kapakUrl, KAPAK_G, KAPAK_Y } from '../../../kapak/ciz';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import ShareLinks from '../../../components/ShareLinks.astro';
+import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../../kapak/ciz';
 import { BULLETIN_CATEGORY, LOCALES, SITE, editorialUrl, getCategory, otherLocale, type Locale } from '../../../lib/site';
-import { articleGraph } from '../../../lib/seo';
+import { abs, articleCrumbs, articleGraph } from '../../../lib/seo';
+import { ilgiliHaberler } from '../../../lib/ilgili';
 import { dizinlenir } from '../../../lib/kalite.mjs';
 import {
   getPublishedPosts,
   getAvailableTranslations,
   getPostUrl,
-  gorselVar,
+  kapakBilgisi,
   type NewsEntry,
 } from '../../../lib/news';
 
@@ -63,15 +66,13 @@ if (translations.tr && translations.en && indexable && otherIndexable) {
   alternates.tr = getPostUrl('tr', id);
   alternates['x-default'] = getPostUrl('en', id);
 }
-const cover = gorselVar(post.data.date) ? kapakUrl(post, lang) : undefined;
+// Her haberin 1200 px paylaşım görseli var: kendi kapağı ya da (bütçe dışındaki eskilerde) bölüm kapağı.
+const cover = await kapakBilgisi(post, lang);
 const catTitle = getCategory(post.data.category, lang).title;
 
-const allInLang = await getPublishedPosts(lang);
-const related = allInLang
-  .filter((p) => p.id !== id && p.data.category === post.data.category)
-  .slice(0, 3);
-const fallbackRelated =
-  related.length > 0 ? related : allInLang.filter((p) => p.id !== id).slice(0, 3);
+// İlgili haberler: ortak varlık > aynı bölüm > en yeni; bülten, kısa (noindex) haber ve kendisi hariç.
+const related = ilgiliHaberler(post, await getPublishedPosts(lang));
+const crumbs = articleCrumbs(post, lang);
 ---
 
 <Base
@@ -83,16 +84,17 @@ const fallbackRelated =
   alternates={alternates}
   activeCategory={post.data.category}
   type="article"
-  image={cover}
-  imageAlt={cover ? kapakAlt(post, lang) : undefined}
-  imageWidth={cover ? KAPAK_G : undefined}
-  imageHeight={cover ? KAPAK_Y : undefined}
+  image={cover.url}
+  imageAlt={cover.ozel ? kapakAlt(post, lang) : catTitle}
+  imageWidth={KAPAK_G}
+  imageHeight={KAPAK_Y}
   noindex={!indexable}
   published={post.data.date}
   modified={post.data.updated ?? post.data.date}
   section={catTitle}
-  schema={articleGraph(post, lang, cover)}
+  schema={articleGraph(post, lang, cover.url)}
 >
+  <Breadcrumb lang={lang} items={crumbs} />
   <article class="article">
     <header class="article-header">
       <h1 class="article-title">{post.data.title}</h1>
@@ -115,9 +117,9 @@ const fallbackRelated =
     </header>
 
     {
-      gorselVar(post.data.date) && (
+      cover.ozel && (
         <figure class="article-cover">
-          <img src={kapakUrl(post, lang)} alt={kapakAlt(post, lang)} width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+          <img src={cover.url} alt={kapakAlt(post, lang)} width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
         </figure>
       )
     }
@@ -125,6 +127,8 @@ const fallbackRelated =
     <div class="prose">
       <Content />
     </div>
+
+    <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />
 
     <p class="production-note">
       <span class="production-note-label">{ui.productionLabel}</span>
@@ -134,11 +138,11 @@ const fallbackRelated =
   </article>
 
   {
-    fallbackRelated.length > 0 && (
+    related.length > 0 && (
       <section class="block" aria-labelledby="related-heading">
         <SignHeading lang={lang} label="relatedStories" id="related-heading" />
         <div class="story-grid">
-          {fallbackRelated.map((rel) => (
+          {related.map((rel) => (
             <StoryCard post={rel} lang={lang} />
           ))}
         </div>

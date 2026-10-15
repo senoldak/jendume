@@ -1,0 +1,28 @@
+---
+// Görünür kırıntı yolu; aynı liste JSON-LD BreadcrumbList olarak da verilir (src/lib/seo.ts).
+import { SITE, type Locale } from '../lib/site';
+import type { Crumb } from '../lib/seo';
+
+interface Props {
+  lang: Locale;
+  items: Crumb[];
+}
+
+const { lang, items } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label={SITE.ui[lang].breadcrumb}>
+  <ol>
+    {
+      items.map((item, i) =>
+        i === items.length - 1 ? (
+          <li aria-current="page">{item.name}</li>
+        ) : (
+          <li>
+            <a href={item.path}>{item.name}</a>
+          </li>
+        )
+      )
+    }
+  </ol>
+</nav>
