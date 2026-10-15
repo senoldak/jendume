@@ -353,7 +353,11 @@
     "hf-blog:https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": "2026-10-15T14:18:25.922Z",
     "k59b8ca:164b480157868dd2": "2026-10-15T14:18:25.922Z",
     "ke82007:919aeaa11a3388bd": "2026-10-15T14:18:25.922Z",
-    "k59b8ca:0fccab12edaefae4": "2026-10-15T14:18:25.922Z"
+    "k59b8ca:0fccab12edaefae4": "2026-10-15T14:18:25.922Z",
+    "k621881:ef25ddc1aa60ee7b": "2026-10-15T14:51:08.933Z",
+    "kaec085:b2ade8eae7ea09fd": "2026-10-15T14:51:08.933Z",
+    "k59b8ca:588e6564d0ac0f13": "2026-10-15T14:51:08.933Z",
+    "kb7f905:def1540e616be3ae": "2026-10-15T14:51:08.933Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -613,7 +617,16 @@
     "haber:kiyamet-senaryolari-ve-super-zeka-safsatadan-ibaret|k59b8ca:0fccab12edaefae4": "2026-10-15T14:18:25.922Z",
     "haber:google-dan-gemini-icin-ucret-duvari|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
     "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
-    "haber:google-deepmind-in-yapay-zekasi-onlarca-cozulmemis-matematik-problemini-cozdu|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z"
+    "haber:google-deepmind-in-yapay-zekasi-onlarca-cozulmemis-matematik-problemini-cozdu|k59b8ca:028cbc2a84b45d09": "2026-10-15T14:18:25.922Z",
+    "haber:nvidia-dan-abd-nin-bilimsel-arastirmalari-icin-1-milyar-dolarlik-yapay-zeka-yati|k59b8ca:588e6564d0ac0f13": "2026-10-15T14:51:08.933Z",
+    "haber:nvidia-dan-birlesik-krallik-taki-yapay-zeka-guvenligi-arastirmalarina-dev-destek|k59b8ca:588e6564d0ac0f13": "2026-10-15T14:51:08.933Z",
+    "haber:nvidia-guvenli-robotlar-icin-yeni-bir-adim-atti|k59b8ca:588e6564d0ac0f13": "2026-10-15T14:51:08.933Z",
+    "haber:google-dan-gemini-icin-ucret-duvari|kb7f905:def1540e616be3ae": "2026-10-15T14:51:08.933Z",
+    "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|kb7f905:def1540e616be3ae": "2026-10-15T14:51:08.933Z",
+    "haber:google-deepmind-in-yapay-zekasi-onlarca-cozulmemis-matematik-problemini-cozdu|kb7f905:def1540e616be3ae": "2026-10-15T14:51:08.933Z",
+    "haber:dijital-bilgide-temsil-ve-ailelerin-yapay-zeka-temkini|kaec085:b2ade8eae7ea09fd": "2026-10-15T14:51:08.933Z",
+    "haber:kod-yazma-donemi-kapaniyor-yazilim-dunyasi-yapay-zekaya-emanet|kaec085:b2ade8eae7ea09fd": "2026-10-15T14:51:08.933Z",
+    "haber:yapay-zeka-yarisinda-yeni-donem-surec-mukemmelligi|kaec085:b2ade8eae7ea09fd": "2026-10-15T14:51:08.933Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1475,12 +1488,40 @@
     "hf-blog:https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": {
       "puan": 2,
       "zaman": "2026-10-15T14:18:25.922Z"
+    },
+    "k621881:ef25ddc1aa60ee7b": {
+      "puan": 4,
+      "zaman": "2026-10-15T14:51:08.933Z"
+    },
+    "k59b8ca:588e6564d0ac0f13": {
+      "puan": 3,
+      "zaman": "2026-10-15T14:51:08.933Z"
+    },
+    "kb7f905:def1540e616be3ae": {
+      "puan": 3,
+      "zaman": "2026-10-15T14:51:08.933Z"
+    },
+    "kaec085:b2ade8eae7ea09fd": {
+      "puan": 4,
+      "zaman": "2026-10-15T14:51:08.933Z"
     }
   },
   "yayinlanan": {
     "kurumsal-is-surecleri-icin-yeni-yapay-zeka-denetim-araclari-tanitildi": {
       "zaman": "2026-10-15T14:18:25.922Z",
       "basliklarSifreli": "v1.gGpLRQ+1zMh1l7z3.1CS7hOzH02SBDOnHzU0vidtuLH94cXAR/8vA7kR1gKGJXR3LDiME79E+flWRTm8Gv/0PP/XCWuWpz03BE123802Ap/k4l2rG19K0msSkN4N+Rpw="
+    },
+    "tek-gorselden-bes-dakikaya-kadar-video-ureten-omnihuman-2-0-tanitildi": {
+      "zaman": "2026-10-15T14:51:08.933Z",
+      "basliklarSifreli": "v1.PTCRqhlHzHJ8Prvp.M0klhHzCPlfApIJTS6DhI5gOUr7Q221EAvexKopnXVhY6k86ungeZbDvzx+lAMLnrz1PVhwfUd/EcAXVm6AVjsKnMMhZ/jvhKWlTnEyVNkJfcu7fLZsri4zOurdJvhrheD9iRNwHb4OJXnypScM="
+    },
+    "acik-kaynakli-isletim-sistemi-openkylin-yapay-zeka-caginda-linux-u-yeniden-tasar": {
+      "zaman": "2026-10-15T14:51:08.933Z",
+      "basliklarSifreli": "v1.q9gnXF33tyULQBfU.HWcbP/g4XqmjyuASzeB/0IXY6QdeKdb33Q/8SjjIJxwdxcS5GPPtZwcI/k0amrTObtwUvsfhkRrCxWmJSQXe8K87j/4ejQ61yOGElWmqF1RK08hJEbqW3g1HqiIJiJY2+EN/UwuxsyuxoftBUpe8hmfdaQU6CxQ="
+    },
+    "universal-cart-alisveris-araci-abd-de-kullanima-acildi": {
+      "zaman": "2026-10-15T14:51:08.933Z",
+      "basliklarSifreli": "v1.7aent1l/000vtITb.sA6mhq1Cq2THQ2OR3yqWhKkITYWKl3nnKHZ+oziupdd8UzbqAknzF44uZd7umvCu1ZIKydLVf8Mib1oUxOmuyZyqhdx4GX/sz5Z4PVbM"
     }
   }
 }
