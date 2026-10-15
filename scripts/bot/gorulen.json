@@ -377,7 +377,14 @@
     "ke82007:f7c8706d3aad1b41": "2026-10-15T18:51:16.653Z",
     "ke82007:4494168fcecae661": "2026-10-15T18:51:16.653Z",
     "kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z",
-    "k09feb3:c8c2d2f8e1a27b2e": "2026-10-15T18:51:16.653Z"
+    "k09feb3:c8c2d2f8e1a27b2e": "2026-10-15T18:51:16.653Z",
+    "kb7f905:e27733a94df4492f": "2026-10-15T20:51:00.086Z",
+    "k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z",
+    "hf-blog:https://huggingface.co/blog/ibm-granite/granite-switch-4-1": "2026-10-15T20:51:00.086Z",
+    "k59b8ca:a55738375784fe0d": "2026-10-15T20:51:00.086Z",
+    "kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
+    "kb7f905:ae1a44a695e7f5df": "2026-10-15T20:51:00.086Z",
+    "kb7f905:0807c0f0f7267111": "2026-10-15T20:51:00.086Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -666,7 +673,21 @@
     "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:e68fabf11a18bab5": "2026-10-15T16:51:04.644Z",
     "k09feb3:4b6ae58ecd5b1d5e|k9f3ec7:25502f739a2d11ac": "2026-10-15T16:51:04.644Z",
     "haber:acik-kaynakli-isletim-sistemi-openkylin-yapay-zeka-caginda-linux-u-yeniden-tasar|kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z",
-    "haber:beyaz-saray-geri-adim-atti-ingiltere-yapay-zeka-guvenlik-enstitusu-sinir-modelle|kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z"
+    "haber:beyaz-saray-geri-adim-atti-ingiltere-yapay-zeka-guvenlik-enstitusu-sinir-modelle|kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z",
+    "haber:yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm|hf-blog:https://huggingface.co/blog/ibm-granite/granite-switch-4-1": "2026-10-15T20:51:00.086Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|kb7f905:e27733a94df4492f": "2026-10-15T20:51:00.086Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|kb7f905:e27733a94df4492f": "2026-10-15T20:51:00.086Z",
+    "haber:meta-ve-sierra-yapay-zeka-ajanlari-icin-ortak-standart-belirliyor|kb7f905:e27733a94df4492f": "2026-10-15T20:51:00.086Z",
+    "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|kb7f905:0807c0f0f7267111": "2026-10-15T20:51:00.086Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|kb7f905:ae1a44a695e7f5df": "2026-10-15T20:51:00.086Z",
+    "haber:anthropic-ten-claude-icin-yeni-kullanim-kurali-yapay-zekaya-amacsiz-kotu-muamele|kb7f905:ae1a44a695e7f5df": "2026-10-15T20:51:00.086Z",
+    "haber:anthropic-ten-hizli-ve-ucuz-yapay-zeka-modeli-claude-haiku-5-5|kb7f905:ae1a44a695e7f5df": "2026-10-15T20:51:00.086Z",
+    "haber:block-yapay-zeka-destekli-guvenlik-sistemiyle-aciklari-dakikalar-icinde-kapatiyo|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
+    "haber:calisan-izleme-yazilimlari-yapay-zeka-ile-is-yerinde-baskiyi-artiriyor|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
+    "haber:dijital-ikizler-gunluk-yasami-ve-beslenme-aliskanliklarini-yonlendiriyor|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
+    "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -687,7 +708,9 @@
     "haber:disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti|k59b8ca:1d0e7e649a5bd01f": "2026-10-14T18:50:57.817Z",
     "haber:yapay-zeka-botlari-dolandiricilari-telefondan-dusurmuyor|kb7f905:037d43c009be0626": "2026-10-14T18:50:57.817Z",
     "k59b8ca:ab5a2e787ad8336f|kb7f905:8a37a3b7429e48e2": "2026-10-15T12:50:59.336Z",
-    "haber:kurumsal-yapay-zeka-sistemlerinde-yonetim-ve-denetim-donemi|ke82007:4494168fcecae661": "2026-10-15T18:51:16.653Z"
+    "haber:kurumsal-yapay-zeka-sistemlerinde-yonetim-ve-denetim-donemi|ke82007:4494168fcecae661": "2026-10-15T18:51:16.653Z",
+    "k59b8ca:7b246e4329e80f81|kb7f905:e27733a94df4492f": "2026-10-15T20:51:00.086Z",
+    "k59b8ca:a55738375784fe0d|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z"
   },
   "puan": {
     "k09feb3:17ca3c4d9820a9cc": {
@@ -1597,6 +1620,26 @@
     "k09feb3:c8c2d2f8e1a27b2e": {
       "puan": 4,
       "zaman": "2026-10-15T18:51:16.653Z"
+    },
+    "hf-blog:https://huggingface.co/blog/ibm-granite/granite-switch-4-1": {
+      "puan": 4,
+      "zaman": "2026-10-15T20:51:00.086Z"
+    },
+    "k59b8ca:7b246e4329e80f81+kb7f905:e27733a94df4492f": {
+      "puan": 5,
+      "zaman": "2026-10-15T20:51:00.086Z"
+    },
+    "k59b8ca:a55738375784fe0d+kb7f905:4d2fcbf361241007": {
+      "puan": 4,
+      "zaman": "2026-10-15T20:51:00.086Z"
+    },
+    "kb7f905:0807c0f0f7267111": {
+      "puan": 3,
+      "zaman": "2026-10-15T20:51:00.086Z"
+    },
+    "kb7f905:ae1a44a695e7f5df": {
+      "puan": 4,
+      "zaman": "2026-10-15T20:51:00.086Z"
     }
   },
   "yayinlanan": {
@@ -1635,6 +1678,18 @@
     "yapay-zeka-ajanlari-kullanicilarin-gercek-eylemleriyle-ogreniyor": {
       "zaman": "2026-10-15T16:51:04.644Z",
       "basliklarSifreli": "v1.BNodCgRrVdf1xkrB.WBdIEid9hTRXteAhAbs6AGT0C0UrXhWTp9Lt0VyKnzzoErW7ls9ybRvUdshqEDSjpYBVY4XLH12OtU2qA735TnCbtO9IggWFN9a0Rll4gSDQQc6/fLp9vipcVizAez/FvyP9jaoQ/t5wbw1yDyBZ/iHV1ET8DISV8wPYCKA9pkiXn4fKMVxKn/i/WELFKRESRpJfI1G0mhRkuPBmXQ=="
+    },
+    "sosyal-ag-deneyimleri-yapay-zeka-ile-aninda-uretiliyor": {
+      "zaman": "2026-10-15T20:51:00.086Z",
+      "basliklarSifreli": "v1.NODX+V6IdLKqelHb.23IZZL12mImAuh5XlYhvVvFxp16pbN+txPUlH2uKBcKTRVzHQnEJPkz4xZyd8TPcF7P6rkyilN/Aa33X73kOYaLAk5cFfxrDr1bHtbdrXpG7dj4HT52LKa9p93MSaZs8gC0t6y73EPjWbn5DFRQxIEQIVRQ5yJt3qDOBV7YjXZtTUHLWgg8qZQeECTRDsLeQw2ChSv5f4dBnsxos76xkSEUJhnWsEORt7+cAAWTrO5A7Nhiw"
+    },
+    "bagimsiz-arastirmacilar-yapay-zeka-laboratuvarinda-calisan-seviyesinde-yetki-ald": {
+      "zaman": "2026-10-15T20:51:00.086Z",
+      "basliklarSifreli": "v1.52AyebffpqK2q2s2.xJaeOGKH8AlFBR9UxpWuNc5lpH4Z87c1qOjaVf57JLG8Eg3gg4SCL0FPWZS2Jy21HAGs3n+7CgaqFR54vR8p+GxgTsMckxOCeuyhycwj0tmwNSMUZEsohspoLV0c/Dslf8n/OrWak+4="
+    },
+    "gelecegin-teknolojisinde-uygulamalarin-yerini-yapay-zeka-aliyor": {
+      "zaman": "2026-10-15T20:51:00.086Z",
+      "basliklarSifreli": "v1.RfGb5zkfTQiwk4Ru.kLtZqC4iw9H2g3r5kJjsAj15ZYjQQq3Bxw3Ytb220WbrIhLDcghVzVu4mxENMiHtKWpfVkoP2xg26GBClpEnCjkXHsFezreVyVLy423ciobgK7EZEiTa5G8gSjB1pwy6c+9jhDi/xcPQQ5BIs+QmxQ=="
     }
   }
 }
