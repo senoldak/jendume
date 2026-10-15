@@ -6,7 +6,7 @@ import { ilgiliKisim } from './denetci.mjs';
 export const DIL_BLOK_SEMASI = {
   type: 'object',
   properties: {
-    title: { type: 'string', description: 'En fazla 90 karakter, sade, anlaşılır ve insana dokunan başlık. "Yapay zekâ" / "AI" ifadesiyle BAŞLAMAZ; olayın öznesiyle (kurum, kişi, ürün, sonuç) açılır' },
+    title: { type: 'string', description: 'En fazla 90 karakter, sade ve anlaşılır başlık. Okurun arayacağı anahtar sözcükle (şirket, model, ürün, kurum, kişi ya da konu adı) başlar ve olayı açıkça söyler. "Kurum: …" gibi iki noktalı etiketle açılmaz; "Bu…", "İşte…", "This…", "Here’s…" gibi belirsiz başlık olmaz; "Yapay zekâ" / "AI" ifadesiyle BAŞLAMAZ' },
     description: { type: 'string', description: '1-2 cümlelik akıcı ve anlaşılır özet / spot' },
     bolge: { type: 'string', description: 'Olayın geçtiği coğrafya veya odak (örn. Avrupa, ABD, Asya, Küresel, Türkiye)' },
     perspektif: { type: 'string', description: '1-2 cümleyle: Bu yapay zekâ gelişmesi neden önemli? İnsanların hayatını veya dünyayı nasıl etkiliyor?' },
@@ -57,7 +57,11 @@ export const YAZIM_KURALLARI = `Yazım İlkeleri:
 3. Kaynak haber sitelerinin ve yayın kuruluşlarının adını (BBC, Reuters, Bloomberg, The New York Times vb.) metin içinde kesinlikle anma; doğrudan olayı ve ilgili araştırma kurumunu, üniversiteyi veya şirketi anlat.
 4. Her haberde "perspektif" alanında şu soruyu yanıtla: "Bu yapay zekâ gelişmesi neden önemli ve insanların hayatını nasıl etkiliyor?"
 5. "bugün", "dün", "yarın", "bu hafta", "today", "yesterday", "this week" gibi göreli zaman ifadeleri yerine somut bağlam veya tarih kullan.
-6. Başlık ASLA "Yapay zekâ", "Yapay zeka", "AI" veya "Artificial intelligence" ile başlamaz; okur zaten bunun bir yapay zekâ yayını olduğunu biliyor. Başlığı olayın öznesiyle (şirket, kurum, kişi, ürün) ya da somut sonuçla aç. Mümkünse bu ifadeyi başlıkta hiç kullanma. Örn. "Yapay zekâ mimarlık projelerini dakikalar içinde üretiyor" yerine "Mimarlık projeleri artık dakikalar içinde çiziliyor".
+6. Başlık (her iki dilde) okurun arama motoruna yazacağı anahtar sözcükle başlar: olayın öznesi olan şirket, model, ürün, kurum ya da kişinin adı veya somut konu (örn. "OpenAI …", "Claude …", "AB Yapay Zekâ Yasası …", "Meme kanseri taraması …"). Başlık olayı açıkça söyler: kim, ne yaptı ya da ne oldu.
+   - İki noktalı etiketle AÇILMAZ ve ilk beş sözcükte iki nokta üst üste (:) kullanılmaz: "OpenAI: Yeni model tanıtıldı", "Analiz: …", "Son dakika: …", "Open-Source AI Models: Freedom and Safety" yerine "OpenAI yeni modeli … tanıttı", "Open-source AI models pit openness against safety".
+   - Belirsiz ya da merak tuzağı kuran başlık yazılmaz: "Bu…", "Şu…", "İşte…", "Şok…", "Neler oluyor?", "This…", "Here’s…", "You won’t believe…", "Everything you need to know…" gibi açılışlar ve dört sözcükten kısa başlıklar yasaktır.
+   - "Yapay zekâ", "Yapay zeka", "AI" veya "Artificial intelligence" ile başlamaz; okur zaten bunun bir yapay zekâ yayını olduğunu biliyor. Örn. "Yapay zekâ mimarlık projelerini dakikalar içinde üretiyor" yerine "Mimarlık projeleri artık dakikalar içinde çiziliyor".
+   - İngilizce başlık da aynı kurallara uyar ve aynı anahtar sözcükle başlar (örn. TR "Anthropic, Claude için …", EN "Anthropic gives Claude …").
 7. Uzunluk ve yapı: her dilde gövde (body) 250-400 kelime olmalı; 200 kelimenin altındaki metin yayımlanmaz. Gövde şu sırayla ilerler:
    (a) ne oldu: kim, ne yaptı, ne zaman, nerede; (b) neden önemli: okur, sektör veya toplum için sonucu;
    (c) temel rakamlar: kaynaktaki tutar, oran, tarih ve ölçümler; (d) bağlam: önceki gelişmeler, rakipler, düzenleme veya araştırma geçmişi.
@@ -104,6 +108,7 @@ Kaynak metne sıkı sıkıya bağlı kalarak bu sorunları düzelt:
 - Geçen medya/haber kuruluşu adlarını (BBC, Reuters, Bloomberg vb.) çıkar; doğrudan ilgili kurumu/şirketi yaz.
 - Göreli zaman ifadelerini (bugün, dün, bu hafta, today, yesterday, this week vb.) kaldır.
 - Kopya cümle uyarısı varsa olguları koruyarak cümleleri kendi kelimelerinle yeniden kur.
+- Başlık uyarısı varsa başlığı kural 6'ya göre yeniden yaz: anahtar sözcükle (şirket, model, ürün, kurum, kişi, konu) başlat, iki noktalı etiketi ve belirsiz açılışı kaldır; olguları değiştirme.
 - "Metin çok kısa" uyarısı varsa gövdeyi 250-400 kelimeye genişlet: kaynakta geçen ama taslağa girmemiş olguları, rakamları ve bağlamı ekle
   (ne oldu, neden önemli, temel rakamlar, bağlam). Kaynakta olmayan hiçbir bilgi, rakam ya da yorum ekleme.
 

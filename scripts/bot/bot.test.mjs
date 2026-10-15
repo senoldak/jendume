@@ -155,3 +155,28 @@ test('yaziKaydet is an alias of ucDilliHaberYaz', () => {
   assert.equal(yaziKaydet, ucDilliHaberYaz);
 });
 
+
+test('baslikKontrol: anahtar sözcükle başlayan başlık geçer; iki noktalı etiket, belirsiz ve "Yapay zekâ" açılışı yakalanır', async () => {
+  const { baslikKontrol, ikiNoktaliAcilis } = await import('./denetci.mjs');
+  const paket = (tr, en) => ({ tr: { title: tr }, en: { title: en } });
+  assert.deepEqual(
+    baslikKontrol(paket('OpenAI yeni akıl yürütme modelini tanıttı', 'OpenAI unveils a new reasoning model')),
+    [],
+  );
+  assert.deepEqual(baslikKontrol(paket('AB Yapay Zekâ Yasası yeni kuralları devreye aldı', 'AI Act rules take effect across the EU')), []);
+  // Saat ve sonraki sözcüklerdeki iki nokta sorun değildir.
+  assert.equal(ikiNoktaliAcilis('Nvidia hisseleri 10:30’da yükseldi'), false);
+  assert.equal(ikiNoktaliAcilis('Anthropic Claude için yeni araç tanıttı ve geliştiricilere açtı: ayrıntılar'), false);
+
+  const iki = baslikKontrol(paket('OpenAI: Yeni model tanıtıldı', 'Open-Source AI Models: Freedom, Power, and Safety'));
+  assert.equal(iki.filter((s) => s.includes('iki noktalı')).length, 2);
+
+  const belirsiz = baslikKontrol(paket('Bu gelişme her şeyi değiştirecek', "Here's what happened"));
+  assert.equal(belirsiz.filter((s) => s.includes('belirsiz')).length, 2);
+  assert.ok(baslikKontrol(paket('Yeni dönem', 'Big news today for everyone')).some((s) => s.startsWith('[TR]') && s.includes('belirsiz')));
+
+  const ai = baslikKontrol(paket('Yapay zekâ mimarlık projelerini üretiyor', 'AI is drawing architecture plans in minutes'));
+  assert.equal(ai.filter((s) => s.includes('Yapay zekâ/AI')).length, 2);
+  // "Aile", "Airbus" gibi sözcükler "AI" açılışı sayılmaz.
+  assert.deepEqual(baslikKontrol(paket('Aile şirketleri yapay zekâ araçlarına yöneliyor', 'Airbus tests autonomous taxiing system')), []);
+});

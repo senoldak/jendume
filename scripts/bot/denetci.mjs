@@ -176,6 +176,40 @@ export function uzunlukKontrol(paket, enAz = EN_AZ_KELIME) {
   return sorunlar;
 }
 
+// --- Başlık: arama sonucunda okunan ilk şey. Anahtar sözcükle (şirket, model, ürün, kurum, konu) başlar;
+// "Kurum: …" gibi iki noktalı etiket, belirsiz/merak tuzağı açılış ve "Yapay zekâ …" açılışı kabul edilmez (Ekim 2026).
+// Mevcut başlıklar değiştirilmez; kural yalnız yeni taslaklara uygulanır.
+const AI_ACILIS = /^(?:yapay\s+zek[âa]|artificial\s+intelligence|ai)(?![\p{L}\p{N}])(?!\s+(?:act|yasas))/iu;
+const BELIRSIZ_ACILIS = {
+  tr: /^(?:bu|şu|bunlar|işte|şok|flaş|son\s+dakika|neler|ne\s+oluyor|herkes|kimse)(?![\p{L}\p{N}])/iu,
+  en: /^(?:this|that|these|those|here['’]?s|here\s+is|breaking|you\s+won['’]?t|everything\s+you|what\s+you\s+need|it['’]?s|they|nobody|everyone)(?![\p{L}\p{N}])/iu,
+};
+
+/** Başlıkta ilk beş sözcükte iki nokta üst üste var mı? (Saat gibi rakam:rakam sayılmaz.) */
+export function ikiNoktaliAcilis(baslik = '') {
+  const ilk = String(baslik).replace(/\d:\d/g, '').split(/\s+/).filter(Boolean).slice(0, 5).join(' ');
+  return ilk.includes(':');
+}
+
+export function baslikKontrol(paket) {
+  const sorunlar = [];
+  for (const dil of ['tr', 'en']) {
+    const baslik = String(paket?.[dil]?.title ?? '').trim().replace(/^["“'‘]+/, '');
+    if (!baslik) continue;
+    const D = `[${dil.toUpperCase()}]`;
+    if (ikiNoktaliAcilis(baslik)) {
+      sorunlar.push(`${D} Başlık iki noktalı etiketle açılıyor ("Kurum: …"); anahtar sözcükle başlayan düz bir cümle yaz`);
+    }
+    if (AI_ACILIS.test(baslik)) {
+      sorunlar.push(`${D} Başlık "Yapay zekâ/AI" ile başlıyor; olayın öznesi olan şirket, model, ürün ya da konuyla başlat`);
+    }
+    if (BELIRSIZ_ACILIS[dil].test(baslik) || baslik.split(/\s+/).length < 4) {
+      sorunlar.push(`${D} Başlık belirsiz; ne olduğunu söyleyen, anahtar sözcükle başlayan bir başlık yaz`);
+    }
+  }
+  return sorunlar;
+}
+
 // --- Yerel düzeltme: göreli zaman ve kaynak-atıf kalıplarını Gemini'ye gitmeden temizler ---
 const ALINTI = /[“"][^”"]*[”"]/g;
 const AY = "['’]";

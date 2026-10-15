@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
-import { kesinKontroller, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
+import { baslikKontrol, kesinKontroller, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
@@ -253,8 +253,8 @@ for (const g of sira) {
     const kaynakBirlesik = kaynaklar.map((k) => `${k.baslik}\n${k.metin}`).join('\n\n');
     // Basit sorunlar (göreli zaman, kaynak atfı) önce yerelde temizlenir; Gemini yalnız kalanlar için çağrılır.
     t = yerelDuzelt(t);
-    // Kısa taslak (200 kelimenin altı) da sorun sayılır; düzeltme turu kaynaktaki olgularla genişletir.
-    const denetle = (x) => [...kesinKontroller(x, kaynakBirlesik), ...uzunlukKontrol(x)];
+    // Kısa taslak (200 kelimenin altı) ve kurala uymayan başlık da sorun sayılır; düzeltme turu onarır.
+    const denetle = (x) => [...kesinKontroller(x, kaynakBirlesik), ...uzunlukKontrol(x), ...baslikKontrol(x)];
     let sorunlar = denetle(t);
     for (let tur = 1; tur <= 2 && sorunlar.length; tur++) {
       console.log(`  düzeltme turu ${tur}: ${sorunlar.join(' | ')}`);
