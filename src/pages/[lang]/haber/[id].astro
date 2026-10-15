@@ -1,0 +1,148 @@
+---
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import StoryCard from '../../../components/StoryCard.astro';
+import SignLine from '../../../components/SignLine.astro';
+import SignHeading from '../../../components/SignHeading.astro';
+import SentezBlok from '../../../components/SentezBlok.astro';
+import Arrow from '../../../components/Arrow.astro';
+import { kapakAlt, kapakUrl, KAPAK_G, KAPAK_Y } from '../../../kapak/ciz';
+import { BULLETIN_CATEGORY, LOCALES, SITE, editorialUrl, getCategory, otherLocale, type Locale } from '../../../lib/site';
+import { articleGraph } from '../../../lib/seo';
+import { dizinlenir } from '../../../lib/kalite.mjs';
+import {
+  getPublishedPosts,
+  getAvailableTranslations,
+  getPostUrl,
+  gorselVar,
+  type NewsEntry,
+} from '../../../lib/news';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of LOCALES) {
+    const posts = await getPublishedPosts(lang);
+    for (const post of posts) {
+      paths.push({
+        params: { lang, id: post.id },
+        props: { post },
+      });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  post: NewsEntry;
+}
+
+const { lang, id } = Astro.params as { lang: Locale; id: string };
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const other = otherLocale(lang);
+const ui = SITE.ui[lang];
+const editorialHref = editorialUrl(lang);
+const translations = await getAvailableTranslations(id);
+
+const langUrls: Partial<Record<Locale, string>> = {
+  tr: translations.tr ? getPostUrl('tr', id) : '/tr/',
+  en: translations.en ? getPostUrl('en', id) : '/en/',
+};
+
+// Gövdesi çok kısa haber erişilebilir kalır ama dizine girmez (src/lib/kalite.mjs); her dil kendi gövdesiyle ölçülür.
+const indexable = dizinlenir(post.body);
+const otherPost = translations[other] ? (await getPublishedPosts(other)).find((p) => p.id === id) : undefined;
+const otherIndexable = Boolean(otherPost && dizinlenir(otherPost.body));
+const isBulletin = post.data.category === BULLETIN_CATEGORY;
+
+// hreflang yalnız gerçekten var olan ve dizine giren çeviriler arasında; x-default İngilizce sürüm.
+const alternates: Partial<Record<Locale | 'x-default', string>> = {};
+if (translations.tr && translations.en && indexable && otherIndexable) {
+  alternates.en = getPostUrl('en', id);
+  alternates.tr = getPostUrl('tr', id);
+  alternates['x-default'] = getPostUrl('en', id);
+}
+const cover = gorselVar(post.data.date) ? kapakUrl(post, lang) : undefined;
+const catTitle = getCategory(post.data.category, lang).title;
+
+const allInLang = await getPublishedPosts(lang);
+const related = allInLang
+  .filter((p) => p.id !== id && p.data.category === post.data.category)
+  .slice(0, 3);
+const fallbackRelated =
+  related.length > 0 ? related : allInLang.filter((p) => p.id !== id).slice(0, 3);
+---
+
+<Base
+  lang={lang}
+  title={post.data.title}
+  description={post.data.description}
+  canonicalPath={getPostUrl(lang, id)}
+  langUrls={langUrls}
+  alternates={alternates}
+  activeCategory={post.data.category}
+  type="article"
+  image={cover}
+  imageAlt={cover ? kapakAlt(post, lang) : undefined}
+  imageWidth={cover ? KAPAK_G : undefined}
+  imageHeight={cover ? KAPAK_Y : undefined}
+  noindex={!indexable}
+  published={post.data.date}
+  modified={post.data.updated ?? post.data.date}
+  section={catTitle}
+  schema={articleGraph(post, lang, cover)}
+>
+  <article class="article">
+    <header class="article-header">
+      <h1 class="article-title">{post.data.title}</h1>
+      <SignLine post={post} lang={lang} minutes fullTitle />
+      <p class="article-deck">{post.data.description}</p>
+      <SentezBlok
+        lang={lang}
+        whyMatters={post.data.why_matters || post.data.perspektif}
+        keyPoints={post.data.key_points}
+      />
+      {
+        translations[other] && (
+          <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={SITE.localeTag[other]}>
+            <span class="lang-code">{other.toUpperCase()}</span>
+            {SITE.ui[other].readIn}
+            <Arrow />
+          </a>
+        )
+      }
+    </header>
+
+    {
+      gorselVar(post.data.date) && (
+        <figure class="article-cover">
+          <img src={kapakUrl(post, lang)} alt={kapakAlt(post, lang)} width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+        </figure>
+      )
+    }
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <p class="production-note">
+      <span class="production-note-label">{ui.productionLabel}</span>
+      {isBulletin ? ui.productionBulletin : ui.productionStory}{' '}
+      <a href={editorialHref}>{ui.productionLink}</a>
+    </p>
+  </article>
+
+  {
+    fallbackRelated.length > 0 && (
+      <section class="block" aria-labelledby="related-heading">
+        <SignHeading lang={lang} label="relatedStories" id="related-heading" />
+        <div class="story-grid">
+          {fallbackRelated.map((rel) => (
+            <StoryCard post={rel} lang={lang} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</Base>

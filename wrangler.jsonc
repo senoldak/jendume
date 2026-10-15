@@ -1,0 +1,18 @@
+{
+  // Cloudflare ayarı: site statik dosyalar olarak yayınlanır (ücretsiz).
+  "name": "jendume",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "jendume.com", "custom_domain": true },
+    { "pattern": "www.jendume.com", "custom_domain": true }
+  ],
+  // Panelde build komutu boş olsa da deploy önce siteyi derlesin.
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

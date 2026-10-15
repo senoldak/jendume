@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import EditorialContent from '../../components/EditorialContent.astro';
+import { LOCALES, SITE, type Locale } from '../../lib/site';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+
+if (lang === 'en') {
+  return Astro.redirect('/en/editorial-standards/', 301);
+}
+const ui = SITE.ui[lang];
+const canonicalPath = lang === 'en' ? '/en/editorial-standards/' : `/${lang}/yayin-ilkeleri/`;
+const description =
+  lang === 'tr'
+    ? 'JEN DUME Yayın İlkeleri: IFJ Küresel Gazetecilik Etiği Şartı, The Trust Project 8 Güven Göstergesi, RSF Paris Yapay Zekâ Şartı ve Düzeltme Politikası.'
+    : 'JEN DUME Editorial Standards: IFJ Global Charter of Ethics for Journalists, The Trust Project 8 Trust Indicators, RSF Paris Charter on AI, and Corrections Policy.';
+---
+
+<Base
+  lang={lang}
+  title={ui.editorialStandards}
+  description={description}
+  canonicalPath={canonicalPath}
+  langUrls={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/' }}
+  alternates={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/', 'x-default': '/en/editorial-standards/' }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${canonicalPath}#webpage`,
+      url: `${SITE.url}${canonicalPath}`,
+      name: `${ui.editorialStandards} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <EditorialContent lang={lang} />
+</Base>

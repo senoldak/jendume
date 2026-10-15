@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import EditorialContent from '../../components/EditorialContent.astro';
+import { SITE } from '../../lib/site';
+
+const lang = 'en';
+const ui = SITE.ui[lang];
+const description =
+  'JEN DUME Editorial Standards: IFJ Global Charter of Ethics for Journalists, The Trust Project 8 Trust Indicators, RSF Paris Charter on AI, and Corrections Policy.';
+---
+
+<Base
+  lang={lang}
+  title={ui.editorialStandards}
+  description={description}
+  canonicalPath="/en/editorial-standards/"
+  langUrls={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/' }}
+  alternates={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/', 'x-default': '/en/editorial-standards/' }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}/en/editorial-standards/#webpage`,
+      url: `${SITE.url}/en/editorial-standards/`,
+      name: `${ui.editorialStandards} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <EditorialContent lang={lang} />
+</Base>

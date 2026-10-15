@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import Front from '../../components/Front.astro';
+import { LOCALES, SITE, type Locale } from '../../lib/site';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+---
+
+<Base
+  lang={lang}
+  canonicalPath={`/${lang}/`}
+  alternates={{ en: '/en/', tr: '/tr/', 'x-default': '/' }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}/${lang}/#webpage`,
+      url: `${SITE.url}/${lang}/`,
+      name: `${SITE.displayName} — ${SITE.tagline[lang]}`,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <Front lang={lang} />
+</Base>

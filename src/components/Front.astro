@@ -1,0 +1,128 @@
+---
+// Ana sayfa gövdesi; / (EN) ve /{lang}/ aynı düzeni paylaşır.
+import StoryCard from './StoryCard.astro';
+import SignLine from './SignLine.astro';
+import SignHeading from './SignHeading.astro';
+import WhyItMatters from './WhyItMatters.astro';
+import Arrow from './Arrow.astro';
+import { kapakUrl, KAPAK_G, KAPAK_Y } from '../kapak/ciz';
+import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
+import { getPublishedPosts, getPostUrl, getCategoryUrl, gorselVar } from '../lib/news';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const posts = await getPublishedPosts(lang);
+
+const leadPost = posts.find((p) => p.data.featured) ?? posts[0];
+const rest = posts.filter((p) => p.id !== leadPost?.id);
+const latest = rest.slice(0, 4);
+const older = rest.slice(4);
+
+// Kalkış panosu: her bölümün en yeni haberi ve haber sayısı.
+const board = CATEGORIES.map((cat, i) => {
+  const inSection = posts.filter((p) => p.data.category === cat.slug);
+  return { cat, code: i + 1, newest: inSection[0], count: inSection.length };
+});
+---
+
+{
+  leadPost ? (
+    <section class="front" aria-labelledby="lead-title">
+      <article class="lead">
+        {
+          gorselVar(leadPost.data.date) && (
+            <a class="lead-cover" href={getPostUrl(lang, leadPost.id)} tabindex="-1" aria-hidden="true">
+              <img src={kapakUrl(leadPost, lang)} alt="" width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+            </a>
+          )
+        }
+        <h1 class="lead-title" id="lead-title">
+          <a href={getPostUrl(lang, leadPost.id)}>{leadPost.data.title}</a>
+        </h1>
+        <SignLine post={leadPost} lang={lang} minutes fullTitle />
+        <p class="lead-desc">{leadPost.data.description}</p>
+        {leadPost.data.perspektif && <WhyItMatters lang={lang} text={leadPost.data.perspektif} />}
+        <a class="read-plate" href={getPostUrl(lang, leadPost.id)}>
+          <span>{ui.readReport}</span>
+          <span class="read-plate-other" lang={other}>{SITE.ui[other].readReport}</span>
+          <Arrow />
+        </a>
+      </article>
+
+      {latest.length > 0 && (
+        <aside aria-labelledby="latest-heading">
+          <SignHeading lang={lang} label="latestDispatch" id="latest-heading" />
+          <ul class="latest-list">
+            {latest.map((p) => {
+              const c = getCategory(p.data.category, lang);
+              return (
+                <li>
+                  <span class="code" aria-hidden="true">{c.code}</span>
+                  <div>
+                    <h3 class="latest-title">
+                      <a href={getPostUrl(lang, p.id)}>{p.data.title}</a>
+                    </h3>
+                    <p class="latest-meta">
+                      {c.shortTitle}
+                      {p.data.bolge && ` · ${p.data.bolge}`} · {formatDate(p.data.date, lang)}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+      )}
+    </section>
+  ) : (
+    <p class="empty-state">{ui.emptyCategory}</p>
+  )
+}
+
+{
+  older.length > 0 && (
+    <section class="block" aria-labelledby="all-heading">
+      <SignHeading lang={lang} label="allStories" id="all-heading" />
+      <div class="story-grid">
+        {older.map((post) => (
+          <StoryCard post={post} lang={lang} />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<section class="block directory" aria-labelledby="sections-heading">
+  <SignHeading lang={lang} label="sectorMatrix" id="sections-heading" />
+  <ul class="board">
+    {
+      board.map(({ cat, code, newest, count }) => (
+        <li class="board-row">
+          <a href={getCategoryUrl(lang, cat.slug)} class="board-section">
+            <span class="code" aria-hidden="true">{code}</span>
+            <span class="board-name">
+              {cat.title[lang]}
+              <span lang={other}>{cat.title[other]}</span>
+            </span>
+          </a>
+          {newest ? (
+            <a href={getPostUrl(lang, newest.id)} class="board-latest">
+              {newest.data.title}
+            </a>
+          ) : (
+            <span class="board-latest is-empty">{ui.emptyCategory}</span>
+          )}
+          <span class="board-count">
+            {count}
+            <span class="board-unit">{lang === 'tr' ? 'haber' : count === 1 ? 'story' : 'stories'}</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</section>

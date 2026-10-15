@@ -1,0 +1,48 @@
+---
+// Sentez Bloğu: "Neden Önemli?" ve "3 Maddede Özet" bilgi levhası
+import { SITE, otherLocale, type Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  whyMatters?: string;
+  perspektif?: string;
+  keyPoints?: string[];
+}
+
+const { lang, whyMatters, perspektif, keyPoints } = Astro.props;
+const other = otherLocale(lang);
+
+const effectiveWhy = (whyMatters || perspektif || '').trim();
+const hasWhy = effectiveWhy.length > 0;
+const hasPoints = Array.isArray(keyPoints) && keyPoints.length > 0;
+
+const whyLabelPrimary = SITE.ui[lang]?.whyItMatters || (lang === 'tr' ? 'Neden Önemli?' : 'Why It Matters');
+const whyLabelSecondary = SITE.ui[other]?.whyItMatters || (other === 'tr' ? 'Neden Önemli?' : 'Why It Matters');
+const takeawaysLabel = SITE.ui[lang]?.keyTakeaways || (lang === 'tr' ? '3 Maddede Özet' : 'Key Takeaways');
+---
+
+{
+  (hasWhy || hasPoints) && (
+    <aside class="sentez-kutu why" aria-label={whyLabelPrimary}>
+      {hasWhy && (
+        <div class="sentez-neden">
+          <p class="why-label">
+            <span class="why-primary">{whyLabelPrimary}</span>
+            <span class="why-secondary" lang={other}>{whyLabelSecondary}</span>
+          </p>
+          <p class="why-text">{effectiveWhy}</p>
+        </div>
+      )}
+      {hasPoints && (
+        <div class="sentez-ozet">
+          <p class="sentez-ozet-baslik">{takeawaysLabel}</p>
+          <ul class="sentez-maddeler">
+            {keyPoints!.map((point) => (
+              <li>{point}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </aside>
+  )
+}

@@ -1,0 +1,210 @@
+---
+import Base from '../../layouts/Base.astro';
+import { LOCALES, SITE, otherLocale, type Locale } from '../../lib/site';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const description =
+  lang === 'tr'
+    ? 'JEN DUME hakkında: yapay zekâ laboratuvarları, araştırma kurumları ve resmî kaynaklardan yapay zekâ yardımıyla otomatik yazılan, Türkçe ve İngilizce yapay zekâ haberleri.'
+    : 'About JEN DUME: bilingual English and Turkish AI news, written automatically with AI assistance from AI labs, research institutions, and official sources.';
+---
+
+<Base lang={lang} title={ui.about} description={description} canonicalPath={`/${lang}/hakkimizda/`}>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">JEN DUME</h1>
+            <p class="about-motto"><span>{SITE.tagline[lang]}</span><span lang={other}>{SITE.tagline[other]}</span></p>
+          </header>
+
+          <p>
+            Dünya farklı dillerde konuşuyor. İnsanlar farklı kaynaklardan öğreniyor, farklı perspektiflerden
+            bakıyor ve aynı gerçekliği farklı şekillerde yorumluyor. Ancak bilgiye erişimin kolaylaşması,
+            dünyayı anlamanın da kolaylaştığı anlamına gelmiyor.
+          </p>
+
+          <p>
+            <strong>JEN DUME, anlama arzusundan doğuyor.</strong>
+          </p>
+
+          <p>
+            1887 yılında Ludwik Lejzer Zamenhof, farklı dilleri konuşan insanların birbirleriyle daha kolay
+            iletişim kurabilmesi amacıyla Esperanto’yu ortaya koydu. Bu girişimin ardında yalnızca yeni bir dil
+            oluşturmak değil, insanlar arasında ortak bir iletişim zemini kurma düşüncesi vardı.
+          </p>
+
+          <p>
+            Esperanto’nun temsil ettiği bu fikir bugün de önemini koruyor. Çünkü sınırlar aşılmış olsa bile dil
+            engelleri, bilgiye erişimdeki eşitsizlikler ve birbirinden kopuk perspektifler varlığını sürdürüyor.
+          </p>
+
+          <p>
+            Yapay zekâ, bu engelleri aşmak için yeni imkânlar sunuyor. Farklı dillerdeki kaynakları incelemek,
+            büyük bilgi kümeleri arasındaki bağlantıları keşfetmek ve karmaşık konuları daha anlaşılır hâle
+            getirmek artık yeni yöntemlerle mümkün. Teknoloji, insanlığın ortak bilgi birikimine erişme ve onu
+            değerlendirme biçimini dönüştürüyor.
+          </p>
+
+          <blockquote>
+            <strong>
+              JEN DUME, insanlığın ortak bir dil arayışıyla yapay zekânın bilgi arasında bağlantılar kurma
+              kapasitesini aynı düşüncede buluşturuyor.
+            </strong>
+          </blockquote>
+
+          <p>
+            Biz teknolojiyi yalnızca daha hızlı bilgi üretmek için değil, daha iyi sorular sormak, farklı bakış
+            açılarını karşılaştırmak ve dünyayı daha geniş bir çerçeveden anlamak için kullanıyoruz.
+          </p>
+
+          <p>
+            Çünkü bilgi tek başına yeterli değil. Doğruluk, bağlam, eleştirel düşünce ve editoryal sorumluluk
+            olmadan bilgi, anlamını kaybedebilir. Yapay zekâ araştırma ve analiz süreçlerini güçlendirebilir;
+            ancak güvenilir bilgiye ulaşmak hâlâ dikkatli değerlendirme ve insan muhakemesi gerektirir.
+          </p>
+
+          <p>
+            Bu nedenle JEN DUME için teknoloji bir amaç değil, bir araçtır. Merkezimizde bilgi, merak ve anlama
+            çabası bulunur.
+          </p>
+
+          <h2>Nasıl çalışıyoruz?</h2>
+          <p>
+            JEN DUME haberleri, izlediğimiz yapay zekâ laboratuvarları, araştırma kurumları, resmî kurumlar ve
+            teknoloji yayınlarının kaynak metinlerinden yapay zekâ yardımıyla otomatik olarak Türkçe ve İngilizce
+            yazılır. Rakamlar kaynak metinle karşılaştırılır, haber kuruluşu adları ve göreli zaman ifadeleri
+            ayıklanır; bu otomatik denetimleri geçemeyen taslak yayımlanmaz. Haberler yayından önce insan editör
+            okumasından geçmez. Kaynak listesini, yazım ve doğrulama kurallarını, yayın ilkelerini ve düzeltmeleri
+            insan editörler belirler ve yürütür.
+          </p>
+
+          <p>
+            Farklı dillerden gelen bilgilerin buluşabildiği, karmaşık konuların açıklığa kavuşabildiği ve
+            farklı perspektiflerin birlikte değerlendirilebildiği bir yayıncılık anlayışını benimsiyoruz.
+            Bağımsız habercilik, yapay zekâ etiği ve doğrulama taahhütlerimize ilişkin ayrıntılı standartlarımızı
+            <a href={`/${lang}/yayin-ilkeleri/`}>Yayın İlkeleri</a> sayfamızda inceleyebilirsiniz.
+          </p>
+
+          <p>
+            Esperanto, insanları ortak bir iletişim zemini etrafında buluşturma idealini temsil ediyor. Yapay
+            zekâ ise bu idealin bilgi dünyasındaki yeni imkânlarını düşünmemizi sağlıyor.
+          </p>
+
+          <blockquote>
+            <strong>
+              Bizim vizyonumuz, teknolojinin gücünü insanlığın anlama kapasitesini geliştirmek için kullanmak.
+            </strong>
+          </blockquote>
+
+          <p>Kelimelerin ötesinde, dillerin ötesinde ve tek bir bakış açısının ötesinde.</p>
+
+          <p>
+            <strong>JEN DUME. Beyond Words.</strong>
+          </p>
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">JEN DUME</h1>
+            <p class="about-motto"><span>{SITE.tagline[lang]}</span><span lang={other}>{SITE.tagline[other]}</span></p>
+          </header>
+
+          <p>
+            The world speaks in different languages. People learn from different sources, look from different
+            perspectives, and interpret the same reality in different ways. Yet easier access to information does
+            not mean that understanding the world has become any easier.
+          </p>
+
+          <p>
+            <strong>JEN DUME is born from the desire to understand.</strong>
+          </p>
+
+          <p>
+            In 1887, Ludwik Lejzer Zamenhof introduced Esperanto so that people speaking different languages
+            could communicate more easily with one another. Behind this effort lay not merely the creation of a
+            new language, but the idea of building a common ground for human communication.
+          </p>
+
+          <p>
+            The idea represented by Esperanto remains just as relevant today. Even as borders have become more
+            permeable, language barriers, inequalities in access to knowledge, and disconnected perspectives
+            continue to exist.
+          </p>
+
+          <p>
+            Artificial intelligence offers new possibilities to overcome these barriers. Examining sources across
+            different languages, discovering connections within vast bodies of knowledge, and making complex
+            subjects clearer are now possible in entirely new ways. Technology is transforming how humanity
+            accesses and evaluates its shared knowledge.
+          </p>
+
+          <blockquote>
+            <strong>
+              JEN DUME brings together humanity’s search for a shared language and the capacity of artificial
+              intelligence to connect knowledge within a single vision.
+            </strong>
+          </blockquote>
+
+          <p>
+            We use technology not merely to produce information faster, but to ask better questions, compare
+            diverse viewpoints, and understand the world within a broader frame.
+          </p>
+
+          <p>
+            Because information alone is not enough. Without accuracy, context, critical thinking, and editorial
+            responsibility, information can lose its meaning. Artificial intelligence can strengthen research and
+            analysis—yet reaching reliable knowledge still requires careful evaluation and human judgment.
+          </p>
+
+          <p>
+            For this reason, at JEN DUME technology is not an end in itself, but a tool. At our center lie
+            knowledge, curiosity, and the pursuit of understanding.
+          </p>
+
+          <h2>How we work</h2>
+          <p>
+            JEN DUME stories are written automatically in English and Turkish with AI assistance, based on the source
+            texts of the AI labs, research institutions, official bodies, and technology publications we monitor.
+            Numbers are compared with the source text, and names of news outlets and relative time references are
+            removed; a draft that fails these automated checks is not published. Stories are not read by a human
+            editor before publication. Human editors decide the source list, the writing and verification rules, our
+            editorial standards, and corrections.
+          </p>
+
+          <p>
+            We embrace an approach to publishing where insights from different languages meet, complex issues
+            find clarity, and diverse perspectives are evaluated together. Our detailed commitments to independent
+            reporting, AI ethics, and verification standards can be reviewed on our
+            <a href="/en/editorial-standards/">Editorial Standards</a> page.
+          </p>
+
+          <p>
+            Esperanto represents the ideal of bringing people together around a shared ground of communication.
+            Artificial intelligence invites us to reimagine the possibilities of that ideal across the world of
+            knowledge.
+          </p>
+
+          <blockquote>
+            <strong>
+              Our vision is to use the power of technology to advance humanity’s capacity to understand.
+            </strong>
+          </blockquote>
+
+          <p>Beyond words, beyond languages, and beyond a single point of view.</p>
+
+          <p>
+            <strong>JEN DUME. Beyond Words.</strong>
+          </p>
+        </div>
+      )
+    }
+  </article>
+</Base>

@@ -1,0 +1,60 @@
+---
+import Base from '../../../layouts/Base.astro';
+import StoryCard from '../../../components/StoryCard.astro';
+import {
+  LOCALES,
+  ALL_CATEGORIES,
+  SITE,
+  getCategory,
+  otherLocale,
+  type Locale,
+  type CategorySlug,
+} from '../../../lib/site';
+import { getPostsByCategory } from '../../../lib/news';
+import { collectionGraph } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) =>
+    ALL_CATEGORIES.map((cat) => ({
+      params: { lang, slug: cat.slug },
+    }))
+  );
+}
+
+const { lang, slug } = Astro.params as { lang: Locale; slug: CategorySlug };
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const cat = getCategory(slug, lang);
+const catOther = getCategory(slug, other);
+const posts = await getPostsByCategory(lang, slug);
+---
+
+<Base
+  lang={lang}
+  title={cat.title}
+  description={cat.description}
+  canonicalPath={`/${lang}/kategori/${slug}/`}
+  activeCategory={slug}
+  schema={collectionGraph(lang, cat.title, cat.description, `/${lang}/kategori/${slug}/`, posts)}
+>
+  <header class="section-sign">
+    <span class="code" aria-hidden="true">{cat.code}</span>
+    <h1>
+      {cat.title}
+      <span lang={other}>{catOther.title}</span>
+    </h1>
+    <p class="section-desc">{cat.description}</p>
+  </header>
+
+  {
+    posts.length > 0 ? (
+      <div class="story-grid">
+        {posts.map((post) => (
+          <StoryCard post={post} lang={lang} />
+        ))}
+      </div>
+    ) : (
+      <p class="empty-state">{ui.emptyCategory}</p>
+    )
+  }
+</Base>

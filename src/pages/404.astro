@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
+import { SITE } from '../lib/site';
+
+const tr = SITE.ui.tr;
+const en = SITE.ui.en;
+---
+
+<Base lang="tr" title={`404 — ${tr.notFound}`} noindex alternates={{}}>
+  <section class="lost">
+    <span class="lost-code">404</span>
+    <h1>
+      {tr.notFound}
+      <span lang="en">{en.notFound}</span>
+    </h1>
+    <p class="lost-text">{tr.notFoundText}</p>
+    <p class="lost-text" lang="en">{en.notFoundText}</p>
+    <div class="lost-ways">
+      <a class="read-plate" href="/tr/">Türkçe · {tr.home}<Arrow /></a>
+      <a class="read-plate" href="/en/" lang="en">English · {en.home}<Arrow /></a>
+    </div>
+  </section>
+</Base>
