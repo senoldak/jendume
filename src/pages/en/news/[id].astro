@@ -1,0 +1,11 @@
+---
+import HaberSayfasi from '../../../components/sayfalar/HaberSayfasi.astro';
+import { haberYollari } from '../../../lib/rotalar';
+import type { NewsEntry } from '../../../lib/news';
+
+export const getStaticPaths = () => haberYollari('en');
+
+const { post } = Astro.props as { post: NewsEntry };
+---
+
+<HaberSayfasi lang="en" post={post} />

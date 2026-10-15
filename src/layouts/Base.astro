@@ -2,6 +2,8 @@
 import Arrow from '../components/Arrow.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
+import { getCategoryUrl } from '../lib/news';
+import { hakkimizdaYolu, karsiYol } from '../lib/yollar.mjs';
 import '../styles/global.css';
 
 type Hreflang = Locale | 'x-default';
@@ -65,6 +67,7 @@ const ogImage = new URL(image || '/og-default.png', SITE.url).href;
 const ogAlt = imageAlt ?? documentTitle ?? title ?? SITE.displayName;
 const homeHref = `/${lang}/`;
 const editorialHref = editorialUrl(lang);
+const aboutHref = hakkimizdaYolu(lang);
 const robots = noindex
   ? 'noindex, follow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -76,10 +79,8 @@ function resolveLangUrl(targetLang: Locale): string {
   if (langUrls && langUrls[targetLang]) {
     return langUrls[targetLang]!;
   }
-  const replaced = path.replace(/^\/(tr|en)(\/|$)/, `/${targetLang}$2`);
-  if (replaced.startsWith(`/${targetLang}`)) {
-    return replaced;
-  }
+  // Yol parçaları dile göre değişir (/tr/haber/… ↔ /en/news/…); bkz. src/lib/yollar.mjs.
+  if (/^\/(tr|en)(\/|$)/.test(path)) return karsiYol(path, targetLang);
   return `/${targetLang}/`;
 }
 
@@ -165,7 +166,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <a href={homeHref} aria-current={isHome ? 'page' : undefined}>
             {ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span>
           </a>
-          <a href={`/${lang}/hakkimizda/`} aria-current={path.includes('/hakkimizda') ? 'page' : undefined}>
+          <a href={aboutHref} aria-current={path === aboutHref ? 'page' : undefined}>
             {ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span>
           </a>
           <a href={`/${lang}/rss.xml`}>
@@ -200,7 +201,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
             return (
               <li>
                 <a
-                  href={`/${lang}/kategori/${cat.slug}/`}
+                  href={getCategoryUrl(lang, cat.slug)}
                   class:list={['gate', { 'is-active': active }]}
                   aria-current={active ? 'page' : undefined}
                 >
@@ -239,7 +240,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           {
             CATEGORIES.map((cat, i) => (
               <li>
-                <a href={`/${lang}/kategori/${cat.slug}/`}>
+                <a href={getCategoryUrl(lang, cat.slug)}>
                   <span class="code" aria-hidden="true">{i + 1}</span>
                   <span>
                     {cat.title[lang]}
@@ -252,7 +253,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
         </ul>
         <ul class="footer-links">
           <li><a href={homeHref}><span>{ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span></span></a></li>
-          <li><a href={`/${lang}/hakkimizda/`}><span>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></span></a></li>
+          <li><a href={aboutHref}><span>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></span></a></li>
           <li><a href={editorialHref}><span>{ui.editorialStandards}<span class="link-other" lang={other}>{SITE.ui[other].editorialStandards}</span></span></a></li>
           <li><a href={`/${lang}/rss.xml`}><span>{ui.rss}<span class="link-other">{lang.toUpperCase()}</span></span></a></li>
           <li><a href="/en/" lang="en">English</a></li>

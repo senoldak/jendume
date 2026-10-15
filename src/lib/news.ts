@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import type { CategorySlug, Locale } from './site';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './kapak.mjs';
+import { haberYolu, kategoriYolu } from './yollar.mjs';
 
 export type NewsEntry =
   | CollectionEntry<'haberler_tr'>
@@ -40,12 +41,14 @@ export async function getAvailableTranslations(
   };
 }
 
+/** TR /tr/haber/<id>/, EN /en/news/<id>/ (src/lib/yollar.mjs). */
 export function getPostUrl(lang: Locale, id: string): string {
-  return `/${lang}/haber/${id}/`;
+  return haberYolu(lang, id);
 }
 
+/** TR /tr/kategori/<kimlik>/, EN /en/category/<section>/ (src/lib/yollar.mjs). */
 export function getCategoryUrl(lang: Locale, slug: CategorySlug): string {
-  return `/${lang}/kategori/${slug}/`;
+  return kategoriYolu(lang, slug);
 }
 
 // Kapak görseli: her haberin paylaşım görseli (og:image, JSON-LD, RSS) en az 1200 px'tir. Dil başına en yeni
@@ -71,5 +74,5 @@ export async function kapakBilgisi(post: NewsEntry, lang: Locale): Promise<Kapak
   return { url: ozel ? haberKapakYolu(lang, post.id) : bolumKapakYolu(lang, post.data.category), ozel };
 }
 
-/** Bölüm arşivinde sayfa başına haber (src/pages/[lang]/kategori/[slug]/[...page].astro). */
+/** Bölüm arşivinde sayfa başına haber (src/components/sayfalar/KategoriSayfasi.astro). */
 export const CATEGORY_PAGE_SIZE = 24;

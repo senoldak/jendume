@@ -1,12 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { LOCALES, SITE, otherLocale, type Locale } from '../../lib/site';
+import { SITE, editorialUrl, otherLocale, type Locale } from '../../lib/site';
+import { hakkimizdaYolu } from '../../lib/yollar.mjs';
 
-export function getStaticPaths() {
-  return LOCALES.map((lang) => ({ params: { lang } }));
+// Hakkımızda; yollar: src/pages/tr/hakkimizda.astro, src/pages/en/about.astro.
+interface Props {
+  lang: Locale;
 }
 
-const { lang } = Astro.params as { lang: Locale };
+const { lang } = Astro.props;
 const ui = SITE.ui[lang];
 const other = otherLocale(lang);
 const description =
@@ -15,7 +17,10 @@ const description =
     : 'About JEN DUME: bilingual English and Turkish AI news, written automatically with AI assistance from AI labs, research institutions, and official sources.';
 ---
 
-<Base lang={lang} title={ui.about} description={description} canonicalPath={`/${lang}/hakkimizda/`}>
+<Base lang={lang} title={ui.about} description={description} canonicalPath={hakkimizdaYolu(lang)}
+  langUrls={{ tr: hakkimizdaYolu('tr'), en: hakkimizdaYolu('en') }}
+  alternates={{ tr: hakkimizdaYolu('tr'), en: hakkimizdaYolu('en'), 'x-default': hakkimizdaYolu('en') }}
+>
   <article class="article">
     {
       lang === 'tr' ? (
@@ -90,7 +95,7 @@ const description =
             Farklı dillerden gelen bilgilerin buluşabildiği, karmaşık konuların açıklığa kavuşabildiği ve
             farklı perspektiflerin birlikte değerlendirilebildiği bir yayıncılık anlayışını benimsiyoruz.
             Bağımsız habercilik, yapay zekâ etiği ve doğrulama taahhütlerimize ilişkin ayrıntılı standartlarımızı
-            <a href={`/${lang}/yayin-ilkeleri/`}>Yayın İlkeleri</a> sayfamızda inceleyebilirsiniz.
+            <a href={editorialUrl(lang)}>Yayın İlkeleri</a> sayfamızda inceleyebilirsiniz.
           </p>
 
           <p>

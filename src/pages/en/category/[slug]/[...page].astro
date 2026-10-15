@@ -1,0 +1,13 @@
+---
+import type { GetStaticPaths, Page } from 'astro';
+import KategoriSayfasi from '../../../../components/sayfalar/KategoriSayfasi.astro';
+import { kategoriYollari } from '../../../../lib/rotalar';
+import type { NewsEntry } from '../../../../lib/news';
+import type { CategorySlug } from '../../../../lib/site';
+
+export const getStaticPaths = (({ paginate }) => kategoriYollari('en', paginate)) satisfies GetStaticPaths;
+
+const { page, kimlik, otherCount } = Astro.props as { page: Page<NewsEntry>; kimlik: CategorySlug; otherCount: number };
+---
+
+<KategoriSayfasi lang="en" slug={kimlik} page={page} otherCount={otherCount} />

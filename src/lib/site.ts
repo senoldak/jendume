@@ -120,7 +120,7 @@ export const CATEGORIES: CategoryInfo[] = [
 ];
 
 // Günlük bültenler (scripts/bot/bulten.mjs) bir haber bölümü değildir: menüde ve ana sayfa levhasında yer almaz,
-// ama kendi arşiv sayfası (/{lang}/kategori/gunluk-bulten/) ve doğru etiketi vardır.
+// ama kendi arşiv sayfası (/tr/kategori/gunluk-bulten/, /en/category/bulletins/) ve doğru etiketi vardır.
 export const BULLETIN_CATEGORY = 'gunluk-bulten' satisfies CategorySlug;
 export const BULLETIN: CategoryInfo = {
   slug: BULLETIN_CATEGORY,

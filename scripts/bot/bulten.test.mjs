@@ -58,7 +58,7 @@ test('yeterli haber varsa TR ve EN bülten yazar', async () => {
   assert.match(tr, /title: "Yapay Zekâ Öğle Bülteni — 14 Ekim 2026"/);
   assert.match(en, /lang: en/);
   assert.match(en, /title: "AI Afternoon Bulletin — 14 October 2026"/);
-  assert.match(en, /\(\/en\/haber\/a-haber\/\)/);
+  assert.match(en, /\(\/en\/news\/a-haber\/\)/);
 });
 
 test('bir haberden az ise bülten yazılmaz', async () => {

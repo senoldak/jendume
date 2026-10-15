@@ -1,7 +1,7 @@
 // Haber kalite eşiği: çok kısa haber gövdeleri arama motorlarına "ince içerik" sinyali verir.
 // Eşiğin altındaki haber sayfası erişilebilir kalır ama `noindex, follow` alır; site haritası ve Google News
 // site haritasına girmez. Ölçüm her dil için ayrıdır (TR kısa, EN uzun olabilir).
-// Ortak yardımcı: haber sayfası (src/pages/[lang]/haber/[id].astro), astro.config.mjs site haritası süzgeci ve
+// Ortak yardımcı: haber sayfası (src/components/sayfalar/HaberSayfasi.astro), astro.config.mjs site haritası süzgeci ve
 // src/pages/news-sitemap.xml.ts. Bot tarafındaki yazım eşiği (200 kelime) scripts/bot/denetci.mjs içindedir.
 
 /** Dizine girmek için gereken en az gövde kelimesi. */

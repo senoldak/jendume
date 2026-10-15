@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { dizinlenir } from './src/lib/kalite.mjs';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './src/lib/kapak.mjs';
+import { haberYolu, karsiYol } from './src/lib/yollar.mjs';
 
 const SITE = 'https://jendume.com';
 
@@ -30,17 +31,17 @@ function haberBilgisi() {
       // Kapak seçimi bütün yayımlanmış haberler üzerinden yapılır (kısa haberler dahil; src/lib/news.ts ile aynı).
       dilHaberleri.push({ id, date, category: field('category') ?? '' });
       if (!dizinlenir(md)) {
-        kisaHaberler.add(`${SITE}/${lang}/haber/${id}/`);
+        kisaHaberler.add(`${SITE}${haberYolu(lang, id)}`);
         continue;
       }
-      map.set(`${SITE}/${lang}/haber/${id}/`, {
+      map.set(`${SITE}${haberYolu(lang, id)}`, {
         lastmod: (Number.isNaN(updated.valueOf()) ? date : updated).toISOString(),
       });
     }
     // Kendi kapağı olmayan eski haber bölüm kapağını gösterir (bütçe: src/lib/kapak.mjs).
     const kapakli = kapakliKimlikler(dilHaberleri);
     for (const h of dilHaberleri) {
-      const haber = map.get(`${SITE}/${lang}/haber/${h.id}/`);
+      const haber = map.get(`${SITE}${haberYolu(lang, h.id)}`);
       if (haber) haber.kapak = SITE + (kapakli.has(h.id) ? haberKapakYolu(lang, h.id) : bolumKapakYolu(lang, h.category));
     }
   }
@@ -58,30 +59,57 @@ const yonlendirmeler = new Set(
     .filter((s) => s.startsWith('/'))
     .map((s) => `${SITE}${s}`),
 );
-const haritaDisi = (url) => kisaHaberler.has(url) || yonlendirmeler.has(url);
+// Derlenmiş sayfa (dist/…/index.html) var mı, dizine giriyor mu? Site haritası astro:build:done'da yazıldığı için
+// sayfalar diskte hazırdır. noindex alan her sayfa (kısa haber vb.) haritaya girmez.
+const sayfaDurumu = new Map();
+function sayfa(url) {
+  if (sayfaDurumu.has(url)) return sayfaDurumu.get(url);
+  const yol = new URL(url).pathname;
+  const dosya = path.resolve('dist', `.${yol}`, yol.endsWith('/') ? 'index.html' : '');
+  let durum = { var: false, noindex: false };
+  if (fs.existsSync(dosya) && fs.statSync(dosya).isFile()) {
+    const html = fs.readFileSync(dosya, 'utf8');
+    durum = { var: true, noindex: /<meta name="robots" content="noindex/.test(html) };
+  }
+  sayfaDurumu.set(url, durum);
+  return durum;
+}
+const haritaDisi = (url) => kisaHaberler.has(url) || yonlendirmeler.has(url) || sayfa(url).noindex;
+
+// hreflang eşleri: yol parçaları dile göre değiştiği için (/tr/haber/… ↔ /en/news/…; src/lib/yollar.mjs)
+// i18n eklentisinin önek eşlemesi yetmez; karşı yol hesaplanır ve yalnız gerçekten var olan, dizine giren eş verilir.
+function hreflangEsleri(url) {
+  const yol = new URL(url).pathname;
+  const m = /^\/(tr|en)\//.exec(yol);
+  if (!m) return undefined;
+  const dil = m[1];
+  const karsi = `${SITE}${karsiYol(yol, dil === 'tr' ? 'en' : 'tr')}`;
+  if (haritaDisi(karsi) || !sayfa(karsi).var) return undefined;
+  const en = dil === 'en' ? url : karsi;
+  return [
+    { url: en, lang: 'en-US' },
+    { url: dil === 'tr' ? url : karsi, lang: 'tr-TR' },
+    { url: en, lang: 'x-default' },
+  ];
+}
 
 export default defineConfig({
   site: SITE,
   integrations: [
     sitemap({
-      i18n: { defaultLocale: 'en', locales: { en: 'en-US', tr: 'tr-TR' } },
       filter: (page) => !haritaDisi(page),
       serialize(item) {
-        // Dizine girmeyen eş sürüm (kısa haber, yönlendirme) hreflang bağlantısı olarak da verilmez.
-        if (item.links) {
-          item.links = item.links.filter((l) => !haritaDisi(l.url));
-          if (item.links.length < 2) delete item.links;
-        }
-        // Kök (/) dil seçim sayfasıdır: /en/ ile /tr/'nin x-default'u; i18n eklentisi onu yanlışlıkla "en" sayar.
-        if (item.links?.some((l) => l.url === ROOT)) {
+        // Kök (/) dil seçim sayfasıdır: /en/ ile /tr/'nin x-default'u.
+        if (item.url === ROOT || item.url === `${SITE}/en/` || item.url === `${SITE}/tr/`) {
           item.links = [
             { url: `${SITE}/en/`, lang: 'en-US' },
             { url: `${SITE}/tr/`, lang: 'tr-TR' },
             { url: ROOT, lang: 'x-default' },
           ];
-        } else if (item.links && item.links.length > 1) {
-          const en = item.links.find((l) => l.lang === 'en-US');
-          if (en) item.links = [...item.links, { url: en.url, lang: 'x-default' }];
+        } else {
+          const esler = hreflangEsleri(item.url);
+          if (esler) item.links = esler;
+          else delete item.links;
         }
         const haber = haberler.get(item.url);
         if (haber) {

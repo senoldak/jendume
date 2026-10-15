@@ -1,45 +1,31 @@
 ---
-// Bölüm arşivi, sayfalı: /{lang}/kategori/{slug}/, /{lang}/kategori/{slug}/2/ … Her sayfanın kendi canonical'ı vardır
-// ve site haritasına girer; hreflang yalnız öteki dilde aynı numaralı sayfa varsa verilir.
-import type { GetStaticPaths, Page } from 'astro';
-import Base from '../../../../layouts/Base.astro';
-import StoryCard from '../../../../components/StoryCard.astro';
-import Breadcrumb from '../../../../components/Breadcrumb.astro';
-import Arrow from '../../../../components/Arrow.astro';
+// Bölüm arşivi, sayfalı: /tr/kategori/{bolum}/, /en/category/{section}/, … /2/ (yollar: src/lib/yollar.mjs).
+// Her sayfanın kendi canonical'ı vardır ve site haritasına girer; hreflang yalnız öteki dilde aynı numaralı sayfa varsa verilir.
+import type { Page } from 'astro';
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Arrow from '../../components/Arrow.astro';
 import {
-  LOCALES,
-  ALL_CATEGORIES,
   SITE,
   getCategory,
   otherLocale,
   type Locale,
   type CategorySlug,
-} from '../../../../lib/site';
-import { CATEGORY_PAGE_SIZE, getPostsByCategory, type NewsEntry } from '../../../../lib/news';
-import { categoryCrumbs, collectionGraph } from '../../../../lib/seo';
-import { bolumKapakYolu } from '../../../../lib/kapak.mjs';
-import { KAPAK_G, KAPAK_Y } from '../../../../kapak/ciz';
-
-export const getStaticPaths = (async ({ paginate }) => {
-  const paths = [];
-  for (const lang of LOCALES) {
-    for (const cat of ALL_CATEGORIES) {
-      const posts = await getPostsByCategory(lang, cat.slug);
-      const otherCount = (await getPostsByCategory(otherLocale(lang), cat.slug)).length;
-      // Boş bölüm de tek (boş) sayfa olarak üretilir.
-      paths.push(...paginate(posts, { params: { lang, slug: cat.slug }, props: { otherCount }, pageSize: CATEGORY_PAGE_SIZE }));
-    }
-  }
-  return paths;
-}) satisfies GetStaticPaths;
+} from '../../lib/site';
+import { CATEGORY_PAGE_SIZE, getCategoryUrl, type NewsEntry } from '../../lib/news';
+import { categoryCrumbs, collectionGraph } from '../../lib/seo';
+import { bolumKapakYolu } from '../../lib/kapak.mjs';
+import { KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
 
 interface Props {
+  lang: Locale;
+  slug: CategorySlug;
   page: Page<NewsEntry>;
   otherCount: number;
 }
 
-const { lang, slug } = Astro.params as { lang: Locale; slug: CategorySlug };
-const { page, otherCount } = Astro.props;
+const { lang, slug, page, otherCount } = Astro.props;
 const ui = SITE.ui[lang];
 const other = otherLocale(lang);
 const cat = getCategory(slug, lang);
@@ -47,7 +33,7 @@ const catOther = getCategory(slug, other);
 const posts = page.data;
 const n = page.currentPage;
 
-const basePath = (l: Locale) => `/${l}/kategori/${slug}/`;
+const basePath = (l: Locale) => getCategoryUrl(l, slug);
 const pagePath = (l: Locale, i: number) => (i <= 1 ? basePath(l) : `${basePath(l)}${i}/`);
 const canonicalPath = pagePath(lang, n);
 const otherHasPage = n === 1 || otherCount > (n - 1) * CATEGORY_PAGE_SIZE;

@@ -5,6 +5,7 @@
 import path from 'node:path';
 import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { haberYolu } from '../../src/lib/yollar.mjs';
 
 const HER = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(HER, '../..');
@@ -85,7 +86,7 @@ export function bultenMetni({ donem, dil, simdi, haberler }) {
       : `${haberler.length} stories in the ${ad.toLocaleLowerCase('en-US')} bulletin: ${basliklar.join('; ')}${haberler.length > 3 ? ' and more' : ''}.`;
   const baslik = bultenBasligi(donem, dil, simdi);
   const spot = dil === 'tr' ? 'Son bültenden bu yana yayımlanan haberler:' : 'Stories published since the last bulletin:';
-  const govde = haberler.map((h) => `- [${mdMetin(h.title)}](/${dil}/haber/${h.slug}/)`).join('\n');
+  const govde = haberler.map((h) => `- [${mdMetin(h.title)}](${haberYolu(dil, h.slug)})`).join('\n');
   const md = `---
 lang: ${dil}
 title: ${tirnak(baslik)}
