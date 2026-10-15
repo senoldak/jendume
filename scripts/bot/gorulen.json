@@ -371,7 +371,13 @@
     "kb7f905:2744066b02188856": "2026-10-15T16:51:04.644Z",
     "kaec085:e68fabf11a18bab5": "2026-10-15T16:51:04.644Z",
     "hf-blog:https://huggingface.co/blog/flux-3": "2026-10-15T16:51:04.644Z",
-    "k59b8ca:c9b691749d1c625e": "2026-10-15T16:51:04.644Z"
+    "k59b8ca:c9b691749d1c625e": "2026-10-15T16:51:04.644Z",
+    "k09feb3:ea85536072f875bb": "2026-10-15T18:51:16.653Z",
+    "hf-blog:https://huggingface.co/blog/meta-muse-spark-open": "2026-10-15T18:51:16.653Z",
+    "ke82007:f7c8706d3aad1b41": "2026-10-15T18:51:16.653Z",
+    "ke82007:4494168fcecae661": "2026-10-15T18:51:16.653Z",
+    "kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z",
+    "k09feb3:c8c2d2f8e1a27b2e": "2026-10-15T18:51:16.653Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -658,7 +664,9 @@
     "haber:bilgi-yonetimi-sistemleri-graf-tabanli-yapay-zeka-ile-hatasiz-calisiyor|kaec085:e68fabf11a18bab5": "2026-10-15T16:51:04.644Z",
     "haber:google-deepmind-internet-baglantisi-olmadan-cihazda-calisan-embeddinggemma-2-mod|kaec085:e68fabf11a18bab5": "2026-10-15T16:51:04.644Z",
     "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:e68fabf11a18bab5": "2026-10-15T16:51:04.644Z",
-    "k09feb3:4b6ae58ecd5b1d5e|k9f3ec7:25502f739a2d11ac": "2026-10-15T16:51:04.644Z"
+    "k09feb3:4b6ae58ecd5b1d5e|k9f3ec7:25502f739a2d11ac": "2026-10-15T16:51:04.644Z",
+    "haber:acik-kaynakli-isletim-sistemi-openkylin-yapay-zeka-caginda-linux-u-yeniden-tasar|kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z",
+    "haber:beyaz-saray-geri-adim-atti-ingiltere-yapay-zeka-guvenlik-enstitusu-sinir-modelle|kb7f905:f843dc44e6e6db4c": "2026-10-15T18:51:16.653Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -678,7 +686,8 @@
     "haber:character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy|k59b8ca:1d0e7e649a5bd01f": "2026-10-14T18:50:57.817Z",
     "haber:disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti|k59b8ca:1d0e7e649a5bd01f": "2026-10-14T18:50:57.817Z",
     "haber:yapay-zeka-botlari-dolandiricilari-telefondan-dusurmuyor|kb7f905:037d43c009be0626": "2026-10-14T18:50:57.817Z",
-    "k59b8ca:ab5a2e787ad8336f|kb7f905:8a37a3b7429e48e2": "2026-10-15T12:50:59.336Z"
+    "k59b8ca:ab5a2e787ad8336f|kb7f905:8a37a3b7429e48e2": "2026-10-15T12:50:59.336Z",
+    "haber:kurumsal-yapay-zeka-sistemlerinde-yonetim-ve-denetim-donemi|ke82007:4494168fcecae661": "2026-10-15T18:51:16.653Z"
   },
   "puan": {
     "k09feb3:17ca3c4d9820a9cc": {
@@ -1580,6 +1589,14 @@
     "hf-blog:https://huggingface.co/blog/flux-3": {
       "puan": 4,
       "zaman": "2026-10-15T16:51:04.644Z"
+    },
+    "kb7f905:f843dc44e6e6db4c": {
+      "puan": 0,
+      "zaman": "2026-10-15T18:51:16.653Z"
+    },
+    "k09feb3:c8c2d2f8e1a27b2e": {
+      "puan": 4,
+      "zaman": "2026-10-15T18:51:16.653Z"
     }
   },
   "yayinlanan": {
