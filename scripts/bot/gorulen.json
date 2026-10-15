@@ -384,7 +384,19 @@
     "k59b8ca:a55738375784fe0d": "2026-10-15T20:51:00.086Z",
     "kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
     "kb7f905:ae1a44a695e7f5df": "2026-10-15T20:51:00.086Z",
-    "kb7f905:0807c0f0f7267111": "2026-10-15T20:51:00.086Z"
+    "kb7f905:0807c0f0f7267111": "2026-10-15T20:51:00.086Z",
+    "kaec085:0d7b45c26bb2bcde": "2026-10-15T22:50:58.489Z",
+    "k59b8ca:35d582caa3a935eb": "2026-10-15T22:50:58.489Z",
+    "k59b8ca:1daca309daded5f1": "2026-10-15T22:50:58.489Z",
+    "k3595c8:d06ffdb28c3c0848": "2026-10-15T22:50:58.489Z",
+    "k59b8ca:ca1f2ea53e10df28": "2026-10-15T22:50:58.489Z",
+    "mit-news-ai:https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015": "2026-10-15T22:50:58.489Z",
+    "ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
+    "mit-news-ai:https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015": "2026-10-15T22:50:58.489Z",
+    "k59b8ca:f59aee6277eac810": "2026-10-15T22:50:58.489Z",
+    "ke82007:478c0a15ff0cbd41": "2026-10-15T22:50:58.489Z",
+    "k3595c8:24e9d26876bf9ed5": "2026-10-15T22:50:58.489Z",
+    "openai:https://openai.com/index/introducing-the-rosalind-academic-plan": "2026-10-15T22:50:58.489Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -687,7 +699,18 @@
     "haber:calisan-izleme-yazilimlari-yapay-zeka-ile-is-yerinde-baskiyi-artiriyor|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
     "haber:dijital-ikizler-gunluk-yasami-ve-beslenme-aliskanliklarini-yonlendiriyor|kb7f905:4d2fcbf361241007": "2026-10-15T20:51:00.086Z",
     "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z",
-    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z"
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k59b8ca:7b246e4329e80f81": "2026-10-15T20:51:00.086Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
+    "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k3595c8:d06ffdb28c3c0848": "2026-10-15T22:50:58.489Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|k3595c8:d06ffdb28c3c0848": "2026-10-15T22:50:58.489Z",
+    "haber:beyaz-saray-geri-adim-atti-ingiltere-yapay-zeka-guvenlik-enstitusu-sinir-modelle|k59b8ca:ca1f2ea53e10df28": "2026-10-15T22:50:58.489Z",
+    "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|k59b8ca:f59aee6277eac810": "2026-10-15T22:50:58.489Z",
+    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k59b8ca:f59aee6277eac810": "2026-10-15T22:50:58.489Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
+    "haber:meta-ve-sierra-yapay-zeka-ajanlari-icin-ortak-standart-belirliyor|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k3595c8:d06ffdb28c3c0848": "2026-10-15T22:50:58.489Z",
+    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|k3595c8:24e9d26876bf9ed5": "2026-10-15T22:50:58.489Z",
+    "k3595c8:d06ffdb28c3c0848|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1640,6 +1663,50 @@
     "kb7f905:ae1a44a695e7f5df": {
       "puan": 4,
       "zaman": "2026-10-15T20:51:00.086Z"
+    },
+    "k59b8ca:f59aee6277eac810": {
+      "puan": 4,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "k59b8ca:35d582caa3a935eb": {
+      "puan": 0,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "ke82007:5e69acd4bcd1e587": {
+      "puan": 5,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "k59b8ca:1daca309daded5f1": {
+      "puan": 0,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "ke82007:478c0a15ff0cbd41": {
+      "puan": 4,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "k3595c8:d06ffdb28c3c0848": {
+      "puan": 2,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "k59b8ca:ca1f2ea53e10df28": {
+      "puan": 2,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "k3595c8:24e9d26876bf9ed5": {
+      "puan": 4,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015": {
+      "puan": 0,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015": {
+      "puan": 5,
+      "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "openai:https://openai.com/index/introducing-the-rosalind-academic-plan": {
+      "puan": 4,
+      "zaman": "2026-10-15T22:50:58.489Z"
     }
   },
   "yayinlanan": {
@@ -1690,6 +1757,22 @@
     "gelecegin-teknolojisinde-uygulamalarin-yerini-yapay-zeka-aliyor": {
       "zaman": "2026-10-15T20:51:00.086Z",
       "basliklarSifreli": "v1.RfGb5zkfTQiwk4Ru.kLtZqC4iw9H2g3r5kJjsAj15ZYjQQq3Bxw3Ytb220WbrIhLDcghVzVu4mxENMiHtKWpfVkoP2xg26GBClpEnCjkXHsFezreVyVLy423ciobgK7EZEiTa5G8gSjB1pwy6c+9jhDi/xcPQQ5BIs+QmxQ=="
+    },
+    "acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir": {
+      "zaman": "2026-10-15T22:50:58.489Z",
+      "basliklarSifreli": "v1./k7ce6Z6hXaaLCEP./aViGi5wZuhrFrwx2AjqLUiiLZcP130mGTfpeTJNTUPMnsmW6Ht8Us1WCBhtVObgusitUgpOfFXJypLkmWCnI04RrgC+dBCCzkAGvGRiOu2dOMm9lgPRYAyh"
+    },
+    "hucreler-arasi-iletisimin-sifresini-cozen-yapay-zeka-modeli-gelistirildi": {
+      "zaman": "2026-10-15T22:50:58.489Z",
+      "basliklarSifreli": "v1.svlWP0RvENb9AmX5.SKcj3Ww9aftNczk3WmjIZig5nI4ZAHyxfK6hUFpAEVRphR3F4ZiMqRNWw3fh4d0SQMrw8CCP6vOImvt5asfolgMWmmPwE7t6DiY="
+    },
+    "fizik-temelli-yapay-zeka-cip-ve-donanim-tasarimini-hizlandiriyor": {
+      "zaman": "2026-10-15T22:50:58.489Z",
+      "basliklarSifreli": "v1.X0v1N4h+h8G7Hp5J.Zid1LBE4hKFwQuo6GcUEjUnFHorZ8PNoSdpBd3FuA3652QEot/pJZPYZBujYwpLzL3WIiJnyD7AdmSlfZvAqQROJStUIS9AWLtRxuvkalhEMoMJdtHo4xQ2n"
+    },
+    "yapay-zeka-modeli-polise-asilsiz-cinayet-ihbari-gonderdi": {
+      "zaman": "2026-10-15T22:50:58.489Z",
+      "basliklarSifreli": "v1.UHpQiJvTfGdl82E0.jFXNwyezfaA/M6NdIdjtyyMGJ68cdPh6mao1vf6c351LEDhQsBeuN6Pl7TU76K9PV8Uh+A1l7pBhZESxfPmJAzSwjFNICWS+h7U43/oT8Q=="
     }
   }
 }
