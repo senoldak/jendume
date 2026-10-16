@@ -408,13 +408,39 @@
     "k621881:60cb50e23a156266": "2026-10-16T10:50:53.610Z",
     "k621881:341c32fcc4d5fc3f": "2026-10-16T12:50:52.710Z",
     "k621881:d48adafe00811151": "2026-10-16T12:50:52.710Z",
-    "k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z"
+    "k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
+    "k621881:30a4110e332b40c4": "2026-10-16T14:50:56.066Z",
+    "k621881:02bccd75a2de7d95": "2026-10-16T14:50:56.066Z",
+    "k4f0fb7:76e55cef0ba38816": "2026-10-16T14:50:56.066Z",
+    "k4f0fb7:ab051e1647d3bcdd": "2026-10-16T14:50:56.066Z",
+    "k4f0fb7:9fc8ac50fa97b874": "2026-10-16T14:50:56.066Z",
+    "k621881:eb517b6a08bc8999": "2026-10-16T14:50:56.066Z",
+    "k4f0fb7:cbd20024cae71bf3": "2026-10-16T14:50:56.066Z",
+    "k09feb3:d5dd0cf97ec472d8": "2026-10-16T14:50:56.066Z",
+    "k9f3ec7:a3674b9eff199f2d": "2026-10-16T14:50:56.066Z",
+    "kb7f905:445d8c93dd4c60fc": "2026-10-16T14:50:56.066Z",
+    "k59b8ca:8692e1431576c97b": "2026-10-16T14:50:56.066Z",
+    "hf-blog:https://huggingface.co/blog/reflection-beam": "2026-10-16T14:50:56.066Z",
+    "k4f0fb7:f7c9a125459b5a55": "2026-10-16T14:50:56.066Z",
+    "kb7f905:f3ba24e86aa24fc5": "2026-10-16T14:50:56.066Z",
+    "k09feb3:a695ebca84689728": "2026-10-16T14:50:56.066Z",
+    "kb7f905:4702c5186b460efd": "2026-10-16T14:50:56.066Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
       "sayi": 1,
       "mesaj": "The operation was aborted due to timeout",
       "zaman": "2026-10-13T14:55:16.237Z"
+    },
+    "k4f0fb7:d644167ab36597e9": {
+      "sayi": 1,
+      "mesaj": "Gemini: çok fazla deneme",
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k09feb3:fde28594462689e7": {
+      "sayi": 1,
+      "mesaj": "Gemini: çok fazla deneme",
+      "zaman": "2026-10-16T14:50:56.066Z"
     }
   },
   "ayrik": {
@@ -732,7 +758,15 @@
     "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
     "haber:google-yapay-zeka-iceriklerini-taniyan-synthid-aracini-acti|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
     "haber:anthropic-yapay-zeka-ajanlarinin-internet-erisimini-kesti|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
-    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z"
+    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
+    "haber:acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir|k59b8ca:8692e1431576c97b": "2026-10-16T14:50:56.066Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k59b8ca:8692e1431576c97b": "2026-10-16T14:50:56.066Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|k59b8ca:8692e1431576c97b": "2026-10-16T14:50:56.066Z",
+    "haber:spacex-super-intelligence-grok-ve-cursor-u-tek-pakette-birlestirdi|k9f3ec7:a3674b9eff199f2d": "2026-10-16T14:50:56.066Z",
+    "haber:kurumsal-yapay-zeka-sistemlerinde-yonetim-ve-denetim-donemi|k4f0fb7:d644167ab36597e9": "2026-10-16T14:50:56.066Z",
+    "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|k09feb3:a695ebca84689728": "2026-10-16T14:50:56.066Z",
+    "haber:block-yapay-zeka-destekli-guvenlik-sistemiyle-aciklari-dakikalar-icinde-kapatiyo|k09feb3:a695ebca84689728": "2026-10-16T14:50:56.066Z",
+    "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|k09feb3:a695ebca84689728": "2026-10-16T14:50:56.066Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1761,6 +1795,46 @@
     "k3595c8:a804d9740a40d2a8": {
       "puan": 0,
       "zaman": "2026-10-16T12:50:52.710Z"
+    },
+    "kb7f905:f3ba24e86aa24fc5": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k59b8ca:8692e1431576c97b": {
+      "puan": 5,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k9f3ec7:a3674b9eff199f2d": {
+      "puan": 0,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "kb7f905:445d8c93dd4c60fc": {
+      "puan": 0,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k09feb3:fde28594462689e7": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k4f0fb7:d644167ab36597e9": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k4f0fb7:f7c9a125459b5a55": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "k09feb3:a695ebca84689728": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "kb7f905:4702c5186b460efd": {
+      "puan": 4,
+      "zaman": "2026-10-16T14:50:56.066Z"
+    },
+    "hf-blog:https://huggingface.co/blog/reflection-beam": {
+      "puan": 5,
+      "zaman": "2026-10-16T14:50:56.066Z"
     }
   },
   "yayinlanan": {
@@ -1843,6 +1917,14 @@
     "north-bulut-ve-yapay-zeka-maliyet-yonetimi-icin-60-milyon-dolar-yatirim-aldi": {
       "zaman": "2026-10-16T10:50:53.610Z",
       "basliklarSifreli": "v1.lJZqAz3eFg5VZo6S.7pv964TauLSjxibAEUkgzII93HKJfOgcN4bFnFovMHE2D8I/2/ffrswzFrPQmaJNOnuEBnD9LVIDHbwWL+aps2wQZsQXz/qbgegtPSiGNV1OuZskeiefIf6nbmBSI8B4RgDDK+YuALF3Pg=="
+    },
+    "signals-corps-web-sitelerinde-dolayli-prompt-injection-tehdidini-ortaya-cikardi": {
+      "zaman": "2026-10-16T14:50:56.066Z",
+      "basliklarSifreli": "v1.GAQzQokkkcnWfLz3.pcaiH91c2epuqEpYixnQV8MhwulGcwvJHNC3PbnSiwVZEcaIMJpnkA7W3xWqQrIhNFzd5jl5SYzbEPVahrM2I23O2V579bPAeHOcMsqjA3n2b6UiTLf6QMqZkg=="
+    },
+    "mark-wahlberg-sinema-sektorunde-yapay-zekanin-dogru-kullanimini-savundu": {
+      "zaman": "2026-10-16T14:50:56.066Z",
+      "basliklarSifreli": "v1.B/xO3oJ7+gcGETF9.K0DrWqSOy+StZ/DD+sHsh16Nik3nq6GH6LiWrSqN6u0hcPjzJhi2Bf1PQmW4ts0fxZt+yseaCNf8cMDm15Vbj14RvaNIg/WSYpR4ezOPljiwg+mGsb4ZNtJarnAOH9GeQFs9kPKhvPAa/YWF2/y70I7Wn9DoL8qGP9zAKROD"
     }
   }
 }
