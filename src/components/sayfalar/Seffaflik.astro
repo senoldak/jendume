@@ -1,0 +1,261 @@
+---
+// Şeffaflık / Transparency; yollar: src/pages/tr/seffaflik.astro, src/pages/en/transparency.astro.
+// Haber botunun taradığı ve yayımladığı içerik; resmi olmayan kaynakların adı geçmez.
+import Base from '../../layouts/Base.astro';
+import { SITE, editorialUrl, type Locale } from '../../lib/site';
+import { getPublishedPosts } from '../../lib/news';
+import { seffaflikVerisi } from '../../lib/seffaflik.mjs';
+import { seffaflikYolu } from '../../lib/yollar.mjs';
+import durum from '../../../scripts/bot/gorulen.json';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const tr = lang === 'tr';
+// Her haber iki dilde yayımlanır; sayım Türkçe koleksiyondan yapılır.
+const haberler = (await getPublishedPosts('tr')).map((h) => ({ date: h.data.date }));
+const v = seffaflikVerisi(haberler, durum.gorulen, { simdi: new Date() });
+
+const yerel = tr ? 'tr-TR' : 'en-GB';
+const sayi = (n: number) => n.toLocaleString(yerel);
+const gunAdi = (g: string) =>
+  new Date(`${g}T12:00:00Z`).toLocaleDateString(yerel, { day: 'numeric', month: 'short', timeZone: 'Europe/Istanbul' });
+
+const T = tr
+  ? {
+      baslik: 'Şeffaflık',
+      aciklama: 'JEN DUME haber botunun son günlerde taradığı içerik, yayımladığı haber ve kullandığı kaynak türleri.',
+      giris:
+        'Haberlerimizi yapay zekâ desteğiyle çalışan bir haber botu hazırlıyor. Bu sayfa botun kaç adayı değerlendirdiğini ve kaç iki dilli haber yayımlandığını gösterir. Veriler her yayında güncellenir.',
+      taranan: 'Değerlendirilen aday',
+      yayinlanan: 'Yayımlanan haber',
+      kaynak: 'Kaynak',
+      donem: `Son ${v.gunSayisi} gün: ${gunAdi(v.ilkGun)} – ${gunAdi(v.sonGun)}. Her haber Türkçe ve İngilizce yayımlanır; sayı bir kez sayılır.`,
+      gunlukBaslik: 'Günlük yayımlanan haber',
+      tablo: 'Tablo olarak göster',
+      gun: 'Gün',
+      kaynakBaslik: 'Değerlendirilen adayların kaynağı',
+      tur: 'Kaynak türü',
+      resmi: 'Laboratuvarlar, şirketler ve kurumların kendi duyuruları',
+      yayin: 'Haber siteleri, dergiler ve bloglar',
+      not: 'Laboratuvar ve kurum duyuruları haberin altında kaynak olarak bağlanır. Haber sitelerinin ve yayınların adlarını yayımlamıyoruz; onları kopyalamıyor, olguları karşılaştırıp kendi dilimizle yazıyoruz.',
+      ilkeler: 'Yayın İlkeleri',
+      ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
+        `${gunAdi(g.gun)}: ${g.yayinlanan} haber, ${sayi(g.taranan)} aday değerlendirildi`,
+    }
+  : {
+      baslik: 'Transparency',
+      aciklama: 'How much the JEN DUME news bot scanned, how many stories it published, and which kinds of sources it used.',
+      giris:
+        'Our stories are prepared by a news bot that works with AI assistance. This page shows how many candidate items the bot evaluated and how many bilingual stories were published. The figures update with every build.',
+      taranan: 'Items evaluated',
+      yayinlanan: 'Stories published',
+      kaynak: 'Sources',
+      donem: `Last ${v.gunSayisi} days: ${gunAdi(v.ilkGun)} – ${gunAdi(v.sonGun)}. Each story appears in English and Turkish; it is counted once.`,
+      gunlukBaslik: 'Stories published per day',
+      tablo: 'Show as table',
+      gun: 'Day',
+      kaynakBaslik: 'Where the evaluated items come from',
+      tur: 'Source type',
+      resmi: 'Announcements from AI labs, companies and institutions',
+      yayin: 'News sites, magazines and blogs',
+      not: 'Lab and institution announcements are linked as sources under each story. We do not publish the names of news sites and publications; we do not copy them, we compare the facts and write the story ourselves.',
+      ilkeler: 'Editorial Standards',
+      ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
+        `${gunAdi(g.gun)}: ${g.yayinlanan} stories, ${sayi(g.taranan)} items evaluated`,
+    };
+
+// Çubuk grafiği SVG: yükseklikler öznitelikle verilir (CSP satır içi stile izin vermez).
+const ADIM = 44;
+const CUBUK = 26;
+const enCok = Math.max(1, ...v.gunluk.map((g) => g.yayinlanan));
+const G = {
+  genislik: v.gunluk.length * ADIM,
+  cubuklar: v.gunluk.map((g, i) => {
+    const x = i * ADIM + (ADIM - CUBUK) / 2;
+    const h = Math.max(2, (g.yayinlanan / enCok) * 150);
+    const ust = 176 - h;
+    const r = Math.min(4, h / 2);
+    return {
+      x,
+      orta: x + CUBUK / 2,
+      ust,
+      deger: g.yayinlanan,
+      gun: gunAdi(g.gun),
+      etiketli: v.gunluk.length <= 10 || i % 2 === 0,
+      ipucu: T.ipucu(g),
+      yol: `M${x},176 V${ust + r} Q${x},${ust} ${x + r},${ust} H${x + CUBUK - r} Q${x + CUBUK},${ust} ${x + CUBUK},${ust + r} V176 Z`,
+    };
+  }),
+};
+---
+
+<Base lang={lang} title={T.baslik} description={T.aciklama} canonicalPath={seffaflikYolu(lang)}
+  langUrls={{ tr: seffaflikYolu('tr'), en: seffaflikYolu('en') }}
+  alternates={{ tr: seffaflikYolu('tr'), en: seffaflikYolu('en'), 'x-default': seffaflikYolu('en') }}
+>
+  <article class="article seffaflik">
+    <header class="article-header">
+      <h1>{T.baslik}</h1>
+      <p class="giris">{T.giris}</p>
+    </header>
+
+    <dl class="buyuk">
+      <div><dt>{T.taranan}</dt><dd>{sayi(v.taranan)}</dd></div>
+      <div><dt>{T.yayinlanan}</dt><dd>{sayi(v.yayinlanan)}</dd></div>
+      <div><dt>{T.kaynak}</dt><dd>{v.kaynakSayisi}</dd></div>
+    </dl>
+    <p class="not">{T.donem}</p>
+
+    <section aria-labelledby="gunluk">
+      <h2 id="gunluk">{T.gunlukBaslik}</h2>
+      <svg class="cubuklar" viewBox={`0 0 ${G.genislik} 200`} width={G.genislik} height="200" role="img" aria-labelledby="gunluk">
+        <line class="taban" x1="0" x2={G.genislik} y1="176" y2="176" />
+        {
+          G.cubuklar.map((c) => (
+            <g class="cubuk">
+              <title>{c.ipucu}</title>
+              <rect class="isabet" x={c.x - 6} y="0" width={CUBUK + 12} height="200" />
+              <path class="dolgu" d={c.yol} />
+              <text class="deger" x={c.orta} y={c.ust - 6}>{c.deger}</text>
+              {c.etiketli && <text class="gun" x={c.orta} y="192">{c.gun}</text>}
+            </g>
+          ))
+        }
+      </svg>
+      <details class="tablo">
+        <summary>{T.tablo}</summary>
+        <table>
+          <thead><tr><th scope="col">{T.gun}</th><th scope="col">{T.taranan}</th><th scope="col">{T.yayinlanan}</th></tr></thead>
+          <tbody>{v.gunluk.map((g) => <tr><th scope="row">{gunAdi(g.gun)}</th><td>{sayi(g.taranan)}</td><td>{g.yayinlanan}</td></tr>)}</tbody>
+        </table>
+      </details>
+    </section>
+
+    <section aria-labelledby="kaynaklar">
+      <h2 id="kaynaklar">{T.kaynakBaslik}</h2>
+      <table>
+        <thead><tr><th scope="col">{T.tur}</th><th scope="col">{T.kaynak}</th><th scope="col">{T.taranan}</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">{T.yayin}</th><td>{v.yayin.kaynak}</td><td>{sayi(v.yayin.taranan)}</td></tr>
+          <tr><th scope="row">{T.resmi}</th><td>{v.resmi.kaynak}</td><td>{sayi(v.resmi.taranan)}</td></tr>
+        </tbody>
+      </table>
+      <p class="not">{T.not} <a href={editorialUrl(lang)}>{T.ilkeler}</a></p>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .seffaflik {
+    max-width: 760px;
+  }
+  .seffaflik section {
+    margin-top: 40px;
+  }
+  .seffaflik h2 {
+    font-family: var(--font-sign);
+    font-size: 1.2rem;
+    margin: 0 0 14px;
+  }
+  .giris {
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .buyuk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    margin: 8px 0 0;
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--hair);
+    font-family: var(--font-sign);
+  }
+  .buyuk div {
+    padding: 14px 14px 14px 0;
+  }
+  .buyuk dt {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .buyuk dd {
+    margin: 4px 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .not {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .cubuklar {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    font-family: var(--font-sign);
+  }
+  .taban {
+    stroke: var(--hair);
+  }
+  .isabet {
+    fill: transparent;
+  }
+  .dolgu {
+    fill: var(--sign);
+  }
+  .cubuk:hover .dolgu {
+    fill: var(--muted);
+  }
+  .deger,
+  .gun {
+    text-anchor: middle;
+    font-variant-numeric: tabular-nums;
+  }
+  .deger {
+    font-size: 12px;
+    fill: var(--ink);
+  }
+  .gun {
+    font-size: 11px;
+    fill: var(--muted);
+  }
+  .tablo {
+    margin-top: 16px;
+    font-size: 0.9rem;
+  }
+  .tablo summary {
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sign);
+    font-size: 0.92rem;
+    font-variant-numeric: tabular-nums;
+    margin-top: 10px;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 8px 10px 8px 0;
+    border-bottom: 1px solid var(--hair);
+  }
+  thead th {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td,
+  thead th:not(:first-child) {
+    text-align: right;
+  }
+  th[scope='row'] {
+    font-weight: 500;
+  }
+</style>
