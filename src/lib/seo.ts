@@ -3,6 +3,9 @@ import { SITE, getCategory, type Locale } from './site';
 import { getCategoryUrl, getPostUrl, type NewsEntry } from './news';
 import { matchEntities } from './entities';
 import { KAPAK_G, KAPAK_Y, LOGO_G, LOGO_Y } from '../kapak/ciz';
+import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu } from './yollar.mjs';
+import type { Terim } from '../data/sozluk/tip';
+import type { Konu } from './konular';
 
 export const abs = (path: string) => new URL(path, SITE.url).href;
 
@@ -135,9 +138,11 @@ export function collectionGraph(
   path: string,
   posts: NewsEntry[],
   breadcrumb: Crumb[] = [homeCrumb(lang), { name, path }],
+  extra: Record<string, unknown> = {},
 ) {
   return [
     {
+      ...extra,
       '@type': 'CollectionPage',
       '@id': `${abs(path)}#webpage`,
       url: abs(path),
@@ -156,5 +161,85 @@ export function collectionGraph(
       },
     },
     crumbs(breadcrumb),
+  ];
+}
+
+// --- Konu sayfaları (src/lib/konular.ts) ---
+
+export function topicsIndexCrumbs(lang: Locale): Crumb[] {
+  return [homeCrumb(lang), { name: SITE.ui[lang].topics, path: konuDiziniYolu(lang) }];
+}
+
+export function topicCrumbs(lang: Locale, konu: Konu, page = 1, pagePath?: string): Crumb[] {
+  const items = [...topicsIndexCrumbs(lang), { name: konu.ad, path: konuYolu(lang, konu.slug) }];
+  if (page > 1 && pagePath) items.push({ name: `${SITE.ui[lang].page} ${page}`, path: pagePath });
+  return items;
+}
+
+/** Konu sayfasının "about" düğümü: şirket → Organization, model/asistan → Thing (sameAs verilmez; doğrulanmamış kimlik yazılmaz). */
+export function topicAbout(konu: Konu) {
+  return { about: { '@type': konu.tur === 'sirket' ? 'Organization' : 'Thing', name: konu.ad } };
+}
+
+// --- Sözlük (src/data/sozluk) ---
+
+const termSetId = (lang: Locale) => `${abs(sozlukYolu(lang))}#set`;
+
+export function glossaryCrumbs(lang: Locale, terim?: Terim): Crumb[] {
+  const items = [homeCrumb(lang), { name: SITE.ui[lang].glossary, path: sozlukYolu(lang) }];
+  if (terim) items.push({ name: terim[lang].ad, path: terimYolu(lang, terim.id) });
+  return items;
+}
+
+export function definedTermSetGraph(lang: Locale, terimler: Terim[]) {
+  const ui = SITE.ui[lang];
+  return [
+    {
+      '@type': 'DefinedTermSet',
+      '@id': termSetId(lang),
+      url: abs(sozlukYolu(lang)),
+      name: `${ui.glossary} — ${SITE.displayName}`,
+      description: ui.glossaryDesc,
+      inLanguage: SITE.localeTag[lang],
+      isPartOf: { '@id': WEBSITE_ID },
+      publisher: { '@id': ORG_ID },
+      hasDefinedTerm: terimler.map((t) => ({
+        '@type': 'DefinedTerm',
+        '@id': `${abs(terimYolu(lang, t.id))}#term`,
+        name: t[lang].ad,
+        url: abs(terimYolu(lang, t.id)),
+      })),
+    },
+    crumbs(glossaryCrumbs(lang)),
+  ];
+}
+
+export function definedTermGraph(lang: Locale, terim: Terim) {
+  const b = terim[lang];
+  const url = abs(terimYolu(lang, terim.id));
+  const node: Record<string, unknown> = {
+    '@type': 'DefinedTerm',
+    '@id': `${url}#term`,
+    name: b.ad,
+    description: b.ozet,
+    url,
+    inLanguage: SITE.localeTag[lang],
+    inDefinedTermSet: { '@type': 'DefinedTermSet', '@id': termSetId(lang), url: abs(sozlukYolu(lang)) },
+  };
+  if (b.kisaltma) node.alternateName = b.kisaltma;
+  return [
+    node,
+    {
+      '@type': 'WebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: b.ad,
+      description: b.ozet,
+      inLanguage: SITE.localeTag[lang],
+      isPartOf: { '@id': WEBSITE_ID },
+      publisher: { '@id': ORG_ID },
+      mainEntity: { '@id': `${url}#term` },
+    },
+    crumbs(glossaryCrumbs(lang, terim)),
   ];
 }

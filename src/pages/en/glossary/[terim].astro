@@ -1,0 +1,10 @@
+---
+import TerimSayfasi from '../../../components/sayfalar/TerimSayfasi.astro';
+import { terimYollari } from '../../../lib/rotalar';
+
+export const getStaticPaths = () => terimYollari('en');
+
+const { id } = Astro.props as { id: string };
+---
+
+<TerimSayfasi lang="en" id={id} />

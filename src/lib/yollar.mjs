@@ -5,6 +5,8 @@
 // (/en/haber/…, /en/kategori/…, /en/hakkimizda/) public/_redirects ile 301 yönlenir.
 // Ortak yardımcı: src/lib/news.ts (sayfalar), src/layouts/Base.astro (dil değiştirici) ve astro.config.mjs (site haritası).
 
+import { TERIMLER } from '../data/sozluk/index.mjs';
+
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
@@ -41,12 +43,11 @@ export const hakkimizdaYolu = (dil) => `/${dil}/${YOL[dil].hakkimizda}/`;
 
 /**
  * Bir dildeki yolun öteki dildeki karşılığı (sayfanın var olup olmadığına bakmaz).
- * Bilinmeyen yollarda yalnız dil öneki değişir. Konu ve sözlük yolları ek eşleme alabilir (`ekParca`).
+ * Bilinmeyen yollarda yalnız dil öneki değişir. Konu slug'ları iki dilde aynıdır; sözlük terimleri dile göre değişir.
  * @param {string} yol ör. "/en/category/ai/2/"
  * @param {Dil} hedef
- * @param {(tur: string, kaynakDil: Dil, parca: string, hedef: Dil) => string | undefined} [ekParca]
  */
-export function karsiYol(yol, hedef, ekParca) {
+export function karsiYol(yol, hedef) {
   const m = /^\/(tr|en)(\/.*)?$/.exec(yol);
   if (!m) return yol;
   const kaynak = /** @type {Dil} */ (m[1]);
@@ -59,10 +60,23 @@ export function karsiYol(yol, hedef, ekParca) {
       if (tur === 'kategori') {
         const kimlik = kategoriKimligi(kaynak, parcalar[2]);
         if (kimlik) parcalar[2] = kategoriParcasi(hedef, kimlik);
-      } else if (ekParca) {
-        parcalar[2] = ekParca(tur, kaynak, parcalar[2], hedef) ?? parcalar[2];
+      } else if (tur === 'sozluk') {
+        const terim = TERIMLER.find((t) => t[kaynak].slug === parcalar[2]);
+        if (terim) parcalar[2] = terim[hedef].slug;
       }
     }
   }
   return `/${hedef}${parcalar.join('/')}`;
 }
+
+/** @param {Dil} dil @param {string} slug */
+export const konuYolu = (dil, slug) => `/${dil}/${YOL[dil].konu}/${slug}/`;
+/** @param {Dil} dil */
+export const konuDiziniYolu = (dil) => `/${dil}/${YOL[dil].konu}/`;
+/** @param {Dil} dil @param {string} id terim kimliği (src/data/sozluk) */
+export function terimYolu(dil, id) {
+  const terim = TERIMLER.find((t) => t.id === id);
+  return `/${dil}/${YOL[dil].sozluk}/${terim ? terim[dil].slug : id}/`;
+}
+/** @param {Dil} dil */
+export const sozlukYolu = (dil) => `/${dil}/${YOL[dil].sozluk}/`;

@@ -1,0 +1,78 @@
+---
+// Sözlük dizini: /tr/sozluk/, /en/glossary/ — terimler dilin alfabesine göre harf gruplarında (JSON-LD DefinedTermSet).
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { definedTermSetGraph, glossaryCrumbs } from '../../lib/seo';
+import { TERIMLER } from '../../lib/sozluk.mjs';
+import { sozlukYolu, terimYolu } from '../../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const yerel = SITE.localeTag[lang];
+const sirali = [...TERIMLER].sort((a, b) => a[lang].ad.localeCompare(b[lang].ad, yerel));
+const gruplar: { harf: string; terimler: typeof sirali }[] = [];
+for (const t of sirali) {
+  const harf = t[lang].ad.charAt(0).toLocaleUpperCase(yerel);
+  const son = gruplar.at(-1);
+  if (son && son.harf === harf) son.terimler.push(t);
+  else gruplar.push({ harf, terimler: [t] });
+}
+const path = sozlukYolu(lang);
+---
+
+<Base
+  lang={lang}
+  title={ui.glossary}
+  description={ui.glossaryDesc}
+  canonicalPath={path}
+  langUrls={{ tr: sozlukYolu('tr'), en: sozlukYolu('en') }}
+  alternates={{ tr: sozlukYolu('tr'), en: sozlukYolu('en'), 'x-default': sozlukYolu('en') }}
+  schema={definedTermSetGraph(lang, sirali)}
+>
+  <Breadcrumb lang={lang} items={glossaryCrumbs(lang)} />
+  <header class="section-sign">
+    <span class="code" aria-hidden="true">{ui.glossary.charAt(0)}</span>
+    <h1>
+      {ui.glossary}
+      <span lang={other}>{SITE.ui[other].glossary}</span>
+    </h1>
+    <p class="section-desc">{ui.glossaryDesc}</p>
+  </header>
+
+  <nav class="letter-index" aria-label={ui.allTerms}>
+    <ul>
+      {gruplar.map((g) => (
+        <li><a href={`#harf-${g.harf}`}>{g.harf}</a></li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="glossary">
+    {
+      gruplar.map((g) => (
+        <section class="glossary-group" id={`harf-${g.harf}`} aria-labelledby={`harf-${g.harf}-baslik`}>
+          <h2 class="glossary-letter" id={`harf-${g.harf}-baslik`}>
+            <span class="code">{g.harf}</span>
+          </h2>
+          <ul class="term-list">
+            {g.terimler.map((t) => (
+              <li>
+                <a class="term-name" href={terimYolu(lang, t.id)}>
+                  {t[lang].ad}
+                  {t[lang].kisaltma && !t[lang].ad.includes(t[lang].kisaltma!) && <span class="term-abbr">{t[lang].kisaltma}</span>}
+                </a>
+                <p class="term-summary">{t[lang].ozet}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

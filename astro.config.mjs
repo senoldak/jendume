@@ -5,6 +5,8 @@ import path from 'node:path';
 import { dizinlenir } from './src/lib/kalite.mjs';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './src/lib/kapak.mjs';
 import { haberYolu, karsiYol } from './src/lib/yollar.mjs';
+import { sozlukEklentisi } from './src/lib/sozluk.mjs';
+import { satteri } from '@astrojs/markdown-satteri';
 
 const SITE = 'https://jendume.com';
 
@@ -127,6 +129,10 @@ export default defineConfig({
       prefixDefaultLocale: true,
       redirectToDefaultLocale: false,
     },
+  },
+  // Haber gövdesinde sözlük terimlerinin ilk geçişi sözlük sayfasına bağlanır (haber başına en fazla 3; src/lib/sozluk.mjs).
+  markdown: {
+    processor: satteri({ mdastPlugins: [sozlukEklentisi()] }),
   },
   build: {
     format: 'directory',

@@ -42,3 +42,15 @@ test('public/_redirects: dinamik kurallar dosyanın sonunda, sınırların altı
     assert.ok(satirlar.includes(`/en/kategori/${tr}/* /en/category/${en}/:splat 301`), tr);
   }
 });
+
+test('konu ve sözlük yolları; sözlük terimi öteki dilde kendi slug’ına çevrilir', async () => {
+  const { konuYolu, terimYolu, sozlukYolu, konuDiziniYolu } = await import('./yollar.mjs');
+  assert.equal(konuYolu('tr', 'openai'), '/tr/konu/openai/');
+  assert.equal(konuYolu('en', 'openai'), '/en/topic/openai/');
+  assert.equal(konuDiziniYolu('en'), '/en/topic/');
+  assert.equal(sozlukYolu('tr'), '/tr/sozluk/');
+  assert.equal(terimYolu('tr', 'context-window'), '/tr/sozluk/baglam-penceresi/');
+  assert.equal(terimYolu('en', 'context-window'), '/en/glossary/context-window/');
+  assert.equal(karsiYol('/tr/sozluk/baglam-penceresi/', 'en'), '/en/glossary/context-window/');
+  assert.equal(karsiYol('/en/topic/claude/2/', 'tr'), '/tr/konu/claude/2/');
+});
