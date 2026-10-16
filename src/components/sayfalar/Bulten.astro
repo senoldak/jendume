@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import BultenFormu from '../BultenFormu.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { bultenYolu } from '../../lib/yollar.mjs';
+
+// Bülten sayfası; yollar: src/pages/tr/bulten.astro, src/pages/en/newsletter.astro.
+// Durum kutuları (data-durum) gizli başlar; /bulten.js ?durum= değerine göre birini gösterir. JS kapalıysa genel açıklama yeter.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const description =
+  lang === 'tr'
+    ? 'Haftalık yapay zekâ bülteni: her pazartesi, o hafta yayımlanan haberlerin seçkisi. Abone olun ve gelen onay bağlantısıyla aboneliğinizi tamamlayın.'
+    : 'Weekly AI bulletin: every Monday, a selection of the stories published that week. Subscribe, then confirm with the link we send you.';
+const durumlar = [
+  { kod: 'kontrol', baslik: ui.bultenKontrolBaslik, metin: ui.bultenKontrolMetin },
+  { kod: 'onaylandi', baslik: ui.bultenOnayBaslik, metin: ui.bultenOnayMetin },
+  { kod: 'gecersiz', baslik: ui.bultenGecersizBaslik, metin: ui.bultenGecersizMetin },
+  { kod: 'ayrildi', baslik: ui.bultenAyrildiBaslik, metin: ui.bultenAyrildiMetin },
+  { kod: 'kapali', baslik: ui.bultenKapaliBaslik, metin: ui.bultenKapaliMetin },
+];
+---
+
+<Base
+  lang={lang}
+  title={ui.bultenBaslik}
+  description={description}
+  canonicalPath={bultenYolu(lang)}
+  langUrls={{ tr: bultenYolu('tr'), en: bultenYolu('en') }}
+  alternates={{ tr: bultenYolu('tr'), en: bultenYolu('en'), 'x-default': bultenYolu('en') }}
+>
+  <article class="article">
+    <div class="prose bulten-sayfa">
+      <header class="article-header">
+        <h1 class="article-title">{ui.bultenBaslik}</h1>
+      </header>
+      <p>{ui.bultenAciklama}</p>
+      <p class="bulten-genel">{ui.bultenGenel}</p>
+      {
+        durumlar.map((d) => (
+          <section class="bulten-durum" data-durum={d.kod} hidden tabindex="-1" role="status">
+            <h2>{d.baslik}</h2>
+            <p>{d.metin}</p>
+          </section>
+        ))
+      }
+      <BultenFormu lang={lang} kimlik="sayfa" />
+    </div>
+  </article>
+  <script is:inline src="/bulten.js" defer></script>
+</Base>

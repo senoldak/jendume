@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', bulten: 'bulten', gizlilik: 'gizlilik' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', bulten: 'newsletter', gizlilik: 'privacy' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */
@@ -80,3 +80,8 @@ export function terimYolu(dil, id) {
 }
 /** @param {Dil} dil */
 export const sozlukYolu = (dil) => `/${dil}/${YOL[dil].sozluk}/`;
+
+/** @param {Dil} dil */
+export const bultenYolu = (dil) => `/${dil}/${YOL[dil].bulten}/`;
+/** @param {Dil} dil */
+export const gizlilikYolu = (dil) => `/${dil}/${YOL[dil].gizlilik}/`;

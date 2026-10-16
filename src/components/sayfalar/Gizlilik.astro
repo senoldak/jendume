@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { gizlilikYolu } from '../../lib/yollar.mjs';
+
+// Gizlilik sayfası; yollar: src/pages/tr/gizlilik.astro, src/pages/en/privacy.astro.
+// Metin yalnız sitede gerçekte yapılanı anlatır (bülten kayıtları, Cloudflare, Resend).
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const description =
+  lang === 'tr'
+    ? 'JEN DUME gizlilik bildirimi: bülten için hangi e-posta verisinin tutulduğu, nerede saklandığı ve nasıl silindiği.'
+    : 'JEN DUME privacy notice: what email data we keep for the bulletin, where it is stored, and how it is deleted.';
+---
+
+<Base
+  lang={lang}
+  title={ui.privacy}
+  description={description}
+  canonicalPath={gizlilikYolu(lang)}
+  langUrls={{ tr: gizlilikYolu('tr'), en: gizlilikYolu('en') }}
+  alternates={{ tr: gizlilikYolu('tr'), en: gizlilikYolu('en'), 'x-default': gizlilikYolu('en') }}
+>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="article-title">Gizlilik</h1>
+          </header>
+          <p>
+            Bu sayfa JEN DUME bülteni için hangi kişisel veriyi tuttuğumuzu ve bunu nasıl yaptığımızı anlatır. Bülten
+            dışında, sitede yalnızca aşağıda belirtilen site ölçümü yapılır.
+          </p>
+
+          <h2>Bülten için ne tutuyoruz?</h2>
+          <ul>
+            <li>E-posta adresiniz.</li>
+            <li>Abone olduğunuz dil (Türkçe ya da İngilizce).</li>
+            <li>Aboneliğinizin durumu: onay bekliyor ya da onaylı.</li>
+            <li>Onay ve ayrılma bağlantıları için rastgele bir kimlik ve kayıt zamanları.</li>
+          </ul>
+          <p>IP adresinizi ya da tarayıcı bilgilerinizi bülten için saklamıyoruz.</p>
+
+          <h2>Verileriniz nerede tutulur?</h2>
+          <p>
+            E-posta adresleri ve abonelik kayıtları Cloudflare D1 veritabanında saklanır; veritabanı AB yargı
+            bölgesindedir. Bülten e-postaları Resend üzerinden gönderilir.
+          </p>
+
+          <h2>Ne zaman silinir?</h2>
+          <ul>
+            <li>Bültenden ayrıldığınızda e-posta adresiniz ve abonelik kaydınız silinir.</li>
+            <li>Onay bağlantısını 7 gün içinde açmazsanız kayıt silinir.</li>
+          </ul>
+
+          <h2>Nasıl ayrılırsınız?</h2>
+          <p>Her bülten e-postasında bir ayrılma bağlantısı bulunur; bağlantıya tıklayıp onayladığınızda abonelik biter.</p>
+
+          <h2>Site ölçümü</h2>
+          <p>
+            Site ziyaretleri için Cloudflare Web Analytics kullanılır. Bu ölçüm çerez kullanmaz; bülten aboneliğinizle
+            bağlantılandırılmaz.
+          </p>
+
+          <h2>İletişim</h2>
+          <p>
+            Veri talepleri ve düzeltmeler için: <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </p>
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="article-title">Privacy</h1>
+          </header>
+          <p>
+            This page explains which personal data we keep for the JEN DUME bulletin and how we handle it. Apart from
+            the bulletin, the site only uses the analytics described below.
+          </p>
+
+          <h2>What we keep for the bulletin</h2>
+          <ul>
+            <li>Your email address.</li>
+            <li>The language you subscribed in (Turkish or English).</li>
+            <li>Your subscription status: awaiting confirmation or confirmed.</li>
+            <li>A random identifier for the confirmation and unsubscribe links, and the times the record was created.</li>
+          </ul>
+          <p>We do not keep your IP address or browser information for the bulletin.</p>
+
+          <h2>Where the data is stored</h2>
+          <p>
+            Email addresses and subscription records are stored in a Cloudflare D1 database located in the European
+            Union. Bulletin emails are sent through Resend.
+          </p>
+
+          <h2>When it is deleted</h2>
+          <ul>
+            <li>When you unsubscribe, your email address and subscription record are deleted.</li>
+            <li>If you do not open the confirmation link within 7 days, the record is deleted.</li>
+          </ul>
+
+          <h2>How to unsubscribe</h2>
+          <p>Every bulletin email contains an unsubscribe link; when you open it and confirm, your subscription ends.</p>
+
+          <h2>Site analytics</h2>
+          <p>
+            We use Cloudflare Web Analytics to measure site visits. This measurement does not use cookies and is not
+            linked to your bulletin subscription.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            For data requests and corrections: <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </p>
+        </div>
+      )
+    }
+  </article>
+</Base>
