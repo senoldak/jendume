@@ -404,7 +404,8 @@
     "kaec085:b418700f5212100c": "2026-10-16T06:50:51.629Z",
     "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": "2026-10-16T06:50:51.629Z",
     "kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
-    "kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z"
+    "kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z",
+    "k621881:60cb50e23a156266": "2026-10-16T10:50:53.610Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -1746,6 +1747,10 @@
     "kaec085:5e67c927f52c7bc2": {
       "puan": 5,
       "zaman": "2026-10-16T08:50:53.507Z"
+    },
+    "k621881:60cb50e23a156266": {
+      "puan": 4,
+      "zaman": "2026-10-16T10:50:53.610Z"
     }
   },
   "yayinlanan": {
@@ -1824,6 +1829,10 @@
     "liquid-ai-d1-ultra-adini-tasiyan-yeni-cok-modlu-karar-modelini-duyurdu": {
       "zaman": "2026-10-16T08:50:53.507Z",
       "basliklarSifreli": "v1.aLo8rwtbhk8mfL2I.KLlPY9R2LCVrwcKPDkNoA5K6RVXKXYz7K3nH6X/bpK9ndfu6r0YbKciO3XkhiczWthfN00F5Smra0WdvjGf0PJJTWMb3Mx0/ONanXzgc11GgVAgKNeZE5kJh62O6Qqa6fSnAkWwZPdAJofSgQxfWDUSdxq4="
+    },
+    "north-bulut-ve-yapay-zeka-maliyet-yonetimi-icin-60-milyon-dolar-yatirim-aldi": {
+      "zaman": "2026-10-16T10:50:53.610Z",
+      "basliklarSifreli": "v1.lJZqAz3eFg5VZo6S.7pv964TauLSjxibAEUkgzII93HKJfOgcN4bFnFovMHE2D8I/2/ffrswzFrPQmaJNOnuEBnD9LVIDHbwWL+aps2wQZsQXz/qbgegtPSiGNV1OuZskeiefIf6nbmBSI8B4RgDDK+YuALF3Pg=="
     }
   }
 }
