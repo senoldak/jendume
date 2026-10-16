@@ -441,7 +441,14 @@
     "ke82007:c9b3dbf709a9b1f5": "2026-10-16T18:50:55.872Z",
     "kb7f905:f01e73543b89abff": "2026-10-16T18:50:55.872Z",
     "k09feb3:8d057913948e8f40": "2026-10-16T18:50:55.872Z",
-    "k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z"
+    "k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z",
+    "ke82007:ad2f21ef4d316f68": "2026-10-16T20:50:53.081Z",
+    "k9f3ec7:b4dbecafaaa07d04": "2026-10-16T20:50:53.081Z",
+    "ke82007:96d11356c6d4f4a6": "2026-10-16T20:50:53.081Z",
+    "ke82007:a33f59ce722b978e": "2026-10-16T20:50:53.081Z",
+    "openai:https://openai.com/index/stack-overflow-chatgpt-plugin": "2026-10-16T20:50:53.081Z",
+    "k3595c8:0f832b4a88ce1c1b": "2026-10-16T20:50:53.081Z",
+    "kf581c4:11c4f15d791b69dc": "2026-10-16T20:50:53.081Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -803,7 +810,16 @@
     "haber:yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm|k3595c8:877c1f73fc1a7dac": "2026-10-16T16:50:55.013Z",
     "k59b8ca:5c31820f87281fac|kb7f905:ef6a793e8a0b43b1": "2026-10-16T16:50:55.013Z",
     "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z",
-    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z"
+    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z",
+    "haber:yapay-zeka-sut-ve-camasir-makinesinden-daha-az-denetleniyor|k3595c8:0f832b4a88ce1c1b": "2026-10-16T20:50:53.081Z",
+    "haber:buzdolabindan-daha-az-denetlenen-yapay-zeka-buyuk-tehlike|k3595c8:0f832b4a88ce1c1b": "2026-10-16T20:50:53.081Z",
+    "haber:meta-ve-sierra-yapay-zeka-ajanlari-icin-ortak-standart-belirliyor|ke82007:96d11356c6d4f4a6": "2026-10-16T20:50:53.081Z",
+    "haber:silikon-vadisi-nde-yapay-zeka-altyapisi-donusuyor|ke82007:96d11356c6d4f4a6": "2026-10-16T20:50:53.081Z",
+    "haber:block-yapay-zeka-destekli-guvenlik-sistemiyle-aciklari-dakikalar-icinde-kapatiyo|kf581c4:11c4f15d791b69dc": "2026-10-16T20:50:53.081Z",
+    "haber:elektrikli-araclar-gelecekte-dis-yapay-zeka-asistanlariyla-donatilacak|kf581c4:11c4f15d791b69dc": "2026-10-16T20:50:53.081Z",
+    "haber:figma-yapay-zeka-ajanlarinin-marka-kurallarina-uymasini-saglayacak-araclar-duyur|kf581c4:11c4f15d791b69dc": "2026-10-16T20:50:53.081Z",
+    "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|openai:https://openai.com/index/stack-overflow-chatgpt-plugin": "2026-10-16T20:50:53.081Z",
+    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|openai:https://openai.com/index/stack-overflow-chatgpt-plugin": "2026-10-16T20:50:53.081Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1920,6 +1936,30 @@
     "k09feb3:8d057913948e8f40": {
       "puan": 5,
       "zaman": "2026-10-16T18:50:55.872Z"
+    },
+    "k9f3ec7:b4dbecafaaa07d04": {
+      "puan": 0,
+      "zaman": "2026-10-16T20:50:53.081Z"
+    },
+    "ke82007:a33f59ce722b978e": {
+      "puan": 4,
+      "zaman": "2026-10-16T20:50:53.081Z"
+    },
+    "k3595c8:0f832b4a88ce1c1b": {
+      "puan": 3,
+      "zaman": "2026-10-16T20:50:53.081Z"
+    },
+    "ke82007:96d11356c6d4f4a6": {
+      "puan": 2,
+      "zaman": "2026-10-16T20:50:53.081Z"
+    },
+    "kf581c4:11c4f15d791b69dc": {
+      "puan": 3,
+      "zaman": "2026-10-16T20:50:53.081Z"
+    },
+    "openai:https://openai.com/index/stack-overflow-chatgpt-plugin": {
+      "puan": 4,
+      "zaman": "2026-10-16T20:50:53.081Z"
     }
   },
   "yayinlanan": {
@@ -2034,6 +2074,18 @@
     "cin-acik-agirlikli-yapay-zeka-modelleri-icin-ihracat-kisitlamalari-hazirliyor": {
       "zaman": "2026-10-16T18:50:55.872Z",
       "basliklarSifreli": "v1.6eJuqSgsYxPHZ9vk.rPHVZZWtV5TkpncPVG+CFp5/DfyeJ4T+GwTDeZjNfStWumQve5cFuhfR1enFx3lVEhmrN0uBwN4m9Gi2YrvqbkxueH+AuFqFIdiyHni4vWhfqDCORevzNAPKWV4MPVV9R+4RHkwP3yf9A+M="
+    },
+    "veeam-yapay-zeka-ajanlari-icin-yeni-guvenlik-ve-kurtarma-platformunu-duyurdu": {
+      "zaman": "2026-10-16T20:50:53.081Z",
+      "basliklarSifreli": "v1.8Nuqit+hRnen6wsT.xMkglLI0ijUIA/ZKdhSRlaZjfoPa9hivoP4R5GngfjpYFwqc90f/9G21k364og0PqazkVd1k+T0gvLPmSj8BNR1Zog2fOsb/X9RNyy6HD9qIsWrZ84TqdZzmv/nfNpzwOjc="
+    },
+    "stack-overflow-for-agents-chatgpt-eklentisiyle-uye-sayisini-uce-katladi": {
+      "zaman": "2026-10-16T20:50:53.081Z",
+      "basliklarSifreli": "v1.55TkNzJf3Hi5xs3H.1AV97evDlWhBupnVnfnNoxmo7GGNf+lr8paE4d9u+8iSzOUiO3cFx4btEQVsXmPa7xpsddet1JnPvH5Rg5NeBsHmUGjWXYXqdJgQdZRWAspn"
+    },
+    "volvo-elektrikli-kamyon-bataryalarini-derin-sinir-aglariyla-tasarliyor": {
+      "zaman": "2026-10-16T20:50:53.081Z",
+      "basliklarSifreli": "v1.4iOXZh/7NpkEpnvh.q55mfSyvHgIGDXzKMtJ5URKyU7u3uJoxx6YZWbcuSzu/yhncpOgV9h8aIC6QfFkrWLGXtQcpumfR1QaBNzLs8FQERoCC2yWnMe0="
     }
   },
   "havuz": [
