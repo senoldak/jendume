@@ -16,6 +16,9 @@ export const RESMI_KAYNAKLAR = [
   { ad: 'Google DeepMind', kisa: 'deepmind', akis: 'https://deepmind.google/blog/rss.xml' },
   { ad: 'Hugging Face Blog', kisa: 'hf-blog', akis: 'https://huggingface.co/blog/feed.xml' },
   { ad: 'MIT News AI', kisa: 'mit-news-ai', akis: 'https://news.mit.edu/rss/topic/artificial-intelligence2' },
+  // Genel konulu şirket blogu: yalnız yapay zekâ ile ilgili yazılar alınır.
+  { ad: 'NVIDIA Blog', kisa: 'nvidia-blog', akis: 'https://blogs.nvidia.com/feed/', filtre: YZ_FILTRE },
+  { ad: 'AWS Machine Learning Blog', kisa: 'aws-ml', akis: 'https://aws.amazon.com/blogs/machine-learning/feed/' },
 ].map((k) => ({ ...k, resmi: true, etiket: k.ad }));
 
 // gizli: true olan kaynağın haber kimliği "<kod>:<adresin anahtarlı özeti>" olur; ad ve adres yalnızca
