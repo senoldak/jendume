@@ -437,7 +437,11 @@
     "k3595c8:877c1f73fc1a7dac": "2026-10-16T16:50:55.013Z",
     "k09feb3:fde28594462689e7": "2026-10-16T16:50:55.013Z",
     "ke82007:53fe0e1c3847c576": "2026-10-16T16:50:55.013Z",
-    "ke82007:845c410906139c56": "2026-10-16T16:50:55.013Z"
+    "ke82007:845c410906139c56": "2026-10-16T16:50:55.013Z",
+    "ke82007:c9b3dbf709a9b1f5": "2026-10-16T18:50:55.872Z",
+    "kb7f905:f01e73543b89abff": "2026-10-16T18:50:55.872Z",
+    "k09feb3:8d057913948e8f40": "2026-10-16T18:50:55.872Z",
+    "k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -797,7 +801,9 @@
     "haber:nvidia-dan-birlesik-krallik-taki-yapay-zeka-guvenligi-arastirmalarina-dev-destek|k59b8ca:5c31820f87281fac": "2026-10-16T16:50:55.013Z",
     "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k3595c8:877c1f73fc1a7dac": "2026-10-16T16:50:55.013Z",
     "haber:yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm|k3595c8:877c1f73fc1a7dac": "2026-10-16T16:50:55.013Z",
-    "k59b8ca:5c31820f87281fac|kb7f905:ef6a793e8a0b43b1": "2026-10-16T16:50:55.013Z"
+    "k59b8ca:5c31820f87281fac|kb7f905:ef6a793e8a0b43b1": "2026-10-16T16:50:55.013Z",
+    "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z",
+    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k09feb3:03191b88ef62733f": "2026-10-16T18:50:55.872Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1902,6 +1908,18 @@
     "ke82007:845c410906139c56": {
       "puan": 3,
       "zaman": "2026-10-16T16:50:55.013Z"
+    },
+    "k09feb3:03191b88ef62733f": {
+      "puan": 4,
+      "zaman": "2026-10-16T18:50:55.872Z"
+    },
+    "kb7f905:f01e73543b89abff": {
+      "puan": 5,
+      "zaman": "2026-10-16T18:50:55.872Z"
+    },
+    "k09feb3:8d057913948e8f40": {
+      "puan": 5,
+      "zaman": "2026-10-16T18:50:55.872Z"
     }
   },
   "yayinlanan": {
@@ -2008,6 +2026,14 @@
     "kuresel-yapay-zeka-guvenligi-tartismalari-surerken-teknoloji-sektoru-hiz-kesmede": {
       "zaman": "2026-10-16T16:50:55.013Z",
       "basliklarSifreli": "v1.aKoIxtvgLge4u1N3.ZMTpPYwgVQrr6/FwcOXQ20nItY6Kwf/TZYUVeRQ35G0p01bQCop6MzQP3Dnw/V6woNNRJjt0AUvi3TYL3rVycV53ePDXJzCn1weGR6bKWAkVTk0nzQNFb4KGkPXg"
+    },
+    "hindistan-siber-guvenlik-birimi-yapay-zeka-ajanlarinin-gizli-verilere-ulastigini": {
+      "zaman": "2026-10-16T18:50:55.872Z",
+      "basliklarSifreli": "v1.MAnetSaNOWTsy0PX.uiAn4hbQS4ukDkOhztQoxplsOrHVz2eVOl5/h/FTFluLYPjX5ajyKrre92KHQ9BdjPiB9GfuHsnizb6UAN6jXYpN4Wyt1fCy8jxOvF+6MTbE6GO/En0="
+    },
+    "cin-acik-agirlikli-yapay-zeka-modelleri-icin-ihracat-kisitlamalari-hazirliyor": {
+      "zaman": "2026-10-16T18:50:55.872Z",
+      "basliklarSifreli": "v1.6eJuqSgsYxPHZ9vk.rPHVZZWtV5TkpncPVG+CFp5/DfyeJ4T+GwTDeZjNfStWumQve5cFuhfR1enFx3lVEhmrN0uBwN4m9Gi2YrvqbkxueH+AuFqFIdiyHni4vWhfqDCORevzNAPKWV4MPVV9R+4RHkwP3yf9A+M="
     }
   },
   "havuz": [
