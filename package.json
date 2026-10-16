@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "node --test scripts/bot/*.test.mjs src/lib/**/*.test.ts",
+    "test": "node --test scripts/bot/*.test.mjs src/lib/**/*.test.ts worker/*.test.ts",
     "bot": "node scripts/bot/calistir.mjs"
   },
   "dependencies": {
