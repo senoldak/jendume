@@ -19,6 +19,11 @@ export const RESMI_KAYNAKLAR = [
   // Genel konulu şirket blogu: yalnız yapay zekâ ile ilgili yazılar alınır.
   { ad: 'NVIDIA Blog', kisa: 'nvidia-blog', akis: 'https://blogs.nvidia.com/feed/', filtre: YZ_FILTRE },
   { ad: 'AWS Machine Learning Blog', kisa: 'aws-ml', akis: 'https://aws.amazon.com/blogs/machine-learning/feed/' },
+  { ad: 'Google Research', kisa: 'google-research', akis: 'https://research.google/blog/rss/' },
+  { ad: 'Mistral AI', kisa: 'mistral', akis: 'https://mistral.ai/news/rss' },
+  // Bağımsız araştırma kurumları: model yetenekleri, hesaplama ve değerlendirme raporları.
+  { ad: 'Epoch AI', kisa: 'epoch-ai', akis: 'https://epoch.ai/atom.xml' },
+  { ad: 'METR', kisa: 'metr', akis: 'https://metr.org/feed.xml' },
 ].map((k) => ({ ...k, resmi: true, etiket: k.ad }));
 
 // gizli: true olan kaynağın haber kimliği "<kod>:<adresin anahtarlı özeti>" olur; ad ve adres yalnızca

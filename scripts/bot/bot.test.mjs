@@ -183,7 +183,8 @@ test('baslikKontrol: anahtar sözcükle başlayan başlık geçer; iki noktalı 
 
 test('resmî kaynaklar: şirket blogları eklendi; genel konulu blog yapay zekâ filtresinden geçer', () => {
   const kisalar = RESMI_KAYNAKLAR.map((k) => k.kisa);
-  for (const k of ['nvidia-blog', 'aws-ml']) assert.ok(kisalar.includes(k), k);
+  for (const k of ['nvidia-blog', 'aws-ml', 'google-research', 'mistral', 'epoch-ai', 'metr']) assert.ok(kisalar.includes(k), k);
+  assert.equal(new Set(kisalar).size, kisalar.length, 'kısa adlar tekil olmalı (haber kimliğinin parçası)');
   const nvidia = RESMI_KAYNAKLAR.find((k) => k.kisa === 'nvidia-blog');
   assert.ok(nvidia.filtre.test('New AI model for robotics'));
   assert.equal(nvidia.filtre.test('New graphics driver for gamers'), false);
