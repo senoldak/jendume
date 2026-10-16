@@ -402,7 +402,9 @@
     "ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
     "openai:https://openai.com/index/sullivan-cromwell": "2026-10-16T00:51:14.401Z",
     "kaec085:b418700f5212100c": "2026-10-16T06:50:51.629Z",
-    "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": "2026-10-16T06:50:51.629Z"
+    "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": "2026-10-16T06:50:51.629Z",
+    "kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
+    "kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -719,7 +721,11 @@
     "k3595c8:d06ffdb28c3c0848|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
     "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
     "haber:fabrika-robotlari-artik-haftalar-yerine-dakikalar-icinde-yeni-isler-ogrenebiliyo|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
-    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z"
+    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
+    "haber:google-deepmind-internet-baglantisi-olmadan-cihazda-calisan-embeddinggemma-2-mod|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
+    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z",
+    "haber:dizustu-bilgisayarlarda-calisan-yeni-nesil-yapay-zeka-modeli-tanitildi|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
+    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1732,6 +1738,14 @@
     "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": {
       "puan": 4,
       "zaman": "2026-10-16T06:50:51.629Z"
+    },
+    "kd9a613:e17b3cf850a8fc95": {
+      "puan": 4,
+      "zaman": "2026-10-16T08:50:53.507Z"
+    },
+    "kaec085:5e67c927f52c7bc2": {
+      "puan": 5,
+      "zaman": "2026-10-16T08:50:53.507Z"
     }
   },
   "yayinlanan": {
@@ -1806,6 +1820,10 @@
     "hukuk-burosu-sullivan-cromwell-openai-ortakligiyla-yapay-zeka-tabanli-sozlesme-a": {
       "zaman": "2026-10-16T00:51:14.401Z",
       "basliklarSifreli": "v1.fDUmkUK91bDY21m+.GdrRs4MHHRYiuQ81Ho2/oVCOpPGmcZfZrDzwrRlxCSwlxBYToMbmTzN3R93She6OvMkjZolvojXFyMpJEIriirv6z734vJ/mR0CPS9eu1SDjq0Oj"
+    },
+    "liquid-ai-d1-ultra-adini-tasiyan-yeni-cok-modlu-karar-modelini-duyurdu": {
+      "zaman": "2026-10-16T08:50:53.507Z",
+      "basliklarSifreli": "v1.aLo8rwtbhk8mfL2I.KLlPY9R2LCVrwcKPDkNoA5K6RVXKXYz7K3nH6X/bpK9ndfu6r0YbKciO3XkhiczWthfN00F5Smra0WdvjGf0PJJTWMb3Mx0/ONanXzgc11GgVAgKNeZE5kJh62O6Qqa6fSnAkWwZPdAJofSgQxfWDUSdxq4="
     }
   }
 }
