@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { yerelDuzelt, yerelDuzeltMetin, ilgiliKisim, kesinKontroller } from './denetci.mjs';
+import { yerelDuzelt, yerelDuzeltMetin, ilgiliKisim, kesinKontroller, medyaAdlariniKur } from './denetci.mjs';
+
+// Gerçek yayın adları şifreli listede durur; testler uydurma adlarla çalışır.
+medyaAdlariniKur(['Örnek Haber', 'Ajans Beta']);
 
 test('yerelDuzeltMetin cümle başındaki göreli zamanı siler ve büyük harf yapar', () => {
   assert.equal(yerelDuzeltMetin('OpenAI modeli tanıttı. Bugün şirket fiyatları açıkladı.', 'tr'), 'OpenAI modeli tanıttı. Şirket fiyatları açıkladı.');
@@ -19,11 +22,11 @@ test('yerelDuzeltMetin alıntı içine dokunmaz', () => {
 });
 
 test('yerelDuzeltMetin yayın kuruluşu atıflarını siler, başka kullanımlara dokunmaz', () => {
-  assert.equal(yerelDuzeltMetin("Bloomberg'in haberine göre, Anthropic 2,5 milyar dolar topladı.", 'tr'), 'Anthropic 2,5 milyar dolar topladı.');
-  assert.equal(yerelDuzeltMetin("Reuters'a göre şirket büyüdü.", 'tr'), 'Şirket büyüdü.');
-  assert.equal(yerelDuzeltMetin('According to Reuters, the deal is worth $1.2 billion.', 'en'), 'The deal is worth $1.2 billion.');
-  assert.equal(yerelDuzeltMetin('The deal closed, Bloomberg reported.', 'en'), 'The deal closed.');
-  const kalan = 'Bloomberg terminali de güncellendi.';
+  assert.equal(yerelDuzeltMetin("Örnek Haber'in haberine göre, Anthropic 2,5 milyar dolar topladı.", 'tr'), 'Anthropic 2,5 milyar dolar topladı.');
+  assert.equal(yerelDuzeltMetin("Ajans Beta'ya göre şirket büyüdü.", 'tr'), 'Şirket büyüdü.');
+  assert.equal(yerelDuzeltMetin('According to Ajans Beta, the deal is worth $1.2 billion.', 'en'), 'The deal is worth $1.2 billion.');
+  assert.equal(yerelDuzeltMetin('The deal closed, Örnek Haber reported.', 'en'), 'The deal closed.');
+  const kalan = 'Örnek Haber terminali de güncellendi.';
   assert.equal(yerelDuzeltMetin(kalan, 'tr'), kalan);
 });
 
@@ -31,8 +34,8 @@ test('yerelDuzelt iki dil bloğunu da temizler ve kesin kontrolleri geçirir', (
   const kaynak = 'Anthropic raised 2.5 billion dollars in a new round led by investors.';
   const paket = {
     kategori: 'x',
-    tr: { title: 'Anthropic yatırım aldı', description: 'Bugün açıklandı.', body: "Reuters'a göre Anthropic 2,5 milyar dolar topladı." },
-    en: { title: 'Anthropic raises funds', description: 'Announced today.', body: 'According to Reuters, Anthropic raised $2.5 billion.' },
+    tr: { title: 'Anthropic yatırım aldı', description: 'Bugün açıklandı.', body: "Ajans Beta'ya göre Anthropic 2,5 milyar dolar topladı." },
+    en: { title: 'Anthropic raises funds', description: 'Announced today.', body: 'According to Ajans Beta, Anthropic raised $2.5 billion.' },
   };
   assert.ok(kesinKontroller(paket, kaynak).length > 0);
   const d = yerelDuzelt(paket);

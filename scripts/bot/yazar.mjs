@@ -54,7 +54,7 @@ Uygun olmayanlar (kesinlikle elenir, uygun=false verilir):
 export const YAZIM_KURALLARI = `Yazım İlkeleri:
 1. Halka yakın, sade, duru ve anlaşılır bir dil kullan. Karmaşık bir yapay zekâ, algoritma veya donanım kavramı geçiyorsa onu günlük hayattan anlaşılır bir dille açıkla; okuyucuyu teknik terimlere boğma.
 2. Yalnızca kaynaklardaki gerçek ve doğrulanabilir olguları kullan; kaynakta olmayan hiçbir bilgi, rakam veya iddiayı uydurma.
-3. Kaynak haber sitelerinin ve yayın kuruluşlarının adını (BBC, Reuters, Bloomberg, The New York Times vb.) metin içinde kesinlikle anma; doğrudan olayı ve ilgili araştırma kurumunu, üniversiteyi veya şirketi anlat.
+3. Kaynak haber sitelerinin ve yayın kuruluşlarının (haber sitesi, ajans, dergi, blog) adını metin içinde kesinlikle anma; doğrudan olayı ve ilgili araştırma kurumunu, üniversiteyi veya şirketi anlat.
 4. Her haberde "perspektif" alanında şu soruyu yanıtla: "Bu yapay zekâ gelişmesi neden önemli ve insanların hayatını nasıl etkiliyor?"
 5. "bugün", "dün", "yarın", "bu hafta", "today", "yesterday", "this week" gibi göreli zaman ifadeleri yerine somut bağlam veya tarih kullan.
 6. Başlık (her iki dilde) okurun arama motoruna yazacağı anahtar sözcükle başlar: olayın öznesi olan şirket, model, ürün, kurum ya da kişinin adı veya somut konu (örn. "OpenAI …", "Claude …", "AB Yapay Zekâ Yasası …", "Meme kanseri taraması …"). Başlık olayı açıkça söyler: kim, ne yaptı ya da ne oldu.
@@ -105,7 +105,7 @@ export async function duzelt(taslak, kaynakMetni, sorunlar) {
 Aşağıdaki iki dilli (TR/EN) yapay zekâ haber taslağında denetim sırasında sorunlar tespit edildi (aşağıda SORUNLAR).
 Kaynak metne sıkı sıkıya bağlı kalarak bu sorunları düzelt:
 - Kaynakta doğrulanamayan rakamları çıkar veya kaynaktaki gerçek rakamla değiştir.
-- Geçen medya/haber kuruluşu adlarını (BBC, Reuters, Bloomberg vb.) çıkar; doğrudan ilgili kurumu/şirketi yaz.
+- Geçen medya/haber kuruluşu (haber sitesi, ajans, dergi, blog) adlarını çıkar; doğrudan ilgili kurumu/şirketi yaz.
 - Göreli zaman ifadelerini (bugün, dün, bu hafta, today, yesterday, this week vb.) kaldır.
 - Kopya cümle uyarısı varsa olguları koruyarak cümleleri kendi kelimelerinle yeniden kur.
 - Başlık uyarısı varsa başlığı kural 6'ya göre yeniden yaz: anahtar sözcükle (şirket, model, ürün, kurum, kişi, konu) başlat, iki noktalı etiketi ve belirsiz açılışı kaldır; olguları değiştirme.

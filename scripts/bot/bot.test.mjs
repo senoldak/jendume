@@ -5,8 +5,11 @@ import os from 'node:os';
 import path from 'node:path';
 import { slugify, rssOku, guvenli, varlikCoz, ucDilliHaberYaz, yaziKaydet } from './lib.mjs';
 import { KAYNAKLAR, RESMI_KAYNAKLAR, anahtarlar, benzer, gizliKaynak, haberKimligi } from './kaynaklar.mjs';
-import { rakamKontrol, medyaKontrol, zamanKontrol, kesinKontroller } from './denetci.mjs';
+import { rakamKontrol, medyaKontrol, medyaAdlariniKur, zamanKontrol, kesinKontroller } from './denetci.mjs';
 import { DIL_BLOK_SEMASI } from './yazar.mjs';
+
+// Gerçek yayın adları şifreli listede durur; testler uydurma adlarla çalışır.
+medyaAdlariniKur(['Örnek Haber', 'Ajans Beta']);
 
 test('slugify converts Turkish characters to clean ASCII slugs', () => {
   assert.equal(
@@ -74,7 +77,7 @@ test('rakamKontrol, medyaKontrol, and zamanKontrol catch unverified numbers, med
   const kaynak = 'More than 45 countries joined the AI safety initiative in 2026.';
   assert.equal(rakamKontrol('Girişime 2026 yılında 45 ülke katıldı.', kaynak).length, 0);
   assert.equal(rakamKontrol('Girişime 95 ülke katıldı.', kaynak).length, 1);
-  assert.equal(medyaKontrol('Reuters ve Bloomberg tarafından aktarılan habere göre...').length, 1);
+  assert.equal(medyaKontrol('Ajans Beta ve Örnek Haber tarafından aktarılan habere göre...').length, 1);
   assert.equal(zamanKontrol('Şirket bugün yeni modelini tanıttı.', 'tr').length, 1);
   assert.equal(zamanKontrol('The lab released the weights yesterday.', 'en').length, 1);
   assert.equal(

@@ -47,42 +47,27 @@ export function rakamKontrol(metin, kaynak) {
 }
 
 // Resmi kurumlar dışında hiçbir yayın kuruluşu (haber sitesi, dergi, ajans, blog) metinde anılmaz.
-// Genel liste; şifreli kaynak listesindeki adlar çalışma anında eklenir (bkz. gizli.mjs). En uzun ad önce denenir.
-const GENEL_MEDYA = [
-  'Al Jazeera',
-  'Associated Press',
-  'Axios',
-  'BBC',
-  'Bloomberg',
-  'Business Insider',
-  'CNBC',
-  'Crunchbase',
-  'Daily Telegraph',
-  'Deutsche Welle',
-  'Engadget',
-  'Financial Times',
-  'Forbes',
-  'France 24',
-  'Gizmodo',
-  'Mashable',
-  'New York Times',
-  'NPR',
-  'Reuters',
-  'Rest of World',
-  'Semafor',
-  'Sifted',
-  'The Telegraph',
-  'VentureBeat',
-  'Wall Street Journal',
-  'Washington Post',
-  'ZDNet',
-];
+// Adlar repoda açık durmaz: şifreli kaynak listesinden çalışma anında okunur (bkz. gizli.mjs). En uzun ad önce denenir.
+// Liste boşsa (anahtar yok) desenler hiçbir şeyle eşleşmez; testler medyaAdlariniKur() ile uydurma adlar verir.
 const regexKacis = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const MEDYA_ADLARI = [...new Set([...GENEL_MEDYA, ...gizliMedyaAdlari()])]
-  .sort((a, b) => b.length - a.length)
-  .map(regexKacis)
-  .join('|');
-const MEDYA = new RegExp(String.raw`(?<![\p{L}\d])(${MEDYA_ADLARI})(?![\p{L}\d])`, 'giu');
+const AY = "['’]";
+let MEDYA;
+let ATIF_KALIPLARI;
+export function medyaAdlariniKur(adlar = gizliMedyaAdlari()) {
+  const liste = [...new Set(adlar)].filter(Boolean).sort((a, b) => b.length - a.length).map(regexKacis);
+  const ADLAR = liste.length ? liste.join('|') : '(?!)';
+  MEDYA = new RegExp(String.raw`(?<![\p{L}\d])(${ADLAR})(?![\p{L}\d])`, 'giu');
+  ATIF_KALIPLARI = {
+    tr: [
+      new RegExp(String.raw`(?<![\p{L}\d])(?:${ADLAR})${AY}(?:n?[ıiuü]n|y?[ae])\s+(?:haberine|aktardığına|bildirdiğine|göre)(?:\s+göre)?\s*,?\s*`, 'giu'),
+    ],
+    en: [
+      new RegExp(String.raw`(?<![\p{L}\d])according to (?:the )?(?:${ADLAR})\s*,?\s*`, 'giu'),
+      new RegExp(String.raw`,?\s*(?:the )?(?:${ADLAR}) reported(?: that)?(?=[\s.,;])`, 'giu'),
+    ],
+  };
+}
+medyaAdlariniKur();
 
 export function medyaKontrol(metin) {
   const bulunan = [...new Set(String(metin).match(MEDYA) ?? [])];
@@ -212,17 +197,6 @@ export function baslikKontrol(paket) {
 
 // --- Yerel düzeltme: göreli zaman ve kaynak-atıf kalıplarını Gemini'ye gitmeden temizler ---
 const ALINTI = /[“"][^”"]*[”"]/g;
-const AY = "['’]";
-const ATIF_KALIPLARI = {
-  tr: [
-    new RegExp(String.raw`(?<![\p{L}\d])(?:${MEDYA_ADLARI})${AY}(?:n?[ıiuü]n|y?[ae])\s+(?:haberine|aktardığına|bildirdiğine|göre)(?:\s+göre)?\s*,?\s*`, 'giu'),
-  ],
-  en: [
-    new RegExp(String.raw`(?<![\p{L}\d])according to (?:the )?(?:${MEDYA_ADLARI})\s*,?\s*`, 'giu'),
-    new RegExp(String.raw`,?\s*(?:the )?(?:${MEDYA_ADLARI}) reported(?: that)?(?=[\s.,;])`, 'giu'),
-  ],
-};
-
 function tekParca(parca, dil) {
   let s = parca;
   for (const k of ATIF_KALIPLARI[dil]) s = s.replace(k, IZ);
