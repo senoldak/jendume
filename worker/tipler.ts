@@ -20,6 +20,8 @@ export interface Env {
   /** Worker secret'ı; dosyaya ve repoya yazılmaz. */
   RESEND_API_KEY?: string;
   BULTEN_GONDEREN?: string;
+  /** Worker secret'ı; mecmua-saat ile ortak, günlük görevi doğrular. */
+  GOREV_ANAHTARI?: string;
 }
 
 export interface Bagimlilik {
