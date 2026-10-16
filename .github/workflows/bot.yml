@@ -40,6 +40,16 @@ jobs:
           if [ -z "$KAYNAK_ANAHTARI" ]; then echo "::error::KAYNAK_ANAHTARI secret'ı yok; haber kaynakları okunamaz."; exit 1; fi
           node scripts/bot/calistir.mjs
 
+      # Yeni indekslenebilir haberleri Telegram'a gönderir (TR; EN için TELEGRAM_CHAT_ID_EN). Anahtar yoksa atlanır,
+      # hata iş akışını bozmaz. Gönderim durumu aşağıdaki commit ile depoya yazılır.
+      - name: Telegram'a gönder
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID_EN: ${{ secrets.TELEGRAM_CHAT_ID_EN }}
+        run: node scripts/bot/telegram.mjs
+
       - name: Commit
         id: commit
         env:
@@ -48,6 +58,8 @@ jobs:
           git config user.name "jendume-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/content/haberler scripts/bot/gorulen.json
+          # Telegram durum dosyası yalnız anahtar varken oluşur; yoksa commit'i bozmaz.
+          if [ -f scripts/bot/telegram-durum.json ]; then git add scripts/bot/telegram-durum.json; fi
           if git diff --cached --quiet; then
             echo "Değişiklik yok."
             exit 0
