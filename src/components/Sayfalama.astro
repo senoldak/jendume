@@ -1,0 +1,52 @@
+---
+// Sayfalı arşivlerin (bölüm, konu) sayfa gezintisi.
+import Arrow from './Arrow.astro';
+import { SITE, type Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  current: number;
+  last: number;
+  /** Sayfa numarasından yol üretir (1 → arşivin kök yolu). */
+  pagePath: (i: number) => string;
+}
+
+const { lang, current: n, last, pagePath } = Astro.props;
+const ui = SITE.ui[lang];
+---
+
+{
+  last > 1 && (
+    <nav class="pagination" aria-label={ui.pagination}>
+      {n > 1 ? (
+        <a class="pagination-step" href={pagePath(n - 1)} rel="prev">
+          <Arrow dir="right" class="arrow-left" />
+          {ui.prevPage}
+        </a>
+      ) : (
+        <span />
+      )}
+      <ol class="pagination-pages">
+        {Array.from({ length: last }, (_, i) => i + 1).map((i) => (
+          <li>
+            {i === n ? (
+              <span aria-current="page">{i}</span>
+            ) : (
+              <a href={pagePath(i)} aria-label={`${ui.page} ${i}`}>
+                {i}
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+      {n < last ? (
+        <a class="pagination-step" href={pagePath(n + 1)} rel="next">
+          {ui.nextPage}
+          <Arrow dir="right" />
+        </a>
+      ) : (
+        <span />
+      )}
+    </nav>
+  )
+}

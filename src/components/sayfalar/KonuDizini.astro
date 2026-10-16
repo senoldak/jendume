@@ -1,0 +1,78 @@
+---
+// Konu dizini: /tr/konu/, /en/topic/. Yalnız sayfası olan (en az KONU_EN_AZ haberli) konular listelenir.
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import SignHeading from '../../components/SignHeading.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { getPostUrl } from '../../lib/news';
+import { collectionGraph, topicsIndexCrumbs } from '../../lib/seo';
+import { KONULAR } from '../../lib/konular';
+import { konuVerisi } from '../../lib/rotalar';
+import { konuDiziniYolu, konuYolu } from '../../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const veri = await konuVerisi(lang);
+const satirlar = KONULAR.filter((k) => veri.has(k.slug)).map((k) => ({ konu: k, posts: veri.get(k.slug)! }));
+const gruplar = [
+  { label: 'topicCompanies' as const, id: 'topics-companies', satirlar: satirlar.filter((s) => s.konu.tur === 'sirket') },
+  { label: 'topicModels' as const, id: 'topics-models', satirlar: satirlar.filter((s) => s.konu.tur === 'model') },
+].filter((g) => g.satirlar.length > 0);
+
+const path = konuDiziniYolu(lang);
+const crumbs = topicsIndexCrumbs(lang);
+// Dizin sayfası haber listesi değil konu listesidir; ItemList için her konunun en yeni haberi yerine konu sayfaları verilir.
+const schema = collectionGraph(lang, ui.topics, ui.topicsDesc, path, [], crumbs, {
+  hasPart: satirlar.map((s) => ({ '@type': 'CollectionPage', name: s.konu.ad, url: new URL(konuYolu(lang, s.konu.slug), SITE.url).href })),
+});
+---
+
+<Base
+  lang={lang}
+  title={ui.topics}
+  description={ui.topicsDesc}
+  canonicalPath={path}
+  langUrls={{ tr: konuDiziniYolu('tr'), en: konuDiziniYolu('en') }}
+  alternates={{ tr: konuDiziniYolu('tr'), en: konuDiziniYolu('en'), 'x-default': konuDiziniYolu('en') }}
+  schema={schema}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <header class="section-sign">
+    <span class="code" aria-hidden="true">{ui.topics.charAt(0)}</span>
+    <h1>
+      {ui.topics}
+      <span lang={other}>{SITE.ui[other].topics}</span>
+    </h1>
+    <p class="section-desc">{ui.topicsDesc}</p>
+  </header>
+
+  {
+    gruplar.map((g) => (
+      <section class="block directory" aria-labelledby={g.id}>
+        <SignHeading lang={lang} label={g.label} id={g.id} />
+        <ul class="board">
+          {g.satirlar.map(({ konu, posts }) => (
+            <li class="board-row">
+              <a href={konuYolu(lang, konu.slug)} class="board-section">
+                <span class="code" aria-hidden="true">{konu.ad.charAt(0).toUpperCase()}</span>
+                <span class="board-name">{konu.ad}</span>
+              </a>
+              <a href={getPostUrl(lang, posts[0].id)} class="board-latest">
+                {posts[0].data.title}
+              </a>
+              <span class="board-count">
+                {posts.length}
+                <span class="board-unit">{ui.storyUnit}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>
