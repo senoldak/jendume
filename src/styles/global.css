@@ -1315,6 +1315,173 @@ a.board-latest:hover {
   }
 }
 
+/* ===== Konular ve sözlük ===== */
+
+/* Etiket levhası: konu ve ilgili terim bağlantıları (okuma zemini; kare köşe, 2px siyah çerçeve). */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid var(--sign);
+  font-family: var(--font-sign);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.tag:hover {
+  background: var(--signal);
+}
+.tag-list-section {
+  margin-top: clamp(20px, 2.5vw, 28px);
+}
+
+.story-topics,
+.term-related {
+  max-width: var(--measure);
+  margin-top: clamp(28px, 3.5vw, 40px);
+}
+.term-related-heading {
+  margin-bottom: 10px;
+  font-family: var(--font-sign);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+
+.section-sign h1 span span {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+}
+
+.page-note {
+  max-width: var(--measure);
+  margin-top: clamp(32px, 4vw, 48px);
+}
+
+.term-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-family: var(--font-sign);
+  font-weight: 600;
+}
+.term-kicker a {
+  color: var(--ink-2);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--signal-deep);
+}
+.term-kicker a:hover {
+  background: var(--signal);
+}
+
+.letter-index ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: clamp(20px, 2.5vw, 28px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.letter-index a {
+  display: grid;
+  place-items: center;
+  min-width: 2.25em;
+  height: 2.25em;
+  background: var(--sign);
+  color: var(--signal);
+  font-family: var(--font-sign);
+  font-weight: 700;
+  text-decoration: none;
+}
+.letter-index a:hover {
+  background: var(--signal);
+  color: var(--sign);
+}
+
+.glossary {
+  margin-top: clamp(28px, 3.5vw, 44px);
+}
+.glossary-group {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0 clamp(18px, 2.5vw, 32px);
+  padding-block: 18px;
+  border-top: 1px solid var(--hair);
+  scroll-margin-top: 16px;
+}
+.glossary-letter .code {
+  font-size: 1.6rem;
+}
+.term-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 18px clamp(24px, 3vw, 40px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.term-name {
+  font-family: var(--font-sign);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(var(--signal), var(--signal));
+  background-size: 0 4px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s;
+}
+.term-name:hover {
+  background-size: 100% 4px;
+}
+.term-abbr {
+  margin-left: 8px;
+  padding: 1px 6px;
+  background: var(--sign);
+  color: var(--signal);
+  font-size: 0.75em;
+  vertical-align: 0.12em;
+}
+.term-summary {
+  margin-top: 6px;
+  color: var(--ink-2);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.front-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: clamp(28px, 4vw, 56px);
+}
+.front-guides p {
+  max-width: 60ch;
+  margin-bottom: 14px;
+  color: var(--ink-2);
+}
+.front-guides .tag-list + a {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--font-sign);
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--signal-deep);
+}
+
 /* ===== Duyarlı düzen ===== */
 
 @media (max-width: 1320px) {
@@ -1369,8 +1536,13 @@ a.board-latest:hover {
     gap: 14px 20px;
   }
   .overhead-links {
+    flex-wrap: wrap;
     gap: 4px 18px;
     font-size: 0.98rem;
+  }
+  .glossary-group {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
   }
   .lang-name {
     display: none;

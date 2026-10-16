@@ -8,6 +8,10 @@ import Arrow from './Arrow.astro';
 import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
 import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
 import { getPublishedPosts, getPostUrl, getCategoryUrl, kapakBilgisi } from '../lib/news';
+import { KONULAR } from '../lib/konular';
+import { konuVerisi } from '../lib/rotalar';
+import { terimBul } from '../lib/sozluk.mjs';
+import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu } from '../lib/yollar.mjs';
 
 interface Props {
   lang: Locale;
@@ -17,12 +21,18 @@ const { lang } = Astro.props;
 const ui = SITE.ui[lang];
 const other = otherLocale(lang);
 const posts = await getPublishedPosts(lang);
+const konuSayfali = await konuVerisi(lang);
 
 const leadPost = posts.find((p) => p.data.featured) ?? posts[0];
 const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
 const rest = posts.filter((p) => p.id !== leadPost?.id);
 const latest = rest.slice(0, 4);
 const older = rest.slice(4);
+
+// Konu ve sözlük rehberi: sayfası olan konular ve temel terimler.
+const konular = KONULAR.filter((k) => konuSayfali.has(k.slug));
+const ONE_CIKAN_TERIMLER = ['llm', 'token', 'context-window', 'rag', 'hallucination', 'ai-agent', 'fine-tuning', 'transformer', 'mixture-of-experts', 'multimodal'];
+const terimler = ONE_CIKAN_TERIMLER.map((id) => terimBul(id)).filter((t) => t !== undefined);
 
 // Kalkış panosu: her bölümün en yeni haberi ve haber sayısı.
 const board = CATEGORIES.map((cat, i) => {
@@ -126,4 +136,35 @@ const board = CATEGORIES.map((cat, i) => {
       ))
     }
   </ul>
+</section>
+
+<section class="block front-guides" aria-label={`${ui.topics} · ${ui.glossary}`}>
+  {
+    konular.length > 0 && (
+      <div>
+        <SignHeading lang={lang} label="topics" id="topics-heading" />
+        <p>{ui.topicsDesc}</p>
+        <ul class="tag-list">
+          {konular.map((k) => (
+            <li>
+              <a class="tag" href={konuYolu(lang, k.slug)}>{k.ad}</a>
+            </li>
+          ))}
+        </ul>
+        <a href={konuDiziniYolu(lang)}>{ui.topics}</a>
+      </div>
+    )
+  }
+  <div>
+    <SignHeading lang={lang} label="glossary" id="glossary-heading" />
+    <p>{ui.glossaryDesc}</p>
+    <ul class="tag-list">
+      {terimler.map((t) => (
+        <li>
+          <a class="tag" href={terimYolu(lang, t.id)}>{t[lang].ad}</a>
+        </li>
+      ))}
+    </ul>
+    <a href={sozlukYolu(lang)}>{ui.allTerms}</a>
+  </div>
 </section>

@@ -12,6 +12,9 @@ import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
 import { BULLETIN_CATEGORY, SITE, editorialUrl, getCategory, otherLocale, type Locale } from '../../lib/site';
 import { abs, articleCrumbs, articleGraph } from '../../lib/seo';
 import { ilgiliHaberler } from '../../lib/ilgili';
+import { haberKonulari, konuBul } from '../../lib/konular';
+import { konuVerisi } from '../../lib/rotalar';
+import { konuYolu } from '../../lib/yollar.mjs';
 import { dizinlenir } from '../../lib/kalite.mjs';
 import {
   getPublishedPosts,
@@ -61,6 +64,10 @@ const catTitle = getCategory(post.data.category, lang).title;
 // İlgili haberler: ortak varlık > aynı bölüm > en yeni; bülten, kısa (noindex) haber ve kendisi hariç.
 const related = ilgiliHaberler(post, await getPublishedPosts(lang));
 const crumbs = articleCrumbs(post, lang);
+
+// Haberin konuları: yalnız bu dilde sayfası olan (en az 3 haberli) konular bağlanır.
+const sayfaliKonular = await konuVerisi(lang);
+const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s) => konuBul(s)!);
 ---
 
 <Base
@@ -117,6 +124,21 @@ const crumbs = articleCrumbs(post, lang);
     </div>
 
     <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />
+
+    {
+      konular.length > 0 && (
+        <nav class="story-topics" aria-labelledby="story-topics-heading">
+          <h2 class="term-related-heading" id="story-topics-heading">{ui.topicsInStory}</h2>
+          <ul class="tag-list">
+            {konular.map((k) => (
+              <li>
+                <a class="tag" href={konuYolu(lang, k.slug)}>{k.ad}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
 
     <p class="production-note">
       <span class="production-note-label">{ui.productionLabel}</span>
