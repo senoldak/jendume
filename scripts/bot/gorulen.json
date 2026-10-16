@@ -405,7 +405,10 @@
     "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": "2026-10-16T06:50:51.629Z",
     "kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
     "kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z",
-    "k621881:60cb50e23a156266": "2026-10-16T10:50:53.610Z"
+    "k621881:60cb50e23a156266": "2026-10-16T10:50:53.610Z",
+    "k621881:341c32fcc4d5fc3f": "2026-10-16T12:50:52.710Z",
+    "k621881:d48adafe00811151": "2026-10-16T12:50:52.710Z",
+    "k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -726,7 +729,10 @@
     "haber:google-deepmind-internet-baglantisi-olmadan-cihazda-calisan-embeddinggemma-2-mod|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
     "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|kd9a613:e17b3cf850a8fc95": "2026-10-16T08:50:53.507Z",
     "haber:dizustu-bilgisayarlarda-calisan-yeni-nesil-yapay-zeka-modeli-tanitildi|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
-    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z"
+    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|kaec085:5e67c927f52c7bc2": "2026-10-16T08:50:53.507Z",
+    "haber:google-yapay-zeka-iceriklerini-taniyan-synthid-aracini-acti|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
+    "haber:anthropic-yapay-zeka-ajanlarinin-internet-erisimini-kesti|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z",
+    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k3595c8:a804d9740a40d2a8": "2026-10-16T12:50:52.710Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1751,6 +1757,10 @@
     "k621881:60cb50e23a156266": {
       "puan": 4,
       "zaman": "2026-10-16T10:50:53.610Z"
+    },
+    "k3595c8:a804d9740a40d2a8": {
+      "puan": 0,
+      "zaman": "2026-10-16T12:50:52.710Z"
     }
   },
   "yayinlanan": {
