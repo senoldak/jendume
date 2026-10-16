@@ -400,7 +400,9 @@
     "kd9a613:a74fcbb86c2e04fd": "2026-10-16T00:51:14.401Z",
     "kb7f905:b5937450b669bb76": "2026-10-16T00:51:14.401Z",
     "ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
-    "openai:https://openai.com/index/sullivan-cromwell": "2026-10-16T00:51:14.401Z"
+    "openai:https://openai.com/index/sullivan-cromwell": "2026-10-16T00:51:14.401Z",
+    "kaec085:b418700f5212100c": "2026-10-16T06:50:51.629Z",
+    "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": "2026-10-16T06:50:51.629Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -1726,6 +1728,10 @@
     "openai:https://openai.com/index/sullivan-cromwell": {
       "puan": 3,
       "zaman": "2026-10-16T00:51:14.401Z"
+    },
+    "hf-blog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining": {
+      "puan": 4,
+      "zaman": "2026-10-16T06:50:51.629Z"
     }
   },
   "yayinlanan": {
