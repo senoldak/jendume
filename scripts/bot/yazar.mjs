@@ -126,6 +126,33 @@ ${JSON.stringify(taslak, null, 2)}`;
   return gemini({ prompt, schema: TASLAK_SEMASI });
 }
 
+// Tema derlemesi (havuz.mjs): aynı kategoriden, tek başına uzunluk denetimini geçemeyen kısa haberler tek bir iki dilli
+// yazıda toplanır. kaynak: havuz.mjs → derlemeKaynagi (her haber kendi bölümünde).
+export function derlemeIstemi(grup, kaynak) {
+  const kategori = grup[0]?.kategori ?? 'yapay-zeka';
+  return `Sen JEN DUME ("kelimelerin ötesinde") yayınının editörüsün.
+Aşağıda "${kategori}" kategorisinden ${grup.length} kısa yapay zekâ haberi var; her biri tek başına tam bir haber taşıyacak kadar kaynak içermiyor.
+Bunları hem Türkçe (tr) hem İngilizce (en) TEK bir derleme haberinde topla:
+- title: haberlerin ortak temasını anlatan başlık; kural 6'ya uyar (anahtar sözcükle başlar, iki noktalı etiket yok). Tek bir haberi öne çıkarmaz.
+- description: derlemenin ana noktası, 1-2 cümle.
+- body: 250-400 kelime. Her haber için "### " ile başlayan kısa bir ara başlık ve 1-2 paragraf; ara başlık o haberin öznesiyle (şirket, model, kurum, konu) başlar.
+  Her bölüm YALNIZCA o haberin bölümündeki kaynak olgularla yazılır; haberler arasında bilgi taşıma. Kaynağında yeterli bilgi olmayan haberi yazma; uydurma ve dolgu cümlesi ekleme.
+- perspektif ve why_matters: bu gelişmelerin birlikte ne anlattığı.
+- ayniOlay=true, uygun=true, category="${kategori}", breaking=false.
+
+${YAZIM_KURALLARI}
+
+HABERLER:
+${kaynak}`;
+}
+
+// Döner: iki dilli derleme taslağı ya da null. Kategori grubun kategorisidir (model başka kategori seçse de).
+export async function derlemeYaz(grup, kaynak) {
+  const t = await gemini({ prompt: derlemeIstemi(grup, kaynak), schema: TASLAK_SEMASI });
+  if (!t?.tr?.body || !t?.en?.body) return null;
+  return { ...t, ayniOlay: true, uygun: true, breaking: false, category: grup[0].kategori };
+}
+
 // Ön eleme ve haber değeri tek çağrıda: 0 = kapsam dışı, 1–5 = haber değeri.
 export const MIN_DEGER = 3;
 const ELEME_SEMASI = {

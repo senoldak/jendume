@@ -5,12 +5,13 @@ import { writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
-import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt } from './yazar.mjs';
+import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
 import { baslikKontrol, kesinKontroller, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
+import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle } from './havuz.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -39,6 +40,8 @@ durum.puan ??= {};
 // Son 72 saatte yayımlanan haberlerin kaynak başlıkları (mukerrer.mjs): yeni kaynak aynı olayı başka kelimelerle anlatsa da yakalanır.
 // Kaynak başlıkları durum dosyasında kayıt başına şifreli durur (gizli.mjs); burada açılır, yazarken kapanır.
 durum.yayinlanan = yayinlananAc(durum.yayinlanan ?? {});
+// Uzunluk yüzünden yayımlanmayan, eş bekleyen kısa haberler (havuz.mjs); kayıt başına şifreli.
+let havuz = havuzAc(durum.havuz ?? []);
 
 const simdi = new Date();
 const gorulduIsaretle = (id) => (durum.gorulen[id] = simdi.toISOString());
@@ -267,6 +270,12 @@ for (const g of sira) {
     if (sorunlar.length) {
       console.log(`  YAYIMLANMADI: ${sorunlar.join(' | ')}`);
       ozet.elenen.push(`${t.tr?.title || ad} — ${sorunlar.join('; ')}`);
+      // Yalnız uzunluk yüzünden duran olay havuza girer: aynı kategoriden eşi gelince derleme olur.
+      const uzunluk = uzunlukKontrol(t);
+      if (sorunlar.every((s) => uzunluk.includes(s))) {
+        havuz.push(havuzOlayi({ id: g.uyeler[0].id, taslak: t, basliklar: g.uyeler.map((u) => u.baslik), kaynaklar, kullanilan, iso: simdi.toISOString() }));
+        console.log('  havuza alındı: eş bekleyecek');
+      }
       continue;
     }
 
@@ -309,6 +318,45 @@ for (const g of sira) {
   }
 }
 
+// Kısa haber havuzu: aynı kategoriden biriken kısa haberler tek bir iki dilli derleme yazısı olur (havuz.mjs).
+try {
+  const h = await havuzuIsle(havuz, {
+    simdi,
+    // Bu arada (bu turda ya da son 72 saatte) tam haber olarak yazılan olay düşer.
+    mukerrer: (o) => mukerrerBul({ basliklar: o.basliklar, metinler: [] }, bellek, { simdi })?.neden ?? null,
+    yaz: async (grup, kaynak) => {
+      const t = await derlemeYaz(grup, kaynak);
+      return t && yerelDuzelt(t);
+    },
+    denetle: (x, kaynak) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x), ...baslikKontrol(x)],
+    duzelt: async (x, kaynak, sorunlar) => {
+      const d = await duzelt(x, kaynak, sorunlar);
+      return d && yerelDuzelt({ ...d, category: x.category });
+    },
+    kaydet: async (x, grup) => {
+      const slug = await ucDilliHaberYaz(ROT, {
+        ...x,
+        date: simdi.toISOString(),
+        kaynakIzi: kaynakIzi(grup.flatMap((o) => o.kullanilan ?? [])),
+        featured: false,
+        draft: false,
+      });
+      const kayit = { zaman: simdi.toISOString(), basliklar: grup.flatMap((o) => o.basliklar) };
+      durum.yayinlanan[slug] = kayit;
+      bellek.push(...bellekKur(['tr', 'en'].map((d) => ({ slug, date: kayit.zaman, title: x[d].title, description: x[d].description })), { [slug]: kayit }));
+      yazilanSayi++;
+      ozet.yazilan.push(`${slug} (derleme: ${x.tr.title})`);
+      return slug;
+    },
+    surVar: () => Date.now() - BASLANGIC <= SURE_MS,
+  });
+  havuz = h.havuz;
+  if (h.ayarHatasi) ozet.hata.push(`derleme: ${adresiSil(h.ayarHatasi.message)}`);
+} catch (e) {
+  console.warn(`havuz hatası: ${adresiSil(e.message)}`);
+  ozet.hata.push(`havuz: ${adresiSil(e.message)}`);
+}
+
 // Yayın belleği 72 saat, puanlar yalnızca aday yaşı boyunca gerekir.
 for (const [k, v] of Object.entries(durum.yayinlanan)) if (simdi - new Date(v.zaman) > BELLEK_SAAT * 3_600_000) delete durum.yayinlanan[k];
 for (const [k, v] of Object.entries(durum.puan)) if (simdi - new Date(v.zaman) > (YAS_GUN + 1) * 86_400_000) delete durum.puan[k];
@@ -317,7 +365,7 @@ for (const kayit of [durum.gorulen, durum.ayrik, durum.ayni]) {
     if (simdi - new Date(t) > 30 * 86_400_000) delete kayit[id];
   }
 }
-await writeFile(DURUM_DOSYASI, `${JSON.stringify({ ...durum, yayinlanan: yayinlananKapat(durum.yayinlanan) }, null, 2)}\n`, 'utf8');
+await writeFile(DURUM_DOSYASI, `${JSON.stringify({ ...durum, yayinlanan: yayinlananKapat(durum.yayinlanan), havuz: havuzKapat(havuz) }, null, 2)}\n`, 'utf8');
 
 const sayi = ozet.yazilan.length;
 if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, `sayi=${sayi}\n`);
