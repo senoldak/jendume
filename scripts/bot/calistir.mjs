@@ -10,6 +10,7 @@ import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
 import { baslikKontrol, kesinKontroller, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
+import { butceYukle, geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
 import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle } from './havuz.mjs';
 
@@ -25,6 +26,9 @@ const EN_FAZLA = sayiAyar('EN_FAZLA', 6);
 const TEYIT = sayiAyar('TEYIT', 1);
 const SURE_MS = sayiAyar('SURE_DK', 18) * 60_000;
 const BASLANGIC = Date.now();
+
+// Katman 3 (Gemini kota planı): bu turun Gemini payı; yeni habere başlamadan önce geminiPayiBitti() sorulur.
+if (!KURU) console.log(await butceYukle({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, site: 'jendume' }));
 const YAS_GUN = sayiAyar('YAS_GUN', 5);
 const EN_FAZLA_HATA = 3;
 // Kaynak metinlerin toplam en az uzunluğu (karakter); altında olay yazılmaz.
@@ -201,7 +205,10 @@ let yazilanSayi = 0;
 
 for (const g of sira) {
   if (yazilanSayi >= EN_FAZLA) break;
-  if (Date.now() - BASLANGIC > SURE_MS) break;
+  if (Date.now() - BASLANGIC > SURE_MS || geminiPayiBitti()) {
+    console.log(`\n${Date.now() - BASLANGIC > SURE_MS ? 'Süre bütçesi' : 'Gemini tur payı'} doldu; kalan olaylar sonraki çalışmaya kaldı.`);
+    break;
+  }
   if (yazildiMi(g)) {
     grupBitti(g);
     continue;
@@ -348,7 +355,7 @@ try {
       ozet.yazilan.push(`${slug} (derleme: ${x.tr.title})`);
       return slug;
     },
-    surVar: () => Date.now() - BASLANGIC <= SURE_MS,
+    surVar: () => Date.now() - BASLANGIC <= SURE_MS && !geminiPayiBitti(),
   });
   havuz = h.havuz;
   if (h.ayarHatasi) ozet.hata.push(`derleme: ${adresiSil(h.ayarHatasi.message)}`);
