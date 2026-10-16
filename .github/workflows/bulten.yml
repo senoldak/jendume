@@ -42,24 +42,12 @@ jobs:
           case "$DONEM" in sabah|ogle|aksam|"") ;; *) DONEM="" ;; esac
           node scripts/bot/bulten.mjs $DONEM
 
-      # Yeni bültenler de Telegram'a gider (kampanya: bulten). Anahtar yoksa atlanır; hata iş akışını bozmaz.
-      - name: Telegram'a gönder
-        if: steps.bulten.outputs.yazildi == '1'
-        continue-on-error: true
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          TELEGRAM_CHAT_ID_EN: ${{ secrets.TELEGRAM_CHAT_ID_EN }}
-        run: node scripts/bot/telegram.mjs
-
       - name: Commit
         if: steps.bulten.outputs.yazildi == '1'
         run: |
           git config user.name "jendume-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/content/haberler
-          # Telegram durum dosyası yalnız anahtar varken oluşur; yoksa commit'i bozmaz.
-          if [ -f scripts/bot/telegram-durum.json ]; then git add scripts/bot/telegram-durum.json; fi
           git commit -m "Bot: bülten"
           for i in 1 2 3 4 5; do
             git pull --rebase -X theirs && git push && exit 0
