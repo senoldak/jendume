@@ -396,7 +396,11 @@
     "k59b8ca:f59aee6277eac810": "2026-10-15T22:50:58.489Z",
     "ke82007:478c0a15ff0cbd41": "2026-10-15T22:50:58.489Z",
     "k3595c8:24e9d26876bf9ed5": "2026-10-15T22:50:58.489Z",
-    "openai:https://openai.com/index/introducing-the-rosalind-academic-plan": "2026-10-15T22:50:58.489Z"
+    "openai:https://openai.com/index/introducing-the-rosalind-academic-plan": "2026-10-15T22:50:58.489Z",
+    "kd9a613:a74fcbb86c2e04fd": "2026-10-16T00:51:14.401Z",
+    "kb7f905:b5937450b669bb76": "2026-10-16T00:51:14.401Z",
+    "ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
+    "openai:https://openai.com/index/sullivan-cromwell": "2026-10-16T00:51:14.401Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -710,7 +714,10 @@
     "haber:meta-ve-sierra-yapay-zeka-ajanlari-icin-ortak-standart-belirliyor|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
     "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k3595c8:d06ffdb28c3c0848": "2026-10-15T22:50:58.489Z",
     "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|k3595c8:24e9d26876bf9ed5": "2026-10-15T22:50:58.489Z",
-    "k3595c8:d06ffdb28c3c0848|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z"
+    "k3595c8:d06ffdb28c3c0848|ke82007:5e69acd4bcd1e587": "2026-10-15T22:50:58.489Z",
+    "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
+    "haber:fabrika-robotlari-artik-haftalar-yerine-dakikalar-icinde-yeni-isler-ogrenebiliyo|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z",
+    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|ke82007:29318d54fcbc65d5": "2026-10-16T00:51:14.401Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -1707,6 +1714,18 @@
     "openai:https://openai.com/index/introducing-the-rosalind-academic-plan": {
       "puan": 4,
       "zaman": "2026-10-15T22:50:58.489Z"
+    },
+    "ke82007:29318d54fcbc65d5": {
+      "puan": 3,
+      "zaman": "2026-10-16T00:51:14.401Z"
+    },
+    "kb7f905:b5937450b669bb76": {
+      "puan": 2,
+      "zaman": "2026-10-16T00:51:14.401Z"
+    },
+    "openai:https://openai.com/index/sullivan-cromwell": {
+      "puan": 3,
+      "zaman": "2026-10-16T00:51:14.401Z"
     }
   },
   "yayinlanan": {
@@ -1773,6 +1792,14 @@
     "yapay-zeka-modeli-polise-asilsiz-cinayet-ihbari-gonderdi": {
       "zaman": "2026-10-15T22:50:58.489Z",
       "basliklarSifreli": "v1.UHpQiJvTfGdl82E0.jFXNwyezfaA/M6NdIdjtyyMGJ68cdPh6mao1vf6c351LEDhQsBeuN6Pl7TU76K9PV8Uh+A1l7pBhZESxfPmJAzSwjFNICWS+h7U43/oT8Q=="
+    },
+    "kurumsal-bilgi-islem-surecleri-yapay-zeka-ile-otonomlasiyor": {
+      "zaman": "2026-10-16T00:51:14.401Z",
+      "basliklarSifreli": "v1.J94uWRi9nABYAtYR.TO7FdcJOVFTIfpXKVzknYGECG4SEvqkHBF9/MCCPbURQ1bU1R9pw3B5HTQu8ySHFwO+LXYmsiX89DaAcb47vWDJ2SjQ5WfIEHpoH7FlsaBjeKIquZowY65F8q27n3fhrKWNbNVdbgrUzlWWqUeKPf+S0sbVW2A=="
+    },
+    "hukuk-burosu-sullivan-cromwell-openai-ortakligiyla-yapay-zeka-tabanli-sozlesme-a": {
+      "zaman": "2026-10-16T00:51:14.401Z",
+      "basliklarSifreli": "v1.fDUmkUK91bDY21m+.GdrRs4MHHRYiuQ81Ho2/oVCOpPGmcZfZrDzwrRlxCSwlxBYToMbmTzN3R93She6OvMkjZolvojXFyMpJEIriirv6z734vJ/mR0CPS9eu1SDjq0Oj"
     }
   }
 }
