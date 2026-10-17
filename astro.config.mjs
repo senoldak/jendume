@@ -76,7 +76,7 @@ function sayfa(url) {
   sayfaDurumu.set(url, durum);
   return durum;
 }
-// JSON uç noktaları (arama dizini, haftalık bülten verisi) sayfa değildir.
+// JSON uç noktaları (arama dizini) sayfa değildir.
 const haritaDisi = (url) => url.endsWith('.json') || kisaHaberler.has(url) || yonlendirmeler.has(url) || sayfa(url).noindex;
 
 // hreflang eşleri: yol parçaları dile göre değiştiği için (/tr/haber/… ↔ /en/news/…; src/lib/yollar.mjs)

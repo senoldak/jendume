@@ -1,12 +1,8 @@
 {
-  // Cloudflare ayarı: site statik dosyalar olarak yayınlanır (ücretsiz). Worker yalnız /api/* isteklerine ve
+  // Cloudflare ayarı: site yalnız statik dosyalar olarak yayınlanır (Worker kodu yok).
   "name": "jendume",
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
-  "main": "worker/index.ts",
-  // Günlük bülten görevini mecmua-saat Worker'ı tetikler (POST /api/bulten/gorev, GOREV_ANAHTARI); bu Worker'ın cron'u yok
-  // çünkü Cloudflare ücretsiz planında hesap başına 5 cron sınırı var. Boş liste, eski cron'u Cloudflare'den siler.
-  "triggers": { "crons": [] },
   "routes": [
     { "pattern": "jendume.com", "custom_domain": true },
     { "pattern": "www.jendume.com", "custom_domain": true }
@@ -17,21 +13,6 @@
   },
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page",
-    "binding": "ASSETS",
-    "run_worker_first": ["/api/*"]
-  },
-  // Bülten aboneleri. Göç: migrations/0001_bulten.sql (uzak veritabanına ayrıca uygulanır).
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "jendume-bulten",
-      "database_id": "2a9d8129-5e43-4151-9ec3-e0b97d8d9924",
-      "migrations_dir": "migrations"
-    }
-  ],
-  // Her gün 06:00 UTC (09:00 Türkiye): süresi dolan onaysız kayıtlar silinir; haftalık bülten haftanın ilk çalışmasında (pazartesi) bir kez gider.
-  "vars": {
-    "BULTEN_GONDEREN": "JEN DUME <bulten@jendume.com>"
+    "not_found_handling": "404-page"
   }
 }

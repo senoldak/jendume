@@ -30,6 +30,12 @@
 # (dinamik sınır 100, statik sınır 2.000). Joker ve yer tutuculu kurallar bu dosyanın EN SONUNDA durur.
 /en/hakkimizda/ /en/about/ 301
 
+# E-posta bülteni kaldırıldı (Ekim 2026): eski abonelik sayfaları dilin ana sayfasına yönlenir.
+/tr/bulten /tr/ 301
+/tr/bulten/ /tr/ 301
+/en/newsletter /en/ 301
+/en/newsletter/ /en/ 301
+
 # --- Dinamik kurallar (dosyanın sonu) ---
 /en/haber/* /en/news/:splat 301
 /en/kategori/dunya/* /en/category/world/:splat 301
@@ -39,3 +45,6 @@
 /en/kategori/ekonomi/* /en/category/economy/:splat 301
 /en/kategori/perspektif/* /en/category/perspective/:splat 301
 /en/kategori/gunluk-bulten/* /en/category/bulletins/:splat 301
+/tr/bulten/* /tr/ 301
+/en/newsletter/* /en/ 301
+/api/bulten/* /tr/ 301

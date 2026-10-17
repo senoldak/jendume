@@ -4,10 +4,8 @@ import Arrow from '../components/Arrow.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl } from '../lib/news';
-import { bultenYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu } from '../lib/yollar.mjs';
-import BultenFormu from '../components/BultenFormu.astro';
+import { gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
-import '../styles/bulten.css';
 
 type Hreflang = Locale | 'x-default';
 
@@ -75,7 +73,6 @@ const transparencyHref = seffaflikYolu(lang);
 const searchHref = aramaYolu(lang);
 const topicsHref = konuDiziniYolu(lang);
 const glossaryHref = sozlukYolu(lang);
-const bultenHref = bultenYolu(lang);
 const gizlilikHref = gizlilikYolu(lang);
 const robots = noindex
   ? 'noindex, follow'
@@ -271,7 +268,6 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           }
         </ul>
         <ul class="footer-links">
-          <li><a href={bultenHref}><span>{ui.newsletter}<span class="link-other" lang={other}>{SITE.ui[other].newsletter}</span></span></a></li>
           <li><a href={gizlilikHref}><span>{ui.privacy}<span class="link-other" lang={other}>{SITE.ui[other].privacy}</span></span></a></li>
           <li><a href={homeHref}><span>{ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span></span></a></li>
           <li><a href={topicsHref}><span>{ui.topics}<span class="link-other" lang={other}>{SITE.ui[other].topics}</span></span></a></li>
@@ -283,9 +279,6 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <li><a href="/en/" lang="en">English</a></li>
           <li><a href="/tr/" lang="tr">Türkçe</a></li>
         </ul>
-      </div>
-      <div class="container">
-        <BultenFormu lang={lang} kimlik="altbilgi" />
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.displayName}</span>
