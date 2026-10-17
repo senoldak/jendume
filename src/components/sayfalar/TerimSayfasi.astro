@@ -55,7 +55,7 @@ const docTitle = lang === 'tr' ? `${title} nedir?` : `${title} explained`;
       </p>
       <h1 class="article-title">{title}</h1>
       <p class="article-deck">{b.ozet}</p>
-      <a class="bridge" href={otherPath} lang={other} hreflang={SITE.localeTag[other]}>
+      <a class="bridge" href={otherPath} lang={other} hreflang={other}>
         <span class="lang-code">{other.toUpperCase()}</span>
         {terim[other].ad}
         <Arrow />

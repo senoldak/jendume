@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', bulten: 'bulten', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', bulten: 'newsletter', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', bulten: 'bulten', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', bulten: 'newsletter', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */

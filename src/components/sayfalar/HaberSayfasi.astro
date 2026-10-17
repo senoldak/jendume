@@ -105,7 +105,7 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       <RakamSeridi lang={lang} rakamlar={post.data.rakamlar} />
       {
         translations[other] && (
-          <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={SITE.localeTag[other]}>
+          <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={other}>
             <span class="lang-code">{other.toUpperCase()}</span>
             {SITE.ui[other].readIn}
             <Arrow />

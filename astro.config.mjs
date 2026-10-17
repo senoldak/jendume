@@ -90,8 +90,8 @@ function hreflangEsleri(url) {
   if (haritaDisi(karsi) || !sayfa(karsi).var) return undefined;
   const en = dil === 'en' ? url : karsi;
   return [
-    { url: en, lang: 'en-US' },
-    { url: dil === 'tr' ? url : karsi, lang: 'tr-TR' },
+    { url: en, lang: 'en' },
+    { url: dil === 'tr' ? url : karsi, lang: 'tr' },
     { url: en, lang: 'x-default' },
   ];
 }
@@ -105,8 +105,8 @@ export default defineConfig({
         // Kök (/) dil seçim sayfasıdır: /en/ ile /tr/'nin x-default'u.
         if (item.url === ROOT || item.url === `${SITE}/en/` || item.url === `${SITE}/tr/`) {
           item.links = [
-            { url: `${SITE}/en/`, lang: 'en-US' },
-            { url: `${SITE}/tr/`, lang: 'tr-TR' },
+            { url: `${SITE}/en/`, lang: 'en' },
+            { url: `${SITE}/tr/`, lang: 'tr' },
             { url: ROOT, lang: 'x-default' },
           ];
         } else {

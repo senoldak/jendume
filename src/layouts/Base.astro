@@ -98,7 +98,8 @@ const hreflangMap: Partial<Record<Hreflang, string>> = alternates ?? {
   'x-default': resolveLangUrl('en'),
 };
 const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([key, href]) => ({
-  hreflang: key === 'x-default' ? key : SITE.localeTag[key],
+  // Dil kodu bölgesiz (en/tr): içerik tek bir ülkeye değil, o dili okuyan herkese.
+  hreflang: key,
   href: new URL(href, SITE.url).href,
 }));
 ---
@@ -197,7 +198,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
               <a
                 href={resolveLangUrl(loc)}
                 lang={loc}
-                hreflang={SITE.localeTag[loc]}
+                hreflang={loc}
                 class:list={['lang-plate', { 'is-active': loc === lang }]}
                 aria-current={loc === lang ? 'true' : undefined}
               >
