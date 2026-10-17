@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
-import { baslikKontrol, kesinKontroller, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
+import { baslikKontrol, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
@@ -291,8 +291,9 @@ for (const g of sira) {
       continue;
     }
 
+    // Rakam şeridinde kaynakta doğrulanamayan öğe düşer (haber durmaz).
     const slug = await ucDilliHaberYaz(ROT, {
-      ...t,
+      ...rakamSeritleriniSuz(t, kaynakBirlesik),
       date: simdi.toISOString(),
       kaynakIzi: kaynakIzi(kullanilan),
       featured: false,
@@ -345,9 +346,9 @@ try {
       const d = await duzelt(x, kaynak, sorunlar);
       return d && yerelDuzelt({ ...d, category: x.category });
     },
-    kaydet: async (x, grup) => {
+    kaydet: async (x, grup, kaynak) => {
       const slug = await ucDilliHaberYaz(ROT, {
-        ...x,
+        ...rakamSeritleriniSuz(x, kaynak),
         date: simdi.toISOString(),
         kaynakIzi: kaynakIzi(grup.flatMap((o) => o.kullanilan ?? [])),
         featured: false,

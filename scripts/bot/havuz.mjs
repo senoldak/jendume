@@ -75,7 +75,7 @@ export const derlemeKaynagi = (grup) =>
  * Havuzu bir tur ilerletir. Bağımlılıklar:
  *   mukerrer(o) → gerekçe | null   (olay bu arada tam haber olarak yazıldı mı)
  *   yaz(grup, kaynak) → taslak | null;  denetle(taslak, kaynak) → sorun listesi;  duzelt(taslak, kaynak, sorunlar) → taslak | null
- *   kaydet(taslak, grup) → slug;  surVar() → boolean (zaman bütçesi)
+ *   kaydet(taslak, grup, kaynak) → slug;  surVar() → boolean (zaman bütçesi)
  * Döner: { havuz: kalan olaylar, yazilan: slug listesi, ayarHatasi?: Error } — anahtar/kota hatasında tur durur.
  */
 export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, kaydet, surVar = () => true, log = console.log }) {
@@ -110,7 +110,7 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
         log(`havuz: derleme (${grup.length} haber) YAYIMLANMADI: ${sorunlar.join(' | ')}`);
         continue;
       }
-      const slug = await kaydet(t, grup);
+      const slug = await kaydet(t, grup, kaynak);
       yazilan.push(slug);
       log(`havuz: derleme yazıldı (TR/EN, ${grup.length} haber): ${slug}`);
     } catch (e) {

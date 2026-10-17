@@ -46,6 +46,34 @@ export function rakamKontrol(metin, kaynak) {
   return sorunlar;
 }
 
+// Rakam şeridi (haberin başında en çok 4 rakam): metindeki denetimden daha sıkı, küçük tam sayılar da kaynakta aranır.
+// Kaynakta doğrulanamayan öğe düşer, haber durmaz. Rakam içermeyen öğe (ör. yalnız ad) şeride girmez.
+export const RAKAM_SERIDI_EN_COK = 4;
+export function rakamSeridiSuz(rakamlar, kaynak) {
+  if (!Array.isArray(rakamlar)) return [];
+  const bilinen = kaynakDegerleri(kaynak);
+  const dogru = (deger) => {
+    const sayilar = [...String(deger).matchAll(RAKAM)].map((m) => [...degerler(m[0])]);
+    return sayilar.length > 0 && sayilar.every((a) => a.some((n) => bilinen.has(n) || uyar(n, bilinen)));
+  };
+  return rakamlar
+    .filter((r) => r?.etiket && r?.deger && dogru(r.deger))
+    .map((r) => ({ etiket: String(r.etiket).trim(), deger: String(r.deger).trim() }))
+    .slice(0, RAKAM_SERIDI_EN_COK);
+}
+
+/** Paketin iki dil bloğundaki şeritleri süzer; şeridi boş kalan dilde alan silinir. */
+export function rakamSeritleriniSuz(paket, kaynak) {
+  const out = { ...paket };
+  for (const dil of ['tr', 'en']) {
+    if (!out[dil]) continue;
+    const { rakamlar, ...blok } = out[dil];
+    const iyi = rakamSeridiSuz(rakamlar, kaynak);
+    out[dil] = iyi.length ? { ...blok, rakamlar: iyi } : blok;
+  }
+  return out;
+}
+
 // Resmi kurumlar dışında hiçbir yayın kuruluşu (haber sitesi, dergi, ajans, blog) metinde anılmaz.
 // Adlar repoda açık durmaz: şifreli kaynak listesinden çalışma anında okunur (bkz. gizli.mjs). En uzun ad önce denenir.
 // Liste boşsa (anahtar yok) desenler hiçbir şeyle eşleşmez; testler medyaAdlariniKur() ile uydurma adlar verir.

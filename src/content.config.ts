@@ -24,6 +24,8 @@ const haberSchema = z.object({
   perspektif: z.string().optional(),
   why_matters: z.string().optional(),
   key_points: z.array(z.string()).optional(),
+  // Rakam şeridi: haberin başında en çok 4 kilit rakam; bot yalnız kaynakta doğrulananları yazar (denetci.mjs).
+  rakamlar: z.array(z.object({ etiket: z.string(), deger: z.string() })).max(4).default([]),
   // Kaynakların şifreli kaydı; sitede gösterilmez (bkz. scripts/bot/gizli.mjs).
   kaynakIzi: z.string().optional(),
   featured: z.boolean().default(false),

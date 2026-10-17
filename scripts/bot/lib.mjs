@@ -341,6 +341,7 @@ export async function ucDilliHaberYaz(rot, paket) {
     const perspektif = icerik.perspektif || paket.perspektif;
     const why_matters = icerik.why_matters || paket.why_matters;
     const key_points = icerik.key_points || paket.key_points;
+    const rakamlar = (Array.isArray(icerik.rakamlar) ? icerik.rakamlar : []).filter((r) => r?.etiket && r?.deger).slice(0, 4);
 
     const fm = [
       '---',
@@ -354,6 +355,9 @@ export async function ucDilliHaberYaz(rot, paket) {
       why_matters ? `why_matters: ${yamlStr(guvenli(why_matters))}` : null,
       Array.isArray(key_points) && key_points.filter(Boolean).length
         ? `key_points:\n${key_points.filter(Boolean).map((p) => `  - ${yamlStr(guvenli(p))}`).join('\n')}`
+        : null,
+      rakamlar.length
+        ? `rakamlar:\n${rakamlar.map((r) => `  - etiket: ${yamlStr(guvenli(r.etiket))}\n    deger: ${yamlStr(guvenli(r.deger))}`).join('\n')}`
         : null,
       // Kaynakların şifreli kaydı (bkz. gizli.mjs); sitede gösterilmez.
       paket.kaynakIzi ? `kaynakIzi: ${yamlStr(paket.kaynakIzi)}` : null,

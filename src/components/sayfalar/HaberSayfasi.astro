@@ -5,6 +5,7 @@ import StoryCard from '../../components/StoryCard.astro';
 import SignLine from '../../components/SignLine.astro';
 import SignHeading from '../../components/SignHeading.astro';
 import SentezBlok from '../../components/SentezBlok.astro';
+import RakamSeridi from '../../components/RakamSeridi.astro';
 import Arrow from '../../components/Arrow.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import ShareLinks from '../../components/ShareLinks.astro';
@@ -101,6 +102,7 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
         whyMatters={post.data.why_matters || post.data.perspektif}
         keyPoints={post.data.key_points}
       />
+      <RakamSeridi lang={lang} rakamlar={post.data.rakamlar} />
       {
         translations[other] && (
           <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={SITE.localeTag[other]}>

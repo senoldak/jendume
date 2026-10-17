@@ -17,6 +17,19 @@ export const DIL_BLOK_SEMASI = {
     },
     why_matters: { type: 'string', description: '1-2 cümleyle: Bu yapay zekâ gelişmesi neden önemli?' },
     key_points: { type: 'array', maxItems: 3, items: { type: 'string' }, description: 'Haberden en fazla 3 kritik somut madde / rakam' },
+    rakamlar: {
+      type: 'array',
+      maxItems: 4,
+      items: {
+        type: 'object',
+        properties: {
+          etiket: { type: 'string', description: 'Kısa etiket, 1-3 kelime (örn. "Yatırım", "Parametre", "Test puanı")' },
+          deger: { type: 'string', description: 'Rakam ve birimi (örn. "2 milyar dolar", "%87,5")' },
+        },
+        required: ['etiket', 'deger'],
+      },
+      description: 'Rakam şeridi (kural 8); en fazla 4, yalnızca kaynakta aynen geçen rakamlar. Emin değilsen boş bırak',
+    },
   },
   required: ['title', 'description', 'bolge', 'perspektif', 'body'],
 };
@@ -66,7 +79,11 @@ export const YAZIM_KURALLARI = `Yazım İlkeleri:
    (a) ne oldu: kim, ne yaptı, ne zaman, nerede; (b) neden önemli: okur, sektör veya toplum için sonucu;
    (c) temel rakamlar: kaynaktaki tutar, oran, tarih ve ölçümler; (d) bağlam: önceki gelişmeler, rakipler, düzenleme veya araştırma geçmişi.
    Bu bölümlerin hepsi YALNIZCA kaynak metinlerdeki olgulardan kurulur. Uzunluğu doldurmak için tekrar, genel geçer yorum, tahmin
-   veya kaynakta olmayan bağlam ekleme; kaynak 250 kelimelik bir haberi taşımıyorsa uygun=false ver ve nedenine "kaynak yetersiz" yaz.`;
+   veya kaynakta olmayan bağlam ekleme; kaynak 250 kelimelik bir haberi taşımıyorsa uygun=false ver ve nedenine "kaynak yetersiz" yaz.
+8. Rakam şeridi (rakamlar): haberin başında gösterilen en fazla 4 kilit rakam ({etiket, deger}): yatırım tutarı, değerleme,
+   parametre sayısı, test puanı, fiyat, kullanıcı sayısı gibi. Yalnızca kaynakta aynen geçen rakamlar; hesaplama, yuvarlama,
+   tahmin yok. İki dilde aynı rakamlar aynı sırayla: TR'de Türkçe biçim ("2,5 milyar dolar", "%87,5"), EN'de İngilizce
+   ("$2.5 billion", "87.5%"). Haberde anlamlı rakam yoksa ya da emin değilsen boş bırak; yalnız tarih şeride girmez.`;
 
 export async function taslakYaz(kaynaklar) {
   const metinler = kaynaklar
