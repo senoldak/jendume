@@ -256,7 +256,8 @@ const yamlStr = (s) => JSON.stringify(String(s ?? '').trim());
 
 export function guvenli(metin = '') {
   return String(metin)
-    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<!--[\s\S]*?(?:-->|$)/g, '')
+    .replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, '')
     .replace(/<\/?(?:[a-z0-9_-]+|\/)[^>]*>/gi, '')
     .replace(/!\[([^\]]*)\]\((?:[^()]|\([^()]*\))*\)/g, '$1')
     .replace(/\[([^\]]*)\]\(\s*((?:[^()\s]|\([^()\s]*\))*)[^)]*\)/g, (m, txt, url) =>

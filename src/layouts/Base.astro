@@ -1,4 +1,5 @@
 ---
+import { jsonLdMetni } from '../lib/json-ld.mjs';
 import Arrow from '../components/Arrow.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
@@ -79,7 +80,7 @@ const gizlilikHref = gizlilikYolu(lang);
 const robots = noindex
   ? 'noindex, follow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
-const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': [...siteGraph(), ...schema] }).replace(/</g, '\\u003c');
+const jsonLd = jsonLdMetni({ '@context': 'https://schema.org', '@graph': [...siteGraph(), ...schema] });
 const path = Astro.url.pathname;
 const isHome = path === '/' || path === `/${lang}/`;
 

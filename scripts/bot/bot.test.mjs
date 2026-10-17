@@ -192,3 +192,35 @@ test('resmî kaynaklar: şirket blogları eklendi; genel konulu blog yapay zekâ
   assert.ok(nvidia.filtre.test('New AI model for robotics'));
   assert.equal(nvidia.filtre.test('New graphics driver for gamers'), false);
 });
+
+test('ucDilliHaberYaz gövdedeki HTML etiketlerini ve yorumlarını iki dilde de atar, Markdown ve metni korur', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  const govde = (s) =>
+    [
+      `${s} <b>yüzde 3</b>.<script>alert(1)</script>`,
+      '<a href="https://haber.example.com" onclick="x()">tıkla</a> <!-- gizli -->',
+      '<div class="kutu">',
+      'Oran 3 < 5 ve 7 > 2; ayrıntı için [rapor](https://www.tcmb.gov.tr/).',
+      '</div><br/> <!-- kapanmamış',
+    ].join('\n');
+  try {
+    const slug = await ucDilliHaberYaz(tmpDir, {
+      category: 'yapay-zeka',
+      date: '2026-10-12T10:00:00.000Z',
+      tr: { title: 'Etiketli', description: 'x', body: govde('Türkçe') },
+      en: { title: 'Tagged', description: 'x', body: govde('English') },
+    });
+    for (const [dil, bas] of [['tr', 'Türkçe'], ['en', 'English']]) {
+      const md = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      const metin = md.split('---').slice(2).join('---');
+      assert.doesNotMatch(metin, /<\/?(b|a|script|div|br)\b/i);
+      assert.doesNotMatch(metin, /<!--|onclick|gizli|kapanmamış|alert/);
+      assert.match(metin, new RegExp(`${bas} yüzde 3`));
+      assert.match(metin, /tıkla/);
+      assert.match(metin, /3 < 5 ve 7 > 2/);
+      assert.match(metin, /\[rapor\]\(https:\/\/www\.tcmb\.gov\.tr\/\)/);
+    }
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
