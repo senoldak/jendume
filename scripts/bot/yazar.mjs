@@ -153,8 +153,11 @@ export async function derlemeYaz(grup, kaynak) {
   return { ...t, ayniOlay: true, uygun: true, breaking: false, category: grup[0].kategori };
 }
 
-// Ön eleme ve haber değeri tek çağrıda: 0 = kapsam dışı, 1–5 = haber değeri.
-export const MIN_DEGER = 3;
+// Ön eleme ve haber değeri tek çağrıda: 0 = kapsam dışı, 1–100 = haber değeri.
+// 2026-10-17 site sahibinin kararıyla ölçek 0–5'ten 0–100'e geçti ve eşik 3/5'ten 3,5/5'e, yani 70/100'e çıktı
+// (tam sayılı 0–5'te 3,5 pratikte 4 olurdu). Amaç: sıradan haberle siteyi doldurmamak.
+export const MIN_DEGER = 70;
+export const OLCEK = 100;
 const ELEME_SEMASI = {
   type: 'object',
   properties: {
@@ -167,7 +170,7 @@ const ELEME_SEMASI = {
 };
 
 /**
- * Her başlığa puan verir (0 kapsam dışı, 1–5 haber değeri). Döner: indeksle hizalı puan dizisi; modelin atladığı
+ * Her başlığa puan verir (0 kapsam dışı, 1–100 haber değeri). Döner: indeksle hizalı puan dizisi; modelin atladığı
  * başlık MIN_DEGER alır. Gemini cevap vermezse null.
  */
 export async function onEle(basliklar, { kall = gemini } = {}) {
@@ -175,35 +178,37 @@ export async function onEle(basliklar, { kall = gemini } = {}) {
   const r = await kall({
     schema: ELEME_SEMASI,
     dusunme: 'minimal',
-    prompt: `Sen JEN DUME ("kelimelerin ötesinde") yapay zekâ yayınının editörüsün. Aşağıdaki her başlığa bir puan ver.
+    prompt: `Sen JEN DUME ("kelimelerin ötesinde") yapay zekâ yayınının editörüsün. Aşağıdaki her başlığa 0–100 arası bir puan ver.
 Kapsam YALNIZCA yapay zekâdır (modeller, ajanlar, yapay zekâ çipleri/altyapısı, robotik, bilimde/toplumda/ekonomide yapay zekâ, yapay zekâ etiği ve düzenlemeleri). Yapay zekâ ile ilgisi olmayan genel siyaset, savaş, spor veya sıradan tüketici haberleri 0 alır.
 
 ${KAPSAM}
 
 Puanlar:
 0 = kapsam dışı.
-5 = alanda çok konuşulacak gelişme: büyük model/ürün çıkışı, önemli düzenleme ya da mahkeme kararı, büyük satın alma veya yatırım, çığır açan araştırma.
-4 = önemli gelişme: kayda değer model, araştırma sonucu, şirket ya da politika haberi.
-3 = okura yeni bilgi veren sıradan yapay zekâ haberi.
-2 = zayıf: küçük özellik güncellemesi, tanıtım kokan duyuru, etkinlik.
-1 = okura neredeyse hiçbir şey söylemiyor (liste, rehber, yorum).
+90–100 = alanda çok konuşulacak gelişme: büyük model/ürün çıkışı, önemli düzenleme ya da mahkeme kararı, büyük satın alma veya yatırım, çığır açan araştırma.
+70–89 = önemli gelişme: kayda değer model, araştırma sonucu, şirket ya da politika haberi.
+50–69 = okura yeni bilgi veren sıradan yapay zekâ haberi.
+30–49 = zayıf: küçük özellik güncellemesi, tanıtım kokan duyuru, etkinlik.
+1–29 = okura neredeyse hiçbir şey söylemiyor (liste, rehber, yorum).
+Aralığın içinde ince ayar yap. 70 ve üstü yayımlanır: yalnız okurun gerçekten bilmesi gereken haberlere ver, emin değilsen 70 verme.
 
 Başlıklar:
 ${basliklar.map((b, i) => `${i}. ${b}`).join('\n')}`,
   });
   if (!r?.puanlar) return null;
   const puan = basliklar.map(() => MIN_DEGER);
-  for (const { nr, puan: p } of r.puanlar) if (Number.isInteger(nr) && nr >= 0 && nr < basliklar.length && Number.isInteger(p)) puan[nr] = Math.min(5, Math.max(0, p));
+  for (const { nr, puan: p } of r.puanlar) if (Number.isInteger(nr) && nr >= 0 && nr < basliklar.length && Number.isInteger(p)) puan[nr] = Math.min(100, Math.max(0, p));
   return puan;
 }
 
 
 /**
- * Önbellekli puanlama: önceki turlarda puanlanmış olay (kayit[anahtar] = { puan, zaman }) yeniden sorulmaz.
+ * Önbellekli puanlama: önceki turlarda puanlanmış olay (kayit[anahtar] = { puan, olcek: 100, zaman }) yeniden sorulmaz.
+ * Eski 0–5 ölçekli kayıtlar (olcek yok) yok sayılır, yeniden puanlanır.
  * Döner: basliklar ile hizalı puan dizisi; yeni puanlar kayda yazılır. Bir parça cevapsız kalırsa null.
  */
 export async function onbellekliPuanla(basliklar, anahtarlar, kayit, { kall = gemini, parca = 60, zaman = new Date().toISOString() } = {}) {
-  const puan = anahtarlar.map((k) => kayit[k]?.puan);
+  const puan = anahtarlar.map((k) => (kayit[k]?.olcek === OLCEK ? kayit[k].puan : undefined));
   const sor = puan.map((p, i) => (p === undefined ? i : -1)).filter((i) => i >= 0);
   for (let i = 0; i < sor.length; i += parca) {
     const dilim = sor.slice(i, i + parca);
@@ -211,7 +216,7 @@ export async function onbellekliPuanla(basliklar, anahtarlar, kayit, { kall = ge
     if (sonuc === null) return null;
     sonuc.forEach((p, j) => {
       puan[dilim[j]] = p;
-      kayit[anahtarlar[dilim[j]]] = { puan: p, zaman };
+      kayit[anahtarlar[dilim[j]]] = { puan: p, olcek: OLCEK, zaman };
     });
   }
   return puan;

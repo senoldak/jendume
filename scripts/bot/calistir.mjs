@@ -174,7 +174,7 @@ if (sira.length) {
   }
 }
 
-// c) Kapsam ve haber değeri: 0–5 puan; MIN_DEGER altı yazılmaz. Sıra: puan, yerli kaynak, yeniden eskiye.
+// c) Kapsam ve haber değeri: 0–100 puan; MIN_DEGER altı yazılmaz. Sıra: puan, yerli kaynak, yeniden eskiye.
 //    Hata ya da cevapsızlıkta eski usul (yerli önce, yeni önce); tur düşmez.
 const puan = new Map();
 if (sira.length) {
