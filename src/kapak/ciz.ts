@@ -1,12 +1,12 @@
 // Haber kapakları: görsel, haberin kendi künyesinden çizilir (kifobu ve tidsrost'taki gibi dışarıdan fotoğraf alınmaz).
-// Kapak bir yön levhasıdır: siyah levha, bölüm kodu, iki dilli bölüm adı, büyük başlık ve altta sarı kapı bandı.
+// Kapak sarı bir levhadır: üstte siyah bant (bölüm kodu, bölüm adı, ok), ortada büyük başlık, altta marka.
 // 1200×675 (16:9) SVG döner; /kapak/[lang]/[id].png uç noktası bunu sharp ile PNG'ye çevirir.
 // Yazılar yazı tipinden doğrudan vektör yola çevrilir; böylece derleme makinesinde yazı tipi kurulu olması gerekmez.
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { create, type Font } from 'fontkitten';
-import { SITE, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
-import type { NewsEntry } from '../lib/news';
+import { SITE, getCategory, type Locale } from '../lib/site.ts';
+import type { NewsEntry } from '../lib/news.ts';
 
 export const KAPAK_G = 1200;
 export const KAPAK_Y = 675;
@@ -92,107 +92,84 @@ function satirlar(s: string, maks: number, ayar: MetinAyar, maksSatir: number) {
   return out;
 }
 
-/** Arrow.astro'daki levha oku (24 birimlik kutu), sağı gösterir. */
-function ok(x: number, y: number, boyut: number, renk: string) {
-  return `<path transform="translate(${x} ${y}) scale(${boyut / 24})" d="M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z" fill="${renk}"/>`;
-}
-
-/** Levhanın içeriği: haber kapağında haberin künyesi, bölüm kapağında bölümün kendisi. */
+/** Levhanın içeriği: haber kapağında haberin başlığı, bölüm kapağında bölümün açıklaması. */
 interface Levha {
   title: string;
   category: string;
   breaking?: boolean;
-  /** Alt bantta solda duran satır (coğrafya · tarih ya da bölüm açıklaması). */
-  kunye: string;
 }
 
 export function kapakSvg(post: NewsEntry, lang: Locale) {
   const d = post.data;
-  return levhaSvg(
-    { title: d.title, category: d.category, breaking: d.breaking, kunye: [d.bolge, formatDate(d.date, lang)].filter(Boolean).join(' · ') },
-    lang,
-  );
+  return levhaSvg({ title: d.title, category: d.category, breaking: d.breaking }, lang);
 }
 
 /**
  * Bölümün ortak kapağı: kendi kapağı bütçe dışında kalan eski haberlerin paylaşım görseli (bkz. src/lib/kapak.mjs).
- * Başlık yerine bölümün açıklaması, alt bantta "Tüm Haberler" durur.
+ * Başlık yerine bölümün açıklaması durur.
  */
 export function bolumKapakSvg(slug: string, lang: Locale) {
   const kat = getCategory(slug, lang);
-  return levhaSvg({ title: kat.description, category: slug, kunye: SITE.ui[lang].allStories }, lang);
+  return levhaSvg({ title: kat.description, category: slug }, lang);
 }
 
+// Sarı levha: sarı zemin, üstte siyah bant (kod karesi, bölüm adı, ok), ortada dev başlık, altta marka.
+const BANT = 120;
+const ALT = 96;
+
 function levhaSvg(d: Levha, lang: Locale) {
-  const diger = otherLocale(lang);
   const kat = getCategory(d.category, lang);
-  const katDiger = getCategory(d.category, diger);
+  const yerel = SITE.localeTag[lang];
 
-  // Üst satır: marka solda, slogan sağda (okuma dili kalın, öteki dil ince).
-  const marka = metin(SITE.displayName, KENAR, 98, { yuz: 'kalin', boyut: 54, renk: R.signText, aralik: 1.6 });
-  const slogan =
-    metin(SITE.tagline[lang], G - KENAR, 76, { yuz: 'yari', boyut: 26, renk: R.signText, hiza: 'end' }) +
-    metin(SITE.tagline[diger], G - KENAR, 108, { yuz: 'ince', boyut: 23, renk: R.signMuted, hiza: 'end' });
-  const ustCizgi = `<rect x="${KENAR}" y="140" width="${G - KENAR * 2}" height="2" fill="${R.sign2}"/>`;
-
-  // Bölüm satırı: sarı kod karesi + iki dilli bölüm adı (+ önemli gelişme etiketi).
-  const kare = 50;
-  const kY = 176;
+  // Üst bant.
+  const kare = 64;
+  const kY = (BANT - kare) / 2;
+  const kodAyar: MetinAyar = { yuz: 'kalin', boyut: 46, renk: R.sign };
+  const kodMetin = String(kat.code);
+  const capKod = 46 * 0.7;
   const kod =
     `<rect x="${KENAR}" y="${kY}" width="${kare}" height="${kare}" fill="${R.signal}"/>` +
-    metin(String(kat.code), KENAR + kare / 2 - genislik(String(kat.code), { yuz: 'kalin', boyut: 36, renk: '' }) / 2, kY + 38, { yuz: 'kalin', boyut: 36, renk: R.sign });
-  const adAyar: MetinAyar = { yuz: 'yari', boyut: 32, renk: R.signText };
-  const xAd = KENAR + kare + 18;
-  const tabanAd = kY + 37;
-  let bolum = metin(kat.title, xAd, tabanAd, adAyar);
-  let xSon = xAd + genislik(kat.title, adAyar) + 16;
-  const digerAyar: MetinAyar = { yuz: 'ince', boyut: 27, renk: R.signMuted };
-  if (kat.title !== katDiger.title) {
-    bolum += metin(katDiger.title, xSon, tabanAd, digerAyar);
-    xSon += genislik(katDiger.title, digerAyar) + 20;
-  }
+    metin(kodMetin, KENAR + kare / 2 - genislik(kodMetin, kodAyar) / 2, Math.round(BANT / 2 + capKod / 2), kodAyar);
+  const adAyar: MetinAyar = { yuz: 'yari', boyut: 40, renk: R.signText };
+  const xAd = KENAR + kare + 24;
+  let bolum = metin(kat.title, xAd, Math.round(BANT / 2 + 40 * 0.35), adAyar);
+  const xSon = xAd + genislik(kat.title, adAyar) + 28;
+  const okX = G - KENAR - 70;
+  const ok = `<path d="M${okX} ${BANT / 2}h52m-22-24 24 24-24 24" stroke="${R.signal}" stroke-width="10" fill="none"/>`;
   if (d.breaking) {
-    const etiket = SITE.ui[lang].breakingBadge.toLocaleUpperCase(SITE.localeTag[lang]);
-    const eAyar: MetinAyar = { yuz: 'yari', boyut: 21, renk: R.signText, aralik: 1.2 };
-    const en = genislik(etiket, eAyar) + 24;
-    if (xSon + en <= G - KENAR) {
-      bolum += `<rect x="${xSon.toFixed(1)}" y="${kY + 8}" width="${en.toFixed(1)}" height="34" fill="${R.alert}"/>` + metin(etiket, xSon + 12, kY + 32, eAyar);
+    const etiket = SITE.ui[lang].breakingBadge.toLocaleUpperCase(yerel);
+    const eAyar: MetinAyar = { yuz: 'yari', boyut: 24, renk: R.signText, aralik: 1.4 };
+    const en = genislik(etiket, eAyar) + 28;
+    if (xSon + en <= okX - 24) {
+      bolum += `<rect x="${xSon.toFixed(1)}" y="${BANT / 2 - 21}" width="${en.toFixed(1)}" height="42" fill="${R.alert}"/>` + metin(etiket, xSon + 14, Math.round(BANT / 2 + 8), eAyar);
     }
   }
 
-  // Başlık: kod satırı ile sarı bant arasında dikeyde ortalanır; uzunsa küçülür.
+  // Başlık: 96 pikselden 52'ye 4'er küçülerek bölgeye sığar; bölge üst bant ile marka alanı arasıdır.
   const enMaks = G - KENAR * 2;
-  let boyut = 72;
-  let ayar: MetinAyar = { yuz: 'kalin', boyut, renk: R.signText };
-  let s = satirlar(d.title, enMaks, ayar, 4);
-  if (s.length > 3) {
-    boyut = 60;
+  const bolge = Y - ALT - BANT - 56;
+  let boyut = 96;
+  let ayar: MetinAyar = { yuz: 'kalin', boyut, renk: R.sign };
+  let s: string[] = [];
+  const blokYuk = (n: number, b: number) => (n - 1) * b * 1.06 + b * 0.7;
+  for (; ; boyut -= 4) {
     ayar = { ...ayar, boyut };
-    s = satirlar(d.title, enMaks, ayar, 4);
+    s = satirlar(d.title, enMaks, ayar, 99);
+    if (blokYuk(s.length, boyut) <= bolge) break;
+    if (boyut <= 52) {
+      const n = Math.max(1, Math.floor((bolge - boyut * 0.7) / (boyut * 1.06)) + 1);
+      s = satirlar(d.title, enMaks, ayar, n);
+      break;
+    }
   }
-  const ust = 250;
-  const alt = 548;
-  const satirAra = boyut * 1.08;
-  const blok = (s.length - 1) * satirAra + boyut * 0.7;
-  const ilk = ust + (alt - ust - blok) / 2 + boyut * 0.7;
+  const satirAra = boyut * 1.06;
+  const blok = blokYuk(s.length, boyut);
+  const ilk = BANT + (Y - ALT - BANT - blok) / 2 + boyut * 0.7;
   const baslik = s.map((l, i) => metin(l, KENAR, Math.round(ilk + i * satirAra), ayar)).join('');
 
-  // Kapı bandı: tam genişlik sarı; solda coğrafya · tarih, sağda ok ve adres.
-  const bY = 575;
-  const bantAyar: MetinAyar = { yuz: 'yari', boyut: 30, renk: R.sign };
-  const kunyeMetin = d.kunye;
-  const kunye = metin(satirlar(kunyeMetin, enMaks - 300, bantAyar, 1)[0], KENAR, bY + 61, bantAyar);
-  const adres = 'jendume.com';
-  const adresAyar: MetinAyar = { yuz: 'kalin', boyut: 30, renk: R.sign };
-  const xAdres = G - KENAR - genislik(adres, adresAyar);
-  const bant =
-    `<rect y="${bY}" width="${G}" height="${Y - bY}" fill="${R.signal}"/>` +
-    `<rect y="${bY}" width="${G}" height="4" fill="${R.sign}"/>` +
-    kunye +
-    ok(xAdres - 46, bY + 30, 36, R.sign) +
-    metin(adres, xAdres, bY + 61, adresAyar);
+  const marka = metin(SITE.displayName, KENAR, Y - 48 + 14, { yuz: 'kalin', boyut: 40, renk: R.sign, aralik: 2 });
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${G}" height="${Y}" viewBox="0 0 ${G} ${Y}"><rect width="${G}" height="${Y}" fill="${R.sign}"/>${marka}${slogan}${ustCizgi}${kod}${bolum}${baslik}${bant}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${G}" height="${Y}" viewBox="0 0 ${G} ${Y}"><rect width="${G}" height="${Y}" fill="${R.signal}"/><rect width="${G}" height="${BANT}" fill="${R.sign}"/>${kod}${bolum}${ok}${baslik}${marka}</svg>`;
 }
 
 /** Çizilen kapağın ekran okuyucu metni. */
