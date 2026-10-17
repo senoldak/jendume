@@ -47,3 +47,11 @@ test('seffaflikVerisi: bot başlangıcından önceki günler (taşınan haberler
   assert.equal(v.yayinlanan, 1);
   assert.equal(v.taranan, 1);
 });
+
+test('arama yolu iki dilde ve dil değiştiricide eşlenir', async () => {
+  const { aramaYolu, aramaDiziniYolu } = await import('./yollar.mjs');
+  assert.equal(aramaYolu('tr'), '/tr/arama/');
+  assert.equal(aramaYolu('en'), '/en/search/');
+  assert.equal(aramaDiziniYolu('en'), '/en/search.json');
+  assert.equal(karsiYol('/en/search/', 'tr'), '/tr/arama/');
+});

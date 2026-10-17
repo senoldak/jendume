@@ -76,7 +76,8 @@ function sayfa(url) {
   sayfaDurumu.set(url, durum);
   return durum;
 }
-const haritaDisi = (url) => kisaHaberler.has(url) || yonlendirmeler.has(url) || sayfa(url).noindex;
+// JSON uç noktaları (arama dizini, haftalık bülten verisi) sayfa değildir.
+const haritaDisi = (url) => url.endsWith('.json') || kisaHaberler.has(url) || yonlendirmeler.has(url) || sayfa(url).noindex;
 
 // hreflang eşleri: yol parçaları dile göre değiştiği için (/tr/haber/… ↔ /en/news/…; src/lib/yollar.mjs)
 // i18n eklentisinin önek eşlemesi yetmez; karşı yol hesaplanır ve yalnız gerçekten var olan, dizine giren eş verilir.
@@ -138,4 +139,6 @@ export default defineConfig({
     format: 'directory',
     inlineStylesheets: 'never',
   },
+  // CSP (public/_headers) satır içi betiğe izin vermez: küçük betikler de ayrı dosya (/_astro/*.js) olsun.
+  vite: { build: { assetsInlineLimit: 0 } },
 });

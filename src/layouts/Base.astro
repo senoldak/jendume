@@ -3,7 +3,7 @@ import Arrow from '../components/Arrow.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl } from '../lib/news';
-import { bultenYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu } from '../lib/yollar.mjs';
+import { bultenYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu } from '../lib/yollar.mjs';
 import BultenFormu from '../components/BultenFormu.astro';
 import '../styles/global.css';
 import '../styles/bulten.css';
@@ -71,6 +71,7 @@ const homeHref = `/${lang}/`;
 const editorialHref = editorialUrl(lang);
 const aboutHref = hakkimizdaYolu(lang);
 const transparencyHref = seffaflikYolu(lang);
+const searchHref = aramaYolu(lang);
 const topicsHref = konuDiziniYolu(lang);
 const glossaryHref = sozlukYolu(lang);
 const bultenHref = bultenYolu(lang);
@@ -181,6 +182,9 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           </a>
           <a href={aboutHref} aria-current={path === aboutHref ? 'page' : undefined}>
             {ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span>
+          </a>
+          <a href={searchHref} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
+            {ui.search}<span class="link-other" lang={other}>{SITE.ui[other].search}</span>
           </a>
           <a href={`/${lang}/rss.xml`}>
             {ui.rss}<span class="link-other">{lang.toUpperCase()}</span>

@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', bulten: 'bulten', gizlilik: 'gizlilik', seffaflik: 'seffaflik' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', bulten: 'newsletter', gizlilik: 'privacy', seffaflik: 'transparency' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', bulten: 'bulten', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', bulten: 'newsletter', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */
@@ -38,6 +38,10 @@ export function kategoriKimligi(dil, parca) {
 export const haberYolu = (dil, id) => `/${dil}/${YOL[dil].haber}/${id}/`;
 /** @param {Dil} dil @param {string} kimlik */
 export const kategoriYolu = (dil, kimlik) => `/${dil}/${YOL[dil].kategori}/${kategoriParcasi(dil, kimlik)}/`;
+/** @param {Dil} dil */
+export const aramaYolu = (dil) => `/${dil}/${YOL[dil].arama}/`;
+/** Arama dizini (JSON): /tr/arama.json, /en/search.json @param {Dil} dil */
+export const aramaDiziniYolu = (dil) => `/${dil}/${YOL[dil].arama}.json`;
 /** @param {Dil} dil */
 export const seffaflikYolu = (dil) => `/${dil}/${YOL[dil].seffaflik}/`;
 /** @param {Dil} dil */
