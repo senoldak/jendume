@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
-import { baslikKontrol, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
+import { baslikKontrol, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
@@ -26,6 +26,13 @@ const EN_FAZLA = sayiAyar('EN_FAZLA', 6);
 const TEYIT = sayiAyar('TEYIT', 1);
 const SURE_MS = sayiAyar('SURE_DK', 18) * 60_000;
 const BASLANGIC = Date.now();
+
+// Actions günlükleri herkese açık: kaynak başlıkları, model gerekçeleri ve denetim mesajları yayın adı,
+// hata mesajları adres taşıyabilir. Bütün modüllerin günlük satırları gunlukSatiri'ndan geçer.
+for (const tur of ['log', 'warn', 'error']) {
+  const asil = console[tur].bind(console);
+  console[tur] = (...x) => asil(...x.map((p) => (typeof p === 'string' ? gunlukSatiri(p) : p)));
+}
 
 // Katman 3 (Gemini kota planı): bu turun Gemini payı; yeni habere başlamadan önce geminiPayiBitti() sorulur.
 if (!KURU) console.log(await butceYukle({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, site: 'jendume' }));
@@ -386,6 +393,6 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   const liste = (b, x) => (x.length ? `\n### ${b}\n${x.map((s) => `- ${s}`).join('\n')}\n` : '');
   await appendFile(
     process.env.GITHUB_STEP_SUMMARY,
-    `## jendume botu\n${liste('Yayımlandı (TR/EN)', ozet.yazilan)}${liste('Denetimden geçemedi', ozet.elenen)}${liste('Atlandı', ozet.atlanan)}${liste('Hata', ozet.hata)}`
+    gunlukSatiri(`## jendume botu\n${liste('Yayımlandı (TR/EN)', ozet.yazilan)}${liste('Denetimden geçemedi', ozet.elenen)}${liste('Atlandı', ozet.atlanan)}${liste('Hata', ozet.hata)}`)
   );
 }

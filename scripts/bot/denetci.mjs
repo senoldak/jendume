@@ -1,5 +1,5 @@
 // jendume iki dilli teknik doğrulama ve kalite denetçisi.
-import { gizliMedyaAdlari } from './gizli.mjs';
+import { adresiSil, gizliMedyaAdlari } from './gizli.mjs';
 
 const RAKAM = /\d+(?:[.,]\d+)*/g;
 
@@ -96,6 +96,11 @@ export function medyaAdlariniKur(adlar = gizliMedyaAdlari()) {
   };
 }
 medyaAdlariniKur();
+
+// Actions günlükleri ve özeti herkese açık: oraya giden satırda yayın adları "[yayın]", adresler "[adres]" olur.
+// medyaKontrol mesajı adı taşımaya devam eder (Gemini düzeltme isteği adı bilmeli); gizleme yalnız çıktıda yapılır.
+export const medyaGizle = (metin) => String(metin).replace(MEDYA, '[yayın]');
+export const gunlukSatiri = (metin) => medyaGizle(adresiSil(metin));
 
 export function medyaKontrol(metin) {
   const bulunan = [...new Set(String(metin).match(MEDYA) ?? [])];
