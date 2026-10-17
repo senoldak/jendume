@@ -138,10 +138,13 @@ function levhaSvg(d: Levha, lang: Locale) {
   const ok = `<path d="M${okX} ${BANT / 2}h52m-22-24 24 24-24 24" stroke="${R.signal}" stroke-width="10" fill="none"/>`;
   if (d.breaking) {
     const etiket = SITE.ui[lang].breakingBadge.toLocaleUpperCase(yerel);
-    const eAyar: MetinAyar = { yuz: 'yari', boyut: 24, renk: R.signText, aralik: 1.4 };
-    const en = genislik(etiket, eAyar) + 28;
+    const eAyar: MetinAyar = { yuz: 'kalin', boyut: 24, renk: R.signText, aralik: 1.2 };
+    const en = genislik(etiket, eAyar) + 24;
+    const yuk = 24 + 16; // yazı boyu + dikeyde 8'er piksel boşluk, bant içinde ortalı
     if (xSon + en <= okX - 24) {
-      bolum += `<rect x="${xSon.toFixed(1)}" y="${BANT / 2 - 21}" width="${en.toFixed(1)}" height="42" fill="${R.alert}"/>` + metin(etiket, xSon + 14, Math.round(BANT / 2 + 8), eAyar);
+      bolum +=
+        `<rect x="${xSon.toFixed(1)}" y="${BANT / 2 - yuk / 2}" width="${en.toFixed(1)}" height="${yuk}" fill="${R.alert}"/>` +
+        metin(etiket, xSon + 12, Math.round(BANT / 2 + 24 * 0.35), eAyar);
     }
   }
 
