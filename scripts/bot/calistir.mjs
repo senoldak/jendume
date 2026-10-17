@@ -36,6 +36,9 @@ const EN_AZ_KAYNAK = 1200;
 
 const durum = await jsonOku(DURUM_DOSYASI, { gorulen: {}, hatalar: {}, ayrik: {} });
 durum.gorulen ??= {};
+// Şeffaflık sayfası için taranan her aday (gorulen yalnız karar verilenleri tutar), 30 gün. İlk turda
+// gorulen'den tohumlanır, böylece geçmiş günler boş kalmaz.
+durum.taranan ??= { ...durum.gorulen };
 durum.hatalar ??= {};
 durum.ayrik ??= {};
 // Önceki turların "aynı olay" kararları ve olay puanları: aynı soru Gemini'ye ikinci kez gitmez.
@@ -63,7 +66,7 @@ for (const k of KAYNAKLAR) {
     console.warn(`${k.etiket}: akış okunamadı (${adresiSil(e.message)})`);
     continue;
   }
-  const yeni = ogeler
+  const taze = ogeler
     .map((o) => ({
       ...o,
       id: haberKimligi(k, o.guid || o.link),
@@ -73,8 +76,10 @@ for (const k of KAYNAKLAR) {
     }))
     .filter((o) => o.link.startsWith('https://') && !Number.isNaN(o.tarih.valueOf()))
     .filter((o) => simdi - o.tarih <= YAS_GUN * 86_400_000)
-    .filter((o) => !k.filtre || k.filtre.test(`${o.baslik} ${o.description || ''}`))
-    .filter((o) => !durum.gorulen[o.id]);
+    .filter((o) => !k.filtre || k.filtre.test(`${o.baslik} ${o.description || ''}`));
+  // Zaman olarak yayın tarihi (gelecekteyse şimdi): ilk turda akışta günlerdir duran adaylar bugüne yığılmasın.
+  for (const o of taze) durum.taranan[o.id] ??= new Date(Math.min(o.tarih, simdi)).toISOString();
+  const yeni = taze.filter((o) => !durum.gorulen[o.id]);
 
   for (const o of yeni) o.anahtar = anahtarlar(o.baslik);
   console.log(`${k.etiket}: ${yeni.length} aday`);
@@ -367,7 +372,7 @@ try {
 // Yayın belleği 72 saat, puanlar yalnızca aday yaşı boyunca gerekir.
 for (const [k, v] of Object.entries(durum.yayinlanan)) if (simdi - new Date(v.zaman) > BELLEK_SAAT * 3_600_000) delete durum.yayinlanan[k];
 for (const [k, v] of Object.entries(durum.puan)) if (simdi - new Date(v.zaman) > (YAS_GUN + 1) * 86_400_000) delete durum.puan[k];
-for (const kayit of [durum.gorulen, durum.ayrik, durum.ayni]) {
+for (const kayit of [durum.gorulen, durum.taranan, durum.ayrik, durum.ayni]) {
   for (const [id, t] of Object.entries(kayit)) {
     if (simdi - new Date(t) > 30 * 86_400_000) delete kayit[id];
   }

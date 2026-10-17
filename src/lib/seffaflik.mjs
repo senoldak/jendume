@@ -1,8 +1,9 @@
 // Şeffaflık sayfasının verisi: haber botu ne kadar içerik taradı, kaç haber yayımlandı, hangi kaynak türlerinden.
 // Resmi olmayan kaynakların adı geçmez: kimlikleri zaten kısa koddur (k1a2b3c, bkz. scripts/bot/gizli.mjs) ve yalnız
 // sayı olarak görünürler. Laboratuvar/kurum akışları (RESMI_KAYNAKLAR) kısa adlarıyla sayılır.
-// Değerlendirilen adaylar scripts/bot/gorulen.json'dan gelir: bot bir adayı ancak hakkında karar verince (yazıldı ya da
-// elendi) işaretler, bu yüzden sayı "taranan" değil "değerlendirilen" adaydır. Yayımlananlar Türkçe koleksiyondan gelir.
+// Taranan adaylar scripts/bot/gorulen.json'un `taranan` kaydından gelir: bot akışta gördüğü her güncel adayı yayın
+// tarihiyle bir kez yazar (karar verilmesini beklemeden). Kayıt yoksa (eski durum dosyası) `gorulen` kullanılır.
+// Yayımlananlar Türkçe koleksiyondan gelir.
 // BOT_BASLANGIC: bu botun ilk sürümü; öncesindeki haberler eski sistemden taşındı, pencereye girmez.
 export const BOT_BASLANGIC = '2026-10-15';
 
@@ -45,6 +46,8 @@ export function seffaflikVerisi(haberler, gorulen, { simdi = new Date(), gun = 3
     taranan: taranan.length,
     yayinlanan: yayinlanan.length,
     kaynakSayisi: yayin.kaynak + resmi.kaynak,
+    // Yayına dönüşme: taranan aday başına yayımlanan haber. Bir haber aynı olayın birden çok adayından yazılır.
+    donusumOrani: taranan.length ? yayinlanan.length / taranan.length : 0,
     yayin,
     resmi,
     gunluk: gunler.map((g) => ({

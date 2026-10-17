@@ -16,10 +16,13 @@ const { lang } = Astro.props;
 const tr = lang === 'tr';
 // Her haber iki dilde yayımlanır; sayım Türkçe koleksiyondan yapılır.
 const haberler = (await getPublishedPosts('tr')).map((h) => ({ date: h.data.date }));
-const v = seffaflikVerisi(haberler, durum.gorulen, { simdi: new Date() });
+// taranan: botun akışta gördüğü her güncel aday (scripts/bot/calistir.mjs); eski durum dosyasında yoksa gorulen.
+const kayit = (durum as { taranan?: Record<string, string>; gorulen: Record<string, string> });
+const v = seffaflikVerisi(haberler, kayit.taranan ?? kayit.gorulen, { simdi: new Date() });
 
 const yerel = tr ? 'tr-TR' : 'en-GB';
 const sayi = (n: number) => n.toLocaleString(yerel);
+const oran = (v.donusumOrani * 100).toLocaleString(yerel, { maximumFractionDigits: 1 });
 const gunAdi = (g: string) =>
   new Date(`${g}T12:00:00Z`).toLocaleDateString(yerel, { day: 'numeric', month: 'short', timeZone: 'Europe/Istanbul' });
 
@@ -28,43 +31,47 @@ const T = tr
       baslik: 'Şeffaflık',
       aciklama: 'JEN DUME haber botunun son günlerde taradığı içerik, yayımladığı haber ve kullandığı kaynak türleri.',
       giris:
-        'Haberlerimizi yapay zekâ desteğiyle çalışan bir haber botu hazırlıyor. Bu sayfa botun kaç adayı değerlendirdiğini ve kaç iki dilli haber yayımlandığını gösterir. Veriler her yayında güncellenir.',
-      taranan: 'Değerlendirilen aday',
+        'Haberlerimizi yapay zekâ desteğiyle çalışan bir haber botu hazırlıyor. Bu sayfa botun kaynaklarda kaç aday taradığını ve bunlardan kaç iki dilli haber yayımlandığını gösterir. Veriler her yayında güncellenir.',
+      taranan: 'Taranan aday',
+      oran: 'Yayına dönüşme',
+      oranNot: `Her 100 taranan adaydan yaklaşık ${oran} haber çıkar; bir haber aynı olayı anlatan birden çok adaydan yazılır.`,
       yayinlanan: 'Yayımlanan haber',
       kaynak: 'Kaynak',
       donem: `Son ${v.gunSayisi} gün: ${gunAdi(v.ilkGun)} – ${gunAdi(v.sonGun)}. Her haber Türkçe ve İngilizce yayımlanır; sayı bir kez sayılır.`,
       gunlukBaslik: 'Günlük yayımlanan haber',
       tablo: 'Tablo olarak göster',
       gun: 'Gün',
-      kaynakBaslik: 'Değerlendirilen adayların kaynağı',
+      kaynakBaslik: 'Taranan adayların kaynağı',
       tur: 'Kaynak türü',
       resmi: 'Laboratuvarlar, şirketler ve kurumların kendi duyuruları',
       yayin: 'Haber siteleri, dergiler ve bloglar',
       not: 'Laboratuvar ve kurum duyuruları haberin altında kaynak olarak bağlanır. Haber sitelerinin ve yayınların adlarını yayımlamıyoruz; onları kopyalamıyor, olguları karşılaştırıp kendi dilimizle yazıyoruz.',
       ilkeler: 'Yayın İlkeleri',
       ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
-        `${gunAdi(g.gun)}: ${g.yayinlanan} haber, ${sayi(g.taranan)} aday değerlendirildi`,
+        `${gunAdi(g.gun)}: ${g.yayinlanan} haber, ${sayi(g.taranan)} aday tarandı`,
     }
   : {
       baslik: 'Transparency',
       aciklama: 'How much the JEN DUME news bot scanned, how many stories it published, and which kinds of sources it used.',
       giris:
-        'Our stories are prepared by a news bot that works with AI assistance. This page shows how many candidate items the bot evaluated and how many bilingual stories were published. The figures update with every build.',
-      taranan: 'Items evaluated',
+        'Our stories are prepared by a news bot that works with AI assistance. This page shows how many candidate items the bot scanned in its sources and how many bilingual stories came out of them. The figures update with every build.',
+      taranan: 'Items scanned',
+      oran: 'Conversion',
+      oranNot: `About ${oran} stories come out of every 100 items scanned; one story is usually written from several items covering the same event.`,
       yayinlanan: 'Stories published',
       kaynak: 'Sources',
       donem: `Last ${v.gunSayisi} days: ${gunAdi(v.ilkGun)} – ${gunAdi(v.sonGun)}. Each story appears in English and Turkish; it is counted once.`,
       gunlukBaslik: 'Stories published per day',
       tablo: 'Show as table',
       gun: 'Day',
-      kaynakBaslik: 'Where the evaluated items come from',
+      kaynakBaslik: 'Where the scanned items come from',
       tur: 'Source type',
       resmi: 'Announcements from AI labs, companies and institutions',
       yayin: 'News sites, magazines and blogs',
       not: 'Lab and institution announcements are linked as sources under each story. We do not publish the names of news sites and publications; we do not copy them, we compare the facts and write the story ourselves.',
       ilkeler: 'Editorial Standards',
       ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
-        `${gunAdi(g.gun)}: ${g.yayinlanan} stories, ${sayi(g.taranan)} items evaluated`,
+        `${gunAdi(g.gun)}: ${g.yayinlanan} stories, ${sayi(g.taranan)} items scanned`,
     };
 
 // Çubuk grafiği SVG: yükseklikler öznitelikle verilir (CSP satır içi stile izin vermez).
@@ -105,9 +112,10 @@ const G = {
     <dl class="buyuk">
       <div><dt>{T.taranan}</dt><dd>{sayi(v.taranan)}</dd></div>
       <div><dt>{T.yayinlanan}</dt><dd>{sayi(v.yayinlanan)}</dd></div>
+      <div><dt>{T.oran}</dt><dd>{tr ? `%${oran}` : `${oran}%`}</dd></div>
       <div><dt>{T.kaynak}</dt><dd>{v.kaynakSayisi}</dd></div>
     </dl>
-    <p class="not">{T.donem}</p>
+    <p class="not">{T.donem} {T.oranNot}</p>
 
     <section aria-labelledby="gunluk">
       <h2 id="gunluk">{T.gunlukBaslik}</h2>

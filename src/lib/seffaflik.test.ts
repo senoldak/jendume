@@ -23,6 +23,7 @@ test('seffaflikVerisi: pencere ilk taramadan, türler ve günlük sayılar', () 
   assert.equal(v.ilkGun, '2026-10-15');
   assert.equal(v.taranan, 4);
   assert.equal(v.yayinlanan, 1);
+  assert.equal(v.donusumOrani, 0.25);
   assert.deepEqual(v.yayin, { taranan: 3, kaynak: 2 });
   assert.deepEqual(v.resmi, { taranan: 1, kaynak: 1 });
   assert.deepEqual(v.gunluk, [
