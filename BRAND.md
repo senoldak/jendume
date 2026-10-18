@@ -84,7 +84,7 @@ kırmızı yerine mürekkep dolgulu olur. *Benim kararım.*
 
 | Uygulama | Düzen |
 |---|---|
-| **Haber kapağı** (1200×675) | Kâğıt zemin; sağ üst köşeden taşan **büyük yeşil daire** (j noktasının büyümüşü; imza öğesi); sol üstte kategori "YAPAY ZEKÂ · AI" yeşil büyük harf; Türkçe başlık 700, altında İngilizce başlık 400 gri; sol altta logo |
+| **Haber kapağı** (1200×675) | Kâğıt zemin; sağ üst köşeden taşan **büyük yeşil daire** (j noktasının büyümüşü; imza öğesi); sol üstte kategori yeşil büyük harf; başlık 700; sol altta logo. **Tek dilli**: yalnız sayfanın dili (sahibin kararı; iki dilli kapak kalabalıktı) |
 | **Site** | Mevcut sayfalar kimliğe **uydurulur, yeni blok eklenmez**. Yön levhası öğeleri (1–6 numaraları, oklar, siyah bant, sarı kutular) kalkar; iki dilli etiketler kalır. Kâğıt zemin, yeşil vurgu |
 | **Profil fotoğrafı** | Levha (tam kare). *Benim kararım.* |
 | **Kapak görseli** (X, Facebook, LinkedIn) | Kâğıt zemin; levha + "jen dume" + slogan ortada; sağ üst köşeden taşan büyük yeşil daire. *Benim kararım.* |

@@ -30,12 +30,12 @@ A bilingual (`tr`, `en`) artificial intelligence publication, not a breaking-new
 - Astro static site on Cloudflare Workers static assets (`jendume.com`).
 - Strict Content Security Policy in `public/_headers` (`inlineStylesheets: 'never'`); no third-party hosts for fonts or scripts.
 - Sister sites `tidsrost`, `kifobu`, `finfolis` and `leyum` share operations but each has a fully separate visual identity; jendume must not resemble any of them.
-- Stories have no outside photos; every article uses the generated wayfinding cover (`src/kapak/ciz.ts`).
+- Stories have no outside photos; every article uses the generated cover (`src/kapak/ciz.ts`, identity v2: paper, big green circle, single-language).
 - Never name or link news outlets on the site; only official sources, research institutions, and companies may be cited.
 
 ## Brand Commitments
 
-- Name: **JEN DUME** as the display wordmark; `jendume` in URLs and code.
+- Name: **JEN DUME**; identity v2 (2026-10-18, `BRAND.md`): plate mark (dark plate, white J, Esperanto-green square), lowercase "jen dume" logotype with a green j dot, Instrument Sans, Esperanto green. `jendume` in URLs and code.
 - Motto: "Beyond Words" / "kelimelerin ötesinde".
 - Bilingual parity: every published story exists in Turkish and English.
 - Voice: calm, curious, humane, precise; no breathless hype, no clickbait.

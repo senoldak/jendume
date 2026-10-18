@@ -1,58 +1,22 @@
-/* JEN DUME — iki dilli yön levhası dünyası.
-   Çerçeve levhadır (siyah panel, sinyal sarısı bant, Signika);
-   okuma sütunu sakindir (açık zemin, Atkinson Hyperlegible Next). */
+/* JEN DUME — Kimlik v2 (BRAND.md): kâğıt zemin, mürekkep, tek marka rengi Esperanto yeşili, tek aile Instrument Sans.
+   Yön levhası temasının seçicileri duruyor; renkleri belirteçlerle ve dosyanın sonundaki "Kimlik v2" bölümüyle değişti. */
 
+/* Instrument Sans (SIL OFL), genişlik 100'e sabit: scripts/marka/yazi-tipi.py. Dosya değişirse sürüm ekini artır. */
 @font-face {
-  font-family: 'Signika';
+  font-family: 'Instrument Sans';
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 400 700;
   font-display: swap;
-  src: url('/fonts/signika-latin-ext.woff2') format('woff2');
+  src: url('/fonts/instrument-latin-ext-v1.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
     U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
-  font-family: 'Signika';
+  font-family: 'Instrument Sans';
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 400 700;
   font-display: swap;
-  src: url('/fonts/signika-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Atkinson Hyperlegible Next';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/atkinson-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
-    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Atkinson Hyperlegible Next';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/atkinson-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Atkinson Hyperlegible Next';
-  font-style: italic;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/atkinson-italic-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
-    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Atkinson Hyperlegible Next';
-  font-style: italic;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/atkinson-italic-latin.woff2') format('woff2');
+  src: url('/fonts/instrument-latin-v1.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
     U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -64,21 +28,24 @@
   --sign-text: #ffffff;
   --sign-muted: #a7adb7;
   --sign-soft: #d4d8de;
-  --signal: #ffc72c;
-  --signal-deep: #f0b000;
-  --signal-ink: #4a3a00;
-  --alert: #c8102e;
+  /* Eski sinyal sarısının yerine: vurgu zeminleri açık yeşil, çizgi ve vurgular Esperanto yeşili. */
+  --signal: #d3ecdd;
+  --signal-deep: #00924a;
+  --signal-ink: #1f5c3c;
+  --alert: #16181d; /* önemli gelişme etiketi mürekkep dolgulu */
+  --yesil: #00924a;
+  --yesil-yazi: #00783d;
 
   /* Okuma */
-  --ground: #f3f4f1;
+  --ground: #f4f5f2;
   --paper: #ffffff;
   --ink: #16181d;
   --ink-2: #3a3f48;
   --muted: #5a606b;
   --hair: #c9ccc4;
 
-  --font-sign: 'Signika', 'Segoe UI', system-ui, sans-serif;
-  --font-read: 'Atkinson Hyperlegible Next', 'Segoe UI', system-ui, sans-serif;
+  --font-sign: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-read: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
 
   --gutter: clamp(16px, 4vw, 56px);
   --container: 1320px;
@@ -1640,3 +1607,119 @@ a.board-latest:hover {
   }
 }
 
+
+/* ===== Kimlik v2 (BRAND.md) ===== */
+
+/* Yön levhası öğeleri kalkar: bölüm numaraları ve kapı okları. İki dilli etiketler kalır. */
+.code,
+.gate-arrow {
+  display: none;
+}
+
+/* Eski koyu levha alanları kâğıda döner; içlerindeki öğeler yerel belirteçlerle mürekkep ve yeşile geçer. */
+.overhead,
+.why,
+.directory,
+.site-footer {
+  --sign-text: var(--ink);
+  --sign-muted: var(--muted);
+  --sign-soft: var(--ink-2);
+  --sign-2: var(--hair);
+  --signal: var(--yesil-yazi);
+  color: var(--ink);
+}
+
+.overhead {
+  background: var(--ground);
+  border-top: 5px solid var(--yesil);
+}
+
+.wordmark-logo {
+  display: block;
+  height: clamp(36px, 4vw, 48px);
+  width: auto;
+}
+.footer-brand .wordmark-logo {
+  height: 40px;
+}
+.wordmark-motto {
+  color: var(--yesil-yazi);
+}
+
+.lang-switch {
+  border-color: var(--hair);
+}
+.lang-plate:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+.lang-plate.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.gates {
+  background: var(--ground);
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+.gates-row li + li .gate {
+  border-left: 0;
+}
+.gate {
+  color: var(--ink);
+}
+.gate-secondary,
+.gate.is-active .gate-secondary {
+  color: var(--muted);
+}
+.gate:hover,
+.gate.is-active {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 -3px 0 var(--yesil);
+}
+
+.why,
+.directory {
+  background: var(--paper);
+  border: 1px solid var(--hair);
+  border-top: 3px solid var(--yesil);
+}
+
+.site-footer {
+  background: var(--ground);
+  border-top: 1px solid var(--hair);
+}
+
+.read-plate {
+  background: var(--ink);
+  color: var(--paper);
+}
+.read-plate-other {
+  color: var(--hair);
+}
+.read-plate:hover {
+  background: var(--yesil-yazi);
+}
+
+.skip-link {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+::selection {
+  background: var(--signal);
+  color: var(--ink);
+}
+
+.overhead :focus-visible,
+.site-footer :focus-visible,
+.why :focus-visible,
+.directory :focus-visible {
+  outline-color: var(--ink);
+}
+
+.footer-gates {
+  align-content: start;
+}

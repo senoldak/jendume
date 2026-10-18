@@ -1,6 +1,7 @@
 ---
 import { jsonLdMetni } from '../lib/json-ld.mjs';
 import Arrow from '../components/Arrow.astro';
+import Logo from '../components/Logo.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl } from '../lib/news';
@@ -107,19 +108,19 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#16181D" />
+    <meta name="theme-color" content="#f4f5f2" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     {!noindex && <link rel="canonical" href={canonicalUrl} />}
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=2" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preload" href="/fonts/signika-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/atkinson-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-latin-v1.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-latin-ext-v1.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
       rel="alternate"
@@ -162,7 +163,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
     <header class="overhead">
       <div class="container overhead-inner">
         <a href={homeHref} class="wordmark" aria-label={`${SITE.displayName} — ${ui.home}`}>
-          <span class="wordmark-name">JEN DUME</span>
+          <Logo class="wordmark-logo" />
           <span class="wordmark-motto">
             <span>{SITE.tagline[lang]}</span>
             <span class="wordmark-motto-other" lang={other}>{SITE.tagline[other]}</span>
@@ -245,7 +246,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
       <div class="container footer-grid">
         <div class="footer-brand">
           <a href={homeHref} class="wordmark">
-            <span class="wordmark-name">JEN DUME</span>
+            <Logo class="wordmark-logo" />
             <span class="wordmark-motto">
               <span>{SITE.tagline[lang]}</span>
               <span class="wordmark-motto-other" lang={other}>{SITE.tagline[other]}</span>
