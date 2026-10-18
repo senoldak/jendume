@@ -2,7 +2,7 @@
 
 > Sürüm 2 · 18 Ekim 2026. Sahibiyle adım adım, soru-cevapla kuruldu (kifobu ve finfolis ile aynı yöntem). Bu belge
 > kimliğin tek kaynağıdır; `DESIGN.md` (bugünkü "İki Dilli Yön Levhası" teması) yeni kimlik uygulanınca bu belgeye göre
-> yeniden yazılacak. "Benim kararım" diye işaretli maddeler sahibin onayına açıktır.
+> yeniden yazılacak. "Benim kararım" diye işaretlenen maddelerin hepsini sahibi 19 Ekim 2026'da onayladı (karar bana bırakıldı); artık "Onaylandı" olarak işaretli.
 
 ## 1. Neden varız
 
@@ -63,17 +63,17 @@ Sahibinin seçimi: **meraklı ve düşünceli.**
 | Kâğıt | `#f4f5f2` | Site ve kapak zemini |
 | Mürekkep | `#16181d` | Metin, levha |
 | **Esperanto yeşili** | `#00924a` | **Tek marka rengi:** levhadaki kare, j noktası, üst bant, kapaktaki büyük nokta |
-| Yeşil yazı | `#00783d` | Küçük yeşil yazı (kategori etiketi; kâğıtta 4,5:1 üstü). *Benim kararım.* |
+| Yeşil yazı | `#00783d` | Küçük yeşil yazı (kategori etiketi; kâğıtta 4,5:1 üstü). *Onaylandı (19 Ekim).* |
 | Gri | `#5a5d63` | İkincil metin, İngilizce eş başlık |
 | Çizgi | `#c9ccc4` | Ayraçlar |
 
 Sarı (kifobu), pişmiş toprak (finfolis), fiyort mavisi ve kırmızı (tidsrost) kullanılmaz. "Önemli gelişme" etiketi
-kırmızı yerine mürekkep dolgulu olur. *Benim kararım.*
+kırmızı yerine mürekkep dolgulu olur. *Onaylandı (19 Ekim).*
 
 ## 8. Yazı
 
 - **Tek aile: Instrument Sans** (SIL OFL, kendi sunucumuzda; genişlik 100). Signika ve Atkinson emekliye ayrılır.
-  *Tek aile benim kararım; logotip yazı tipi sahibin bana bıraktığı seçim.*
+  *Tek aile, onaylandı (19 Ekim); logotip yazı tipi sahibin bana bıraktığı seçim.*
 - Başlık 700, ara başlık ve logo 600, metin 400, İngilizce eş başlık 400 gri.
 - Yazı tipinde ₺ yok; gerekirse kifobu ve finfolis'teki gibi TCMB çizimiyle eklenir.
 
@@ -88,9 +88,9 @@ kırmızı yerine mürekkep dolgulu olur. *Benim kararım.*
 |---|---|
 | **Haber kapağı** (1200×675) | Kâğıt zemin; sağ üst köşeden taşan **büyük yeşil daire** (j noktasının büyümüşü; imza öğesi); sol üstte kategori yeşil büyük harf; başlık 700; sol altta logo. **Tek dilli**: yalnız sayfanın dili (sahibin kararı; iki dilli kapak kalabalıktı) |
 | **Site** | Mevcut sayfalar kimliğe **uydurulur, yeni blok eklenmez**. Yön levhası öğeleri (1–6 numaraları, oklar, siyah bant, sarı kutular) kalkar; iki dilli etiketler kalır. Kâğıt zemin, yeşil vurgu |
-| **Profil fotoğrafı** | Levha (tam kare). *Benim kararım.* |
-| **Kapak görseli** (X, Facebook, LinkedIn) | Kâğıt zemin; levha + "jen dume" + slogan ortada; sağ üst köşeden taşan büyük yeşil daire. *Benim kararım.* |
-| **Favicon** | Levha; saydamlık yok (levha kendi zeminidir). *Benim kararım.* |
+| **Profil fotoğrafı** | Levha (tam kare). *Onaylandı (19 Ekim).* |
+| **Kapak görseli** (X, Facebook, LinkedIn) | Kâğıt zemin; levha + "jen dume" + slogan ortada; sağ üst köşeden taşan büyük yeşil daire. *Onaylandı (19 Ekim).* |
+| **Favicon** | Levha; saydamlık yok (levha kendi zeminidir). *Onaylandı (19 Ekim).* |
 
 ## 11. Yapılmayacaklar
 
