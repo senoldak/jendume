@@ -186,7 +186,7 @@ export default [
       ozet: 'Eğitimi tamamlanmış bir yapay zekâ modelinin yeni bir girdiye yanıt üretmek için çalıştırılması; kullanıcıların her isteğinde gerçekleşen aşama.',
       tanim: [
         'Yapay zekâda çıkarım (İngilizcesiyle inference), eğitimi bitmiş bir modelin gerçek kullanımda çalıştırılmasıdır. Bir sohbet asistanına soru sorduğunuzda, telefonunuz bir fotoğraftaki yüzü tanıdığında ya da bir çeviri aracı cümlenizi başka dile aktardığında arka planda çıkarım yapılır.',
-        'Eğitim ile çıkarım arasındaki fark, okulda geçen yıllarla iş hayatındaki gündelik çalışma arasındaki farka benzer. Eğitim bir kez yapılan, uzun ve çok pahalı bir süreçtir; model bu sırada ağırlıklarını ayarlar. Çıkarımda ise ağırlıklar sabittir; model yalnızca öğrendiklerini kullanarak hesaplama yapar. Tek bir çıkarım ucuzdur ama milyonlarca kullanıcının her isteği için tekrarlandığında toplam maliyet çok büyür.',
+        'Eğitim ile çıkarım arasındaki fark, okulda geçen yıllarla iş hayatındaki gündelik çalışma arasındaki farka benzer. Eğitim, model sürümü başına genellikle bir kez yapılan, uzun ve çok pahalı bir süreçtir; model bu sırada ağırlıklarını ayarlar. Çıkarımda ise ağırlıklar sabittir; model yalnızca öğrendiklerini kullanarak hesaplama yapar. Tek bir çıkarım ucuzdur ama milyonlarca kullanıcının her isteği için tekrarlandığında toplam maliyet çok büyür.',
         'Bu yüzden çıkarım maliyeti ve hızı, yapay zekâ şirketlerinin ekonomisinde belirleyici bir yer tutar. Kuantizasyon, model damıtma ve uzmanlar karışımı gibi teknikler büyük ölçüde çıkarımı ucuzlatmak için geliştirildi. Akıl yürütme modelleri yanıt vermeden önce daha uzun düşündüğünden çıkarımdaki hesaplama ihtiyacı arttı; çıkarıma özel çipler ve veri merkezi yatırımları da haberlerde bu bağlamda sıkça geçer.',
       ],
       esles: ['çıkarım maliyet', 'çıkarım hız', 'çıkarım çip'],
@@ -214,7 +214,7 @@ export default [
       ad: 'Kuantizasyon',
       ozet: 'Bir modelin sayılarını daha düşük hassasiyetle saklayarak onu küçülten ve hızlandıran, karşılığında doğruluktan biraz ödün verebilen teknik.',
       tanim: [
-        'Kuantizasyon (nicemleme), bir yapay zekâ modelinin ağırlıklarını ve hesaplamalarını daha az bit kullanan sayılarla ifade etme işlemidir. Örneğin her biri 16 bitle saklanan değerler 8 ya da 4 bite indirilir. Böylece model bellekte daha az yer kaplar ve çoğu donanımda daha hızlı çalışır.',
+        'Kuantizasyon (nicemleme), bir yapay zekâ modelinin ağırlıklarını ve hesaplamalarını daha az bit kullanan sayılarla ifade etme işlemidir. Örneğin her biri 16 bitle saklanan değerler 8 ya da 4 bite indirilir. Böylece model bellekte daha az yer kaplar ve uygun donanımda daha hızlı çalışır.',
         'Bunu bir fotoğrafı daha az renk tonuyla kaydetmeye benzetebiliriz: Dosya küçülür, görüntü büyük ölçüde tanınır kalır, ama ince geçişlerde bir miktar ayrıntı kaybolabilir. Kuantizasyon da aynı dengeye dayanır. İyi uygulandığında model performansı az etkilenir; aşırıya kaçıldığında hatalar belirginleşir. Bu kaybı azaltmak için eğitim sırasında ya da sonrasında uygulanan çeşitli yöntemler geliştirilmiştir.',
         'Teknik, büyük modelleri daha mütevazı donanıma sığdırmanın başlıca yollarından biridir. Açık ağırlıklı modellerin kişisel bilgisayarlarda ve telefonlarda çalıştırılabilmesi çoğu zaman kuantize edilmiş sürümler sayesinde mümkün olur. Veri merkezlerinde de çıkarım maliyetini düşürmek için kullanılır. Bir modelin kuantize sürümüyle özgün sürümünün sonuçlarının birebir aynı olmayabileceğini akılda tutmak gerekir.',
       ],
