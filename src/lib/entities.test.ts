@@ -6,12 +6,12 @@ test('AI entities dictionary has correct Wikidata links and types', () => {
   assert.equal(AI_ENTITIES.length, 8);
   const openAi = AI_ENTITIES.find((e) => e.keywords.includes('OpenAI'));
   assert.ok(openAi);
-  assert.equal(openAi.sameAs, 'https://www.wikidata.org/wiki/Q58936952');
+  assert.equal(openAi.sameAs, 'https://www.wikidata.org/wiki/Q21708200');
   assert.equal(openAi.type, 'Organization');
 
   const agi = AI_ENTITIES.find((e) => e.keywords.includes('AGI'));
   assert.ok(agi);
-  assert.equal(agi.sameAs, 'https://www.wikidata.org/wiki/Q1055745');
+  assert.equal(agi.sameAs, 'https://www.wikidata.org/wiki/Q2264109');
   assert.equal(agi.type, 'Thing');
 });
 
@@ -40,15 +40,15 @@ test('False-positive substrings are NOT matched for short acronyms', () => {
 test('Frontier tech entities match properly in both Turkish and English', () => {
   const trQuantum = matchEntities('Yeni kuantum hesaplama çipi laboratuvarda test edildi.', 'tr');
   assert.equal(trQuantum[0]?.name, 'Kuantum Hesaplama');
-  assert.equal(trQuantum[0]?.sameAs, 'https://www.wikidata.org/wiki/Q11190');
+  assert.equal(trQuantum[0]?.sameAs, 'https://www.wikidata.org/wiki/Q17995793');
 
   const enQuantum = matchEntities('Researchers announced a breakthrough in quantum computing hardware.', 'en');
   assert.equal(enQuantum[0]?.name, 'Quantum Computing');
-  assert.equal(enQuantum[0]?.sameAs, 'https://www.wikidata.org/wiki/Q11190');
+  assert.equal(enQuantum[0]?.sameAs, 'https://www.wikidata.org/wiki/Q17995793');
 
   const deepmind = matchEntities('Google DeepMind unveiled a new protein folding system.', 'en');
   assert.equal(deepmind[0]?.name, 'Google DeepMind');
-  assert.equal(deepmind[0]?.sameAs, 'https://www.wikidata.org/wiki/Q15732152');
+  assert.equal(deepmind[0]?.sameAs, 'https://www.wikidata.org/wiki/Q15733006');
 
   const nvidia = matchEntities('NVIDIA yeni nesil Blackwell mimarisini duyurdu.', 'tr');
   assert.equal(nvidia[0]?.name, 'NVIDIA');
@@ -56,7 +56,7 @@ test('Frontier tech entities match properly in both Turkish and English', () => 
 
   const anthropic = matchEntities('Anthropic Claude model ailesine yeni özellikler ekledi.', 'tr');
   assert.equal(anthropic[0]?.name, 'Anthropic');
-  assert.equal(anthropic[0]?.sameAs, 'https://www.wikidata.org/wiki/Q111666683');
+  assert.equal(anthropic[0]?.sameAs, 'https://www.wikidata.org/wiki/Q116758847');
 });
 
 test('findEntities partitions into about and mentions', () => {

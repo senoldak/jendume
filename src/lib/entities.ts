@@ -11,19 +11,19 @@ export const AI_ENTITIES: EntityMapping[] = [
   {
     name: { tr: 'OpenAI', en: 'OpenAI' },
     type: 'Organization',
-    sameAs: 'https://www.wikidata.org/wiki/Q58936952',
+    sameAs: 'https://www.wikidata.org/wiki/Q21708200',
     keywords: ['OpenAI', 'Open AI'],
   },
   {
     name: { tr: 'Google DeepMind', en: 'Google DeepMind' },
     type: 'Organization',
-    sameAs: 'https://www.wikidata.org/wiki/Q15732152',
+    sameAs: 'https://www.wikidata.org/wiki/Q15733006',
     keywords: ['Google DeepMind', 'DeepMind'],
   },
   {
     name: { tr: 'Anthropic', en: 'Anthropic' },
     type: 'Organization',
-    sameAs: 'https://www.wikidata.org/wiki/Q111666683',
+    sameAs: 'https://www.wikidata.org/wiki/Q116758847',
     keywords: ['Anthropic'],
   },
   {
@@ -44,7 +44,7 @@ export const AI_ENTITIES: EntityMapping[] = [
   {
     name: { tr: 'Yapay Genel Zekâ', en: 'Artificial General Intelligence' },
     type: 'Thing',
-    sameAs: 'https://www.wikidata.org/wiki/Q1055745',
+    sameAs: 'https://www.wikidata.org/wiki/Q2264109',
     keywords: [
       'Artificial General Intelligence',
       'Yapay Genel Zekâ',
@@ -61,7 +61,7 @@ export const AI_ENTITIES: EntityMapping[] = [
   {
     name: { tr: 'Kuantum Hesaplama', en: 'Quantum Computing' },
     type: 'Thing',
-    sameAs: 'https://www.wikidata.org/wiki/Q11190',
+    sameAs: 'https://www.wikidata.org/wiki/Q17995793',
     keywords: [
       'Quantum Computing',
       'Kuantum Hesaplama',
