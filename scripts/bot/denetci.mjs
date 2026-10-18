@@ -158,9 +158,19 @@ export function kesinKontroller(paket, kaynak) {
       continue;
     }
     const birlesik = `${blok.title}\n${blok.description}\n${blok.perspektif ?? ''}\n${blok.body}`;
+    // Medya adı taraması yardımcı alanları da kapsar: bunlar da sitede herkese gösterilir (bolge dil bloğunda ya da pakette olabilir).
+    const ek = [
+      blok.bolge ?? paket.bolge,
+      blok.why_matters ?? paket.why_matters,
+      ...(Array.isArray(blok.key_points ?? paket.key_points) ? (blok.key_points ?? paket.key_points) : []),
+      ...(Array.isArray(blok.rakamlar ?? paket.rakamlar)
+        ? (blok.rakamlar ?? paket.rakamlar).flatMap((r) => [r?.etiket, r?.deger])
+        : []),
+    ].filter(Boolean);
+    const medyaMetni = [birlesik, ...ek].join('\n');
     sorunlar.push(
       ...rakamKontrol(birlesik, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
-      ...medyaKontrol(birlesik).map((s) => `[${dil.toUpperCase()}] ${s}`),
+      ...medyaKontrol(medyaMetni).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...zamanKontrol(birlesik, dil).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...kopyaKontrol(blok.body, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`)
     );

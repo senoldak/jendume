@@ -224,3 +224,27 @@ test('ucDilliHaberYaz gövdedeki HTML etiketlerini ve yorumlarını iki dilde de
     await rm(tmpDir, { recursive: true, force: true });
   }
 });
+
+test('kesinKontroller scans why_matters, key_points, rakamlar and bolge for outlet names', () => {
+  const temiz = {
+    title: 'Yeni Girişim', description: 'Kısa açıklama.', perspektif: 'Görüş.', body: 'Metin.',
+  };
+  const yap = (ek) => ({ tr: { ...temiz, ...ek }, en: { ...temiz } });
+  assert.equal(kesinKontroller(yap({}), 'x').length, 0);
+  for (const ek of [
+    { why_matters: 'Ajans Beta bildirdi.' },
+    { key_points: ['Önemli', 'Örnek Haber yazdı'] },
+    { rakamlar: [{ etiket: 'Örnek Haber', deger: '5' }] },
+    { rakamlar: [{ etiket: 'Sayı', deger: 'Ajans Beta' }] },
+    { bolge: 'Ajans Beta' },
+  ]) {
+    assert.ok(kesinKontroller(yap(ek), 'x').some((m) => m.startsWith('[TR]')), JSON.stringify(ek));
+  }
+});
+
+test('guvenli neutralises reference-style links and definitions', () => {
+  const out = guvenli('Bak [tıkla][r] ve [x][] ile\n\n[r]: javascript:alert(1)\n[x]: http://e.com\n');
+  assert.ok(!/javascript:|http:|\]\[|^\[r\]:/m.test(out), out);
+  assert.match(out, /Bak tıkla ve x ile/);
+  assert.match(guvenli('[a](https://e.com/x)'), /\[a\]\(https:\/\/e\.com\/x\)/);
+});

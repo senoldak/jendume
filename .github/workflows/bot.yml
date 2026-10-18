@@ -74,7 +74,8 @@ jobs:
         if: steps.commit.outputs.yayin == '1'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run yayinla.yml --ref "${{ github.ref_name }}"
+          REF_ADI: ${{ github.ref_name }}
+        run: gh workflow run yayinla.yml --ref "$REF_ADI"
 
       # Katman 0 (Gemini kota planı): bu işin Gemini kullanımını model ve amaç başına mecmua-saat'e bildirir. İşi düşürmez.
       - name: Gemini kullanımını saate bildir

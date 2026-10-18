@@ -60,4 +60,5 @@ jobs:
         if: steps.bulten.outputs.yazildi == '1'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run yayinla.yml --ref "${{ github.ref_name }}"
+          REF_ADI: ${{ github.ref_name }}
+        run: gh workflow run yayinla.yml --ref "$REF_ADI"

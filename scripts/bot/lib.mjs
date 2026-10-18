@@ -262,7 +262,10 @@ export function guvenli(metin = '') {
     .replace(/!\[([^\]]*)\]\((?:[^()]|\([^()]*\))*\)/g, '$1')
     .replace(/\[([^\]]*)\]\(\s*((?:[^()\s]|\([^()\s]*\))*)[^)]*\)/g, (m, txt, url) =>
       /^https:\/\/[^\s"'<>]+$/i.test(url) ? `[${txt}](${url})` : txt
-    );
+    )
+    // Başvuru tarzı bağlantılar ([x][r] + "[r]: adres") https-yalnız kuralını atlatır: tanımları sil, kullanımları düz metne indir.
+    .replace(/^ {0,3}\[(?!\^)[^\]\n]+\]:[^\n]*$/gm, '')
+    .replace(/\[([^\]]*)\]\[[^\]]*\]/g, '$1');
 }
 
 export function tipografi(metin = '', { baslik = false } = {}) {
