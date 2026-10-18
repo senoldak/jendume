@@ -1112,7 +1112,26 @@
     "kd9a613:c2d06daaf02bfb7d": "2026-10-18T13:50:58.594Z",
     "k74f74a:ad4420dc7959d314": "2026-10-18T13:50:58.594Z",
     "kd4ca61:90c7a640ccf66e18": "2026-10-18T13:50:58.594Z",
-    "k8601e1:6e42910fcc472cff": "2026-10-18T13:50:58.594Z"
+    "k8601e1:6e42910fcc472cff": "2026-10-18T13:50:58.594Z",
+    "k2e841d:1e6b0c17ab478de5": "2026-10-18T15:50:56.641Z",
+    "k38ef42:4466c5955d80284c": "2026-10-18T15:50:56.641Z",
+    "k8601e1:8bc7f1b797f94048": "2026-10-18T15:50:56.641Z",
+    "k2e841d:818a6c57880e373f": "2026-10-18T15:50:56.641Z",
+    "k38ef42:d78becee9b8c42ac": "2026-10-18T15:50:56.641Z",
+    "k12b4a6:1b2f05d0e9279b6b": "2026-10-18T15:50:56.641Z",
+    "k2e841d:6150ddf8c33537d6": "2026-10-18T15:50:56.641Z",
+    "k38ef42:0b76d3cac5900cac": "2026-10-18T15:50:56.641Z",
+    "k38ef42:18bd33d258eeda5e": "2026-10-18T15:50:56.641Z",
+    "k38ef42:6e70e174d75560ad": "2026-10-18T15:50:56.641Z",
+    "k2e841d:5514342ba1a9d30f": "2026-10-18T15:50:56.641Z",
+    "k38ef42:7c754a9dfc868557": "2026-10-18T15:50:56.641Z",
+    "kd9a613:04d6cd84632f1c71": "2026-10-18T15:50:56.641Z",
+    "kd9a613:ee9a899598d60afb": "2026-10-18T15:50:56.641Z",
+    "k78637d:f92ddb8db5bb06e3": "2026-10-18T15:50:56.641Z",
+    "k12b4a6:f985f4a6bcfbba40": "2026-10-18T15:50:56.641Z",
+    "k2e841d:5144533b2f25a66a": "2026-10-18T15:50:56.641Z",
+    "k38ef42:530a0548123656fb": "2026-10-18T15:50:56.641Z",
+    "k39a0e6:0f98179abba05d85": "2026-10-18T15:50:56.641Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -2516,7 +2535,25 @@
     "k2d427e:5b6e300cd0e7b777|k8601e1:6e42910fcc472cff": "2026-10-18T13:50:58.594Z",
     "k2e841d:12bf241dd7d34c9e|k38ef42:05ec7b2ab56bd5a1": "2026-10-18T13:50:58.594Z",
     "k38ef42:347699fc60f6e5a6|kd9a613:c2d06daaf02bfb7d": "2026-10-18T13:50:58.594Z",
-    "k38ef42:347699fc60f6e5a6|k74f74a:ad4420dc7959d314": "2026-10-18T13:50:58.594Z"
+    "k38ef42:347699fc60f6e5a6|k74f74a:ad4420dc7959d314": "2026-10-18T13:50:58.594Z",
+    "haber:anthropic-yapay-zeka-modelinde-insan-zihnine-benzer-kuresel-calisma-alani-kesfet|k8601e1:8bc7f1b797f94048": "2026-10-18T15:50:56.641Z",
+    "haber:bilim-insanlarindan-acil-cagri-yapay-zeka-modelleri-internetten-tamamen-ayrilmal|k8601e1:8bc7f1b797f94048": "2026-10-18T15:50:56.641Z",
+    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|k8601e1:8bc7f1b797f94048": "2026-10-18T15:50:56.641Z",
+    "haber:nvidia-dlss-5-neural-rendering-modeli-oyunlarda-yuzde-kirk-performans-artisi-sag|k38ef42:530a0548123656fb": "2026-10-18T15:50:56.641Z",
+    "haber:nvidia-rtx-spark-dizustu-bilgisayarlari-kuresel-capta-satisa-sundu|k38ef42:530a0548123656fb": "2026-10-18T15:50:56.641Z",
+    "haber:nvidia-ve-nordik-ulkeleri-ortaklasa-dev-yapay-zeka-altyapi-projelerini-hayata-ge|k38ef42:530a0548123656fb": "2026-10-18T15:50:56.641Z",
+    "haber:apple-silicon-mac-ler-minions-sistemiyle-ortak-gpu-havuzunda-toplaniyor|k38ef42:7c754a9dfc868557": "2026-10-18T15:50:56.641Z",
+    "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|k38ef42:7c754a9dfc868557": "2026-10-18T15:50:56.641Z",
+    "haber:meta-mac-bilgisayarlar-icin-muse-spark-open-modelini-cikardi|k38ef42:7c754a9dfc868557": "2026-10-18T15:50:56.641Z",
+    "haber:dijital-bilgide-temsil-ve-ailelerin-yapay-zeka-temkini|kd9a613:04d6cd84632f1c71": "2026-10-18T15:50:56.641Z",
+    "haber:vikipedi-yapay-zeka-icerikleri-nedeniyle-kurallarini-degistirdi|kd9a613:04d6cd84632f1c71": "2026-10-18T15:50:56.641Z",
+    "haber:daron-acemoglu-ndan-cagri-yapay-zekanin-yonunu-sadece-piyasanin-belirlemesine-iz|kd9a613:ee9a899598d60afb": "2026-10-18T15:50:56.641Z",
+    "haber:satya-nadella-dan-yapay-zeka-modelleri-icin-acil-durum-freni-cagrisi-guveni-mode|kd9a613:ee9a899598d60afb": "2026-10-18T15:50:56.641Z",
+    "haber:awear-ai-akilli-gozlukler-arasinda-kisisel-yapay-zeka-hafizasinin-tasinmasini-sa|k78637d:f92ddb8db5bb06e3": "2026-10-18T15:50:56.641Z",
+    "haber:acik-kaynakli-yapay-zeka-modellerinin-guvenlik-kilitleri-kolayca-kaldirilabiliyo|k12b4a6:f985f4a6bcfbba40": "2026-10-18T15:50:56.641Z",
+    "haber:alibaba-dan-yapay-zeka-ajanlari-icin-yeni-egitim-sistemi-qwengyre|k12b4a6:f985f4a6bcfbba40": "2026-10-18T15:50:56.641Z",
+    "haber:anthropic-ten-claude-icin-yeni-kullanim-kurali-yapay-zekaya-amacsiz-kotu-muamele|k12b4a6:f985f4a6bcfbba40": "2026-10-18T15:50:56.641Z",
+    "k38ef42:18bd33d258eeda5e|k38ef42:6e70e174d75560ad": "2026-10-18T15:50:56.641Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -6151,25 +6188,94 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-18T13:50:58.594Z"
+    },
+    "k8601e1:8bc7f1b797f94048": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k2e841d:818a6c57880e373f": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:d78becee9b8c42ac": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k12b4a6:1b2f05d0e9279b6b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k2e841d:6150ddf8c33537d6": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:0b76d3cac5900cac": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:18bd33d258eeda5e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:6e70e174d75560ad": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k2e841d:5514342ba1a9d30f": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k39a0e6:0f98179abba05d85": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:530a0548123656fb": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k38ef42:7c754a9dfc868557": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "kd9a613:04d6cd84632f1c71": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "kd9a613:ee9a899598d60afb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k78637d:f92ddb8db5bb06e3": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k12b4a6:f985f4a6bcfbba40": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
+    },
+    "k2e841d:5144533b2f25a66a": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T15:50:56.641Z"
     }
   },
   "yayinlanan": {
-    "kurumsal-is-surecleri-icin-yeni-yapay-zeka-denetim-araclari-tanitildi": {
-      "zaman": "2026-10-15T14:18:25.922Z",
-      "basliklarSifreli": "v1.gGpLRQ+1zMh1l7z3.1CS7hOzH02SBDOnHzU0vidtuLH94cXAR/8vA7kR1gKGJXR3LDiME79E+flWRTm8Gv/0PP/XCWuWpz03BE123802Ap/k4l2rG19K0msSkN4N+Rpw="
-    },
-    "tek-gorselden-bes-dakikaya-kadar-video-ureten-omnihuman-2-0-tanitildi": {
-      "zaman": "2026-10-15T14:51:08.933Z",
-      "basliklarSifreli": "v1.PTCRqhlHzHJ8Prvp.M0klhHzCPlfApIJTS6DhI5gOUr7Q221EAvexKopnXVhY6k86ungeZbDvzx+lAMLnrz1PVhwfUd/EcAXVm6AVjsKnMMhZ/jvhKWlTnEyVNkJfcu7fLZsri4zOurdJvhrheD9iRNwHb4OJXnypScM="
-    },
-    "acik-kaynakli-isletim-sistemi-openkylin-yapay-zeka-caginda-linux-u-yeniden-tasar": {
-      "zaman": "2026-10-15T14:51:08.933Z",
-      "basliklarSifreli": "v1.q9gnXF33tyULQBfU.HWcbP/g4XqmjyuASzeB/0IXY6QdeKdb33Q/8SjjIJxwdxcS5GPPtZwcI/k0amrTObtwUvsfhkRrCxWmJSQXe8K87j/4ejQ61yOGElWmqF1RK08hJEbqW3g1HqiIJiJY2+EN/UwuxsyuxoftBUpe8hmfdaQU6CxQ="
-    },
-    "universal-cart-alisveris-araci-abd-de-kullanima-acildi": {
-      "zaman": "2026-10-15T14:51:08.933Z",
-      "basliklarSifreli": "v1.7aent1l/000vtITb.sA6mhq1Cq2THQ2OR3yqWhKkITYWKl3nnKHZ+oziupdd8UzbqAknzF44uZd7umvCu1ZIKydLVf8Mib1oUxOmuyZyqhdx4GX/sz5Z4PVbM"
-    },
     "kurumsal-yapay-zeka-asistanlari-icin-yeni-acik-model-ailesi-tanitildi": {
       "zaman": "2026-10-15T16:51:04.644Z",
       "basliklarSifreli": "v1.5Y4pr2BJkM7HBjQX.lTnaati1s6ui4l1KZ2zlkKDnE/nNpJXPbON4yvIhB1ww0XZiLQp7nT/xU5AJ2KHlnEJeEhVMLtNzJo5hcuDGDy7phwHvbdCgwMAlwhSqRgabKcGhBffE89vn044F+d6Mjf8LFMPlA3ZogiA91g=="
@@ -6761,6 +6867,10 @@
     "co-op-musteri-hizmetleri-calisanlarini-denetlemek-icin-yapay-zeka-kullaniyor": {
       "zaman": "2026-10-18T13:50:58.594Z",
       "basliklarSifreli": "v1.jbGBAuaEt4kJ3Ail.KYxplrqAMHV3uEvpvlKw2GaBan+Aeip36KX3qyQ0N3nTBBAKpObIquWXjZIEuFM/aMUJnbUpCLjW9J+7DZhCiCIqMdVwI8vkU0MeKhIvQZwD8Zp+ljyM"
+    },
+    "nvidia-ve-cisco-yapay-zeka-veri-merkezleri-icin-usfp-baglanti-tasarimini-gelisti": {
+      "zaman": "2026-10-18T15:50:56.641Z",
+      "basliklarSifreli": "v1.AXuMh9PdF3eU5q9W.S6ZgNpuMyesVxt4GhrNeM08qfyNgDYmwA9vWPt5ow//TYel3ojWKiBYh2oHE8WzeSJdKmhkqW2K56sQridfAl4ndwvDE6Jdjh6gRNDbfltsTmjqJ1sP5m2BbgUthKRgAaRzF/lbxkTly0bp3EWeKtV6iWKKJZw=="
     }
   },
   "havuz": [],
@@ -7877,6 +7987,25 @@
     "k2e841d:6c3d5a87d02abfbd": "2026-10-18T12:15:00.000Z",
     "kd4ca61:90c7a640ccf66e18": "2026-10-18T12:00:01.000Z",
     "k8601e1:6e42910fcc472cff": "2026-10-18T13:50:00.000Z",
-    "k8601e1:e775b7c247f218ec": "2026-10-18T12:47:00.000Z"
+    "k8601e1:e775b7c247f218ec": "2026-10-18T12:47:00.000Z",
+    "kd9a613:04d6cd84632f1c71": "2026-10-18T14:00:02.000Z",
+    "kd9a613:ee9a899598d60afb": "2026-10-18T14:00:02.000Z",
+    "k78637d:f92ddb8db5bb06e3": "2026-10-18T14:00:00.000Z",
+    "k12b4a6:1b2f05d0e9279b6b": "2026-10-18T15:25:00.000Z",
+    "k12b4a6:f985f4a6bcfbba40": "2026-10-18T13:56:00.000Z",
+    "k38ef42:d78becee9b8c42ac": "2026-10-18T15:37:00.000Z",
+    "k38ef42:0b76d3cac5900cac": "2026-10-18T15:13:15.000Z",
+    "k38ef42:18bd33d258eeda5e": "2026-10-18T15:13:00.000Z",
+    "k38ef42:6e70e174d75560ad": "2026-10-18T14:53:00.000Z",
+    "k38ef42:530a0548123656fb": "2026-10-18T14:32:00.000Z",
+    "k38ef42:7c754a9dfc868557": "2026-10-18T14:14:00.000Z",
+    "k38ef42:4466c5955d80284c": "2026-10-18T14:00:00.000Z",
+    "k39a0e6:0f98179abba05d85": "2026-10-18T14:40:01.000Z",
+    "k2e841d:818a6c57880e373f": "2026-10-18T15:45:00.000Z",
+    "k2e841d:6150ddf8c33537d6": "2026-10-18T15:15:00.000Z",
+    "k2e841d:5514342ba1a9d30f": "2026-10-18T14:45:00.000Z",
+    "k2e841d:1e6b0c17ab478de5": "2026-10-18T14:15:00.000Z",
+    "k2e841d:5144533b2f25a66a": "2026-10-18T13:45:00.000Z",
+    "k8601e1:8bc7f1b797f94048": "2026-10-18T15:49:00.000Z"
   }
 }
