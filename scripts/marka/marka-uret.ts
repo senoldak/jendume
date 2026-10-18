@@ -98,7 +98,8 @@ fs.writeFileSync(
 - jendume-levha        Yalnız işaret: profil fotoğrafı, uygulama simgesi, favicon
 Profil fotoğrafı ve kapak görselleri: ../sosyal/
 
-"-koyu-zemin" ekli dosyalarda levha ters döner (kâğıt rengi levha, mürekkep J) ve yazı kâğıt rengine geçer; yeşil aynı kalır. PNG'ler saydam zeminlidir.
+"-koyu-zemin" ekli dosyalarda levha çizilmez: beyaz J ve yeşil kare doğrudan koyu zemine oturur, yazı kâğıt rengine
+geçer; yeşil aynı kalır. PNG'ler saydam zeminlidir.
 Kurallar: levhayı döndürmek, yuvarlatmak, kareyi başka renge boyamak, gölge, kontur, J'yi ya da yazıyı başka yazı
 tipiyle çizmek yapılmaz. Renkler: Esperanto yeşili ${KIMLIK.yesil}, mürekkep ${KIMLIK.murekkep}, kâğıt ${KIMLIK.kagit}.
 Yazı tipi: Instrument Sans (OFL).
