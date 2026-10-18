@@ -1034,7 +1034,10 @@
     "k2e841d:92f2a4ce87a0cd11": "2026-10-18T03:50:54.716Z",
     "k2e841d:a4ba738c01a68266": "2026-10-18T03:50:54.716Z",
     "k2e841d:a4c243922e07c382": "2026-10-18T03:50:54.716Z",
-    "k2e841d:8240f5aca89e1afb": "2026-10-18T03:50:54.716Z"
+    "k2e841d:8240f5aca89e1afb": "2026-10-18T03:50:54.716Z",
+    "k38ef42:7d230a3272802cba": "2026-10-18T05:50:53.743Z",
+    "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "2026-10-18T05:50:53.743Z",
+    "kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -2346,7 +2349,10 @@
     "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k74f74a:68fcf6a03dfa0000": "2026-10-17T21:50:56.220Z",
     "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k74f74a:68fcf6a03dfa0000": "2026-10-17T21:50:56.220Z",
     "k38ef42:5a721e0da1a6923f|k38ef42:98364733da2de09d": "2026-10-17T21:50:56.220Z",
-    "k38ef42:f9a0f4edac15d30d|k38ef42:fbe44b664a924d75": "2026-10-17T21:50:56.220Z"
+    "k38ef42:f9a0f4edac15d30d|k38ef42:fbe44b664a924d75": "2026-10-17T21:50:56.220Z",
+    "haber:antimikrobiyal-direncle-mucadelede-peptid-kesfi-hiz-kazaniyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
+    "haber:bilgi-yonetimi-sistemleri-graf-tabanli-yapay-zeka-ile-hatasiz-calisiyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
+    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -5649,6 +5655,21 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-18T03:50:54.716Z"
+    },
+    "k38ef42:7d230a3272802cba": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T05:50:53.743Z"
+    },
+    "kaec085:bf4205125592dc33": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-18T05:50:53.743Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-18T05:50:53.743Z"
     }
   },
   "yayinlanan": {
@@ -6207,6 +6228,14 @@
     "kyutai-reki-robot-kontrolu-icin-hafiza-ozellikli-modeli-tanitti": {
       "zaman": "2026-10-17T21:50:56.220Z",
       "basliklarSifreli": "v1.f4PxQvN/6K05JDJb.k0fxDDA4TWFB5ukR/z3UIs0aOrsNM0yogyx3szhWLep5FKZz1BcnsF3QWBw4A+HTyP0Kc0e9u1Q0xaFpC1uEQXaoapXJClPMBOUmgr8osw9hk2ECkzqEfC3x5BkqGyLeTUJAJf8gMTY="
+    },
+    "mit-arastirmacilari-kristal-yapilari-anlayan-yeni-yapay-zeka-modeli-gelistirdi": {
+      "zaman": "2026-10-18T05:50:53.743Z",
+      "basliklarSifreli": "v1.7qIyQU9ShxJil5ae.D8Ulgp1F7jMzH4747rjsi8dlKd9O7PEWTRKCmoDaFlVNokyUMAA9L/jthDE6sBsDtvu8MVaEvIqWEZ9eh7KPcto3RytWSz8ZIV74EJ9KiQ=="
+    },
+    "voxel51-3-0-fiziksel-yapay-zeka-projeleri-icin-yeni-veri-platformunu-duyurdu": {
+      "zaman": "2026-10-18T05:50:53.743Z",
+      "basliklarSifreli": "v1.ZcNxdLqkVdD4HQWI.dJBAibNgAn8Ibo1fgP62pDe2w8sVx1JLtdfaRA/G5VO9otQSimpq65aSoOOi+r1/YF6RJKY1rHBmWSuc7j+hmuUDw5A+Fpi7ly66y0A0q2g7aeFk51gPfw=="
     }
   },
   "havuz": [],
@@ -7245,6 +7274,9 @@
     "k2e841d:92f2a4ce87a0cd11": "2026-10-17T23:00:00.000Z",
     "k2e841d:a4ba738c01a68266": "2026-10-17T22:45:00.000Z",
     "k2e841d:a4c243922e07c382": "2026-10-17T22:30:00.000Z",
-    "k2e841d:8240f5aca89e1afb": "2026-10-17T22:00:00.000Z"
+    "k2e841d:8240f5aca89e1afb": "2026-10-17T22:00:00.000Z",
+    "kaec085:bf4205125592dc33": "2026-10-18T04:06:33.000Z",
+    "k38ef42:7d230a3272802cba": "2026-10-18T05:45:00.000Z",
+    "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "2026-10-18T04:00:00.000Z"
   }
 }
