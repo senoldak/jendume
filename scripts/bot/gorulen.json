@@ -1037,7 +1037,12 @@
     "k2e841d:8240f5aca89e1afb": "2026-10-18T03:50:54.716Z",
     "k38ef42:7d230a3272802cba": "2026-10-18T05:50:53.743Z",
     "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "2026-10-18T05:50:53.743Z",
-    "kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z"
+    "kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
+    "kfdedb4:6603ab9cee65de11": "2026-10-18T07:50:54.081Z",
+    "kfdedb4:c4e12ff2d09c506b": "2026-10-18T07:50:54.081Z",
+    "k12b4a6:4016cf74a1ed0eb9": "2026-10-18T07:50:54.081Z",
+    "k12b4a6:5c951672c848b006": "2026-10-18T07:50:54.081Z",
+    "kaec085:746923e835560d80": "2026-10-18T07:50:54.081Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -2352,7 +2357,13 @@
     "k38ef42:f9a0f4edac15d30d|k38ef42:fbe44b664a924d75": "2026-10-17T21:50:56.220Z",
     "haber:antimikrobiyal-direncle-mucadelede-peptid-kesfi-hiz-kazaniyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
     "haber:bilgi-yonetimi-sistemleri-graf-tabanli-yapay-zeka-ile-hatasiz-calisiyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
-    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z"
+    "haber:fiziksel-yapay-zeka-sistemleri-gercek-dunya-oncesi-simulasyonlarla-test-ediliyor|kaec085:bf4205125592dc33": "2026-10-18T05:50:53.743Z",
+    "haber:kiyamet-senaryolari-ve-super-zeka-safsatadan-ibaret|k12b4a6:4016cf74a1ed0eb9": "2026-10-18T07:50:54.081Z",
+    "haber:kiyamet-senaryolari-yapay-zekanin-gercek-potansiyelini-golgeliyor|k12b4a6:4016cf74a1ed0eb9": "2026-10-18T07:50:54.081Z",
+    "haber:birlesik-krallik-yoneticileri-yapay-zekanin-verimliligi-artirdigini-belirtiyor|k12b4a6:5c951672c848b006": "2026-10-18T07:50:54.081Z",
+    "haber:nvidia-dlss-5-neural-rendering-modeli-oyunlarda-yuzde-kirk-performans-artisi-sag|kaec085:746923e835560d80": "2026-10-18T07:50:54.081Z",
+    "haber:nvidia-rtx-spark-dizustu-bilgisayarlari-kuresel-capta-satisa-sundu|kaec085:746923e835560d80": "2026-10-18T07:50:54.081Z",
+    "haber:nvidia-ve-nordik-ulkeleri-ortaklasa-dev-yapay-zeka-altyapi-projelerini-hayata-ge|kaec085:746923e835560d80": "2026-10-18T07:50:54.081Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -5670,6 +5681,26 @@
       "puan": 80,
       "olcek": 100,
       "zaman": "2026-10-18T05:50:53.743Z"
+    },
+    "kfdedb4:c4e12ff2d09c506b": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-10-18T07:50:54.081Z"
+    },
+    "k12b4a6:4016cf74a1ed0eb9": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T07:50:54.081Z"
+    },
+    "k12b4a6:5c951672c848b006": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-18T07:50:54.081Z"
+    },
+    "kaec085:746923e835560d80": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-18T07:50:54.081Z"
     }
   },
   "yayinlanan": {
@@ -7277,6 +7308,11 @@
     "k2e841d:8240f5aca89e1afb": "2026-10-17T22:00:00.000Z",
     "kaec085:bf4205125592dc33": "2026-10-18T04:06:33.000Z",
     "k38ef42:7d230a3272802cba": "2026-10-18T05:45:00.000Z",
-    "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "2026-10-18T04:00:00.000Z"
+    "mit-news-ai:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "2026-10-18T04:00:00.000Z",
+    "kaec085:746923e835560d80": "2026-10-18T05:56:05.000Z",
+    "k12b4a6:4016cf74a1ed0eb9": "2026-10-18T06:47:00.000Z",
+    "k12b4a6:5c951672c848b006": "2026-10-18T06:00:00.000Z",
+    "kfdedb4:c4e12ff2d09c506b": "2026-10-18T07:30:00.000Z",
+    "kfdedb4:6603ab9cee65de11": "2026-10-18T07:00:00.000Z"
   }
 }
