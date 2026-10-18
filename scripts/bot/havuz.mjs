@@ -1,16 +1,19 @@
-// Kısa haber havuzu ve tema derlemesi: yalnızca uzunluk denetiminden (denetci.mjs → uzunlukKontrol) geçemediği için
-// yayımlanmayan olaylar çöpe gitmez, çalıştırmalar arasında havuzda bekler. Aynı kategoriden DERLEME_EN_AZ olay
-// biriktiğinde hepsi tek bir iki dilli (TR/EN) derleme yazısı olur; derleme de aynı denetimlerden geçer.
-// HAVUZ_SAAT içinde eş bulamayan, bu arada başka kaynaktan tam haber olarak yazılan ya da derlemesi yayımlanamayan
-// olay havuzdan düşer (jendume'de bülten satırına düşme yolu yok).
+// Kısa haber havuzu ve dilim derlemesi: yalnızca uzunluk denetiminden (denetci.mjs → uzunlukKontrol) geçemediği için
+// yayımlanmayan olaylar çöpe gitmez, havuza girdikleri dilimin (açılış 06-12, öğle 12-18, kapanış 18-06; İstanbul) sonuna
+// kadar bekler. Dilim bitince o dilimin kısa haberleri kategori aranmadan tek bir iki dilli (TR/EN) derleme yazısı olur
+// (en az DERLEME_EN_AZ, en çok DERLEME_AZAMI haber; yazıda her kategori ara başlık). Kısa haber tek başına yayımlanmaz.
+// Derleme de aynı denetimlerden geçer. Dilimde eşi olmayan tek haber, bu arada başka kaynaktan tam haber olarak yazılan ya
+// da derlemesi yayımlanamayan olay havuzdan düşer (jendume'de bülten satırına düşme yolu yok; bir sonraki dilime devretmek
+// de dilim anlamını bozardı). Derlemenin başlığına dilim eki gelir: "… · 18 Ekim, öğle" / "… · 18 October, midday".
 // Olaylar kaynak metni ve adresi taşır: durum dosyasında kayıt başına şifreli durur (gizli.mjs). Anahtar yoksa havuz
 // yazılmaz; düz metin hiçbir zaman dosyaya girmez.
 import { anahtarVar, coz, sifrele } from './gizli.mjs';
+import { kelimeSayisi, uzunlukKontrol } from './denetci.mjs';
 
-export const HAVUZ_SAAT = 12; // jendume turu 2 saatte bir: 6 tur eş bekler
-export const HAVUZ_AZAMI = 16; // aşan en eski olaylar düşer
+export const HAVUZ_SAAT = 24; // en uzun dilim 12 saat; derleme dilim bitince ilk turda yazılır, kalanı için pay
+export const HAVUZ_AZAMI = 24; // üç dilimlik birikim (3 x DERLEME_AZAMI); aşan en eski olaylar düşer
 export const DERLEME_EN_AZ = 2; // bir derlemede en az bu kadar kısa olay
-export const DERLEME_AZAMI = 4; // bir derlemede en fazla bu kadar kısa olay
+export const DERLEME_AZAMI = 8; // bir derlemede en fazla bu kadar kısa olay; fazlası dilimde dengeli bölünür
 export const DERLEME_MAKS = 2; // bir çalıştırmada en fazla derleme sayısı
 const KAYNAK_AZAMI = 3500; // olay başına saklanan kaynak metni (derleme isteminde de bu kadarı kullanılır)
 const DUZELTME_TURU = 2;
@@ -50,21 +53,78 @@ export function havuzKapat(olaylar = []) {
   return olaylar.map(({ sifreli, havuzaGirdi, ...o }) => ({ id: o.id, kategori: o.kategori ?? '', havuzaGirdi, sifreli: sifreli ?? sifrele(o) }));
 }
 
-// Kısa olayları kategoriye göre gruplar; her grup en yeni önce en fazla DERLEME_AZAMI olay içerir.
-export function kisaGruplari(olaylar) {
-  const kategoriler = new Map();
+const TR_AY = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+const EN_AY = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const DILIM_ADLARI = { acilis: { tr: 'açılış', en: 'opening' }, ogle: { tr: 'öğle', en: 'midday' }, kapanis: { tr: 'kapanış', en: 'closing' } };
+
+// İstanbul dilimi: açılış 06-12, öğle 12-18, kapanış 18-06. Gece yarısından sonrası bir önceki günün kapanışıdır.
+// Türkiye yaz saati uygulamıyor (UTC+3 sabit).
+export function bultenDilimi(simdi) {
+  const ist = new Date(simdi.getTime() + 3 * 3600e3);
+  const saat = ist.getUTCHours();
+  const dilim = saat >= 6 && saat < 12 ? 'acilis' : saat >= 12 && saat < 18 ? 'ogle' : 'kapanis';
+  const p = saat < 6 ? new Date(ist.getTime() - 6 * 3600e3) : ist;
+  const [y, m, g] = [p.getUTCFullYear(), p.getUTCMonth(), p.getUTCDate()];
+  const anahtar = `${y}-${String(m + 1).padStart(2, '0')}-${String(g).padStart(2, '0')}:${dilim}`;
+  return { anahtar, dilim, gun: g, ay: { tr: TR_AY[m], en: EN_AY[m] }, ad: DILIM_ADLARI[dilim] };
+}
+
+export const dilimAnahtari = (o) => bultenDilimi(new Date(o.havuzaGirdi)).anahtar;
+
+// Başlık eki, dile göre: "18 Ekim, öğle" / "18 October, midday".
+export function dilimEki(o) {
+  const d = bultenDilimi(new Date(o.havuzaGirdi));
+  return { tr: `${d.gun} ${d.ay.tr}, ${d.ad.tr}`, en: `${d.gun} ${d.ay.en}, ${d.ad.en}` };
+}
+
+// Derleme taslağının TR ve EN başlıklarına dilim eki ekler (denetimden sonra): "… · 18 Ekim, öğle" / "… · 18 October, midday".
+export function dilimBasligiEkle(taslak, grup) {
+  const ek = dilimEki(grup[0]);
+  return { ...taslak, tr: { ...taslak.tr, title: `${taslak.tr.title} · ${ek.tr}` }, en: { ...taslak.en, title: `${taslak.en.title} · ${ek.en}` } };
+}
+
+// Derleme alt sınırı: n haber için min(üst, max(150, n x 20)) kelime; üst sınır tek haberin dil eşiğidir (TR 180, EN 200).
+// Sekiz haberlik derleme de tek haberlik eşikten fazlasını taşımaz.
+export const derlemeEnAz = (n) => ({ tr: Math.min(180, Math.max(150, n * 20)), en: Math.min(200, Math.max(150, n * 20)) });
+
+// Derleme gövde hedefi (dil başına): haber başına 50-80 kelimelik paragraf.
+export const derlemeHedefi = (n) => ({ alt: Math.max(250, n * 50), ust: Math.max(400, n * 80) });
+
+// Gruptaki haberleri kategoriye göre kümeler (kategoriler ilk görünüş sırasıyla); ara başlıklar bu sıradadır.
+export function kategoriyeSirala(grup) {
+  const sira = [...new Set(grup.map((o) => o.kategori))];
+  return [...grup].sort((a, b) => sira.indexOf(a.kategori) - sira.indexOf(b.kategori));
+}
+
+// Dilimi bitmiş olayları dilime göre gruplar; eski dilim önce. Dilim içinde en yeni olay önce seçilir.
+// Bir dilimin DERLEME_AZAMI'dan fazla olayı dengeli bölünür (9 olay -> 5 + 4), böylece artan tek olay kalmaz.
+// Dilimde DERLEME_EN_AZ'dan az olay varsa grup olmaz: tek kalan olay artan'a girer (havuzdan düşer).
+export function dilimGruplari(olaylar) {
+  const dilimler = new Map();
   for (const o of olaylar) {
-    if (!kategoriler.has(o.kategori)) kategoriler.set(o.kategori, []);
-    kategoriler.get(o.kategori).push(o);
+    const d = dilimAnahtari(o);
+    if (!dilimler.has(d)) dilimler.set(d, []);
+    dilimler.get(d).push(o);
   }
   const gruplar = [];
-  for (const liste of kategoriler.values()) {
-    for (let i = 0; i < liste.length; i += DERLEME_AZAMI) {
-      const parca = liste.slice(i, i + DERLEME_AZAMI);
-      if (parca.length >= DERLEME_EN_AZ) gruplar.push(parca);
+  const artan = [];
+  for (const d of [...dilimler.keys()].sort()) {
+    const sirali = [...dilimler.get(d)].sort((a, b) => Date.parse(b.havuzaGirdi) - Date.parse(a.havuzaGirdi));
+    if (sirali.length < DERLEME_EN_AZ) {
+      artan.push(...sirali);
+      continue;
+    }
+    const k = Math.ceil(sirali.length / DERLEME_AZAMI);
+    const taban = Math.floor(sirali.length / k);
+    let fazla = sirali.length % k;
+    let i = 0;
+    for (let j = 0; j < k; j++) {
+      const n = taban + (fazla-- > 0 ? 1 : 0);
+      gruplar.push(kategoriyeSirala(sirali.slice(i, i + n)));
+      i += n;
     }
   }
-  return gruplar;
+  return { gruplar, artan };
 }
 
 // Derleme yazarının ve denetimin kaynağı: her haberin kaynakları kendi bölümünde.
@@ -74,45 +134,72 @@ export const derlemeKaynagi = (grup) =>
 /**
  * Havuzu bir tur ilerletir. Bağımlılıklar:
  *   mukerrer(o) → gerekçe | null   (olay bu arada tam haber olarak yazıldı mı)
- *   yaz(grup, kaynak) → taslak | null;  denetle(taslak, kaynak) → sorun listesi;  duzelt(taslak, kaynak, sorunlar) → taslak | null
- *   kaydet(taslak, grup, kaynak) → slug;  surVar() → boolean (zaman bütçesi)
+ *   yaz(grup, kaynak) → taslak | null;  denetle(taslak, kaynak, n) → sorun listesi;  duzelt(taslak, kaynak, sorunlar) → taslak | null
+ *   uzat(taslak, grup, kaynak, enAz) → taslak (kısa derlemeyi kendi kaynaklarından genişletir)
+ *   kaydet(taslak, grup, kaynak) → slug;  surVar() → boolean (zaman ve Gemini bütçesi)
  * Döner: { havuz: kalan olaylar, yazilan: slug listesi, ayarHatasi?: Error } — anahtar/kota hatasında tur durur.
  */
-export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, kaydet, surVar = () => true, log = console.log }) {
+export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, uzat = async (t) => t, kaydet, surVar = () => true, log = console.log }) {
+  const simdikiDilim = bultenDilimi(simdi).anahtar;
   let kalan = [];
   for (const o of [...havuz].sort((a, b) => Date.parse(b.havuzaGirdi) - Date.parse(a.havuzaGirdi))) {
-    const neden = yas(o, simdi) >= HAVUZ_SAAT ? 'eş bulamadı' : kalan.length >= HAVUZ_AZAMI ? 'havuz dolu' : mukerrer(o);
+    const neden = yas(o, simdi) >= HAVUZ_SAAT ? 'süresi doldu' : kalan.length >= HAVUZ_AZAMI ? 'havuz dolu' : mukerrer(o);
     if (neden) log(`havuz: düştü (${neden}): ${o.baslik}`);
     else kalan.push(o);
   }
+  // Şimdiki dilimin olayları dilim bitene kadar bekler; dilimi bitenler derlenir.
+  const olgun = kalan.filter((o) => dilimAnahtari(o) !== simdikiDilim);
+  const { gruplar, artan } = dilimGruplari(olgun);
+  for (const o of artan) log(`havuz: düştü (dilimde eş yok): ${o.baslik}`);
+  kalan = kalan.filter((o) => !artan.includes(o));
   const yazilan = [];
   let ayarHatasi;
-  for (const grup of kisaGruplari(kalan).slice(0, DERLEME_MAKS)) {
-    if (!surVar()) break;
+  let denenen = 0;
+  for (const grup of gruplar) {
+    if (denenen >= DERLEME_MAKS || !surVar()) break; // denenmeyen grup havuzda kalır, sonraki turda yazılır
+    denenen++;
     // Denenen grup sonucu ne olursa olsun havuzdan çıkar: yayımlanamayan derleme her turda Gemini harcamasın.
     kalan = kalan.filter((o) => !grup.includes(o));
     const kaynak = derlemeKaynagi(grup);
+    const n = grup.length;
+    const enAz = derlemeEnAz(n);
+    const kisa = (x) => uzunlukKontrol(x, enAz).length > 0;
+    const kelimeler = (x) => `${kelimeSayisi(x.tr?.body)} TR / ${kelimeSayisi(x.en?.body)} EN`;
     try {
       let t = await yaz(grup, kaynak);
       if (!t) {
-        log(`havuz: derleme (${grup.length} haber) yazılamadı`);
+        log(`havuz: derleme (${n} haber) yazılamadı`);
         continue;
       }
-      let sorunlar = denetle(t, kaynak);
+      // Kısa derleme, denetimden önce her haberin kendi kaynağıyla genişletilir.
+      let uzatmaOncesi = null;
+      if (kisa(t)) {
+        uzatmaOncesi = kelimeler(t);
+        t = await uzat(t, grup, kaynak, enAz);
+      }
+      let sorunlar = denetle(t, kaynak, n);
+      let yenidenUzatildi = uzatmaOncesi !== null;
       for (let tur = 1; tur <= DUZELTME_TURU && sorunlar.length; tur++) {
         log(`  derleme düzeltme turu ${tur}: ${sorunlar.join(' | ')}`);
         const d = await duzelt(t, kaynak, sorunlar);
         if (!d) break;
         t = d;
-        sorunlar = denetle(t, kaynak);
+        // Düzeltme sorunlu cümleleri silerek derlemeyi alt sınırın altına indirebilir: bir kez daha genişletilir.
+        if (kisa(t) && !yenidenUzatildi) {
+          yenidenUzatildi = true;
+          uzatmaOncesi = kelimeler(t);
+          t = await uzat(t, grup, kaynak, enAz);
+        }
+        sorunlar = denetle(t, kaynak, n);
       }
       if (sorunlar.length) {
-        log(`havuz: derleme (${grup.length} haber) YAYIMLANMADI: ${sorunlar.join(' | ')}`);
+        const ek = uzatmaOncesi === null ? '' : ` (uzatmadan önce ${uzatmaOncesi})`;
+        log(`havuz: derleme (${n} haber) YAYIMLANMADI: ${sorunlar.join(' | ')}${ek}`);
         continue;
       }
       const slug = await kaydet(t, grup, kaynak);
       yazilan.push(slug);
-      log(`havuz: derleme yazıldı (TR/EN, ${grup.length} haber): ${slug}`);
+      log(`havuz: derleme yazıldı (TR/EN, ${n} haber): ${slug}`);
     } catch (e) {
       if (e.ayar) {
         kalan.push(...grup); // anahtar/kota hatası olayların suçu değil: beklemeye devam
@@ -122,6 +209,6 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
       log(`havuz: derleme hatası: ${e.message}`);
     }
   }
-  if (kalan.length) log(`havuz: ${kalan.length} kısa haber eş bekliyor`);
+  if (kalan.length) log(`havuz: ${kalan.length} kısa haber dilim sonunu bekliyor`);
   return { havuz: kalan, yazilan, ayarHatasi };
 }

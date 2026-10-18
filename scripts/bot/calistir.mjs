@@ -5,14 +5,14 @@ import { writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
-import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz } from './yazar.mjs';
+import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz, derlemeUzat } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
 import { baslikKontrol, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
-import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle } from './havuz.mjs';
+import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -289,11 +289,11 @@ for (const g of sira) {
     if (sorunlar.length) {
       console.log(`  YAYIMLANMADI: ${sorunlar.join(' | ')}`);
       ozet.elenen.push(`${t.tr?.title || ad} — ${sorunlar.join('; ')}`);
-      // Yalnız uzunluk yüzünden duran olay havuza girer: aynı kategoriden eşi gelince derleme olur.
+      // Yalnız uzunluk yüzünden duran olay havuza girer: dilimi bitince o dilimin kısa haberleriyle tek derleme olur.
       const uzunluk = uzunlukKontrol(t);
       if (sorunlar.every((s) => uzunluk.includes(s))) {
         havuz.push(havuzOlayi({ id: g.uyeler[0].id, taslak: t, basliklar: g.uyeler.map((u) => u.baslik), kaynaklar, kullanilan, iso: simdi.toISOString() }));
-        console.log('  havuza alındı: eş bekleyecek');
+        console.log('  havuza alındı: dilim sonunda derlemeye girecek');
       }
       continue;
     }
@@ -338,7 +338,7 @@ for (const g of sira) {
   }
 }
 
-// Kısa haber havuzu: aynı kategoriden biriken kısa haberler tek bir iki dilli derleme yazısı olur (havuz.mjs).
+// Kısa haber havuzu: dilimi (açılış/öğle/kapanış) biten kısa haberler, kategori aranmadan tek bir iki dilli derleme yazısı olur (havuz.mjs).
 try {
   const h = await havuzuIsle(havuz, {
     simdi,
@@ -348,12 +348,15 @@ try {
       const t = await derlemeYaz(grup, kaynak);
       return t && yerelDuzelt(t);
     },
-    denetle: (x, kaynak) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x), ...baslikKontrol(x)],
+    uzat: async (x, grup, kaynak, enAz) => yerelDuzelt({ ...(await derlemeUzat(x, grup, kaynak, enAz)), category: x.category }),
+    // Derlemenin uzunluk alt sınırı haber sayısına göre (havuz.mjs → derlemeEnAz).
+    denetle: (x, kaynak, n) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x, derlemeEnAz(n)), ...baslikKontrol(x)],
     duzelt: async (x, kaynak, sorunlar) => {
       const d = await duzelt(x, kaynak, sorunlar);
       return d && yerelDuzelt({ ...d, category: x.category });
     },
     kaydet: async (x, grup, kaynak) => {
+      x = dilimBasligiEkle(x, grup); // başlığa dilim eki (denetimden sonra)
       const slug = await ucDilliHaberYaz(ROT, {
         ...rakamSeritleriniSuz(x, kaynak),
         date: simdi.toISOString(),

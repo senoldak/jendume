@@ -1,7 +1,8 @@
 // JEN DUME — kelimelerin ötesinde
 // İki dilli (TR, EN) yapay zekâ anlamlandırma ve haber yazarı.
 import { gemini, KATEGORILER } from './lib.mjs';
-import { ilgiliKisim } from './denetci.mjs';
+import { ilgiliKisim, kelimeSayisi } from './denetci.mjs';
+import { derlemeHedefi } from './havuz.mjs';
 
 export const DIL_BLOK_SEMASI = {
   type: 'object',
@@ -143,31 +144,85 @@ ${JSON.stringify(taslak, null, 2)}`;
   return gemini({ prompt, schema: TASLAK_SEMASI });
 }
 
-// Tema derlemesi (havuz.mjs): aynı kategoriden, tek başına uzunluk denetimini geçemeyen kısa haberler tek bir iki dilli
-// yazıda toplanır. kaynak: havuz.mjs → derlemeKaynagi (her haber kendi bölümünde).
+// Dilim derlemesi (havuz.mjs): aynı dilimde tek başına uzunluk denetimini geçemeyen kısa haberler, kategori aranmadan tek
+// bir iki dilli yazıda toplanır; yazıda her kategori ara başlık olur. kaynak: havuz.mjs → derlemeKaynagi (her haber kendi
+// bölümünde); grup kategoriye göre sıralı gelir (kategoriyeSirala), ara başlıklar bu sırayı izler.
+const KATEGORI_ADLARI = {
+  dunya: { tr: 'Dünya', en: 'World' },
+  'yapay-zeka': { tr: 'Yapay Zekâ', en: 'AI' },
+  teknoloji: { tr: 'Teknoloji', en: 'Technology' },
+  bilim: { tr: 'Bilim', en: 'Science' },
+  ekonomi: { tr: 'Ekonomi', en: 'Economy' },
+  perspektif: { tr: 'Perspektif', en: 'Perspective' },
+};
+const kategoriAdi = (k, dil) => KATEGORI_ADLARI[k]?.[dil] ?? k ?? '';
+
+// Haber numarası -> kategori adı (TR / EN) listesi: ara başlıklar ve her paragrafın kaynağı bundan okunur.
+const haberKategorileri = (grup) => grup.map((o, i) => `${i + 1}. haber: tr "${kategoriAdi(o.kategori, 'tr')}", en "${kategoriAdi(o.kategori, 'en')}"`).join('\n');
+
+// Derlemenin kategorisi: en çok haberi olan kategori; eşitlikte gruptaki ilk haberinki.
+export function derlemeKategorisi(grup) {
+  const sayi = new Map();
+  for (const o of grup) sayi.set(o.kategori, (sayi.get(o.kategori) ?? 0) + 1);
+  return grup.reduce((en, o) => (sayi.get(o.kategori) > sayi.get(en) ? o.kategori : en), grup[0]?.kategori ?? 'yapay-zeka');
+}
+
 export function derlemeIstemi(grup, kaynak) {
-  const kategori = grup[0]?.kategori ?? 'yapay-zeka';
+  const { alt, ust } = derlemeHedefi(grup.length);
   return `Sen JEN DUME ("kelimelerin ötesinde") yayınının editörüsün.
-Aşağıda "${kategori}" kategorisinden ${grup.length} kısa yapay zekâ haberi var; her biri tek başına tam bir haber taşıyacak kadar kaynak içermiyor.
+Aşağıda aynı zaman diliminden ${grup.length} kısa yapay zekâ haberi var; her biri tek başına tam bir haber taşıyacak kadar kaynak içermiyor.
 Bunları hem Türkçe (tr) hem İngilizce (en) TEK bir derleme haberinde topla:
-- title: haberlerin ortak temasını anlatan başlık; kural 6'ya uyar (anahtar sözcükle başlar, iki noktalı etiket yok). Tek bir haberi öne çıkarmaz.
+- title: dilimin öne çıkan konularını anlatan başlık; kural 6'ya uyar (anahtar sözcükle başlar, iki noktalı etiket yok). Tek bir haberi öne çıkarmaz. Tarih ve saat yazma (dilim eki sonradan eklenir).
 - description: derlemenin ana noktası, 1-2 cümle.
-- body: 250-400 kelime. Her haber için "### " ile başlayan kısa bir ara başlık ve 1-2 paragraf; ara başlık o haberin öznesiyle (şirket, model, kurum, konu) başlar.
-  Her bölüm YALNIZCA o haberin bölümündeki kaynak olgularla yazılır; haberler arasında bilgi taşıma. Kaynağında yeterli bilgi olmayan haberi yazma; uydurma ve dolgu cümlesi ekleme.
+- body: Markdown, her dilde ${alt}-${ust} kelime. Her kategori için bir ara başlık ("## Kategori adı"; HABER KATEGORİLERİ'ndeki sırayla, tr gövdede tr adı, en gövdede en adı), altında o kategorideki her haber için TEK paragraf. Her paragraf 50-80 kelime (3-4 cümle): haberin öznesiyle (şirket, model, kurum, konu) başlar; ne olduğunu, ana rakamı ve kimin açıkladığını anlatır. Tek cümlelik özet yazma.
+  Her paragraf YALNIZCA o haberin kendi bölümündeki kaynak olgularla yazılır; bir haberin kaynağında yetmeyen bilgi için başka haberin kaynağını kullanma, uydurma ve dolgu cümlesi ekleme.
 - perspektif ve why_matters: bu gelişmelerin birlikte ne anlattığı.
-- ayniOlay=true, uygun=true, category="${kategori}", breaking=false.
+- ayniOlay=true, uygun=true, breaking=false.
 
 ${YAZIM_KURALLARI}
+
+HABER KATEGORİLERİ:
+${haberKategorileri(grup)}
 
 HABERLER:
 ${kaynak}`;
 }
 
-// Döner: iki dilli derleme taslağı ya da null. Kategori grubun kategorisidir (model başka kategori seçse de).
+// Döner: iki dilli derleme taslağı ya da null. Kategori derlemeKategorisi'dir (model başka kategori seçse de).
 export async function derlemeYaz(grup, kaynak) {
   const t = await gemini({ prompt: derlemeIstemi(grup, kaynak), schema: TASLAK_SEMASI });
   if (!t?.tr?.body || !t?.en?.body) return null;
-  return { ...t, ayniOlay: true, uygun: true, breaking: false, category: grup[0].kategori };
+  return { ...t, ayniOlay: true, uygun: true, breaking: false, category: derlemeKategorisi(grup) };
+}
+
+// Kısa kalan derlemeyi genişletir: başlık, ara başlıklar ve sıra korunur, her paragraf yalnız kendi haberinin kaynağıyla
+// uzar. Tek haber düzeltmesinden (duzelt) farkı budur; o gövdeyi baştan kurabilir. Yalnız gövdeler (tr/en) değişir ve
+// yalnız uzarsa alınır; başarısızsa taslak aynen döner. gemini: test için enjekte edilebilir.
+export async function derlemeUzat(taslak, grup, kaynak, enAz, { kall = gemini } = {}) {
+  const { alt, ust } = derlemeHedefi(grup.length);
+  const kelime = (d) => kelimeSayisi(taslak[d]?.body);
+  const r = await kall({
+    schema: TASLAK_SEMASI,
+    prompt: `Bu iki dilli derleme haberinin gövdeleri çok kısa: tr ${kelime('tr')} kelime, en ${kelime('en')} kelime; her dilde ${alt}-${ust} kelime olmalı (en az tr ${enAz.tr}, en ${enAz.en}). Her haber paragrafını 50-80 kelimeye (3-4 cümle) genişlet: ne olduğu, ana rakam, kimin açıkladığı, kaynaktaki bağlam.
+Her paragrafı yalnızca HABERLER'de o haberin kendi bölümündeki bilgilerle genişlet; başka haberin kaynağını kullanma. Kaynakta olmayan bilgi, rakam, tahmin ya da yorum ekleme; aynı bilgiyi tekrar etme, dolgu cümlesi yazma. Ara başlıkları ("## ..."), paragraf sırasını, başlıkları ve spotları değiştirme; iki dilde aynı haberler aynı sırada olsun.
+
+${YAZIM_KURALLARI}
+
+HABER KATEGORİLERİ:
+${haberKategorileri(grup)}
+
+HABERLER:
+${kaynak}
+
+TASLAK (JSON):
+${JSON.stringify({ tr: { title: taslak.tr?.title, description: taslak.tr?.description, body: taslak.tr?.body }, en: { title: taslak.en?.title, description: taslak.en?.description, body: taslak.en?.body } }, null, 2)}`,
+  });
+  const yeni = { ...taslak };
+  for (const d of ['tr', 'en']) {
+    const govde = r?.[d]?.body;
+    if (govde && kelimeSayisi(govde) > kelime(d)) yeni[d] = { ...taslak[d], body: govde };
+  }
+  return yeni;
 }
 
 // Ön eleme ve haber değeri tek çağrıda: 0 = kapsam dışı, 1–100 = haber değeri.
