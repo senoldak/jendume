@@ -70,7 +70,7 @@ const M = 200;
 const B = M * 0.25;
 const PARCALAR: Record<string, (koyu: boolean) => { g: number; y: number; ic: string }> = {
   'jendume-logo-yatay': (koyu) => {
-    const l = logo(B, B + M, M, koyu ? KIMLIK.kagit : KIMLIK.murekkep);
+    const l = logo(B, B + M, M, koyu ? KIMLIK.kagit : KIMLIK.murekkep, koyu);
     return { g: B * 2 + l.genislik, y: B * 2 + M, ic: l.svg };
   },
   'jendume-logotip': (koyu) => {
@@ -78,11 +78,10 @@ const PARCALAR: Record<string, (koyu: boolean) => { g: number; y: number; ic: st
     const t = logotip(B, B + boy * 0.72, boy, koyu ? KIMLIK.kagit : KIMLIK.murekkep);
     return { g: B * 2 + t.genislik, y: B * 2 + boy * 0.95, ic: t.svg };
   },
-  'jendume-levha': () => ({ g: M + B * 2, y: M + B * 2, ic: levhaSvg(M, `x="${B}" y="${B}"`) }),
+  'jendume-levha': (koyu) => ({ g: M + B * 2, y: M + B * 2, ic: levhaSvg(M, `x="${B}" y="${B}"`, koyu) }),
 };
 for (const [ad, ciz] of Object.entries(PARCALAR)) {
   for (const koyu of [false, true]) {
-    if (ad === 'jendume-levha' && koyu) continue; // levha kendi zeminidir, tek sürüm
     const p = ciz(koyu);
     const svg = svgSar(p.g, p.y, p.ic);
     const dosya = `${K}/${ad}${koyu ? '-koyu-zemin' : ''}`;
@@ -99,7 +98,7 @@ fs.writeFileSync(
 - jendume-levha        Yalnız işaret: profil fotoğrafı, uygulama simgesi, favicon
 Profil fotoğrafı ve kapak görselleri: ../sosyal/
 
-"-koyu-zemin" ekli dosyalarda yazı kâğıt rengine döner; levha ve yeşil aynı kalır. PNG'ler saydam zeminlidir.
+"-koyu-zemin" ekli dosyalarda levha ters döner (kâğıt rengi levha, mürekkep J) ve yazı kâğıt rengine geçer; yeşil aynı kalır. PNG'ler saydam zeminlidir.
 Kurallar: levhayı döndürmek, yuvarlatmak, kareyi başka renge boyamak, gölge, kontur, J'yi ya da yazıyı başka yazı
 tipiyle çizmek yapılmaz. Renkler: Esperanto yeşili ${KIMLIK.yesil}, mürekkep ${KIMLIK.murekkep}, kâğıt ${KIMLIK.kagit}.
 Yazı tipi: Instrument Sans (OFL).

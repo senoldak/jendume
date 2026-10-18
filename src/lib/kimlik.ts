@@ -59,8 +59,9 @@ export function metin(s: string, x: number, y: number, ayar: MetinAyar) {
 /**
  * Levha işareti (BRAND.md §5), 1000 birimlik kare: koyu levha, beyaz büyük J (Instrument Sans 600), sağ üstte yeşil kare.
  * Eski işaretin geometrisi: kare x 656–844, y 156–344; J'nin sağ kenarı 595, yüksekliği 575, alt kenarı 810.
+ * ters: koyu zemin için kâğıt rengi levha, mürekkep J (koyu levha koyu zeminde kaybolur; kontur kullanılmaz).
  */
-export function levhaIc() {
+export function levhaIc(ters = false) {
   const f = font(600);
   const [g] = f.glyphsForString('J');
   const bb = g.bbox;
@@ -68,15 +69,15 @@ export function levhaIc() {
   const tx = 595 - bb.maxX * o;
   const ty = 810 + bb.minY * o;
   return (
-    `<rect width="1000" height="1000" fill="${KIMLIK.murekkep}"/>` +
-    `<path transform="translate(${tx.toFixed(1)} ${ty.toFixed(1)}) scale(${o.toFixed(5)} ${(-o).toFixed(5)})" d="${g.path.toSVG()}" fill="${KIMLIK.beyaz}"/>` +
+    `<rect width="1000" height="1000" fill="${ters ? KIMLIK.kagit : KIMLIK.murekkep}"/>` +
+    `<path transform="translate(${tx.toFixed(1)} ${ty.toFixed(1)}) scale(${o.toFixed(5)} ${(-o).toFixed(5)})" d="${g.path.toSVG()}" fill="${ters ? KIMLIK.murekkep : KIMLIK.beyaz}"/>` +
     `<rect x="656" y="156" width="188" height="188" fill="${KIMLIK.yesil}"/>`
   );
 }
 
 /** Levha, verilen boyda bağımsız SVG; `ekler` <svg> etiketine eklenir (x, y, class…). */
-export function levhaSvg(boyut: number, ekler = '') {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${boyut}" height="${boyut}" viewBox="0 0 1000 1000"${ekler ? ` ${ekler}` : ''}>${levhaIc()}</svg>`;
+export function levhaSvg(boyut: number, ekler = '', ters = false) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${boyut}" height="${boyut}" viewBox="0 0 1000 1000"${ekler ? ` ${ekler}` : ''}>${levhaIc(ters)}</svg>`;
 }
 
 /**
@@ -94,11 +95,11 @@ export function logotip(x: number, y: number, boyut: number, renk: string = KIML
   return { svg, genislik: genislik('ȷen dume', ayar) };
 }
 
-/** Levha + logotip yan yana; (x, alt) levhanın sol alt köşesi. */
-export function logo(x: number, alt: number, levhaBoyu: number, renk: string = KIMLIK.murekkep) {
+/** Levha + logotip yan yana; (x, alt) levhanın sol alt köşesi. ters: koyu zemin sürümü (açık levha, açık yazı). */
+export function logo(x: number, alt: number, levhaBoyu: number, renk: string = KIMLIK.murekkep, ters = false) {
   const boy = levhaBoyu * 0.62;
   const bosluk = levhaBoyu * 0.28;
-  const l = levhaSvg(levhaBoyu, `x="${x.toFixed(1)}" y="${(alt - levhaBoyu).toFixed(1)}"`);
+  const l = levhaSvg(levhaBoyu, `x="${x.toFixed(1)}" y="${(alt - levhaBoyu).toFixed(1)}"`, ters);
   const taban = alt - levhaBoyu / 2 + boy * 0.52 * 0.5;
   const t = logotip(x + levhaBoyu + bosluk, taban, boy, renk);
   return { svg: l + t.svg, genislik: levhaBoyu + bosluk + t.genislik };

@@ -45,6 +45,8 @@ Sahibinin seçimi: **meraklı ve düşünceli.**
 - Koyu levha `#16181d`, beyaz büyük **J** (Instrument Sans 600), sağ üstte **Esperanto yeşili kare**.
 - Geometri (1000 birimlik kare): kare x 656–844, y 156–344; J'nin sağ kenarı 595, yüksekliği 575, alt kenarı 810.
 - Anlamı: yeşil kare "işte" noktası; J yolculuğun başı.
+- **Koyu zemin:** levha ters döner — kâğıt rengi levha, mürekkep J, yeşil kare (koyu levha koyu zeminde kaybolur;
+  kontur kullanılmaz).
 - **Yapılmaz:** döndürme, kareyi başka renge boyama, levhayı yuvarlatma, gölge, kontur, J'yi başka yazı tipiyle çizme.
 - Denendi ve bırakıldı: soru işareti, düğümlü yıldız, mercek, üç nokta, JD monogramı, j ile d'nin birleşik harfi.
 
