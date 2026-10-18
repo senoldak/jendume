@@ -274,3 +274,12 @@ test('derlemeUzat: yalnız gövdeleri ve yalnız uzayanları alır; başlıklar 
   assert.equal(y.category, 'bilim');
   assert.equal((await derlemeUzat(t, grup, 'k', derlemeEnAz(2), { kall: async () => null })).tr.body, 'kısa gövde');
 });
+
+test('dilimGruplari: aynı günün dilimleri gün içi sırayla gelir (öğle kapanıştan önce)', () => {
+  const o = (id, havuzaGirdi) => ({ id, kategori: 'yapay-zeka', havuzaGirdi });
+  const { gruplar } = dilimGruplari([
+    o('k1', '2026-10-18T16:00:00Z'), o('k2', '2026-10-18T16:30:00Z'),
+    o('o1', '2026-10-18T10:00:00Z'), o('o2', '2026-10-18T10:30:00Z'),
+  ]);
+  assert.deepEqual(gruplar.map((g) => g.map((x) => x.id).sort()), [['o1', 'o2'], ['k1', 'k2']]);
+});
