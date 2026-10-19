@@ -80,7 +80,6 @@ const robots = noindex
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const jsonLd = jsonLdMetni({ '@context': 'https://schema.org', '@graph': [...siteGraph(), ...schema] });
 const path = Astro.url.pathname;
-const isHome = path === '/' || path === `/${lang}/`;
 
 function resolveLangUrl(targetLang: Locale): string {
   if (langUrls && langUrls[targetLang]) {
@@ -171,23 +170,8 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
         </a>
 
         <nav class="overhead-links" aria-label="Primary">
-          <a href={homeHref} aria-current={isHome ? 'page' : undefined}>
-            {ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span>
-          </a>
-          <a href={topicsHref} aria-current={path.startsWith(topicsHref) ? 'page' : undefined}>
-            {ui.topics}<span class="link-other" lang={other}>{SITE.ui[other].topics}</span>
-          </a>
-          <a href={glossaryHref} aria-current={path.startsWith(glossaryHref) ? 'page' : undefined}>
-            {ui.glossary}<span class="link-other" lang={other}>{SITE.ui[other].glossary}</span>
-          </a>
-          <a href={aboutHref} aria-current={path === aboutHref ? 'page' : undefined}>
-            {ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span>
-          </a>
           <a href={searchHref} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
             {ui.search}<span class="link-other" lang={other}>{SITE.ui[other].search}</span>
-          </a>
-          <a href={`/${lang}/rss.xml`}>
-            {ui.rss}<span class="link-other">{lang.toUpperCase()}</span>
           </a>
         </nav>
 
