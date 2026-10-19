@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { VARSAYILAN_YAZI_TURU, YAZI_TURLERI } from './lib/yazi-turu.mjs';
 
 const categoryEnum = z.enum([
   'dunya',
@@ -21,6 +22,8 @@ const haberSchema = z.object({
   // Yayından sonra yapılan düzeltmenin notu ("<tarih saat>: <ne düzeltildi>"); boşsa makalede hiçbir şey görünmez.
   // Not `updated`'ı değiştirmez; sahibi elle günceller.
   duzeltme: z.string().min(10).optional(),
+  // Yazı türü (bkz. src/lib/yazi-turu): haber, açıklayıcı ya da referans; yoksa haber.
+  yaziTuru: z.enum(YAZI_TURLERI).default(VARSAYILAN_YAZI_TURU),
   cover: z.string().optional(),
   coverAlt: z.string().optional(),
   bolge: z.string().optional(),
