@@ -11,7 +11,7 @@ test('duzeltmeNotu: tr yazıda tr etiket ve Yayın İlkeleri bağlantısı', () 
   assert.deepEqual(duzeltmeNotu({ duzeltme: '19.10.2026 14:00: Tarih düzeltildi.' }, 'tr'), {
     etiket: 'Düzeltme:',
     metin: '19.10.2026 14:00: Tarih düzeltildi.',
-    baglanti: '/tr/yayin-ilkeleri/',
+    baglanti: '/tr/yayin-ilkeleri/#duzeltmeler',
   });
 });
 
@@ -19,7 +19,7 @@ test('duzeltmeNotu: en yazıda Correction: ve Editorial Standards bağlantısı'
   assert.deepEqual(duzeltmeNotu({ duzeltme: '19.10.2026 14:00: Date corrected.' }, 'en'), {
     etiket: 'Correction:',
     metin: '19.10.2026 14:00: Date corrected.',
-    baglanti: '/en/editorial-standards/',
+    baglanti: '/en/editorial-standards/#corrections',
   });
 });
 
