@@ -6,6 +6,7 @@ import { dizinlenir } from './src/lib/kalite.mjs';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './src/lib/kapak.mjs';
 import { haberYolu, karsiYol } from './src/lib/yollar.mjs';
 import { sozlukEklentisi } from './src/lib/sozluk.mjs';
+import { onyuzMaddesiYayinda } from './src/lib/yayinda.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 
 const SITE = 'https://jendume.com';
@@ -25,7 +26,9 @@ function haberBilgisi() {
       const md = fs.readFileSync(path.join(dir, file), 'utf8');
       const fm = md.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1] ?? '';
       const field = (k) => fm.match(new RegExp(`^${k}:\\s*["']?([^"'\\r\\n]+)`, 'm'))?.[1]?.trim();
-      if (field('draft') === 'true') continue;
+      // Taslak ve tarihi gelmemiş (planlanmış) yazı vakti gelene kadar ne haritaya ne kapak seçimine ne IndexNow'a
+      // girer; her dil kendi dosyasının tarihiyle süzülür (src/lib/yayinda.mjs, news.ts ile aynı kural).
+      if (!onyuzMaddesiYayinda(md)) continue;
       const date = new Date(field('date') ?? '');
       if (Number.isNaN(date.valueOf())) continue;
       const updated = new Date(field('updated') ?? '');

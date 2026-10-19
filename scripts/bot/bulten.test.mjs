@@ -122,3 +122,37 @@ test('var_ yardımcısı dosya yokken false döner', async () => {
   const k = await kok();
   assert.equal(await var_(path.join(k, 'yok.md')), false);
 });
+
+test('ileri tarihli haber bültene girmez; EN karşılığı ileri tarihliyse EN bültene girmez', async () => {
+  const k = await kok();
+  await haber(k, 'tr', 'a-haber', { date: '2026-10-14T07:30:00.000Z' });
+  await haber(k, 'tr', 'b-haber', { date: '2026-10-14T06:30:00.000Z' });
+  await haber(k, 'tr', 'c-haber', { date: '2026-10-14T06:00:00.000Z' });
+  await haber(k, 'tr', 'ileri-haber', { date: '"2026-10-14T12:00:00+03:00"' });
+  await haber(k, 'en', 'a-haber', { date: '2026-10-14T07:30:00.000Z' });
+  await haber(k, 'en', 'b-haber', { date: '2026-10-14T06:30:00.000Z' });
+  // TR yayında, EN karşılığı ileri tarihli: EN bülten bu habere bağlanmamalı.
+  await haber(k, 'en', 'c-haber', { date: '2026-10-14T09:00:00.000Z' });
+  await haber(k, 'en', 'ileri-haber', { date: '"2026-10-14T12:00:00+03:00"' });
+  const slug = await calistir({ simdi, donem: 'ogle', kok: k });
+  assert.ok(slug);
+  const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  assert.match(tr, /\/tr\/haber\/c-haber\//);
+  assert.doesNotMatch(tr, /ileri-haber/);
+  assert.match(en, /\/en\/news\/a-haber\//);
+  assert.doesNotMatch(en, /c-haber|ileri-haber/);
+});
+
+test('ileri tarihli bülten "son bülten" sayılmaz, yeni haberleri yutmaz', async () => {
+  const k = await kok();
+  await haber(k, 'tr', 'a-haber', { date: '2026-10-14T07:30:00.000Z' });
+  await haber(k, 'tr', 'b-haber', { date: '2026-10-14T06:30:00.000Z' });
+  await haber(k, 'en', 'a-haber', { date: '2026-10-14T07:30:00.000Z' });
+  await haber(k, 'en', 'b-haber', { date: '2026-10-14T06:30:00.000Z' });
+  await haber(k, 'tr', 'planli-bulten', { date: '2026-10-14T15:00:00.000Z', category: 'gunluk-bulten' });
+  const slug = await calistir({ simdi, donem: 'ogle', kok: k });
+  assert.ok(slug);
+  const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  assert.match(tr, /\/tr\/haber\/a-haber\//);
+});

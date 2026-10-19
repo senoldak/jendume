@@ -1,7 +1,8 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import type { CategorySlug, Locale } from './site';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './kapak.mjs';
 import { haberYolu, kategoriYolu } from './yollar.mjs';
+import { yayinda, yayindakiDiller } from './yayinda.mjs';
 
 export type NewsEntry =
   | CollectionEntry<'haberler_tr'>
@@ -12,11 +13,13 @@ const COLLECTION_MAP = {
   en: 'haberler_en',
 } as const;
 
+// Taslaklar ve tarihi gelmemiş (planlanmış) yazılar canlı sitede görünmez, yerel geliştirmede görünür
+// (src/lib/yayinda.mjs). Her dil kendi dosyasının tarihiyle süzülür.
 export async function getPublishedPosts(lang: Locale): Promise<NewsEntry[]> {
   const collectionName = COLLECTION_MAP[lang];
   const entries = (await getCollection(collectionName)) as NewsEntry[];
   return entries
-    .filter((entry) => !entry.data.draft)
+    .filter((entry) => import.meta.env.DEV || yayinda(entry.data))
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 
@@ -28,17 +31,18 @@ export async function getPostsByCategory(
   return all.filter((entry) => entry.data.category === category);
 }
 
+// Dil köprüsü ve hreflang yalnız yayındaki dile bağlanır: TR yayında, EN ileri tarihliyse EN'e bağlantı yok
+// (getPublishedPosts ile aynı kural; yerel geliştirmede var olan her dil görünür).
 export async function getAvailableTranslations(
   slug: string
 ): Promise<Record<Locale, boolean>> {
-  const [trList, enList] = await Promise.all([
-    getPublishedPosts('tr'),
-    getPublishedPosts('en'),
+  const [tr, en] = await Promise.all([
+    getEntry(COLLECTION_MAP.tr, slug),
+    getEntry(COLLECTION_MAP.en, slug),
   ]);
-  return {
-    tr: trList.some((e) => e.id === slug),
-    en: enList.some((e) => e.id === slug),
-  };
+  if (import.meta.env.DEV) return { tr: Boolean(tr), en: Boolean(en) };
+  const diller = yayindakiDiller({ tr: tr?.data, en: en?.data });
+  return { tr: diller.includes('tr'), en: diller.includes('en') };
 }
 
 /** TR /tr/haber/<id>/, EN /en/news/<id>/ (src/lib/yollar.mjs). */

@@ -6,6 +6,7 @@ import path from 'node:path';
 import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { haberYolu } from '../../src/lib/yollar.mjs';
+import { onyuzMaddesiYayinda } from '../../src/lib/yayinda.mjs';
 
 const HER = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(HER, '../..');
@@ -114,14 +115,17 @@ async function var_(p) {
   }
 }
 
-// Bir dilin haber dosyalarını okur: bülten olmayan, taslak olmayan, son 24 saat içindeki yazılar.
+// Bir dilin yayındaki haber dosyalarını okur (taslak ve ileri tarihli hariç); son bülten zamanını da döner.
 async function haberleriOku(kok, dil, simdi) {
   const dizin = path.join(kok, 'src/content/haberler', dil);
   const haberler = [];
   let sonBulten = 0;
   for (const dosya of await readdir(dizin).catch(() => [])) {
     if (!dosya.endsWith('.md')) continue;
-    const d = onBilgi(await readFile(path.join(dizin, dosya), 'utf8'));
+    const metin = await readFile(path.join(dizin, dosya), 'utf8');
+    // Taslak ve tarihi gelmemiş (planlanmış) yazı ne bültene girer ne de "son bülten" sayılır (src/lib/yayinda.mjs).
+    if (!onyuzMaddesiYayinda(metin, simdi.getTime())) continue;
+    const d = onBilgi(metin);
     if (!d) continue;
     const tarih = new Date(d.date);
     if (Number.isNaN(tarih.valueOf())) continue;
@@ -129,7 +133,6 @@ async function haberleriOku(kok, dil, simdi) {
       sonBulten = Math.max(sonBulten, tarih.getTime());
       continue;
     }
-    if (d.draft === 'true') continue;
     haberler.push({ slug: dosya.replace(/\.md$/, ''), title: d.title ?? '', tarih });
   }
   return { haberler, sonBulten };
