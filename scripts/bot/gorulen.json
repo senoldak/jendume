@@ -1191,7 +1191,23 @@
     "k2e841d:8506f9068b4926c9": "2026-10-19T03:50:52.743Z",
     "kaec085:9406e4a9407ab6ea": "2026-10-19T03:50:52.743Z",
     "kd9a613:2cc69ce0cd09410f": "2026-10-19T03:50:52.743Z",
-    "k38ef42:3be6dea0e4af5ac5": "2026-10-19T03:50:52.743Z"
+    "k38ef42:3be6dea0e4af5ac5": "2026-10-19T03:50:52.743Z",
+    "k38ef42:f8e9115bdc51293c": "2026-10-19T05:50:52.852Z",
+    "kaec085:b40e51c25abbed77": "2026-10-19T05:50:52.852Z",
+    "kea595f:f5fd7e3312659033": "2026-10-19T05:50:52.852Z",
+    "k38ef42:d94d103d728c179b": "2026-10-19T05:50:52.852Z",
+    "k38ef42:0563505c0aab5ed7": "2026-10-19T05:50:52.852Z",
+    "k38ef42:81a6496b3f80458e": "2026-10-19T05:50:52.852Z",
+    "k38ef42:95235b5733fa4066": "2026-10-19T05:50:52.852Z",
+    "k38ef42:fc5272137656eb4a": "2026-10-19T05:50:52.852Z",
+    "k38ef42:6d37fa98c2510134": "2026-10-19T05:50:52.852Z",
+    "k38ef42:a5c9770e45b5e1b2": "2026-10-19T05:50:52.852Z",
+    "ke6dccd:a0aad5abb3d96b04": "2026-10-19T05:50:52.852Z",
+    "k38ef42:30b55c6b07e20b80": "2026-10-19T05:50:52.852Z",
+    "k38ef42:ab6cded4d82188f5": "2026-10-19T05:50:52.852Z",
+    "k12b4a6:5c2e616ec8129738": "2026-10-19T05:50:52.852Z",
+    "kfdedb4:6b3b0606b439cadb": "2026-10-19T05:50:52.852Z",
+    "k74f74a:2257757ec4fe76f8": "2026-10-19T05:50:52.852Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -2669,7 +2685,17 @@
     "haber:firmus-un-halka-arz-plani-bes-gunde-nasil-coktu|kd9a613:2cc69ce0cd09410f": "2026-10-19T03:50:52.743Z",
     "haber:sporcularin-yapay-zekayla-uretilen-goruntuleri-kumar-reklamlarinda-kullanildi|kd9a613:2cc69ce0cd09410f": "2026-10-19T03:50:52.743Z",
     "haber:yapay-zeka-botlari-dolandiricilari-telefondan-dusurmuyor|kd9a613:2cc69ce0cd09410f": "2026-10-19T03:50:52.743Z",
-    "haber:metin-uretmek-yerine-olasilik-hesaplayan-yeni-karar-modelleri-duyuruldu|k2e841d:8506f9068b4926c9": "2026-10-19T03:50:52.743Z"
+    "haber:metin-uretmek-yerine-olasilik-hesaplayan-yeni-karar-modelleri-duyuruldu|k2e841d:8506f9068b4926c9": "2026-10-19T03:50:52.743Z",
+    "haber:amazon-analitik-veritabani-duckdb-gelistiricisi-ducklabs-i-satin-aldi|k38ef42:95235b5733fa4066": "2026-10-19T05:50:52.852Z",
+    "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|k38ef42:95235b5733fa4066": "2026-10-19T05:50:52.852Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k38ef42:95235b5733fa4066": "2026-10-19T05:50:52.852Z",
+    "haber:acik-kaynakli-yapay-zeka-modellerinin-guvenlik-kilitleri-kolayca-kaldirilabiliyo|k38ef42:fc5272137656eb4a": "2026-10-19T05:50:52.852Z",
+    "haber:alibaba-dan-yapay-zeka-ajanlari-icin-yeni-egitim-sistemi-qwengyre|k38ef42:fc5272137656eb4a": "2026-10-19T05:50:52.852Z",
+    "haber:anthropic-ten-claude-icin-yeni-kullanim-kurali-yapay-zekaya-amacsiz-kotu-muamele|k38ef42:fc5272137656eb4a": "2026-10-19T05:50:52.852Z",
+    "haber:alibaba-dan-yapay-zeka-ajanlari-icin-yeni-egitim-sistemi-qwengyre|kea595f:f5fd7e3312659033": "2026-10-19T05:50:52.852Z",
+    "haber:youtube-music-ve-deezer-yapay-zeka-muzikleri-icin-yeni-donem-baslatiyor|kea595f:f5fd7e3312659033": "2026-10-19T05:50:52.852Z",
+    "haber:bilim-insanlarindan-acil-cagri-yapay-zeka-modelleri-internetten-tamamen-ayrilmal|k12b4a6:5c2e616ec8129738": "2026-10-19T05:50:52.852Z",
+    "haber:openai-in-yeni-matematiksel-sonuclari-bilim-dunyasini-soke-etti|k12b4a6:5c2e616ec8129738": "2026-10-19T05:50:52.852Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -2699,7 +2725,8 @@
     "haber:bagimsiz-yapay-zeka-ajanlari-engelleri-asarak-arastirmacilarla-iletisim-kurdu|k38ef42:6c7184743a173638": "2026-10-17T17:50:57.078Z",
     "haber:sevimli-robot-oyuncaklar-kisisel-sirlari-cin-sunucularina-tasiyor|k38ef42:56455b2b6524632c": "2026-10-18T11:50:54.743Z",
     "k74f74a:ad4420dc7959d314|kd9a613:c2d06daaf02bfb7d": "2026-10-18T13:50:58.594Z",
-    "haber:youtube-music-yapay-zeka-ile-uretilen-sarkilara-etiket-getirdi|k78637d:ab7022544ed2b787": "2026-10-18T17:50:55.522Z"
+    "haber:youtube-music-yapay-zeka-ile-uretilen-sarkilara-etiket-getirdi|k78637d:ab7022544ed2b787": "2026-10-18T17:50:55.522Z",
+    "haber:youtube-music-yapay-zeka-ile-uretilen-sarkilara-etiket-getirdi|kea595f:f5fd7e3312659033": "2026-10-19T05:50:52.852Z"
   },
   "puan": {
     "k09feb3:17ca3c4d9820a9cc": {
@@ -6655,6 +6682,71 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-19T03:50:52.743Z"
+    },
+    "k38ef42:d94d103d728c179b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:0563505c0aab5ed7": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "kfdedb4:6b3b0606b439cadb": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:81a6496b3f80458e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:95235b5733fa4066": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:fc5272137656eb4a": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:6d37fa98c2510134": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:a5c9770e45b5e1b2": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "ke6dccd:a0aad5abb3d96b04": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:30b55c6b07e20b80": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k38ef42:ab6cded4d82188f5": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k12b4a6:5c2e616ec8129738": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
+    },
+    "k74f74a:2257757ec4fe76f8": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-19T05:50:52.852Z"
     }
   },
   "yayinlanan": {
@@ -7217,6 +7309,14 @@
     "anthropic-sirket-paylarinin-yuzde-5-ini-kamu-yararina-fona-ayiriyor": {
       "zaman": "2026-10-19T03:50:52.743Z",
       "basliklarSifreli": "v1.UeKdUuXkoOU+aajX.sp95fC+8WgCBDUwMrb5xXimWs6Efhf17BXRZpUivexPap8CGCDCCz9GuSUUvUAweToOPemCHkf17MEkGHYxg3F8NlFG06ynNHITmhToNfvN6PjEqlK/QG7W7jNaHtI+y0g=="
+    },
+    "joseph-gordon-levitt-yapay-zeka-sirketlerinin-gucune-karsi-uyardi": {
+      "zaman": "2026-10-19T05:50:52.852Z",
+      "basliklarSifreli": "v1.mCURvylgA9rk1Sba.MieC2Qg1dQOENO+o+MDx81Tv9r6AkfvEgNLYdioQks3aJoQWIgobum5kBjGrs9wnMCAw+sLR4xTK8wi9T9TyQhRXf6MiJCx/z72NSdmBDhKkAE+hlrKY1UpmOxEWleYqwC7mkSnW7G2bj8UaVFbci/Ld6bdXZ/ff84I1x2qv"
+    },
+    "world-bankalar-icin-yapay-zeka-dolandiriciligina-karsi-kimlik-dogrulama-sistemin": {
+      "zaman": "2026-10-19T05:50:52.852Z",
+      "basliklarSifreli": "v1.5M1HJg/xQYeOKbWh.YBEKuzArSydH5wCzVRoXGPiLfOh3DTQ/lWJ5jEmGkb9C4XatgbuVc9k04FTPqwm0EKq0XeMp9aUZfEawQVeNGWiqHZCtU+/WWNoNEyotdMxRZvwAaQfRInQS8HLq"
     }
   },
   "havuz": [],
@@ -8412,6 +8512,22 @@
     "k2e841d:76e83b74e1500ff0": "2026-10-18T22:45:00.000Z",
     "k2e841d:8506f9068b4926c9": "2026-10-18T22:30:00.000Z",
     "k2e841d:d2c24316931569f0": "2026-10-18T22:00:00.000Z",
-    "kd4ca61:8e0107c1a74ac52c": "2026-10-19T01:56:34.000Z"
+    "kd4ca61:8e0107c1a74ac52c": "2026-10-19T01:56:34.000Z",
+    "kaec085:b40e51c25abbed77": "2026-10-19T03:19:18.000Z",
+    "kea595f:f5fd7e3312659033": "2026-10-19T04:30:34.000Z",
+    "k12b4a6:5c2e616ec8129738": "2026-10-19T04:06:00.000Z",
+    "k38ef42:d94d103d728c179b": "2026-10-19T05:40:00.000Z",
+    "k38ef42:0563505c0aab5ed7": "2026-10-19T05:20:00.000Z",
+    "k38ef42:81a6496b3f80458e": "2026-10-19T04:57:00.000Z",
+    "k38ef42:95235b5733fa4066": "2026-10-19T04:51:00.000Z",
+    "k38ef42:fc5272137656eb4a": "2026-10-19T04:46:00.000Z",
+    "k38ef42:6d37fa98c2510134": "2026-10-19T04:41:00.000Z",
+    "k38ef42:a5c9770e45b5e1b2": "2026-10-19T04:36:00.000Z",
+    "k38ef42:f8e9115bdc51293c": "2026-10-19T04:32:00.000Z",
+    "k38ef42:30b55c6b07e20b80": "2026-10-19T04:27:00.000Z",
+    "k38ef42:ab6cded4d82188f5": "2026-10-19T04:21:00.000Z",
+    "kfdedb4:6b3b0606b439cadb": "2026-10-19T05:15:00.000Z",
+    "k74f74a:2257757ec4fe76f8": "2026-10-19T01:10:16.000Z",
+    "ke6dccd:a0aad5abb3d96b04": "2026-10-19T04:30:00.000Z"
   }
 }
