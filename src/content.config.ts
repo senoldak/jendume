@@ -18,6 +18,9 @@ const haberSchema = z.object({
   category: categoryEnum,
   date: z.coerce.date(),
   updated: z.coerce.date().optional(),
+  // Yayından sonra yapılan düzeltmenin notu ("<tarih saat>: <ne düzeltildi>"); boşsa makalede hiçbir şey görünmez.
+  // Not `updated`'ı değiştirmez; sahibi elle günceller.
+  duzeltme: z.string().min(10).optional(),
   cover: z.string().optional(),
   coverAlt: z.string().optional(),
   bolge: z.string().optional(),

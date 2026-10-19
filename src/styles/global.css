@@ -862,6 +862,29 @@ a.board-latest:hover {
   margin-top: 0.6em;
 }
 
+/* Düzeltme notu: yalnız yazıda `duzeltme` alanı doluysa görünür. */
+.duzeltme {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 32px;
+  padding: 12px 16px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  font: 500 0.9375rem/1.5 var(--font-read);
+}
+.duzeltme p {
+  margin: 0;
+}
+.duzeltme a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--signal-deep);
+}
+.duzeltme a:hover {
+  background: var(--signal);
+  text-decoration-color: var(--sign);
+}
+
 .prose a {
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;

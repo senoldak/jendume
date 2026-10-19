@@ -17,6 +17,7 @@ import { haberKonulari, konuBul } from '../../lib/konular';
 import { konuVerisi } from '../../lib/rotalar';
 import { konuYolu } from '../../lib/yollar.mjs';
 import { dizinlenir } from '../../lib/kalite.mjs';
+import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
 import {
   getPublishedPosts,
   getAvailableTranslations,
@@ -38,6 +39,7 @@ const { Content } = await render(post);
 const other = otherLocale(lang);
 const ui = SITE.ui[lang];
 const editorialHref = editorialUrl(lang);
+const duzeltme = duzeltmeNotu(post.data, lang);
 const translations = await getAvailableTranslations(id);
 
 const langUrls: Partial<Record<Locale, string>> = {
@@ -112,6 +114,17 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
         )
       }
     </header>
+
+    {
+      duzeltme && (
+        <aside class="duzeltme">
+          <p>
+            <strong>{duzeltme.etiket}</strong> {duzeltme.metin}{' '}
+            <a href={duzeltme.baglanti}>{lang === 'en' ? 'Our corrections policy' : 'Düzeltme ilkemiz'}</a>
+          </p>
+        </aside>
+      )
+    }
 
     {
       cover.ozel && (
