@@ -1,9 +1,14 @@
-import { test } from 'node:test';
+import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { calistir, donemSec, onBilgi, bultenMetni, bultenBasligi, DONEMLER } from './bulten.mjs';
+
+// bulten.mjs'in console.log satırları (CI günlüğü için) testte susturulur: alt süreçte stdout'a düşen düz metin
+// node test koşucusunun v8 akışına karışır; "Bülten…" gibi 3. baytı ≥0x80 olan satır bir mesajın hemen ardından
+// aynı okuma parçasına düşerse koşucu onu ileti boyu sanar ve dosya "Unable to deserialize cloned data" ile düşer.
+mock.method(console, 'log', () => {});
 
 const simdi = new Date('2026-10-14T11:00:00+03:00');
 
