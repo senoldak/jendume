@@ -89,6 +89,8 @@ export const derlemeEnAz = (n) => ({ tr: Math.min(180, Math.max(150, n * 20)), e
 
 // Derleme gövde hedefi (dil başına): haber başına 50-80 kelimelik paragraf.
 export const derlemeHedefi = (n) => ({ alt: Math.max(250, n * 50), ust: Math.max(400, n * 80) });
+// Düzeltme isteminde gösterilen aralık: "300–480".
+export const derlemeAraligi = (n) => `${derlemeHedefi(n).alt}–${derlemeHedefi(n).ust}`;
 
 // Gruptaki haberleri kategoriye göre kümeler (kategoriler ilk görünüş sırasıyla); ara başlıklar bu sıradadır.
 export function kategoriyeSirala(grup) {

@@ -191,13 +191,14 @@ export function kelimeSayisi(metin = '') {
     .filter((w) => /[\p{L}\d]/u.test(w)).length;
 }
 
-export function uzunlukKontrol(paket, enAz = EN_AZ_KELIME) {
+// hedef: genişletme aralığı (derlemede haber sayısına göre büyür, havuz.mjs → derlemeHedefi).
+export function uzunlukKontrol(paket, enAz = EN_AZ_KELIME, hedef = '250–400') {
   const sorunlar = [];
   for (const dil of ['tr', 'en']) {
     const n = kelimeSayisi(paket?.[dil]?.body);
     if (n < enAz[dil]) {
       sorunlar.push(
-        `[${dil.toUpperCase()}] Metin çok kısa (${n} kelime, en az ${enAz[dil]}); yalnız kaynaktaki olgularla 250–400 kelimeye genişlet`,
+        `[${dil.toUpperCase()}] Metin çok kısa (${n} kelime, en az ${enAz[dil]}); yalnız kaynaktaki olgularla ${hedef} kelimeye genişlet`,
       );
     }
   }

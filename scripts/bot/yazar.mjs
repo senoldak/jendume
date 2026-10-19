@@ -127,7 +127,7 @@ Kaynak metne sıkı sıkıya bağlı kalarak bu sorunları düzelt:
 - Göreli zaman ifadelerini (bugün, dün, bu hafta, today, yesterday, this week vb.) kaldır.
 - Kopya cümle uyarısı varsa olguları koruyarak cümleleri kendi kelimelerinle yeniden kur.
 - Başlık uyarısı varsa başlığı kural 6'ya göre yeniden yaz: anahtar sözcükle (şirket, model, ürün, kurum, kişi, konu) başlat, iki noktalı etiketi ve belirsiz açılışı kaldır; olguları değiştirme.
-- "Metin çok kısa" uyarısı varsa gövdeyi 250-400 kelimeye genişlet: kaynakta geçen ama taslağa girmemiş olguları, rakamları ve bağlamı ekle
+- "Metin çok kısa" uyarısı varsa gövdeyi uyarıda yazan kelime aralığına genişlet: kaynakta geçen ama taslağa girmemiş olguları, rakamları ve bağlamı ekle
   (ne oldu, neden önemli, temel rakamlar, bağlam). Kaynakta olmayan hiçbir bilgi, rakam ya da yorum ekleme.
 
 ${YAZIM_KURALLARI}
@@ -172,7 +172,7 @@ export function derlemeIstemi(grup, kaynak) {
   return `Sen JEN DUME ("kelimelerin ötesinde") yayınının editörüsün.
 Aşağıda aynı zaman diliminden ${grup.length} kısa yapay zekâ haberi var; her biri tek başına tam bir haber taşıyacak kadar kaynak içermiyor.
 Bunları hem Türkçe (tr) hem İngilizce (en) TEK bir derleme haberinde topla:
-- title: dilimin öne çıkan konularını anlatan başlık; kural 6'ya uyar (anahtar sözcükle başlar, iki noktalı etiket yok). Tek bir haberi öne çıkarmaz. Tarih ve saat yazma (dilim eki sonradan eklenir).
+- title: dilimin öne çıkan konularını anlatan başlık; kural 6'ya uyar (anahtar sözcükle başlar, iki noktalı etiket yok). Tek bir haberi öne çıkarmaz. En fazla 70 karakter: sonuna ~22 karakterlik dilim eki eklenir; tarih ve saat yazma.
 - description: derlemenin ana noktası, 1-2 cümle.
 - body: Markdown, her dilde ${alt}-${ust} kelime. Her kategori için bir ara başlık ("## Kategori adı"; HABER KATEGORİLERİ'ndeki sırayla, tr gövdede tr adı, en gövdede en adı), altında o kategorideki her haber için TEK paragraf. Her paragraf 50-80 kelime (3-4 cümle): haberin öznesiyle (şirket, model, kurum, konu) başlar; ne olduğunu, ana rakamı ve kimin açıkladığını anlatır. Tek cümlelik özet yazma.
   Her paragraf YALNIZCA o haberin kendi bölümündeki kaynak olgularla yazılır; bir haberin kaynağında yetmeyen bilgi için başka haberin kaynağını kullanma, uydurma ve dolgu cümlesi ekleme.

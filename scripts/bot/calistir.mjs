@@ -12,7 +12,7 @@ import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
-import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
+import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle, derlemeAraligi, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -350,7 +350,7 @@ try {
     },
     uzat: async (x, grup, kaynak, enAz) => yerelDuzelt({ ...(await derlemeUzat(x, grup, kaynak, enAz)), category: x.category }),
     // Derlemenin uzunluk alt sınırı haber sayısına göre (havuz.mjs → derlemeEnAz).
-    denetle: (x, kaynak, n) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x, derlemeEnAz(n)), ...baslikKontrol(x)],
+    denetle: (x, kaynak, n) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x, derlemeEnAz(n), derlemeAraligi(n)), ...baslikKontrol(x)],
     duzelt: async (x, kaynak, sorunlar) => {
       const d = await duzelt(x, kaynak, sorunlar);
       return d && yerelDuzelt({ ...d, category: x.category });
