@@ -41,3 +41,19 @@ test('notlarda "Sorumlu" kelimesi geçmez', () => {
     assert.doesNotMatch(`${n.metin} ${n.baglanti}`, /sorumlu|ansvarlig|responsible/i);
   }
 });
+
+test('yazı işleri zinciri (uretim yazi-isleri): yazı türü dolu olsa da TR ve EN zincir notu; bağlantı aynı', () => {
+  const tr = 'Bu yazı yapay zekâ araçlarıyla yazıldı. Rakamlar ve alıntılar resmî kaynaklarla karşılaştırıldı; yazı yayından önce editör tarafından okunup onaylandı.';
+  const en = 'This article was written with AI tools. Figures and quotes were checked against official sources, and an editor read and approved it before publication.';
+  for (const yaziTuru of ['aciklayici', 'referans']) {
+    const veri = { yaziTuru, uretim: 'yazi-isleri' };
+    const n = yapayZekaNotu({ veri, dil: 'tr', baslik: 'Örnek & yazı', adres });
+    assert.equal(n.metin, tr);
+    assert.equal(n.baglanti, 'Hata bildir →');
+    assert.equal(n.mailto, yapayZekaNotu({ veri: {}, dil: 'tr', baslik: 'Örnek & yazı', adres }).mailto);
+    const e = yapayZekaNotu({ veri, dil: 'en', baslik: 'x', adres: 'https://jendume.com/en/news/x/' });
+    assert.equal(e.metin, en);
+    assert.equal(e.baglanti, 'Report an error →');
+    assert.doesNotMatch(`${n.metin} ${e.metin}`, /sorumlu|responsible|translation/i);
+  }
+});

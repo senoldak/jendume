@@ -24,6 +24,8 @@ const haberSchema = z.object({
   duzeltme: z.string().min(10).optional(),
   // Yazı türü (bkz. src/lib/yazi-turu): haber, açıklayıcı ya da referans; yoksa haber.
   yaziTuru: z.enum(YAZI_TURLERI).default(VARSAYILAN_YAZI_TURU),
+  // 'yazi-isleri': yazı işleri zincirinin yazısı (yerleştirme yazar); sayfa sonunda zincir notunu alır (src/lib/yapayzeka-notu.mjs).
+  uretim: z.enum(['yazi-isleri']).optional(),
   cover: z.string().optional(),
   coverAlt: z.string().optional(),
   bolge: z.string().optional(),
