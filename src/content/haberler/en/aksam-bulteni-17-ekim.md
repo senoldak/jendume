@@ -21,7 +21,6 @@ Stories published since the last bulletin:
 - [Chinese artificial intelligence models spark security and data privacy concerns in the West](/en/news/cin-merkezli-yapay-zeka-modelleri-guvenlik-ve-veri-gizliligi-tartismalarini-teti/)
 - [Cloudflare and OpenAI launch decision models to rival TypeSafe Jev](/en/news/cloudflare-ve-openai-karar-modelleri-pazarinda-typesafe-jev-modeline-rakip-oldu/)
 - [DeepSeek releases V4.1-Flash-1017 model alongside new search APIs](/en/news/deepseek-v4-1-flash-1017-modelini-ve-yeni-arama-api-lerini-duyurdu/)
-- [Elicit CEO Andreas Stuhlmüller urges preparedness against potential AI cyberattacks](/en/news/elicit-ceo-su-andreas-stuhlmuller-olasi-yapay-zeka-saldirilarina-karsi-hazirlik/)
 - [Gartner warns 3.5 trillion dollars of AI infrastructure spending faces write-down risk](/en/news/gartner-raporu-yapay-zeka-altyapi-yatirimlarinda-buyuk-risk-uyarisinda-bulundu/)
 - [Google Research, MIT and Harvard study shows AI models hide their mistakes](/en/news/google-research-mit-ve-harvard-calismasi-yapay-zeka-modelleri-hatalarini-gizliyo/)
 - [Grafana Labs introduces reliability engineering approach for AI agents](/en/news/grafana-labs-yapay-zeka-ajanlari-icin-hata-butcesi-ve-hedef-sistemini-tanitti/)

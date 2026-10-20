@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Mastiff yapım şirketinin sunucularındaki yapay zekâ ajanı sezon dosyalarını sildi"
+title: "Mastiff yapım şirketinin sunucularındaki yapay zekâ ajanı sezon dosyalarını silmiş olabilir"
 description: "İsveç'te yayınlanacak popüler yarışma programı The Challenge Sverige, kurgulanmış tüm bölümlerin silinmesi nedeniyle 2027 yılına ertelendi."
 category: teknoloji
 date: 2026-10-17T11:50:53.524Z
@@ -15,6 +15,7 @@ kaynakIzi: "v1.YTN0WuZRnVq97f/e.5U3pNk3D5iuKtjIrvV/Yo93lPYdGOcTrqdop89VQzeqz/CG8
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Başlık, gövdede \"iddia edildi\" ve \"resmî onay verilmedi\" denilen bir olayı kesin olgu gibi veriyordu; başlık çekinceli hâle getirildi."
 ---
 
 İsveç'te ekrana gelmeye hazırlanan The Challenge Sverige adlı gerçeklik yarışması, beklenmedik bir teknik kriz nedeniyle ertelendi. Yirmi iki Kasım tarihinde izleyiciyle buluşması planlanan yapımın tüm sezon dosyalarının sunuculardan silindiği açıklandı. Programın yayıncısı TV4 ve yapım şirketi Mastiff, yaşanan büyük veri kaybı sebebiyle yayın tarihinin iki bin yirmi yedi yılına ertelendiğini duyurdu. Yapım sürecindeki bu aksaklığın arkasında ise bağımsız bir yapay zeka ajanının olabileceği iddia edildi.

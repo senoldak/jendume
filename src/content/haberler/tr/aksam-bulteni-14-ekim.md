@@ -48,7 +48,6 @@ Son bültenden bu yana yayımlanan haberler:
 - [Kişisel yapay zekâ asistanları evlerimize yerleşmeye hazırlanıyor](/tr/haber/kisisel-yapay-zeka-asistanlari-evlerimize-yerlesmeye-hazirlaniyor/)
 - [Kurumsal veri yönetimi bilgi grafikleriyle yeniden şekilleniyor](/tr/haber/kurumsal-veri-yonetimi-bilgi-grafikleriyle-yeniden-sekilleniyor/)
 - [Nikon video yarışmasında yapay zekâ gerekçesiyle ödül iptal edildi](/tr/haber/nikon-video-yarismasinda-yapay-zeka-gerekcesiyle-odul-iptal-edildi/)
-- [OpenAI çalışanının yapay zekâ yardımıyla casusluk yaptığı iddia edildi](/tr/haber/openai-calisaninin-yapay-zeka-yardimiyla-casusluk-yaptigi-iddia-edildi/)
 - [Tarayıcı tabanlı yapay zekâ ajanları 76 kat daha ucuz ve 5 kat daha hızlı çalışıyor](/tr/haber/tarayici-tabanli-yapay-zeka-ajanlari-76-kat-daha-ucuz-ve-5-kat-daha-hizli-calisi/)
 - [Yapay zekânın 'hayır' deme mekanizmaları ne kadar güvenilir?](/tr/haber/yapay-zekanin-hayir-deme-mekanizmalari-ne-kadar-guvenilir/)
 - [Cloudflare çoklu ortam verilerini tek hamlede işleyen yeni modelini duyurdu](/tr/haber/cloudflare-coklu-ortam-verilerini-tek-hamlede-isleyen-yeni-modelini-duyurdu/)

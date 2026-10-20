@@ -32,7 +32,6 @@ Son bültenden bu yana yayımlanan haberler:
 - [Meksika'da kayıp çocukların aranması için yapay zekâ araçları geliştiriliyor](/tr/haber/meksika-da-kayip-cocuklarin-aranmasi-icin-yapay-zeka-araclari-gelistiriliyor/)
 - [METR, yapay zekâ geliştiricileri için yeni şeffaflık önerisi sundu](/tr/haber/metr-yapay-zeka-gelistiricileri-icin-yeni-seffaflik-onerisi-sundu/)
 - [Microsoft yeni temel dil modeli MAI-Base-2 ile verimlilik çıtasını yükseltiyor](/tr/haber/microsoft-yeni-temel-dil-modeli-mai-base-2-ile-verimlilik-citasini-yukseltiyor/)
-- [OpenAI yönetici toplantı odasına gizli dinleme cihazı yerleştiren eski mühendis tutuklandı](/tr/haber/openai-yonetici-toplanti-odasina-gizli-dinleme-cihazi-yerlestiren-eski-muhendis/)
 - [YouTube Music ve Deezer yapay zekâ müzikleri için yeni dönem başlatıyor](/tr/haber/youtube-music-ve-deezer-yapay-zeka-muzikleri-icin-yeni-donem-baslatiyor/)
 - [Z.ai GLM-5.3 modeli siber güvenlik testlerinde açık ağırlıklı sistemler arasında zirveye yerleşti](/tr/haber/z-ai-glm-5-3-modeli-siber-guvenlik-testlerinde-acik-agirlikli-sistemler-arasinda/)
 - [ABD Ulusal İstihbarat Direktörü Clayton yabancı casusluk riskine karşı uyardı](/tr/haber/abd-ulusal-istihbarat-direktoru-clayton-yabanci-casusluk-riskine-karsi-uyardi/)

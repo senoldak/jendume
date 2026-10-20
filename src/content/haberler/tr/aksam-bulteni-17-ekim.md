@@ -21,7 +21,6 @@ Son bültenden bu yana yayımlanan haberler:
 - [Bending Spoons, yapay zekâ çağında ezber bozan büyümesini sürdürüyor](/tr/haber/bending-spoons-yapay-zeka-caginda-ezber-bozan-buyumesini-surduruyor/)
 - [Benefit Street Partners yapay zekâ destekli araçlarla yatırım süreçlerini hızlandırdı](/tr/haber/benefit-street-partners-yapay-zeka-destekli-araclarla-yatirim-sureclerini-hizlan/)
 - [Center for AI Safety yeni panosuyla yapay zekânın ekonomik faturasını hesaplıyor](/tr/haber/center-for-ai-safety-yeni-panosuyla-yapay-zekanin-ekonomik-faturasini-hesapliyor/)
-- [Elicit CEO'su Andreas Stuhlmüller olası yapay zekâ saldırılarına karşı hazırlık çağrısı yaptı](/tr/haber/elicit-ceo-su-andreas-stuhlmuller-olasi-yapay-zeka-saldirilarina-karsi-hazirlik/)
 - [Gartner raporu yapay zekâ altyapı yatırımlarında büyük risk uyarısında bulundu](/tr/haber/gartner-raporu-yapay-zeka-altyapi-yatirimlarinda-buyuk-risk-uyarisinda-bulundu/)
 - [Grafana Labs, yapay zekâ ajanları için hata bütçesi ve hedef sistemini tanıttı](/tr/haber/grafana-labs-yapay-zeka-ajanlari-icin-hata-butcesi-ve-hedef-sistemini-tanitti/)
 - [Hazle Township sakinleri Amazon Veri Merkezi projesini reddediyor](/tr/haber/hazle-township-sakinleri-amazon-veri-merkezi-projesini-reddediyor/)

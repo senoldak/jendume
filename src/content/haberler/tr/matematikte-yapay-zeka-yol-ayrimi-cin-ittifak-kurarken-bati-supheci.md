@@ -11,7 +11,7 @@ breaking: true
 draft: false
 ---
 
-Matematik dünyası, yapay zekânın araştırmalardaki yeri konusunda keskin bir şekilde ikiye bölünmüş durumda. Pekkin'de bir araya gelen öncü matematikçiler, yapay zekâyı matematik araştırmalarına entegre etmek amacıyla sekiz kurumun katılımıyla yeni bir ittifak kurdu. Bu ağ, binin üzerinde araştırmacıyı bir araya getirerek özel modeller geliştirmeyi ve makine tarafından doğrulanabilir kanıtlar üretmeyi hedefliyor.
+Matematik dünyası, yapay zekânın araştırmalardaki yeri konusunda keskin bir şekilde ikiye bölünmüş durumda. Pekin'de bir araya gelen öncü matematikçiler, yapay zekâyı matematik araştırmalarına entegre etmek amacıyla sekiz kurumun katılımıyla yeni bir ittifak kurdu. Bu ağ, binin üzerinde araştırmacıyı bir araya getirerek özel modeller geliştirmeyi ve makine tarafından doğrulanabilir kanıtlar üretmeyi hedefliyor.
 
 Öte yandan Batı dünyasında temkinli bir yaklaşım hâkimiyet sürüyor. Birçok prestijli ödüllü matematikçi, yapay zekâ destekli kanıtların insanlardaki derinlemesine matematiksel kavrayışı zayıflatabileceği ve araştırmacıları takip edemedikleri araçlara bağımlı kılacağı konusunda uyarıyor. Kimi çevreler yapay zekâ ile üretilen kanıtların boykot edilmesini savunurken, kimileri de otomasyonun getirdiği baş döndürücü hız karşısında şaşkınlık yaşıyor.
 

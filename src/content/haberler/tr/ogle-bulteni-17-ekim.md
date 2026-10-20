@@ -25,7 +25,6 @@ Son bültenden bu yana yayımlanan haberler:
 - [Reverse Engineer Anything ve ArtCraft yapay zekâ yazılım klonlarıyla öne çıkıyor](/tr/haber/reverse-engineer-anything-ve-artcraft-yapay-zeka-yazilim-klonlariyla-one-cikiyor/)
 - [Apple Çin'deki yapay zeka altyapısı için Alibaba ile anlaştı](/tr/haber/apple-cin-deki-yapay-zeka-altyapisi-icin-alibaba-ile-anlasti/)
 - [Avrupa şehirleri akıllı operasyonlar için yapay zekâ ajanlarını devreye alıyor](/tr/haber/avrupa-sehirleri-akilli-operasyonlar-icin-yapay-zeka-ajanlarini-devreye-aliyor/)
-- [Elicit kurucusu Andreas Stuhlmüller yapay zekâ destekli siber saldırı riskine karşı uyarıda bulundu](/tr/haber/elicit-kurucusu-andreas-stuhlmuller-yapay-zeka-destekli-siber-saldiri-riskine-ka/)
 - [Elon Musk’ın kredi kartı bilgilerini paylaşmasıyla yapay zekâ asistanı Grok'un güvenlik açıkları tartışma yarattı](/tr/haber/elon-musk-in-kredi-karti-bilgilerini-paylasmasiyla-yapay-zeka-asistani-grok-un-g/)
 - [Federal Reserve, yapay zekâ veri merkezi yatırımlarının enflasyonu artırdığını açıkladı](/tr/haber/federal-reserve-yapay-zeka-veri-merkezi-yatirimlarinin-enflasyonu-artirdigini-ac/)
 - [Gelişmiş yapay zekâ ajanları için iç denetim ve izleme sistemleri nasıl test ediliyor?](/tr/haber/gelismis-yapay-zeka-ajanlari-icin-ic-denetim-ve-izleme-sistemleri-nasil-test-edi/)
@@ -34,4 +33,3 @@ Son bültenden bu yana yayımlanan haberler:
 - [Robros insansı robotları Güney Kore'deki fabrikalarda test edilmeye başlanıyor](/tr/haber/robros-insansi-robotlari-guney-kore-deki-fabrikalarda-test-edilmeye-baslaniyor/)
 - [StepFun yeni yapay zekâ modeli Step 5 Preview'u açık ağırlıklarla duyurdu](/tr/haber/stepfun-yeni-yapay-zeka-modeli-step-5-preview-u-acik-agirliklarla-duyurdu/)
 - [Unitree CEO'su GPT-7 modelinin robotik yapay zekâ sorunlarını çözeceğini öngörüyor](/tr/haber/unitree-ceo-su-gpt-7-modelinin-robotik-yapay-zeka-sorunlarini-cozecegini-ongoruy/)
-- [Yandex veri merkezlerine düzenlenen drone saldırıları yapay zekâ altyapısının güvenliğini gündeme getirdi](/tr/haber/yandex-veri-merkezlerine-duzenlenen-drone-saldirilari-yapay-zeka-altyapisinin-gu/)

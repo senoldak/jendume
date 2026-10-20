@@ -20,9 +20,10 @@ kaynakIzi: "v1.TwWSQR3030bZcGqP.TQPuV+dbfGdG1k+zjBLAygrzNUP0NJg1Fwrxf0yS7JhCKnr/
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Şirketin tanımı yanlıştı ve haberin iddiaya dayandığı belirtilmemişti; tanım düzeltildi, \"bildirildi\" çekincesi eklendi, çalışan görüşü atfedildi."
 ---
 
-Birleşik Krallık merkezli hukuk hizmetleri şirketi Co-op, müşteri hizmetleri çalışanlarının telefon görüşmelerini sürekli olarak kaydedip değerlendirmek için yapay zekâ modellerini kullanmaya başladı. Yapay zekâ sistemi, her telefon görüşmesinin 50'den fazla farklı yönünü analiz ederek çalışanlara başarılı veya başarısız puanları veriyor. Çalışanlar, günün birkaç saati boyunca yapay zekâ tarafından sürekli izlendiklerini ve her sözlerinin kayda geçirilmesinin baskı yarattığını belirtiyor. Şirket çalışanlarından biri bu durumu baskıcı ve distopik olarak nitelendirirken, sistemin sıradan bir uyumluluk dinlemesinden çok farklı olduğunu ve söylenen her kelimenin takip edildiğini ifade etti.
+Birleşik Krallık merkezli Co-op'un, müşteri hizmetleri çalışanlarının telefon görüşmelerini sürekli olarak kaydedip değerlendirmek için yapay zekâ modellerini kullanmaya başladığı bildirildi. Yapay zekâ sistemi, her telefon görüşmesinin 50'den fazla farklı yönünü analiz ederek çalışanlara başarılı veya başarısız puanları veriyor. Çalışanlar, günün birkaç saati boyunca yapay zekâ tarafından sürekli izlendiklerini ve her sözlerinin kayda geçirilmesinin baskı yarattığını belirtiyor. Bir çalışan sistemi baskıcı ve distopik olarak nitelendirdi; ayrıca sistemin sıradan bir uyumluluk dinlemesinden çok farklı olduğunu ve söylenen her kelimenin takip edildiğini ifade etti.
 
 Bu gelişme, yapay zekânın iş yerlerini dönüştürdüğü yeni bir alanı gözler önüne seriyor. ABD'deki iş yerlerinin yüzde 61'inin çalışan verimliliğini ölçmek için yapay zekâ analitiği kullandığı tahmin ediliyor. Süreç sadece bu şirketle sınırlı kalmıyor; daha önce Burger King çalışanları yapay zekâ destekli kulaklıklar kullanmaya başlarken, Meta da ekran ve klavye hareketlerini izleyen ve bu verileri modellerini eğitmek için kullanmayı amaçlayan bir aracı test etmiş ancak özel verilerin açığa çıkması üzerine uygulamaya ara vermişti. Co-op ise yapay zekânın bir karar verici değil, kalite güvence süreçleri için destekleyici bir unsur olduğunu savundu.
 

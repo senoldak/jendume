@@ -50,7 +50,6 @@ Stories published since the last bulletin:
 - [OpenAI faces lawsuit over allegations of collecting children data](/en/news/openai-cocuklarin-ozel-verilerini-izinsiz-toplamakla-suclaniyor/)
 - [OpenAI dot assistant operates autonomously without prompts](/en/news/openai-dot-asistani-komut-almadan-kendi-kendine-calisti/)
 - [OpenAI teen-focused ChatGPT experience shows significant gaps in safety protections](/en/news/openai-tarafindan-gencler-icin-sunulan-chatgpt-surumunde-guvenlik-aciklari-tespi/)
-- [OpenAI former engineer arrested for allegedly bugging executive conference room](/en/news/openai-yonetici-toplanti-odasina-gizli-dinleme-cihazi-yerlestiren-eski-muhendis/)
 - [Outlit develops AI agents to continuously monitor business customers](/en/news/outlit-musterileri-kesintisiz-izleyen-yapay-zeka-ajanlari-gelistiriyor/)
 - [Paysend restricts AI tool access to top-performing employees to ensure proven results](/en/news/paysend-ceo-su-yapay-zeka-araclarina-erisimi-en-iyi-performans-gosteren-calisanl/)
 - [RapidCanvas secures 29 million dollars in Series B funding for enterprise AI](/en/news/rapidcanvas-kurumsal-yapay-zeka-uygulamalari-icin-29-milyon-dolar-yatirim-aldi/)

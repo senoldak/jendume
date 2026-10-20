@@ -15,12 +15,13 @@ kaynakIzi: "v1.EPviKaBWCVRn1vOH./CfCgIgy4efCp+0i8Cg/soD2RWxze5L0T5vOIL5EYtfHva7k
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Kuruluşun adı bozuk çevrilmişti; \"Bilgi Direnci Merkezi\" olarak düzeltildi."
 ---
 
 Birleşik Krallık ve Batı dünyasında, Çinli geliştiriciler tarafından sunulan ucuz ve açık ağırlıklı yapay zekâ modellerinin güvenliği üzerine yoğun tartışmalar yürütülüyor. DeepSeek ve Xiaomi gibi şirketler, kullanıcılara yüksek maliyetli lisans ücretleri ödemeden özelleştirebilecekleri yazılımları neredeyse ücretsiz olarak sunuyor. Bu durum, Batılı işletmeler ve kamu kurumları için cazip bir alternatif oluştururken, veri güvenliği endişelerini de beraberinde getiriyor.
 
 Uzmanlar, Çin menşeli yapay zekâ araçlarının kullanımının, kullanıcı verilerinin Çin makamlarıyla paylaşılması riskini barındırdığına dikkat çekiyor. Oxford Üniversitesi'nden Yapay Zekâ Profesörü Michael Wooldridge, sistemlere girilen verilerin Çin devletiyle paylaşılmasının makul bir ihtimal olduğunu belirtiyor. Ayrıca, ABD Ulusal Standartlar ve Teknoloji Enstitüsü (Nist) tarafından hazırlanan değerlendirme raporları, indirilen DeepSeek modellerinde bile siyasi sansür izlerine rastlandığını ortaya koyuyor.
 
-Merkezi Bilgi Direnci Merkezi (CIR) Direktörü Ross Burley, modeller kendi sunucularında çalıştırılsa bile siyasi sansürün ve güvenlik açıklarının ortadan kalkmadığını vurguluyor. DeepSeek çevrimiçi sohbet botunun gizlilik politikası, kullanıcı istemlerinin toplandığını, Çin'de saklandığını ve yetkili makamlara ifşa edilebildiğini açıkça belirtiyor. Bu durum, Birleşik Krallık gibi ülkelerin kritik kararlarında bu tür yazılımlara güvenmesinin ulusal güvenlik açıklarına yol açabileceği uyarısını güçlendiriyor.
+Bilgi Direnci Merkezi (CIR) Direktörü Ross Burley, modeller kendi sunucularında çalıştırılsa bile siyasi sansürün ve güvenlik açıklarının ortadan kalkmadığını vurguluyor. DeepSeek çevrimiçi sohbet botunun gizlilik politikası, kullanıcı istemlerinin toplandığını, Çin'de saklandığını ve yetkili makamlara ifşa edilebildiğini açıkça belirtiyor. Bu durum, Birleşik Krallık gibi ülkelerin kritik kararlarında bu tür yazılımlara güvenmesinin ulusal güvenlik açıklarına yol açabileceği uyarısını güçlendiriyor.
 
 Ekonomik açıdan bakıldığında, ucuz Çin teknolojilerinin benimsenmesi yerli sanayiyi zayıflatma potansiyeli taşıyor. Uzmanlar, Batılı ülkelerin Çin yapay zekâ araçlarının cazibesine kapılmak yerine yerli ve Avrupa merkezli alternatifleri desteklemesi gerektiğini savunuyor. Aksi takdirde, elektrikli araçlarda olduğu gibi yapay zekâ alanında da dışa bağımlılığın artması kaçınılmaz görülüyor.

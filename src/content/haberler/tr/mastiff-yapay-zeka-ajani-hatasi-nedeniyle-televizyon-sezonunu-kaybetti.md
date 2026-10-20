@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Mastiff yapay zekâ ajanı hatası nedeniyle televizyon sezonunu kaybetti"
+title: "Mastiff'in televizyon sezonunu yapay zekâ ajanı nedeniyle kaybettiği öne sürüldü"
 description: "İsveç yapımı reality yarışması The Challenge Sverige, sunucu sunucusunda yaşanan yapay zekâ kaynaklı olduğu öne sürülen bir veri silme olayının ardından ertelendi."
 category: yapay-zeka
 date: 2026-10-17T05:50:56.104Z
@@ -15,6 +15,7 @@ kaynakIzi: "v1.xwDqwXJLChzvvOSe.GpH9mMaVRS5tZ9yN/sQPnqKCON4mxsQwoKdYGCbUADuXafUi
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Başlık, yayıncının insan hatası ve yetersiz yedekleme dediği bir olayı yapay zekâ kaynaklı kesin olgu gibi veriyordu; başlık çekinceli hâle getirildi."
 ---
 
 İsveç'te yayınlanması planlanan popüler reality yarışma programı The Challenge Sverige, yapay zekâ ajanı nedeniyle büyük bir kriz yaşadı. Yapım şirketi Mastiff, programın sunucularına bir yapay zekâ ajanı erişimine izin verdikten sonra tüm sezonun dosyalarının silindiği iddia edildi. Kasım ayında ekranlara gelmesi beklenen program, bu teknik aksaklık yüzünden önümüzdeki yıla ertelendi.

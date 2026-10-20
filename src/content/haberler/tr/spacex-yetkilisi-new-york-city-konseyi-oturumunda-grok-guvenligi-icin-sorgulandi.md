@@ -15,13 +15,14 @@ kaynakIzi: "v1.QtnpKo6azHKNGNdg.9cOCjcjKbfjEkF5/NN9GfaQCaMc9n632/27bg+btJW6123N0
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Haberde adı geçen bir eski çalışan hakkında şirket aleyhine iddia yer alıyordu; ad çıkarıldı, cümle adsız yazıldı."
 ---
 
 ### SpaceX yetkilisi New York City Konseyi'nde sorgulandı
 
 SpaceX yapay zekâ politika lideri Gabriela Castillo Madrid, New York City Konseyi'nin yapay zekâ güvenliği üzerine düzenlediği soruşturma oturumunda konsey üyelerinin sert sorularıyla karşılaştı. Konsey Sözcüsü Julie Menin, bizzat kendi adını kullanarak Grok üzerinden saniyeler içinde cinsel içerikli bir görsel elde ettiğini belirterek şirketin güvenlik önlemlerini eleştirdi. Konseyin teknoloji komitesine video konferans yoluyla katılan Castillo Madrid, şirketin katı kontrolleri bulunduğunu ve güvenlik ekibinin durumu inceleyeceğini savundu.
 
-Oturumda ayrıca eski bir çalışan olan ve şu anda Center for AI Safety'nin başkanlığını yürüten Devin Kim'in endişelerini dile getirdiği için işten çıkarıldığı iddiaları gündeme geldi. Konsey, xAI bünyesinden ayrılan isimlerin ifadeleri ve yaşanan tartışmalar ışığında yeni yasal düzenlemeler hazırlamayı hedefliyor.
+Oturumda ayrıca eski bir çalışanın işten çıkarılmasına ilişkin iddialar da gündeme geldi. Konsey, xAI bünyesinden ayrılan isimlerin ifadeleri ve yaşanan tartışmalar ışığında yeni yasal düzenlemeler hazırlamayı hedefliyor.
 
 ### Bilim insanlarından yapay zekâ modellerinin internetten izole edilmesi çağrısı
 

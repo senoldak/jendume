@@ -15,10 +15,11 @@ kaynakIzi: "v1.CFjs1nM9l/F/1+yq.Dddl6C39MYzFBVhRfIwpDjsm3RwQECDparMNBO/Br56+dpS9
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Haberde bir özel kişinin adı geçiyordu; ad çıkarıldı."
 ---
 
 Pensilvanya eyaletine bağlı eski bir kömür madenciliği kasabası olan Hazle Township'te halk, bölgeye kurulması planlanan devasa Amazon Web Services veri merkezi projesine karşı organize oluyor. Kuzey Amerika'da hızla yayılan veri merkezi yatırımları, yerel halkın yaşam alanları üzerinde baskı oluştururken, geliştirici şirket NorthPoint Development projeyi kabul ettirmek için sıra dışı bir adım attı. 'Project Hazelnut' adı verilen tesisin karşılığında kasaba sakinlerinin her birine 10.000 dolar doğrudan nakit ödeme yapılması teklif edildi. Kasaba nüfusunun yaklaşık yüzde 17'sinin federal yoksulluk sınırının altında yaşamasına rağmen, vatandaşlar bu teklifi reddediyor.
 
-Teklif edilen para yerel halk tarafından rüşvet olarak değerlendirilirken, gayrimenkul değerlerinin büyük ölçüde düşeceği endişesi hakimiyet sürüyor. Ev sahibi ve küçük işletme sahibi Ed Negra, 10.000 doların projenin getireceği maliyetin yanında çok küçük kaldığını vurgularken, bölge sakinleri projenin yanı sıra tesise enerji sağlayacak uzun yüksek gerilim hatlarına da karşı çıkıyor. Pensilvanya Etik Komisyonu İcra Direktörü Mary Fox, bu stratejinin oldukça yaratıcı ve daha önce görülmemiş bir hamle olduğunu belirtti.
+Teklif edilen para yerel halk tarafından rüşvet olarak değerlendirilirken, gayrimenkul değerlerinin büyük ölçüde düşeceği endişesi hakimiyet sürüyor. Ev sahibi ve küçük işletme sahibi bir sakin, 10.000 doların projenin getireceği maliyetin yanında çok küçük kaldığını vurgularken, bölge sakinleri projenin yanı sıra tesise enerji sağlayacak uzun yüksek gerilim hatlarına da karşı çıkıyor. Pensilvanya Etik Komisyonu İcra Direktörü Mary Fox, bu stratejinin oldukça yaratıcı ve daha önce görülmemiş bir hamle olduğunu belirtti.
 
 Süreç yerel ve eyalet düzeyindeki yetkililerin tutumu nedeniyle karmaşık bir hal almaya devam ediyor. Pensilvanya Valisi Josh Shapiro, daha önce projeyi bir teknoloji kampüsü olarak nitelendirmiş ve veri merkezi süreçlerini hızlandıran bir kararname imzalamıştı. Öte yandan Hazle Township denetçisi Anthony Griguoli, projenin önünü açacak imar yönetmeliği üzerinde çalışırken şirketle ortak bir duruş sergilemekte zorlanıyor. Ağustos ayında yapılan kasaba toplantısında sakinlerin sorularıyla karşılaşan Griguoli, şirketin niyetini yansıttıklarını ancak durumun kesinliği hakkında net bir bilgisi olmadığını ifade etti.

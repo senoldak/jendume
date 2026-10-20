@@ -1,6 +1,6 @@
 ---
 lang: en
-title: "Major publishers are quietly adopting AI tools amid staff backlash"
+title: "Staff say major publishers are using AI tools without telling authors"
 description: "Three of the major US book publishers have reportedly incorporated AI tools into their workflows without notifying authors, sparking internal dissent and growing concerns over copyright and data privacy."
 category: ekonomi
 date: 2026-10-13T16:56:53.981Z
@@ -9,6 +9,7 @@ perspektif: "This development highlights the mounting tension between corporate 
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: The headline presented as fact a claim based on anonymous staff accounts; it now attributes the claim to staff."
 ---
 
 Several of the largest book publishers in the United States, including HarperCollins, Simon & Schuster, and Hachette, have reportedly begun integrating large language models into their publishing operations behind closed doors. According to internal sources, management teams have utilized AI tools to draft marketing copy, design covers, and correspond with literary agents without the knowledge or consent of authors.

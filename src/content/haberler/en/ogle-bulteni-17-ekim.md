@@ -17,7 +17,6 @@ Stories published since the last bulletin:
 - [European cities deploy AI agents to power smart urban operations](/en/news/avrupa-sehirleri-akilli-operasyonlar-icin-yapay-zeka-ajanlarini-devreye-aliyor/)
 - [United Kingdom chief executives credit artificial intelligence with boosting productivity](/en/news/birlesik-krallik-yoneticileri-yapay-zekanin-verimliligi-artirdigini-belirtiyor/)
 - [ChatGPT introduces new Sketch tool allowing users to create images from drawings](/en/news/chatgpt-kullanicilarin-cizim-yaparak-gorsel-uretmesini-saglayan-yeni-araci-duyur/)
-- [Elicit cofounder Andreas Stuhlmüller issues warning over AI-powered cyberattack threats](/en/news/elicit-kurucusu-andreas-stuhlmuller-yapay-zeka-destekli-siber-saldiri-riskine-ka/)
 - [Elon Musk leaks credit card details while promoting Grok AI assistant, leading to online prank backlash](/en/news/elon-musk-in-kredi-karti-bilgilerini-paylasmasiyla-yapay-zeka-asistani-grok-un-g/)
 - [Employ report reveals AI-polished resumes have become recruiters' top stressor](/en/news/employ-raporu-yapay-zeka-destekli-ozgecmislerin-insan-kaynaklari-sureclerini-zor/)
 - [Federal Reserve warns that AI data center expansion is driving inflation](/en/news/federal-reserve-yapay-zeka-veri-merkezi-yatirimlarinin-enflasyonu-artirdigini-ac/)
@@ -34,4 +33,3 @@ Stories published since the last bulletin:
 - [Robros humanoid robots set for workplace trials across South Korea](/en/news/robros-insansi-robotlari-guney-kore-deki-fabrikalarda-test-edilmeye-baslaniyor/)
 - [StepFun releases Step 5 Preview open-weight model with 1M context](/en/news/stepfun-yeni-yapay-zeka-modeli-step-5-preview-u-acik-agirliklarla-duyurdu/)
 - [Unitree CEO says GPT-7 model could solve robotic AI challenges soon](/en/news/unitree-ceo-su-gpt-7-modelinin-robotik-yapay-zeka-sorunlarini-cozecegini-ongoruy/)
-- [Drone strikes on Yandex data centers highlight vulnerabilities in AI physical infrastructure](/en/news/yandex-veri-merkezlerine-duzenlenen-drone-saldirilari-yapay-zeka-altyapisinin-gu/)

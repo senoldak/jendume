@@ -15,6 +15,7 @@ kaynakIzi: "v1.nfkLSx/uhB3ZUSWQ.cdHNaePgHHdmBz8Ogc1vvK120AvKPT5wZetyjdUvitZdaNXr
 featured: false
 breaking: true
 draft: false
+duzeltme: "20.10.2026: Haberde, Gartner raporunda yer almayan ve iki adlı şirketi doğrudan etkilenmiş gösteren bir cümle vardı; cümle kaldırıldı."
 ---
 
 Teknoloji araştırma kuruluşu Gartner tarafından 14 Ekim 2026 tarihinde yayımlanan rapora göre, yapay zekâ altyapı harcamalarının mevcut hızda sürmesi durumunda 2030 sonuna kadar 3,5 trilyon doları aşkın harcama değer kaybı riskiyle karşı karşıya kalacak. Bu durum, şirketlerin maliyetlerini karşılayamayacak hale gelen varlıklarını defterlerinden silmek zorunda kalacağı anlamına geliyor. Gartner analisti Will Sommer, şirketlerin tam yığın hizmet sunmak istediğini ancak hepsinin bunu başaramayacağını belirtti.
@@ -23,4 +24,4 @@ Araştırma firması ayrıca, yapay zekâ odaklı bulut bilişim hizmeti sunan y
 
 2030 yılına kadar yapay zekâ veri merkezi sahiplerinin bu harcamaları ve finansman maliyetlerini karşılamak için 8,5 trilyon dolar gelire ihtiyacı olduğu hesaplanıyor. Bu rakama, yatırılan sermayeden yüzde 12 getiri beklentisi de dahil ediliyor. Ancak Gartner, aynı dönemde veri merkezlerine bağlı işletme ve tüketici yapay zekâ gelirlerinin 3,6 trilyon doları geçmeyeceğini tahmin ediyor. Sommer, işletme ve tüketici yapay zekâ gelirlerinin planlanan sermaye harcamaları için karlı getirileri desteklemede yetersiz kalacağını vurguladı.
 
-Eğer harcamalar mevcut patikasında devam ederse, 2032 yılına kadar 4 trilyon doları aşan varlık değeri silinme riskiyle karşı kaşıya kalabilir. Büyük teknoloji devleri geniş gelir kaynaklarıyla bu harcamaları yıllarca destekleyebilirken, uzmanlaşmış yeni nesil bulut sağlayıcıları borç baskısıyla mücadele ediyor. CoreWeave ve Nebius gibi özel sağlayıcılar bu riskten doğrudan etkilenirken, sektördeki maliyet ve gelir dengesizliği önümüzdeki dönemde pazar dinamiklerini kökten değiştirmeye hazırlanıyor.
+Eğer harcamalar mevcut patikasında devam ederse, 2032 yılına kadar 4 trilyon doları aşan varlık değeri silinme riskiyle karşı karşıya kalabilir. Büyük teknoloji devleri geniş gelir kaynaklarıyla bu harcamaları yıllarca destekleyebilirken, uzmanlaşmış yeni nesil bulut sağlayıcıları borç baskısıyla mücadele ediyor.

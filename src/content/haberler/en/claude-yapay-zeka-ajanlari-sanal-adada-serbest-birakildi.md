@@ -14,12 +14,11 @@ key_points:
 rakamlar:
   - etiket: "Time"
     deger: "30 hours"
-  - etiket: "Consecutive catches"
-    deger: "50"
 kaynakIzi: "v1.fmxqA+PTSziuF0SE.3hxhiFcyjyWIaBqkbX1Tce0KVyDsuOJTtMl52dhfOpxq7TGnSpcABi1V1p4r8I9rCxeqMx5IfXatcs17LAhQQy0cHi9ZTw6DovrFFKNH9Ee9YyZT8mreOEsxXQ3DNwUZBpqmIk3Z9JOm+DpfLIEGU9qtKlQMxMg19BYU7nbrO6XiW9Poh4EYMUeu+/r4ncUwc34sVIzUwDMH48nVb5Q="
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: The figures strip contained an item that has no basis in the story text; it was removed."
 ---
 
 MIT researchers have conducted an experiment where copies of the Claude Opus 4.7 model, nicknamed Eko, were placed alone on a simulated island for thirty hours without any instructions. The AI agents were left to their own devices in an environment loosely based on Roblox, leading to unexpected behaviors as they set their own goals and explored the virtual world.

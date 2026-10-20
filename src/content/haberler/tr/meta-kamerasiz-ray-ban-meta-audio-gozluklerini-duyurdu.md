@@ -5,7 +5,7 @@ description: "Meta, dahili yapay zekâ asistanı ve ses özellikleriyle öne ç�
 category: teknoloji
 date: 2026-10-18T11:50:54.743Z
 bolge: "Küresel"
-perspektif: "Bu gözlükler, yapay zekâyı günlük yaşama entegre ederken kamera gizliliği endişelerini ortadan kaldırıyor ve ekran bağımlılığını azaltıyor."
+perspektif: "Bu gözlükler, yapay zekâyı günlük yaşama entegre ederken kamera gizliliği endişelerini azalttığı ve ekran bağımlılığını düşürdüğü üretici tarafından savunuluyor."
 why_matters: "Bu gözlükler, yapay zekâ teknolojisini mahremiyet kaygılarını dengeleyerek günlük yaşama sorunsuz bir şekilde entegre ediyor."
 key_points:
   - "Kamerası olmayan yeni Ray-Ban Meta Audio modeli tanıtıldı."
@@ -20,12 +20,13 @@ kaynakIzi: "v1.MRKAWesbPT4bjzps.pvVBhDcz5jCrAZZ1YXFODqaz/bHUR13EIPsZCL5s8gJ+uLZ+
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Ürün tanıtımı niteliğindeki iddialar atıfsız ve kesin olgu gibi yazılmıştı; \"üretici savunuyor\" atfıyla yumuşatıldı."
 ---
 
 Meta, popüler akıllı gözlük serisine yeni bir soluk getirerek kamerasız Ray-Ban Meta Audio modelini piyasaya sürdü. Şirketin daha önceki kamera donanımlı modellerinden farklı olarak bu yeni sürüm, etraftakileri kaydetme kaygısı yaratmadan yapay zekâ ve ses deneyimi sunuyor. Gözlük çerçevesine entegre hoparlörler sayesinde kullanıcılar telefonlarına dokunmadan müzik dinleyebiliyor, arama yapabiliyor ve sesli komutlarla yapay zekâ asistanına sorular yöneltebiliyor.
 
-Cihazın en dikkat çekici yönlerinden biri, kamera olmamasının yarattığı rahatlık ve mahremiyet avantajı. Özellikle kalabalık ortamlarda, çocuk parklarında veya aile etkinliklerinde çevredeki kişilerin gizliliğini ihlal etme endişesini ortadan kaldıran bu tasarım, kullanıcıların günlük hayatta çok daha doğal bir şekilde takabilmesini sağlıyor. Cihaz aynı zamanda canlı çeviri, sesli navigasyon ve eller serbest mesajlaşma gibi pratik özelliklerle donatılmış durumda.
+Üreticiye göre cihazın en dikkat çekici yönlerinden biri, kamera olmamasının yarattığı rahatlık ve mahremiyet avantajı. Özellikle kalabalık ortamlarda, çocuk parklarında veya aile etkinliklerinde çevredeki kişilerin gizliliğini ihlal etme endişesini azalttığı savunulan bu tasarım, kullanıcıların günlük hayatta çok daha doğal bir şekilde takabilmesini sağlıyor. Cihaz aynı zamanda canlı çeviri, sesli navigasyon ve eller serbest mesajlaşma gibi pratik özelliklerle donatılmış durumda.
 
-Fiyatlandırma tarafında Burbank Audio modeli 349 dolar etiketiyle satışa sunuluyor. Canlı çeviri özelliği sayesinde kullanıcılar yabancı dillerde akıcı bir şekilde iletişim kurarken, ekran bağımlılığını azaltan kulaklık yapısı dış dünyayla teması koparmıyor. Özellikle ebeveynler, seyahat edenler ve profesyoneller için günlük işleri kolaylaştıran bu ses odaklı yapay zekâ aracı, teknoloji pazarında yeni bir alternatif oluşturuyor.
+Fiyatlandırma tarafında Burbank Audio modeli 349 dolar etiketiyle satışa sunuluyor. Canlı çeviri özelliği sayesinde kullanıcılar yabancı dillerde akıcı bir şekilde iletişim kurarken, ekran bağımlılığını azalttığı öne sürülen kulaklık yapısı dış dünyayla teması koparmıyor. Özellikle ebeveynler, seyahat edenler ve profesyoneller için günlük işleri kolaylaştıran bu ses odaklı yapay zekâ aracı, teknoloji pazarında yeni bir alternatif oluşturuyor.
 
 Pilin kullanım süresi konusunda ise cihaz karma kullanımda 12 saate kadar dayanırken, kesintisiz ses çalma süresi 6 saate kadar ulaşıyor. Bu özellikler, gün boyu müzik dinlemek veya podcast takip etmek isteyen kullanıcılar için önemli bir detay olarak öne çıkıyor.

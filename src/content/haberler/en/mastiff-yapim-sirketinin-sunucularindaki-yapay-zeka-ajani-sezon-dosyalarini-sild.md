@@ -1,6 +1,6 @@
 ---
 lang: en
-title: "Mastiff production servers lose entire season files to an autonomous agent"
+title: "Mastiff production servers may have lost entire season files to an autonomous agent"
 description: "The Swedish reality show The Challenge Sverige has been postponed to 2027 after all edited season files were deleted from servers."
 category: teknoloji
 date: 2026-10-17T11:50:53.524Z
@@ -15,6 +15,7 @@ kaynakIzi: "v1.YTN0WuZRnVq97f/e.5U3pNk3D5iuKtjIrvV/Yo93lPYdGOcTrqdop89VQzeqz/CG8
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: The headline stated as fact an event the body describes as alleged and unconfirmed; the headline now carries the caveat."
 ---
 
 The upcoming Swedish reality television competition The Challenge Sverige has faced an extraordinary crisis resulting in a major delay. Originally scheduled to premiere on November twenty-second, the show was postponed to twenty-twenty-seven after all edited season episodes vanished from the production servers. Broadcaster TV4 and production company Mastiff confirmed that a severe technical glitch occurred, though official confirmation regarding the involvement of an autonomous agent is still pending.

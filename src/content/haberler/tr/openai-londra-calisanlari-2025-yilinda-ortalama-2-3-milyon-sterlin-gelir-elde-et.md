@@ -24,12 +24,13 @@ kaynakIzi: "v1.1q9VnwJnN9WBsvtA.X5pCzldiqaq22o31Ap/CqVCRnz8nJl431kQY1ihOp6Hnmeel
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Bir görev tanımı yanlış çevrilmişti; görev, şirketin duyurusuna uygun olarak \"OpenAI for Countries girişiminin başkanı\" şeklinde düzeltildi."
 ---
 
 OpenAI şirketinin Londra ofisinde görev yapan 110 çalışan, 2025 yılında maaş ve hisse senetleri dahil olmak üzere ortalama 2,3 milyon sterlin civarında ödeme aldı. Şirketin İngiltere biriminin resmi hesaplarına dayandırılan bilgilere göre, çalışanlar toplamda 87 milyon sterlin maaş ve 168 milyon sterlin değerinde hisse paylaştı. Bu rakam, bir önceki yılki 1,1 milyon sterlinlik ortalama paketin oldukça üzerine çıktı.
 
 Açıklanan 2025 yılı ortalaması, İngiltere'deki tam zamanlı çalışanların medyan kazancının katbekat üzerinde yer alıyor. Ödemelerin çalışanlar arasında büyük farklılıklar gösterdiği, en yüksek paketlerin ise şirketin yapay zekâ modellerini geliştiren araştırmacılara gittiği belirtiliyor. Londra ofisi, şirketin uluslararası alandaki en büyük araştırma merkezi olma özelliğini taşıyor. Ofis aynı zamanda devlet ilişkileri, satış ve pazarlama ekiplerini de bünyesinde barındırıyor.
 
-Finansal verilere göre OpenAI UK Ltd, 2025 yılında cirosunu üç katından fazla artırarak 293 milyon sterline ulaştırdı ve 20,3 milyon sterlin kâr elde etti. Şirket Westminster'daki mevcut ofisinin yanı sıra King's Cross bölgesinde yeni bir genel merkez açmaya hazırlanıyor. Eski siyasetçi George Osborne ise geçen aralık ayında ülkesel ilişkiler başkanı olarak göreve başladı.
+Finansal verilere göre OpenAI UK Ltd, 2025 yılında cirosunu üç katından fazla artırarak 293 milyon sterline ulaştırdı ve 20,3 milyon sterlin kâr elde etti. Şirket Westminster'daki mevcut ofisinin yanı sıra King's Cross bölgesinde yeni bir genel merkez açmaya hazırlanıyor. Eski siyasetçi George Osborne ise geçen aralık ayında OpenAI for Countries girişiminin başkanı olarak göreve başladı.
 
 Bu yüksek ödemeler, yapay zekâ alanındaki uzmanlar için şirketler arasında yaşanan kıyasıya rekabet dönemine denk geliyor. Söz konusu süreçte diğer büyük teknoloji şirketlerinin de uzmanlar için çok yıllık devasa paketler teklif ettiği biliniyor. OpenAI bir yandan halka arz hazırlıklarını sürdürürken, diğer yandan yeni finansman arayışlarına devam ediyor ve gelecekteki hedefleri doğrultusunda yapısal büyümesini sürdürüyor.

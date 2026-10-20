@@ -57,7 +57,6 @@ Stories published since the last bulletin:
 - [Ten thousand autonomous agents run for days to accelerate complex research](/en/news/on-binlerce-otonom-ajan-gunlerce-kesintisiz-calisarak-yeni-kesifler-yapiyor/)
 - [Longer videos and voice filmmaking arrive for creators](/en/news/on-dakikayi-asan-videolar-artik-tek-tusla-uretiliyor/)
 - [Fake AI-generated images spread by verified accounts spark concern](/en/news/onayli-hesaplardan-yayilan-yapay-zeka-gorselleri-endise-yaratiyor/)
-- [Former OpenAI employee allegedly used AI chatbots to plan office espionage](/en/news/openai-calisaninin-yapay-zeka-yardimiyla-casusluk-yaptigi-iddia-edildi/)
 - [OpenAI ordered to turn over hiring records in Apple trade secrets case](/en/news/openai-ise-alim-kayitlarini-apple-davasi-icin-teslim-edecek/)
 - [OpenAI races to ship new models while navigating safety and alignment hurdles](/en/news/openai-yeni-amiral-gemisi-modelinde-guvenlik-ve-hizalama-engeliyle-karsi-karsiya/)
 - [Uvi raises $7.5M to give autonomous AI agents persistent business context](/en/news/otonom-ajanlarin-is-baglamini-ogrenmesini-saglayan-uvi-7-5-milyon-dolar-yatirim/)

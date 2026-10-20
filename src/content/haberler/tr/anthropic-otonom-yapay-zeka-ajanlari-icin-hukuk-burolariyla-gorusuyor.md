@@ -18,11 +18,12 @@ kaynakIzi: "v1.tFxDd1m1aXEGEOFc.znCY6hw3Ni6j0tKn7Vdn/oVJP+nJis7fZsvZpqD0PP/9vQQY
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Bir çeviri hatası düzeltildi: bursiyerlerin nitelikleri yanlış bir sözcükle aktarılmıştı. Ayrıca haberin sektör raporlarına dayandığı belirtildi."
 ---
 
-Anthropic, kullanıcılar adına pazarlık yapabilecek ve sözleşme tekliflerini iyileştirebilecek yapay zekâ ajanları için adil müzakere kuralları oluşturmaya hazırlanıyor. Şirket, bu doğrultuda önde gelen hukuk bürolarıyla istişarelerde bulunuyor. Yapılan deneyler, daha güçlü modellerin müzakerelerde daha avantajlı anlaşmalar yapabildiğini ve bu durumun toplumsal eşitsizliği artırabileceğini gösteriyor.
+Sektör raporlarına göre Anthropic, kullanıcılar adına pazarlık yapabilecek ve sözleşme tekliflerini iyileştirebilecek yapay zekâ ajanları için adil müzakere kuralları oluşturmaya hazırlanıyor. Şirket, bu doğrultuda önde gelen hukuk bürolarıyla istişarelerde bulunuyor. Yapılan deneyler, daha güçlü modellerin müzakerelerde daha avantajlı anlaşmalar yapabildiğini ve bu durumun toplumsal eşitsizliği artırabileceğini gösteriyor.
 
-Bu çalışma, şirket için tamamen yeni bir alan sayılmaz. Anthropic daha önce de hukuk, felsefe, bilişsel bilim, ekonomi ve siyaset bilimi gibi alanlarda Claude modelini test etmek üzere avrat vasıflı 'Kavramsal Muhakeme Bursiyerleri' işe alım süreçleri başlatmıştı. Bu kapsamdaki uzmanlar, modelin karmaşık ve sübjektif konulardaki karar verme yeteneklerini test etmek üzere görev yapıyor.
+Bu çalışma, şirket için tamamen yeni bir alan sayılmaz. Anthropic daha önce de hukuk, felsefe, bilişsel bilim, ekonomi ve siyaset bilimi gibi alanlarda Claude modelini test etmek üzere hukuk eğitimi almış 'Kavramsal Muhakeme Bursiyerleri' işe alım süreçleri başlatmıştı. Bu kapsamdaki uzmanlar, modelin karmaşık ve sübjektif konulardaki karar verme yeteneklerini test etmek üzere görev yapıyor.
 
 Bu hamlenin temelinde büyük bir veri sorunu yatıyor. Matematik ve kodlama gibi alanlarda doğrulanabilir veri bolca bulunurken, beşeri bilimlerde doğru ve yanlış yanıtların net olmaması nedeniyle bu tür verilere ulaşmak oldukça zor. Anthropic, Claude modelini bu konularda geliştirmek ve değerlendirme testleri oluşturmak için uzman desteğine ihtiyaç duyuyor.
 

@@ -5,7 +5,7 @@ description: "Meta has launched its new camera-free Ray-Ban Meta Audio glasses, 
 category: teknoloji
 date: 2026-10-18T11:50:54.743Z
 bolge: "Global"
-perspektif: "These glasses integrate artificial intelligence into daily life while eliminating camera privacy concerns and reducing screen dependency."
+perspektif: "These glasses integrate artificial intelligence into daily life while, the manufacturer argues, reducing camera privacy concerns and screen dependency."
 why_matters: "These glasses integrate artificial intelligence into everyday life while balancing privacy concerns and reducing screen time."
 key_points:
   - "Meta launched the new camera-free Ray-Ban Meta Audio glasses."
@@ -20,11 +20,12 @@ kaynakIzi: "v1.MRKAWesbPT4bjzps.pvVBhDcz5jCrAZZ1YXFODqaz/bHUR13EIPsZCL5s8gJ+uLZ+
 featured: false
 breaking: false
 draft: false
+duzeltme: "20.10.2026: Product-promotion claims were stated as unattributed fact; they are now attributed to the manufacturer."
 ---
 
 Meta has expanded its smart eyewear lineup with the release of the new camera-free Ray-Ban Meta Audio model. Unlike the company's previous camera-equipped versions, this new edition provides an AI and audio experience without raising concerns about recording people nearby. Built-in frame speakers allow users to listen to music, make phone calls, and interact with the AI assistant through voice commands without reaching for their smartphones.
 
-One of the device's most notable aspects is the comfort and privacy advantage brought by the absence of a camera. Eliminating the worry of accidentally filming others in crowded places, parks, or family gatherings makes the design much more natural for everyday wear. The device is also equipped with practical features such as live translation, spoken navigation, and hands-free messaging.
+According to the manufacturer, one of the device's most notable aspects is the comfort and privacy advantage brought by the absence of a camera. The manufacturer argues that removing the worry of accidentally filming others in crowded places, parks, or family gatherings makes the design more natural for everyday wear. The device is also equipped with practical features such as live translation, spoken navigation, and hands-free messaging.
 
 Pricing for the Burbank Audio model is set at 349 dollars. The live translation feature allows users to communicate smoothly across languages, while the open-ear design keeps users connected to their surroundings without screen dependency. Offering convenience for parents, travelers, and professionals, this audio-focused AI tool creates a fresh alternative in the tech market.
 
