@@ -128,7 +128,8 @@ const norm = (s) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-export function kopyaKontrol(metin, kaynak, n = 11) {
+// Kaynakla birebir örtüşen n kelimelik parçalar (normalize edilmiş).
+export function kopyaParcalari(metin, kaynak, n = 11) {
   const kk = norm(kaynak).split(' ').filter(Boolean);
   const seritler = new Set();
   for (let i = 0; i + n <= kk.length; i++) {
@@ -144,9 +145,46 @@ export function kopyaKontrol(metin, kaynak, n = 11) {
       i += n - 1;
     }
   }
+  return kopyalar;
+}
+
+export function kopyaKontrol(metin, kaynak, n = 11) {
+  const kopyalar = kopyaParcalari(metin, kaynak, n);
   return kopyalar.length >= 2
     ? [`Metin kaynağın cümlelerini doğrudan kopyalıyor (${kopyalar.length} parça)`]
     : [];
+}
+
+// Düzeltme isteğine giden ayrıntı (yalnız Gemini'ye; günlüğe yazılmaz: kaynak metin ve yayın adı taşır).
+// 19 Ekim: "kopya" uyarısı hangi parçalar olduğunu, yayın adı uyarısı hangi alanda geçtiğini söylemiyordu; iki düzeltme
+// turu çoğu kez aynı hatayı tekrarladı (52 turun 23'ü yayımlanamadı).
+export function duzeltmeAyrintisi(paket, kaynak) {
+  const satirlar = [];
+  for (const dil of ['tr', 'en']) {
+    const blok = paket?.[dil];
+    if (!blok) continue;
+    const D = `[${dil.toUpperCase()}]`;
+    const kopyalar = kopyaParcalari(blok.body ?? '', kaynak);
+    if (kopyalar.length >= 2) {
+      satirlar.push(`${D} Kaynaktan birebir kopyalanan parçalar (bunları içeren cümleleri baştan, kendi kelimelerinle kur):`);
+      for (const k of kopyalar.slice(0, 8)) satirlar.push(`  - "${k}"`);
+    }
+    const alanlar = {
+      title: blok.title,
+      description: blok.description,
+      perspektif: blok.perspektif,
+      body: blok.body,
+      bolge: blok.bolge ?? paket.bolge,
+      why_matters: blok.why_matters ?? paket.why_matters,
+      key_points: [].concat(blok.key_points ?? paket.key_points ?? []).join('\n'),
+      rakamlar: [].concat(blok.rakamlar ?? paket.rakamlar ?? []).flatMap((r) => [r?.etiket, r?.deger]).join('\n'),
+    };
+    for (const [alan, metin] of Object.entries(alanlar)) {
+      const adlar = [...new Set(String(metin ?? '').match(MEDYA) ?? [])];
+      if (adlar.length) satirlar.push(`${D} "${alan}" alanında yayın kuruluşu adı var (${adlar.join(', ')}): adı ve "… göre/according to …" atfını kaldır, olguyu ilgili kurum ya da şirketle anlat.`);
+    }
+  }
+  return satirlar.join('\n');
 }
 
 export function kesinKontroller(paket, kaynak) {
@@ -293,6 +331,7 @@ export function yerelDuzelt(paket) {
     out[dil] = { ...paket[dil] };
     for (const [k, v] of Object.entries(out[dil])) {
       if (typeof v === 'string') out[dil][k] = yerelDuzeltMetin(v, dil);
+      else if (Array.isArray(v) && v.every((x) => typeof x === 'string')) out[dil][k] = v.map((x) => yerelDuzeltMetin(x, dil));
     }
   }
   return out;

@@ -114,7 +114,7 @@ ${metinler}`;
   return gemini({ prompt, schema: TASLAK_SEMASI });
 }
 
-export async function duzelt(taslak, kaynakMetni, sorunlar) {
+export async function duzelt(taslak, kaynakMetni, sorunlar, ayrinti = '') {
   // Kaynak baştan kesilmez; iki dildeki taslakla örtüşen paragraflar seçilir.
   const taslakMetni = ['tr', 'en']
     .map((d) => [taslak[d]?.title, taslak[d]?.description, taslak[d]?.perspektif, taslak[d]?.body].filter(Boolean).join('\n'))
@@ -134,6 +134,7 @@ ${YAZIM_KURALLARI}
 
 SORUNLAR:
 ${sorunlar.map((s) => `- ${s}`).join('\n')}
+${ayrinti ? `\nAYRINTI (sorunların tam yeri):\n${ayrinti}\n` : ''}
 
 KAYNAKLAR:
 ${ilgiliKisim(kaynakMetni, taslakMetni, 12000)}

@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz, derlemeUzat } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
-import { baslikKontrol, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
+import { baslikKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
@@ -280,7 +280,7 @@ for (const g of sira) {
     let sorunlar = denetle(t);
     for (let tur = 1; tur <= 2 && sorunlar.length; tur++) {
       console.log(`  düzeltme turu ${tur}: ${sorunlar.join(' | ')}`);
-      const duzeltilmis = await duzelt(t, kaynakBirlesik, sorunlar);
+      const duzeltilmis = await duzelt(t, kaynakBirlesik, sorunlar, duzeltmeAyrintisi(t, kaynakBirlesik));
       if (!duzeltilmis) break;
       t = yerelDuzelt(duzeltilmis);
       sorunlar = denetle(t);
@@ -352,7 +352,7 @@ try {
     // Derlemenin uzunluk alt sınırı haber sayısına göre (havuz.mjs → derlemeEnAz).
     denetle: (x, kaynak, n) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x, derlemeEnAz(n), derlemeAraligi(n)), ...baslikKontrol(x)],
     duzelt: async (x, kaynak, sorunlar) => {
-      const d = await duzelt(x, kaynak, sorunlar);
+      const d = await duzelt(x, kaynak, sorunlar, duzeltmeAyrintisi(x, kaynak));
       return d && yerelDuzelt({ ...d, category: x.category });
     },
     kaydet: async (x, grup, kaynak) => {

@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { slugify, rssOku, guvenli, varlikCoz, ucDilliHaberYaz, yaziKaydet } from './lib.mjs';
 import { KAYNAKLAR, RESMI_KAYNAKLAR, anahtarlar, benzer, gizliKaynak, haberKimligi } from './kaynaklar.mjs';
-import { rakamKontrol, medyaKontrol, medyaAdlariniKur, zamanKontrol, kesinKontroller } from './denetci.mjs';
+import { rakamKontrol, medyaKontrol, medyaAdlariniKur, zamanKontrol, kesinKontroller, duzeltmeAyrintisi, yerelDuzelt } from './denetci.mjs';
 import { DIL_BLOK_SEMASI } from './yazar.mjs';
 
 // Gerçek yayın adları şifreli listede durur; testler uydurma adlarla çalışır.
@@ -247,4 +247,21 @@ test('guvenli neutralises reference-style links and definitions', () => {
   assert.ok(!/javascript:|http:|\]\[|^\[r\]:/m.test(out), out);
   assert.match(out, /Bak tıkla ve x ile/);
   assert.match(guvenli('[a](https://e.com/x)'), /\[a\]\(https:\/\/e\.com\/x\)/);
+});
+
+test('duzeltmeAyrintisi: kopya parçaları ve yayın adının geçtiği alanı söyler; temiz taslakta boş', () => {
+  const kaynak = 'The company said the new model runs twice as fast on standard hardware and costs less to operate overall. It ships next month.';
+  const govde = 'The company said the new model runs twice as fast on standard hardware and costs less to operate overall in tests. Analysts said it ships next month and the company said the new model runs twice as fast on standard hardware and costs less to operate overall.';
+  const paket = { tr: { title: 'Model hızlandı', description: 'd', body: 'Temiz Türkçe gövde.' }, en: { title: 'Model', description: 'd', body: govde, key_points: ['Ajans Beta reported the launch'] } };
+  const a = duzeltmeAyrintisi(paket, kaynak);
+  assert.match(a, /\[EN\] Kaynaktan birebir kopyalanan parçalar/);
+  assert.match(a, /- "the company said the new model runs twice as fast on"/);
+  assert.match(a, /\[EN\] "key_points" alanında yayın kuruluşu adı var \(Ajans Beta\)/);
+  assert.doesNotMatch(a, /\[TR\]/);
+  assert.equal(duzeltmeAyrintisi({ tr: { body: 'Temiz.' }, en: { body: 'Clean.' } }, kaynak), '');
+});
+
+test('yerelDuzelt: dizi alanlarındaki (key_points) metinleri de temizler', () => {
+  const p = yerelDuzelt({ en: { title: 'X', key_points: ['Prices rose today.', 'Stable'] }, tr: { title: 'Y' } });
+  assert.deepEqual(p.en.key_points, ['Prices rose.', 'Stable']);
 });
