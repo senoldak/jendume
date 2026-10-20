@@ -40,7 +40,8 @@ export function siteGraph() {
         height: 512,
       },
       publishingPrinciples: abs('/en/editorial-standards/'),
-      correctionsPolicy: abs('/en/editorial-standards/#corrections'),
+      correctionsPolicy: abs('/en/corrections-policy/'),
+      masthead: abs('/en/legal/'),
       inLanguage: ['en', 'tr'],
       knowsAbout: [
         'Artificial Intelligence',

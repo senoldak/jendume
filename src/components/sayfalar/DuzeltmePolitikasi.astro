@@ -1,0 +1,261 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, yasalYolu } from '../../lib/yollar.mjs';
+
+// Düzeltme, Güncelleme ve Yayından Kaldırma Politikası; yollar: src/pages/tr/duzeltme-politikasi.astro,
+// src/pages/en/corrections-policy.astro.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const baslik = lang === 'tr' ? 'Düzeltme, Güncelleme ve Yayından Kaldırma Politikası' : 'Corrections, Updates and Removal Policy';
+const description =
+  lang === 'tr'
+    ? 'JEN DUME düzeltme, güncelleme ve yayından kaldırma politikası: hata nasıl bildirilir, nasıl düzeltilir ve kayıtlar nerede tutulur.'
+    : 'JEN DUME corrections, updates and removal policy: how to report an error, how errors are corrected and where records are kept.';
+const kayit = duzeltmelerYolu(lang);
+const yasal = yasalYolu(lang);
+---
+
+<Base
+  lang={lang}
+  title={baslik}
+  description={description}
+  canonicalPath={duzeltmePolitikasiYolu(lang)}
+  langUrls={{ tr: duzeltmePolitikasiYolu('tr'), en: duzeltmePolitikasiYolu('en') }}
+  alternates={{ tr: duzeltmePolitikasiYolu('tr'), en: duzeltmePolitikasiYolu('en'), 'x-default': duzeltmePolitikasiYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${duzeltmePolitikasiYolu(lang)}#webpage`,
+      url: `${SITE.url}${duzeltmePolitikasiYolu(lang)}`,
+      name: `${ui.correctionsPolicy} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Düzeltme, Güncelleme ve Yayından Kaldırma Politikası</h1>
+          </header>
+
+          <h2>1. Taahhüdümüz</h2>
+          <p>
+            JEN DUME, yayımladığı içeriklerin doğruluğundan sorumludur. Bir hata yaptığımızda bunu düzeltir, bir içeriği
+            yayından kaldırdığımızda nedenini açıklarız. Yaptığımız her değişikliği tarihiyle{' '}
+            <a href={kayit}>Düzeltmeler sayfasında</a> gösteririz. Bir içeriği, değişikliği belirtmeden sessizce
+            değiştirmeyiz.
+          </p>
+
+          <h2>2. Kapsam</h2>
+          <p>
+            Bu politika, sitede yayımlanan tüm içerikler için geçerlidir. Otomatik olarak yazılan haberler, günlük
+            bültenler, sözlük ve konu sayfalarındaki metinler ile yayıncının imzasıyla yayımlanan yazılar da buna
+            dahildir. Sosyal medya paylaşımlarında fark edilen hatalar da mümkün olan ölçüde düzeltilir ya da paylaşım
+            kaldırılır.
+          </p>
+
+          <h2>3. Tanımlar</h2>
+          <table>
+            <thead>
+              <tr><th scope="col">Terim</th><th scope="col">Anlamı</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Düzeltme</th><td>İçerikteki olgusal bir hatanın giderilmesi. Örnekler: yanlış rakam, ad, unvan, tarih, yer, çeviri hatası.</td></tr>
+              <tr><th scope="row">Açıklama</th><td>Teknik olarak yanlış olmayan ama yanlış anlaşılmaya yol açabilecek bir ifadenin netleştirilmesi.</td></tr>
+              <tr><th scope="row">Güncelleme</th><td>İçeriğe, yayımdan sonra ortaya çıkan yeni bilginin eklenmesi.</td></tr>
+              <tr><th scope="row">Yayından kaldırma</th><td>İçeriğin sitede erişime kapatılması.</td></tr>
+              <tr><th scope="row">Biçimsel düzeltme</th><td>Anlamı değiştirmeyen yazım, noktalama ve biçim hatalarının giderilmesi.</td></tr>
+            </tbody>
+          </table>
+
+          <h2>4. Düzeltme ve açıklama</h2>
+          <p>
+            4.1. Düzeltilen içeriğin sonuna tarihli bir not eklenir. Notta neyin yanlış olduğu ve doğrusunun ne olduğu
+            açıkça yazılır.
+          </p>
+          <p>4.2. Hata başlıkta, özette veya grafikte ise bunlar da düzeltilir ve notta belirtilir.</p>
+          <p>4.3. Düzeltme kaydı ayrıca <a href={kayit}>Düzeltmeler sayfasında</a> yayımlanır.</p>
+          <p>4.4. Biçimsel düzeltmeler not düşülmeden yapılabilir.</p>
+          <p>
+            4.5. Bir haberin Türkçe ve İngilizce sürümleri arasında anlam farkı bulunduğu anlaşılırsa fark düzeltme
+            olarak ele alınır; düzeltme her iki sürüme uygulanır.
+          </p>
+
+          <h2>5. Güncelleme</h2>
+          <p>5.1. İçeriğe yeni bilgi eklendiğinde içeriğin sonuna “Güncellendi” notu tarihiyle eklenir.</p>
+          <p>5.2. Güncelleme bir hata düzeltmesi değildir; ikisi ayrı gösterilir.</p>
+          <p>
+            5.3. İçeriğin ilk yayın tarihi değiştirilmez; güncelleme tarihi ayrıca gösterilir.
+          </p>
+
+          <h2>6. Yayından kaldırma</h2>
+          <p>6.1. Bir içerik şu hâllerde yayından kaldırılabilir:</p>
+          <ul>
+            <li>düzeltmeyle giderilemeyecek ölçüde ciddi bir hata içermesi,</li>
+            <li>yayın ilkelerimize aykırı olduğunun anlaşılması,</li>
+            <li>hukuka aykırı olabileceğinin anlaşılması,</li>
+            <li>içerikte adı geçen bir kişinin haklı bulunan talebi,</li>
+            <li>yetkili bir merci kararı.</li>
+          </ul>
+          <p>
+            6.2. Kaldırılan içeriğin başlığı, ilk yayın tarihi, kaldırılma tarihi ve kaldırılma nedeni{' '}
+            <a href={kayit}>Düzeltmeler sayfasında</a> yayımlanır.
+          </p>
+          <p>
+            6.3. Kişisel veri veya kişilik hakları nedeniyle kaldırılan içeriklerde, kişinin adı ve kişiyi belirlenebilir
+            kılan bilgiler <a href={kayit}>Düzeltmeler sayfasında</a> tekrar edilmez.
+          </p>
+
+          <h2>7. Hata bildirimi</h2>
+          <p>
+            7.1. Hata bildirmek için her içeriğin altındaki “Hata bildir” bağlantısını kullanabilir ya da{' '}
+            <a href="mailto:contact@jendume.com">contact@jendume.com</a> adresine yazabilirsiniz.
+          </p>
+          <p>7.2. Bildirimin hızla değerlendirilebilmesi için şunları ekleyin:</p>
+          <ul>
+            <li>içeriğin bağlantısı,</li>
+            <li>hatanın ne olduğu,</li>
+            <li>varsa doğru bilgiyi gösteren kaynak.</li>
+          </ul>
+          <p>7.3. Bildirimler en kısa sürede incelenir. Kişi haklarına ilişkin taleplere öncelik verilir.</p>
+          <p>7.4. Değerlendirmenin sonucu bildirimde bulunan kişiye iletilir.</p>
+          <p>7.5. Bildirimde bulunan kişinin kimliği, kendi izni olmadan paylaşılmaz.</p>
+
+          <h2>8. Cevap hakkı</h2>
+          <p>
+            Hakkında yayın yapılan kişi veya kuruluşların cevap ve düzeltme talepleri,{' '}
+            <a href={`${yasal}#cevap-hakki`}>Yasal Bilgilendirme ve Künye</a> sayfasının 12. maddesine göre
+            değerlendirilir.
+          </p>
+
+          <h2>9. Kayıt ve şeffaflık</h2>
+          <p>
+            9.1. Tüm düzeltme, açıklama ve kaldırma kayıtları <a href={kayit}>Düzeltmeler sayfasında</a>, en yeniden
+            eskiye doğru tarih sırasıyla listelenir.
+          </p>
+          <p>9.2. Bu kayıtlar silinmez.</p>
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Corrections, Updates and Removal Policy</h1>
+          </header>
+
+          <h2>1. Our commitment</h2>
+          <p>
+            JEN DUME is accountable for the accuracy of the content it publishes. When we make a mistake, we correct it;
+            when we remove content, we explain why. We record every change we make, with its date, on the{' '}
+            <a href={kayit}>Corrections page</a>. We do not alter content silently, without indicating the change.
+          </p>
+
+          <h2>2. Scope</h2>
+          <p>
+            This policy applies to all content published on the site. It covers stories written automatically, daily
+            bulletins, the text of glossary and topic pages, and pieces published under the publisher's byline. Errors
+            noticed in social media posts will also be corrected or the post removed, as far as possible.
+          </p>
+
+          <h2>3. Definitions</h2>
+          <table>
+            <thead>
+              <tr><th scope="col">Term</th><th scope="col">Meaning</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Correction</th><td>Fixing a factual error in the content. Examples: a wrong figure, name, title, date, place, or a translation error.</td></tr>
+              <tr><th scope="row">Clarification</th><td>Making clear a statement that is not technically wrong but could be misunderstood.</td></tr>
+              <tr><th scope="row">Update</th><td>Adding to the content new information that emerged after publication.</td></tr>
+              <tr><th scope="row">Removal</th><td>Taking the content out of public access on the site.</td></tr>
+              <tr><th scope="row">Formal correction</th><td>Fixing spelling, punctuation and formatting errors that do not change the meaning.</td></tr>
+            </tbody>
+          </table>
+
+          <h2>4. Corrections and clarifications</h2>
+          <p>
+            4.1. A dated note is added at the end of the corrected content. The note states clearly what was wrong and
+            what is correct.
+          </p>
+          <p>
+            4.2. If the error is in the headline, summary or a graphic, these are corrected as well and the correction
+            is stated in the note.
+          </p>
+          <p>4.3. The record of the correction is also published on the <a href={kayit}>Corrections page</a>.</p>
+          <p>4.4. Formal corrections may be made without a note.</p>
+          <p>
+            4.5. If it emerges that the Turkish and English versions of a story differ in meaning, the difference is
+            treated as an error and the correction is applied to both versions.
+          </p>
+
+          <h2>5. Updates</h2>
+          <p>
+            5.1. When new information is added to content, an “Updated” note with its date is added at the end of the
+            content.
+          </p>
+          <p>5.2. An update is not a correction of an error; the two are shown separately.</p>
+          <p>
+            5.3. The original publication date of the content is not changed; the date of the update is shown
+            separately.
+          </p>
+
+          <h2>6. Removal</h2>
+          <p>6.1. Content may be removed in the following cases:</p>
+          <ul>
+            <li>it contains an error so serious that it cannot be remedied by a correction,</li>
+            <li>it is found to be contrary to our editorial standards,</li>
+            <li>it is found to be potentially unlawful,</li>
+            <li>a justified request from a person named in the content,</li>
+            <li>a decision of a competent authority.</li>
+          </ul>
+          <p>
+            6.2. The title, the original publication date, the date of removal and the reason for removal of removed
+            content are published on the <a href={kayit}>Corrections page</a>.
+          </p>
+          <p>
+            6.3. Where content is removed because of personal data or personality rights, the person's name and
+            information that makes the person identifiable are not repeated on the <a href={kayit}>Corrections page</a>.
+          </p>
+
+          <h2>7. Reporting an error</h2>
+          <p>
+            7.1. To report an error, you may use the “Report an error” link under each piece of content or write to{' '}
+            <a href="mailto:contact@jendume.com">contact@jendume.com</a>.
+          </p>
+          <p>7.2. To help us assess your report quickly, please include:</p>
+          <ul>
+            <li>the link to the content,</li>
+            <li>what the error is,</li>
+            <li>a source showing the correct information, if you have one.</li>
+          </ul>
+          <p>
+            7.3. Reports are reviewed as soon as possible. Requests concerning the rights of individuals are given
+            priority.
+          </p>
+          <p>7.4. The outcome of the review is communicated to the person who made the report.</p>
+          <p>7.5. The identity of the person who made a report is not disclosed without their consent.</p>
+
+          <h2>8. Right of reply</h2>
+          <p>
+            Requests for reply and correction from persons or organisations that have been the subject of publication
+            are assessed in accordance with Article 12 of the <a href={`${yasal}#right-of-reply`}>Legal Notice and Imprint</a>{' '}
+            page.
+          </p>
+
+          <h2>9. Records and transparency</h2>
+          <p>
+            9.1. All records of corrections, clarifications and removals are listed on the{' '}
+            <a href={kayit}>Corrections page</a>, in reverse chronological order.
+          </p>
+          <p>9.2. These records are not deleted.</p>
+        </div>
+      )
+    }
+  </article>
+</Base>

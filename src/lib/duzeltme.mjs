@@ -2,17 +2,17 @@
 // düzeltme ilkesi bağlantısı (yazının dilinde). Şemadaki kuralın aynısı: 10 karakterden kısa not yok sayılır.
 export const DUZELTME_EN_AZ = 10;
 
-// Bağlantı = editorialUrl(dil) (src/lib/site.ts) + ilke sayfasındaki düzeltme bölümünün kimliği
-// (EditorialContent.astro: #duzeltmeler / #corrections). site.ts bir .ts modülü olduğundan bu düz .mjs
-// ondan içe aktarmaz; ilke sayfasının adresi değişirse burası da değişir.
+// Bağlantılar: Düzeltme Politikası ve Düzeltmeler (kayıt) sayfaları (src/lib/yollar.mjs).
+import { duzeltmePolitikasiYolu, duzeltmelerYolu } from './yollar.mjs';
+
 const DILLER = {
-  tr: { etiket: 'Düzeltme:', baglanti: '/tr/yayin-ilkeleri/#duzeltmeler' },
-  en: { etiket: 'Correction:', baglanti: '/en/editorial-standards/#corrections' },
+  tr: { etiket: 'Düzeltme:', baglanti: duzeltmePolitikasiYolu('tr'), kayit: duzeltmelerYolu('tr') },
+  en: { etiket: 'Correction:', baglanti: duzeltmePolitikasiYolu('en'), kayit: duzeltmelerYolu('en') },
 };
 
 export function duzeltmeNotu(veri, dil) {
   const metin = typeof veri?.duzeltme === 'string' ? veri.duzeltme : '';
   if (metin.length < DUZELTME_EN_AZ) return null;
-  const { etiket, baglanti } = DILLER[dil] ?? DILLER.tr;
-  return { etiket, metin, baglanti };
+  const { etiket, baglanti, kayit } = DILLER[dil] ?? DILLER.tr;
+  return { etiket, metin, baglanti, kayit };
 }

@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import { SITE, editorialUrl, type Locale } from '../../lib/site';
 import { getPublishedPosts } from '../../lib/news';
 import { seffaflikVerisi } from '../../lib/seffaflik.mjs';
-import { seffaflikYolu } from '../../lib/yollar.mjs';
+import { duzeltmelerYolu, seffaflikYolu } from '../../lib/yollar.mjs';
 import durum from '../../../scripts/bot/gorulen.json';
 
 interface Props {
@@ -45,7 +45,7 @@ const T = tr
       tur: 'Kaynak türü',
       resmi: 'Laboratuvarlar, şirketler ve kurumların kendi duyuruları',
       yayin: 'Haber siteleri, dergiler ve bloglar',
-      not: 'Laboratuvar ve kurum duyuruları haberin altında kaynak olarak bağlanır. Haber sitelerinin ve yayınların adlarını yayımlamıyoruz; onları kopyalamıyor, olguları karşılaştırıp kendi dilimizle yazıyoruz.',
+      not: 'Haber sitelerinin ve yayınların adlarını yayımlamıyoruz; haberleri otomatik olarak kendi cümlelerimizle yazıyoruz.',
       ilkeler: 'Yayın İlkeleri',
       ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
         `${gunAdi(g.gun)}: ${g.yayinlanan} haber, ${sayi(g.taranan)} aday tarandı`,
@@ -68,7 +68,7 @@ const T = tr
       tur: 'Source type',
       resmi: 'Announcements from AI labs, companies and institutions',
       yayin: 'News sites, magazines and blogs',
-      not: 'Lab and institution announcements are linked as sources under each story. We do not publish the names of news sites and publications; we do not copy them, we compare the facts and write the story ourselves.',
+      not: 'We do not publish the names of news sites and publications; our stories are written automatically in our own words.',
       ilkeler: 'Editorial Standards',
       ipucu: (g: { gun: string; yayinlanan: number; taranan: number }) =>
         `${gunAdi(g.gun)}: ${g.yayinlanan} stories, ${sayi(g.taranan)} items scanned`,
@@ -151,7 +151,7 @@ const G = {
           <tr><th scope="row">{T.resmi}</th><td>{v.resmi.kaynak}</td><td>{sayi(v.resmi.taranan)}</td></tr>
         </tbody>
       </table>
-      <p class="not">{T.not} <a href={editorialUrl(lang)}>{T.ilkeler}</a></p>
+      <p class="not">{T.not} <a href={editorialUrl(lang)}>{T.ilkeler}</a> · <a href={duzeltmelerYolu(lang)}>{SITE.ui[lang].corrections}</a></p>
     </section>
   </article>
 </Base>

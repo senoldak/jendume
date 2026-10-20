@@ -7,19 +7,21 @@ test('duzeltmeNotu: alan yoksa null', () => {
   assert.equal(duzeltmeNotu({ duzeltme: undefined }, 'en'), null);
 });
 
-test('duzeltmeNotu: tr yazıda tr etiket ve Yayın İlkeleri bağlantısı', () => {
+test('duzeltmeNotu: tr yazıda tr etiket ve Düzeltme Politikası ile Düzeltmeler bağlantıları', () => {
   assert.deepEqual(duzeltmeNotu({ duzeltme: '19.10.2026 14:00: Tarih düzeltildi.' }, 'tr'), {
     etiket: 'Düzeltme:',
     metin: '19.10.2026 14:00: Tarih düzeltildi.',
-    baglanti: '/tr/yayin-ilkeleri/#duzeltmeler',
+    baglanti: '/tr/duzeltme-politikasi/',
+    kayit: '/tr/duzeltmeler/',
   });
 });
 
-test('duzeltmeNotu: en yazıda Correction: ve Editorial Standards bağlantısı', () => {
+test('duzeltmeNotu: en yazıda Correction: ve Corrections Policy ile Corrections bağlantıları', () => {
   assert.deepEqual(duzeltmeNotu({ duzeltme: '19.10.2026 14:00: Date corrected.' }, 'en'), {
     etiket: 'Correction:',
     metin: '19.10.2026 14:00: Date corrected.',
-    baglanti: '/en/editorial-standards/#corrections',
+    baglanti: '/en/corrections-policy/',
+    kayit: '/en/corrections/',
   });
 });
 

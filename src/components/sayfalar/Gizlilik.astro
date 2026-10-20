@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { SITE, type Locale } from '../../lib/site';
-import { gizlilikYolu } from '../../lib/yollar.mjs';
+import { gizlilikYolu, yasalYolu } from '../../lib/yollar.mjs';
 
 // Gizlilik sayfası; yollar: src/pages/tr/gizlilik.astro, src/pages/en/privacy.astro.
 // Metin yalnız sitede gerçekte yapılanı anlatır (Cloudflare barındırma ve Web Analytics).
@@ -40,6 +40,12 @@ const description =
             e-posta adresi ya da başka bir kişisel bilgi istemiyoruz ve saklamıyoruz.
           </p>
 
+          <h2>Yapay zekâ servisi</h2>
+          <p>
+            Haberlerin yazımında kaynak metinler Google'ın Gemini yapay zekâ servisine gönderilir. Ziyaretçilere ait
+            hiçbir veri bu servise gönderilmez.
+          </p>
+
           <h2>Barındırma</h2>
           <p>Site Cloudflare üzerinden yayınlanır; sayfalar statik dosyalar olarak sunulur.</p>
 
@@ -52,6 +58,10 @@ const description =
           <h2>İletişim</h2>
           <p>
             Veri talepleri ve düzeltmeler için: <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </p>
+          <p>
+            Kişisel veriler için <a href={yasalYolu(lang)}>Yasal Bilgilendirme ve Künye</a> sayfasının 13. maddesine de
+            bakınız.
           </p>
         </div>
       ) : (
@@ -67,6 +77,12 @@ const description =
             name, email address or any other personal information in order for you to read the site.
           </p>
 
+          <h2>AI service</h2>
+          <p>
+            To write the stories, the source texts are sent to Google's Gemini AI service. No data about visitors is
+            sent to this service.
+          </p>
+
           <h2>Hosting</h2>
           <p>The site is served through Cloudflare as static files.</p>
 
@@ -79,6 +95,9 @@ const description =
           <h2>Contact</h2>
           <p>
             For data requests and corrections: <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </p>
+          <p>
+            For personal data, please also see Article 13 of the <a href={yasalYolu(lang)}>Legal Notice and Imprint</a> page.
           </p>
         </div>
       )

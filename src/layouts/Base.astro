@@ -5,7 +5,7 @@ import Logo from '../components/Logo.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl } from '../lib/news';
-import { gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu } from '../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, yasalYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
 
 type Hreflang = Locale | 'x-default';
@@ -75,6 +75,9 @@ const searchHref = aramaYolu(lang);
 const topicsHref = konuDiziniYolu(lang);
 const glossaryHref = sozlukYolu(lang);
 const gizlilikHref = gizlilikYolu(lang);
+const legalHref = yasalYolu(lang);
+const correctionsPolicyHref = duzeltmePolitikasiYolu(lang);
+const correctionsHref = duzeltmelerYolu(lang);
 const robots = noindex
   ? 'noindex, follow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -260,6 +263,9 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <li><a href={aboutHref}><span>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></span></a></li>
           <li><a href={editorialHref}><span>{ui.editorialStandards}<span class="link-other" lang={other}>{SITE.ui[other].editorialStandards}</span></span></a></li>
           <li><a href={transparencyHref}><span>{ui.transparency}<span class="link-other" lang={other}>{SITE.ui[other].transparency}</span></span></a></li>
+          <li><a href={legalHref}><span>{ui.legalShort}<span class="link-other" lang={other}>{SITE.ui[other].legalShort}</span></span></a></li>
+          <li><a href={correctionsPolicyHref}><span>{ui.correctionsPolicy}<span class="link-other" lang={other}>{SITE.ui[other].correctionsPolicy}</span></span></a></li>
+          <li><a href={correctionsHref}><span>{ui.corrections}<span class="link-other" lang={other}>{SITE.ui[other].corrections}</span></span></a></li>
           <li><a href={`/${lang}/rss.xml`}><span>{ui.rss}<span class="link-other">{lang.toUpperCase()}</span></span></a></li>
           <li><a href="/en/" lang="en">English</a></li>
           <li><a href="/tr/" lang="tr">Türkçe</a></li>

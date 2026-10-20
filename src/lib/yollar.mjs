@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri', yasal: 'yasal', duzeltmePolitikasi: 'duzeltme-politikasi', duzeltmeler: 'duzeltmeler' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards', yasal: 'legal', duzeltmePolitikasi: 'corrections-policy', duzeltmeler: 'corrections' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */
@@ -89,3 +89,10 @@ export const sozlukYolu = (dil) => `/${dil}/${YOL[dil].sozluk}/`;
 
 /** @param {Dil} dil */
 export const gizlilikYolu = (dil) => `/${dil}/${YOL[dil].gizlilik}/`;
+
+/** Yasal Bilgilendirme ve Künye: /tr/yasal/, /en/legal/ @param {Dil} dil */
+export const yasalYolu = (dil) => `/${dil}/${YOL[dil].yasal}/`;
+/** Düzeltme Politikası: /tr/duzeltme-politikasi/, /en/corrections-policy/ @param {Dil} dil */
+export const duzeltmePolitikasiYolu = (dil) => `/${dil}/${YOL[dil].duzeltmePolitikasi}/`;
+/** Düzeltmeler (kayıt sayfası): /tr/duzeltmeler/, /en/corrections/ @param {Dil} dil */
+export const duzeltmelerYolu = (dil) => `/${dil}/${YOL[dil].duzeltmeler}/`;

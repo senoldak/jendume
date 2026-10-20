@@ -214,6 +214,10 @@ export const SITE = {
         'Bu sayfa, adı geçen konuyu içeren haberleri otomatik olarak toplar; giriş metni yalnız yerleşik bilgileri içerir. Düzeltme talepleri:',
       storyUnit: 'haber',
       privacy: 'Gizlilik',
+      legal: 'Yasal Bilgilendirme ve Künye',
+      legalShort: 'Yasal',
+      correctionsPolicy: 'Düzeltme Politikası',
+      corrections: 'Düzeltmeler',
     },
     en: {
       home: 'Today',
@@ -271,6 +275,10 @@ export const SITE = {
         'This page gathers every story that mentions the topic automatically; the introduction sticks to settled facts. Corrections:',
       storyUnit: 'stories',
       privacy: 'Privacy',
+      legal: 'Legal Notice and Imprint',
+      legalShort: 'Legal',
+      correctionsPolicy: 'Corrections Policy',
+      corrections: 'Corrections',
     },
   } satisfies Record<Locale, Record<string, string>>,
 };

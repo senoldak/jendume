@@ -17,7 +17,7 @@ export const GET: APIRoute = async () => {
   const top40 = allPosts.slice(0, 40);
 
   let output = `# Jendume - Full Content & News Feed (llms-full.txt)\n\n`;
-  output += `> Beyond Words — AI, science, technology, and economic shifts explained with clarity and deep human perspective.\n`;
+  output += `> Beyond Words — AI, science, technology, and economic shifts explained with clarity.\n`;
   output += `> Kelimelerin ötesinde — Yapay zekâ, bilim, teknoloji ve ekonomik dönüşümler; sade ve derinlikli bir dille.\n\n`;
   output += `Last updated / Son güncelleme: ${new Date().toISOString()}\n\n`;
 

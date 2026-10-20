@@ -1,0 +1,113 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, formatDate, type Locale } from '../../lib/site';
+import { getPublishedPosts, getPostUrl } from '../../lib/news';
+import { duzeltmeKayitlari } from '../../lib/duzeltmeler.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu } from '../../lib/yollar.mjs';
+import kaldirilan from '../../data/duzeltmeler-kaldirilan.json';
+
+// Düzeltmeler (kayıt sayfası); yollar: src/pages/tr/duzeltmeler.astro, src/pages/en/corrections.astro.
+// Kaynaklar: haberlerin `duzeltme` alanı + src/data/duzeltmeler-kaldirilan.json (kaldırılan yazılar).
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const tr = lang === 'tr';
+const ui = SITE.ui[lang];
+const description = tr
+  ? 'JEN DUME düzeltmeleri: düzeltilen ve yayından kaldırılan haberlerin tarihli kaydı.'
+  : 'JEN DUME corrections: a dated record of stories that were corrected or removed.';
+const haberler = await getPublishedPosts(lang);
+const kayitlar = duzeltmeKayitlari(haberler, kaldirilan, lang, (id) => getPostUrl(lang, id));
+const politika = duzeltmePolitikasiYolu(lang);
+const T = tr
+  ? {
+      giris:
+        'Bir haberde hata yaparsak düzeltir, bir haberi kaldırırsak nedenini söyleriz. Her değişikliği tarihiyle bu sayfada açıkça yazarız.',
+      aciklama: 'Her kayıtta tarih, haber başlığı ve neyin değiştiği ya da haberin neden kaldırıldığı yer alır. Düzeltilen haberin altında da aynı not görünür. Hata bildirmek için haberin altındaki “Hata bildir” bağlantısını ya da',
+      aciklama2: 'adresini kullanabilirsiniz. Yöntemimiz için',
+      politika: 'Düzeltme Politikası',
+      sayfasi: 'sayfasına bakınız.',
+      bos: 'Henüz kayıt yok.',
+      duzeltme: 'Düzeltme',
+      kaldirildi: 'Yayından kaldırıldı',
+      ilk: 'ilk yayın',
+    }
+  : {
+      giris:
+        'If we make an error in a story, we correct it; if we remove a story, we tell you why. We record every change openly on this page, with its date.',
+      aciklama: 'Each entry gives the date, the story headline, and what was changed or why the story was removed. The same note also appears under the corrected story. To report an error, use the “Report an error” link under the story or write to',
+      aciklama2: '. For our approach, see the',
+      politika: 'Corrections Policy',
+      sayfasi: 'page.',
+      bos: 'No entries yet.',
+      duzeltme: 'Correction',
+      kaldirildi: 'Removed',
+      ilk: 'first published',
+    };
+---
+
+<Base
+  lang={lang}
+  title={ui.corrections}
+  description={description}
+  canonicalPath={duzeltmelerYolu(lang)}
+  langUrls={{ tr: duzeltmelerYolu('tr'), en: duzeltmelerYolu('en') }}
+  alternates={{ tr: duzeltmelerYolu('tr'), en: duzeltmelerYolu('en'), 'x-default': duzeltmelerYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${duzeltmelerYolu(lang)}#webpage`,
+      url: `${SITE.url}${duzeltmelerYolu(lang)}`,
+      name: `${ui.corrections} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article duzeltmeler">
+    <div class="prose about">
+      <header class="article-header">
+        <h1 class="about-title">{ui.corrections}</h1>
+      </header>
+
+      <p>{T.giris}</p>
+      <p>
+        {T.aciklama}{' '}<a href="mailto:contact@jendume.com">contact@jendume.com</a>{tr ? ' ' : ''}{T.aciklama2}{' '}<a href={politika}>{T.politika}</a>{' '}{T.sayfasi}
+      </p>
+
+      {
+        kayitlar.length === 0 ? (
+          <p><strong>{T.bos}</strong></p>
+        ) : (
+          <ul class="kayitlar">
+            {kayitlar.map((k) => (
+              <li>
+                <strong>
+                  {formatDate(k.tarih, lang)} · {k.tur === 'duzeltme' ? T.duzeltme : T.kaldirildi}
+                </strong>{' '}
+                ·{' '}
+                {k.yol ? <a href={k.yol}>{`“${k.baslik}”`}</a> : k.baslik}
+                {k.ilkYayin ? ` (${T.ilk} ${formatDate(k.ilkYayin, lang)})` : ''}: {k.metin}
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </article>
+</Base>
+
+<style>
+  .kayitlar {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+  }
+  .kayitlar li {
+    padding: 14px 0;
+    border-top: 1px solid var(--hair);
+  }
+</style>

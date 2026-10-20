@@ -6,12 +6,12 @@ import Base from '../../layouts/Base.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import Sayfalama from '../../components/Sayfalama.astro';
-import { SITE, editorialUrl, otherLocale, type Locale } from '../../lib/site';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
 import { CATEGORY_PAGE_SIZE, type NewsEntry } from '../../lib/news';
 import { collectionGraph, topicAbout, topicCrumbs } from '../../lib/seo';
 import { konuBul } from '../../lib/konular';
 import { konuVerisi } from '../../lib/rotalar';
-import { konuYolu } from '../../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, konuYolu } from '../../lib/yollar.mjs';
 
 interface Props {
   lang: Locale;
@@ -85,6 +85,6 @@ const crumbs = topicCrumbs(lang, konu, n, canonicalPath);
   <Sayfalama lang={lang} current={n} last={page.lastPage} pagePath={(i) => pagePath(lang, i)} />
 
   <p class="production-note page-note">
-    {ui.topicNote} <a href={editorialUrl(lang)}>{ui.editorialStandards}</a>
+    {ui.topicNote} <a href={duzeltmePolitikasiYolu(lang)}>{ui.correctionsPolicy}</a>
   </p>
 </Base>

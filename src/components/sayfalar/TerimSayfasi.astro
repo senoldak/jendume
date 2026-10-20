@@ -5,12 +5,12 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import SignHeading from '../../components/SignHeading.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import Arrow from '../../components/Arrow.astro';
-import { BULLETIN_CATEGORY, SITE, editorialUrl, otherLocale, type Locale } from '../../lib/site';
+import { BULLETIN_CATEGORY, SITE, otherLocale, type Locale } from '../../lib/site';
 import { getPublishedPosts } from '../../lib/news';
 import { definedTermGraph, glossaryCrumbs } from '../../lib/seo';
 import { dizinlenir } from '../../lib/kalite.mjs';
 import { terimBul, terimGeciyor } from '../../lib/sozluk.mjs';
-import { sozlukYolu, terimYolu } from '../../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, sozlukYolu, terimYolu } from '../../lib/yollar.mjs';
 
 interface Props {
   lang: Locale;
@@ -83,7 +83,7 @@ const docTitle = lang === 'tr' ? `${title} nedir?` : `${title} explained`;
 
     <p class="production-note">
       <span class="production-note-label">{ui.productionLabel}</span>
-      {ui.glossaryNote} <a href={editorialUrl(lang)}>{ui.editorialStandards}</a>
+      {ui.glossaryNote} <a href={duzeltmePolitikasiYolu(lang)}>{ui.correctionsPolicy}</a>
     </p>
   </article>
 

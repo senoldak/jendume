@@ -1,0 +1,412 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { duzeltmePolitikasiYolu, gizlilikYolu, yasalYolu } from '../../lib/yollar.mjs';
+
+// Yasal Bilgilendirme ve Künye; yollar: src/pages/tr/yasal.astro, src/pages/en/legal.astro.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const description =
+  lang === 'tr'
+    ? 'JEN DUME künyesi, bağımsızlık ve mali yapı, yapay zekâ kullanımı, içerik kaldırma ve cevap hakkı.'
+    : 'JEN DUME imprint, independence and funding, use of AI, content removal and right of reply.';
+const politika = duzeltmePolitikasiYolu(lang);
+const gizlilik = gizlilikYolu(lang);
+---
+
+<Base
+  lang={lang}
+  title={ui.legal}
+  description={description}
+  canonicalPath={yasalYolu(lang)}
+  langUrls={{ tr: yasalYolu('tr'), en: yasalYolu('en') }}
+  alternates={{ tr: yasalYolu('tr'), en: yasalYolu('en'), 'x-default': yasalYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${yasalYolu(lang)}#webpage`,
+      url: `${SITE.url}${yasalYolu(lang)}`,
+      name: `${ui.legal} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Yasal Bilgilendirme ve Künye</h1>
+          </header>
+
+          <h2 id="kunye">1. Künye</h2>
+          <table>
+            <tbody>
+              <tr><th scope="row">Yayın adı</th><td>JEN DUME</td></tr>
+              <tr><th scope="row">Yayıncı ve editör</th><td>Şenol Dak</td></tr>
+              <tr><th scope="row">Yayın türü</th><td>Çevrim içi haber ve bilgilendirme yayını (Türkçe ve İngilizce)</td></tr>
+              <tr><th scope="row">İletişim</th><td><a href="mailto:contact@jendume.com">contact@jendume.com</a></td></tr>
+            </tbody>
+          </table>
+
+          <h2>2. Yayının amacı ve kapsamı</h2>
+          <p>
+            JEN DUME; yapay zekâ, teknoloji, bilim ve ekonomiye ilişkin gelişmeleri, izlediği kamuya açık kaynaklara
+            ve resmî verilere dayanarak Türkçe ve İngilizce olarak okurlarına aktarmayı amaçlayan bir çevrim içi
+            yayındır. Yayın, kamuoyunun doğru ve anlaşılır bilgiye erişimine katkı sağlamak amacıyla yürütülür.
+          </p>
+
+          <h2>3. Editoryal bağımsızlık</h2>
+          <p>
+            3.1. JEN DUME bağımsız bir yayındır. Hiçbir siyasi parti, hükümet, kamu kurumu, şirket, dernek, vakıf ya da
+            başka bir kuruluşla organik, mali veya editoryal bağı yoktur.
+          </p>
+          <p>
+            3.2. Yayın içeriğine ilişkin kararlar yalnızca yayın ilkelerimize göre verilir. Hiçbir kişi ya da kuruluş,
+            içeriğin yayımlanması, değiştirilmesi veya yayımlanmaması konusunda JEN DUME'a talimat veremez.
+          </p>
+
+          <h2>4. Mali yapı ve kâr amacı</h2>
+          <p>
+            4.1. JEN DUME kâr amacı gütmez. Bağımsız ve kâr amacı gütmeyen bir yayındır. Reklam, sponsorlu içerik ya da
+            ücretli iş birliği yoktur. Bu durum değişirse okurlarımıza açıkça bildiririz.
+          </p>
+          <p>
+            4.2. Yayında reklam, sponsorlu içerik, ücretli iş birliği, ürün yerleştirmesi ya da bağış bulunmaz. JEN DUME,
+            yayımladığı içerik karşılığında hiçbir kişi veya kuruluştan maddi ya da başka türlü bir menfaat sağlamaz.
+          </p>
+          <p>
+            4.3. Bu durumda bir değişiklik olması hâlinde okurlarımız, değişiklik yürürlüğe girmeden önce bu sayfa
+            aracılığıyla açıkça bilgilendirilir. Sponsorlu ya da ücretli bir içerik yayımlanırsa, içerik açıkça bu
+            şekilde etiketlenir.
+          </p>
+
+          <h2>5. Çıkar çatışması</h2>
+          <p>
+            5.1. Yayıncı; haberlerde adı geçen şirketler, kuruluşlar, ürünler veya hizmetlerle, haberin tarafsızlığını
+            etkileyebilecek ticari bir ilişki içinde değildir. Haberlerin yazımında kullanılan Google'ın Gemini yapay
+            zekâ modelleri ile sitenin yayınında kullanılan Cloudflare hizmetleri bu kapsamın dışındadır; bu şirketler
+            haberlerde de yer alabilir.
+          </p>
+          <p>
+            5.2. Gelecekte böyle bir ilişki doğarsa, ilgili içerikte bu durum açıkça belirtilir ya da yayıncı o konuda
+            içerik yayımlamaz.
+          </p>
+
+          <h2>6. Tarafsızlık</h2>
+          <p>
+            6.1. JEN DUME siyasi görüş bildirmez. Hiçbir partiyi, adayı, hareketi veya ideolojiyi desteklemez ya da
+            karşısında konumlanmaz.
+          </p>
+          <p>
+            6.2. Haberlerde olgular ve ilgili kaynakların açıklamaları aktarılır. Haber ile yorum birbirinden ayrı
+            tutulur; haber metinlerine görüş katılmaz.
+          </p>
+          <p>
+            6.3. Kişiler ve gruplar hakkında köken, uyruk, din, cinsiyet veya benzeri özellikler üzerinden genelleme ya
+            da ayrımcı ifade kullanılmaz.
+          </p>
+          <p>
+            6.4. “Neden Önemli?” blokları ve “Anlam &amp; Perspektif” bölümündeki yazılar, olguların yanında bu
+            gelişmenin önemine dair açıklama içerir; bunlar da otomatik yazılır ve bu metindeki ilkelere tabidir.
+          </p>
+
+          <h2>7. Yapay zekâ ve otomasyon kullanımı</h2>
+          <p>
+            7.1. JEN DUME'daki haberler yapay zekâ ile otomatik olarak yazılır ve yayımlanmadan önce otomatik
+            denetimlerden geçer. Bu denetimler; rakamların kaynakla karşılaştırılmasını ve hassas konuların
+            ayıklanmasını kapsar. Suç ve yargı süreçlerinde özel kişiler, çocuklar, intihar ve kendine zarar, terör,
+            savaş taraflarının dili, gruplar hakkında genelleme, yatırım tavsiyesi niteliği taşıyan ifadeler ve tek bir
+            yayına ait özel haberler gibi hassas konular otomatik olarak yayımlanmaz; otomatik denetim bozulursa ya da
+            sonuç belirsiz kalırsa haber yayımlanmaz.
+          </p>
+          <p>
+            7.2. Her haber yayımlanmadan önce tek tek insan denetiminden geçmez. Bu nedenle içeriklerde hata
+            bulunabilir. Fark edilen hatalar, <a href={politika}>Düzeltme Politikamıza</a> göre düzeltilir.
+          </p>
+          <p>
+            7.3. Yapay zekâ ile üretilen içerikler, haberin altında bu yönde bir notla belirtilir. Yayıncının imzasıyla
+            yayımlanan yazılarda yapay zekânın hangi aşamada kullanıldığı ayrıca belirtilir.
+          </p>
+          <p>
+            7.4. Yapay zekâ ile gerçek kişi, olay veya belge izlenimi veren görsel, ses ya da alıntı üretilmez.
+          </p>
+
+          <h2>8. İçeriğin niteliği ve sorumluluğun sınırları</h2>
+          <p>
+            8.1. Sitedeki içerikler yalnızca genel bilgilendirme amacı taşır. Sitedeki içerikler yatırım tavsiyesi
+            değildir.
+          </p>
+          <p>
+            8.2. İçeriklerin doğru ve güncel olması için azami özen gösterilir. Bununla birlikte içeriklerin hatasız,
+            eksiksiz veya her an güncel olduğu garanti edilmez. Rakamlar ve bilgiler, yayın tarihinde erişilebilen
+            kaynaklara dayanır ve sonradan değişebilir.
+          </p>
+          <p>
+            8.3. Okurlar, önemli kararlarını vermeden önce bilgiyi ilgili resmî kaynaktan doğrulamalıdır.
+          </p>
+
+          <h2>9. Dış bağlantılar</h2>
+          <p>
+            Sitede yer alan bağlantılar yalnızca okurun kaynağa ulaşmasını kolaylaştırmak içindir. Bağlantı verilen
+            sitelerin içeriğinden ve uygulamalarından o sitelerin sahipleri sorumludur.
+          </p>
+
+          <h2>10. Fikrî mülkiyet</h2>
+          <p>
+            10.1. Sitedeki metin, grafik ve görsellerin hakları JEN DUME'a aittir; aksi belirtilen içerikler hariçtir.
+          </p>
+          <p>
+            10.2. İçeriklerden, kaynak gösterilerek ve bağlantı verilerek kısa alıntı yapılabilir. İçeriklerin tamamının
+            ya da önemli bir bölümünün izinsiz çoğaltılması yasaktır.
+          </p>
+          <p>
+            10.3. İçeriklerin yapay zekâ modellerinin eğitimi amacıyla toplu olarak kullanılması izne tabidir. Arama ve
+            yanıt sistemlerinin kaynak göstererek ve bağlantı vererek kısa alıntı yapması serbesttir.
+          </p>
+
+          <h2>11. Hak ihlali ve içerik kaldırma bildirimleri</h2>
+          <p>
+            11.1. Sitedeki bir içeriğin telif hakkınızı, kişilik haklarınızı veya başka bir hakkınızı ihlal ettiğini
+            düşünüyorsanız <a href="mailto:contact@jendume.com">contact@jendume.com</a> adresine yazabilirsiniz.
+          </p>
+          <p>11.2. Bildirimde şunlar yer almalıdır:</p>
+          <ul>
+            <li>ilgili içeriğin bağlantısı,</li>
+            <li>ihlal edildiğini düşündüğünüz hak,</li>
+            <li>talebiniz,</li>
+            <li>sizinle iletişim kurabileceğimiz bilgiler.</li>
+          </ul>
+          <p>
+            11.3. Bildirimler öncelikle incelenir. Talep haklı bulunursa içerik düzeltilir, ilgili kısım çıkarılır veya
+            içerik yayından kaldırılır. Sonuç bildirimde bulunan kişiye iletilir.
+          </p>
+
+          <h2 id="cevap-hakki">12. Cevap ve düzeltme hakkı</h2>
+          <p>
+            12.1. Hakkınızda yayımlanan bir içeriğin gerçeğe aykırı olduğunu veya şeref ve itibarınızı zedelediğini
+            düşünüyorsanız, cevap veya düzeltme metninizi <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+            adresine iletebilirsiniz.
+          </p>
+          <p>
+            12.2. Talepler öncelikle incelenir. Talep yerinde bulunursa cevap veya düzeltme metni, ilgili içerikle
+            birlikte ve ona bağlantı verilerek yayımlanır.
+          </p>
+
+          <h2>13. Kişisel verilerin korunması</h2>
+          <p>
+            13.1. Haberlerde özel kişilerin kişisel verilerine, haberin gerektirdiği ölçünün ötesinde yer verilmez.
+          </p>
+          <p>
+            13.2. Bir içerikte kişisel verinizin gereksiz yere yer aldığını düşünüyorsanız bize yazabilirsiniz.
+            Talebiniz incelenir; gerekirse adınız veya ilgili bilgi içerikten çıkarılır.
+          </p>
+          <p>
+            13.3. Site ziyaretçilerine ilişkin veri işleme hakkında bilgi için <a href={gizlilik}>Gizlilik</a> sayfasına
+            bakınız.
+          </p>
+
+          <h2>14. Değişiklikler</h2>
+          <p>
+            Bu metin gerektiğinde güncellenir. Okuru etkileyen önemli değişiklikler bu sayfada açıkça belirtilir.
+          </p>
+          <p>Son güncelleme: 20 Ekim 2026</p>
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Legal Notice and Imprint</h1>
+          </header>
+
+          <h2 id="imprint">1. Imprint</h2>
+          <table>
+            <tbody>
+              <tr><th scope="row">Publication</th><td>JEN DUME</td></tr>
+              <tr><th scope="row">Publisher and editor</th><td>Şenol Dak</td></tr>
+              <tr><th scope="row">Type of publication</th><td>Online news and information publication (English and Turkish)</td></tr>
+              <tr><th scope="row">Contact</th><td><a href="mailto:contact@jendume.com">contact@jendume.com</a></td></tr>
+            </tbody>
+          </table>
+
+          <h2>2. Purpose and scope of the publication</h2>
+          <p>
+            JEN DUME is an online publication that aims to inform its readers, in English and Turkish, about
+            developments in artificial intelligence, technology, science and the economy, drawing on the publicly
+            available sources and official data it monitors. The publication is carried out to contribute to the
+            public's access to accurate and understandable information.
+          </p>
+
+          <h2>3. Editorial independence</h2>
+          <p>
+            3.1. JEN DUME is an independent publication. It has no organic, financial or editorial ties with any
+            political party, government, public authority, company, association, foundation or any other organisation.
+          </p>
+          <p>
+            3.2. Decisions on the content of the publication are made solely in accordance with our editorial
+            standards. No person or organisation may give JEN DUME instructions on whether content is to be published,
+            amended or withheld.
+          </p>
+
+          <h2>4. Funding and non-profit status</h2>
+          <p>
+            4.1. JEN DUME is not operated for profit. It is an independent, non-profit publication. There is no
+            advertising, sponsored content or paid partnership. If this changes, we will tell our readers openly.
+          </p>
+          <p>
+            4.2. The publication carries no advertising, sponsored content, paid partnerships, product placement or
+            donations. JEN DUME receives no financial or other benefit from any person or organisation in return for
+            the content it publishes.
+          </p>
+          <p>
+            4.3. Should this position change, readers will be clearly informed through this page before the change
+            takes effect. If any sponsored or paid content is published, it will be clearly labelled as such.
+          </p>
+
+          <h2>5. Conflicts of interest</h2>
+          <p>
+            5.1. The publisher has no commercial relationship with the companies, organisations, products or services
+            named in the stories that could affect the impartiality of the reporting. The Google Gemini AI models used
+            to write the stories and the Cloudflare services used to run the site are outside this scope; these
+            companies may also appear in our stories.
+          </p>
+          <p>
+            5.2. If such a relationship arises in the future, it will be clearly disclosed in the relevant content, or
+            the publisher will not publish content on that subject.
+          </p>
+
+          <h2>6. Impartiality</h2>
+          <p>
+            6.1. JEN DUME does not express political opinions. It neither supports nor opposes any party, candidate,
+            movement or ideology.
+          </p>
+          <p>
+            6.2. Stories report facts and the statements of the relevant sources. News and commentary are kept
+            separate; opinion is not added to news text.
+          </p>
+          <p>
+            6.3. No generalisations or discriminatory statements are made about individuals or groups on the basis of
+            origin, nationality, religion, gender or similar characteristics.
+          </p>
+          <p>
+            6.4. The “Why It Matters” blocks and the pieces in the “Meaning &amp; Perspective” section explain, next to
+            the facts, why a development matters; they too are written automatically and are subject to the principles
+            in this text.
+          </p>
+
+          <h2>7. Use of artificial intelligence and automation</h2>
+          <p>
+            7.1. Stories on JEN DUME are written automatically by artificial intelligence and pass automated checks
+            before publication. These checks include comparing figures against the source text and screening out
+            sensitive subjects. Sensitive subjects such as private individuals in criminal and judicial proceedings,
+            children, suicide and self-harm, terrorism, the partisan language of the parties to a war, generalisations
+            about groups, statements that amount to investment advice, and exclusive reports from a single outlet are
+            not published automatically; if the automated checks break down or cannot reach a clear result, the story
+            is not published.
+          </p>
+          <p>
+            7.2. Stories are not reviewed one by one by a person before publication. Errors may therefore occur.
+            Errors that come to our attention are corrected in accordance with our <a href={politika}>Corrections Policy</a>.
+          </p>
+          <p>
+            7.3. Content produced with artificial intelligence is identified by a note under the story. Where a piece
+            is published under the publisher's byline, the stage at which artificial intelligence was used is stated
+            separately.
+          </p>
+          <p>
+            7.4. Artificial intelligence is not used to generate images, audio or quotations that give the impression
+            of a real person, event or document.
+          </p>
+
+          <h2>8. Nature of the content and limits of liability</h2>
+          <p>
+            8.1. The content on this site is provided for general information purposes only. The content on this site
+            is not investment advice.
+          </p>
+          <p>
+            8.2. We take the utmost care to keep content accurate and up to date. However, we do not warrant that
+            content is free of errors, complete or current at all times. Figures and information are based on sources
+            available on the date of publication and may change afterwards.
+          </p>
+          <p>
+            8.3. Readers should verify information with the relevant official source before making any important
+            decision.
+          </p>
+
+          <h2>9. External links</h2>
+          <p>
+            Links on the site are provided solely to help readers reach a source. The owners of linked sites are
+            responsible for the content and practices of those sites.
+          </p>
+
+          <h2>10. Intellectual property</h2>
+          <p>
+            10.1. The rights in the text, graphics and images on the site belong to JEN DUME, except where content is
+            stated to be otherwise.
+          </p>
+          <p>
+            10.2. Short quotations may be made from the content, provided the source is credited and a link is given.
+            Reproduction of all or a substantial part of the content without permission is prohibited.
+          </p>
+          <p>
+            10.3. Bulk use of the content for training artificial intelligence models is subject to permission. Search
+            and answer systems may freely quote briefly, crediting the source and linking to it.
+          </p>
+
+          <h2>11. Notices of infringement and requests for removal</h2>
+          <p>
+            11.1. If you believe that content on the site infringes your copyright, your personality rights or any
+            other right of yours, you may write to <a href="mailto:contact@jendume.com">contact@jendume.com</a>.
+          </p>
+          <p>11.2. A notice should include:</p>
+          <ul>
+            <li>a link to the content concerned,</li>
+            <li>the right you believe has been infringed,</li>
+            <li>your request,</li>
+            <li>details by which we can contact you.</li>
+          </ul>
+          <p>
+            11.3. Notices are given priority review. If the request is found justified, the content will be corrected,
+            the relevant part will be removed, or the content will be taken down. The outcome will be communicated to
+            the person who made the notice.
+          </p>
+
+          <h2 id="right-of-reply">12. Right of reply and correction</h2>
+          <p>
+            12.1. If you believe that content published about you is untrue or damages your honour and reputation, you
+            may send your reply or correction text to <a href="mailto:contact@jendume.com">contact@jendume.com</a>.
+          </p>
+          <p>
+            12.2. Requests are given priority review. If the request is found justified, the reply or correction will
+            be published together with the relevant content and linked to it.
+          </p>
+
+          <h2>13. Protection of personal data</h2>
+          <p>
+            13.1. Stories do not include the personal data of private individuals beyond what the story requires.
+          </p>
+          <p>
+            13.2. If you believe that your personal data appears in content unnecessarily, you may write to us. Your
+            request will be reviewed; where appropriate, your name or the relevant information will be removed from the
+            content.
+          </p>
+          <p>
+            13.3. For information on the processing of data relating to visitors to the site, please see the
+            <a href={gizlilik}>Privacy</a> page.
+          </p>
+
+          <h2>14. Changes</h2>
+          <p>
+            This text is updated when necessary. Material changes that affect readers are clearly stated on this page.
+          </p>
+          <p>Last updated: 20 October 2026</p>
+        </div>
+      )
+    }
+  </article>
+</Base>

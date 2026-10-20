@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { SITE, editorialUrl, otherLocale, type Locale } from '../../lib/site';
-import { hakkimizdaYolu } from '../../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, hakkimizdaYolu, yasalYolu } from '../../lib/yollar.mjs';
 
 // Hakkımızda; yollar: src/pages/tr/hakkimizda.astro, src/pages/en/about.astro.
 interface Props {
@@ -11,10 +11,13 @@ interface Props {
 const { lang } = Astro.props;
 const ui = SITE.ui[lang];
 const other = otherLocale(lang);
+const yasal = yasalYolu(lang);
+const politika = duzeltmePolitikasiYolu(lang);
+const kayit = duzeltmelerYolu(lang);
 const description =
   lang === 'tr'
-    ? 'JEN DUME hakkında: yapay zekâ laboratuvarları, araştırma kurumları ve resmî kaynaklardan yapay zekâ yardımıyla otomatik yazılan, Türkçe ve İngilizce yapay zekâ haberleri.'
-    : 'About JEN DUME: bilingual English and Turkish AI news, written automatically with AI assistance from AI labs, research institutions, and official sources.';
+    ? 'JEN DUME hakkında: izlenen yapay zekâ laboratuvarları, araştırma kurumları ve diğer kaynak metinlerinden yapay zekâ yardımıyla otomatik yazılan, Türkçe ve İngilizce yapay zekâ haberleri.'
+    : 'About JEN DUME: bilingual English and Turkish AI news, written automatically with AI assistance from the source texts of the AI labs, research institutions and other sources we monitor.';
 ---
 
 <Base lang={lang} title={ui.about} description={description} canonicalPath={hakkimizdaYolu(lang)}
@@ -73,7 +76,8 @@ const description =
           <p>
             Çünkü bilgi tek başına yeterli değil. Doğruluk, bağlam, eleştirel düşünce ve editoryal sorumluluk
             olmadan bilgi, anlamını kaybedebilir. Yapay zekâ araştırma ve analiz süreçlerini güçlendirebilir;
-            ancak güvenilir bilgiye ulaşmak hâlâ dikkatli değerlendirme ve insan muhakemesi gerektirir.
+            ancak güvenilir bilgiye ulaşmak hâlâ dikkatli değerlendirme gerektirir. Bu nedenle haberlerimizin yapay zekâ
+            ile otomatik yazıldığını açıkça söyler, hatalarımızı herkese açık düzeltiriz.
           </p>
 
           <p>
@@ -86,16 +90,21 @@ const description =
             JEN DUME haberleri, izlediğimiz yapay zekâ laboratuvarları, araştırma kurumları, resmî kurumlar ve
             teknoloji yayınlarının kaynak metinlerinden yapay zekâ yardımıyla otomatik olarak Türkçe ve İngilizce
             yazılır. Rakamlar kaynak metinle karşılaştırılır, haber kuruluşu adları ve göreli zaman ifadeleri
-            ayıklanır; bu otomatik denetimleri geçemeyen taslak yayımlanmaz. Haberler yayından önce insan editör
-            okumasından geçmez. Kaynak listesini, yazım ve doğrulama kurallarını, yayın ilkelerini ve düzeltmeleri
-            insan editörler belirler ve yürütür.
+            ayıklanır; bu otomatik denetimleri geçemeyen taslak yayımlanmaz. Haberler yayımlanmadan önce tek tek
+            insan denetiminden geçmez. Hassas konular otomatik olarak yayımlanmaz; otomatik denetim bozulursa ya da
+            sonuç belirsiz kalırsa haber yayımlanmaz. Kaynak listesini, yazım ve doğrulama kurallarını, yayın
+            ilkelerini ve düzeltmeleri yayıncı ve editör belirler ve yürütür.
           </p>
 
           <p>
             Farklı dillerden gelen bilgilerin buluşabildiği, karmaşık konuların açıklığa kavuşabildiği ve
             farklı perspektiflerin birlikte değerlendirilebildiği bir yayıncılık anlayışını benimsiyoruz.
-            Bağımsız habercilik, yapay zekâ etiği ve doğrulama taahhütlerimize ilişkin ayrıntılı standartlarımızı
-            <a href={editorialUrl(lang)}>Yayın İlkeleri</a> sayfamızda inceleyebilirsiniz.
+            Bağımsız ve kâr amacı gütmeyen bir yayındır. Reklam, sponsorlu içerik ya da ücretli iş birliği yoktur.
+            Bu durum değişirse okurlarımıza açıkça bildiririz. Çalışma yöntemimizi
+            <a href={editorialUrl(lang)}>Yayın İlkeleri</a>, yasal bilgileri
+            <a href={yasal}>Yasal Bilgilendirme ve Künye</a>, hata yaptığımızda izlediğimiz yolu
+            <a href={politika}>Düzeltme Politikası</a> sayfasında bulabilirsiniz. Yapılan değişiklikler
+            <a href={kayit}>Düzeltmeler</a> sayfasında listelenir.
           </p>
 
           <p>
@@ -117,9 +126,12 @@ const description =
 
           <h2 id="kunye">Künye</h2>
           <p>
-            <strong>Sorumlu editör:</strong> Şenol Dak<br />
+            <strong>Yayın adı:</strong> JEN DUME<br />
+            <strong>Yayıncı ve editör:</strong> Şenol Dak<br />
+            <strong>Yayın türü:</strong> Çevrim içi haber ve bilgilendirme yayını (Türkçe ve İngilizce)<br />
             <strong>E-posta:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
           </p>
+          <p>Tam metin: <a href={yasal}>Yasal Bilgilendirme ve Künye</a></p>
         </div>
       ) : (
         <div class="prose about">
@@ -172,7 +184,8 @@ const description =
           <p>
             Because information alone is not enough. Without accuracy, context, critical thinking, and editorial
             responsibility, information can lose its meaning. Artificial intelligence can strengthen research and
-            analysis—yet reaching reliable knowledge still requires careful evaluation and human judgment.
+            analysis, yet reaching reliable knowledge still requires careful evaluation. That is why we say plainly
+            that our stories are written automatically with AI, and why we correct our errors in public.
           </p>
 
           <p>
@@ -185,16 +198,20 @@ const description =
             JEN DUME stories are written automatically in English and Turkish with AI assistance, based on the source
             texts of the AI labs, research institutions, official bodies, and technology publications we monitor.
             Numbers are compared with the source text, and names of news outlets and relative time references are
-            removed; a draft that fails these automated checks is not published. Stories are not read by a human
-            editor before publication. Human editors decide the source list, the writing and verification rules, our
-            editorial standards, and corrections.
+            removed; a draft that fails these automated checks is not published. Stories are not reviewed one by one
+            by a person before publication. Sensitive subjects are not published automatically, and if the automated
+            checks break down or cannot reach a clear result, the story is not published. The publisher and editor
+            decides the source list, the writing and verification rules, our editorial standards, and corrections.
           </p>
 
           <p>
             We embrace an approach to publishing where insights from different languages meet, complex issues
-            find clarity, and diverse perspectives are evaluated together. Our detailed commitments to independent
-            reporting, AI ethics, and verification standards can be reviewed on our
-            <a href="/en/editorial-standards/">Editorial Standards</a> page.
+            find clarity, and diverse perspectives are evaluated together. We are an independent, non-profit publication.
+            We carry no advertising, sponsored content or paid partnerships; if this changes, we will tell our
+            readers openly. Our way of working is set out on the <a href={editorialUrl(lang)}>Editorial Standards</a>
+            page, our legal information on the <a href={yasal}>Legal Notice and Imprint</a> page, and our approach to
+            mistakes on the <a href={politika}>Corrections Policy</a> page. Every change is listed on the
+            <a href={kayit}>Corrections</a> page.
           </p>
 
           <p>
@@ -217,9 +234,12 @@ const description =
 
           <h2 id="imprint">Imprint</h2>
           <p>
-            <strong>Editor-in-chief:</strong> Şenol Dak<br />
+            <strong>Publication:</strong> JEN DUME<br />
+            <strong>Publisher and editor:</strong> Şenol Dak<br />
+            <strong>Type of publication:</strong> Online news and information publication (English and Turkish)<br />
             <strong>Email:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
           </p>
+          <p>Full text: <a href={yasal}>Legal Notice and Imprint</a></p>
         </div>
       )
     }
