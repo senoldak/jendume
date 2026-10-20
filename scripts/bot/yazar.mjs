@@ -244,7 +244,7 @@ const ELEME_SEMASI = {
 
 /**
  * Her başlığa puan verir (0 kapsam dışı, 1–100 haber değeri). Döner: indeksle hizalı puan dizisi; modelin atladığı
- * başlık MIN_DEGER alır. Gemini cevap vermezse null.
+ * (puanlamadığı) başlık null olur: emin değilsek yayımlamayız (standartlar Faz 0, fail-closed). Gemini cevap vermezse null.
  */
 export async function onEle(basliklar, { kall = gemini } = {}) {
   if (!basliklar.length) return [];
@@ -269,7 +269,7 @@ Başlıklar:
 ${basliklar.map((b, i) => `${i}. ${b}`).join('\n')}`,
   });
   if (!r?.puanlar) return null;
-  const puan = basliklar.map(() => MIN_DEGER);
+  const puan = basliklar.map(() => null);
   for (const { nr, puan: p } of r.puanlar) if (Number.isInteger(nr) && nr >= 0 && nr < basliklar.length && Number.isInteger(p)) puan[nr] = Math.min(100, Math.max(0, p));
   return puan;
 }
@@ -278,7 +278,8 @@ ${basliklar.map((b, i) => `${i}. ${b}`).join('\n')}`,
 /**
  * Önbellekli puanlama: önceki turlarda puanlanmış olay (kayit[anahtar] = { puan, olcek: 100, zaman }) yeniden sorulmaz.
  * Eski 0–5 ölçekli kayıtlar (olcek yok) yok sayılır, yeniden puanlanır.
- * Döner: basliklar ile hizalı puan dizisi; yeni puanlar kayda yazılır. Bir parça cevapsız kalırsa null.
+ * Döner: basliklar ile hizalı puan dizisi; yeni puanlar kayda yazılır. Bir parça cevapsız kalırsa null; modelin puanlamadığı
+ * başlığın puanı null kalır ve kayda yazılmaz (sonraki turda yeniden sorulur).
  */
 export async function onbellekliPuanla(basliklar, anahtarlar, kayit, { kall = gemini, parca = 60, zaman = new Date().toISOString() } = {}) {
   const puan = anahtarlar.map((k) => (kayit[k]?.olcek === OLCEK ? kayit[k].puan : undefined));
@@ -288,6 +289,7 @@ export async function onbellekliPuanla(basliklar, anahtarlar, kayit, { kall = ge
     const sonuc = await onEle(dilim.map((n) => basliklar[n]), { kall });
     if (sonuc === null) return null;
     sonuc.forEach((p, j) => {
+      if (p === null) return;
       puan[dilim[j]] = p;
       kayit[anahtarlar[dilim[j]]] = { puan: p, olcek: OLCEK, zaman };
     });

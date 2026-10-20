@@ -27,6 +27,7 @@ const bagimlilik = (ek = {}) => {
     yaz: async (grup) => ({ category: grup[0].kategori, tr: { title: 'Derleme' }, en: { title: 'Roundup' } }),
     denetle: () => [],
     duzelt: async (t) => t,
+    standart: (t, grup) => ({ yayin: true, t, grup, s: { karar: 'temiz', gerekce: '' }, atlanan: [] }), // süzgeç testleri: kapi.test.mjs
     kaydet: async (t, grup) => (kaydedilen.push(grup.map((o) => o.id)), `derleme-${kaydedilen.length}`),
     ...ek,
   };

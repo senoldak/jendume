@@ -141,10 +141,12 @@ export const derlemeKaynagi = (grup) =>
  *   mukerrer(o) → gerekçe | null   (olay bu arada tam haber olarak yazıldı mı)
  *   yaz(grup, kaynak) → taslak | null;  denetle(taslak, kaynak, n) → sorun listesi;  duzelt(taslak, kaynak, sorunlar) → taslak | null
  *   uzat(taslak, grup, kaynak, enAz) → taslak (kısa derlemeyi kendi kaynaklarından genişletir)
- *   kaydet(taslak, grup, kaynak) → slug;  surVar() → boolean (zaman ve Gemini bütçesi)
+ *   standart(taslak, grup) → { yayin, t, grup, s, atlanan: [{ o, s }] } (kapi.mjs → derlemeStandardi; ZORUNLU: yoksa hiçbir
+ *     derleme yayımlanmaz); kırmızı çıkan madde atlanır (atla(o, s) çağrılır), yazı yayımlanamıyorsa yayin=false
+ *   kaydet(taslak, grup, kaynak, s) → slug;  surVar() → boolean (zaman ve Gemini bütçesi)
  * Döner: { havuz: kalan olaylar, yazilan: slug listesi, ayarHatasi?: Error } — anahtar/kota hatasında tur durur.
  */
-export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, uzat = async (t) => t, kaydet, surVar = () => true, log = console.log }) {
+export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, uzat = async (t) => t, standart, atla = async () => {}, kaydet, surVar = () => true, log = console.log }) {
   const simdikiDilim = bultenDilimi(simdi).anahtar;
   let kalan = [];
   for (const o of [...havuz].sort((a, b) => Date.parse(b.havuzaGirdi) - Date.parse(a.havuzaGirdi))) {
@@ -202,9 +204,29 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
         log(`havuz: derleme (${n} haber) YAYIMLANMADI: ${sorunlar.join(' | ')}${ek}`);
         continue;
       }
-      const slug = await kaydet(t, grup, kaynak);
+      // Standartlar süzgeci (kırmızı çizgiler): hata fırlatırsa (ya da süzgeç verilmemişse) derleme yayımlanmaz.
+      if (typeof standart !== 'function') throw new Error('standart süzgeci yok; derleme yayımlanmaz');
+      const sf = standart(t, grup);
+      for (const a of sf.atlanan) await atla(a.o, a.s);
+      if (!sf.yayin) {
+        log(`havuz: derleme (${n} haber) YAYIMLANMADI: ${sf.s.gerekce}`);
+        continue;
+      }
+      let yaz2 = sf.t;
+      let kaynak2 = kaynak;
+      if (sf.grup.length !== n) {
+        // Kırmızı maddeler atlandı: kalan derleme alt sınırları ve denetimleri yeniden geçmeli.
+        kaynak2 = derlemeKaynagi(sf.grup);
+        const sorun2 = denetle(yaz2, kaynak2, sf.grup.length);
+        if (sorun2.length) {
+          log(`havuz: derleme (${n} haber) madde atlandıktan sonra YAYIMLANMADI: ${sorun2.join(' | ')}`);
+          continue;
+        }
+        log(`havuz: derleme ${n - sf.grup.length} madde atlanarak yayımlanıyor (${sf.atlanan.map((a) => a.s.gerekce).join('; ')})`);
+      }
+      const slug = await kaydet(yaz2, sf.grup, kaynak2, sf.s);
       yazilan.push(slug);
-      log(`havuz: derleme yazıldı (TR/EN, ${n} haber): ${slug}`);
+      log(`havuz: derleme yazıldı (TR/EN, ${sf.grup.length} haber): ${slug}`);
     } catch (e) {
       if (e.ayar) {
         kalan.push(...grup); // anahtar/kota hatası olayların suçu değil: beklemeye devam

@@ -18,10 +18,10 @@ async function kok() {
   return k;
 }
 
-async function haber(k, dil, slug, { date, category = 'dunya', draft = false } = {}) {
+async function haber(k, dil, slug, { date, category = 'dunya', draft = false, title = `${slug} başlığı` } = {}) {
   const md = `---
 lang: ${dil}
-title: "${slug} başlığı"
+title: "${title}"
 description: "Açıklama metni burada yer alıyor."
 category: ${category}
 date: ${date}
@@ -70,6 +70,32 @@ test('bir haberden az ise bülten yazılmaz', async () => {
   const k = await kok();
   await haber(k, 'tr', 'tek-haber', { date: '2026-10-14T09:00:00.000Z' });
   await haber(k, 'en', 'tek-haber', { date: '2026-10-14T09:00:00.000Z' });
+  assert.equal(await calistir({ simdi, donem: 'ogle', kok: k }), null);
+});
+
+test('standart süzgeci: kırmızı çıkan haber bültene girmez, yalnız o madde atlanır', async () => {
+  const k = await kok();
+  const t = '2026-10-14T07:30:00.000Z';
+  await haber(k, 'tr', 'a-haber', { date: t });
+  await haber(k, 'tr', 'b-haber', { date: t });
+  await haber(k, 'tr', 'c-haber', { date: t, title: 'Şüpheli tutuklandı' });
+  await haber(k, 'en', 'a-haber', { date: t });
+  await haber(k, 'en', 'b-haber', { date: t });
+  await haber(k, 'en', 'c-haber', { date: t, title: 'Suspect arrested' });
+  const slug = await calistir({ simdi, donem: 'ogle', kok: k });
+  const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  assert.match(tr, /a-haber başlığı/);
+  assert.doesNotMatch(tr + en, /c-haber|tutuklandı|arrested/);
+});
+
+test('standart süzgeci: yalnız EN karşılığı kırmızıysa haber iki dil bülteninden de çıkar; kalan yetmezse bülten yazılmaz', async () => {
+  const k = await kok();
+  const t = '2026-10-14T07:30:00.000Z';
+  await haber(k, 'tr', 'a-haber', { date: t });
+  await haber(k, 'tr', 'b-haber', { date: t });
+  await haber(k, 'en', 'a-haber', { date: t });
+  await haber(k, 'en', 'b-haber', { date: t, title: 'Suspect arrested' });
   assert.equal(await calistir({ simdi, donem: 'ogle', kok: k }), null);
 });
 

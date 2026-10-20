@@ -7,6 +7,8 @@ import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { haberYolu } from '../../src/lib/yollar.mjs';
 import { onyuzMaddesiYayinda } from '../../src/lib/yayinda.mjs';
+import { standartBirlestir, standartDenetle, standartOzeti } from './standart.mjs';
+import { acilDurdurma } from './kapi.mjs';
 
 const HER = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(HER, '../..');
@@ -133,7 +135,7 @@ async function haberleriOku(kok, dil, simdi) {
       sonBulten = Math.max(sonBulten, tarih.getTime());
       continue;
     }
-    haberler.push({ slug: dosya.replace(/\.md$/, ''), title: d.title ?? '', tarih });
+    haberler.push({ slug: dosya.replace(/\.md$/, ''), title: d.title ?? '', description: d.description ?? '', tarih });
   }
   return { haberler, sonBulten };
 }
@@ -143,6 +145,28 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
   if (!DONEMLER[donem]) throw new Error(`Geçersiz dönem: ${donem}`);
   const tr = await haberleriOku(kok, 'tr', simdi);
   const en = await haberleriOku(kok, 'en', simdi);
+  // Standartlar süzgeci: her haber iki dilde ayrı denetlenir (en ağır karar geçerli); kırmızı çıkan haber bültene girmez
+  // (yalnız o madde atlanır). Süzgeç hata verirse bülten yazılmaz.
+  const enBaslik = new Map(en.haberler.map((h) => [h.slug, h]));
+  const kirmizi = new Set();
+  try {
+    for (const h of tr.haberler) {
+      const e = enBaslik.get(h.slug);
+      const s = standartBirlestir(
+        standartDenetle({ dil: 'tr', baslik: h.title, ozet: h.description }),
+        ...(e ? [standartDenetle({ dil: 'en', baslik: e.title, ozet: e.description })] : []),
+      );
+      if (s.karar === 'kirmizi') {
+        kirmizi.add(h.slug);
+        console.log(`Bülten maddesi atlandı (${h.slug}): ${standartOzeti(s)}`);
+      }
+    }
+  } catch (e) {
+    console.warn(`Standart denetimi yapılamadı (${String(e?.message ?? e).slice(0, 100)}); bülten yazılmadı.`);
+    return null;
+  }
+  tr.haberler = tr.haberler.filter((h) => !kirmizi.has(h.slug));
+  en.haberler = en.haberler.filter((h) => !kirmizi.has(h.slug));
   const sonBulten = Math.max(tr.sonBulten, en.sonBulten);
   // Bülten yalnız TR'de olan haberleri de gösterebilir; EN karşılığı olmayan haber EN bültene girmez.
   const secilen = tr.haberler
@@ -177,6 +201,8 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  // Acil durdurma açıksa bülten de yazılmaz.
+  if (await acilDurdurma()) process.exit(0);
   const slug = await calistir({ donem: process.argv[2] || undefined });
   if (process.env.GITHUB_OUTPUT) await writeFile(process.env.GITHUB_OUTPUT, `yazildi=${slug ? 1 : 0}\n`, { flag: 'a' });
 }

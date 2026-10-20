@@ -38,6 +38,8 @@ jobs:
         id: bulten
         env:
           DONEM: ${{ inputs.donem }}
+          MOTOR_URL: ${{ vars.MOTOR_URL }} # acil durdurma bayrağı
+          MOTOR_ANAHTARI: ${{ secrets.MOTOR_ANAHTARI }}
         run: |
           case "$DONEM" in sabah|ogle|aksam|"") ;; *) DONEM="" ;; esac
           node scripts/bot/bulten.mjs $DONEM

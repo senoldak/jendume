@@ -11,8 +11,11 @@ import { baslikKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamS
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
-import { adresiSil, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
+import { adresiSil, anahtarVar, kaynakIzi, yayinlananAc, yayinlananKapat } from './gizli.mjs';
 import { havuzOlayi, havuzAc, havuzKapat, havuzuIsle, derlemeAraligi, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
+import { standartOzeti } from './standart.mjs';
+import { acilDurdurma, derlemeStandardi, haberStandardi, puanKapisi } from './kapi.mjs';
+import { kirmiziKayit, motorKaydet, sariKayit } from './motor.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -33,6 +36,17 @@ for (const tur of ['log', 'warn', 'error']) {
   const asil = console[tur].bind(console);
   console[tur] = (...x) => asil(...x.map((p) => (typeof p === 'string' ? gunlukSatiri(p) : p)));
 }
+
+// Standartlar Faz 0, acil durdurma: bayrak açıksa tur hiçbir şey yazmadan ve commit etmeden biter (Gemini'ye ilk çağrıdan önce).
+if (!KURU && (await acilDurdurma())) process.exit(0);
+// Medya adı denetimi şifreli listeye bağlı: anahtar yoksa o denetim yapılamaz, emin olamadığımız için hiçbir şey yayımlanmaz.
+if (!KURU && !anahtarVar()) {
+  console.warn('KAYNAK_ANAHTARI yok; medya adı denetimi yapılamaz, bu tur yayımlanmıyor.');
+  process.exit(0);
+}
+
+// Standart kararını motor defterine yazar (kimlik: olayın ilk kaynağı, tek yönlü özetlenir).
+const motorYaz = (kayit) => motorKaydet({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, kayit });
 
 // Katman 3 (Gemini kota planı): bu turun Gemini payı; yeni habere başlamadan önce geminiPayiBitti() sorulur.
 if (!KURU) console.log(await butceYukle({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, site: 'jendume' }));
@@ -187,28 +201,29 @@ if (sira.length) {
 }
 
 // c) Kapsam ve haber değeri: 0–100 puan; MIN_DEGER altı yazılmaz. Sıra: puan, yerli kaynak, yeniden eskiye.
-//    Hata ya da cevapsızlıkta eski usul (yerli önce, yeni önce); tur düşmez.
-const puan = new Map();
+//    Emin değilsek yayımlamayız (standartlar Faz 0): puanlama hata verir, cevapsız kalır ya da bir başlığı puansız bırakırsa
+//    o olaylar bu tur yazılmaz; görüldü işaretlenmez, sonraki turda yeniden puanlanır.
+let puan = new Map();
 if (sira.length) {
-  try {
-    const sonuc = await onbellekliPuanla(
-      sira.map((g) => g.uyeler.map((u) => u.baslik).join(' / ')),
-      sira.map(grupAnahtar),
-      durum.puan,
-      { zaman: simdi.toISOString() },
-    );
-    if (sonuc === null) throw new Error('cevap yok');
-    sonuc.forEach((p, n) => puan.set(sira[n], p));
-    const disari = sira.filter((g) => puan.get(g) < MIN_DEGER);
-    for (const g of disari) {
-      console.log(`${puan.get(g) === 0 ? 'kapsam dışı' : `düşük haber değeri (${puan.get(g)})`}: ${g.uyeler[0].baslik}`);
-      grupBitti(g);
-    }
-    sira = sira.filter((g) => puan.get(g) >= MIN_DEGER);
-  } catch (e) {
-    puan.clear();
-    console.warn(`Ön eleme yapılamadı (${adresiSil(e.message)}); bütün olaylar yazara gidecek.`);
+  const k = await puanKapisi(
+    sira,
+    () =>
+      onbellekliPuanla(
+        sira.map((g) => g.uyeler.map((u) => u.baslik).join(' / ')),
+        sira.map(grupAnahtar),
+        durum.puan,
+        { zaman: simdi.toISOString() },
+      ),
+    MIN_DEGER,
+  );
+  if (k.hata) console.warn(`Ön eleme yapılamadı (${adresiSil(k.hata)}); emin olunamadığı için bu tur hiçbir olay yazılmıyor, sonraki turda yeniden denenecek.`);
+  else if (k.bekleyen.length) console.warn(`Puanlanamayan ${k.bekleyen.length} olay bu tur yazılmıyor; sonraki turda yeniden denenecek.`);
+  for (const { g, puan: p } of k.dusen) {
+    console.log(`${p === 0 ? 'kapsam dışı' : `düşük haber değeri (${p})`}: ${g.uyeler[0].baslik}`);
+    grupBitti(g);
   }
+  puan = k.puanlar;
+  sira = k.gecen;
 }
 sira.sort((a, b) => (puan.get(b) ?? 0) - (puan.get(a) ?? 0) || (a.yerli !== b.yerli ? (a.yerli ? -1 : 1) : b.tarih - a.tarih));
 
@@ -278,12 +293,22 @@ for (const g of sira) {
     // Kısa taslak (200 kelimenin altı) ve kurala uymayan başlık da sorun sayılır; düzeltme turu onarır.
     const denetle = (x) => [...kesinKontroller(x, kaynakBirlesik), ...uzunlukKontrol(x), ...baslikKontrol(x)];
     let sorunlar = denetle(t);
+    // Düzeltme turu cevapsız kalırsa (Gemini yanıt vermedi) olay karara bağlanmış sayılmaz: görüldü işaretlenmez, sonraki turda yeniden denenir.
+    let duzeltmeCevapsiz = false;
     for (let tur = 1; tur <= 2 && sorunlar.length; tur++) {
       console.log(`  düzeltme turu ${tur}: ${sorunlar.join(' | ')}`);
       const duzeltilmis = await duzelt(t, kaynakBirlesik, sorunlar, duzeltmeAyrintisi(t, kaynakBirlesik));
-      if (!duzeltilmis) break;
+      if (!duzeltilmis) {
+        duzeltmeCevapsiz = true;
+        break;
+      }
       t = yerelDuzelt(duzeltilmis);
       sorunlar = denetle(t);
+    }
+    if (duzeltmeCevapsiz && sorunlar.length) {
+      console.log(`  düzeltme turu cevapsız; haber bu tur yayımlanmadı, sonraki turda yeniden denenecek: ${sorunlar.join(' | ')}`);
+      ozet.atlanan.push(`${t.tr?.title || ad} (düzeltme cevapsız, bekliyor)`);
+      continue;
     }
     grupBitti(g);
     if (sorunlar.length) {
@@ -298,9 +323,18 @@ for (const g of sira) {
       continue;
     }
 
-    // Rakam şeridinde kaynakta doğrulanamayan öğe düşer (haber durmaz).
+    // Standartlar süzgeci (iki dil ayrı denetlenir, en ağır karar geçerli): kırmızı ise dosya yazılmaz, olay elendi olarak kaydedilir.
+    // Süzgeç hata verirse yayımlanmaz (aşağıdaki catch: hata sayılır, haber yazılmaz).
+    const yazilacak = rakamSeritleriniSuz(t, kaynakBirlesik);
+    const st = haberStandardi(yazilacak, kaynakBirlesik);
+    if (st.karar !== 'temiz') console.log(`  ${standartOzeti(st)}`);
+    if (st.karar === 'kirmizi') {
+      ozet.elenen.push(`${t.tr?.title || ad} — ${st.gerekce}`);
+      await motorYaz(kirmiziKayit(g.uyeler[0].id, st));
+      continue;
+    }
     const slug = await ucDilliHaberYaz(ROT, {
-      ...rakamSeritleriniSuz(t, kaynakBirlesik),
+      ...yazilacak,
       date: simdi.toISOString(),
       kaynakIzi: kaynakIzi(kullanilan),
       featured: false,
@@ -324,6 +358,7 @@ for (const g of sira) {
     );
     yazilanSayi++;
     console.log(`  yazıldı (TR/EN): ${slug}`);
+    if (st.karar === 'sari') await motorYaz(sariKayit(g.uyeler[0].id, slug, st));
     ozet.yazilan.push(`${slug} (${t.tr.title})`);
   } catch (e) {
     console.warn(`  hata: ${adresiSil(e.message)}`);
@@ -355,8 +390,15 @@ try {
       const d = await duzelt(x, kaynak, sorunlar, duzeltmeAyrintisi(x, kaynak));
       return d && yerelDuzelt({ ...d, category: x.category });
     },
-    kaydet: async (x, grup, kaynak) => {
+    // Standartlar süzgeci: kırmızı madde atlanır, yazı bütünüyle düşmez (kapi.mjs → derlemeStandardi).
+    standart: (x, grup) => derlemeStandardi(x, grup),
+    atla: async (o, s) => {
+      console.log(`  derleme maddesi atlandı: ${standartOzeti(s)}`);
+      await motorYaz(kirmiziKayit(o.id, s));
+    },
+    kaydet: async (x, grup, kaynak, s) => {
       x = dilimBasligiEkle(x, grup); // başlığa dilim eki (denetimden sonra)
+      if (s?.karar === 'sari') console.log(`  ${standartOzeti(s)}`);
       const slug = await ucDilliHaberYaz(ROT, {
         ...rakamSeritleriniSuz(x, kaynak),
         date: simdi.toISOString(),
@@ -369,6 +411,7 @@ try {
       bellek.push(...bellekKur(['tr', 'en'].map((d) => ({ slug, date: kayit.zaman, title: x[d].title, description: x[d].description })), { [slug]: kayit }));
       yazilanSayi++;
       ozet.yazilan.push(`${slug} (derleme: ${x.tr.title})`);
+      if (s?.karar === 'sari') await motorYaz(sariKayit(grup[0].id, slug, s));
       return slug;
     },
     surVar: () => Date.now() - BASLANGIC <= SURE_MS && !geminiPayiBitti(),
