@@ -78,10 +78,10 @@ test('standart süzgeci: kırmızı çıkan haber bültene girmez, yalnız o mad
   const t = '2026-10-14T07:30:00.000Z';
   await haber(k, 'tr', 'a-haber', { date: t });
   await haber(k, 'tr', 'b-haber', { date: t });
-  await haber(k, 'tr', 'c-haber', { date: t, title: 'Şüpheli tutuklandı' });
+  await haber(k, 'tr', 'c-haber', { date: t, title: 'Şüpheli Ali Veli tutuklandı' });
   await haber(k, 'en', 'a-haber', { date: t });
   await haber(k, 'en', 'b-haber', { date: t });
-  await haber(k, 'en', 'c-haber', { date: t, title: 'Suspect arrested' });
+  await haber(k, 'en', 'c-haber', { date: t, title: 'Suspect arrested John Smith' });
   const slug = await calistir({ simdi, donem: 'ogle', kok: k });
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
   const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
@@ -95,7 +95,7 @@ test('standart süzgeci: yalnız EN karşılığı kırmızıysa haber iki dil b
   await haber(k, 'tr', 'a-haber', { date: t });
   await haber(k, 'tr', 'b-haber', { date: t });
   await haber(k, 'en', 'a-haber', { date: t });
-  await haber(k, 'en', 'b-haber', { date: t, title: 'Suspect arrested' });
+  await haber(k, 'en', 'b-haber', { date: t, title: 'Suspect arrested John Smith' });
   assert.equal(await calistir({ simdi, donem: 'ogle', kok: k }), null);
 });
 

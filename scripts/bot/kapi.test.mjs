@@ -25,13 +25,13 @@ test('haberStandardi: iki dil temizse temiz', () => {
 });
 
 test('haberStandardi: yalnız TR kırmızıysa iki dilli yazı kırmızı (en ağır karar)', () => {
-  const s = haberStandardi(paket({ ...trTemiz, body: 'Kişi dün gözaltına alındı ve tutuklandı.' }));
+  const s = haberStandardi(paket({ ...trTemiz, body: 'Kişi dün Ali Veli gözaltına alındı ve Ali Veli tutuklandı.' }));
   assert.equal(s.karar, 'kirmizi');
   assert.match(s.gerekce, /^standart:kirmizi:/);
 });
 
 test('haberStandardi: yalnız EN kırmızıysa kırmızı', () => {
-  const s = haberStandardi(paket(trTemiz, temiz('He was arrested and charged with fraud on Monday.')));
+  const s = haberStandardi(paket(trTemiz, temiz('He was arrested John Smith and charged with fraud on Monday.')));
   assert.equal(s.karar, 'kirmizi');
 });
 
@@ -42,7 +42,7 @@ test('haberStandardi: sarı yayımlanabilir, gerekçe taşır', () => {
 });
 
 test('haberStandardi: ekler (perspektif, ana maddeler) de denetlenir', () => {
-  const s = haberStandardi(paket({ ...trTemiz, key_points: ['Şüpheli tutuklandı'] }));
+  const s = haberStandardi(paket({ ...trTemiz, key_points: ['Şüpheli Ali Veli tutuklandı'] }));
   assert.equal(s.karar, 'kirmizi');
 });
 
@@ -77,7 +77,7 @@ test('derlemeStandardi: temiz derleme olduğu gibi geçer', () => {
 test('derlemeStandardi: kırmızı madde iki dilde de atlanır, yazı düşmez', () => {
   const grup = [olay('a'), olay('b'), olay('c')];
   const r = derlemeStandardi(
-    derleme(['Birinci haber.', 'Bir kişi tutuklandı.', 'Üçüncü haber.'], ['First item.', 'A man was arrested.', 'Third item.']),
+    derleme(['Birinci haber.', 'Bir kişi Ali Veli tutuklandı.', 'Üçüncü haber.'], ['First item.', 'A man was arrested John Smith.', 'Third item.']),
     grup,
   );
   assert.equal(r.yayin, true);
@@ -91,14 +91,14 @@ test('derlemeStandardi: kırmızı madde iki dilde de atlanır, yazı düşmez',
 
 test('derlemeStandardi: yalnız TR paragrafı kırmızıysa o madde iki dilde de düşer', () => {
   const grup = [olay('a'), olay('b'), olay('c')];
-  const r = derlemeStandardi(derleme(['Birinci haber.', 'Bir kişi tutuklandı.', 'Üçüncü haber.'], ['First item.', 'Second item.', 'Third item.']), grup);
+  const r = derlemeStandardi(derleme(['Birinci haber.', 'Bir kişi Ali Veli tutuklandı.', 'Üçüncü haber.'], ['First item.', 'Second item.', 'Third item.']), grup);
   assert.equal(r.yayin, true);
   assert.doesNotMatch(r.t.en.body, /Second item/);
 });
 
 test('derlemeStandardi: kalan haber DERLEME_EN_AZ altına düşerse yazı yayımlanmaz', () => {
   const grup = [olay('a'), olay('b')];
-  const r = derlemeStandardi(derleme(['Birinci haber.', 'Bir kişi tutuklandı.'], ['First item.', 'A man was arrested.']), grup);
+  const r = derlemeStandardi(derleme(['Birinci haber.', 'Bir kişi Ali Veli tutuklandı.'], ['First item.', 'A man was arrested John Smith.']), grup);
   assert.equal(r.yayin, false);
   assert.equal(r.s.karar, 'kirmizi');
 });
@@ -106,14 +106,14 @@ test('derlemeStandardi: kalan haber DERLEME_EN_AZ altına düşerse yazı yayım
 test('derlemeStandardi: kırmızı ortak alanda (başlık) ise yazı yayımlanmaz', () => {
   const grup = [olay('a'), olay('b'), olay('c')];
   const t = derleme(['Bir.', 'İki.', 'Üç.'], ['One.', 'Two.', 'Three.']);
-  t.tr.title = 'Şüpheli tutuklandı';
+  t.tr.title = 'Şüpheli Ali Veli tutuklandı';
   const r = derlemeStandardi(t, grup);
   assert.equal(r.yayin, false);
 });
 
 test('derlemeStandardi: paragraf sayısı haber sayısını tutmuyorsa kırmızı derleme yayımlanmaz', () => {
   const grup = [olay('a'), olay('b'), olay('c')];
-  const r = derlemeStandardi(derleme(['Bir kişi tutuklandı.'], ['One.', 'Two.', 'Three.']), grup);
+  const r = derlemeStandardi(derleme(['Bir kişi Ali Veli tutuklandı.'], ['One.', 'Two.', 'Three.']), grup);
   assert.equal(r.yayin, false);
 });
 
@@ -126,7 +126,7 @@ const havuzBagimlilik = (ek = {}) => {
     simdi: new Date('2026-10-16T16:00:00Z'),
     log: () => {},
     mukerrer: () => null,
-    yaz: async () => derleme(['Birinci haber.', 'Bir kişi tutuklandı.', 'Üçüncü haber.'], ['First item.', 'A man was arrested.', 'Third item.']),
+    yaz: async () => derleme(['Birinci haber.', 'Bir kişi Ali Veli tutuklandı.', 'Üçüncü haber.'], ['First item.', 'A man was arrested John Smith.', 'Third item.']),
     denetle: () => [],
     duzelt: async (t) => t,
     standart: derlemeStandardi,
@@ -161,7 +161,7 @@ test('havuzuIsle: süzgeç verilmemişse hiçbir derleme yayımlanmaz', async ()
 });
 
 test('havuzuIsle: kırmızı derleme tümüyle yayımlanmazsa her madde atla ile bildirilir', async () => {
-  const b = havuzBagimlilik({ yaz: async () => derleme(['Bir kişi tutuklandı.', 'İki.'], ['A man was arrested.', 'Two.']) });
+  const b = havuzBagimlilik({ yaz: async () => derleme(['Bir kişi Ali Veli tutuklandı.', 'İki.'], ['A man was arrested John Smith.', 'Two.']) });
   const r = await havuzuIsle([olay('a'), olay('b')], b);
   assert.deepEqual(r.yazilan, []);
   assert.deepEqual(b.atlanan.map((x) => x[0]).sort(), ['a', 'b']);
