@@ -1,5 +1,6 @@
 // jendume iki dilli teknik doğrulama ve kalite denetçisi.
 import { adresiSil, gizliMedyaAdlari } from './gizli.mjs';
+import { olcekKontrol } from './olcek.mjs';
 
 const RAKAM = /\d+(?:[.,]\d+)*/g;
 
@@ -62,7 +63,7 @@ export function rakamSeridiSuz(rakamlar, kaynak) {
     .slice(0, RAKAM_SERIDI_EN_COK);
 }
 
-/** Paketin iki dil bloğundaki şeritleri süzer; şeridi boş kalan dilde alan silinir. */
+/** Paketin iki dil bloğundaki şeritleri süzer; şeridi boş kalan dilde alan silinir. Ek alanlar da süzülür (ekAlanlariSuz). */
 export function rakamSeritleriniSuz(paket, kaynak) {
   const out = { ...paket };
   for (const dil of ['tr', 'en']) {
@@ -71,6 +72,33 @@ export function rakamSeritleriniSuz(paket, kaynak) {
     const iyi = rakamSeridiSuz(rakamlar, kaynak);
     out[dil] = iyi.length ? { ...blok, rakamlar: iyi } : blok;
   }
+  return ekAlanlariSuz(out, kaynak);
+}
+
+// Standartlar Faz 1: "Neden önemli" ve kısa maddeler de sayfada görünür. Kaynakta doğrulanamayan rakam ya da ölçek
+// hatası taşıyan madde yayımlanmadan düşer, haber durmaz (rakam şeridi düzeni). İki dil aynı kalsın diye bir dilde
+// düşen madde öbür dilde de düşer. Ölçüm (20 Ekim, son 100 haber): bu alanları düzeltme turuna sokup bekletmek
+// haberlerin %20'sine kadarını durdurabilirdi.
+const ekGecer = (s, kaynak) => typeof s === 'string' && !rakamKontrol(s, kaynak).length && !olcekKontrol(s, kaynak).length;
+export function ekAlanlariSuz(paket, kaynak) {
+  const diller = ['tr', 'en'].filter((d) => paket[d]);
+  const why = (d) => paket[d].why_matters ?? paket.why_matters;
+  const kp = (d) => (Array.isArray(paket[d].key_points ?? paket.key_points) ? (paket[d].key_points ?? paket.key_points) : null);
+  if (!diller.some((d) => why(d) || kp(d))) return paket;
+  const out = { ...paket };
+  delete out.why_matters;
+  delete out.key_points;
+  const whyIyi = diller.every((d) => !why(d) || ekGecer(why(d), kaynak));
+  const listeler = diller.map(kp);
+  const esit = listeler.every((l) => l && l.length === listeler[0].length);
+  const dusen = new Set();
+  diller.forEach((d, i) => listeler[i]?.forEach((p, j) => !ekGecer(p, kaynak) && dusen.add(esit ? j : `${d}${j}`)));
+  diller.forEach((d, i) => {
+    const blok = { ...paket[d] };
+    if (why(d)) blok.why_matters = whyIyi ? why(d) : '';
+    if (listeler[i]) blok.key_points = listeler[i].filter((_, j) => !dusen.has(esit ? j : `${d}${j}`));
+    out[d] = blok;
+  });
   return out;
 }
 
@@ -208,6 +236,7 @@ export function kesinKontroller(paket, kaynak) {
     const medyaMetni = [birlesik, ...ek].join('\n');
     sorunlar.push(
       ...rakamKontrol(birlesik, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
+      ...olcekKontrol(birlesik, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...medyaKontrol(medyaMetni).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...zamanKontrol(birlesik, dil).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...kopyaKontrol(blok.body, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`)

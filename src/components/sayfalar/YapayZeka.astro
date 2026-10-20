@@ -1,0 +1,241 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, yapayZekaYolu, yasalYolu } from '../../lib/yollar.mjs';
+
+// Yapay zekâ kullanım sayfası (Standartlar Faz 1); yollar: src/pages/tr/yapay-zeka-kullanimi.astro,
+// src/pages/en/ai-use.astro. Yasal Bilgilendirme 7. maddeyi ayrıntılandırır; ikisi çelişmemeli.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const baslik = ui.aiUse;
+const description =
+  lang === 'tr'
+    ? 'JEN DUME’da yapay zekâ hangi araçlarla, ne için kullanılır; ne için kullanılmaz; haberler nasıl denetlenir ve hata nasıl bildirilir.'
+    : 'Which AI tools JEN DUME uses and what for, what AI is never used for, how stories are checked and how to report an error.';
+const politika = duzeltmePolitikasiYolu(lang);
+const kayit = duzeltmelerYolu(lang);
+const yasal = `${yasalYolu(lang)}#${lang === 'tr' ? 'yapay-zeka' : 'ai'}`;
+const GUNCELLEME = lang === 'tr' ? '20 Ekim 2026' : '20 October 2026';
+---
+
+<Base
+  lang={lang}
+  title={baslik}
+  description={description}
+  canonicalPath={yapayZekaYolu(lang)}
+  langUrls={{ tr: yapayZekaYolu('tr'), en: yapayZekaYolu('en') }}
+  alternates={{ tr: yapayZekaYolu('tr'), en: yapayZekaYolu('en'), 'x-default': yapayZekaYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${yapayZekaYolu(lang)}#webpage`,
+      url: `${SITE.url}${yapayZekaYolu(lang)}`,
+      name: `${baslik} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">{baslik}</h1>
+            <p>Son güncelleme: {GUNCELLEME}</p>
+          </header>
+
+          <h2 id="kisaca">Kısaca</h2>
+          <p>
+            JEN DUME’daki haberler yapay zekâ ile otomatik olarak yazılır ve yayımlanmadan önce otomatik olarak
+            denetlenir. Haberleri yayımlanmadan önce bir insan okumaz. Otomatik denetim bir sorun bulur da sorun
+            giderilemezse ya da denetim sonuç veremezse haber yayımlanmaz. Bu sayfa,{' '}
+            <a href={yasal}>Yasal Bilgilendirme sayfasının 7. maddesini</a> ayrıntılandırır.
+          </p>
+
+          <h2 id="araclar">Hangi araç, ne için kullanılır</h2>
+          <table>
+            <thead>
+              <tr><th scope="col">Araç</th><th scope="col">Kullanıldığı iş</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Google Gemini ve Gemma dil modelleri (Google)</th>
+                <td>
+                  Haber adaylarının önem puanlaması; haberlerin Türkçe ve İngilizce sürümlerinin kaynak metinden
+                  yazılması; yazının kaynakla karşılaştırıldığı yapay zekâ denetimi; dil düzeltmesi; günlük bültenler,
+                  sözlük ve konu sayfalarının giriş metinleri.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Claude (Anthropic)</th>
+                <td>Yayıncının imzasıyla yayımlanan yazılarda çeviri ve dil düzeltmesi.</td>
+              </tr>
+              <tr>
+                <th scope="row">Yapay zekâ kullanmayan denetim programları</th>
+                <td>
+                  Rakam ve tutarların kaynak metinle karşılaştırılması; hassas konuların ve yayın kuruluşu
+                  adlarının ayıklanması.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Yapay zekâ hizmetlerine yalnız herkese açık kaynak metinler gönderilir. Okurlara ait kişisel veri ya da
+            yayımlanmamış gizli bilgi gönderilmez.
+          </p>
+
+          <h2 id="haberler">Haberler nasıl yazılır ve denetlenir</h2>
+          <ol>
+            <li>
+              Kaynaklar düzenli olarak taranır. Önemli bulunan gelişme için yalnız kaynakta yazan bilgilere dayanan bir
+              haber, Türkçe ve İngilizce olarak birlikte yazılır.
+            </li>
+            <li>
+              Haberdeki rakamlar, yapay zekâ kullanmayan bir programla kaynak metinde aranır. Tutarlarda birim çevirisi
+              de denetlenir: kaynaktaki tutardan 10 kat ya da daha fazla sapan tutar (örneğin milyon ile milyarın
+              karıştırılması) sorun sayılır. Rakam şeridindeki, “Neden Önemli?” ve “3 Maddede Özet” bölümlerindeki bir
+              öğe kaynakta doğrulanamazsa o öğe yayımlanmaz.
+            </li>
+            <li>Sorun bulunursa yazı düzelttirilir ve yeniden denetlenir. Sorun giderilemezse haber yayımlanmaz.</li>
+            <li>
+              Hassas konular otomatik olarak yayımlanmaz. Emin olunamayan haber de yayımlanmaz. Gerektiğinde bütün
+              otomatik yayını durduran bir acil durdurma anahtarı vardır.
+            </li>
+          </ol>
+
+          <h2 id="insan">İnsan incelemesi</h2>
+          <p>
+            Haberler yayımlanmadan önce tek tek insan incelemesinden geçmez: otomatik yazılır, otomatik denetlenir.
+            Hangi konuların otomatik yayımlanabileceğini ve denetimin ölçütlerini yayıncı belirler. Otomatik denetim her
+            hatayı yakalayamaz; bu nedenle içeriklerde hata bulunabilir.
+          </p>
+
+          <h2 id="yapilmayanlar">Yapay zekâ ne için kullanılmaz</h2>
+          <ul>
+            <li>Gerçek bir kişi, olay ya da belge izlenimi veren görsel, ses ya da alıntı üretilmez.</li>
+            <li>Yapay zekâ bilgi kaynağı sayılmaz: haberler yalnız kaynak metinde yazan bilgilere dayanır.</li>
+            <li>Kaynakta bulunmayan rakam yayımlanmaz.</li>
+            <li>Yatırım tavsiyesi verilmez.</li>
+          </ul>
+
+          <h2 id="etiket">Okur bunu nereden anlar</h2>
+          <p>
+            Yapay zekâ ile yazılan her haberin altında bunu belirten bir not bulunur. Yayıncının imzasıyla yayımlanan
+            yazılarda yapay zekânın hangi aşamada kullanıldığı yazının notunda ayrıca belirtilir.
+          </p>
+
+          <h2 id="hata">Hata bildirimi ve düzeltmeler</h2>
+          <p>
+            Bir hata gördüyseniz her haberin altındaki “Hata bildir” bağlantısını kullanabilir ya da{' '}
+            <a href="mailto:contact@jendume.com">contact@jendume.com</a> adresine yazabilirsiniz. Hatalar{' '}
+            <a href={politika}>Düzeltme Politikası</a>’na göre düzeltilir ve her düzeltme tarihiyle{' '}
+            <a href={kayit}>Düzeltmeler</a> sayfasında listelenir. Bir haberin Türkçe ve İngilizce sürümleri arasındaki
+            anlam farkı da hata sayılır.
+          </p>
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">{baslik}</h1>
+            <p>Last updated: {GUNCELLEME}</p>
+          </header>
+
+          <h2 id="summary">In short</h2>
+          <p>
+            Stories on JEN DUME are written automatically by artificial intelligence and checked automatically before
+            publication. No person reads a story before it is published. If the automated checks find a problem that
+            cannot be fixed, or cannot reach a clear result, the story is not published. This page sets out section 7 of
+            our <a href={yasal}>Legal Notice</a> in more detail.
+          </p>
+
+          <h2 id="tools">Which tools we use, and what for</h2>
+          <table>
+            <thead>
+              <tr><th scope="col">Tool</th><th scope="col">What it is used for</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Google Gemini and Gemma language models (Google)</th>
+                <td>
+                  Scoring candidate stories for importance; writing the Turkish and English versions of each story from
+                  the source text; an AI check that compares the draft with the source; language editing; daily
+                  bulletins and the introductions to glossary and topic pages.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Claude (Anthropic)</th>
+                <td>Translation and language editing of pieces published under the publisher's byline.</td>
+              </tr>
+              <tr>
+                <th scope="row">Checking programs that do not use AI</th>
+                <td>
+                  Comparing figures and amounts with the source text; screening out sensitive subjects and
+                  the names of news outlets.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Only publicly available source texts are sent to AI services. No personal data about readers and no
+            unpublished confidential material is sent.
+          </p>
+
+          <h2 id="process">How stories are written and checked</h2>
+          <ol>
+            <li>
+              Sources are scanned regularly. For a development judged important, a story based only on what the source
+              says is written in Turkish and English together.
+            </li>
+            <li>
+              Every figure in the story is looked up in the source text by a program that does not use AI. Amounts are
+              also checked for unit errors: an amount that is 10 times or more away from the amount in the source (for
+              example, millions confused with billions) counts as a problem. An item in the figures strip, “Why It
+              Matters” or “Key Takeaways” that cannot be verified in the source is not published.
+            </li>
+            <li>If a problem is found, the draft is revised and checked again. If the problem cannot be fixed, the story is not published.</li>
+            <li>
+              Sensitive subjects are not published automatically. A story we cannot be sure of is not published either.
+              An emergency stop can halt all automated publishing when needed.
+            </li>
+          </ol>
+
+          <h2 id="human-review">Human review</h2>
+          <p>
+            Stories are not reviewed one by one by a person before publication: they are written automatically and
+            checked automatically. The publisher decides which subjects may be published automatically and sets the
+            criteria for the checks. Automated checks cannot catch every error, so the content may contain mistakes.
+          </p>
+
+          <h2 id="not-used-for">What we never use AI for</h2>
+          <ul>
+            <li>We do not generate images, audio or quotations that give the impression of a real person, event or document.</li>
+            <li>AI is never treated as a source: stories rely only on what the source text says.</li>
+            <li>Figures that are not in the source are not published.</li>
+            <li>We do not give investment advice.</li>
+          </ul>
+
+          <h2 id="labelling">How readers can tell</h2>
+          <p>
+            Every story written with AI carries a note saying so underneath. For pieces published under the publisher's
+            byline, the note states at which stage AI was used.
+          </p>
+
+          <h2 id="errors">Reporting errors and corrections</h2>
+          <p>
+            If you spot an error, use the “Report an error” link under each story or write to{' '}
+            <a href="mailto:contact@jendume.com">contact@jendume.com</a>. Errors are corrected under our{' '}
+            <a href={politika}>Corrections Policy</a>, and every correction is listed with its date on the{' '}
+            <a href={kayit}>Corrections</a> page. A difference in meaning between the Turkish and English versions of a
+            story also counts as an error.
+          </p>
+        </div>
+      )
+    }
+  </article>
+</Base>

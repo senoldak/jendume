@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri', yasal: 'yasal', duzeltmePolitikasi: 'duzeltme-politikasi', duzeltmeler: 'duzeltmeler' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards', yasal: 'legal', duzeltmePolitikasi: 'corrections-policy', duzeltmeler: 'corrections' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri', yasal: 'yasal', duzeltmePolitikasi: 'duzeltme-politikasi', duzeltmeler: 'duzeltmeler', yapayZeka: 'yapay-zeka-kullanimi' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards', yasal: 'legal', duzeltmePolitikasi: 'corrections-policy', duzeltmeler: 'corrections', yapayZeka: 'ai-use' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */
@@ -96,3 +96,5 @@ export const yasalYolu = (dil) => `/${dil}/${YOL[dil].yasal}/`;
 export const duzeltmePolitikasiYolu = (dil) => `/${dil}/${YOL[dil].duzeltmePolitikasi}/`;
 /** Düzeltmeler (kayıt sayfası): /tr/duzeltmeler/, /en/corrections/ @param {Dil} dil */
 export const duzeltmelerYolu = (dil) => `/${dil}/${YOL[dil].duzeltmeler}/`;
+/** Yapay Zekâ Kullanımı: /tr/yapay-zeka-kullanimi/, /en/ai-use/ @param {Dil} dil */
+export const yapayZekaYolu = (dil) => `/${dil}/${YOL[dil].yapayZeka}/`;

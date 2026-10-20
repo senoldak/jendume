@@ -217,6 +217,7 @@ export const SITE = {
       legal: 'Yasal Bilgilendirme ve Künye',
       legalShort: 'Yasal',
       correctionsPolicy: 'Düzeltme Politikası',
+      aiUse: 'Yapay Zekâ Kullanımı',
       corrections: 'Düzeltmeler',
     },
     en: {
@@ -278,6 +279,7 @@ export const SITE = {
       legal: 'Legal Notice and Imprint',
       legalShort: 'Legal',
       correctionsPolicy: 'Corrections Policy',
+      aiUse: 'Use of AI',
       corrections: 'Corrections',
     },
   } satisfies Record<Locale, Record<string, string>>,

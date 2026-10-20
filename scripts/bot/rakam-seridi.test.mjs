@@ -59,3 +59,23 @@ test('ucDilliHaberYaz: rakam şeridi frontmatter\'a yazılır', async () => {
     await rm(dir, { recursive: true, force: true });
   }
 });
+
+// Standartlar Faz 1: ek alanlar (neden önemli, kısa maddeler) kaynakta doğrulanmalı; doğrulanamayan madde iki dilde birden düşer.
+test('ekAlanlariSuz: doğrulanamayan ya da ölçeği kaymış madde iki dilde de düşer, haber durmaz', async () => {
+  const { ekAlanlariSuz, kesinKontroller } = await import('./denetci.mjs');
+  const kaynak = 'The Rs 852 crore round. The model scored 87 points and costs 349 dollars.';
+  const paket = {
+    tr: { title: 'a', description: 'b', body: 'c', why_matters: 'Model 87 puan aldı.', key_points: ['Fiyat 349 dolar', 'Tur 852 milyar rupi', 'Model 95 puan aldı'] },
+    en: { title: 'a', description: 'b', body: 'c', why_matters: 'The model scored 87 points.', key_points: ['Priced at 349 dollars', 'Round of 852 crore rupees', 'Model scored 95 points'] },
+  };
+  const r = ekAlanlariSuz(paket, kaynak);
+  assert.deepEqual(r.tr.key_points, ['Fiyat 349 dolar']);
+  assert.deepEqual(r.en.key_points, ['Priced at 349 dollars']);
+  assert.equal(r.tr.why_matters, 'Model 87 puan aldı.');
+  const kotu = ekAlanlariSuz({ ...paket, en: { ...paket.en, why_matters: 'It scored 99 points.' } }, kaynak);
+  assert.equal(kotu.tr.why_matters, '');
+  assert.equal(kotu.en.why_matters, '');
+  // Gövdede ölçek hatası düzeltme turuna girer.
+  const govde = { tr: { title: 'Tur', description: 'Tur 852 milyar rupi.', body: 'Model 87 puan aldı.' }, en: { title: 'Round', description: 'Round of 852 crore rupees.', body: 'It scored 87 points.' } };
+  assert.ok(kesinKontroller(govde, kaynak).some((s) => s.startsWith('[TR] Ölçek hatası')));
+});
