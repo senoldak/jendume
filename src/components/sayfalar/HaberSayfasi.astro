@@ -9,8 +9,9 @@ import RakamSeridi from '../../components/RakamSeridi.astro';
 import Arrow from '../../components/Arrow.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import ShareLinks from '../../components/ShareLinks.astro';
+import YapayZekaNotu from '../../components/YapayZekaNotu.astro';
 import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
-import { BULLETIN_CATEGORY, SITE, editorialUrl, getCategory, otherLocale, type Locale } from '../../lib/site';
+import { SITE, getCategory, otherLocale, type Locale } from '../../lib/site';
 import { abs, articleCrumbs, articleGraph } from '../../lib/seo';
 import { ilgiliHaberler } from '../../lib/ilgili';
 import { haberKonulari, konuBul } from '../../lib/konular';
@@ -38,7 +39,6 @@ const { Content } = await render(post);
 
 const other = otherLocale(lang);
 const ui = SITE.ui[lang];
-const editorialHref = editorialUrl(lang);
 const duzeltme = duzeltmeNotu(post.data, lang);
 const translations = await getAvailableTranslations(id);
 
@@ -51,7 +51,6 @@ const langUrls: Partial<Record<Locale, string>> = {
 const indexable = dizinlenir(post.body);
 const otherPost = translations[other] ? (await getPublishedPosts(other)).find((p) => p.id === id) : undefined;
 const otherIndexable = Boolean(otherPost && dizinlenir(otherPost.body));
-const isBulletin = post.data.category === BULLETIN_CATEGORY;
 
 // hreflang yalnız gerçekten var olan ve dizine giren çeviriler arasında; x-default İngilizce sürüm.
 const alternates: Partial<Record<Locale | 'x-default', string>> = {};
@@ -138,6 +137,8 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       <Content />
     </div>
 
+    <YapayZekaNotu lang={lang} veri={post.data} baslik={post.data.title} adres={abs(getPostUrl(lang, id))} />
+
     <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />
 
     {
@@ -154,12 +155,6 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
         </nav>
       )
     }
-
-    <p class="production-note">
-      <span class="production-note-label">{ui.productionLabel}</span>
-      {isBulletin ? ui.productionBulletin : ui.productionStory}{' '}
-      <a href={editorialHref}>{ui.productionLink}</a>
-    </p>
   </article>
 
   {

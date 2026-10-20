@@ -957,6 +957,26 @@ a.board-latest:hover {
   text-decoration-color: var(--sign);
 }
 
+/* Yapay zekâ notu (Standartlar Faz 0): gövdenin hemen altında tek sakin satır; kutu ve ikon yok. */
+.ai-note {
+  max-width: var(--measure);
+  margin-top: clamp(24px, 3vw, 32px);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.ai-note a {
+  color: var(--ink-2);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--signal-deep);
+  white-space: nowrap;
+}
+.ai-note a:hover {
+  background: var(--signal);
+  text-decoration-color: var(--sign);
+}
+
 .prose hr {
   border: 0;
   height: var(--rule);

@@ -187,11 +187,6 @@ export const SITE = {
       notFound: 'Bu kapı yok',
       notFoundText: 'Aradığınız sayfa taşınmış ya da kaldırılmış olabilir. Aşağıdaki levhalardan yolunuzu bulabilirsiniz.',
       productionLabel: 'Nasıl üretildi?',
-      productionStory:
-        'Bu haber, izlediğimiz yapay zekâ laboratuvarları, araştırma kurumları, resmî kurumlar ve teknoloji yayınlarının kaynak metinlerinden yapay zekâ yardımıyla otomatik olarak yazıldı. Rakamlar, adlar ve göreli zaman ifadeleri yayından önce otomatik olarak denetlendi; yayın öncesinde insan editör okuması yapılmadı.',
-      productionBulletin:
-        'Bu bülten, son bültenden bu yana yayımlanan haberlerden otomatik olarak derlendi.',
-      productionLink: 'Yöntem ve düzeltme talepleri: Yayın İlkeleri',
       breadcrumb: 'Konum',
       page: 'Sayfa',
       pagination: 'Sayfalar',
@@ -249,11 +244,6 @@ export const SITE = {
       notFound: 'This gate does not exist',
       notFoundText: 'The page you are looking for may have moved or been removed. The signs below will help you find your way.',
       productionLabel: 'How this was made',
-      productionStory:
-        'This story was written automatically with AI assistance from the source texts of AI labs, research institutions, official bodies and technology publications we monitor. Numbers, names and relative time references were checked automatically before publication; no human editor reviewed it before it went live.',
-      productionBulletin:
-        'This bulletin was compiled automatically from the stories published since the previous bulletin.',
-      productionLink: 'Methods and corrections: Editorial Standards',
       breadcrumb: 'Breadcrumb',
       page: 'Page',
       pagination: 'Pages',
