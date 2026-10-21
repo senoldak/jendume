@@ -284,3 +284,24 @@ test('dilimGruplari: aynı günün dilimleri gün içi sırayla gelir (öğle ka
   ]);
   assert.deepEqual(gruplar.map((g) => g.map((x) => x.id).sort()), [['o1', 'o2'], ['k1', 'k2']]);
 });
+
+test('havuzuIsle: yumuşak sorun (uzun başlık) düzeltmeye girer ama derlemeyi düşürmez', async () => {
+  const istenen = [];
+  const b = bagimlilik({
+    simdi: new Date('2026-10-16T16:00:00Z'),
+    yumusak: (t) => (t.tr.title.length > 10 ? ['uzun başlık'] : []),
+    yaz: async (grup) => ({ category: grup[0].kategori, tr: { title: 'Çok uzun bir derleme başlığı' }, en: { title: 'Roundup' } }),
+    duzelt: async (t, k, sorunlar) => (istenen.push(sorunlar), t), // kısaltamıyor
+  });
+  const r = await havuzuIsle([olay('a', 'bilim', saatOnce(2)), olay('b', 'ekonomi', saatOnce(1.5))], b);
+  assert.deepEqual(r.yazilan, ['derleme-1']);
+  assert.ok(istenen.length > 0 && istenen.every((s) => s.includes('uzun başlık')));
+});
+
+test('baslikUzunlukKontrol: sınırı aşan dil yakalanır', async () => {
+  const { baslikUzunlukKontrol } = await import('./denetci.mjs');
+  const uzun = 'ABD ve Çin yapay zekâ kısıtlamaları, hastane entegrasyonu ve NVIDIA GTC Berlin donanımları';
+  const s = baslikUzunlukKontrol({ tr: { title: uzun }, en: { title: 'OpenAI, IBM and Google announce updates' } });
+  assert.equal(s.length, 1);
+  assert.match(s[0], /^\[TR\] Başlık 90 karakter/);
+});

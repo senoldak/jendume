@@ -306,6 +306,17 @@ export function baslikKontrol(paket) {
   return sorunlar;
 }
 
+// Derleme başlığı: istem 70 karakter ister, sonuna ~22 karakterlik dilim eki gelir. Sınırı aşan başlık düzeltmeye girer.
+export const DERLEME_BASLIK_SINIRI = 75;
+export function baslikUzunlukKontrol(paket, enFazla = DERLEME_BASLIK_SINIRI) {
+  const sorunlar = [];
+  for (const dil of ['tr', 'en']) {
+    const uzunluk = [...String(paket?.[dil]?.title ?? '').trim()].length;
+    if (uzunluk > enFazla) sorunlar.push(`[${dil.toUpperCase()}] Başlık ${uzunluk} karakter; en fazla ${enFazla - 5} karaktere kısalt, öne çıkan bir iki konuyu söyle`);
+  }
+  return sorunlar;
+}
+
 // --- Yerel düzeltme: göreli zaman ve kaynak-atıf kalıplarını Gemini'ye gitmeden temizler ---
 const ALINTI = /[“"][^”"]*[”"]/g;
 function tekParca(parca, dil) {

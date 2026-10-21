@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz, derlemeUzat } from './yazar.mjs';
 import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
-import { baslikKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
+import { baslikKontrol, baslikUzunlukKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, jsonOku, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { butceYukle, geminiPayiBitti } from './butce.mjs';
@@ -386,6 +386,8 @@ try {
     uzat: async (x, grup, kaynak, enAz) => yerelDuzelt({ ...(await derlemeUzat(x, grup, kaynak, enAz)), category: x.category }),
     // Derlemenin uzunluk alt sınırı haber sayısına göre (havuz.mjs → derlemeEnAz).
     denetle: (x, kaynak, n) => [...kesinKontroller(x, kaynak), ...uzunlukKontrol(x, derlemeEnAz(n), derlemeAraligi(n)), ...baslikKontrol(x)],
+    // Uzun başlık düzeltmeye girer ama derlemeyi düşürmez.
+    yumusak: (x) => baslikUzunlukKontrol(x),
     duzelt: async (x, kaynak, sorunlar) => {
       const d = await duzelt(x, kaynak, sorunlar, duzeltmeAyrintisi(x, kaynak));
       return d && yerelDuzelt({ ...d, category: x.category });

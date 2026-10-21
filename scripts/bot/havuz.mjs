@@ -141,12 +141,13 @@ export const derlemeKaynagi = (grup) =>
  *   mukerrer(o) → gerekçe | null   (olay bu arada tam haber olarak yazıldı mı)
  *   yaz(grup, kaynak) → taslak | null;  denetle(taslak, kaynak, n) → sorun listesi;  duzelt(taslak, kaynak, sorunlar) → taslak | null
  *   uzat(taslak, grup, kaynak, enAz) → taslak (kısa derlemeyi kendi kaynaklarından genişletir)
+ *   yumusak(taslak) → sorun listesi: düzeltmeye girer ama yayını durdurmaz (ör. uzun başlık)
  *   standart(taslak, grup) → { yayin, t, grup, s, atlanan: [{ o, s }] } (kapi.mjs → derlemeStandardi; ZORUNLU: yoksa hiçbir
  *     derleme yayımlanmaz); kırmızı çıkan madde atlanır (atla(o, s) çağrılır), yazı yayımlanamıyorsa yayin=false
  *   kaydet(taslak, grup, kaynak, s) → slug;  surVar() → boolean (zaman ve Gemini bütçesi)
  * Döner: { havuz: kalan olaylar, yazilan: slug listesi, ayarHatasi?: Error } — anahtar/kota hatasında tur durur.
  */
-export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, uzat = async (t) => t, standart, atla = async () => {}, kaydet, surVar = () => true, log = console.log }) {
+export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt, uzat = async (t) => t, yumusak = () => [], standart, atla = async () => {}, kaydet, surVar = () => true, log = console.log }) {
   const simdikiDilim = bultenDilimi(simdi).anahtar;
   let kalan = [];
   for (const o of [...havuz].sort((a, b) => Date.parse(b.havuzaGirdi) - Date.parse(a.havuzaGirdi))) {
@@ -185,10 +186,11 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
         t = await uzat(t, grup, kaynak, enAz);
       }
       let sorunlar = denetle(t, kaynak, n);
+      let hafif = yumusak(t);
       let yenidenUzatildi = uzatmaOncesi !== null;
-      for (let tur = 1; tur <= DUZELTME_TURU && sorunlar.length; tur++) {
-        log(`  derleme düzeltme turu ${tur}: ${sorunlar.join(' | ')}`);
-        const d = await duzelt(t, kaynak, sorunlar);
+      for (let tur = 1; tur <= DUZELTME_TURU && (sorunlar.length || hafif.length); tur++) {
+        log(`  derleme düzeltme turu ${tur}: ${[...sorunlar, ...hafif].join(' | ')}`);
+        const d = await duzelt(t, kaynak, [...sorunlar, ...hafif]);
         if (!d) break;
         t = d;
         // Düzeltme sorunlu cümleleri silerek derlemeyi alt sınırın altına indirebilir: bir kez daha genişletilir.
@@ -198,7 +200,9 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
           t = await uzat(t, grup, kaynak, enAz);
         }
         sorunlar = denetle(t, kaynak, n);
+        hafif = yumusak(t);
       }
+      if (hafif.length) log(`  derleme yumuşak sorunla sürüyor: ${hafif.join(' | ')}`);
       if (sorunlar.length) {
         const ek = uzatmaOncesi === null ? '' : ` (uzatmadan önce ${uzatmaOncesi})`;
         log(`havuz: derleme (${n} haber) YAYIMLANMADI: ${sorunlar.join(' | ')}${ek}`);
