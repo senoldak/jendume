@@ -60,7 +60,9 @@ jobs:
         run: npx --yes wrangler@4.34.0 deploy
 
       - name: Kapak önbelleği sayısı
-        run: echo "kapak önbelleği: $(ls .kapak-onbellek 2>/dev/null | wc -l) PNG" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          n=$(ls .kapak-onbellek 2>/dev/null | wc -l)
+          echo "kapak önbelleği: $n PNG" >> "$GITHUB_STEP_SUMMARY"
 
       # Cloudflare ücretsiz planında bir sürüm en fazla 20.000 dosya olabilir; sınıra yaklaşınca uyarır.
       - name: Dosya sayısı
