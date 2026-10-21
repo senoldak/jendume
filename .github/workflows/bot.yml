@@ -58,10 +58,13 @@ jobs:
           if [ -z "$KAYNAK_ANAHTARI" ]; then echo "::error::KAYNAK_ANAHTARI secret'ı yok; haber kaynakları okunamaz."; exit 1; fi
           node scripts/bot/calistir.mjs
 
+      # Bot adımı hatayla bitse de (motor modu) yazılan haberler ve gorulen.json commit edilir: defter ile repo ayrışmasın.
+      # Bot adımı zaten kırmızı olduğundan iş kırmızı kalır; hiçbir şey yazılmadıysa "Değişiklik yok." ile temiz çıkar.
       - name: Commit
         id: commit
+        if: ${{ !cancelled() }}
         env:
-          SAYI: ${{ steps.bot.outputs.sayi }}
+          SAYI: ${{ steps.bot.outputs.sayi || '0' }}
         run: |
           git config user.name "jendume-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
