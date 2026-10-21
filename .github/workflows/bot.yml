@@ -1,5 +1,5 @@
 # Yapay zekâ haber ve araştırma kaynaklarını okur, iki dilde (TR, EN) yeniden yazar ve repoya ekler.
-# Zamanlama Cloudflare'deki "mecmua-saat" Worker'ındadır (Oslo saatiyle çift saatlerde :50 geçe).
+# Zamanlama Cloudflare'deki "mecmua-saat" Worker'ındadır (İstanbul saatiyle çift saatlerde :50).
 name: Haber botu
 
 on:
@@ -28,6 +28,16 @@ jobs:
         with:
           node-version-file: .node-version
 
+      - name: Motoru getir
+        if: ${{ vars.MOTOR_TUR == '1' }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: senoldak/mecmua
+          ssh-key: '${{ secrets.MECMUA_OKUMA }}'
+          path: .mecmua
+          sparse-checkout: motor
+          persist-credentials: false
+
       - name: Haberleri yaz (TR / EN)
         id: bot
         env:
@@ -41,6 +51,9 @@ jobs:
           # Gölge denetim (20 Ekim): turda en çok bu kadar denetim kararı Gemma'ya da sorulur, yalnız loga yazılır (golge.mjs).
           GEMINI_GOLGE: ${{ vars.GEMINI_GOLGE }}
           EN_FAZLA: ${{ vars.EN_FAZLA }}
+          # Ortak motor modu (private mecmua'dan salt-okur çekilir): vars.MOTOR_TUR=1 iken tur motorla sürülür.
+          MOTOR_TUR: ${{ vars.MOTOR_TUR }}
+          MOTOR_DIZIN: ${{ github.workspace }}/.mecmua/motor
         run: |
           if [ -z "$KAYNAK_ANAHTARI" ]; then echo "::error::KAYNAK_ANAHTARI secret'ı yok; haber kaynakları okunamaz."; exit 1; fi
           node scripts/bot/calistir.mjs

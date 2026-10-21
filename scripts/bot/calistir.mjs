@@ -7,11 +7,12 @@ import { fileURLToPath } from 'node:url';
 import { gunlukSatiri } from './denetci.mjs';
 import { BELLEK_SAAT } from './mukerrer.mjs';
 import { jsonOku } from './lib.mjs';
-import { butceYukle } from './butce.mjs';
-import { anahtarVar, yayinlananAc, yayinlananKapat } from './gizli.mjs';
+import { butceYukle, geminiPayiBitti } from './butce.mjs';
+import { adresiSil, anahtarVar, yayinlananAc, yayinlananKapat } from './gizli.mjs';
 import { havuzAc, havuzKapat } from './havuz.mjs';
 import { acilDurdurma } from './kapi.mjs';
 import { gorulmeyen, uyarlayiciKur, yerelTur } from './uyarlayici.mjs';
+import { turSec } from './motor-modu.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -80,8 +81,24 @@ if (!process.env.GEMINI_API_KEY) {
   process.exit(0);
 }
 
-// Şimdilik her zaman yerel tur (motor yok); motor modu sonraki adımda eklenir.
-await yerelTur(uyarlayici, durum);
+// MOTOR_TUR=1: tur ortak motorla (MOTOR_DIZIN), aksi hâlde yerel tur. Motor modunda hata yerel tura düşmez; hatada da durum
+// aşağıda yazılır (yerel durum kaybolmasın) ve süreç sonunda hata koduyla çıkar.
+let turHatasi = null;
+try {
+  await turSec({
+    env: process.env,
+    uyarlayici,
+    durum,
+    simdi,
+    rot: ROT,
+    yerel: yerelTur,
+    // Motor surVar'ı varsayılan olarak hep true sayar; süre ve Gemini payı sınırı burada verilir.
+    surVar: () => Date.now() - BASLANGIC <= SURE_MS && !geminiPayiBitti(),
+  });
+} catch (e) {
+  turHatasi = e;
+  console.error(`Tur hatayla bitti: ${adresiSil(e?.message ?? e)}`);
+}
 const { ozet } = uyarlayici;
 
 // Yayın belleği 72 saat, puanlar yalnızca aday yaşı boyunca gerekir.
@@ -103,3 +120,5 @@ if (process.env.GITHUB_STEP_SUMMARY) {
     gunlukSatiri(`## jendume botu\n${liste('Yayımlandı (TR/EN)', ozet.yazilan)}${liste('Denetimden geçemedi', ozet.elenen)}${liste('Atlandı', ozet.atlanan)}${liste('Hata', ozet.hata)}`)
   );
 }
+
+if (turHatasi) process.exitCode = 1;
