@@ -1,6 +1,8 @@
 import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import { adayYuku, adayiKur, gorulmeyen, uyarlayiciKur, yerelTur } from './uyarlayici.mjs';
+import { anahtarlar, tamMetin } from './kaynaklar.mjs';
+import { ozelAdlar } from './esleme.mjs';
 import { havuzOlayi } from './havuz.mjs';
 import { motorKimlik } from './motor.mjs';
 import { medyaAdlariniKur } from './denetci.mjs';
@@ -91,13 +93,14 @@ function kur({ durum = bosDurum(), bag = {}, ayar = {} } = {}) {
 const sonucu = (sonuclar, o) => sonuclar.find((s) => s.kimlik === motorKimlik(o.id));
 
 test('adayYuku/adayiKur gidiş dönüş aynı öğeyi verir; yükte kaynak adresi yok', () => {
-  const o = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const o = { ...oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti'), icerik: 'kisa akis icerigi' };
   const yuk = adayYuku(o);
   assert.equal(yuk.kaynak, 'kodbir');
   const geri = adayiKur(yuk, KAYNAKLAR);
-  for (const alan of ['id', 'guid', 'link', 'title', 'description', 'pubDate', 'baslik', 'anahtar', 'adlar']) {
-    assert.deepEqual(geri[alan], alan === 'baslik' ? o.title : alan === 'anahtar' || alan === 'adlar' ? geri[alan] : o[alan], alan);
-  }
+  for (const alan of ['id', 'guid', 'link', 'title', 'description', 'icerik', 'pubDate']) assert.deepEqual(geri[alan], o[alan], alan);
+  assert.equal(geri.baslik, o.title);
+  assert.deepEqual(geri.anahtar, anahtarlar(o.title));
+  assert.deepEqual(geri.adlar, ozelAdlar(o.title));
   assert.equal(geri.kaynak, K1);
   assert.equal(geri.tarih.valueOf(), new Date(o.pubDate).valueOf());
   // Kaynağın düz adı ve akış adresi yükte yok; yalnız öğenin kendi bağlantısı (example.com) var.
@@ -271,4 +274,25 @@ test('isle: havuzdan derleme yazılınca her olayın üyeleri yazildi, yazi yaln
   assert.ok(sonuclar.every((s) => s.durum === 'yazildi' && s.slug === 'haber-1'));
   assert.deepEqual(sonuclar.filter((s) => s.yazi).length, 1);
   assert.ok(durum.gorulen['bir:e1'] && durum.gorulen['iki:e1b'] && durum.gorulen['bir:e2']);
+});
+
+test('adayYuku: çok uzun description/icerik/başlık olsa da yük JSON baytı 11000 baytın altında', () => {
+  const uzun = 'Ğüşiöçİ '.repeat(5000);
+  const o = { ...oge(K1, 'a1', uzun), description: uzun, icerik: uzun };
+  const yuk = adayYuku(o);
+  assert.ok(Buffer.byteLength(JSON.stringify(yuk)) < 11000, String(Buffer.byteLength(JSON.stringify(yuk))));
+  assert.ok(yuk.icerik.length > 1000 && yuk.icerik.length <= 6000);
+  assert.equal(adayiKur(yuk, KAYNAKLAR).icerik, yuk.icerik);
+});
+
+test("isle: eski aday akış içeriğini taşır; sayfa okunamasa da 'kaynak metni çok kısa' ile elenmez, yazılır", async () => {
+  const kaynakMetin = uydur(220, 9, ['pek', 'lum', 'zan', 'rok', 'tis', 'yem', 'cuz', 'oluf', 'nab', 'esk']);
+  assert.ok(kaynakMetin.length >= 1200);
+  const o = { ...oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti'), icerik: kaynakMetin };
+  const eski = aday(o, { eski: true }); // yük depodan gelir: yalnız JSON
+  eski.yuk = JSON.parse(JSON.stringify(eski.yuk));
+  const { u, yazilan } = kur({ bag: { tamMetin, hentTekst: async () => { throw new Error('ag yok'); } } });
+  const sonuclar = await u.isle([eski]);
+  assert.equal(yazilan.length, 1);
+  assert.equal(sonucu(sonuclar, o).durum, 'yazildi');
 });

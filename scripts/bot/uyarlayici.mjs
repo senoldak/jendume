@@ -23,18 +23,27 @@ const EN_FAZLA_HATA = 3;
 const EN_AZ_KAYNAK = 1200;
 const GUN_MS = 86_400_000;
 
-/** Aday öğenin motora giden yükü: düz kaynak adı/adresi yok, kaynak yalnız etiketiyle anılır. */
+// Motor yükü şifreli 16 KB'a sığmalı: uzun alanlar hem karakter hem UTF-8 bayt sınırıyla kırpılır (yük JSON'u ~11 KB altında).
+const kes = (m, enCok, enCokBayt) => {
+  let t = String(m ?? '').slice(0, enCok);
+  while (Buffer.byteLength(t) > enCokBayt) t = t.slice(0, Math.floor(t.length * 0.9));
+  return t;
+};
+export const ICERIK_ENCOK = 6000;
+
+/** Aday öğenin motora giden yükü: düz kaynak adı/adresi yok, kaynak yalnız etiketiyle anılır. Akış içeriği (icerik) kırpılarak taşınır. */
 export const adayYuku = (o) => ({
   id: o.id,
   guid: o.guid,
   link: o.link,
-  title: o.title,
-  description: o.description,
+  title: kes(o.title, 300, 600),
+  description: kes(o.description, 1500, 2000),
+  icerik: kes(o.icerik, ICERIK_ENCOK, 7000),
   pubDate: o.pubDate,
   kaynak: o.kaynak.etiket,
 });
 
-/** Yükten aday öğeyi yeniden kurar; etiket kaynak listesinde yoksa null. (Akış içeriği yükte taşınmaz: icerik yok.) */
+/** Yükten aday öğeyi yeniden kurar; etiket kaynak listesinde yoksa null. */
 export function adayiKur(yuk, kaynaklar = KAYNAKLAR) {
   const k = kaynaklar.find((x) => x.etiket === yuk.kaynak);
   if (!k) return null;
@@ -44,6 +53,7 @@ export function adayiKur(yuk, kaynaklar = KAYNAKLAR) {
     title: yuk.title,
     link: yuk.link,
     description: yuk.description,
+    icerik: yuk.icerik ?? '',
     pubDate: yuk.pubDate,
     id: yuk.id,
     tarih: new Date(yuk.pubDate),
@@ -83,7 +93,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
   durum.havuz ??= [];
 
   const ozet = { yazilan: [], elenen: [], atlanan: [], hata: [] };
-  const icerikler = new Map(); // bu turda okunan akış içerikleri (yükte taşınmaz); eski adaylarda yok, tamMetin sayfadan okur
+  const icerikler = new Map(); // bu turda okunan tam akış içerikleri (yükte kırpılı taşınır); yerel yol eskisi gibi tamını kullanır
   let hazir = null;
 
   const gorulduIsaretle = (id) => (durum.gorulen[id] = simdi.toISOString());
