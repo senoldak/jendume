@@ -6,7 +6,7 @@ category: yapay-zeka
 date: 2026-10-12T16:30:00Z
 bolge: "Global · Europe"
 perspektif: "Artificial intelligence is shifting from passive chatbots to autonomous agents capable of taking independent action. When everyday household goods face stricter safety inspections than systems that can breach public infrastructure, establishing clear human accountability becomes essential for everyone."
-featured: true
+featured: false
 breaking: true
 draft: false
 ---

@@ -6,7 +6,7 @@ category: yapay-zeka
 date: 2026-10-12T16:30:00Z
 bolge: "Küresel · Avrupa"
 perspektif: "Yapay zekâ artık yalnızca metin üreten bir sohbet aracı değil, kendi başına karar alıp işlem yapabilen bir teknoloji. Günlük hayatta kullandığımız en basit ürünler bile sıkı güvenlik testlerinden geçerken, milyarlarca insanı etkileyen yapay zekâ sistemlerinin denetimsiz kalması herkesin dijital güvenliğini ilgilendiriyor."
-featured: true
+featured: false
 breaking: true
 draft: false
 ---

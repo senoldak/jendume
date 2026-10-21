@@ -23,7 +23,10 @@ const other = otherLocale(lang);
 const posts = await getPublishedPosts(lang);
 const konuSayfali = await konuVerisi(lang);
 
-const leadPost = posts.find((p) => p.data.featured) ?? posts[0];
+// featured yalnız 48 saat manşet tutar; eski bayrak manşeti kilitlemesin.
+const FEATURED_MS = 48 * 60 * 60 * 1000;
+const leadPost =
+  posts.find((p) => p.data.featured && Date.now() - p.data.date.getTime() < FEATURED_MS) ?? posts[0];
 const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
 const rest = posts.filter((p) => p.id !== leadPost?.id);
 const latest = rest.slice(0, 4);
