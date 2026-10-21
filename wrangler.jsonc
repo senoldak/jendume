@@ -2,7 +2,8 @@
   // Cloudflare ayarı: site yalnız statik dosyalar olarak yayınlanır (Worker kodu yok).
   "name": "jendume",
   "compatibility_date": "2026-10-01",
-  "workers_dev": true,
+  // workers.dev adresi kapalı: site yalnız jendume.com'dan sunulur (ikinci adres gereksizdi).
+  "workers_dev": false,
   "routes": [
     { "pattern": "jendume.com", "custom_domain": true },
     { "pattern": "www.jendume.com", "custom_domain": true }
