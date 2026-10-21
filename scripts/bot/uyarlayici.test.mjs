@@ -116,17 +116,16 @@ test('adayiKur: listede olmayan etiket null', () => {
   assert.equal(adayiKur({ ...yuk, kaynak: 'yok-boyle-bir-kod' }, KAYNAKLAR), null);
 });
 
-test('isle: yazılan olayın her üyesi yazildi, yazi yalnız ilk üyede', async () => {
+test('isle: yazılan olayın her üyesi yazildi, hiçbirinde yazi yok', async () => {
   const { u, durum, yazilan } = kur();
   const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
   const b = oge(K2, 'b1', 'Orionlab yeni kuantum cipini tanitti');
   const sonuclar = await u.isle([aday(a), aday(b)]);
   assert.equal(yazilan.length, 1);
   assert.equal(sonuclar.length, 2);
-  const ilk = sonuclar.filter((s) => s.yazi);
-  assert.equal(ilk.length, 1);
+  // Telegram jendume'de saat'in RSS süpürgesinden gider; adaptör yazi eklemez.
+  assert.ok(sonuclar.every((s) => s.yazi === undefined));
   assert.ok(sonuclar.every((s) => s.durum === 'yazildi' && s.slug === 'haber-1'));
-  assert.deepEqual(ilk[0].yazi, { slug: 'haber-1', url: 'https://jendume.com/tr/haber/haber-1/', tarih: SIMDI.toISOString() });
   // Karar verilen üyeler isle'de de gorulen'e işaretlenir.
   assert.ok(durum.gorulen[a.id] && durum.gorulen[b.id]);
 });
@@ -145,6 +144,27 @@ test('isle: havuza alınan olay bekliyor/havuzda; aynı aday sonraki turda eski 
   assert.equal(sonucu(ikinci, a), undefined);
   assert.equal(durum.havuz.length, 1);
   assert.equal(cagri.taslak, cagriOnce);
+});
+
+test('isle: havuzdaki üye taze (eski olmayan) aday olarak gelse de işlenmez, Sonuc dönmez, havuz büyümez', async () => {
+  const { u, durum, cagri } = kur({ bag: { taslakYaz: async () => taslak(120) } });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  await u.isle([aday(a)]);
+  assert.equal(durum.havuz.length, 1);
+  const cagriOnce = cagri.taslak;
+  const ikinci = await u.isle([aday(a)]); // eski: yok
+  assert.equal(sonucu(ikinci, a), undefined);
+  assert.equal(durum.havuz.length, 1);
+  assert.equal(cagri.taslak, cagriOnce);
+});
+
+test('isle: habere özgü hata Sonuc.hata içinde adres taşımaz', async () => {
+  const { u } = kur({ bag: { taslakYaz: async () => { throw new Error('baglanti https://haber.example.com/x?k=1 koptu'); } } });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const s = sonucu(await u.isle([aday(a)]), a);
+  assert.equal(s.durum, 'bekliyor');
+  assert.ok(s.hata instanceof Error);
+  assert.ok(!s.hata.message.includes('haber.example.com'), s.hata.message);
 });
 
 test("isle: havuzdan düşen olay elendi 'kısa, eş bulunamadı'", async () => {
@@ -211,7 +231,7 @@ test("isle: 3. hatada elendi, öncekilerde bekliyor + hata", async () => {
     assert.equal(s.durum, beklenen, `önceki ${onceki}`);
     assert.equal(durum.hatalar[a.id].sayi, onceki + 1);
     if (beklenen === 'bekliyor') {
-      assert.equal(s.hata, hata);
+      assert.equal(s.hata.message, hata.message);
       assert.equal(durum.gorulen[a.id], undefined);
     } else {
       assert.equal(s.gerekce, '3 denemede yazılamadı');
@@ -257,7 +277,7 @@ test('gorulmeyen: gorulen kayıtlı adayları eler', () => {
   assert.deepEqual(gorulmeyen([aday(a), aday(b)], durum).map((x) => x.yuk.id), [b.id]);
 });
 
-test('isle: havuzdan derleme yazılınca her olayın üyeleri yazildi, yazi yalnız ilk olayın ilk üyesinde', async () => {
+test('isle: havuzdan derleme yazılınca her olayın üyeleri yazildi, hiçbirinde yazi yok', async () => {
   const durum = bosDurum();
   const olay = (id, iso, uyeIdler) => ({
     ...havuzOlayi({ id, taslak: taslak(120), basliklar: [`Baslik ${id}`], kaynaklar: [{ baslik: 'b', tarih: '2026-10-22', metin: uydur(60, 3, ['pek', 'lum', 'zan', 'rok', 'tis', 'yem', 'cuz', 'oluf', 'nab', 'esk']) }], kullanilan: [], iso }),
@@ -272,7 +292,7 @@ test('isle: havuzdan derleme yazılınca her olayın üyeleri yazildi, yazi yaln
   assert.equal(durum.havuz.length, 0);
   assert.equal(sonuclar.length, 3);
   assert.ok(sonuclar.every((s) => s.durum === 'yazildi' && s.slug === 'haber-1'));
-  assert.deepEqual(sonuclar.filter((s) => s.yazi).length, 1);
+  assert.equal(sonuclar.filter((s) => s.yazi !== undefined).length, 0);
   assert.ok(durum.gorulen['bir:e1'] && durum.gorulen['iki:e1b'] && durum.gorulen['bir:e2']);
 });
 

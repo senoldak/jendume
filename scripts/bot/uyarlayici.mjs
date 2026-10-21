@@ -3,7 +3,7 @@
 //   isle(adaylar, { surVar, log }) → Sonuc[]               ön eleme + yazım + havuz akışı; karar verilenler Sonuc olarak döner
 // Motor yokken yerelTur aynı akışı eskisi gibi sürer (davranış değişmedi). Karar verilen her üye durum.gorulen'e işaretlenir
 // ve habere özgü hatalar durum.hatalar'a sayılır (3 deneme kuralı bunu okur); iki modda da.
-// Sonuc = { kimlik, durum: 'yazildi' | 'elendi' | 'bekliyor', gerekce?, hata?, slug?, yazi?: { slug, url, tarih }, havuzda? }
+// Sonuc = { kimlik, durum: 'yazildi' | 'elendi' | 'bekliyor', gerekce?, hata?, slug?, havuzda? }
 // Sonucu olmayan aday bekliyor kalır (puanlanamadı, düzeltme cevapsız, süre ya da Gemini payı doldu).
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz, derlemeUzat } from './yazar.mjs';
@@ -64,7 +64,6 @@ export function adayiKur(yuk, kaynaklar = KAYNAKLAR) {
   };
 }
 
-const yaziUrl = (slug) => `https://jendume.com/tr/haber/${slug}/`;
 const temiz = (m) => adresiSil(gunlukSatiri(String(m)));
 
 /** Durum dosyasında karar verilmemiş (gorulen'de olmayan) adaylar. */
@@ -134,7 +133,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
     const havuzdaki = new Set(durum.havuz.flatMap((h) => h.uyeIdler ?? [h.id]));
     const os = [];
     for (const a of girdi) {
-      if (a.eski && havuzdaki.has(a.yuk.id)) continue; // havuzda bekliyor: yeniden işlenmez, havuz büyümez
+      if (havuzdaki.has(a.yuk.id)) continue; // havuzda bekliyor (taze ya da eski gelse de): işlenmez, Sonuc dönmez, bekliyor kalır, havuz büyümez
       const o = adayiKur(a.yuk, B.KAYNAKLAR);
       if (!o) {
         koy({ kimlik: a.kimlik, durum: 'elendi', gerekce: 'kaynak listeden çıkarıldı' });
@@ -222,8 +221,8 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
       grupBitti(g);
       elendi(g, gerekce);
     };
-    const yazildi = (g, slug, tarih) =>
-      g.uyeler.forEach((u, i) => koy({ kimlik: kim(u), durum: 'yazildi', slug, ...(i === 0 ? { yazi: { slug, url: yaziUrl(slug), tarih } } : {}) }));
+    // Sonuc'a yazi eklenmez: Telegram'a gidiş saat'in RSS süpürgesinden (adaptör commit+yayından önce raporlar, D1 kuyruğu 404 görürdü).
+    const yazildi = (g, slug) => g.uyeler.forEach((u) => koy({ kimlik: kim(u), durum: 'yazildi', slug }));
     const payNedeni = () => {
       if (surVar) return surVar() ? null : 'Tur payı';
       if (surDolduMu()) return 'Süre bütçesi';
@@ -440,7 +439,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
         );
         yazilanSayi++;
         log(`  yazıldı (TR/EN): ${slug}`);
-        yazildi(g, slug, simdi.toISOString());
+        yazildi(g, slug);
         if (st.karar === 'sari') await B.motorYaz(sariKayit(g.uyeler[0].id, slug, st));
         ozet.yazilan.push(`${slug} (${t.tr.title})`);
       } catch (e) {
@@ -456,7 +455,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
         hh.mesaj = adresiSil(e.message);
         hh.zaman = simdi.toISOString();
         if (hh.sayi >= EN_FAZLA_HATA) ele(g, '3 denemede yazılamadı');
-        else g.uyeler.forEach((u) => koy({ kimlik: kim(u), durum: 'bekliyor', hata: e }));
+        else g.uyeler.forEach((u) => koy({ kimlik: kim(u), durum: 'bekliyor', hata: new Error(temiz(e.message)) }));
       }
     }
 
@@ -505,11 +504,11 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           bellek.push(...bellekKur(['tr', 'en'].map((d) => ({ slug, date: kayit.zaman, title: x[d].title, description: x[d].description })), { [slug]: kayit }));
           yazilanSayi++;
           ozet.yazilan.push(`${slug} (derleme: ${x.tr.title})`);
-          // Derlemedeki her olayın üyeleri yazıldı; tek yazıya tek yazi bilgisi (ilk olayın ilk üyesi).
-          grup.forEach((o, oi) => {
+          // Derlemedeki her olayın üyeleri yazıldı.
+          grup.forEach((o) => {
             yazilanOlaylar.add(o);
             uyeler(o).forEach((kimlik, ui) => {
-              koy({ kimlik, durum: 'yazildi', slug, ...(oi === 0 && ui === 0 ? { yazi: { slug, url: yaziUrl(slug), tarih: simdi.toISOString() } } : {}) });
+              koy({ kimlik, durum: 'yazildi', slug });
               gorulduIsaretle(o.uyeIdler?.[ui] ?? o.id);
             });
           });
