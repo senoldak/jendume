@@ -4,13 +4,13 @@
 // Dosya bütçesi: Cloudflare Workers statik dosya sınırı sürüm başına 20.000 dosyadır. Haber başına dil başına
 // 1 HTML + 1 kapak PNG düşer (iki dilli haber ≈ 4 dosya). Kapaklar silinmez; her dilde en yeni KAPAK_BUTCE haber
 // kendi kapağını alır, daha eskiler bölümün ortak kapağını (/kapak/{lang}/bolum/{slug}.png, 1200×675) kullanır.
-// Böylece kapaklar en fazla 2 × KAPAK_BUTCE = 6.000 dosya tutar; kalan ~14.000 dosya sayfalara kalır
-// (≈ 7.000 iki dilli haber). Sınıra yaklaşıldığında "Yayınla" iş akışı 15.000 dosyada uyarır; o zaman bu sayı
-// düşürülebilir (eski haberler yine 1200 px'lik bölüm kapağıyla kalır, hiçbir sayfa görselsiz kalmaz).
+// Böylece kapaklar en fazla 2 × KAPAK_BUTCE = 1.000 dosya tutar; kalan ~19.000 dosya sayfalara kalır
+// (≈ 9.500 iki dilli haber). 22 Ekim'de 3.000'den 500'e indi (ücretsiz plan C2): eski haberler 1200 px'lik bölüm
+// kapağıyla kalır, hiçbir sayfa görselsiz kalmaz. "Yayınla" iş akışı 15.000 dosyada uyarır.
 // Seçim yalnız içerikten (tarih, kimlik) çıkar; aynı içerik her derlemede aynı kapakları üretir.
 
 /** Dil başına kendi kapağını alan en yeni haber sayısı. */
-export const KAPAK_BUTCE = 3000;
+export const KAPAK_BUTCE = 500;
 
 /**
  * En yeni `butce` haberin kimlikleri (tarihe göre, eşitlikte kimliğe göre sıralı; deterministik).
