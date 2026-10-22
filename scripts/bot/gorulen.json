@@ -2342,7 +2342,10 @@
     "kfdedb4:3c36620c52648cb9": "2026-10-22T07:25:44.497Z",
     "kaec085:3c789bc1d48c1282": "2026-10-22T07:31:36.476Z",
     "kaec085:97a487e6cd40bad7": "2026-10-22T07:31:36.476Z",
-    "k38ef42:2afabd7428921b5c": "2026-10-22T07:31:36.476Z"
+    "k38ef42:2afabd7428921b5c": "2026-10-22T07:31:36.476Z",
+    "k39cb2c:c1170d483cf73d47": "2026-10-22T07:51:00.585Z",
+    "k12b4a6:9e84f9ed24be3128": "2026-10-22T07:51:00.585Z",
+    "k74f74a:588ad614e246749f": "2026-10-22T07:51:00.585Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -5506,7 +5509,11 @@
     "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k031f42:bf8b0d536385603b": "2026-10-22T07:31:36.476Z",
     "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
     "haber:amazon-veri-merkezleri-icin-indiana-eyaletinde-nukleer-tesis-kuruyor|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
-    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z"
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
+    "haber:londra-da-yapay-zeka-tabanli-polis-veri-sozlesmesi-davasi-uzlasiyla-kapandi|k74f74a:588ad614e246749f": "2026-10-22T07:51:00.585Z",
+    "haber:daron-acemoglu-ndan-cagri-yapay-zekanin-yonunu-sadece-piyasanin-belirlemesine-iz|k39cb2c:c1170d483cf73d47": "2026-10-22T07:51:00.585Z",
+    "haber:google-dan-gemini-icin-ucret-duvari|k39cb2c:c1170d483cf73d47": "2026-10-22T07:51:00.585Z",
+    "haber:microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi|k12b4a6:9e84f9ed24be3128": "2026-10-22T07:51:00.585Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -5605,7 +5612,8 @@
     "k2e841d:1f30d48da4571769|k78637d:aac9a17cf8d185f5": "2026-10-21T21:50:56.854Z",
     "k2d427e:9e421e0332850a7b|k74f74a:ffe43462ad82115b": "2026-10-21T21:50:56.854Z",
     "kb7f905:46466e182fc0e504|openai:https://openai.com/index/cloudflare-cyber": "2026-10-22T03:50:54.679Z",
-    "haber:spotify-yapay-zeka-uretimi-milyonlarca-sarkiyi-onerilerden-kaldirdi|k38ef42:ef96666252d615fb": "2026-10-22T05:50:54.282Z"
+    "haber:spotify-yapay-zeka-uretimi-milyonlarca-sarkiyi-onerilerden-kaldirdi|k38ef42:ef96666252d615fb": "2026-10-22T05:50:54.282Z",
+    "haber:gridcraft-ve-acik-kaynak-araclar-yazilim-pazarini-donusturuyor|k39cb2c:c1170d483cf73d47": "2026-10-22T07:51:00.585Z"
   },
   "puan": {
     "kd9a613:e17b3cf850a8fc95": {
@@ -13168,6 +13176,16 @@
       "puan": 88,
       "olcek": 100,
       "zaman": "2026-10-22T07:25:44.497Z"
+    },
+    "k74f74a:588ad614e246749f": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-22T07:51:00.585Z"
+    },
+    "k12b4a6:9e84f9ed24be3128": {
+      "puan": 35,
+      "olcek": 100,
+      "zaman": "2026-10-22T07:51:00.585Z"
     }
   },
   "yayinlanan": {
@@ -13802,6 +13820,10 @@
     "ibm-ses-tanima-ve-ceviri-icin-gelistirdigi-granite-speech-5-0-2b-modelini-duyurd": {
       "zaman": "2026-10-22T07:31:36.476Z",
       "basliklarSifreli": "v1.wY5TrTQ0mMJpX+ox.RLRlxnXYYDN/wZ077fHh/1fJxIK8BYQafGp9tvhgO7tGA+miFDwB6Anb14L7PoBAuATe0KKX9mfKNx2RAIneqpU1a4IzV3rSoFNSlk0RAJMNYccmDKOO58mxqcHGyHPhh+nvf9uROpc="
+    },
+    "palantir-nato-maven-yapay-zeka-sisteminin-uzaktan-kapatilamayacagini-acikladi": {
+      "zaman": "2026-10-22T07:51:00.585Z",
+      "basliklarSifreli": "v1.o7HJyUXhbUsYpP7I./djb/DxyGHJRs4uQzhwpioWSSyjKMJ+1Ud4qtS0RaD1BNBoeJfBU917W9nIuhW0u7QypKyiiPBtFGODmmZqM05+WEkZTa3Gy8u6XYfL9yA=="
     }
   },
   "havuz": [
@@ -16162,6 +16184,9 @@
     "k38ef42:cfe1ec471dec0f1e": "2026-10-22T05:51:05.000Z",
     "k031f42:bf8b0d536385603b": "2026-10-22T05:58:00.000Z",
     "kfdedb4:3c36620c52648cb9": "2026-10-22T06:45:00.000Z",
-    "k38ef42:2afabd7428921b5c": "2026-10-22T07:30:00.000Z"
+    "k38ef42:2afabd7428921b5c": "2026-10-22T07:30:00.000Z",
+    "k39cb2c:c1170d483cf73d47": "2026-10-22T07:41:00.000Z",
+    "k12b4a6:9e84f9ed24be3128": "2026-10-22T07:31:00.000Z",
+    "k74f74a:588ad614e246749f": "2026-10-22T07:41:54.000Z"
   }
 }
