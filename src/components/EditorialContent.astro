@@ -1,0 +1,388 @@
+---
+import { SITE, otherLocale, type Locale } from '../lib/site';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, yasalYolu } from '../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const other = otherLocale(lang);
+const politika = duzeltmePolitikasiYolu(lang);
+const kayit = duzeltmelerYolu(lang);
+const yasal = yasalYolu(lang);
+const sikayet = sikayetYolu(lang);
+const rapor = standartlarRaporuYolu(lang);
+---
+
+<article class="article">
+  {
+    lang === 'tr' ? (
+      <div class="prose about">
+        <header class="article-header">
+          <h1 class="about-title">Yayın İlkeleri</h1>
+          <p class="about-motto">
+            <span>Editoryal Standartlar ve Etik Taahhütler</span>
+            <span lang={other}>Editorial Standards & Ethics</span>
+          </p>
+        </header>
+
+        <p>
+          JEN DUME, yapay zekâ, teknoloji, bilim ve ekonomi ekseninde dünyada yaşanan dönüşümleri
+          anlaşılır, tarafsız ve derinlikli bir bakışla aktarmayı amaçlar. Bilginin hızla çoğaldığı
+          ancak doğrulanmasının zorlaştığı günümüz dünyasında editoryal bağımsızlık, şeffaflık ve
+          hatalarımızı açıkça düzeltme taahhüdü temel ilkelerimizdir.
+        </p>
+
+        <blockquote>
+          <strong>
+            Doğruluk, bağlam ve eleştirel muhakeme olmaksızın üretilen bilgi değerini kaybeder.
+            JEN DUME, teknolojiyi insanlığın anlama kapasitesini geliştirmek için bir araç kabul eder.
+            Haberlerimiz yapay zekâ ile otomatik yazılır; bu nedenle hatalarımızı açıkça düzeltir,
+            nasıl çalıştığımızı bu sayfada anlatırız.
+          </strong>
+        </blockquote>
+
+        <h2>1. IFJ Küresel Gazetecilik Etiği Şartı ve Editoryal Bağımsızlık</h2>
+        <p>
+          Uluslararası Gazeteciler Federasyonu (IFJ) tarafından kabul edilen Küresel Gazetecilik Etiği
+          Şartı (1954 Bordeaux Bildirgesi ve 2019 Tunis güncellemesi) ilkelerini örnek alırız. IFJ'ye ya da
+          başka bir meslek kuruluşuna üyeliğimiz yoktur:
+        </p>
+        <ul>
+          <li>
+            <strong>Hakikate Saygı (Madde 1):</strong> Gerçeğe ve kamunun doğruyu öğrenme hakkına saygı
+            duymak gazetecinin en öncelikli görevidir. Haberlerimiz, izlediğimiz kaynak metinlerdeki olgulara
+            dayanır. Otomatik sistem hata yapabilir; hataları düzeltiriz.
+          </li>
+          <li>
+            <strong>Dürüst Aktarım ve Sansürün Reddi:</strong> Bilgi, belge ve veriler kasten tahrif
+            edilemez, çarpıtılamaz ya da sansürlenemez. İfade ve basın özgürlüğü kararlılıkla savunulur.
+          </li>
+          <li>
+            <strong>Kurumsal ve Editoryal Bağımsızlık:</strong> JEN DUME; teknoloji şirketleri, yapay zekâ
+            laboratuvarları, risk sermayesi fonları, siyasi partiler veya hükümetlerden tamamen bağımsızdır.
+            Yayın kararlarımız hiçbir harici ticari veya siyasi çıkar grubu tarafından yönlendirilemez.
+          </li>
+          <li>
+            <strong>Reklam ve Sponsorluk Yok:</strong> Bağımsız ve kâr amacı gütmeyen bir yayındır. Reklam,
+            sponsorlu içerik ya da ücretli iş birliği yoktur. Bu durum değişirse okurlarımıza açıkça
+            bildiririz.
+          </li>
+        </ul>
+
+        <h2>2. The Trust Project: Örnek Aldığımız 6 Gösterge</h2>
+        <p>
+          Uluslararası The Trust Project konsorsiyumunun 8 Temel Güven Göstergesinden altısını örnek alırız.
+          Bu girişimin üyesi ya da onaylı yayını değiliz:
+        </p>
+        <ul>
+          <li>
+            <strong>1. En İyi Uygulamalar (Best Practices):</strong> Yayın amacımız, çalışma yöntemimiz ve
+            düzeltme politikamız bu sitede açıkça yazılıdır. Yayıncı, mali yapı ve iletişim bilgileri
+            <a href={yasal}>Yasal Bilgilendirme ve Künye</a> sayfasındadır.
+          </li>
+          <li>
+            <strong>2. Yazar ve Üretim Bilgisi (Author Expertise):</strong> Haberlerimizi insan muhabirler değil,
+            yapay zekâ destekli otomatik bir sistem yazar; bu yüzden haberlerde kişi adıyla yazar gösterilmez ve her
+            haberin altında nasıl üretildiğini anlatan bir not bulunur. Sistemin kaynak listesini, yazım ve
+            doğrulama kurallarını yayıncı ve editör belirler.
+          </li>
+          <li>
+            <strong>3. İçerik Türü Etiketlemesi (Type of Work):</strong> Haberler ile perspektif yazıları ayrı
+            bölümlerde yayımlanır; bölüm adı her sayfada görünür.
+          </li>
+          <li>
+            <strong>4. Kaynaklar ve Atıflar (Citations & References):</strong> Haberler yalnızca izlediğimiz kaynak
+            metinlerdeki olgulara dayanır. Haber sitelerinin adı anılmaz; bilgi, olayın sahibi olan araştırma
+            kurumu, laboratuvar, şirket ya da resmî kurumun adıyla aktarılır.
+          </li>
+          <li>
+            <strong>5. Yöntem ve Metodoloji (Methods):</strong> Haberlerin nasıl seçildiği, yazıldığı ve
+            denetlendiği aşağıdaki RSF bölümünde açıkça anlatılır.
+          </li>
+          <li>
+            <strong>6. Eyleme Dönüştürülebilir Geri Bildirim (Actionable Feedback):</strong> Her haberin
+            altındaki “Hata bildir” bağlantısı ve contact@jendume.com adresiyle okurlarımız veri, çeviri veya
+            olgu hatalarını bize iletebilir.
+          </li>
+        </ul>
+
+        <h2>3. RSF Paris Yapay Zekâ ve Gazetecilik Şartı (2023)</h2>
+        <p>
+          Sınır Tanımayan Gazeteciler (RSF) öncülüğünde 17 uluslararası ortak kuruluş tarafından kabul edilen
+          Paris Yapay Zekâ ve Gazetecilik Şartı'nı örnek alırız; şarta taraf olduğumuz iddiasında değiliz.
+          Yapay zekâ kullanımımız şöyledir:
+        </p>
+        <ul>
+          <li>
+            <strong>Yapay Zekâ ile Otomatik Yazım:</strong> JEN DUME haberleri; izlediğimiz yapay zekâ
+            laboratuvarları, araştırma kurumları, resmî kurumlar ve teknoloji yayınlarının kaynak metinlerinden
+            yapay zekâ (Google Gemini) yardımıyla otomatik olarak Türkçe ve İngilizce yazılır. Haberler yayımlanmadan önce
+            tek tek insan denetiminden geçmez. Suç ve yargı süreçlerinde özel kişiler, çocuklar, intihar ve
+            kendine zarar, terör, savaş taraflarının dili, gruplar hakkında genelleme, yatırım tavsiyesi
+            niteliği taşıyan ifadeler ve tek bir yayına ait özel haberler gibi hassas konular otomatik olarak
+            yayımlanmaz.
+          </li>
+          <li>
+            <strong>Otomatik Doğrulama:</strong> Her taslak yayından önce otomatik denetimden geçer: metindeki
+            rakamlar kaynak metinle karşılaştırılır, haber kuruluşu adları ve “bugün”, “dün” gibi göreli zaman
+            ifadeleri ayıklanır, kaynaktan kopyalanmış cümleler aranır ve çok kısa taslaklar reddedilir. Denetimi
+            geçemeyen taslak yayımlanmaz. Otomatik denetim bozulursa ya da sonuç belirsiz kalırsa haber
+            yayımlanmaz; yayın tek bir anahtarla durdurulabilir. Bu denetimler hatayı azaltır, ama tamamen
+            ortadan kaldırmaz.
+          </li>
+          <li>
+            <strong>İnsan Gözetimi:</strong> Kaynak listesini, yazım ve doğrulama kurallarını, bu yayın
+            ilkelerini ve düzeltmeleri yayıncı ve editör belirler ve yürütür. Haberler yayımlanmadan önce tek
+            tek insan denetiminden geçmez.
+          </li>
+          <li>
+            <strong>Algoritmik Şeffaflık:</strong> Her haberin altında, haberin yapay zekâ ile otomatik
+            yazıldığını ve otomatik denetimden geçtiğini belirten kısa bir not ile “Hata bildir” bağlantısı
+            bulunur.
+          </li>
+          <li>
+            <strong>Sentetik Manipülasyon Yasağı:</strong> Yapay zekâ ile gerçek kişi, olay veya belge
+            izlenimi veren görsel, ses veya alıntı üretilmez. Otomatik sistem hatalı ya da kaynakta bulunmayan
+            bilgi üretebilir; bu tür hatalar düzeltilir. Görsel dilimizde yanıltıcı fotogerçekçi sentetik görseller yerine editoryal,
+            tipografik ve şematik sadelik tercih edilir.
+          </li>
+        </ul>
+
+        <h2>4. Çok Dilli Bilgi Köprüsü ve Zamenhof/Esperanto Vizyonu</h2>
+        <p>
+          1887 yılında Ludwik Lejzer Zamenhof, diller arasındaki engelleri aşmak ve insanlığı tarafsız, ortak
+          bir iletişim zemininde buluşturmak amacıyla Esperanto'yu kurdu. JEN DUME, bu vizyonu modern çağın
+          yapay zekâ ve bilgi ekosistemine taşır:
+        </p>
+        <ul>
+          <li>
+            <strong>Diller Arası Tarafsızlık:</strong> Teknolojik ve bilimsel bilginin tek bir dilin veya
+            ayrıcalıklı coğrafyaların tekelinde kalmasını reddediyoruz. Türkçe ve İngilizce eşzamanlı yayın
+            yaparak küresel bilgi köprüsünü canlı tutuyoruz.
+          </li>
+          <li>
+            <strong>Yapay Zekâ Etiği Haberciliği:</strong> Yapay zekâ etiği, güvenlik ve eşitsizlik
+            konularındaki gelişmeleri haberlerimizde ele alırız.
+          </li>
+          <li>
+            <strong>Sade ve Erişilebilir Dil:</strong> Karmaşık bilimsel ve teknolojik kavramları jargona
+            boğmadan, herkesin kavrayabileceği duru bir dille topluma aktarmayı ilke ediniyoruz.
+          </li>
+        </ul>
+
+        <h2 id="duzeltmeler">5. Düzeltmeler ve İtirazlar</h2>
+        <a id="corrections" aria-hidden="true"></a>
+        <p>
+          Yayınlarımızda tespit edilen maddi ve olgusal hatalar en kısa sürede ve açıkça düzeltilir. Ayrıntılar
+          <a href={politika}>Düzeltme Politikası</a> sayfasındadır:
+        </p>
+        <ul>
+          <li>
+            <strong>Sessiz Düzeltme Yapılmaz:</strong> Hatalar gizlice silinmez ya da üstü örtülmez. Düzeltilen
+            haberin altına tarihli bir not eklenir; her düzeltme ve her yayından kaldırma, tarihiyle ve kısa
+            nedeniyle <a href={kayit}>Düzeltmeler</a> sayfasına yazılır.
+          </li>
+          <li>
+            <strong>İnceleme:</strong> Okurlarımızdan, ilgililerden veya araştırmacılardan gelen düzeltme ve
+            olgu kontrolü başvuruları en kısa sürede yayıncı ve editör tarafından incelenir.
+          </li>
+          <li>
+            <strong>İtiraz ve Tekzip Kanalı:</strong> Yayınlarımızdaki herhangi bir bilgiye itiraz etmek, kaynak
+            düzeltmesi önermek veya tekzip talebinde bulunmak için doğrudan bize ulaşabilirsiniz:
+            <br />
+            <strong>E-posta:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </li>
+        </ul>
+        <p>
+          Şikâyet başvuruları için <a href={sikayet}>Şikâyet Prosedürü</a>, sayıların üç aylık dökümü için
+          <a href={rapor}>Standartlar Raporu</a> sayfalarına bakınız.
+        </p>
+      </div>
+    ) : (
+      <div class="prose about">
+        <header class="article-header">
+          <h1 class="about-title">Editorial Standards</h1>
+          <p class="about-motto">
+            <span>Publishing Principles & Ethical Commitments</span>
+            <span lang={other}>Yayın İlkeleri ve Etik Standartlar</span>
+          </p>
+        </header>
+
+        <p>
+          JEN DUME is dedicated to providing clear, objective, and rigorous reporting on global developments
+          shaping artificial intelligence, technology, science, and the economy. In an era saturated with
+          unverified information and synthetic noise, editorial independence, transparency, and a
+          commitment to correct our errors openly serve as our steadfast anchors.
+        </p>
+
+        <blockquote>
+          <strong>
+            Information disconnected from accuracy, context, and critical reasoning loses its meaning.
+            JEN DUME utilizes technology to amplify humanity’s capacity to understand.
+            Our stories are written automatically with AI; we therefore correct our errors openly and
+            explain on this page how we work.
+          </strong>
+        </blockquote>
+
+        <h2>1. IFJ Global Charter of Ethics for Journalists & Editorial Independence</h2>
+        <p>
+          We take the Global Charter of Ethics for Journalists, adopted by the International Federation of
+          Journalists (IFJ) in 1954 (Bordeaux) and updated in 2019 (Tunis), as a model. We are not a member of
+          the IFJ or of any other professional body:
+        </p>
+        <ul>
+          <li>
+            <strong>Respect for the Truth (Article 1):</strong> Respect for the truth and for the right of the
+            public to truth is the first duty of the journalist. Our stories are based on the facts found in the
+            source texts we monitor. The automated system can make mistakes; we correct them.
+          </li>
+          <li>
+            <strong>Defense of Free Inquiry & Honest Reporting:</strong> The distortion of facts, intentional
+            omissions, or censorship in any guise are firmly rejected. We uphold the freedom of inquiry and the
+            open dissemination of knowledge.
+          </li>
+          <li>
+            <strong>Institutional Independence:</strong> JEN DUME maintains absolute autonomy from technology
+            conglomerates (Big Tech), AI research labs, venture capital institutions, state authorities, and
+            political factions. No outside entity holds sway over our editorial determinations.
+          </li>
+          <li>
+            <strong>No Advertising or Sponsorship:</strong> JEN DUME is an independent, non-profit publication.
+            It carries no advertising, sponsored content or paid partnerships. If this changes, we will tell our
+            readers openly.
+          </li>
+        </ul>
+
+        <h2>2. The Trust Project: Six Indicators We Take as a Model</h2>
+        <p>
+          We take six of the 8 Core Trust Indicators of the international Trust Project consortium as a model.
+          We are not a member of, or certified by, that initiative:
+        </p>
+        <ul>
+          <li>
+            <strong>1. Best Practices:</strong> Our purpose, our way of working and our corrections policy are
+            set out openly on this site. The publisher, funding position and contact details are on the
+            <a href={yasal}>Legal Notice and Imprint</a> page.
+          </li>
+          <li>
+            <strong>2. Authorship & Production:</strong> Our stories are written not by human reporters but by an
+            AI-assisted automated system, so no individual byline is shown and every story carries a note explaining
+            how it was produced. The publisher and editor sets the system’s source list and its writing and verification rules.
+          </li>
+          <li>
+            <strong>3. Type of Work Labeling:</strong> News stories and perspective pieces are published in
+            separate sections, and the section name appears on every page.
+          </li>
+          <li>
+            <strong>4. Citations & References:</strong> Stories rely only on facts found in the source texts we
+            monitor. News outlets are not named; information is attributed to the research institution, lab, company,
+            or official body behind the development.
+          </li>
+          <li>
+            <strong>5. Methods:</strong> How stories are selected, written, and checked is described openly in the RSF
+            section below.
+          </li>
+          <li>
+            <strong>6. Actionable Feedback:</strong> A “Report an error” link under every story and the address
+            contact@jendume.com let readers send us data, translation or factual errors.
+          </li>
+        </ul>
+
+        <h2>3. RSF Paris Charter on AI and Journalism (2023)</h2>
+        <p>
+          We take the Paris Charter on AI and Journalism, initiated by Reporters Without Borders (RSF) alongside
+          16 partner organizations, as a model; we do not claim to be a party to the Charter. Our use of AI is as
+          follows:
+        </p>
+        <ul>
+          <li>
+            <strong>Automated, AI-Assisted Writing:</strong> JEN DUME stories are written automatically in English
+            and Turkish with the help of AI (Google Gemini), based on the source texts of the AI labs, research
+            institutions, official bodies, and technology publications we monitor. Stories are not reviewed one by one by a
+            person before publication. Sensitive subjects such as private individuals in criminal and judicial
+            proceedings, children, suicide and self-harm, terrorism, the partisan language of the parties to a
+            war, generalisations about groups, statements that amount to investment advice, and exclusive reports
+            from a single outlet are not published automatically.
+          </li>
+          <li>
+            <strong>Automated Verification:</strong> Every draft is checked automatically before publication:
+            numbers are compared with the source text, names of news outlets and relative time references such as
+            “today” or “yesterday” are removed, copied sentences are flagged, and drafts that are too short are
+            rejected. A draft that fails these checks is not published. If the automated checks break down or cannot
+            reach a clear result, the story is not published, and publication can be halted with a single switch.
+            These checks reduce errors; they do not eliminate them.
+          </li>
+          <li>
+            <strong>Human Oversight:</strong> The publisher and editor decides the source list, the writing and
+            verification rules, these editorial standards, and corrections. Stories are not reviewed one by one by a
+            person before publication.
+          </li>
+          <li>
+            <strong>Algorithmic Transparency:</strong> Every story ends with a short note stating that it was
+            written automatically with AI and checked automatically, together with a “Report an error” link.
+          </li>
+          <li>
+            <strong>Zero Synthetic Manipulation:</strong> We do not use AI to generate images, audio or quotations
+            that give the impression of a real person, event or document. The automated system can produce
+            incorrect information or details that are not in the source; we correct such errors. Our visual language
+            prioritizes typographic clarity, schematic illustrations, and authentic records over synthetic
+            renderings.
+          </li>
+        </ul>
+
+        <h2>4. Cross-Border Knowledge Bridge & Esperanto Ideal</h2>
+        <p>
+          In 1887, Ludwik Lejzer Zamenhof created Esperanto to bridge linguistic divides and establish a neutral,
+          shared ground for human communication. JEN DUME brings this humanist philosophy to the frontier of
+          artificial intelligence and knowledge systems:
+        </p>
+        <ul>
+          <li>
+            <strong>Linguistic Neutrality:</strong> We reject the premise that critical advancements in science
+            and technology should belong exclusively to a single language. Publishing simultaneously in English
+            and Turkish ensures broader access across cultures.
+          </li>
+          <li>
+            <strong>AI Ethics Coverage:</strong> We cover developments in AI ethics, safety and inequality in our
+            stories.
+          </li>
+          <li>
+            <strong>Clarity Beyond Jargon:</strong> We translate complex technical breakthroughs into rigorous yet
+            accessible language, demystifying technology for informed civic participation.
+          </li>
+        </ul>
+
+        <h2 id="corrections">5. Reporting Errors & Corrections</h2>
+        <a id="duzeltmeler" aria-hidden="true"></a>
+        <p>
+          Factual errors we find in our stories are corrected as soon as possible and in the open. Details are on
+          the <a href={politika}>Corrections Policy</a> page:
+        </p>
+        <ul>
+          <li>
+            <strong>No Silent Retractions:</strong> Errors are never quietly scrubbed or concealed. A dated
+            note is added under the corrected story, and every correction and every removal is recorded, with its
+            date and a short reason, on the <a href={kayit}>Corrections</a> page.
+          </li>
+          <li>
+            <strong>Prompt Review:</strong> All factual corrections, evidence challenges, and dispute
+            submissions received from readers or subjects are reviewed by the publisher and editor as soon as
+            possible.
+          </li>
+          <li>
+            <strong>Contact & Right of Reply:</strong> To submit a correction request, dispute a reported fact, or
+            exercise a formal right of reply, please contact us directly:
+            <br />
+            <strong>Email:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
+          </li>
+        </ul>
+        <p>
+          For complaints, see the <a href={sikayet}>Complaints Procedure</a>; for the quarterly figures, see the
+          <a href={rapor}>Standards Report</a>.
+        </p>
+      </div>
+    )
+  }
+</article>

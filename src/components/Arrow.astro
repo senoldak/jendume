@@ -1,0 +1,20 @@
+---
+// Yön levhası oku: kalın gövde, üçgen uç. Yönü `dir` belirler
+// (CSP satır içi stile izin vermediği için döndürme sınıfla yapılır).
+interface Props {
+  dir?: 'right' | 'down' | 'up-right';
+  class?: string;
+}
+const { dir = 'right', class: className } = Astro.props;
+---
+
+<svg
+  class:list={['arrow', `arrow-${dir}`, className]}
+  viewBox="0 0 24 24"
+  width="24"
+  height="24"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z" fill="currentColor" />
+</svg>

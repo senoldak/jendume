@@ -1,0 +1,192 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import SignLine from '../../components/SignLine.astro';
+import SignHeading from '../../components/SignHeading.astro';
+import SentezBlok from '../../components/SentezBlok.astro';
+import RakamSeridi from '../../components/RakamSeridi.astro';
+import Arrow from '../../components/Arrow.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ShareLinks from '../../components/ShareLinks.astro';
+import YapayZekaNotu from '../../components/YapayZekaNotu.astro';
+import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
+import { SITE, getCategory, otherLocale, type Locale } from '../../lib/site';
+import { abs, articleCrumbs, articleGraph } from '../../lib/seo';
+import { ilgiliHaberler } from '../../lib/ilgili';
+import { haberKonulari, konuBul } from '../../lib/konular';
+import { konuVerisi } from '../../lib/rotalar';
+import { konuYolu, yazarYolu } from '../../lib/yollar.mjs';
+import { dizinlenir } from '../../lib/kalite.mjs';
+import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
+import {
+  getPublishedPosts,
+  getAvailableTranslations,
+  getPostUrl,
+  kapakBilgisi,
+  type NewsEntry,
+} from '../../lib/news';
+
+// Haber sayfası; yollar: src/pages/tr/haber/[id].astro, src/pages/en/news/[id].astro (bkz. src/lib/yollar.mjs).
+interface Props {
+  lang: Locale;
+  post: NewsEntry;
+}
+
+const { lang, post } = Astro.props;
+const id = post.id;
+const { Content } = await render(post);
+
+const other = otherLocale(lang);
+const ui = SITE.ui[lang];
+const duzeltme = duzeltmeNotu(post.data, lang);
+const translations = await getAvailableTranslations(id);
+
+const langUrls: Partial<Record<Locale, string>> = {
+  tr: translations.tr ? getPostUrl('tr', id) : '/tr/',
+  en: translations.en ? getPostUrl('en', id) : '/en/',
+};
+
+// Gövdesi çok kısa haber erişilebilir kalır ama dizine girmez (src/lib/kalite.mjs); her dil kendi gövdesiyle ölçülür.
+const indexable = dizinlenir(post.body);
+const otherPost = translations[other] ? (await getPublishedPosts(other)).find((p) => p.id === id) : undefined;
+const otherIndexable = Boolean(otherPost && dizinlenir(otherPost.body));
+
+// hreflang yalnız gerçekten var olan ve dizine giren çeviriler arasında; x-default İngilizce sürüm.
+const alternates: Partial<Record<Locale | 'x-default', string>> = {};
+if (translations.tr && translations.en && indexable && otherIndexable) {
+  alternates.en = getPostUrl('en', id);
+  alternates.tr = getPostUrl('tr', id);
+  alternates['x-default'] = getPostUrl('en', id);
+}
+// Her haberin 1200 px paylaşım görseli var: kendi kapağı ya da (bütçe dışındaki eskilerde) bölüm kapağı.
+const cover = await kapakBilgisi(post, lang);
+const catTitle = getCategory(post.data.category, lang).title;
+
+// İlgili haberler: ortak varlık > aynı bölüm > en yeni; bülten, kısa (noindex) haber ve kendisi hariç.
+const related = ilgiliHaberler(post, await getPublishedPosts(lang));
+const crumbs = articleCrumbs(post, lang);
+
+// Haberin konuları: yalnız bu dilde sayfası olan (en az 3 haberli) konular bağlanır.
+const sayfaliKonular = await konuVerisi(lang);
+const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s) => konuBul(s)!);
+---
+
+<Base
+  lang={lang}
+  title={post.data.title}
+  description={post.data.description}
+  canonicalPath={getPostUrl(lang, id)}
+  langUrls={langUrls}
+  alternates={alternates}
+  activeCategory={post.data.category}
+  type="article"
+  image={cover.url}
+  imageAlt={cover.ozel ? kapakAlt(post, lang) : catTitle}
+  imageWidth={KAPAK_G}
+  imageHeight={KAPAK_Y}
+  noindex={!indexable}
+  author={SITE.author.name}
+  published={post.data.date}
+  modified={post.data.updated ?? post.data.date}
+  section={catTitle}
+  schema={articleGraph(post, lang, cover.url)}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <article class="article">
+    <header class="article-header">
+      <h1 class="article-title">{post.data.title}</h1>
+      <SignLine post={post} lang={lang} minutes fullTitle />
+      <p class="byline">
+        {ui.byline} <a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a>, {SITE.author.title[lang]}
+      </p>
+      <p class="article-deck">{post.data.description}</p>
+      <SentezBlok
+        lang={lang}
+        whyMatters={post.data.why_matters || post.data.perspektif}
+        keyPoints={post.data.key_points}
+      />
+      <RakamSeridi lang={lang} rakamlar={post.data.rakamlar} />
+      {
+        translations[other] && (
+          <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={other}>
+            <span class="lang-code">{other.toUpperCase()}</span>
+            {SITE.ui[other].readIn}
+            <Arrow />
+          </a>
+        )
+      }
+    </header>
+
+    {
+      duzeltme && (
+        <aside class="duzeltme">
+          <p>
+            <strong>{duzeltme.etiket}</strong> {duzeltme.metin}{' '}
+            <a href={duzeltme.baglanti}>{lang === 'en' ? 'Our corrections policy' : 'Düzeltme ilkemiz'}</a>
+          </p>
+        </aside>
+      )
+    }
+
+    {
+      cover.ozel && (
+        <figure class="article-cover">
+          <img src={cover.url} alt={kapakAlt(post, lang)} width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+        </figure>
+      )
+    }
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {
+      post.data.kaynaklar.length > 0 && (
+        <p class="ai-note official-source">
+          {lang === 'en'
+            ? post.data.kaynaklar.length > 1 ? 'Official sources:' : 'Official source:'
+            : post.data.kaynaklar.length > 1 ? 'Resmî kaynaklar:' : 'Resmî kaynak:'}{' '}
+          {post.data.kaynaklar.map((k, i) => (
+            <>
+              {i > 0 && ', '}
+              <a href={k.url} rel="noopener">{k.ad}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
+
+    <YapayZekaNotu lang={lang} veri={post.data} baslik={post.data.title} adres={abs(getPostUrl(lang, id))} />
+
+    <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />
+
+    {
+      konular.length > 0 && (
+        <nav class="story-topics" aria-labelledby="story-topics-heading">
+          <h2 class="term-related-heading" id="story-topics-heading">{ui.topicsInStory}</h2>
+          <ul class="tag-list">
+            {konular.map((k) => (
+              <li>
+                <a class="tag" href={konuYolu(lang, k.slug)}>{k.ad}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="block" aria-labelledby="related-heading">
+        <SignHeading lang={lang} label="relatedStories" id="related-heading" />
+        <div class="story-grid">
+          {related.map((rel) => (
+            <StoryCard post={rel} lang={lang} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</Base>

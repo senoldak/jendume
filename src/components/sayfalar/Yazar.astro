@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { abs, authorId, authorNode, type Crumb } from '../../lib/seo';
+import { getPostUrl, getPublishedPosts } from '../../lib/news';
+import { yazarYolu } from '../../lib/yollar.mjs';
+
+// Yazar sayfası; yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
+// Sitedeki her yazının görünen yazarı tek sabittir (SITE.author); biyografi yalnız ad, unvan ve iletişimdir.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const a = SITE.author;
+const path = yazarYolu(lang);
+const url = abs(path);
+const title = `${a.name} — ${a.title[lang]}`;
+const description =
+  lang === 'tr'
+    ? `${a.name}, ${SITE.displayName} yayınının yayın yönetmeni ve editörüdür.`
+    : `${a.name} is the editor-in-chief of ${SITE.displayName}.`;
+
+const posts = await getPublishedPosts(lang);
+const shown = posts.slice(0, 30);
+const crumbs: Crumb[] = [
+  { name: SITE.displayName, path: `/${lang}/` },
+  { name: a.name, path },
+];
+
+const schema = [
+  {
+    '@type': 'ProfilePage',
+    '@id': `${url}#page`,
+    url,
+    name: title,
+    description,
+    inLanguage: lang,
+    isPartOf: { '@id': abs('/#website') },
+    mainEntity: { ...authorNode(lang), description, email: a.email },
+    hasPart: posts.slice(0, 50).map((p) => ({
+      '@type': 'NewsArticle',
+      url: abs(getPostUrl(lang, p.id)),
+      headline: p.data.title,
+    })),
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
+  },
+];
+---
+
+<Base
+  lang={lang}
+  title={title}
+  description={description}
+  canonicalPath={path}
+  langUrls={{ tr: yazarYolu('tr'), en: yazarYolu('en') }}
+  alternates={{ tr: yazarYolu('tr'), en: yazarYolu('en'), 'x-default': yazarYolu('en') }}
+  schema={schema}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <section class="author-card" itemscope itemtype="https://schema.org/Person" itemid={authorId(lang)}>
+    <h1 itemprop="name">{a.name}</h1>
+    <p class="author-title" itemprop="jobTitle">{a.title[lang]}</p>
+    <p itemprop="description">{description}</p>
+    <p>{ui.authorContact}: <a href={`mailto:${a.email}`} itemprop="email">{a.email}</a></p>
+  </section>
+
+  <h2 class="term-related-heading">{ui.authorLatest}</h2>
+  <div class="story-grid">
+    {shown.map((post) => <StoryCard post={post} lang={lang} />)}
+  </div>
+</Base>

@@ -1,0 +1,57 @@
+---
+// Rakam şeridi: haberin başında (spot ve sentez bloğunun altında) en çok 4 kilit rakam; okur önce sayıları görür.
+// Bot yalnız kaynakta doğrulanan rakamları yazar (scripts/bot/denetci.mjs → rakamSeridiSuz).
+import type { Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  rakamlar?: { etiket: string; deger: string }[];
+}
+
+const { lang, rakamlar = [] } = Astro.props;
+---
+
+{
+  rakamlar.length > 0 && (
+    <dl class="rakam-seridi" aria-label={lang === 'tr' ? 'Rakamlarla' : 'By the numbers'}>
+      {rakamlar.map((r) => (
+        <div class="rakam">
+          <dt>{r.etiket}</dt>
+          <dd>{r.deger}</dd>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
+<style>
+  .rakam-seridi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
+    margin: 20px 0 4px;
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--hair);
+    font-family: var(--font-sign);
+  }
+  .rakam {
+    min-width: 0;
+    padding: 12px 14px 12px 0;
+  }
+  .rakam dt {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+  .rakam dd {
+    margin: 4px 0 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+</style>

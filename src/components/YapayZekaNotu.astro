@@ -1,0 +1,17 @@
+---
+// Haber sayfasının sonundaki tek satırlık yapay zekâ notu + "Hata bildir" mailto bağlantısı (Standartlar Faz 0).
+// Kutu ve ikon yok; yalnız görünür metin (JSON-LD'ye girmez).
+import { yapayZekaNotu } from '../lib/yapayzeka-notu.mjs';
+import type { Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  veri: Record<string, unknown>;
+  baslik: string;
+  adres: string;
+}
+const { lang, veri, baslik, adres } = Astro.props;
+const not = yapayZekaNotu({ veri, dil: lang, baslik, adres });
+---
+
+<p class="ai-note">{not.metin} <a href={not.mailto}>{not.baglanti}</a></p>

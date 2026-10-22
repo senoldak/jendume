@@ -1,0 +1,75 @@
+---
+// Kök sayfa: dil seçimi (x-default). /en/ ile aynı içerik olmasın diye iki dilin son başlıklarını yan yana gösterir.
+import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
+import SignHeading from '../components/SignHeading.astro';
+import { LOCALES, SITE, getCategory, formatDate } from '../lib/site';
+import { getPublishedPosts, getPostUrl } from '../lib/news';
+
+const description =
+  'AI, technology and science news in English and Turkish. Yapay zekâ, teknoloji ve bilim haberleri İngilizce ve Türkçe.';
+const columns = await Promise.all(
+  LOCALES.map(async (lang) => ({ lang, posts: (await getPublishedPosts(lang)).slice(0, 6) }))
+);
+---
+
+<Base
+  lang="en"
+  documentTitle={`${SITE.displayName} — ${SITE.tagline.en} · ${SITE.tagline.tr}`}
+  description={description}
+  canonicalPath="/"
+  langUrls={{ en: '/en/', tr: '/tr/' }}
+  alternates={{ en: '/en/', tr: '/tr/', 'x-default': '/' }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}/#webpage`,
+      url: `${SITE.url}/`,
+      name: SITE.displayName,
+      description,
+      inLanguage: ['en', 'tr'],
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <section class="lost">
+    <h1>
+      {SITE.displayName}
+      <span>{SITE.tagline.en} · {SITE.tagline.tr}</span>
+    </h1>
+    <p class="lost-text">AI, technology and science news, published in English and Turkish.</p>
+    <p class="lost-text" lang="tr">Yapay zekâ, teknoloji ve bilim haberleri; İngilizce ve Türkçe.</p>
+    <div class="lost-ways">
+      <a class="read-plate" href="/en/" hreflang="en">English · {SITE.ui.en.home}<Arrow /></a>
+      <a class="read-plate" href="/tr/" lang="tr" hreflang="tr">Türkçe · {SITE.ui.tr.home}<Arrow /></a>
+    </div>
+  </section>
+
+  <div class="story-grid">
+    {
+      columns.map(({ lang, posts }) => (
+        <section class="block" lang={lang} aria-labelledby={`latest-${lang}`}>
+          <SignHeading lang={lang} label="latestDispatch" id={`latest-${lang}`} />
+          <ul class="latest-list">
+            {posts.map((p) => {
+              const c = getCategory(p.data.category, lang);
+              return (
+                <li>
+                  <span class="code" aria-hidden="true">{c.code}</span>
+                  <div>
+                    <h3 class="latest-title">
+                      <a href={getPostUrl(lang, p.id)}>{p.data.title}</a>
+                    </h3>
+                    <p class="latest-meta">
+                      {c.shortTitle} · <time datetime={p.data.date.toISOString()}>{formatDate(p.data.date, lang)}</time>
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

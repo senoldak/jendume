@@ -1,0 +1,173 @@
+---
+// Ana sayfa gövdesi; / (EN) ve /{lang}/ aynı düzeni paylaşır.
+import StoryCard from './StoryCard.astro';
+import SignLine from './SignLine.astro';
+import SignHeading from './SignHeading.astro';
+import WhyItMatters from './WhyItMatters.astro';
+import Arrow from './Arrow.astro';
+import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
+import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
+import { getPublishedPosts, getPostUrl, getCategoryUrl, kapakBilgisi } from '../lib/news';
+import { KONULAR } from '../lib/konular';
+import { konuVerisi } from '../lib/rotalar';
+import { terimBul } from '../lib/sozluk.mjs';
+import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu } from '../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const posts = await getPublishedPosts(lang);
+const konuSayfali = await konuVerisi(lang);
+
+// featured yalnız 48 saat manşet tutar; eski bayrak manşeti kilitlemesin.
+const FEATURED_MS = 48 * 60 * 60 * 1000;
+const leadPost =
+  posts.find((p) => p.data.featured && Date.now() - p.data.date.getTime() < FEATURED_MS) ?? posts[0];
+const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
+const rest = posts.filter((p) => p.id !== leadPost?.id);
+const latest = rest.slice(0, 4);
+const older = rest.slice(4);
+
+// Konu ve sözlük rehberi: sayfası olan konular ve temel terimler.
+const konular = KONULAR.filter((k) => konuSayfali.has(k.slug));
+const ONE_CIKAN_TERIMLER = ['llm', 'token', 'context-window', 'rag', 'hallucination', 'ai-agent', 'fine-tuning', 'transformer', 'mixture-of-experts', 'multimodal'];
+const terimler = ONE_CIKAN_TERIMLER.map((id) => terimBul(id)).filter((t) => t !== undefined);
+
+// Kalkış panosu: her bölümün en yeni haberi ve haber sayısı.
+const board = CATEGORIES.map((cat, i) => {
+  const inSection = posts.filter((p) => p.data.category === cat.slug);
+  return { cat, code: i + 1, newest: inSection[0], count: inSection.length };
+});
+---
+
+{
+  leadPost ? (
+    <section class="front" aria-labelledby="lead-title">
+      <article class="lead">
+        {
+          leadCover?.ozel && (
+            <a class="lead-cover" href={getPostUrl(lang, leadPost.id)} tabindex="-1" aria-hidden="true">
+              <img src={leadCover.url} alt="" width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
+            </a>
+          )
+        }
+        <h1 class="lead-title" id="lead-title">
+          <a href={getPostUrl(lang, leadPost.id)}>{leadPost.data.title}</a>
+        </h1>
+        <SignLine post={leadPost} lang={lang} minutes fullTitle />
+        <p class="lead-desc">{leadPost.data.description}</p>
+        {leadPost.data.perspektif && <WhyItMatters lang={lang} text={leadPost.data.perspektif} />}
+        <a class="read-plate" href={getPostUrl(lang, leadPost.id)}>
+          <span>{ui.readReport}</span>
+          <span class="read-plate-other" lang={other}>{SITE.ui[other].readReport}</span>
+          <Arrow />
+        </a>
+      </article>
+
+      {latest.length > 0 && (
+        <aside aria-labelledby="latest-heading">
+          <SignHeading lang={lang} label="latestDispatch" id="latest-heading" />
+          <ul class="latest-list">
+            {latest.map((p) => {
+              const c = getCategory(p.data.category, lang);
+              return (
+                <li>
+                  <span class="code" aria-hidden="true">{c.code}</span>
+                  <div>
+                    <h3 class="latest-title">
+                      <a href={getPostUrl(lang, p.id)}>{p.data.title}</a>
+                    </h3>
+                    <p class="latest-meta">
+                      {c.shortTitle}
+                      {p.data.bolge && ` · ${p.data.bolge}`} · {formatDate(p.data.date, lang)}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+      )}
+    </section>
+  ) : (
+    <p class="empty-state">{ui.emptyCategory}</p>
+  )
+}
+
+{
+  older.length > 0 && (
+    <section class="block" aria-labelledby="all-heading">
+      <SignHeading lang={lang} label="allStories" id="all-heading" />
+      <div class="story-grid">
+        {older.map((post) => (
+          <StoryCard post={post} lang={lang} />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<section class="block directory" aria-labelledby="sections-heading">
+  <SignHeading lang={lang} label="sectorMatrix" id="sections-heading" />
+  <ul class="board">
+    {
+      board.map(({ cat, code, newest, count }) => (
+        <li class="board-row">
+          <a href={getCategoryUrl(lang, cat.slug)} class="board-section">
+            <span class="code" aria-hidden="true">{code}</span>
+            <span class="board-name">
+              {cat.title[lang]}
+              <span lang={other}>{cat.title[other]}</span>
+            </span>
+          </a>
+          {newest ? (
+            <a href={getPostUrl(lang, newest.id)} class="board-latest">
+              {newest.data.title}
+            </a>
+          ) : (
+            <span class="board-latest is-empty">{ui.emptyCategory}</span>
+          )}
+          <span class="board-count">
+            {count}
+            <span class="board-unit">{lang === 'tr' ? 'haber' : count === 1 ? 'story' : 'stories'}</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<section class="block front-guides" aria-label={`${ui.topics} · ${ui.glossary}`}>
+  {
+    konular.length > 0 && (
+      <div>
+        <SignHeading lang={lang} label="topics" id="topics-heading" />
+        <p>{ui.topicsDesc}</p>
+        <ul class="tag-list">
+          {konular.map((k) => (
+            <li>
+              <a class="tag" href={konuYolu(lang, k.slug)}>{k.ad}</a>
+            </li>
+          ))}
+        </ul>
+        <a href={konuDiziniYolu(lang)}>{ui.topics}</a>
+      </div>
+    )
+  }
+  <div>
+    <SignHeading lang={lang} label="glossary" id="glossary-heading" />
+    <p>{ui.glossaryDesc}</p>
+    <ul class="tag-list">
+      {terimler.map((t) => (
+        <li>
+          <a class="tag" href={terimYolu(lang, t.id)}>{t[lang].ad}</a>
+        </li>
+      ))}
+    </ul>
+    <a href={sozlukYolu(lang)}>{ui.allTerms}</a>
+  </div>
+</section>

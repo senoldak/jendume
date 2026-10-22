@@ -1,0 +1,62 @@
+# favicon.ico artık gerçek dosya olarak public/ içinde; yönlendirme gerekmiyor.
+
+# Eski adres: İngilizce yayın ilkeleri sayfası /en/editorial-standards/ altında.
+/en/yayin-ilkeleri/ /en/editorial-standards/ 301
+
+# Aynı olayın mükerrer haberleri (Ekim 2026 birleştirmesi): silinen haber ve kapağı, tutulan habere yönlenir.
+/en/haber/character-ai-iflas-basvurusunda-bulundu-ve-satisa-cikarildi/ /en/news/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy/ 301
+/kapak/en/character-ai-iflas-basvurusunda-bulundu-ve-satisa-cikarildi.png /kapak/en/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy.png 301
+/tr/haber/character-ai-iflas-basvurusunda-bulundu-ve-satisa-cikarildi/ /tr/haber/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy/ 301
+/kapak/tr/character-ai-iflas-basvurusunda-bulundu-ve-satisa-cikarildi.png /kapak/tr/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy.png 301
+/en/haber/disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti/ /en/news/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy/ 301
+/kapak/en/disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti.png /kapak/en/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy.png 301
+/tr/haber/disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti/ /tr/haber/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy/ 301
+/kapak/tr/disney-tartismali-sohbet-botu-girisimi-icin-20-milyon-dolar-teklif-etti.png /kapak/tr/character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy.png 301
+/en/haber/kisisel-yapay-zeka-asistani-ambi-26-milyon-dolar-yatirim-aldi/ /en/news/arka-planda-surekli-dinleme-yapan-yapay-zeka-girisimi-26-milyon-dolar-yatirim-al/ 301
+/kapak/en/kisisel-yapay-zeka-asistani-ambi-26-milyon-dolar-yatirim-aldi.png /kapak/en/arka-planda-surekli-dinleme-yapan-yapay-zeka-girisimi-26-milyon-dolar-yatirim-al.png 301
+/tr/haber/kisisel-yapay-zeka-asistani-ambi-26-milyon-dolar-yatirim-aldi/ /tr/haber/arka-planda-surekli-dinleme-yapan-yapay-zeka-girisimi-26-milyon-dolar-yatirim-al/ 301
+/kapak/tr/kisisel-yapay-zeka-asistani-ambi-26-milyon-dolar-yatirim-aldi.png /kapak/tr/arka-planda-surekli-dinleme-yapan-yapay-zeka-girisimi-26-milyon-dolar-yatirim-al.png 301
+/en/haber/microsoft-un-yeni-yapay-zeka-cipi-maia-300-geliyor/ /en/news/microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi/ 301
+/kapak/en/microsoft-un-yeni-yapay-zeka-cipi-maia-300-geliyor.png /kapak/en/microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi.png 301
+/tr/haber/microsoft-un-yeni-yapay-zeka-cipi-maia-300-geliyor/ /tr/haber/microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi/ 301
+/kapak/tr/microsoft-un-yeni-yapay-zeka-cipi-maia-300-geliyor.png /kapak/tr/microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi.png 301
+/en/haber/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor/ /en/news/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm/ 301
+/kapak/en/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor.png /kapak/en/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm.png 301
+/tr/haber/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor/ /tr/haber/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm/ 301
+/kapak/tr/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor.png /kapak/tr/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm.png 301
+
+# İngilizce sayfalar İngilizce yollara taşındı (Ekim 2026; bkz. src/lib/yollar.mjs). Haber kimlikleri (slug) değişmedi.
+# Statik kurallar dinamiklerden ÖNCE gelmeli: Cloudflare jokerden/yer tutucudan sonraki her kuralı dinamik sayar
+# (dinamik sınır 100, statik sınır 2.000). Joker ve yer tutuculu kurallar bu dosyanın EN SONUNDA durur.
+/en/hakkimizda/ /en/about/ 301
+
+# E-posta bülteni kaldırıldı (Ekim 2026): eski abonelik sayfaları dilin ana sayfasına yönlenir.
+/tr/bulten /tr/ 301
+/tr/bulten/ /tr/ 301
+/en/newsletter /en/ 301
+/en/newsletter/ /en/ 301
+
+# Yayından kaldırılan haberler (20 Ekim 2026): adresler Düzeltmeler sayfasına yönlenir.
+/tr/haber/openai-yonetici-toplanti-odasina-gizli-dinleme-cihazi-yerlestiren-eski-muhendis/ /tr/duzeltmeler/ 301
+/en/news/openai-yonetici-toplanti-odasina-gizli-dinleme-cihazi-yerlestiren-eski-muhendis/ /en/corrections/ 301
+/tr/haber/openai-calisaninin-yapay-zeka-yardimiyla-casusluk-yaptigi-iddia-edildi/ /tr/duzeltmeler/ 301
+/en/news/openai-calisaninin-yapay-zeka-yardimiyla-casusluk-yaptigi-iddia-edildi/ /en/corrections/ 301
+/tr/haber/elicit-ceo-su-andreas-stuhlmuller-olasi-yapay-zeka-saldirilarina-karsi-hazirlik/ /tr/duzeltmeler/ 301
+/en/news/elicit-ceo-su-andreas-stuhlmuller-olasi-yapay-zeka-saldirilarina-karsi-hazirlik/ /en/corrections/ 301
+/tr/haber/elicit-kurucusu-andreas-stuhlmuller-yapay-zeka-destekli-siber-saldiri-riskine-ka/ /tr/duzeltmeler/ 301
+/en/news/elicit-kurucusu-andreas-stuhlmuller-yapay-zeka-destekli-siber-saldiri-riskine-ka/ /en/corrections/ 301
+/tr/haber/yandex-veri-merkezlerine-duzenlenen-drone-saldirilari-yapay-zeka-altyapisinin-gu/ /tr/duzeltmeler/ 301
+/en/news/yandex-veri-merkezlerine-duzenlenen-drone-saldirilari-yapay-zeka-altyapisinin-gu/ /en/corrections/ 301
+
+# --- Dinamik kurallar (dosyanın sonu) ---
+/en/haber/* /en/news/:splat 301
+/en/kategori/dunya/* /en/category/world/:splat 301
+/en/kategori/yapay-zeka/* /en/category/ai/:splat 301
+/en/kategori/teknoloji/* /en/category/technology/:splat 301
+/en/kategori/bilim/* /en/category/science/:splat 301
+/en/kategori/ekonomi/* /en/category/economy/:splat 301
+/en/kategori/perspektif/* /en/category/perspective/:splat 301
+/en/kategori/gunluk-bulten/* /en/category/bulletins/:splat 301
+/tr/bulten/* /tr/ 301
+/en/newsletter/* /en/ 301
+/api/bulten/* /tr/ 301

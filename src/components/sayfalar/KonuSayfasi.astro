@@ -1,0 +1,90 @@
+---
+// Konu sayfası, sayfalı: /tr/konu/{slug}/, /en/topic/{slug}/, … /2/ (src/lib/konular.ts, src/lib/yollar.mjs).
+// Yalnız o dilde en az KONU_EN_AZ haberi olan konular üretilir; hreflang yalnız öteki dilde aynı numaralı sayfa varsa.
+import type { Page } from 'astro';
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Sayfalama from '../../components/Sayfalama.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { CATEGORY_PAGE_SIZE, type NewsEntry } from '../../lib/news';
+import { collectionGraph, topicAbout, topicCrumbs } from '../../lib/seo';
+import { konuBul } from '../../lib/konular';
+import { konuVerisi } from '../../lib/rotalar';
+import { duzeltmePolitikasiYolu, konuYolu } from '../../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+  slug: string;
+  page: Page<NewsEntry>;
+  otherCount: number;
+}
+
+const { lang, slug, page, otherCount } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const konu = konuBul(slug)!;
+const posts = page.data;
+const n = page.currentPage;
+
+const pagePath = (l: Locale, i: number) => (i <= 1 ? konuYolu(l, slug) : `${konuYolu(l, slug)}${i}/`);
+const canonicalPath = pagePath(lang, n);
+const otherHasPage = otherCount > (n - 1) * CATEGORY_PAGE_SIZE && otherCount > 0;
+const alternates: Partial<Record<Locale | 'x-default', string>> = otherHasPage
+  ? { [lang]: canonicalPath, [other]: pagePath(other, n), 'x-default': pagePath('en', n) }
+  : {};
+
+// İlgili konular: yalnız bu dilde sayfası olanlar.
+const sayfali = await konuVerisi(lang);
+const ilgili = (konu.ilgili ?? []).filter((s) => sayfali.has(s)).map((s) => konuBul(s)!);
+
+const pageSuffix = n > 1 ? ` — ${ui.page} ${n}` : '';
+const title = lang === 'tr' ? `${konu.ad} haberleri${pageSuffix}` : `${konu.ad} news${pageSuffix}`;
+const description = n > 1 ? `${konu.giris[lang]} (${ui.page} ${n}/${page.lastPage})` : konu.giris[lang];
+const crumbs = topicCrumbs(lang, konu, n, canonicalPath);
+---
+
+<Base
+  lang={lang}
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  langUrls={{ [lang]: canonicalPath, [other]: otherHasPage ? pagePath(other, n) : `/${other}/` }}
+  alternates={alternates}
+  schema={collectionGraph(lang, title, description, canonicalPath, posts, crumbs, topicAbout(konu))}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <header class="section-sign">
+    <span class="code" aria-hidden="true">{konu.ad.charAt(0).toUpperCase()}</span>
+    <h1>
+      {konu.ad}
+      <span>{ui.topic} · <span class="section-sign-other" lang={other}>{SITE.ui[other].topic}</span></span>
+    </h1>
+    <p class="section-desc">
+      {konu.giris[lang]}
+      {n > 1 && <span class="section-page">{ui.page} {n}/{page.lastPage}</span>}
+    </p>
+  </header>
+
+  {
+    ilgili.length > 0 && (
+      <ul class="tag-list tag-list-section" aria-label={ui.topics}>
+        {ilgili.map((k) => (
+          <li>
+            <a class="tag" href={konuYolu(lang, k.slug)}>{k.ad}</a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <div class="story-grid">
+    {posts.map((post) => <StoryCard post={post} lang={lang} />)}
+  </div>
+
+  <Sayfalama lang={lang} current={n} last={page.lastPage} pagePath={(i) => pagePath(lang, i)} />
+
+  <p class="production-note page-note">
+    {ui.topicNote} <a href={duzeltmePolitikasiYolu(lang)}>{ui.correctionsPolicy}</a>
+  </p>
+</Base>

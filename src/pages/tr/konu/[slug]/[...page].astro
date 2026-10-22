@@ -1,0 +1,12 @@
+---
+import type { GetStaticPaths, Page } from 'astro';
+import KonuSayfasi from '../../../../components/sayfalar/KonuSayfasi.astro';
+import { konuYollari } from '../../../../lib/rotalar';
+import type { NewsEntry } from '../../../../lib/news';
+
+export const getStaticPaths = (({ paginate }) => konuYollari('tr', paginate)) satisfies GetStaticPaths;
+
+const { page, slug, otherCount } = Astro.props as { page: Page<NewsEntry>; slug: string; otherCount: number };
+---
+
+<KonuSayfasi lang="tr" slug={slug} page={page} otherCount={otherCount} />

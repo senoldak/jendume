@@ -1,0 +1,32 @@
+---
+// Haberin etiket ızgarası, başlığın altında iki sabit satır:
+// kod + bölüm (+ önemli gelişme) / coğrafya · tarih · okuma süresi.
+import { SITE, getCategory, formatDate, readingMinutes, type Locale } from '../lib/site';
+import { getCategoryUrl, type NewsEntry } from '../lib/news';
+
+interface Props {
+  post: NewsEntry;
+  lang: Locale;
+  minutes?: boolean;
+  fullTitle?: boolean;
+}
+
+const { post, lang, minutes = false, fullTitle = false } = Astro.props;
+const ui = SITE.ui[lang];
+const cat = getCategory(post.data.category, lang);
+---
+
+<div class="sign-line">
+  <p class="sign-line-head">
+    <a href={getCategoryUrl(lang, cat.slug)} class="sign-line-section">
+      <span class="code" aria-hidden="true">{cat.code}</span>
+      <span>{fullTitle ? cat.title : cat.shortTitle}</span>
+    </a>
+    {post.data.breaking && <span class="sign-line-alert">{ui.breakingBadge}</span>}
+  </p>
+  <p class="sign-line-meta">
+    {post.data.bolge && <>{post.data.bolge} · </>}
+    <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date, lang)}</time>
+    {minutes && <> · {readingMinutes(post.body ?? post.data.description)} {ui.minRead}</>}
+  </p>
+</div>

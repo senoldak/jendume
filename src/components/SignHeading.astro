@@ -1,0 +1,20 @@
+---
+// İki dilli bölüm başlığı: okunan dil kalın, öteki dil ince.
+import { SITE, otherLocale, type Locale } from '../lib/site';
+
+type UiKey = keyof (typeof SITE.ui)['tr'];
+
+interface Props {
+  lang: Locale;
+  label: UiKey;
+  id?: string;
+}
+
+const { lang, label, id } = Astro.props;
+const other = otherLocale(lang);
+---
+
+<h2 class="sign-heading" id={id}>
+  <span class="sign-heading-primary">{SITE.ui[lang][label]}</span>
+  <span class="sign-heading-secondary" lang={other}>{SITE.ui[other][label]}</span>
+</h2>

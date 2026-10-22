@@ -1,0 +1,295 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import { slugify, rssOku, guvenli, varlikCoz, ucDilliHaberYaz, yaziKaydet } from './lib.mjs';
+import { KAYNAKLAR, RESMI_KAYNAKLAR, anahtarlar, benzer, gizliKaynak, haberKimligi } from './kaynaklar.mjs';
+import { rakamKontrol, medyaKontrol, medyaAdlariniKur, zamanKontrol, kesinKontroller, duzeltmeAyrintisi, yerelDuzelt } from './denetci.mjs';
+import { DIL_BLOK_SEMASI } from './yazar.mjs';
+
+// Gerçek yayın adları şifreli listede durur; testler uydurma adlarla çalışır.
+medyaAdlariniKur(['Örnek Haber', 'Ajans Beta']);
+
+test('slugify converts Turkish characters to clean ASCII slugs', () => {
+  assert.equal(
+    slugify('Kelimelerin Ötesinde: Yapay Zekâ Dünyasında Neler Oluyor?'),
+    'kelimelerin-otesinde-yapay-zeka-dunyasinda-neler-oluyor'
+  );
+});
+
+test('varlikCoz decodes Turkish HTML entities properly', () => {
+  assert.equal(
+    varlikCoz('Kurul &uuml;yesi &Ouml;d&uuml;l&uuml; Ko&ccedil;'),
+    'Kurul üyesi Ödülü Koç'
+  );
+});
+
+test('rssOku parses both RSS 2.0 <item> and Atom <entry> feeds', () => {
+  const rssXml = `<?xml version="1.0"?>
+    <rss><channel>
+      <item>
+        <guid>id-1</guid>
+        <title>Meta Releases Frontier AI Model Muse Wonder</title>
+        <link>https://example.com/muse-wonder</link>
+        <description>New multimodal model reaches top benchmark scores.</description>
+        <pubDate>Mon, 12 Oct 2026 08:00:00 GMT</pubDate>
+      </item>
+    </channel></rss>`;
+  const items = rssOku(rssXml);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].title, 'Meta Releases Frontier AI Model Muse Wonder');
+  assert.equal(items[0].link, 'https://example.com/muse-wonder');
+});
+
+test('guvenli strips raw HTML tags and unsafe links while preserving https links', () => {
+  const dirty = 'Merhaba <script>alert(1)</script> [Güvenli](https://jendume.com) ve [Zararlı](javascript:alert(1))';
+  const clean = guvenli(dirty);
+  assert.ok(!clean.includes('<script>'));
+  assert.ok(clean.includes('[Güvenli](https://jendume.com)'));
+  assert.ok(!clean.includes('javascript:'));
+});
+
+test('anahtarlar and benzer group same-event AI headlines without false-matching generic AI words', () => {
+  const a = anahtarlar('Meta releases new frontier AI model Muse Wonder');
+  const b = anahtarlar('Meta unveils Muse Wonder frontier artificial intelligence model');
+  assert.equal(benzer(a, b), true);
+
+  const unrelated1 = anahtarlar('Yapay zekâ yatırımları küresel büyümeyi destekliyor');
+  const unrelated2 = anahtarlar('Yapay zekâ yasası Avrupa ülkelerinde yürürlüğe girdi');
+  assert.equal(benzer(unrelated1, unrelated2), false);
+});
+
+test('benzer: alanın genel kelimeleri ve şirket-ürün çifti tek başına aynı olay saymaz', () => {
+  const ayni = (x, y) => benzer(anahtarlar(x), anahtarlar(y));
+  assert.equal(ayni('Acme introduces new security framework for autonomous AI agents', 'Globex introduces new security tools against autonomous AI agents'), false);
+  assert.equal(ayni('Acme yapay zekâ ajanları için yeni açık kaynak araçlarını duyurdu', 'Açık kaynaklı yapay zekâ modellerinin güvenlik kilitleri kolayca kaldırılabiliyor'), false);
+  assert.equal(ayni('Anthropic announces Claude Duet personal AI agent', 'Anthropic model Claude designs protein binders'), false);
+  assert.equal(ayni('Anthropic yılın üçüncü çeyreğinde 16.8 milyar dolar gelir elde etti', 'Üçüncü çeyrekte 16,8 milyar dolar gelir elde eden Anthropic halka arza hazırlanıyor'), true);
+  assert.equal(ayni('Claude Haiku 5.5 released', 'Anthropic launches Claude Haiku 5.5'), true);
+});
+
+test('KAYNAKLAR: resmi akışlar açık, gizli akışlar kod ve anahtarlı özetle kimliklenir', () => {
+  assert.ok(RESMI_KAYNAKLAR.length >= 1 && RESMI_KAYNAKLAR.every((k) => k.resmi && k.etiket === k.ad));
+  assert.ok(RESMI_KAYNAKLAR.every((k) => KAYNAKLAR.includes(k)));
+  assert.ok(KAYNAKLAR.every((k) => k.akis.startsWith('https://')));
+  const g = gizliKaynak({ ad: 'Örnek Haber', kisa: 'ornek', akis: 'https://haber.example.com/feed', yerli: true, filtre: true });
+  assert.match(g.etiket, /^k[0-9a-f]{6}$/);
+  assert.ok(g.filtre instanceof RegExp && g.gizli);
+  const id = haberKimligi(g, 'https://haber.example.com/2026/10/haber');
+  assert.match(id, /^k[0-9a-f]{6}:[0-9a-f]{16}$/);
+  assert.equal(id, haberKimligi(g, 'https://haber.example.com/2026/10/haber'));
+  assert.equal(haberKimligi(RESMI_KAYNAKLAR[0], 'https://x'), `${RESMI_KAYNAKLAR[0].kisa}:https://x`);
+});
+
+test('rakamKontrol, medyaKontrol, and zamanKontrol catch unverified numbers, media names, and relative times', () => {
+  const kaynak = 'More than 45 countries joined the AI safety initiative in 2026.';
+  assert.equal(rakamKontrol('Girişime 2026 yılında 45 ülke katıldı.', kaynak).length, 0);
+  assert.equal(rakamKontrol('Girişime 95 ülke katıldı.', kaynak).length, 1);
+  assert.equal(medyaKontrol('Ajans Beta ve Örnek Haber tarafından aktarılan habere göre...').length, 1);
+  assert.equal(zamanKontrol('Şirket bugün yeni modelini tanıttı.', 'tr').length, 1);
+  assert.equal(zamanKontrol('The lab released the weights yesterday.', 'en').length, 1);
+  assert.equal(
+    kesinKontroller(
+      {
+        tr: {
+          title: 'Yeni Yapay Zekâ Güvenlik Girişimi',
+          description: '2026 yılında 45 ülke ortak güvenlik ilkelerine imza attı.',
+          perspektif: 'Uluslararası standartlar kullanıcı güvenliğini koruyor.',
+          body: 'Girişime 2026 yılında 45 ülke katıldı.',
+        },
+        en: {
+          title: 'New AI Safety Initiative',
+          description: 'In 2026, 45 countries signed joint safety principles.',
+          perspektif: 'International standards protect user safety.',
+          body: 'More than 45 countries joined the initiative in 2026.',
+        },
+      },
+      kaynak
+    ).length,
+    0
+  );
+});
+
+test('ucDilliHaberYaz writes tr and en markdown files with identical slug and perspektif', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const slug = await ucDilliHaberYaz(tmpDir, {
+      category: 'yapay-zeka',
+      date: '2026-10-12T10:00:00.000Z',
+      breaking: false,
+      tr: {
+        title: 'Yapay Zekâ Çeviri Araçları Farklı Kültürleri Nasıl Yakınlaştırıyor',
+        description: 'Gerçek zamanlı sesli çeviri teknolojileri dil engellerini ortadan kaldırıyor.',
+        bolge: 'Küresel',
+        perspektif: 'Dil bariyerinin aşılması, yerel hikayelerin dünya çapında doğrudan anlaşılmasını sağlıyor.',
+        why_matters: 'Kültürel iletişimi kökten dönüştüren somut bir yapay zekâ uygulaması.',
+        key_points: ['100 dilde anlık çeviri', '%95 doğruluk oranı'],
+        body: 'Türkçe gövde metni.',
+      },
+      en: {
+        title: 'How AI Translation Tools Are Bringing Different Cultures Closer',
+        description: 'Real-time voice translation technologies are removing language barriers.',
+        bolge: 'Global',
+        perspektif: 'Overcoming language barriers allows local stories to be understood directly worldwide.',
+        why_matters: 'A concrete AI application fundamentally transforming cultural communication.',
+        key_points: ['Instant translation in 100 languages', '95% accuracy rate'],
+        body: 'English body text.',
+      },
+    });
+
+    assert.equal(slug, 'yapay-zeka-ceviri-araclari-farkli-kulturleri-nasil-yakinlastiriyor');
+    for (const dil of ['tr', 'en']) {
+      const content = await readFile(
+        path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`),
+        'utf8'
+      );
+      assert.ok(content.includes(`lang: ${dil}`));
+      assert.ok(content.includes('perspektif:'));
+      assert.ok(content.includes('bolge:'));
+      assert.ok(content.includes('why_matters:'));
+      assert.ok(content.includes('key_points:'));
+    }
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
+
+test('ucDilliHaberYaz birincil kaynakları iki dilde de kaynaklar alanına yazar; boşsa alan yok', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const blok = (d) => ({ title: `Başlık ${d}`, description: 'Özet.', body: 'Gövde.' });
+    const paket = { category: 'yapay-zeka', date: '2026-10-12T10:00:00.000Z', tr: blok('tr'), en: blok('en') };
+    const slug = await ucDilliHaberYaz(tmpDir, { ...paket, kaynaklar: [{ ad: 'OpenAI News', url: 'https://openai.com/index/ornek/' }] });
+    for (const dil of ['tr', 'en']) {
+      const c = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      assert.ok(c.includes('kaynaklar:\n  - ad: "OpenAI News"\n    url: "https://openai.com/index/ornek/"'), c);
+    }
+    const tr2 = { ...blok('tr'), title: 'Başka başlık' };
+    const slug2 = await ucDilliHaberYaz(tmpDir, { ...paket, tr: tr2, kaynaklar: [] });
+    const c2 = await readFile(path.join(tmpDir, 'src/content/haberler/tr', `${slug2}.md`), 'utf8');
+    assert.ok(!c2.includes('kaynaklar:'));
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
+
+test('DIL_BLOK_SEMASI contains why_matters and key_points', () => {
+  assert.ok(DIL_BLOK_SEMASI.properties.why_matters);
+  assert.equal(DIL_BLOK_SEMASI.properties.why_matters.type, 'string');
+  assert.ok(DIL_BLOK_SEMASI.properties.key_points);
+  assert.equal(DIL_BLOK_SEMASI.properties.key_points.type, 'array');
+  assert.equal(DIL_BLOK_SEMASI.properties.key_points.maxItems, 3);
+});
+
+test('yaziKaydet is an alias of ucDilliHaberYaz', () => {
+  assert.equal(yaziKaydet, ucDilliHaberYaz);
+});
+
+
+test('baslikKontrol: anahtar sözcükle başlayan başlık geçer; iki noktalı etiket, belirsiz ve "Yapay zekâ" açılışı yakalanır', async () => {
+  const { baslikKontrol, ikiNoktaliAcilis } = await import('./denetci.mjs');
+  const paket = (tr, en) => ({ tr: { title: tr }, en: { title: en } });
+  assert.deepEqual(
+    baslikKontrol(paket('OpenAI yeni akıl yürütme modelini tanıttı', 'OpenAI unveils a new reasoning model')),
+    [],
+  );
+  assert.deepEqual(baslikKontrol(paket('AB Yapay Zekâ Yasası yeni kuralları devreye aldı', 'AI Act rules take effect across the EU')), []);
+  // Saat ve sonraki sözcüklerdeki iki nokta sorun değildir.
+  assert.equal(ikiNoktaliAcilis('Nvidia hisseleri 10:30’da yükseldi'), false);
+  assert.equal(ikiNoktaliAcilis('Anthropic Claude için yeni araç tanıttı ve geliştiricilere açtı: ayrıntılar'), false);
+
+  const iki = baslikKontrol(paket('OpenAI: Yeni model tanıtıldı', 'Open-Source AI Models: Freedom, Power, and Safety'));
+  assert.equal(iki.filter((s) => s.includes('iki noktalı')).length, 2);
+
+  const belirsiz = baslikKontrol(paket('Bu gelişme her şeyi değiştirecek', "Here's what happened"));
+  assert.equal(belirsiz.filter((s) => s.includes('belirsiz')).length, 2);
+  assert.ok(baslikKontrol(paket('Yeni dönem', 'Big news today for everyone')).some((s) => s.startsWith('[TR]') && s.includes('belirsiz')));
+
+  const ai = baslikKontrol(paket('Yapay zekâ mimarlık projelerini üretiyor', 'AI is drawing architecture plans in minutes'));
+  assert.equal(ai.filter((s) => s.includes('Yapay zekâ/AI')).length, 2);
+  // "Aile", "Airbus" gibi sözcükler "AI" açılışı sayılmaz.
+  assert.deepEqual(baslikKontrol(paket('Aile şirketleri yapay zekâ araçlarına yöneliyor', 'Airbus tests autonomous taxiing system')), []);
+});
+
+test('resmî kaynaklar: şirket blogları eklendi; genel konulu blog yapay zekâ filtresinden geçer', () => {
+  const kisalar = RESMI_KAYNAKLAR.map((k) => k.kisa);
+  for (const k of ['nvidia-blog', 'aws-ml', 'google-research', 'mistral', 'epoch-ai', 'metr']) assert.ok(kisalar.includes(k), k);
+  assert.equal(new Set(kisalar).size, kisalar.length, 'kısa adlar tekil olmalı (haber kimliğinin parçası)');
+  const nvidia = RESMI_KAYNAKLAR.find((k) => k.kisa === 'nvidia-blog');
+  assert.ok(nvidia.filtre.test('New AI model for robotics'));
+  assert.equal(nvidia.filtre.test('New graphics driver for gamers'), false);
+});
+
+test('ucDilliHaberYaz gövdedeki HTML etiketlerini ve yorumlarını iki dilde de atar, Markdown ve metni korur', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  const govde = (s) =>
+    [
+      `${s} <b>yüzde 3</b>.<script>alert(1)</script>`,
+      '<a href="https://haber.example.com" onclick="x()">tıkla</a> <!-- gizli -->',
+      '<div class="kutu">',
+      'Oran 3 < 5 ve 7 > 2; ayrıntı için [rapor](https://www.tcmb.gov.tr/).',
+      '</div><br/> <!-- kapanmamış',
+    ].join('\n');
+  try {
+    const slug = await ucDilliHaberYaz(tmpDir, {
+      category: 'yapay-zeka',
+      date: '2026-10-12T10:00:00.000Z',
+      tr: { title: 'Etiketli', description: 'x', body: govde('Türkçe') },
+      en: { title: 'Tagged', description: 'x', body: govde('English') },
+    });
+    for (const [dil, bas] of [['tr', 'Türkçe'], ['en', 'English']]) {
+      const md = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      const metin = md.split('---').slice(2).join('---');
+      assert.doesNotMatch(metin, /<\/?(b|a|script|div|br)\b/i);
+      assert.doesNotMatch(metin, /<!--|onclick|gizli|kapanmamış|alert/);
+      assert.match(metin, new RegExp(`${bas} yüzde 3`));
+      assert.match(metin, /tıkla/);
+      assert.match(metin, /3 < 5 ve 7 > 2/);
+      assert.match(metin, /\[rapor\]\(https:\/\/www\.tcmb\.gov\.tr\/\)/);
+    }
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
+
+test('kesinKontroller scans why_matters, key_points, rakamlar and bolge for outlet names', () => {
+  const temiz = {
+    title: 'Yeni Girişim', description: 'Kısa açıklama.', perspektif: 'Görüş.', body: 'Metin.',
+  };
+  const yap = (ek) => ({ tr: { ...temiz, ...ek }, en: { ...temiz } });
+  assert.equal(kesinKontroller(yap({}), 'x').length, 0);
+  for (const ek of [
+    { why_matters: 'Ajans Beta bildirdi.' },
+    { key_points: ['Önemli', 'Örnek Haber yazdı'] },
+    { rakamlar: [{ etiket: 'Örnek Haber', deger: '5' }] },
+    { rakamlar: [{ etiket: 'Sayı', deger: 'Ajans Beta' }] },
+    { bolge: 'Ajans Beta' },
+  ]) {
+    assert.ok(kesinKontroller(yap(ek), 'x').some((m) => m.startsWith('[TR]')), JSON.stringify(ek));
+  }
+});
+
+test('guvenli neutralises reference-style links and definitions', () => {
+  const out = guvenli('Bak [tıkla][r] ve [x][] ile\n\n[r]: javascript:alert(1)\n[x]: http://e.com\n');
+  assert.ok(!/javascript:|http:|\]\[|^\[r\]:/m.test(out), out);
+  assert.match(out, /Bak tıkla ve x ile/);
+  assert.match(guvenli('[a](https://e.com/x)'), /\[a\]\(https:\/\/e\.com\/x\)/);
+});
+
+test('duzeltmeAyrintisi: kopya parçaları ve yayın adının geçtiği alanı söyler; temiz taslakta boş', () => {
+  const kaynak = 'The company said the new model runs twice as fast on standard hardware and costs less to operate overall. It ships next month.';
+  const govde = 'The company said the new model runs twice as fast on standard hardware and costs less to operate overall in tests. Analysts said it ships next month and the company said the new model runs twice as fast on standard hardware and costs less to operate overall.';
+  const paket = { tr: { title: 'Model hızlandı', description: 'd', body: 'Temiz Türkçe gövde.' }, en: { title: 'Model', description: 'd', body: govde, key_points: ['Ajans Beta reported the launch'] } };
+  const a = duzeltmeAyrintisi(paket, kaynak);
+  assert.match(a, /\[EN\] Kaynaktan birebir kopyalanan parçalar/);
+  assert.match(a, /- "the company said the new model runs twice as fast on"/);
+  assert.match(a, /\[EN\] "key_points" alanında yayın kuruluşu adı var \(Ajans Beta\)/);
+  assert.doesNotMatch(a, /\[TR\]/);
+  assert.equal(duzeltmeAyrintisi({ tr: { body: 'Temiz.' }, en: { body: 'Clean.' } }, kaynak), '');
+});
+
+test('yerelDuzelt: dizi alanlarındaki (key_points) metinleri de temizler', () => {
+  const p = yerelDuzelt({ en: { title: 'X', key_points: ['Prices rose today.', 'Stable'] }, tr: { title: 'Y' } });
+  assert.deepEqual(p.en.key_points, ['Prices rose.', 'Stable']);
+});

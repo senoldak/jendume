@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import EditorialContent from '../../components/EditorialContent.astro';
+import { LOCALES, SITE, type Locale } from '../../lib/site';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+
+if (lang === 'en') {
+  return Astro.redirect('/en/editorial-standards/', 301);
+}
+const ui = SITE.ui[lang];
+const canonicalPath = lang === 'en' ? '/en/editorial-standards/' : `/${lang}/yayin-ilkeleri/`;
+const description =
+  lang === 'tr'
+    ? 'JEN DUME Yayın İlkeleri: örnek aldığımız gazetecilik etiği ilkeleri, yapay zekâ kullanımımız ve düzeltme yöntemimiz.'
+    : 'JEN DUME Editorial Standards: the journalism ethics principles we take as a model, how we use AI, and how we handle corrections.';
+---
+
+<Base
+  lang={lang}
+  title={ui.editorialStandards}
+  description={description}
+  canonicalPath={canonicalPath}
+  langUrls={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/' }}
+  alternates={{ tr: '/tr/yayin-ilkeleri/', en: '/en/editorial-standards/', 'x-default': '/en/editorial-standards/' }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${canonicalPath}#webpage`,
+      url: `${SITE.url}${canonicalPath}`,
+      name: `${ui.editorialStandards} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <EditorialContent lang={lang} />
+</Base>

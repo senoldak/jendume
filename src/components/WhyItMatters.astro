@@ -1,0 +1,20 @@
+---
+// "Neden Önemli?" levhası: olgudan ayrı, yorumun kendi sesi.
+import { SITE, otherLocale, type Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  text: string;
+}
+
+const { lang, text } = Astro.props;
+const other = otherLocale(lang);
+---
+
+<aside class="why" aria-label={SITE.ui[lang].whyItMatters}>
+  <p class="why-label">
+    <span class="why-primary">{SITE.ui[lang].whyItMatters}</span>
+    <span class="why-secondary" lang={other}>{SITE.ui[other].whyItMatters}</span>
+  </p>
+  <p class="why-text">{text}</p>
+</aside>

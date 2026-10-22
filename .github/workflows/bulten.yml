@@ -1,0 +1,66 @@
+# Günlük bülten: son bültenden bu yana çıkan haberleri TR ve EN olarak tek yazıda toplar.
+# Zamanlama Cloudflare'deki mecmua-saat Worker'ındadır (Türkiye saatiyle 09:00 sabah, 14:00 öğle, 21:00 akşam).
+# Telegram'a yalnız bu bültenler gider (Worker'ın Telegram kuyruğu).
+name: Bülten (sabah/öğle/akşam)
+
+on:
+  workflow_dispatch:
+    inputs:
+      donem:
+        description: 'Dönem (boş bırakılırsa saate göre)'
+        required: false
+        default: ''
+        type: choice
+        options: ['', sabah, ogle, aksam]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: haber-botu
+  cancel-in-progress: false
+
+jobs:
+  bulten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+
+      - name: Bülteni yaz
+        id: bulten
+        env:
+          DONEM: ${{ inputs.donem }}
+          MOTOR_URL: ${{ vars.MOTOR_URL }} # acil durdurma bayrağı
+          MOTOR_ANAHTARI: ${{ secrets.MOTOR_ANAHTARI }}
+        run: |
+          case "$DONEM" in sabah|ogle|aksam|"") ;; *) DONEM="" ;; esac
+          node scripts/bot/bulten.mjs $DONEM
+
+      - name: Commit
+        if: steps.bulten.outputs.yazildi == '1'
+        run: |
+          git config user.name "jendume-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/haberler
+          git commit -m "Bot: bülten"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Siteyi yayınla
+        if: steps.bulten.outputs.yazildi == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REF_ADI: ${{ github.ref_name }}
+        run: gh workflow run yayinla.yml --ref "$REF_ADI"

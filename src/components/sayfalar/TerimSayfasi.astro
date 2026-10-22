@@ -1,0 +1,102 @@
+---
+// Sözlük terimi: /tr/sozluk/{slug}/, /en/glossary/{slug}/ (veri: src/data/sozluk; JSON-LD DefinedTerm).
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import SignHeading from '../../components/SignHeading.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import Arrow from '../../components/Arrow.astro';
+import { BULLETIN_CATEGORY, SITE, otherLocale, type Locale } from '../../lib/site';
+import { getPublishedPosts } from '../../lib/news';
+import { definedTermGraph, glossaryCrumbs } from '../../lib/seo';
+import { dizinlenir } from '../../lib/kalite.mjs';
+import { terimBul, terimGeciyor } from '../../lib/sozluk.mjs';
+import { duzeltmePolitikasiYolu, sozlukYolu, terimYolu } from '../../lib/yollar.mjs';
+
+interface Props {
+  lang: Locale;
+  id: string;
+}
+
+const { lang, id } = Astro.props;
+const ui = SITE.ui[lang];
+const other = otherLocale(lang);
+const terim = terimBul(id)!;
+const b = terim[lang];
+const ilgili = terim.ilgili.map((r) => terimBul(r)!).filter(Boolean);
+const path = terimYolu(lang, id);
+const otherPath = terimYolu(other, id);
+
+// Terimin geçtiği en yeni haberler (bülten ve dizine girmeyen kısa haberler hariç).
+const posts = (await getPublishedPosts(lang))
+  .filter((p) => p.data.category !== BULLETIN_CATEGORY && dizinlenir(p.body))
+  .filter((p) => terimGeciyor(`${p.data.title}\n${p.data.description}\n${p.body ?? ''}`, lang, id))
+  .slice(0, 6);
+
+const title = b.kisaltma && !b.ad.includes(b.kisaltma) ? `${b.ad} (${b.kisaltma})` : b.ad;
+// Arama niyetine uygun başlık: TR "… nedir?", EN "… explained".
+const docTitle = lang === 'tr' ? `${title} nedir?` : `${title} explained`;
+---
+
+<Base
+  lang={lang}
+  title={docTitle}
+  description={b.ozet}
+  canonicalPath={path}
+  langUrls={{ [lang]: path, [other]: otherPath }}
+  alternates={{ [lang]: path, [other]: otherPath, 'x-default': terimYolu('en', id) }}
+  schema={definedTermGraph(lang, terim)}
+>
+  <Breadcrumb lang={lang} items={glossaryCrumbs(lang, terim)} />
+  <article class="article term">
+    <header class="article-header">
+      <p class="term-kicker">
+        <span class="code" aria-hidden="true">{b.ad.charAt(0).toLocaleUpperCase(SITE.localeTag[lang])}</span>
+        <a href={sozlukYolu(lang)}>{ui.glossary}</a>
+      </p>
+      <h1 class="article-title">{title}</h1>
+      <p class="article-deck">{b.ozet}</p>
+      <a class="bridge" href={otherPath} lang={other} hreflang={other}>
+        <span class="lang-code">{other.toUpperCase()}</span>
+        {terim[other].ad}
+        <Arrow />
+      </a>
+    </header>
+
+    <div class="prose">
+      {b.tanim.map((p) => <p>{p}</p>)}
+    </div>
+
+    {
+      ilgili.length > 0 && (
+        <nav class="term-related" aria-labelledby="related-terms">
+          <h2 class="term-related-heading" id="related-terms">{ui.relatedTerms}</h2>
+          <ul class="tag-list">
+            {ilgili.map((t) => (
+              <li>
+                <a class="tag" href={terimYolu(lang, t.id)}>{t[lang].ad}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+
+    <p class="production-note">
+      <span class="production-note-label">{ui.productionLabel}</span>
+      {ui.glossaryNote} <a href={duzeltmePolitikasiYolu(lang)}>{ui.correctionsPolicy}</a>
+    </p>
+  </article>
+
+  {
+    posts.length > 0 && (
+      <section class="block" aria-labelledby="term-stories">
+        <SignHeading lang={lang} label="termStories" id="term-stories" />
+        <div class="story-grid">
+          {posts.map((post) => (
+            <StoryCard post={post} lang={lang} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</Base>

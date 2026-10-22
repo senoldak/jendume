@@ -1,0 +1,14 @@
+---
+// Levha + "jen dume" logotipi (BRAND.md §5–6), derleme anında Instrument Sans glif yollarından çizilir.
+import { logo } from '../lib/kimlik';
+
+interface Props {
+  class?: string;
+}
+const { class: sinif } = Astro.props;
+const L = 100;
+const l = logo(0, L, L);
+const G = Math.ceil(l.genislik) + 4;
+---
+
+<svg class={sinif} viewBox={`0 0 ${G} ${L}`} width={G} height={L} aria-hidden="true" focusable="false" set:html={l.svg} />

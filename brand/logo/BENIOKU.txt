@@ -1,0 +1,12 @@
+JEN DUME logo paketi (BRAND.md §5–6). Üretici: scripts/marka/marka-uret.ts — elle düzenlemeyin, yeniden üretin.
+
+- jendume-logo-yatay   Levha + "jen dume": site, e-posta imzası, sunum (varsayılan logo)
+- jendume-logotip      Yalnız "jen dume" yazısı, j'nin noktası yeşil
+- jendume-levha        Yalnız işaret: profil fotoğrafı, uygulama simgesi, favicon
+Profil fotoğrafı ve kapak görselleri: ../sosyal/
+
+"-koyu-zemin" ekli dosyalarda levha çizilmez: beyaz J ve yeşil kare doğrudan koyu zemine oturur, yazı kâğıt rengine
+geçer; yeşil aynı kalır. PNG'ler saydam zeminlidir.
+Kurallar: levhayı döndürmek, yuvarlatmak, kareyi başka renge boyamak, gölge, kontur, J'yi ya da yazıyı başka yazı
+tipiyle çizmek yapılmaz. Renkler: Esperanto yeşili #00924a, mürekkep #16181d, kâğıt #f4f5f2.
+Yazı tipi: Instrument Sans (OFL).

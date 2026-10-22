@@ -1,0 +1,214 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, yasalYolu } from '../../lib/yollar.mjs';
+import { sikayetYolu, standartlarRaporuYolu } from '../../lib/standartlar-raporu.mjs';
+import { HATA_ADRESI } from '../../lib/yapayzeka-notu.mjs';
+
+// Şikâyet Prosedürü; sayfalar: src/pages/tr/sikayet.astro (/tr/sikayet/), src/pages/en/complaints.astro (/en/complaints/). Metin: docs/standartlar-faz2-sayfalar-onay.md (bölüm 1 ve 2).
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+// Son güncelleme tarihi; boşken "Son güncelleme" satırı görünmez.
+const sonGuncelleme = lang === 'tr' ? '22 Ekim 2026' : '22 October 2026';
+const baslik = lang === 'tr' ? 'Şikâyet Prosedürü' : 'Complaints Procedure';
+const description =
+  lang === 'tr'
+    ? 'JEN DUME şikâyet prosedürü: neyi şikâyet edebilirsiniz, nasıl başvurursunuz, hangi sürelerde yanıt alırsınız.'
+    : 'JEN DUME complaints procedure: what you can complain about, how to complain and the time limits for our reply.';
+const yol = sikayetYolu(lang);
+const yasal = yasalYolu(lang);
+const politika = duzeltmePolitikasiYolu(lang);
+const kayit = duzeltmelerYolu(lang);
+const rapor = standartlarRaporuYolu(lang);
+const basinKonseyi = 'https://basinkonseyi.org.tr/nasil-sikayet-edebilirim/';
+---
+
+<Base
+  lang={lang}
+  title={baslik}
+  description={description}
+  canonicalPath={yol}
+  langUrls={{ tr: sikayetYolu('tr'), en: sikayetYolu('en') }}
+  alternates={{ tr: sikayetYolu('tr'), en: sikayetYolu('en'), 'x-default': sikayetYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${yol}#webpage`,
+      url: `${SITE.url}${yol}`,
+      name: `${baslik} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article">
+    {
+      lang === 'tr' ? (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Şikâyet Prosedürü</h1>
+          </header>
+
+          <p>
+            Bu sayfa, JEN DUME'de yayımlanan bir içerik hakkındaki şikâyetinizi nasıl ele aldığımızı anlatır.
+          </p>
+
+          <h2>1. Neyi şikâyet edebilirsiniz</h2>
+          <ul>
+            <li>Bir içerikteki olgusal hata: yanlış rakam, ad, tarih, çeviri.</li>
+            <li>Yayın ilkelerimize aykırılık: taraf tutan ya da ayrımcı dil, eksik yapay zekâ notu.</li>
+            <li>Kişilik haklarınızın, özel hayatınızın ya da kişisel verilerinizin zedelendiği düşündüğünüz bir içerik.</li>
+            <li>Telif hakkınızın ihlal edildiğini düşündüğünüz bir içerik.</li>
+          </ul>
+          <p>
+            Cevap ve düzeltme hakkı <a href={yasal}>Yasal Bilgilendirme</a> sayfasının{' '}
+            <a href={`${yasal}#cevap-hakki`}>12. maddesine</a>, hak ihlali bildirimleri 11. maddesine göre de
+            değerlendirilir.
+          </p>
+
+          <h2>2. Nasıl şikâyet edersiniz</h2>
+          <p>
+            Her haberin sonundaki “Hata bildir” bağlantısını kullanın ya da{' '}
+            <a href={`mailto:${HATA_ADRESI}`}>{HATA_ADRESI}</a> adresine yazın. Şikâyetinize şunları ekleyin:
+          </p>
+          <ul>
+            <li>içeriğin bağlantısı,</li>
+            <li>sorunun ne olduğu ve varsa hangi yayın ilkemize aykırı bulduğunuz,</li>
+            <li>varsa doğru bilgiyi gösteren kaynak,</li>
+            <li>size yanıt verebileceğimiz bir e-posta adresi.</li>
+          </ul>
+
+          <h2>3. Süreler</h2>
+          <ul>
+            <li><strong>En geç 72 saat içinde</strong> şikâyetinizi aldığımızı ve nasıl ele alacağımızı bildiririz.</li>
+            <li><strong>En geç 28 gün içinde</strong> kararımızı gerekçesiyle size yazarız.</li>
+            <li>Açık bir olgusal hatayı ve kişi haklarına ilişkin talepleri bu süreleri beklemeden düzeltiriz ya da içeriği yayından kaldırırız.</li>
+            <li>28 gün yetmezse nedenini ve yeni tarihi size bildiririz.</li>
+          </ul>
+
+          <h2>4. Şikâyeti kim inceler</h2>
+          <p>
+            Şikâyetleri yayıncı ve editör inceler. JEN DUME tek kişilik bir yayındır; ayrı bir okur temsilcisi yoktur. Bu
+            nedenle kararımızdan memnun kalmazsanız aşağıdaki dış yola başvurabilirsiniz.
+          </p>
+
+          <h2>5. Olası sonuçlar</h2>
+          <ul>
+            <li>
+              <strong>Şikâyet yerinde:</strong> içerik <a href={politika}>Düzeltme Politikamıza</a> göre düzeltilir,
+              açıklanır, güncellenir ya da yayından kaldırılır. Değişiklik <a href={kayit}>Düzeltmeler</a> sayfasında
+              tarihiyle yayımlanır.
+            </li>
+            <li><strong>Kısmen yerinde:</strong> yerinde bulunan kısım için aynısı yapılır; kalanın gerekçesi size yazılır.</li>
+            <li><strong>Yerinde değil:</strong> içeriği neden değiştirmediğimizi gerekçesiyle size yazarız.</li>
+          </ul>
+
+          <h2>6. Kararımızdan memnun kalmazsanız</h2>
+          <p>
+            Basın Konseyi, Basın Meslek İlkeleri'ne aykırı bulunan yayınlar hakkındaki şikâyetleri inceleyen bir öz denetim
+            kuruluşudur. Şikâyetinizi Konsey'e iletebilirsiniz:{' '}
+            <a href={basinKonseyi} rel="noopener" target="_blank">basinkonseyi.org.tr, “Nasıl şikâyet edebilirim” sayfası</a>.
+            Konsey, yayından itibaren iki ay içinde yapılan başvuruları kabul ettiğini belirtmektedir. Şikâyeti incelemeye
+            alıp almayacağına Konsey karar verir.
+          </p>
+          <p>Yasal başvuru yollarınız her durumda saklıdır.</p>
+
+          <h2>7. Kayıt ve gizlilik</h2>
+          <ul>
+            <li>
+              Şikâyetler ve kararlar kayda geçirilir. Sayıları üç ayda bir <a href={rapor}>Standartlar Raporu'nda</a>{' '}
+              yayımlanır.
+            </li>
+            <li>Şikâyette bulunan kişinin kimliği, kendi izni olmadan paylaşılmaz.</li>
+            <li>Tehdit ya da hakaret içeren yazışmalar yanıtlanmayabilir.</li>
+          </ul>
+
+          {sonGuncelleme && <p><em>Son güncelleme: {sonGuncelleme}</em></p>}
+        </div>
+      ) : (
+        <div class="prose about">
+          <header class="article-header">
+            <h1 class="about-title">Complaints Procedure</h1>
+          </header>
+
+          <p>This page explains how we handle a complaint about content published on JEN DUME.</p>
+
+          <h2>1. What you can complain about</h2>
+          <ul>
+            <li>A factual error in a story: a wrong figure, name, date or translation.</li>
+            <li>A breach of our editorial standards: partisan or discriminatory language, a missing AI note.</li>
+            <li>Content you believe harms your personal rights, your privacy or your personal data.</li>
+            <li>Content you believe infringes your copyright.</li>
+          </ul>
+          <p>
+            Requests for a right of reply or correction are also handled under{' '}
+            <a href={`${yasal}#right-of-reply`}>section 12</a> of our <a href={yasal}>Legal Notice</a>, and
+            rights-infringement notices under section 11.
+          </p>
+
+          <h2>2. How to complain</h2>
+          <p>
+            Use the “Report an error” link at the end of every story, or write to{' '}
+            <a href={`mailto:${HATA_ADRESI}`}>{HATA_ADRESI}</a>. Please include:
+          </p>
+          <ul>
+            <li>the link to the content,</li>
+            <li>what the problem is and, if relevant, which of our standards you believe it breaches,</li>
+            <li>a source showing the correct information, if you have one,</li>
+            <li>an email address we can reply to.</li>
+          </ul>
+
+          <h2>3. Time limits</h2>
+          <ul>
+            <li><strong>Within 72 hours</strong> we confirm that we have received your complaint and tell you how we will handle it.</li>
+            <li><strong>Within 28 days</strong> we send you our decision and the reasons for it.</li>
+            <li>Clear factual errors and requests concerning personal rights are corrected, or the content is removed, without waiting for these deadlines.</li>
+            <li>If 28 days is not enough, we tell you why and give you a new date.</li>
+          </ul>
+
+          <h2>4. Who reviews complaints</h2>
+          <p>
+            Complaints are reviewed by the publisher and editor. JEN DUME is a one-person publication and has no separate
+            readers' editor. If you are not satisfied with our decision, you can use the external route below.
+          </p>
+
+          <h2>5. Possible outcomes</h2>
+          <ul>
+            <li>
+              <strong>Upheld:</strong> the content is corrected, clarified, updated or removed under our{' '}
+              <a href={politika}>Corrections Policy</a>. The change is published with its date on our{' '}
+              <a href={kayit}>Corrections page</a>.
+            </li>
+            <li><strong>Partly upheld:</strong> the same applies to the part that is upheld; we explain our reasons for the rest.</li>
+            <li><strong>Not upheld:</strong> we explain why we have not changed the content.</li>
+          </ul>
+
+          <h2>6. If you are not satisfied</h2>
+          <p>
+            The Press Council of Turkey (Basın Konseyi) is a self-regulatory body that reviews complaints about breaches
+            of its Code of Professional Principles of the Press. You can submit your complaint to it at{' '}
+            <a href={basinKonseyi} rel="noopener" target="_blank">basinkonseyi.org.tr</a>. The Council states that it
+            accepts complaints made within two months of publication, and it decides whether to examine a complaint.
+          </p>
+          <p>Your legal remedies remain available in all cases.</p>
+
+          <h2>7. Records and privacy</h2>
+          <ul>
+            <li>
+              Complaints and decisions are recorded. Their number is published every three months in our{' '}
+              <a href={rapor}>Standards Report</a>.
+            </li>
+            <li>The identity of a complainant is not shared without their consent.</li>
+            <li>Correspondence containing threats or insults may not be answered.</li>
+          </ul>
+
+          {sonGuncelleme && <p><em>Last updated: {sonGuncelleme}</em></p>}
+        </div>
+      )
+    }
+  </article>
+</Base>

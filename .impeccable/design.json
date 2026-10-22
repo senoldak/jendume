@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T00:00:00Z",
+  "title": "Design System: JEN DUME",
+  "extensions": {
+    "colorMeta": {
+      "sign": { "role": "primary", "displayName": "Sign Black", "canonical": "#16181d", "tonalRamp": ["#0b0c0f", "#16181d", "#262a32", "#3a3f48", "#5a606b", "#8a909a", "#c3c7ce", "#eceef1"] },
+      "signal": { "role": "primary", "displayName": "Signal Yellow", "canonical": "#ffc72c", "tonalRamp": ["#4a3a00", "#7a5e00", "#b38700", "#f0b000", "#ffc72c", "#ffd666", "#ffe599", "#fff5d6"] },
+      "signal-deep": { "role": "secondary", "displayName": "Deep Signal", "canonical": "#f0b000", "tonalRamp": ["#3d2d00", "#664c00", "#946e00", "#c79300", "#f0b000", "#ffc94d", "#ffdd8a", "#fff1cc"] },
+      "signal-ink": { "role": "secondary", "displayName": "Signal Ink", "canonical": "#4a3a00", "tonalRamp": ["#1f1800", "#4a3a00", "#6e5700", "#937400", "#b89100", "#d6b23d", "#ead27f", "#f8eecb"] },
+      "alert": { "role": "tertiary", "displayName": "Alert Red", "canonical": "#c8102e", "tonalRamp": ["#3d0510", "#6b0a1b", "#9a0d25", "#c8102e", "#e0475e", "#ee7f90", "#f6b5bf", "#fce6e9"] },
+      "ground": { "role": "neutral", "displayName": "Concourse Ground", "canonical": "#f3f4f1", "tonalRamp": ["#262724", "#4a4c47", "#71746c", "#9a9d94", "#c9ccc4", "#e3e5df", "#f3f4f1", "#fafbf9"] },
+      "paper": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#16181d" },
+      "ink-2": { "role": "neutral", "displayName": "Ink Two", "canonical": "#3a3f48" },
+      "muted": { "role": "neutral", "displayName": "Muted Slate", "canonical": "#5a606b" },
+      "hair": { "role": "neutral", "displayName": "Hairline", "canonical": "#c9ccc4" },
+      "sign-2": { "role": "neutral", "displayName": "Panel Two", "canonical": "#262a32" },
+      "sign-text": { "role": "neutral", "displayName": "Sign White", "canonical": "#ffffff" },
+      "sign-muted": { "role": "neutral", "displayName": "Sign Muted", "canonical": "#a7adb7" },
+      "sign-soft": { "role": "neutral", "displayName": "Sign Soft", "canonical": "#d4d8de" }
+    },
+    "typographyMeta": {
+      "wordmark": { "displayName": "Wordmark", "purpose": "JEN DUME in the overhead sign and footer only." },
+      "display": { "displayName": "Display", "purpose": "Home lead headline, max 24ch." },
+      "display-page": { "displayName": "Display (page)", "purpose": "Article titles; section and 404 titles use sibling clamps documented in DESIGN.md." },
+      "headline": { "displayName": "Sign Heading", "purpose": "Bilingual block headings over a 4px rule." },
+      "headline-secondary": { "displayName": "Sign Heading (other language)", "purpose": "Light second-language partner of the sign heading." },
+      "title": { "displayName": "Story Title", "purpose": "Story card titles." },
+      "title-compact": { "displayName": "Compact Title", "purpose": "Latest list, directory names, read plate label." },
+      "quote": { "displayName": "Quote", "purpose": "Prose blockquotes under a yellow bar." },
+      "deck": { "displayName": "Deck", "purpose": "Lead description and article deck." },
+      "prose": { "displayName": "Prose", "purpose": "Article body at 68ch." },
+      "body": { "displayName": "Body", "purpose": "Page default reading text." },
+      "label": { "displayName": "Label Line", "purpose": "Section code, region, date, reading time under titles." },
+      "label-secondary": { "displayName": "Secondary Language", "purpose": "Second-language lines in gates, plates and links." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Arrow nudges, headline highlight bar growth, view-transition entry." },
+      { "name": "state-fill", "value": "background-color 0.2s, color 0.2s", "purpose": "Plate and gate fill swaps on hover." },
+      { "name": "arrow-nudge", "value": "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Arrow moves 4px in its direction on hover." },
+      { "name": "highlight-bar", "value": "background-size 0.4s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Yellow 0.32em bar grows under linked headlines." },
+      { "name": "page-transition", "value": "old 160ms ease-out fade; new 320ms ease-out fade + 10px rise", "purpose": "Cross-document view transition; overhead and gate band stay in place. Disabled under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "640px" },
+      { "name": "container", "value": "1320px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Read Plate",
+      "kind": "button",
+      "refersTo": "read-plate",
+      "description": "Primary action: yellow bilingual plate with a drawn arrow.",
+      "html": "<a class=\"ds-read-plate\" href=\"#\">Haberi Oku <span class=\"ds-read-plate-other\">Read Story</span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z\" fill=\"currentColor\"/></svg></a>",
+      "css": ".ds-read-plate { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; background: var(--signal, #ffc72c); color: var(--sign, #16181d); font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 1.05rem; text-decoration: none; border-radius: 0; transition: background-color 0.2s; } .ds-read-plate-other { font-weight: 300; color: var(--signal-ink, #4a3a00); } .ds-read-plate .ds-arrow { width: 1em; height: 1em; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-read-plate:hover { background: var(--signal-deep, #f0b000); } .ds-read-plate:hover .ds-arrow { transform: translateX(4px); } .ds-read-plate:focus-visible { outline: 3px solid var(--sign, #16181d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Bridge Button",
+      "kind": "button",
+      "refersTo": "bridge",
+      "description": "Outlined switch to the same story in the other language.",
+      "html": "<a class=\"ds-bridge\" href=\"#\"><span class=\"ds-bridge-code\">TR</span>Bu haberi Türkçe oku</a>",
+      "css": ".ds-bridge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border: 2px solid var(--sign, #16181d); color: var(--ink, #16181d); font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: background-color 0.2s; } .ds-bridge-code { padding: 1px 6px; background: var(--sign, #16181d); color: var(--signal, #ffc72c); font-size: 0.85rem; font-weight: 700; } .ds-bridge:hover { background: var(--signal, #ffc72c); } .ds-bridge:focus-visible { outline: 3px solid var(--sign, #16181d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Gate Band",
+      "kind": "nav",
+      "refersTo": "gate",
+      "description": "Full-width yellow section band; the current section inverts to black with a down arrow.",
+      "html": "<ul class=\"ds-gates\"><li><a class=\"ds-gate is-active\" href=\"#\"><span class=\"ds-code\">1</span><span class=\"ds-gate-names\"><span class=\"ds-gate-primary\">Dünya</span><span class=\"ds-gate-secondary\">World</span></span><svg class=\"ds-arrow ds-arrow-down\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z\" fill=\"currentColor\"/></svg></a></li><li><a class=\"ds-gate\" href=\"#\"><span class=\"ds-code\">2</span><span class=\"ds-gate-names\"><span class=\"ds-gate-primary\">Yapay Zekâ</span><span class=\"ds-gate-secondary\">AI</span></span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2 10.2h12.6L9.9 5.5 12.4 3 21.4 12l-9 9-2.5-2.5 4.7-4.7H2z\" fill=\"currentColor\"/></svg></a></li></ul>",
+      "css": ".ds-gates { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; margin: 0; padding: 0; background: var(--signal, #ffc72c); border-bottom: 4px solid var(--sign, #16181d); } .ds-gates li + li .ds-gate { border-left: 2px solid rgb(22 24 29 / 0.22); } .ds-gate { display: flex; align-items: center; gap: 10px; padding: 14px; color: var(--sign, #16181d); font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; text-decoration: none; transition: background-color 0.2s, color 0.2s; } .ds-code { display: inline-grid; place-items: center; width: 1.75em; height: 1.75em; background: var(--sign, #16181d); color: var(--signal, #ffc72c); font-weight: 700; font-size: 1.15rem; line-height: 1; font-variant-numeric: tabular-nums; } .ds-gate-names { display: grid; line-height: 1.12; } .ds-gate-primary { font-weight: 600; font-size: 1.12rem; } .ds-gate-secondary { font-size: 0.9rem; color: var(--signal-ink, #4a3a00); } .ds-arrow { width: 1.25rem; height: 1.25rem; margin-left: auto; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-arrow-down { transform: rotate(90deg); } .ds-gate:hover .ds-arrow { transform: translateX(4px); } .ds-gate:hover .ds-arrow-down { transform: rotate(90deg) translateX(3px); } .ds-gate.is-active { background: var(--sign, #16181d); color: var(--signal, #ffc72c); } .ds-gate.is-active .ds-code { background: var(--signal, #ffc72c); color: var(--sign, #16181d); } .ds-gate.is-active .ds-gate-secondary { color: var(--sign-muted, #a7adb7); } .ds-gate:focus-visible { outline: 3px solid var(--sign, #16181d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "nav",
+      "refersTo": "lang-plate-active",
+      "description": "Two plates, both languages visible; the active one struck forward in yellow.",
+      "html": "<div class=\"ds-lang-wrap\"><nav class=\"ds-lang-switch\"><a class=\"ds-lang-plate\" href=\"#\"><span class=\"ds-lang-code\">EN</span><span class=\"ds-lang-name\">English</span></a><a class=\"ds-lang-plate is-active\" href=\"#\"><span class=\"ds-lang-code\">TR</span><span class=\"ds-lang-name\">Türkçe</span></a></nav></div>",
+      "css": ".ds-lang-wrap { background: var(--sign, #16181d); padding: 16px; } .ds-lang-switch { display: inline-flex; border: 2px solid var(--sign-2, #262a32); } .ds-lang-plate { display: flex; align-items: baseline; gap: 8px; padding: 8px 14px; font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; color: var(--sign-muted, #a7adb7); text-decoration: none; transition: background-color 0.2s, color 0.2s; } .ds-lang-plate:hover { color: var(--sign-text, #ffffff); background: var(--sign-2, #262a32); } .ds-lang-plate.is-active { background: var(--signal, #ffc72c); color: var(--sign, #16181d); } .ds-lang-code { font-weight: 700; font-size: 1.05rem; } .ds-lang-name { font-size: 0.95rem; } .ds-lang-plate:focus-visible { outline: 3px solid var(--signal, #ffc72c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Story Card",
+      "kind": "card",
+      "refersTo": "title",
+      "description": "Unboxed story: title with yellow highlight-bar hover, label line, description, hairline base.",
+      "html": "<article class=\"ds-story\"><h3 class=\"ds-story-title\"><a href=\"#\">Dijital Hafızada Kimler Var?</a></h3><div class=\"ds-sign-line\"><p class=\"ds-sign-line-head\"><a class=\"ds-sign-line-section\" href=\"#\"><span class=\"ds-code\">6</span><span>Perspektif</span></a><span class=\"ds-alert\">Önemli Gelişme</span></p><p class=\"ds-sign-line-meta\">Birleşik Krallık · Küresel · 12 Ekim 2026</p></div><p class=\"ds-story-desc\">300'den fazla dilde 65 milyon makale barındıran Wikipedia'da maddelerin yalnızca yüzde 19'u kadınlara ayrılmış.</p></article>",
+      "css": ".ds-story { display: grid; gap: 12px; padding-block: 22px 28px; border-bottom: 1px solid var(--hair, #c9ccc4); max-width: 380px; color: var(--ink, #16181d); } .ds-story-title { margin: 0; font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 1.35rem; line-height: 1.22; } .ds-story-title a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--signal, #ffc72c), var(--signal, #ffc72c)); background-repeat: no-repeat; background-size: 0% 0.32em; background-position: 0 88%; transition: background-size 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-story-title a:hover { background-size: 100% 0.32em; } .ds-sign-line { display: grid; gap: 6px; font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; font-size: 0.95rem; line-height: 1.3; } .ds-sign-line p { margin: 0; } .ds-sign-line-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; } .ds-sign-line-section { display: inline-flex; align-items: center; gap: 8px; color: var(--ink, #16181d); font-weight: 600; text-decoration: none; } .ds-code { display: inline-grid; place-items: center; width: 1.75em; height: 1.75em; background: var(--sign, #16181d); color: var(--signal, #ffc72c); font-weight: 700; font-size: 0.85rem; line-height: 1; } .ds-alert { padding: 2px 8px; background: var(--alert, #c8102e); color: var(--sign-text, #ffffff); font-weight: 600; font-size: 0.85rem; } .ds-sign-line-meta { color: var(--muted, #5a606b); } .ds-story-desc { margin: 0; font-family: 'Atkinson Hyperlegible Next', 'Segoe UI', system-ui, sans-serif; font-size: 1rem; line-height: 1.55; color: var(--ink-2, #3a3f48); }"
+    },
+    {
+      "name": "Why It Matters",
+      "kind": "custom",
+      "refersTo": "why-block",
+      "description": "Black interpretation sign, separate from the factual prose, placed before it.",
+      "html": "<aside class=\"ds-why\"><p class=\"ds-why-label\"><span class=\"ds-why-primary\">Neden Önemli?</span><span class=\"ds-why-secondary\">Why It Matters</span></p><p class=\"ds-why-text\">Yapay zekâ artık yalnızca metin üreten bir sohbet aracı değil, kendi başına karar alıp işlem yapabilen bir teknoloji.</p></aside>",
+      "css": ".ds-why { display: grid; grid-template-columns: minmax(150px, auto) minmax(0, 1fr); gap: 14px 28px; padding: 22px 26px; max-width: 820px; background: var(--sign, #16181d); color: var(--sign-text, #ffffff); } .ds-why p { margin: 0; } .ds-why-label { display: grid; align-content: start; gap: 2px; font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; line-height: 1.15; } .ds-why-primary { color: var(--signal, #ffc72c); font-weight: 700; font-size: 1.2rem; } .ds-why-secondary { color: var(--sign-muted, #a7adb7); font-weight: 300; font-size: 0.95rem; } .ds-why-text { font-family: 'Atkinson Hyperlegible Next', 'Segoe UI', system-ui, sans-serif; font-size: 1.05rem; line-height: 1.6; }"
+    },
+    {
+      "name": "Sign Heading",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Bilingual block heading over a 4px black rule.",
+      "html": "<h2 class=\"ds-sign-heading\"><span class=\"ds-sh-primary\">Son Haberler</span><span class=\"ds-sh-secondary\">Latest Stories</span></h2>",
+      "css": ".ds-sign-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 0; padding-bottom: 10px; border-bottom: 4px solid var(--sign, #16181d); font-family: 'Signika', 'Segoe UI', system-ui, sans-serif; } .ds-sh-primary { font-weight: 700; font-size: 1.5rem; line-height: 1.1; color: var(--ink, #16181d); } .ds-sh-secondary { font-weight: 300; font-size: 1.1rem; color: var(--muted, #5a606b); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The International Concourse",
+    "overview": "Reading the world's news is like finding your way through an international airport. Every frame element (masthead, navigation, section headings, labels, the \"why it matters\" block) is a bilingual wayfinding sign: the reading language set bold, the other language set light beside or beneath it. Between the signs, the reading column stays quiet: a cool off-white ground, a white article panel, a hyperlegible text face at a comfortable measure.\n\nThe system is flat, square and high-contrast. Depth comes from the black sign panel against the light ground, never from shadow. Signal yellow owns a full-width band on every screen (the section gate band under the overhead sign, the footer's top rule) and is otherwise spent on action plates, code squares and hover highlights. Pages are complete without imagery; structure and type carry everything. The world is light-only.\n\nIt deliberately rejects the broadsheet default (hairline rules plus a serif display face) and the dark tech-lab look of the previous jendume identity.",
+    "keyCharacteristics": [
+      "Black sign panels (overhead, \"why it matters\", section directory, footer) on a cool light reading ground.",
+      "A signal-yellow gate band at full page width on every page.",
+      "Six permanent section codes (1 to 6) in numbered squares, always paired with drawn SVG direction arrows.",
+      "Both languages visible in every sign; the active one struck forward.",
+      "Square corners everywhere, 1px / 2px / 4px rules, no shadows."
+    ],
+    "rules": [
+      { "name": "The Band Rule", "body": "Signal yellow occupies one full-width band on every screen (the section gate band); elsewhere it appears only as bounded plates, code squares, short bars and hover marks, never as a second large field.", "section": "colors" },
+      { "name": "The Two Surfaces Rule", "body": "There are exactly two surface families: black signs and light reading ground. A new component is either a sign (sign / signal / sign-text / sign-muted) or reading matter (ground / paper / ink / muted); it never blends them or introduces a mid-grey panel.", "section": "colors" },
+      { "name": "The Bilingual Sign Rule", "body": "Every sign-level label shows both languages: reading language in Signika 600 or 700, the other language in Signika 300 in a muted color, beside or directly beneath it, marked with its `lang` attribute. Reading text (prose, decks, descriptions) is monolingual.", "section": "typography" },
+      { "name": "The Signika for Signs Rule", "body": "Signika sets everything that orients; Atkinson sets everything that is read. Fact (prose) and interpretation (\"why it matters\") stay typographically separated by surface, not by face alone.", "section": "typography" },
+      { "name": "The No-Lift Rule", "body": "Nothing casts a shadow or translates upward on hover. Hover is a fill change (yellow to deep yellow, black to panel two), a growing yellow highlight bar, or an arrow nudging 4px in its direction.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do show both languages on every sign-level element, the reading language bold and the other in Signika 300, muted.",
+      "Do pair every section reference with its permanent numbered code square (1 Dünya/World through 6 Perspektif/Perspective).",
+      "Do use the drawn SVG arrow for direction (right for go, down for \"you are here\", up-right for outward), never a text glyph.",
+      "Do keep corners square (0) and separate with 4px / 2px / 1px rules according to their meaning.",
+      "Do place region and the \"why it matters\" block before the prose on articles.",
+      "Do use the yellow highlight bar (0.32em tall, grows from 0 to 100% width) as the hover state for linked headlines."
+    ],
+    "donts": [
+      "Don't add box shadows, raised cards or hover lift; the system is flat.",
+      "Don't round corners or use pills.",
+      "Don't put eyebrows or kickers above headlines; metadata belongs in the label line under the title.",
+      "Don't introduce a dark mode or a second accent hue; Alert Red is reserved for the key-development tag.",
+      "Don't set headings, nav or labels in Atkinson, or reading text in Signika (blockquotes excepted).",
+      "Don't load fonts from third-party hosts; both families are self-hosted woff2 under the site CSP."
+    ]
+  }
+}

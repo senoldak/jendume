@@ -1,0 +1,42 @@
+---
+// Paylaşım bağlantıları: düz <a> bağlantılarıdır (dış script, iframe ya da sayaç yok; CSP'ye uyar).
+// "Bağlantıyı kopyala" düğmesi yalnız JavaScript ve Clipboard API varken görünür (/paylas.js, ilerleyici geliştirme).
+import { SITE, type Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+  url: string;
+  title: string;
+}
+
+const { lang, url, title } = Astro.props;
+const ui = SITE.ui[lang];
+const e = encodeURIComponent;
+const links = [
+  { name: 'Telegram', href: `https://t.me/share/url?url=${e(url)}&text=${e(title)}` },
+  { name: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${e(url)}` },
+  { name: 'Bluesky', href: `https://bsky.app/intent/compose?text=${e(`${title} ${url}`)}` },
+];
+---
+
+<div class="share" role="group" aria-labelledby="share-label">
+  <span class="share-label" id="share-label">{ui.share}</span>
+  <ul class="share-list">
+    {
+      links.map((l) => (
+        <li>
+          <a class="share-link" href={l.href} target="_blank" rel="noopener noreferrer" aria-label={`${ui.shareOn} ${l.name}`}>
+            {l.name}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <button type="button" class="share-link share-copy" data-copy-url={url} data-copied={ui.copied} hidden>
+        {ui.copyLink}
+      </button>
+    </li>
+  </ul>
+  <span class="share-status" role="status" aria-live="polite"></span>
+</div>
+<script is:inline src="/paylas.js" defer></script>
