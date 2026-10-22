@@ -244,6 +244,28 @@ test('havuzuIsle: yeniden uzatma da yetmezse yayımlanmaz; günlükte uzatmadan 
   assert.ok(logs.some((m) => /YAYIMLANMADI.*uzatmadan önce 40 TR \/ 40 EN/.test(m)));
 });
 
+test('havuzuIsle: düzeltme gövdeyi bozarsa (birkaç kelime) gövde korunur, yalnız başlıklar alınır', async () => {
+  let uzatma = 0;
+  const logs = [];
+  const kaydedilenTaslak = [];
+  const b = bagimlilik({
+    log: (m) => logs.push(m),
+    yaz: async () => paket(uzun),
+    denetle: (t) => (t.tr.title === 'T' ? ['[TR] Başlık "Yapay zekâ/AI" ile başlıyor'] : uzunlukKontrol(t, derlemeEnAz(2))),
+    // 22 Ekim 06:50: başlık düzeltmesi gövdeyi 6 TR / 8 EN kelimeye indirdi
+    duzelt: async () => ({ category: 'bilim', tr: { title: 'Yeni T', body: 'kelime '.repeat(6) }, en: { title: 'Yeni E', body: 'kelime '.repeat(8) } }),
+    uzat: async (t) => (uzatma++, t),
+    kaydet: async (t) => (kaydedilenTaslak.push(t), 'derleme-1'),
+  });
+  const r = await havuzuIsle([olay('a'), olay('b')], b);
+  assert.deepEqual(r.yazilan, ['derleme-1']);
+  assert.equal(uzatma, 0);
+  assert.equal(kaydedilenTaslak[0].tr.title, 'Yeni T');
+  assert.equal(kaydedilenTaslak[0].en.title, 'Yeni E');
+  assert.equal(kaydedilenTaslak[0].tr.body, uzun);
+  assert.ok(logs.some((m) => /gövdeyi bozdu/.test(m)));
+});
+
 test('derlemeIstemi: kategori ara başlıkları, her haber ayrı paragraf ve iki dil istenir', async () => {
   const { derlemeIstemi } = await import('./yazar.mjs');
   const grup = [olay('a', 'bilim'), olay('b', 'ekonomi')];

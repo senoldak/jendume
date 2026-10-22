@@ -17,6 +17,11 @@ export const DERLEME_AZAMI = 8; // bir derlemede en fazla bu kadar kısa olay; f
 export const DERLEME_MAKS = 2; // bir çalıştırmada en fazla derleme sayısı
 const KAYNAK_AZAMI = 3500; // olay başına saklanan kaynak metni (derleme isteminde de bu kadarı kullanılır)
 const DUZELTME_TURU = 2;
+const BOZUK_GOVDE = 30; // düzeltmeden bu kadar kelimeden az gövde dönerse (öncesi daha uzunken) yanıt bozuktur
+
+// Düzeltilmiş taslağın bir dildeki gövdesi BOZUK_GOVDE'nin altına düştüyse (öncesi üstündeyken) düzeltme bozuktur.
+const bozukGovde = (d, t) =>
+  ['tr', 'en'].some((dil) => kelimeSayisi(d[dil]?.body) < BOZUK_GOVDE && kelimeSayisi(t[dil]?.body) >= BOZUK_GOVDE);
 
 const yas = (o, simdi) => (simdi.getTime() - Date.parse(o.havuzaGirdi)) / 3600e3;
 
@@ -192,6 +197,15 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
         log(`  derleme düzeltme turu ${tur}: ${[...sorunlar, ...hafif].join(' | ')}`);
         const d = await duzelt(t, kaynak, [...sorunlar, ...hafif]);
         if (!d) break;
+        // Düzeltme gövdeyi birkaç kelimeye indirirse (22 Ekim: başlık düzeltmesi 6 TR / 8 EN kelime döndü) bu silme değil
+        // bozuk yanıttır: gövde korunur, yalnız başlıklar alınır.
+        if (bozukGovde(d, t)) {
+          log(`  derleme düzeltmesi gövdeyi bozdu (${kelimeler(d)}); gövde korunuyor, yalnız başlıklar alındı`);
+          t = { ...t, tr: { ...t.tr, title: d.tr?.title || t.tr?.title }, en: { ...t.en, title: d.en?.title || t.en?.title } };
+          sorunlar = denetle(t, kaynak, n);
+          hafif = yumusak(t);
+          continue;
+        }
         t = d;
         // Düzeltme sorunlu cümleleri silerek derlemeyi alt sınırın altına indirebilir: bir kez daha genişletilir.
         if (kisa(t) && !yenidenUzatildi) {
