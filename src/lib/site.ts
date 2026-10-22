@@ -219,6 +219,8 @@ export const SITE = {
       correctionsPolicy: 'Düzeltme Politikası',
       aiUse: 'Yapay Zekâ Kullanımı',
       corrections: 'Düzeltmeler',
+      complaints: 'Şikâyet',
+      standardsReport: 'Standartlar Raporu',
     },
     en: {
       home: 'Today',
@@ -281,6 +283,8 @@ export const SITE = {
       correctionsPolicy: 'Corrections Policy',
       aiUse: 'Use of AI',
       corrections: 'Corrections',
+      complaints: 'Complaints',
+      standardsReport: 'Standards Report',
     },
   } satisfies Record<Locale, Record<string, string>>,
 };

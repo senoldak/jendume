@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { SITE, type Locale } from '../../lib/site';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu, yasalYolu } from '../../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, yasalYolu } from '../../lib/yollar.mjs';
 
 // Düzeltme, Güncelleme ve Yayından Kaldırma Politikası; yollar: src/pages/tr/duzeltme-politikasi.astro,
 // src/pages/en/corrections-policy.astro.
@@ -18,6 +18,8 @@ const description =
     : 'JEN DUME corrections, updates and removal policy: how to report an error, how errors are corrected and where records are kept.';
 const kayit = duzeltmelerYolu(lang);
 const yasal = yasalYolu(lang);
+const sikayet = sikayetYolu(lang);
+const rapor = standartlarRaporuYolu(lang);
 ---
 
 <Base
@@ -129,6 +131,10 @@ const yasal = yasalYolu(lang);
           <p>7.3. Bildirimler en kısa sürede incelenir. Kişi haklarına ilişkin taleplere öncelik verilir.</p>
           <p>7.4. Değerlendirmenin sonucu bildirimde bulunan kişiye iletilir.</p>
           <p>7.5. Bildirimde bulunan kişinin kimliği, kendi izni olmadan paylaşılmaz.</p>
+          <p>
+            7.6. Hata bildirimi dışında bir şikâyetiniz varsa <a href={sikayet}>Şikâyet Prosedürü</a> sayfasındaki adımları
+            izleyebilirsiniz.
+          </p>
 
           <h2>8. Cevap hakkı</h2>
           <p>
@@ -143,6 +149,9 @@ const yasal = yasalYolu(lang);
             eskiye doğru tarih sırasıyla listelenir.
           </p>
           <p>9.2. Bu kayıtlar silinmez.</p>
+          <p>
+            9.3. Düzeltme, kaldırma ve şikâyet sayıları üç ayda bir <a href={rapor}>Standartlar Raporu</a>'nda yayımlanır.
+          </p>
         </div>
       ) : (
         <div class="prose about">
@@ -240,6 +249,10 @@ const yasal = yasalYolu(lang);
           </p>
           <p>7.4. The outcome of the review is communicated to the person who made the report.</p>
           <p>7.5. The identity of the person who made a report is not disclosed without their consent.</p>
+          <p>
+            7.6. If you have a complaint other than an error report, you can follow the steps on the{' '}
+            <a href={sikayet}>Complaints Procedure</a> page.
+          </p>
 
           <h2>8. Right of reply</h2>
           <p>
@@ -254,6 +267,10 @@ const yasal = yasalYolu(lang);
             <a href={kayit}>Corrections page</a>, in reverse chronological order.
           </p>
           <p>9.2. These records are not deleted.</p>
+          <p>
+            9.3. The number of corrections, removals and complaints is published every three months in our{' '}
+            <a href={rapor}>Standards Report</a>.
+          </p>
         </div>
       )
     }

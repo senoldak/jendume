@@ -1,6 +1,6 @@
 ---
 import { SITE, otherLocale, type Locale } from '../lib/site';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu, yasalYolu } from '../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, yasalYolu } from '../lib/yollar.mjs';
 
 interface Props {
   lang: Locale;
@@ -11,6 +11,8 @@ const other = otherLocale(lang);
 const politika = duzeltmePolitikasiYolu(lang);
 const kayit = duzeltmelerYolu(lang);
 const yasal = yasalYolu(lang);
+const sikayet = sikayetYolu(lang);
+const rapor = standartlarRaporuYolu(lang);
 ---
 
 <article class="article">
@@ -193,6 +195,10 @@ const yasal = yasalYolu(lang);
             <strong>E-posta:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
           </li>
         </ul>
+        <p>
+          Şikâyet başvuruları için <a href={sikayet}>Şikâyet Prosedürü</a>, sayıların üç aylık dökümü için
+          <a href={rapor}>Standartlar Raporu</a> sayfalarına bakınız.
+        </p>
       </div>
     ) : (
       <div class="prose about">
@@ -372,6 +378,10 @@ const yasal = yasalYolu(lang);
             <strong>Email:</strong> <a href="mailto:contact@jendume.com">contact@jendume.com</a>
           </li>
         </ul>
+        <p>
+          For complaints, see the <a href={sikayet}>Complaints Procedure</a>; for the quarterly figures, see the
+          <a href={rapor}>Standards Report</a>.
+        </p>
       </div>
     )
   }

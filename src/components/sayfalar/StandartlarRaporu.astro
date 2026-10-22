@@ -1,0 +1,199 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { getPublishedPosts } from '../../lib/news';
+import { duzeltmelerYolu } from '../../lib/yollar.mjs';
+import { ceyrekVerisi, raporlariSirala, sikayetYolu, standartlarRaporuYolu } from '../../lib/standartlar-raporu.mjs';
+import kaldirilan from '../../data/duzeltmeler-kaldirilan.json';
+import sikayetler from '../../data/sikayetler.json';
+
+// Standartlar Raporu (üç ayda bir, tek sayfa, en yeniden eskiye); sayfalar:
+// src/pages/tr/standartlar-raporu.astro, src/pages/en/standards-report.astro.
+// Defter sayıları: src/data/standartlar-raporu/*.json (botun iş akışı yazar); kalanı derleme anında sitenin içeriğinden.
+// Metin: docs/standartlar-faz2-sayfalar-onay.md (bölüm 4).
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const tr = lang === 'tr';
+const yerel = tr ? 'tr-TR' : 'en-GB';
+const sayi = (n: number) => n.toLocaleString(yerel);
+const gun = (g: string, kisa = false) =>
+  new Date(`${g}T12:00:00Z`).toLocaleDateString(yerel, { day: 'numeric', month: 'long', ...(kisa ? {} : { year: 'numeric' }), timeZone: 'UTC' });
+
+// Klasör henüz yoksa ya da boşsa glob boş döner.
+const dosyalar = import.meta.glob('../../data/standartlar-raporu/*.json', { eager: true, import: 'default' });
+const raporlar = raporlariSirala(Object.values(dosyalar) as any[]);
+
+// Bir TR/EN haber çifti tek haber sayılır: sayım Türkçe koleksiyondan.
+const haberler = await getPublishedPosts('tr');
+const ceyrekler = raporlar.map((r) => ceyrekVerisi(r, { haberler, kaldirilan, sikayetler: sikayetler as any }, lang));
+
+const baslik = tr ? 'Standartlar Raporu' : 'Standards Report';
+const description = tr
+  ? 'JEN DUME standartlar raporu: yayın ilkelerinin üç ayda bir rakamlarla uygulanışı.'
+  : 'JEN DUME standards report: how our editorial standards were applied, in figures, every three months.';
+const yol = standartlarRaporuYolu(lang);
+const kayit = duzeltmelerYolu(lang);
+const sikayet = sikayetYolu(lang);
+
+const ceyrekBasligi = (r: { ceyrek: string; bas: string; son: string }) => {
+  const [yil, c] = r.ceyrek.split('-c');
+  const aralik = `${gun(r.bas, true)} – ${gun(r.son)}`;
+  return tr ? `${yil} ${c}. çeyrek (${aralik})` : `Q${c} ${yil} (${aralik})`;
+};
+const satirMetni = (s: { ad: string; n: number }[]) => s.map((x) => `${x.ad} ${sayi(x.n)}`).join(', ');
+const tarihler = (t: string[]) => t.map((g) => gun(g)).join(', ');
+
+const T = tr
+  ? {
+      giris:
+        'Üç ayda bir, yayın ilkelerimizi nasıl uyguladığımızı rakamlarla gösteririz. Rakamlar sitenin kendi kayıtlarından otomatik sayılır.',
+      ilkRapor: 'İlk rapor Ocak 2027’nin başında yayımlanacak.',
+      yayimlananlar: 'Yayımlananlar',
+      otomatik: 'Yapay zekâ ile otomatik yazılan haber',
+      yayinci: 'Yayıncının adıyla yayımlanan yazı',
+      yayinciNot: 'yazım ve dil düzeltmesinde yapay zekâ araçları kullanıldı',
+      zincir: 'Yapay zekâ araçlarıyla yazılıp editör onayıyla yayımlanan yazı',
+      hassas: 'Hassas konu olarak işaretlenip yayımlanan haber',
+      yayimlanmayanlar: 'Yayımlanmayanlar',
+      elenen: 'Otomatik denetimde yayımlanmayan aday',
+      kirmiziIcin: (k: number) => `Bunların ${sayi(k)}’i hassas konu süzgecine takıldı`,
+      kalan: 'Kalanlar haber değeri, yinelenme ya da yetersiz bilgi gibi nedenlerle elendi.',
+      duzeltmeBaslik: 'Düzeltmeler ve şikâyetler',
+      duzeltme: 'Düzeltme',
+      kaldirilan: 'Yayından kaldırılan',
+      ayrinti: 'ayrıntı',
+      duzeltmelerSayfasi: 'Düzeltmeler sayfası',
+      sikayetKayit: 'Kayda geçen şikâyet',
+      yerinde: 'yerinde',
+      kismen: 'kısmen yerinde',
+      yerindeDegil: 'yerinde değil',
+      sikayetSayfasi: 'Şikâyet Prosedürü',
+      kurallarBaslik: 'Kurallar ve araçlar',
+      kuralDegisikligi: 'Hassas konu kurallarında yapılan değişiklik',
+      kayitYok: 'kayıt yok',
+      yapayZeka: (n: number) =>
+        `Yapay zekâ kullanımı: haberler Google Gemini modelleriyle yazılır ve denetlenir; bu çeyrekte ${sayi(n)} model çağrısı yapıldı.`,
+      defterNotu: (g: string) =>
+        `Not: Otomatik denetim kaydı ${g} tarihinden beri tutuluyor; bu çeyreğin “yayımlanmayanlar” rakamları o tarihten başlar.`,
+    }
+  : {
+      giris:
+        'Every three months we show, in figures, how we apply our editorial standards. The figures are counted automatically from the site’s own records.',
+      ilkRapor: 'The first report will be published in early January 2027.',
+      yayimlananlar: 'Published',
+      otomatik: 'Stories written automatically with AI',
+      yayinci: 'Pieces published under the publisher’s name',
+      yayinciNot: 'AI tools were used for translation and language editing',
+      zincir: 'Pieces written with AI tools and published after editor approval',
+      hassas: 'Stories flagged as sensitive topics and published',
+      yayimlanmayanlar: 'Not published',
+      elenen: 'Candidates not published after automatic review',
+      kirmiziIcin: (k: number) => `Of these, ${sayi(k)} were caught by the sensitive-topic filter`,
+      kalan: 'The rest were dropped for reasons such as newsworthiness, duplication or insufficient information.',
+      duzeltmeBaslik: 'Corrections and complaints',
+      duzeltme: 'Corrections',
+      kaldirilan: 'Removed',
+      ayrinti: 'details',
+      duzeltmelerSayfasi: 'Corrections page',
+      sikayetKayit: 'Complaints on record',
+      yerinde: 'upheld',
+      kismen: 'partly upheld',
+      yerindeDegil: 'not upheld',
+      sikayetSayfasi: 'Complaints Procedure',
+      kurallarBaslik: 'Rules and tools',
+      kuralDegisikligi: 'Changes to the sensitive-topic rules',
+      kayitYok: 'no record',
+      yapayZeka: (n: number) =>
+        `Use of AI: stories are written and checked with Google Gemini models; ${sayi(n)} model calls were made this quarter.`,
+      defterNotu: (g: string) =>
+        `Note: The automatic review log has been kept since ${g}; this quarter’s “not published” figures start from that date.`,
+    };
+---
+
+<Base
+  lang={lang}
+  title={baslik}
+  description={description}
+  canonicalPath={yol}
+  langUrls={{ tr: standartlarRaporuYolu('tr'), en: standartlarRaporuYolu('en') }}
+  alternates={{ tr: standartlarRaporuYolu('tr'), en: standartlarRaporuYolu('en'), 'x-default': standartlarRaporuYolu('en') }}
+  schema={[
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${yol}#webpage`,
+      url: `${SITE.url}${yol}`,
+      name: `${baslik} | ${SITE.displayName}`,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+    },
+  ]}
+>
+  <article class="article">
+    <div class="prose about">
+      <header class="article-header">
+        <h1 class="about-title">{baslik}</h1>
+      </header>
+
+      <p>{T.giris}</p>
+
+      {ceyrekler.length === 0 && <p><strong>{T.ilkRapor}</strong></p>}
+
+      {
+        ceyrekler.map((c) => (
+          <section>
+            <h2>{ceyrekBasligi(c)}</h2>
+
+            <h3>{T.yayimlananlar}</h3>
+            <ul>
+              <li>{T.otomatik}: {sayi(c.yayin.otomatik)}</li>
+              <li>{T.yayinci}: {sayi(c.yayin.yayinci)} ({T.yayinciNot})</li>
+              {c.yayin.zincir > 0 && <li>{T.zincir}: {sayi(c.yayin.zincir)}</li>}
+              <li>
+                {T.hassas}: {sayi(c.sari)}
+                {c.sariSatirlari.length > 0 && ` (${satirMetni(c.sariSatirlari)})`}
+              </li>
+            </ul>
+
+            <h3>{T.yayimlanmayanlar}</h3>
+            <ul>
+              <li>
+                {T.elenen}: {sayi(c.elendi)}.
+                {c.kirmizi > 0 && ` ${T.kirmiziIcin(c.kirmizi)}${c.kirmiziSatirlari.length > 0 ? `: ${satirMetni(c.kirmiziSatirlari)}` : ''}.`}
+                {c.kalan > 0 && ` (${T.kalan})`}
+              </li>
+            </ul>
+
+            <h3>{T.duzeltmeBaslik}</h3>
+            <ul>
+              <li>
+                {T.duzeltme}: {sayi(c.duzeltme.duzeltme)} · {T.kaldirilan}: {sayi(c.duzeltme.kaldirilan)} ({T.ayrinti}:{' '}
+                <a href={kayit}>{T.duzeltmelerSayfasi}</a>)
+              </li>
+              <li>
+                {T.sikayetKayit}: {sayi(c.sikayet.toplam)} ({T.yerinde} {sayi(c.sikayet.yerinde)}, {T.kismen}{' '}
+                {sayi(c.sikayet.kismen)}, {T.yerindeDegil} {sayi(c.sikayet.yerindeDegil)}; <a href={sikayet}>{T.sikayetSayfasi}</a>)
+              </li>
+            </ul>
+
+            <h3>{T.kurallarBaslik}</h3>
+            <ul>
+              <li>
+                {T.kuralDegisikligi}:{' '}
+                {c.kuralDegisiklikleri && c.kuralDegisiklikleri.length > 0
+                  ? `${sayi(c.kuralDegisiklikleri.length)} (${tarihler(c.kuralDegisiklikleri)})`
+                  : T.kayitYok}
+              </li>
+              <li>{T.yapayZeka(c.geminiCagri)}</li>
+            </ul>
+
+            {c.defterNotu && c.defterBaslangici && <p><em>{T.defterNotu(gun(c.defterBaslangici))}</em></p>}
+          </section>
+        ))
+      }
+    </div>
+  </article>
+</Base>

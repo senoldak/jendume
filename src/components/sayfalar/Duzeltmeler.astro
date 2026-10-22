@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { SITE, formatDate, type Locale } from '../../lib/site';
 import { getPublishedPosts, getPostUrl } from '../../lib/news';
 import { duzeltmeKayitlari } from '../../lib/duzeltmeler.mjs';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu } from '../../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu } from '../../lib/yollar.mjs';
 import kaldirilan from '../../data/duzeltmeler-kaldirilan.json';
 
 // Düzeltmeler (kayıt sayfası); yollar: src/pages/tr/duzeltmeler.astro, src/pages/en/corrections.astro.
@@ -21,6 +21,7 @@ const description = tr
 const haberler = await getPublishedPosts(lang);
 const kayitlar = duzeltmeKayitlari(haberler, kaldirilan, lang, (id) => getPostUrl(lang, id));
 const politika = duzeltmePolitikasiYolu(lang);
+const sikayet = sikayetYolu(lang);
 const T = tr
   ? {
       giris:
@@ -29,6 +30,9 @@ const T = tr
       aciklama2: 'adresini kullanabilirsiniz. Yöntemimiz için',
       politika: 'Düzeltme Politikası',
       sayfasi: 'sayfasına bakınız.',
+      sikayetMetni: 'Bir şikâyetiniz varsa',
+      sikayetAd: 'Şikâyet Prosedürü',
+      sikayetSon: 'sayfasındaki adımları izleyebilirsiniz.',
       bos: 'Henüz kayıt yok.',
       duzeltme: 'Düzeltme',
       kaldirildi: 'Yayından kaldırıldı',
@@ -41,6 +45,9 @@ const T = tr
       aciklama2: '. For our approach, see the',
       politika: 'Corrections Policy',
       sayfasi: 'page.',
+      sikayetMetni: 'If you have a complaint, you can follow the steps on the',
+      sikayetAd: 'Complaints Procedure',
+      sikayetSon: 'page.',
       bos: 'No entries yet.',
       duzeltme: 'Correction',
       kaldirildi: 'Removed',
@@ -76,6 +83,9 @@ const T = tr
       <p>{T.giris}</p>
       <p>
         {T.aciklama}{' '}<a href="mailto:contact@jendume.com">contact@jendume.com</a>{tr ? ' ' : ''}{T.aciklama2}{' '}<a href={politika}>{T.politika}</a>{' '}{T.sayfasi}
+      </p>
+      <p>
+        {T.sikayetMetni}{' '}<a href={sikayet}>{T.sikayetAd}</a>{' '}{T.sikayetSon}
       </p>
 
       {

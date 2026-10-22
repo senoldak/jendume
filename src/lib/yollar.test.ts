@@ -54,3 +54,8 @@ test('konu ve sözlük yolları; sözlük terimi öteki dilde kendi slug’ına 
   assert.equal(karsiYol('/tr/sozluk/baglam-penceresi/', 'en'), '/en/glossary/context-window/');
   assert.equal(karsiYol('/en/topic/claude/2/', 'tr'), '/tr/konu/claude/2/');
 });
+
+test('şikâyet ve standartlar raporu yolları dil eşlemesiyle çevrilir', () => {
+  assert.equal(karsiYol('/tr/sikayet/', 'en'), '/en/complaints/');
+  assert.equal(karsiYol('/en/standards-report/', 'tr'), '/tr/standartlar-raporu/');
+});
