@@ -60,6 +60,15 @@ test('anahtarlar and benzer group same-event AI headlines without false-matching
   assert.equal(benzer(unrelated1, unrelated2), false);
 });
 
+test('benzer: alanın genel kelimeleri ve şirket-ürün çifti tek başına aynı olay saymaz', () => {
+  const ayni = (x, y) => benzer(anahtarlar(x), anahtarlar(y));
+  assert.equal(ayni('Acme introduces new security framework for autonomous AI agents', 'Globex introduces new security tools against autonomous AI agents'), false);
+  assert.equal(ayni('Acme yapay zekâ ajanları için yeni açık kaynak araçlarını duyurdu', 'Açık kaynaklı yapay zekâ modellerinin güvenlik kilitleri kolayca kaldırılabiliyor'), false);
+  assert.equal(ayni('Anthropic announces Claude Duet personal AI agent', 'Anthropic model Claude designs protein binders'), false);
+  assert.equal(ayni('Anthropic yılın üçüncü çeyreğinde 16.8 milyar dolar gelir elde etti', 'Üçüncü çeyrekte 16,8 milyar dolar gelir elde eden Anthropic halka arza hazırlanıyor'), true);
+  assert.equal(ayni('Claude Haiku 5.5 released', 'Anthropic launches Claude Haiku 5.5'), true);
+});
+
 test('KAYNAKLAR: resmi akışlar açık, gizli akışlar kod ve anahtarlı özetle kimliklenir', () => {
   assert.ok(RESMI_KAYNAKLAR.length >= 1 && RESMI_KAYNAKLAR.every((k) => k.resmi && k.etiket === k.ad));
   assert.ok(RESMI_KAYNAKLAR.every((k) => KAYNAKLAR.includes(k)));

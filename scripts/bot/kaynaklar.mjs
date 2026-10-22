@@ -74,6 +74,14 @@ const DURAK = new Set([
   ),
 ]);
 
+// Alanın genel köklerinden ("güvenlik", "açık kaynak", "otonom ajan", "veri merkezi") ikisi farklı iki haberde kolayca
+// birlikte geçer; sayılsalardı ayrı olaylar "zaten yazıldı" diye eleniyordu (22 Ekim: son 14 günde 570 çiftin çoğu).
+const GENEL = new Set(
+  'güven secur safet açık open kayna sourc otono auton ajan ajanl ajanı veri data merke cente siste syste geliş devel araşt resea çalış worke tekno techn yazıl softw araç araçl tools platf hizme servi özell featu yönet manag küres globa dünya world insan human uygul appli'.split(' '),
+);
+// Ürün adı şirketiyle aynı kök sayılır: "Anthropic … Claude" tek başına iki ortak kök vermesin.
+const SIRKET = { claud: 'anthr', chatg: 'opena', gpt: 'opena', gemin: 'googl', deepm: 'googl', copil: 'micro', llama: 'meta' };
+
 export function anahtarlar(baslik = '') {
   const out = new Set();
   for (let w of String(baslik)
@@ -87,7 +95,8 @@ export function anahtarlar(baslik = '') {
     }
     const l = w.toLowerCase().replace(/â/g, 'a').replace(/î/g, 'i');
     if (l.length < 3 || DURAK.has(l)) continue;
-    out.add(l.slice(0, 5));
+    const kok = l.slice(0, 5);
+    if (!GENEL.has(kok)) out.add(SIRKET[kok] ?? kok);
   }
   return out;
 }
