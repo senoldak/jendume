@@ -2386,7 +2386,20 @@
     "k59b8ca:e11b559752195a69": "2026-10-22T12:31:04.704Z",
     "k74f74a:3f1467761b4f05c3": "2026-10-22T12:31:04.704Z",
     "k74f74a:2b3c6cf3c2c6b89d": "2026-10-22T12:31:04.704Z",
-    "k39a0e6:59042c32ae04bb53": "2026-10-22T12:31:04.704Z"
+    "k39a0e6:59042c32ae04bb53": "2026-10-22T12:31:04.704Z",
+    "kd9a613:86aeee612ddb1850": "2026-10-22T12:36:58.580Z",
+    "k12b4a6:a8eb70f14ccf3239": "2026-10-22T12:36:58.580Z",
+    "k38ef42:b3fa78ba1ec80b96": "2026-10-22T12:36:58.580Z",
+    "k621881:da6c3fea99431f32": "2026-10-22T12:36:58.580Z",
+    "kad5125:fa069b887f8b5b8c": "2026-10-22T12:36:58.580Z",
+    "k3595c8:a1ff3c5fb8a38ea6": "2026-10-22T12:36:58.580Z",
+    "k38ef42:a2efeac16ff943ea": "2026-10-22T12:36:58.580Z",
+    "k59b8ca:1057920619e29b12": "2026-10-22T12:36:58.580Z",
+    "kad5125:2ec28ff391dbc08c": "2026-10-22T12:36:58.580Z",
+    "k74f74a:01c62d8d5766fe8e": "2026-10-22T12:36:58.580Z",
+    "kd9a613:2e9214c9a7f91b93": "2026-10-22T12:36:58.580Z",
+    "k031f42:a21a32a489b6d945": "2026-10-22T12:36:58.580Z",
+    "k031f42:10848df87b44d070": "2026-10-22T12:36:58.580Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -5586,7 +5599,21 @@
     "haber:buzdolabindan-daha-az-denetlenen-yapay-zeka-buyuk-tehlike|k2d427e:02194af9cc3965f2": "2026-10-22T12:31:04.704Z",
     "haber:google-yapay-zeka-haber-pilotu-programina-400-den-fazla-yayin-katildi|k2d427e:02194af9cc3965f2": "2026-10-22T12:31:04.704Z",
     "haber:gridcraft-ve-acik-kaynak-araclar-yazilim-pazarini-donusturuyor|k74f74a:3f1467761b4f05c3": "2026-10-22T12:31:04.704Z",
-    "haber:reverse-engineer-anything-ve-artcraft-yapay-zeka-yazilim-klonlariyla-one-cikiyor|k74f74a:3f1467761b4f05c3": "2026-10-22T12:31:04.704Z"
+    "haber:reverse-engineer-anything-ve-artcraft-yapay-zeka-yazilim-klonlariyla-one-cikiyor|k74f74a:3f1467761b4f05c3": "2026-10-22T12:31:04.704Z",
+    "haber:hugging-face-model-degerlendirmelerinin-guvenilirligini-tartismaya-acti|k3595c8:a1ff3c5fb8a38ea6": "2026-10-22T12:36:58.580Z",
+    "haber:reflection-ai-beam-adli-ilk-dil-modelinin-agirliklarini-erisime-acti|k3595c8:a1ff3c5fb8a38ea6": "2026-10-22T12:36:58.580Z",
+    "haber:tesla-cybercab-satislarini-yil-sonuna-kadar-baslatmayi-hedefliyor|k38ef42:a2efeac16ff943ea": "2026-10-22T12:36:58.580Z",
+    "haber:youtube-music-ve-deezer-yapay-zeka-muzikleri-icin-yeni-donem-baslatiyor|k12b4a6:a8eb70f14ccf3239": "2026-10-22T12:36:58.580Z",
+    "haber:youtube-music-yapay-zeka-ile-uretilen-sarkilara-etiket-getirdi|k12b4a6:a8eb70f14ccf3239": "2026-10-22T12:36:58.580Z",
+    "haber:andrew-ng-yapay-zeka-kiyamet-senaryolarinin-rekabeti-engellemek-icin-uyduruldugu|kd9a613:2e9214c9a7f91b93": "2026-10-22T12:36:58.580Z",
+    "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|kd9a613:2e9214c9a7f91b93": "2026-10-22T12:36:58.580Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|kd9a613:2e9214c9a7f91b93": "2026-10-22T12:36:58.580Z",
+    "haber:bilgi-yonetimi-sistemleri-graf-tabanli-yapay-zeka-ile-hatasiz-calisiyor|kad5125:2ec28ff391dbc08c": "2026-10-22T12:36:58.580Z",
+    "haber:hpe-kurumsal-yapay-zeka-altyapilarinda-maliyet-optimizasyonunu-duyurdu|kad5125:2ec28ff391dbc08c": "2026-10-22T12:36:58.580Z",
+    "haber:kurumsal-yapay-zeka-ajanlari-icin-yeni-yonetim-katmani|kad5125:2ec28ff391dbc08c": "2026-10-22T12:36:58.580Z",
+    "haber:google-deepmind-ve-digerleri-genom-karmasikligini-cozmek-icin-yapay-zekaya-guven|k3595c8:a1ff3c5fb8a38ea6": "2026-10-22T12:36:58.580Z",
+    "haber:tesla-robotaxi-san-francisco-sokaklarinda-turkce-arayuzle-denendi|k38ef42:a2efeac16ff943ea": "2026-10-22T12:36:58.580Z",
+    "k38ef42:b3fa78ba1ec80b96|kad5125:fa069b887f8b5b8c": "2026-10-22T12:36:58.580Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13379,6 +13406,71 @@
       "puan": 30,
       "olcek": 100,
       "zaman": "2026-10-22T12:31:04.704Z"
+    },
+    "kd9a613:86aeee612ddb1850": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k12b4a6:a8eb70f14ccf3239": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k59b8ca:1057920619e29b12": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k38ef42:b3fa78ba1ec80b96": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k74f74a:01c62d8d5766fe8e": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k031f42:a21a32a489b6d945": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "kd9a613:2e9214c9a7f91b93": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "kad5125:2ec28ff391dbc08c": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k031f42:10848df87b44d070": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k621881:da6c3fea99431f32": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k3595c8:a1ff3c5fb8a38ea6": {
+      "puan": 90,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "k38ef42:a2efeac16ff943ea": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
+    },
+    "kad5125:fa069b887f8b5b8c": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-10-22T12:36:58.580Z"
     }
   },
   "yayinlanan": {
@@ -13965,6 +14057,30 @@
     "boomi-hesap-islemlerinin-yarisini-yapay-zeka-ile-denetliyor": {
       "zaman": "2026-10-22T09:51:00.926Z",
       "basliklarSifreli": "v1.TDLzprnnsC+BK2hX.Za1uDnF0GK37VkJhRG70cstJjWm/2/BEzOAGw05XRq9qop741NnwEsAudRSo9/uCFHRT9HrVD4Ht5Dh3CgaymqFQkKl29B0I6d5mfwC04D3tacQSw7o0"
+    },
+    "tesla-cybercab-modelini-2026-yili-bitmeden-musterilere-teslim-etmeyi-hedefliyor": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.rmzXkulOB2q8IBcT.4CJxXiLCYOEkpPYbxoEv9QCtrD0ptew/1ITR63J9POz9MaNrZrdvWYAGw05QrrbGT3GcGniRhwrxjzZq/fMNrdNuOKbaQZ78zChHrMsVQzQMF0LOWBXlFGHoEtvztxxgI/UyQPnIHUPTpw=="
+    },
+    "hpe-spaceborne-computer-4-ay-yuzeyinde-yapay-zeka-calistiracak": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.TgJen+SSssBads9f.LYUMV6MDWIuxBJW+2CcXCdlzTKsTatzSNk74OYLQZ+wJu6gC/AriK4Rvn5vZQOHVu05g4zlTlKqeNbaWLjF6/B3te7pxBuxu3g6Nx3wUuhJkWtRnSw+EkVp5/heM1x4AvT22CozYY+wV0PpkiLC/qsgAVmjPDzZeXNL8KmSbGHF9mgaloe3sdQ=="
+    },
+    "nebius-veri-merkezleri-ve-grafik-islemciler-icin-citi-den-3-5-milyar-dolar-kredi": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.uIn2N54Qa0pFyv/F.XhlO9vIlv+PL2lwxzfPD0yI61dJv9HO7YsdzJ4KuoVPBng0lmqyXm40WbPSwtAkFrhCZBykDObymc/902MmT5w9UsLaBmOHDBNy81tBZEtVRLHSGpyjGnVvQzsI="
+    },
+    "google-finlandiya-da-yapay-zeka-veri-merkezi-icin-izinsiz-agac-kesti": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.Mo5KiwkIUde48yt5.jRFvEWvrX4TsGFBPVeNtmMDLUnZi/qF/FYE+OoVExNVk6oaklPYwRO2RkAoyrYyqyk2/6FIuT/TEtddMlKFcbBMTZkiGdqvQNqi06n7OCTCQGzs5whqvqj5xUIIHQ/w60h9CMbGC9/KPr2nUT17c1N0="
+    },
+    "forrester-raporu-sirketlerin-yapay-zeka-karlilik-hedeflerini-tutturamadigini-gos": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.zogd+aIs6ZmNuU75.8qYCaddiNtkqFk9zCOmmK9DWxBtfBFYB2+ZvDZ0Ge1Hp814zpaysy7uHG0Z3ZLB7vMBx85MVQYoYCmEZoECFiZ31AgNPF5O7ifT98HVHPC30Hp7C4paMXuC2ZB7bpwLt8MlmhFZv2fegQD3YR3Fz2ijcy6nQrgRXsc5iPz5U/R55eCMUP6Oa3zrcCw=="
+    },
+    "openai-guvenlik-risklerine-karsi-yasal-duzenleme-cagrisi-yapti": {
+      "zaman": "2026-10-22T12:36:58.580Z",
+      "basliklarSifreli": "v1.5vH95CLvsOS6fUyy.2Jrnequ8TvDirdDxhPsMjSPLmpuhCkr+wqJx5kx41q/gWSvHUCvnQ360Ng91Kf6BfiF+i4+e5dqppNbJZFE0PXM="
     }
   },
   "havuz": [
@@ -16429,6 +16545,10 @@
     "kd4ca61:a709eca84d4eff66": "2026-10-22T10:49:16.000Z",
     "ke6dccd:01a4656b275d559e": "2026-10-22T11:30:00.000Z",
     "ke6dccd:0e02791076813b8c": "2026-10-22T10:11:00.000Z",
-    "k7c7f1f:ecef79754abffd52": "2026-10-22T10:17:37.000Z"
+    "k7c7f1f:ecef79754abffd52": "2026-10-22T10:17:37.000Z",
+    "k59b8ca:1057920619e29b12": "2026-10-22T12:30:00.000Z",
+    "kd9a613:86aeee612ddb1850": "2026-10-22T12:34:33.000Z",
+    "k12b4a6:a8eb70f14ccf3239": "2026-10-22T12:32:00.000Z",
+    "k38ef42:b3fa78ba1ec80b96": "2026-10-22T12:30:00.000Z"
   }
 }
