@@ -100,6 +100,8 @@ function hreflangEsleri(url) {
 }
 
 export default defineConfig({
+  // Astro 7 varsayılanı "jsx": satır sonundaki boşluğu etiket kenarında siler (ör. "</a>" + yeni satır + "kelime" bitişik çıkar). true: tek boşluğa indirir.
+  compressHTML: true,
   site: SITE,
   integrations: [
     sitemap({
