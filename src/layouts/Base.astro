@@ -79,6 +79,8 @@ const topicsHref = konuDiziniYolu(lang);
 const glossaryHref = sozlukYolu(lang);
 const gizlilikHref = gizlilikYolu(lang);
 const legalHref = yasalYolu(lang);
+// İletişim: Yasal sayfasının künyesindeki e-posta satırı (tek kaynak).
+const contactHref = `${legalHref}#${lang === 'tr' ? 'kunye' : 'imprint'}`;
 const correctionsPolicyHref = duzeltmePolitikasiYolu(lang);
 const aiUseHref = yapayZekaYolu(lang);
 const correctionsHref = duzeltmelerYolu(lang);
@@ -183,6 +185,9 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <a href={searchHref} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
             {ui.search}<span class="link-other" lang={other}>{SITE.ui[other].search}</span>
           </a>
+          <a href={contactHref}>
+            {ui.contact}<span class="link-other" lang={other}>{SITE.ui[other].contact}</span>
+          </a>
         </nav>
 
         <nav class="lang-switch" aria-label={ui.availableLangs}>
@@ -276,6 +281,9 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <li><a href={correctionsHref}><span>{ui.corrections}<span class="link-other" lang={other}>{SITE.ui[other].corrections}</span></span></a></li>
           <li><a href={complaintsHref}><span>{ui.complaints}<span class="link-other" lang={other}>{SITE.ui[other].complaints}</span></span></a></li>
           <li><a href={standardsReportHref}><span>{ui.standardsReport}<span class="link-other" lang={other}>{SITE.ui[other].standardsReport}</span></span></a></li>
+          <li><a href={contactHref}><span>{ui.contact}<span class="link-other" lang={other}>{SITE.ui[other].contact}</span></span></a></li>
+          <li><a href={SITE.social.telegram} rel="me noopener" target="_blank"><span>Telegram</span></a></li>
+          <li><a href={SITE.social.linkedin} rel="me noopener" target="_blank"><span>LinkedIn</span></a></li>
           <li><a href={`/${lang}/rss.xml`}><span>{ui.rss}<span class="link-other">{lang.toUpperCase()}</span></span></a></li>
           <li><a href="/en/" lang="en">English</a></li>
           <li><a href="/tr/" lang="tr">Türkçe</a></li>

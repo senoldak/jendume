@@ -1787,3 +1787,8 @@ a.board-latest:hover {
   margin: 0.25rem 0 0.75rem;
   font-weight: 600;
 }
+
+.front-all {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}

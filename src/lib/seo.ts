@@ -38,7 +38,8 @@ export function siteGraph() {
       alternateName: SITE.name,
       url: abs('/'),
       // Yatay yayıncı logosu (600×60, src/pages/logo-600x60.png.ts); kare işaret ayrıca `image` olarak verilir.
-      // sameAs bilinçli olarak yok: repoda doğrulanmış resmî sosyal hesap adresi yok (uydurulmaz).
+      // Yalnız doğrulanmış resmî hesaplar (SITE.social); doğrulanmamış adres yazılmaz.
+      sameAs: Object.values(SITE.social),
       logo: {
         '@type': 'ImageObject',
         '@id': abs('/#logo'),

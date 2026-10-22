@@ -8,6 +8,7 @@ import Arrow from './Arrow.astro';
 import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
 import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
 import { getPublishedPosts, getPostUrl, getCategoryUrl, kapakBilgisi } from '../lib/news';
+import { anaSayfaEskileri } from '../lib/ana-sayfa.mjs';
 import { KONULAR } from '../lib/konular';
 import { konuVerisi } from '../lib/rotalar';
 import { terimBul } from '../lib/sozluk.mjs';
@@ -30,7 +31,7 @@ const leadPost =
 const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
 const rest = posts.filter((p) => p.id !== leadPost?.id);
 const latest = rest.slice(0, 4);
-const older = rest.slice(4);
+const older = anaSayfaEskileri(rest);
 
 // Konu ve sözlük rehberi: sayfası olan konular ve temel terimler.
 const konular = KONULAR.filter((k) => konuSayfali.has(k.slug));
@@ -107,6 +108,9 @@ const board = CATEGORIES.map((cat, i) => {
           <StoryCard post={post} lang={lang} />
         ))}
       </div>
+      <p class="front-all">
+        <a class="read-plate" href="#sections-heading">{ui.allStoriesBySection}<Arrow dir="down" /></a>
+      </p>
     </section>
   )
 }

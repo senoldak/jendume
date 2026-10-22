@@ -163,9 +163,15 @@ export const SITE = {
     title: { tr: 'Yayın yönetmeni ve editör', en: 'Editor-in-chief' } satisfies Record<Locale, string>,
     email: 'contact@jendume.com',
   },
+  // Doğrulanmış resmî hesaplar (docs/linkedin-oto-paylasim-durum.md, Telegram kanalı @jenndume). Yenisi ancak gerçek hesap açılınca eklenir.
+  social: {
+    telegram: 'https://t.me/jenndume',
+    linkedin: 'https://www.linkedin.com/company/106623149/',
+  },
   ui: {
     tr: {
       home: 'Gündem',
+      contact: 'İletişim',
       about: 'Hakkımızda',
       editorialStandards: 'Yayın İlkeleri',
       transparency: 'Şeffaflık',
@@ -186,6 +192,7 @@ export const SITE = {
       backHome: 'Ana Sayfaya Dön',
       emptyCategory: 'Bu bölümde henüz haber bulunmuyor.',
       allStories: 'Tüm Haberler',
+      allStoriesBySection: 'Tüm haberler bölümlere göre',
       langName: 'Türkçe',
       readIn: 'Bu haberi Türkçe oku',
       youAreHere: 'Buradasınız',
@@ -234,6 +241,7 @@ export const SITE = {
     },
     en: {
       home: 'Today',
+      contact: 'Contact',
       about: 'About Us',
       editorialStandards: 'Editorial Standards',
       transparency: 'Transparency',
@@ -254,6 +262,7 @@ export const SITE = {
       backHome: 'Back to Home',
       emptyCategory: 'No stories published in this section yet.',
       allStories: 'All Stories',
+      allStoriesBySection: 'All stories by section',
       langName: 'English',
       readIn: 'Read this story in English',
       youAreHere: 'You are here',
