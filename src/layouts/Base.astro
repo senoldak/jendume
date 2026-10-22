@@ -291,6 +291,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.displayName}</span>
+        <span class="footer-license"><a href={ui.licenseUrl} rel="license noopener">{ui.licenseNote.replace('{name}', SITE.name)}</a></span>
         <span>{SITE.tagline[lang]} · <span lang={other}>{SITE.tagline[other]}</span></span>
       </div>
     </footer>

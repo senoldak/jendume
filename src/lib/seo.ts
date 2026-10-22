@@ -138,6 +138,7 @@ export function articleGraph(post: NewsEntry, lang: Locale, image: string) {
     articleSection: cat.title,
     inLanguage: SITE.localeTag[lang],
     isAccessibleForFree: true,
+    license: 'https://creativecommons.org/licenses/by-nc/4.0/',
     isPartOf: { '@id': WEBSITE_ID },
   };
 
