@@ -1,0 +1,72 @@
+# Yayın kapısı ikinci okumasının arşiv ölçümü (mecmua motor/bin/kapi-olcum.mjs): bir sitenin son N bot haberi ikinci
+# okumadan geçer, kırmızı oranı %5 eşiğiyle karşılaştırılır. Elle çalıştırılır; yokla: tek örnek okuma.
+# Log yalnız sıra, karar ve kural kodu taşır (metin ve alıntı yok).
+name: Kapı ölçümü
+
+on:
+  workflow_dispatch:
+    inputs:
+      islem:
+        description: 'yokla | olc'
+        default: yokla
+      site:
+        description: 'tidsrost | finfolis | kifobu | jendume'
+        default: jendume
+      n:
+        description: 'haber sayısı'
+        default: '100'
+      saglayici:
+        description: 'cloudflare | gemma'
+        default: cloudflare
+      model:
+        description: 'model (boş: sağlayıcının varsayılanı)'
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  olc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: .github
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+
+      - name: Motoru getir
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: senoldak/mecmua
+          ssh-key: '${{ secrets.MECMUA_OKUMA }}'
+          path: .mecmua
+          sparse-checkout: motor
+          persist-credentials: false
+
+      - name: Siteyi getir
+        if: ${{ inputs.islem == 'olc' }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: senoldak/${{ inputs.site }}
+          path: .olcum-site
+          sparse-checkout: src/content/haberler
+          persist-credentials: false
+
+      - name: Ölç
+        env:
+          KAPI_SAGLAYICI: ${{ inputs.saglayici }}
+          KAPI_MODEL: ${{ inputs.model }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ISLEM: ${{ inputs.islem }}
+          SITE: ${{ inputs.site }}
+          N: ${{ inputs.n }}
+        run: |
+          if [ "$ISLEM" = yokla ]; then node .mecmua/motor/bin/kapi-olcum.mjs --yokla --site "$SITE"
+          else node .mecmua/motor/bin/kapi-olcum.mjs --site "$SITE" --kok .olcum-site --n "$N"; fi
