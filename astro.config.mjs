@@ -5,6 +5,7 @@ import path from 'node:path';
 import { dizinlenir } from './src/lib/kalite.mjs';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './src/lib/kapak.mjs';
 import { haberYolu, karsiYol } from './src/lib/yollar.mjs';
+import { esKimligi } from './src/lib/es-kimlik.mjs';
 import { sozlukEklentisi } from './src/lib/sozluk.mjs';
 import { onyuzMaddesiYayinda } from './src/lib/yayinda.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
@@ -13,6 +14,9 @@ const SITE = 'https://jendume.com';
 
 // Gövdesi çok kısa haberler (src/lib/kalite.mjs) noindex alır; site haritasına girmesinler diye ayrıca toplanır.
 const kisaHaberler = new Set();
+// `esId` taşıyan (iki dilin adresi farklı) haberlerin "dil/kimlik" → karşı dildeki kimlik eşlemesi (src/lib/es-kimlik.mjs).
+const haberEsleri = new Map();
+const haberEsi = (dil, id) => haberEsleri.get(`${dil}/${id}`);
 
 // Site haritası için haber yolu → { lastmod, kapak } eşlemesi (içerik koleksiyonu config'te okunamadığı için dosyadan).
 function haberBilgisi() {
@@ -33,6 +37,8 @@ function haberBilgisi() {
       if (Number.isNaN(date.valueOf())) continue;
       const updated = new Date(field('updated') ?? '');
       const id = file.replace(/\.md$/, '');
+      const es = esKimligi(md);
+      if (es) haberEsleri.set(`${lang}/${id}`, es);
       // Kapak seçimi bütün yayımlanmış haberler üzerinden yapılır (kısa haberler dahil; src/lib/news.ts ile aynı).
       dilHaberleri.push({ id, date, category: field('category') ?? '' });
       if (!dizinlenir(md)) {
@@ -89,7 +95,7 @@ function hreflangEsleri(url) {
   const m = /^\/(tr|en)\//.exec(yol);
   if (!m) return undefined;
   const dil = m[1];
-  const karsi = `${SITE}${karsiYol(yol, dil === 'tr' ? 'en' : 'tr')}`;
+  const karsi = `${SITE}${karsiYol(yol, dil === 'tr' ? 'en' : 'tr', haberEsi)}`;
   if (haritaDisi(karsi) || !sayfa(karsi).var) return undefined;
   const en = dil === 'en' ? url : karsi;
   return [

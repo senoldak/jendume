@@ -18,6 +18,13 @@ import {
   yayinlananKapat,
 } from './gizli.mjs';
 import { ucDilliHaberYaz } from './lib.mjs';
+import { esKimligi } from '../../src/lib/es-kimlik.mjs';
+// EN dosyası kendi başlığından adlanır; adı TR dosyasındaki esId verir (src/lib/es-kimlik.mjs).
+async function haberOku(rot, dil, slug) {
+  const tr = await readFile(path.join(rot, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  const ad = dil === 'en' ? esKimligi(tr) ?? slug : slug;
+  return readFile(path.join(rot, 'src/content/haberler', dil, `${ad}.md`), 'utf8');
+}
 
 const A = Buffer.alloc(32, 1);
 const B = Buffer.alloc(32, 2);
@@ -86,7 +93,7 @@ test('ucDilliHaberYaz kaynak izini frontmatter\'a şifreli yazar', async () => {
     const blok = { title: 'Acme yeni modelini tanıttı', description: 'Acme yeni bir model duyurdu ve ayrıntıları paylaştı.', body: 'Gövde.' };
     const slug = await ucDilliHaberYaz(rot, { tr: blok, en: blok, kaynakIzi: iz, date: '2026-10-15T00:00:00Z' });
     for (const dil of ['tr', 'en']) {
-      const md = await readFile(path.join(rot, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      const md = await haberOku(rot, dil, slug);
       const m = md.match(/^kaynakIzi: "([^"]+)"$/m);
       assert.ok(m);
       assert.ok(!md.includes('example'));

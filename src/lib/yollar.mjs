@@ -52,8 +52,10 @@ export const hakkimizdaYolu = (dil) => `/${dil}/${YOL[dil].hakkimizda}/`;
  * Bilinmeyen yollarda yalnız dil öneki değişir. Konu slug'ları iki dilde aynıdır; sözlük terimleri dile göre değişir.
  * @param {string} yol ör. "/en/category/ai/2/"
  * @param {Dil} hedef
+ * @param {(kaynakDil: Dil, id: string) => string | undefined} [haberEsi] haber kimliğinin öteki dildeki karşılığı
+ *   (ön bilgideki `esId`, bkz. es-kimlik.mjs); yoksa ya da undefined dönerse kimlik aynı kalır.
  */
-export function karsiYol(yol, hedef) {
+export function karsiYol(yol, hedef, haberEsi) {
   const m = /^\/(tr|en)(\/.*)?$/.exec(yol);
   if (!m) return yol;
   const kaynak = /** @type {Dil} */ (m[1]);
@@ -66,6 +68,8 @@ export function karsiYol(yol, hedef) {
       if (tur === 'kategori') {
         const kimlik = kategoriKimligi(kaynak, parcalar[2]);
         if (kimlik) parcalar[2] = kategoriParcasi(hedef, kimlik);
+      } else if (tur === 'haber') {
+        parcalar[2] = haberEsi?.(kaynak, parcalar[2]) ?? parcalar[2];
       } else if (tur === 'sozluk') {
         const terim = TERIMLER.find((t) => t[kaynak].slug === parcalar[2]);
         if (terim) parcalar[2] = terim[hedef].slug;

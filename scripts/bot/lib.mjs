@@ -309,7 +309,8 @@ export async function sonHaberler(rot, gun = 10) {
       if (al('category') === 'gunluk-bulten') continue;
       out.push({
         lang: dil,
-        slug: dosya.replace(/\.md$/, ''),
+        // EN dosyası esId taşıyorsa slug TR dosyanın adıdır: iki dil aynı habere bağlanır (src/lib/es-kimlik.mjs).
+        slug: dil === 'en' && al('esId') ? al('esId') : dosya.replace(/\.md$/, ''),
         date: new Date(tarih).toISOString(),
         title: al('title') ?? '',
         description: al('description') ?? '',
@@ -321,8 +322,22 @@ export async function sonHaberler(rot, gun = 10) {
 }
 
 /**
- * İki dilde (tr, en) aynı slug ile haber dosyalarını yazar:
- * src/content/haberler/{tr,en}/<slug>.md
+ * İngilizce dosya adı: İngilizce başlıktan (slugify); başlık yoksa, TR slug ile aynıysa ya da boşsa TR slug'a düşer
+ * (esId yazılmaz, eski davranış). EN klasöründe aynı ad varsa -2, -3… ile ayrılır.
+ * @param {string} trSlug @param {string | undefined} enBaslik @param {(ad: string) => Promise<boolean>} enVarMi
+ */
+export async function enSlugUret(trSlug, enBaslik, enVarMi) {
+  const taban = enBaslik ? slugify(tipografi(guvenli(enBaslik), { baslik: true })) : '';
+  if (!taban || taban === trSlug) return trSlug;
+  let ad = taban;
+  for (let i = 2; await enVarMi(ad); i++) ad = `${taban}-${i}`;
+  return ad === trSlug ? trSlug : ad;
+}
+
+/**
+ * İki dilde (tr, en) haber dosyalarını yazar: src/content/haberler/{tr,en}/<slug>.md.
+ * TR dosyası TR başlıktan, EN dosyası EN başlıktan adlanır; adlar farklıysa iki dosyaya da `esId` (öteki dosyanın adı)
+ * yazılır (src/lib/es-kimlik.mjs). Döner: TR slug (durum kayıtları, Telegram, D1 bunu kullanır).
  */
 export async function ucDilliHaberYaz(rot, paket) {
   const category = KATEGORILER.includes(paket.category) ? paket.category : 'yapay-zeka';
@@ -339,6 +354,14 @@ export async function ucDilliHaberYaz(rot, paket) {
       break;
     }
   }
+
+  const enDir = path.join(rot, 'src/content/haberler/en');
+  const enAd =
+    paket.tr && paket.en
+      ? await enSlugUret(slug, paket.en.title, (ad) => access(path.join(enDir, `${ad}.md`)).then(() => true, () => false))
+      : slug;
+  const dosyaAdi = { tr: slug, en: enAd };
+  const esId = { tr: enAd !== slug ? enAd : undefined, en: enAd !== slug ? slug : undefined };
 
   for (const dil of DILLER) {
     const icerik = paket[dil];
@@ -359,6 +382,7 @@ export async function ucDilliHaberYaz(rot, paket) {
       `description: ${yamlStr(description)}`,
       `category: ${category}`,
       `date: ${dateIso}`,
+      esId[dil] ? `esId: ${yamlStr(esId[dil])}` : null,
       bolge ? `bolge: ${yamlStr(guvenli(bolge))}` : null,
       perspektif ? `perspektif: ${yamlStr(guvenli(perspektif))}` : null,
       why_matters ? `why_matters: ${yamlStr(guvenli(why_matters))}` : null,
@@ -382,7 +406,7 @@ export async function ucDilliHaberYaz(rot, paket) {
 
     const langDir = path.join(rot, 'src/content/haberler', dil);
     await mkdir(langDir, { recursive: true });
-    await writeFile(path.join(langDir, `${slug}.md`), `${fm.join('\n')}\n\n${body}\n`, 'utf8');
+    await writeFile(path.join(langDir, `${dosyaAdi[dil]}.md`), `${fm.join('\n')}\n\n${body}\n`, 'utf8');
   }
 
   return slug;

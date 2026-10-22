@@ -22,6 +22,8 @@ const haberSchema = z.object({
   description: z.string().min(15),
   category: categoryEnum,
   date: z.coerce.date(),
+  // Öteki dildeki dosyanın adı (.md'siz); yalnız iki dilin adresi farklıysa dolu (src/lib/es-kimlik.mjs). Yoksa kimlik aynıdır.
+  esId: z.string().optional(),
   updated: z.coerce.date().optional(),
   // Yayından sonra yapılan düzeltmenin notu ("<tarih saat>: <ne düzeltildi>"); boşsa makalede hiçbir şey görünmez.
   // Not `updated`'ı değiştirmez; sahibi elle günceller.

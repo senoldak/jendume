@@ -1,5 +1,6 @@
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
-import type { CategorySlug, Locale } from './site';
+import { otherLocale, type CategorySlug, type Locale } from './site';
+import { karsiKimlik } from './es-kimlik.mjs';
 import { bolumKapakYolu, haberKapakYolu, kapakliKimlikler } from './kapak.mjs';
 import { haberYolu, kategoriYolu } from './yollar.mjs';
 import { yayinda, yayindakiDiller } from './yayinda.mjs';
@@ -33,16 +34,20 @@ export async function getPostsByCategory(
 
 // Dil köprüsü ve hreflang yalnız yayındaki dile bağlanır: TR yayında, EN ileri tarihliyse EN'e bağlantı yok
 // (getPublishedPosts ile aynı kural; yerel geliştirmede var olan her dil görünür).
+// Karşılık, kendi dosyasındaki `esId` ile bulunur (yoksa aynı kimlik; src/lib/es-kimlik.mjs).
 export async function getAvailableTranslations(
-  slug: string
-): Promise<Record<Locale, boolean>> {
-  const [tr, en] = await Promise.all([
-    getEntry(COLLECTION_MAP.tr, slug),
-    getEntry(COLLECTION_MAP.en, slug),
-  ]);
-  if (import.meta.env.DEV) return { tr: Boolean(tr), en: Boolean(en) };
-  const diller = yayindakiDiller({ tr: tr?.data, en: en?.data });
-  return { tr: diller.includes('tr'), en: diller.includes('en') };
+  lang: Locale,
+  id: string
+): Promise<{ available: Record<Locale, boolean>; ids: Record<Locale, string> }> {
+  const kendi = await getEntry(COLLECTION_MAP[lang], id);
+  const digerDil = otherLocale(lang);
+  const digerId = karsiKimlik(id, kendi?.data.esId);
+  const diger = await getEntry(COLLECTION_MAP[digerDil], digerId);
+  const ids = { [lang]: id, [digerDil]: digerId } as Record<Locale, string>;
+  const veri = { [lang]: kendi?.data, [digerDil]: diger?.data } as Record<Locale, NewsEntry['data'] | undefined>;
+  if (import.meta.env.DEV) return { available: { tr: Boolean(veri.tr), en: Boolean(veri.en) }, ids };
+  const diller = yayindakiDiller({ tr: veri.tr, en: veri.en });
+  return { available: { tr: diller.includes('tr'), en: diller.includes('en') }, ids };
 }
 
 /** TR /tr/haber/<id>/, EN /en/news/<id>/ (src/lib/yollar.mjs). */

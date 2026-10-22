@@ -7,6 +7,13 @@ import { slugify, rssOku, guvenli, varlikCoz, ucDilliHaberYaz, yaziKaydet } from
 import { KAYNAKLAR, RESMI_KAYNAKLAR, anahtarlar, benzer, gizliKaynak, haberKimligi } from './kaynaklar.mjs';
 import { rakamKontrol, medyaKontrol, medyaAdlariniKur, zamanKontrol, kesinKontroller, duzeltmeAyrintisi, yerelDuzelt } from './denetci.mjs';
 import { DIL_BLOK_SEMASI } from './yazar.mjs';
+import { esKimligi } from '../../src/lib/es-kimlik.mjs';
+// EN dosyası kendi başlığından adlanır; adı TR dosyasındaki esId verir (src/lib/es-kimlik.mjs).
+async function haberOku(rot, dil, slug) {
+  const tr = await readFile(path.join(rot, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  const ad = dil === 'en' ? esKimligi(tr) ?? slug : slug;
+  return readFile(path.join(rot, 'src/content/haberler', dil, `${ad}.md`), 'utf8');
+}
 
 // Gerçek yayın adları şifreli listede durur; testler uydurma adlarla çalışır.
 medyaAdlariniKur(['Örnek Haber', 'Ajans Beta']);
@@ -111,7 +118,7 @@ test('rakamKontrol, medyaKontrol, and zamanKontrol catch unverified numbers, med
   );
 });
 
-test('ucDilliHaberYaz writes tr and en markdown files with identical slug and perspektif', async () => {
+test('ucDilliHaberYaz writes tr and en markdown files (EN named from EN title, linked by esId) and perspektif', async () => {
   const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
   try {
     const slug = await ucDilliHaberYaz(tmpDir, {
@@ -140,10 +147,7 @@ test('ucDilliHaberYaz writes tr and en markdown files with identical slug and pe
 
     assert.equal(slug, 'yapay-zeka-ceviri-araclari-farkli-kulturleri-nasil-yakinlastiriyor');
     for (const dil of ['tr', 'en']) {
-      const content = await readFile(
-        path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`),
-        'utf8'
-      );
+      const content = await haberOku(tmpDir, dil, slug);
       assert.ok(content.includes(`lang: ${dil}`));
       assert.ok(content.includes('perspektif:'));
       assert.ok(content.includes('bolge:'));
@@ -162,7 +166,7 @@ test('ucDilliHaberYaz birincil kaynakları iki dilde de kaynaklar alanına yazar
     const paket = { category: 'yapay-zeka', date: '2026-10-12T10:00:00.000Z', tr: blok('tr'), en: blok('en') };
     const slug = await ucDilliHaberYaz(tmpDir, { ...paket, kaynaklar: [{ ad: 'OpenAI News', url: 'https://openai.com/index/ornek/' }] });
     for (const dil of ['tr', 'en']) {
-      const c = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      const c = await haberOku(tmpDir, dil, slug);
       assert.ok(c.includes('kaynaklar:\n  - ad: "OpenAI News"\n    url: "https://openai.com/index/ornek/"'), c);
     }
     const tr2 = { ...blok('tr'), title: 'Başka başlık' };
@@ -239,7 +243,7 @@ test('ucDilliHaberYaz gövdedeki HTML etiketlerini ve yorumlarını iki dilde de
       en: { title: 'Tagged', description: 'x', body: govde('English') },
     });
     for (const [dil, bas] of [['tr', 'Türkçe'], ['en', 'English']]) {
-      const md = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      const md = await haberOku(tmpDir, dil, slug);
       const metin = md.split('---').slice(2).join('---');
       assert.doesNotMatch(metin, /<\/?(b|a|script|div|br)\b/i);
       assert.doesNotMatch(metin, /<!--|onclick|gizli|kapanmamış|alert/);
@@ -292,4 +296,44 @@ test('duzeltmeAyrintisi: kopya parçaları ve yayın adının geçtiği alanı s
 test('yerelDuzelt: dizi alanlarındaki (key_points) metinleri de temizler', () => {
   const p = yerelDuzelt({ en: { title: 'X', key_points: ['Prices rose today.', 'Stable'] }, tr: { title: 'Y' } });
   assert.deepEqual(p.en.key_points, ['Prices rose.', 'Stable']);
+});
+
+test('ucDilliHaberYaz: EN dosyası EN başlıktan adlanır, iki dosya esId ile birbirine bağlanır', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const paket = {
+      category: 'yapay-zeka',
+      date: '2026-10-12T10:00:00.000Z',
+      tr: { title: 'Örnek Yapay Zekâ Haberi Yayımlandı', description: 'Özet metni yeterince uzun.', body: 'Gövde.' },
+      en: { title: 'Example AI Story Published', description: 'Summary text long enough.', body: 'Body.' },
+    };
+    const slug = await ucDilliHaberYaz(tmpDir, paket);
+    assert.equal(slug, 'ornek-yapay-zeka-haberi-yayimlandi');
+    const tr = await readFile(path.join(tmpDir, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+    const en = await readFile(path.join(tmpDir, 'src/content/haberler/en/example-ai-story-published.md'), 'utf8');
+    assert.match(tr, /^esId: "example-ai-story-published"$/m);
+    assert.match(en, new RegExp(`^esId: "${slug}"$`, 'm'));
+    // Aynı EN başlık yeniden gelirse (TR başlık farklı) EN adı çakışmaz.
+    const slug2 = await ucDilliHaberYaz(tmpDir, { ...paket, tr: { ...paket.tr, title: 'Bambaşka Bir Türkçe Başlık' } });
+    const tr2 = await readFile(path.join(tmpDir, 'src/content/haberler/tr', `${slug2}.md`), 'utf8');
+    assert.match(tr2, /^esId: "example-ai-story-published-2"$/m);
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
+
+test('ucDilliHaberYaz: EN başlık yoksa ya da slug aynıysa esId yazılmaz (eski davranış)', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const trBlok = { title: 'Nvidia', description: 'Özet metni yeterince uzun.', body: 'Gövde.' };
+    const slug = await ucDilliHaberYaz(tmpDir, { category: 'teknoloji', date: '2026-10-12T10:00:00.000Z', tr: trBlok, en: { ...trBlok, title: 'NVIDIA' } });
+    for (const dil of ['tr', 'en']) {
+      const c = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      assert.ok(!c.includes('esId'), c);
+    }
+    const yalniz = await ucDilliHaberYaz(tmpDir, { category: 'teknoloji', date: '2026-10-12T10:00:00.000Z', tr: { ...trBlok, title: 'Sadece Türkçe Haber Başlığı' } });
+    assert.ok(!(await readFile(path.join(tmpDir, 'src/content/haberler/tr', `${yalniz}.md`), 'utf8')).includes('esId'));
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
 });

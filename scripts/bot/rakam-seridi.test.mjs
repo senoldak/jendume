@@ -52,7 +52,8 @@ test('ucDilliHaberYaz: rakam şeridi frontmatter\'a yazılır', async () => {
       en: blok('Example Lab raises $2.5 billion', []),
     });
     const tr = await readFile(path.join(dir, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
-    const en = await readFile(path.join(dir, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+    const enAd = tr.match(/^esId: "(.+)"$/m)?.[1] ?? slug; // EN dosyası EN başlıktan adlanır (es-kimlik.mjs)
+    const en = await readFile(path.join(dir, 'src/content/haberler/en', `${enAd}.md`), 'utf8');
     assert.match(tr, /rakamlar:\n  - etiket: "?Yatırım"?\n    deger: "?2,5 milyar dolar"?\n/);
     assert.ok(!en.includes('rakamlar:'));
   } finally {

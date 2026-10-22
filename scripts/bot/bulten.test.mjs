@@ -18,14 +18,15 @@ async function kok() {
   return k;
 }
 
-async function haber(k, dil, slug, { date, category = 'dunya', draft = false, title = `${slug} başlığı` } = {}) {
+async function haber(k, dil, slug, { date, category = 'dunya', draft = false, title = `${slug} başlığı`, esId } = {}) {
   const md = `---
 lang: ${dil}
 title: "${title}"
 description: "Açıklama metni burada yer alıyor."
 category: ${category}
 date: ${date}
-draft: ${draft}
+${esId ? `esId: "${esId}"
+` : ''}draft: ${draft}
 ---
 
 Gövde.
@@ -186,4 +187,18 @@ test('ileri tarihli bülten "son bülten" sayılmaz, yeni haberleri yutmaz', asy
   assert.ok(slug);
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
   assert.match(tr, /\/tr\/haber\/a-haber\//);
+});
+
+test('esId ile bağlı yeni haber: EN bülten maddesi EN adresine bağlanır, TR bülten TR adresine', async () => {
+  const k = await kok();
+  await haber(k, 'tr', 'yeni-haber', { date: '2026-10-14T07:30:00.000Z', esId: 'new-story' });
+  await haber(k, 'en', 'new-story', { date: '2026-10-14T07:30:00.000Z', esId: 'yeni-haber' });
+  await haber(k, 'tr', 'eski-haber', { date: '2026-10-14T06:30:00.000Z' });
+  await haber(k, 'en', 'eski-haber', { date: '2026-10-14T06:30:00.000Z' });
+  const slug = await calistir({ simdi, donem: 'ogle', kok: k });
+  const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  assert.match(tr, /\(\/tr\/haber\/yeni-haber\/\)/);
+  assert.match(en, /\(\/en\/news\/new-story\/\)/);
+  assert.match(en, /\(\/en\/news\/eski-haber\/\)/);
 });

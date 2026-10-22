@@ -6,6 +6,7 @@ import path from 'node:path';
 import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { haberYolu } from '../../src/lib/yollar.mjs';
+import { eslemeAnahtari } from '../../src/lib/es-kimlik.mjs';
 import { onyuzMaddesiYayinda } from '../../src/lib/yayinda.mjs';
 import { standartBirlestir, standartDenetle, standartOzeti } from './standart.mjs';
 import { acilDurdurma } from './kapi.mjs';
@@ -135,7 +136,9 @@ async function haberleriOku(kok, dil, simdi) {
       sonBulten = Math.max(sonBulten, tarih.getTime());
       continue;
     }
-    haberler.push({ slug: dosya.replace(/\.md$/, ''), title: d.title ?? '', description: d.description ?? '', tarih });
+    const dosyaKimligi = dosya.replace(/\.md$/, '');
+    // slug: dosya adı (adres için); anahtar: iki dili eşleyen TR kimliği (EN dosyasında esId; src/lib/es-kimlik.mjs).
+    haberler.push({ slug: dosyaKimligi, anahtar: eslemeAnahtari(dil, dosyaKimligi, d.esId), title: d.title ?? '', description: d.description ?? '', tarih });
   }
   return { haberler, sonBulten };
 }
@@ -147,17 +150,17 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
   const en = await haberleriOku(kok, 'en', simdi);
   // Standartlar süzgeci: her haber iki dilde ayrı denetlenir (en ağır karar geçerli); kırmızı çıkan haber bültene girmez
   // (yalnız o madde atlanır). Süzgeç hata verirse bülten yazılmaz.
-  const enBaslik = new Map(en.haberler.map((h) => [h.slug, h]));
+  const enBaslik = new Map(en.haberler.map((h) => [h.anahtar, h]));
   const kirmizi = new Set();
   try {
     for (const h of tr.haberler) {
-      const e = enBaslik.get(h.slug);
+      const e = enBaslik.get(h.anahtar);
       const s = standartBirlestir(
         standartDenetle({ dil: 'tr', baslik: h.title, ozet: h.description }),
         ...(e ? [standartDenetle({ dil: 'en', baslik: e.title, ozet: e.description })] : []),
       );
       if (s.karar === 'kirmizi') {
-        kirmizi.add(h.slug);
+        kirmizi.add(h.anahtar);
         console.log(`Bülten maddesi atlandı (${h.slug}): ${standartOzeti(s)}`);
       }
     }
@@ -165,14 +168,14 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
     console.warn(`Standart denetimi yapılamadı (${String(e?.message ?? e).slice(0, 100)}); bülten yazılmadı.`);
     return null;
   }
-  tr.haberler = tr.haberler.filter((h) => !kirmizi.has(h.slug));
-  en.haberler = en.haberler.filter((h) => !kirmizi.has(h.slug));
+  tr.haberler = tr.haberler.filter((h) => !kirmizi.has(h.anahtar));
+  en.haberler = en.haberler.filter((h) => !kirmizi.has(h.anahtar));
   const sonBulten = Math.max(tr.sonBulten, en.sonBulten);
   // Bülten yalnız TR'de olan haberleri de gösterebilir; EN karşılığı olmayan haber EN bültene girmez.
   const secilen = tr.haberler
     .filter((h) => h.tarih.getTime() > sonBulten && simdi - h.tarih <= AZAMI_YAS_MS && h.tarih <= simdi)
     .sort((a, b) => b.tarih - a.tarih);
-  const enSlug = new Set(en.haberler.map((h) => h.slug));
+  const enSlug = new Set(en.haberler.map((h) => h.anahtar));
   const trHaberler = secilen.filter((h) => h.title);
   if (trHaberler.length < EN_AZ) {
     console.log('Bülten için yeterli yeni haber yok.');
@@ -186,7 +189,7 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
     }
   }
   // TR bülteni TR haberlerle; EN bülteni yalnız EN karşılığı olan haberlerle (EN dosyasının kendi başlığıyla) yazılır.
-  const enHaberler = en.haberler.filter((h) => enSlug.has(h.slug) && trHaberler.some((x) => x.slug === h.slug));
+  const enHaberler = en.haberler.filter((h) => enSlug.has(h.anahtar) && trHaberler.some((x) => x.anahtar === h.anahtar));
   for (const [dil, haberler] of [
     ['tr', trHaberler],
     ['en', enHaberler],

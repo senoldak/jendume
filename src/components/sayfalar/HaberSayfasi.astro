@@ -40,24 +40,24 @@ const { Content } = await render(post);
 const other = otherLocale(lang);
 const ui = SITE.ui[lang];
 const duzeltme = duzeltmeNotu(post.data, lang);
-const translations = await getAvailableTranslations(id);
+const { available: translations, ids: esIds } = await getAvailableTranslations(lang, id);
 
 const langUrls: Partial<Record<Locale, string>> = {
-  tr: translations.tr ? getPostUrl('tr', id) : '/tr/',
-  en: translations.en ? getPostUrl('en', id) : '/en/',
+  tr: translations.tr ? getPostUrl('tr', esIds.tr) : '/tr/',
+  en: translations.en ? getPostUrl('en', esIds.en) : '/en/',
 };
 
 // Gövdesi çok kısa haber erişilebilir kalır ama dizine girmez (src/lib/kalite.mjs); her dil kendi gövdesiyle ölçülür.
 const indexable = dizinlenir(post.body);
-const otherPost = translations[other] ? (await getPublishedPosts(other)).find((p) => p.id === id) : undefined;
+const otherPost = translations[other] ? (await getPublishedPosts(other)).find((p) => p.id === esIds[other]) : undefined;
 const otherIndexable = Boolean(otherPost && dizinlenir(otherPost.body));
 
 // hreflang yalnız gerçekten var olan ve dizine giren çeviriler arasında; x-default İngilizce sürüm.
 const alternates: Partial<Record<Locale | 'x-default', string>> = {};
 if (translations.tr && translations.en && indexable && otherIndexable) {
-  alternates.en = getPostUrl('en', id);
-  alternates.tr = getPostUrl('tr', id);
-  alternates['x-default'] = getPostUrl('en', id);
+  alternates.en = getPostUrl('en', esIds.en);
+  alternates.tr = getPostUrl('tr', esIds.tr);
+  alternates['x-default'] = getPostUrl('en', esIds.en);
 }
 // Her haberin 1200 px paylaşım görseli var: kendi kapağı ya da (bütçe dışındaki eskilerde) bölüm kapağı.
 const cover = await kapakBilgisi(post, lang);
@@ -109,7 +109,7 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       <RakamSeridi lang={lang} rakamlar={post.data.rakamlar} />
       {
         translations[other] && (
-          <a class="bridge" href={getPostUrl(other, id)} lang={other} hreflang={other}>
+          <a class="bridge" href={getPostUrl(other, esIds[other])} lang={other} hreflang={other}>
             <span class="lang-code">{other.toUpperCase()}</span>
             {SITE.ui[other].readIn}
             <Arrow />
