@@ -34,6 +34,15 @@ const duz = (ad) => ad.replace(/ı/g, 'i');
 // cümle başında da özel addır; diğer büyük harfli kelimeler yalnız cümle içinde sayılır (Title Case başlıklar gürültü üretmesin).
 const belirginAd = (w) => /\p{Ll}\p{Lu}/u.test(w) || /\p{L}\.\p{L}/u.test(w) || (/\p{L}/u.test(w) && /\d/.test(w));
 
+// Rakamla başlayan marka adları ("1Password", "3Com"): esleme.mjs ozelAdlar bunları atar, bu yüzden aynı olay kaçıyordu
+// (22 Ekim: 1Password for Agents iki kez yayımlandı). Birim ekleri (10Gbps, 5GHz) ad sayılmaz.
+const rakamliAd = (w) => {
+  const k = w.replace(/[’'][\p{L}]+/gu, '').replace(/^[^\p{L}\d]+|[^\p{L}\d]+$/gu, '');
+  return /^\d+\p{Lu}?\p{Ll}{3,}\p{L}*$/u.test(k) && /\p{Lu}/u.test(k) && !/^\d+(?:gbps|mbps|kbps|tbps|ghz|mhz|khz|kwh|mwh|gwh|tb|gb|mb|kb)$/i.test(k)
+    ? [k.toLocaleLowerCase('tr')]
+    : [];
+};
+
 function cumleler(metin) {
   return String(metin ?? '')
     .split(/(?<=[.!?:;—–])\s+|\n+|\s+[—–-]\s+/u)
@@ -58,7 +67,7 @@ export function hikayeAdlari(metinler) {
       const kelimeler = c.split(/\s+/);
       const tc = titleCase(c);
       kelimeler.forEach((w, i) => {
-        for (const ad of [...ozelAdlar(w)].map(duz)) {
+        for (const ad of [...ozelAdlar(w), ...rakamliAd(w)].map(duz)) {
           if (belirginAd(w) || (i > 0 && !tc)) ic.add(ad);
           else bas.add(ad);
         }
@@ -111,7 +120,12 @@ export function ayniHikaye(x, y) {
   // Cümle başındaki ad ("Pluto Security raises…") öteki haberde cümle içinde de geçiyorsa ortak sayılır.
   const adlar = [...new Set([...ortak(x.adlar, y.adlar), ...ortak(x.adlar, y.bas ?? new Set()), ...ortak(y.adlar, x.bas ?? new Set())])];
   const ayirt = adlar.filter((a) => !GENIS.has(a) && !GENIS.has(a.split(/[.-]/)[0]));
-  if (!ayirt.length) return null;
+  // Yalnız "Anthropic" gibi her gün geçen kurum ortaksa: başlıklarda (TR+EN) en az üç ortak kelime kökü gerekir
+  // (19 Ekim: Anthropic çalışan profili iki kez, farklı turlarda).
+  if (!ayirt.length) {
+    const kelime = adlar.length ? ortak(x.kelimeler, y.kelimeler) : [];
+    return kelime.length >= 3 ? `${adlar.join(', ')} + ${kelime.join(', ')}` : null;
+  }
   const rakam = ortak(x.rakamlar, y.rakamlar);
   if (rakam.length) return `${ayirt.join(', ')} + ${rakam.join(', ')}`;
   const kelime = ortak(x.kelimeler, y.kelimeler);

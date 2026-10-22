@@ -141,3 +141,19 @@ test('uzunlukKontrol 200 kelimenin altındaki gövdeyi reddeder, bağlantı adre
   const yeterli = { tr: { body: kelime(190) }, en: { body: kelime(260) } };
   assert.deepEqual(uzunlukKontrol(yeterli), []);
 });
+
+test('rakamla başlayan marka adı (1Password) ayırt edici ad sayılır; birim ekleri sayılmaz', () => {
+  const a = hikayeIzi({ basliklar: ['1Password for Agents allows AI assistants to log in without exposing passwords'] });
+  const b = hikayeIzi({ basliklar: ['1Password lets AI agents sign in for users without revealing passwords'] });
+  assert.ok(a.adlar.has('1password'));
+  assert.ok(ayniHikaye(a, b));
+  assert.deepEqual([...hikayeIzi({ basliklar: ['New 10Gbps and 5GHz chips'] }).adlar], []);
+});
+
+test('yalnız Anthropic gibi genel kurum ortaksa üç ortak başlık kökü gerekir', () => {
+  const x = hikayeIzi({ basliklar: ['Anthropic çalışan profilinde ve iş yapış biçimlerinde radikal değişim yaşandı', 'Anthropic report reveals radical shifts in workforce and operations'], metinler: ['A report published by Anthropic reveals changes.'] });
+  const y = hikayeIzi({ basliklar: ['Anthropic çalışan profillerinde yapay zekâ kaynaklı değişimi paylaştı', 'Anthropic shares research on how artificial intelligence shifts staff profiles'], metinler: ['Study published by Anthropic shows changes.'] });
+  assert.ok(ayniHikaye(x, y));
+  const z = hikayeIzi({ basliklar: ['Anthropic yeni Claude modelini tanıttı'] });
+  assert.equal(ayniHikaye(x, z), null);
+});
