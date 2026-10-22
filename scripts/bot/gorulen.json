@@ -2600,7 +2600,33 @@
     "k107ce4:67aafce36a1296af": "2026-10-22T19:51:05.575Z",
     "aws-ml:123e9274ff10d780d0521efd9bdc03cfb23cff08": "2026-10-22T19:51:05.575Z",
     "aws-ml:85d3ed31b82ab8523ac7effc5500095e66ae8521": "2026-10-22T19:51:05.575Z",
-    "k2d427e:e358ff116c45baf9": "2026-10-22T19:51:05.575Z"
+    "k2d427e:e358ff116c45baf9": "2026-10-22T19:51:05.575Z",
+    "kd9a613:56805dd1fa616183": "2026-10-22T21:50:57.813Z",
+    "k39a0e6:588c859ac665ebe3": "2026-10-22T21:50:57.813Z",
+    "ke6dccd:98ffbdc3ad2be504": "2026-10-22T21:50:57.813Z",
+    "k59b8ca:73d2e07593350e2f": "2026-10-22T21:50:57.813Z",
+    "k38ef42:2fa49c828cf976ec": "2026-10-22T21:50:57.813Z",
+    "k107ce4:ff3b949394eeaba9": "2026-10-22T21:50:57.813Z",
+    "k38ef42:8bd25094189a0a6f": "2026-10-22T21:50:57.813Z",
+    "k2e841d:6da40164f2ba7005": "2026-10-22T21:50:57.813Z",
+    "k38ef42:b8c8888a41054027": "2026-10-22T21:50:57.813Z",
+    "kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "mit-news-ai:https://news.mit.edu/2026/design-software-reimagines-everyday-objects-as-self-aware-devices-1022": "2026-10-22T21:50:57.813Z",
+    "k38ef42:62fa65e48caa5442": "2026-10-22T21:50:57.813Z",
+    "k38ef42:40096f9bba2ff177": "2026-10-22T21:50:57.813Z",
+    "ke82007:30027473bbbb8530": "2026-10-22T21:50:57.813Z",
+    "k38ef42:4c9aaae89180030d": "2026-10-22T21:50:57.813Z",
+    "k2e841d:b00a1c4b0f2b62cb": "2026-10-22T21:50:57.813Z",
+    "k12b4a6:cec8220709554a6d": "2026-10-22T21:50:57.813Z",
+    "k38ef42:03137f2cba984391": "2026-10-22T21:50:57.813Z",
+    "k2e841d:1919565580bbed14": "2026-10-22T21:50:57.813Z",
+    "k3595c8:50221f27a764b002": "2026-10-22T21:50:57.813Z",
+    "k2e841d:4ccd977d7e0eb13b": "2026-10-22T21:50:57.813Z",
+    "kd4ca61:1cb758fe8c66cb9c": "2026-10-22T21:50:57.813Z",
+    "kad5125:9ab6b1ef30e47ebd": "2026-10-22T21:50:57.813Z",
+    "k38ef42:1fca9f8dcbfc97bc": "2026-10-22T21:50:57.813Z",
+    "k59b8ca:a8487ad31dab9639": "2026-10-22T21:50:57.813Z",
+    "k8601e1:4435614b50e4e672": "2026-10-22T21:50:57.813Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -6104,7 +6130,44 @@
     "aws-ml:4c086dcfa95658eafa8d777d0aa2a5fcb4edc64f|k2d427e:31c8c3f26477a5db": "2026-10-22T19:51:05.575Z",
     "k09feb3:ca8b41b78d233623|k2d427e:31c8c3f26477a5db": "2026-10-22T19:51:05.575Z",
     "k38ef42:40244ad0f099cc99|kad5125:799b2ba86eef5970": "2026-10-22T19:51:05.575Z",
-    "k09feb3:8475ca2f36afa92e|k8601e1:dde2d795f96b77bc": "2026-10-22T19:51:05.575Z"
+    "k09feb3:8475ca2f36afa92e|k8601e1:dde2d795f96b77bc": "2026-10-22T19:51:05.575Z",
+    "haber:alibaba-dan-yapay-zeka-ajanlari-icin-yeni-egitim-sistemi-qwengyre|kad5125:9ab6b1ef30e47ebd": "2026-10-22T21:50:57.813Z",
+    "haber:meta-yeni-yapay-zeka-ajani-muse-ile-gelir-modelini-donusturuyor|kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "haber:acik-kaynakli-yapay-zeka-modellerinin-guvenlik-kilitleri-kolayca-kaldirilabiliyo|kad5125:9ab6b1ef30e47ebd": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-ten-claude-icin-yeni-kullanim-kurali-yapay-zekaya-amacsiz-kotu-muamele|kad5125:9ab6b1ef30e47ebd": "2026-10-22T21:50:57.813Z",
+    "haber:stack-overflow-for-agents-chatgpt-eklentisiyle-uye-sayisini-uce-katladi|k38ef42:8bd25094189a0a6f": "2026-10-22T21:50:57.813Z",
+    "haber:acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir|kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "haber:openai-modelleri-google-bulut-altyapisinda-sunulmaya-hazirlaniyor|mit-news-ai:https://news.mit.edu/2026/design-software-reimagines-everyday-objects-as-self-aware-devices-1022": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|kd4ca61:1cb758fe8c66cb9c": "2026-10-22T21:50:57.813Z",
+    "haber:arda-industries-uretim-sureclerini-hizlandiran-yapay-zeka-yazilimi-icin-232-mily|kd4ca61:1cb758fe8c66cb9c": "2026-10-22T21:50:57.813Z",
+    "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|kd4ca61:1cb758fe8c66cb9c": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k8601e1:4435614b50e4e672": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-gelirini-16-8-milyar-dolara-yukselterek-yuzde-45-buyume-kaydetti|k8601e1:4435614b50e4e672": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-modeli-claude-akrep-zehirlerine-karsi-protein-tasarladi|k8601e1:4435614b50e4e672": "2026-10-22T21:50:57.813Z",
+    "haber:acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir|k59b8ca:a8487ad31dab9639": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k59b8ca:a8487ad31dab9639": "2026-10-22T21:50:57.813Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k59b8ca:a8487ad31dab9639": "2026-10-22T21:50:57.813Z",
+    "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|ke82007:30027473bbbb8530": "2026-10-22T21:50:57.813Z",
+    "haber:yapay-zeka-yonetisiminde-asil-sinav-sorumluluk-bilinci|ke82007:30027473bbbb8530": "2026-10-22T21:50:57.813Z",
+    "haber:meta-ilk-sinir-yapay-zeka-modeli-muse-wonder-i-tanitti|k2e841d:b00a1c4b0f2b62cb": "2026-10-22T21:50:57.813Z",
+    "haber:spacex-super-intelligence-grok-ve-cursor-u-tek-pakette-birlestirdi|k2e841d:b00a1c4b0f2b62cb": "2026-10-22T21:50:57.813Z",
+    "haber:spotify-onerilerinden-50-milyondan-fazla-yapay-zeka-spam-parcasini-cikardi|k2e841d:b00a1c4b0f2b62cb": "2026-10-22T21:50:57.813Z",
+    "haber:akilli-gozlukler-parlamento-salonlarinda-tartisma-yaratti|k12b4a6:cec8220709554a6d": "2026-10-22T21:50:57.813Z",
+    "haber:akilli-televizyonlardaki-reklamlar-yapay-zeka-yazilimiyla-temizleniyor|k12b4a6:cec8220709554a6d": "2026-10-22T21:50:57.813Z",
+    "haber:chatgpt-chrome-eklentisi-acik-sekmeleri-okuyup-islem-yapabiliyor|k38ef42:1fca9f8dcbfc97bc": "2026-10-22T21:50:57.813Z",
+    "haber:chatgpt-gorsellesiyor-openai-dan-yeni-intelligent-ui-arayuzu|k38ef42:1fca9f8dcbfc97bc": "2026-10-22T21:50:57.813Z",
+    "haber:chatgpt-kullanicilarin-cizim-yaparak-gorsel-uretmesini-saglayan-yeni-araci-duyur|k38ef42:1fca9f8dcbfc97bc": "2026-10-22T21:50:57.813Z",
+    "haber:acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir|k2e841d:1919565580bbed14": "2026-10-22T21:50:57.813Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k2e841d:1919565580bbed14": "2026-10-22T21:50:57.813Z",
+    "haber:facebook-akis-algoritmasini-yapay-zeka-ile-kisisellestirme-donemi|k2e841d:1919565580bbed14": "2026-10-22T21:50:57.813Z",
+    "haber:sosyal-ag-deneyimleri-yapay-zeka-ile-aninda-uretiliyor|k3595c8:50221f27a764b002": "2026-10-22T21:50:57.813Z",
+    "haber:kuantum-bilgisayarlar-fizikte-gizemli-bir-etkiyi-yeniden-yaratti|k2e841d:4ccd977d7e0eb13b": "2026-10-22T21:50:57.813Z",
+    "haber:manus-un-cati-sirketi-butterfly-effect-500-milyon-dolar-yatirim-aldi|k2e841d:4ccd977d7e0eb13b": "2026-10-22T21:50:57.813Z",
+    "haber:mass-general-brigham-uzmanlari-yuz-fotografindan-kanser-sagkalimini-ongoren-yapa|k2e841d:4ccd977d7e0eb13b": "2026-10-22T21:50:57.813Z",
+    "k59b8ca:a8487ad31dab9639|kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "k2e841d:1919565580bbed14|kd4ca61:2d1a9e96f32e8031": "2026-10-22T21:50:57.813Z",
+    "k2e841d:1919565580bbed14|k59b8ca:a8487ad31dab9639": "2026-10-22T21:50:57.813Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -6224,30 +6287,6 @@
     "k59b8ca:fc7816f8324779f8|kb7f905:653ee9d513a8f26b": "2026-10-22T19:51:05.575Z"
   },
   "puan": {
-    "k9f3ec7:b4dbecafaaa07d04": {
-      "puan": 0,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
-    "ke82007:a33f59ce722b978e": {
-      "puan": 4,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
-    "k3595c8:0f832b4a88ce1c1b": {
-      "puan": 3,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
-    "ke82007:96d11356c6d4f4a6": {
-      "puan": 2,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
-    "kf581c4:11c4f15d791b69dc": {
-      "puan": 3,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
-    "openai:https://openai.com/index/stack-overflow-chatgpt-plugin": {
-      "puan": 4,
-      "zaman": "2026-10-16T20:50:53.081Z"
-    },
     "kd4ca61:a0587254a6a40812": {
       "puan": 0,
       "zaman": "2026-10-16T22:50:54.432Z"
@@ -14620,17 +14659,114 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-22T19:51:05.575Z"
+    },
+    "k107ce4:ff3b949394eeaba9": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "kad5125:9ab6b1ef30e47ebd": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:8bd25094189a0a6f": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k2e841d:6da40164f2ba7005": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:b8c8888a41054027": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "kd4ca61:2d1a9e96f32e8031": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/design-software-reimagines-everyday-objects-as-self-aware-devices-1022": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:62fa65e48caa5442": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "kd4ca61:1cb758fe8c66cb9c": {
+      "puan": 95,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k8601e1:4435614b50e4e672": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:40096f9bba2ff177": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k59b8ca:a8487ad31dab9639": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "ke82007:30027473bbbb8530": {
+      "puan": 50,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:4c9aaae89180030d": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k2e841d:b00a1c4b0f2b62cb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k12b4a6:cec8220709554a6d": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:1fca9f8dcbfc97bc": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k38ef42:03137f2cba984391": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k2e841d:1919565580bbed14": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k3595c8:50221f27a764b002": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
+    },
+    "k2e841d:4ccd977d7e0eb13b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-22T21:50:57.813Z"
     }
   },
   "yayinlanan": {
-    "amazon-torchneuron-araciyla-yapay-zeka-ciplerini-pytorch-entegrasyonuna-acti": {
-      "zaman": "2026-10-19T21:50:55.996Z",
-      "basliklarSifreli": "v1.83LqpMuHFiUrdRZl.+KJvmgled0B68h2vkiEfJRr4rz2ASCHkUPWqlBmKur3Pf6S1KKWpHmPlhH9FCyPedItSIGhyOXAbS0btw16NKfeN0EMxR7Oq8VO4srnIc9agcQtHmdkWx6piVntIzCZX6w=="
-    },
-    "s-p-500-sirketlerinin-yonetim-kurullarinda-yapay-zeka-uzmanligi-ve-denetim-acigi": {
-      "zaman": "2026-10-19T21:50:55.996Z",
-      "basliklarSifreli": "v1.wrMyf7sAs/cnHpTs.vHlnf5B3ZbmiA//s6xO87Hnv0fR5TygZxU0WPhAzsj+pCkczhLj/LZuD33yaFZ7rsksfx4XDrGxj5SDW8V2DeTeYvldtml8JujXO9+XuJXqg0ys="
-    },
     "openai-ve-anthropic-veri-merkezi-projeleri-gecikmelerle-karsilasiyor": {
       "zaman": "2026-10-20T03:50:55.572Z",
       "basliklarSifreli": "v1.TZKNVyPbjCEGeybV.gA7YyC0wPB5iejA1YZqovCWylMwUDIbifG+nl+6yc/metabGKEWE/CRENnx8YswmEMBLxoCcRQNgXz8xGHhihVq/bF6CKNSScflCjwk/k4qP5dKWDIqzw7TSabqus6xW7G1+Oeo="
@@ -15206,6 +15342,14 @@
     "tesla-kisisel-araclarin-robotaksi-filosuna-katilimi-icin-2027-yilini-hedefliyor": {
       "zaman": "2026-10-22T19:51:05.575Z",
       "basliklarSifreli": "v1.Hs8PZ5yrFx5XFe9Y.B3VGkGZIAF1n249nmDhbmmRwSwGxUhWUB19YjB/Zm0NzfwppG9gS4A3n7iVQ6FnleSFHa9HQIvfgcum9ZK2jvYodOj6h4+PbJFSuZaCUL4DDZgXUhB9ykFhEu2avW4A="
+    },
+    "morgan-stanley-ve-jpmorgan-yapay-zeka-ajanlarina-karsi-guvenlik-onlemlerini-arti": {
+      "zaman": "2026-10-22T21:50:57.813Z",
+      "basliklarSifreli": "v1.6V8YACs3sqmBm9nx.Lt8KD5hmcjNgf6AcOUmEvYAwJAx9WhTOEMTg7ILoHtOFY1FnCKPVlEtmHwptWTDHRrg+3z/bdzv7v77iDcOfxdYM/8zmbi+HPEdgTEY="
+    },
+    "uber-chatgpt-work-kullanimini-yaklasik-30-bin-calisana-cikariyor": {
+      "zaman": "2026-10-22T21:50:57.813Z",
+      "basliklarSifreli": "v1.rE0+spwf31qfKGMH.oV4thm2DDHuN6YVQATs4cPkXgN2p7D4n3DmrTGSLTcw/Jip/OpVHKhJnfNzDKGWYHEIl0z3vdCqorJoFvwOnG4UfVKbd3RLJp2NIO5UJvdxMvaYg0GsKOSphiVFammQl"
     }
   },
   "havuz": [
@@ -17893,6 +18037,32 @@
     "aws-ml:8dd8e6bc35ad32eff8fd57bbe04f9c56274f46ed": "2026-10-22T18:06:35.000Z",
     "aws-ml:4c086dcfa95658eafa8d777d0aa2a5fcb4edc64f": "2026-10-22T18:01:53.000Z",
     "aws-ml:123e9274ff10d780d0521efd9bdc03cfb23cff08": "2026-10-22T18:00:04.000Z",
-    "aws-ml:85d3ed31b82ab8523ac7effc5500095e66ae8521": "2026-10-22T18:00:01.000Z"
+    "aws-ml:85d3ed31b82ab8523ac7effc5500095e66ae8521": "2026-10-22T18:00:01.000Z",
+    "k107ce4:ff3b949394eeaba9": "2026-10-22T21:17:29.000Z",
+    "k59b8ca:a8487ad31dab9639": "2026-10-22T20:32:05.000Z",
+    "k59b8ca:73d2e07593350e2f": "2026-10-22T20:24:04.000Z",
+    "kd9a613:56805dd1fa616183": "2026-10-22T21:50:13.000Z",
+    "k3595c8:50221f27a764b002": "2026-10-22T19:56:32.000Z",
+    "ke82007:30027473bbbb8530": "2026-10-22T20:25:24.000Z",
+    "k12b4a6:cec8220709554a6d": "2026-10-22T20:16:00.000Z",
+    "k38ef42:8bd25094189a0a6f": "2026-10-22T20:58:00.000Z",
+    "k38ef42:b8c8888a41054027": "2026-10-22T20:50:00.000Z",
+    "k38ef42:62fa65e48caa5442": "2026-10-22T20:43:00.000Z",
+    "k38ef42:40096f9bba2ff177": "2026-10-22T20:33:00.000Z",
+    "k38ef42:4c9aaae89180030d": "2026-10-22T20:25:00.000Z",
+    "k38ef42:1fca9f8dcbfc97bc": "2026-10-22T20:16:00.000Z",
+    "k38ef42:03137f2cba984391": "2026-10-22T20:07:00.000Z",
+    "k38ef42:2fa49c828cf976ec": "2026-10-22T19:58:00.000Z",
+    "kad5125:9ab6b1ef30e47ebd": "2026-10-22T21:05:12.000Z",
+    "k39a0e6:588c859ac665ebe3": "2026-10-22T21:20:06.000Z",
+    "k2e841d:6da40164f2ba7005": "2026-10-22T20:57:17.000Z",
+    "k2e841d:b00a1c4b0f2b62cb": "2026-10-22T20:19:19.000Z",
+    "k2e841d:1919565580bbed14": "2026-10-22T20:05:26.000Z",
+    "k2e841d:4ccd977d7e0eb13b": "2026-10-22T19:55:13.000Z",
+    "kd4ca61:2d1a9e96f32e8031": "2026-10-22T20:47:59.000Z",
+    "kd4ca61:1cb758fe8c66cb9c": "2026-10-22T20:41:37.000Z",
+    "ke6dccd:98ffbdc3ad2be504": "2026-10-22T21:08:34.000Z",
+    "k8601e1:4435614b50e4e672": "2026-10-22T20:39:57.000Z",
+    "mit-news-ai:https://news.mit.edu/2026/design-software-reimagines-everyday-objects-as-self-aware-devices-1022": "2026-10-22T20:45:00.000Z"
   }
 }
