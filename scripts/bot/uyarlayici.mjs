@@ -14,9 +14,9 @@ import { hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi } from './gizli.mjs';
 import { resmiKaynakListesi } from './resmi-kaynak.mjs';
-import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
+import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, derlemeKaynagi, dilimBasligiEkle } from './havuz.mjs';
 import { standartOzeti } from './standart.mjs';
-import { derlemeStandardi, haberStandardi, puanKapisi } from './kapi.mjs';
+import { derlemeStandardi, gerekceBirlestir, haberStandardi, kapiMetinleri, puanKapisi } from './kapi.mjs';
 import { kirmiziKayit, motorKaydet, motorKimlik, sariKayit } from './motor.mjs';
 
 const EN_FAZLA_HATA = 3;
@@ -202,7 +202,10 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
     }
   }
 
-  async function isle(girdi, { surVar, log = console.log } = {}) {
+  // Kapı kararı 'elendi' olunca standartOzeti'nin okuyabileceği kırmızı karar.
+  const kapiKirmizi = (gerekce) => ({ karar: 'kirmizi', gerekce, kirmizi: [{ kural: 'kapi', ham: gerekce }], sari: [] });
+
+  async function isle(girdi, { surVar, log = console.log, kapi = null } = {}) {
     const h = await hazirla();
     const { yazilmisAnahtar, bellek, yazilmis } = h;
     const sonuclar = [];
@@ -429,6 +432,28 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           await B.motorYaz(kirmiziKayit(g.uyeler[0].id, st));
           continue;
         }
+        // Yayın kapısı, ikinci okuma (kapi null ise atlanır: bugünkü davranış). Ayar hatası fırlar, catch turu durdurur.
+        let kapiGerekce = '';
+        if (typeof kapi === 'function') {
+          const r = await kapi(kapiMetinleri(yazilacak));
+          if (r.karar === 'elendi') {
+            log(`  kapı: elendi — ${temiz(r.gerekce ?? '')}`);
+            ozet.elenen.push(`${t.tr?.title || ad} — ${r.gerekce}`);
+            const s = kapiKirmizi(r.gerekce);
+            elendi(g, s.gerekce);
+            await B.motorYaz(kirmiziKayit(g.uyeler[0].id, s));
+            continue;
+          }
+          if (r.karar !== 'gec') {
+            // bekle (ya da tanınmayan karar): yazılmaz, denetim hatası gibi bekler; kapı hatası haberin suçu değil, deneme sayılmaz.
+            log(`  kapı: bekle — ${temiz(r.gerekce ?? r.hata ?? '')}`);
+            ozet.atlanan.push(`${t.tr?.title || ad} (kapı bekletti)`);
+            g.uyeler.forEach((u) => delete durum.gorulen[u.id]); // grupBitti işaretini geri al: sonraki turda yeniden denenir
+            g.uyeler.forEach((u) => koy({ kimlik: kim(u), durum: 'bekliyor', gerekce: temiz(r.gerekce ?? 'kapı bekletti'), hata: new Error(temiz(r.hata ?? r.gerekce ?? 'kapı bekletti')), sayilmaz: true }));
+            continue;
+          }
+          kapiGerekce = r.gerekce ?? '';
+        }
         const slug = await B.ucDilliHaberYaz(rot, {
           ...yazilacak,
           date: simdi.toISOString(),
@@ -456,7 +481,9 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
         yazilanSayi++;
         log(`  yazıldı (TR/EN): ${slug}`);
         yazildi(g, slug);
-        if (st.karar === 'sari') await B.motorYaz(sariKayit(g.uyeler[0].id, slug, st));
+        // Defterde ilk biten kayıt gerekçeyi taşır: sarı gerekçe ile kapının gerekçesi tek kayıtta birleşir.
+        const birlesik = gerekceBirlestir(st.karar === 'sari' ? st.gerekce : '', kapiGerekce);
+        if (st.karar === 'sari' || birlesik) await B.motorYaz({ ...sariKayit(g.uyeler[0].id, slug, st), gerekce: birlesik });
         ozet.yazilan.push(`${slug} (${t.tr.title})`);
       } catch (e) {
         console.warn(`  hata: ${adresiSil(e.message)}`);
@@ -480,6 +507,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
       const onceki = [...durum.havuz];
       const yazilanOlaylar = new Set(); // derlemeye giren olaylar
       const atlananOlaylar = new Set(); // kırmızı çıkıp derlemeden atılan olaylar
+      const bekleyenOlaylar = new Set(); // kapı bekletti: bu turda sonuçları bekliyor (sayılmaz) olarak verildi
       const sh = await havuzuIsle(durum.havuz, {
         simdi,
         // Bu arada (bu turda ya da son 72 saatte) tam haber olarak yazılan olay düşer.
@@ -498,7 +526,25 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           return d && yerelDuzelt({ ...d, category: x.category });
         },
         // Standartlar süzgeci: kırmızı madde atlanır, yazı bütünüyle düşmez (kapi.mjs → derlemeStandardi).
-        standart: (x, grup) => derlemeStandardi(x, grup),
+        // Ardından yayın kapısı (kapi null ise yok): elendi -> bütün üyeler elenir, bekle -> üyeler bekler (sayılmaz), gec -> gerekçe kaydet'e gider.
+        standart: async (x, grup) => {
+          const sf = derlemeStandardi(x, grup);
+          if (!sf.yayin || typeof kapi !== 'function') return sf;
+          const r = await kapi(kapiMetinleri(rakamSeritleriniSuz(sf.t, derlemeKaynagi(sf.grup))));
+          if (r.karar === 'elendi') {
+            const s = kapiKirmizi(r.gerekce);
+            return { ...sf, yayin: false, s, atlanan: [...sf.atlanan, ...sf.grup.map((o) => ({ o, s }))] };
+          }
+          if (r.karar !== 'gec') {
+            log(`  kapı: derleme bekletildi — ${temiz(r.gerekce ?? r.hata ?? '')}`);
+            for (const o of sf.grup) {
+              bekleyenOlaylar.add(o);
+              uyeler(o).forEach((kimlik) => koy({ kimlik, durum: 'bekliyor', gerekce: temiz(r.gerekce ?? 'kapı bekletti'), hata: new Error(temiz(r.hata ?? r.gerekce ?? 'kapı bekletti')), sayilmaz: true }));
+            }
+            return { ...sf, yayin: false, s: { ...sf.s, gerekce: r.gerekce ?? 'kapı bekletti' } };
+          }
+          return { ...sf, s: { ...sf.s, kapiGerekce: gerekceBirlestir(sf.s.karar === 'sari' ? sf.s.gerekce : '', r.gerekce) } };
+        },
         atla: async (o, s) => {
           log(`  derleme maddesi atlandı: ${standartOzeti(s)}`);
           atlananOlaylar.add(o);
@@ -529,7 +575,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
               gorulduIsaretle(o.uyeIdler?.[ui] ?? o.id);
             });
           });
-          if (s?.karar === 'sari') await B.motorYaz(sariKayit(grup[0].id, slug, s));
+          if (s?.karar === 'sari' || s?.kapiGerekce) await B.motorYaz({ ...sariKayit(grup[0].id, slug, s), gerekce: s.kapiGerekce ?? s.gerekce });
           return slug;
         },
         surVar: () => !payNedeni(),
@@ -538,7 +584,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
       const kalan = new Set(sh.havuz);
       // Havuzdan düşenler (süresi doldu, dilimde eş yok, mükerrer, yazılamayan derleme): derlemeye girmeyen ve kalmayan olaylar.
       for (const o of onceki) {
-        if (kalan.has(o) || yazilanOlaylar.has(o) || atlananOlaylar.has(o)) continue;
+        if (kalan.has(o) || yazilanOlaylar.has(o) || atlananOlaylar.has(o) || bekleyenOlaylar.has(o)) continue;
         uyeler(o).forEach((kimlik, ui) => {
           koy({ kimlik, durum: 'elendi', gerekce: 'kısa, eş bulunamadı' });
           gorulduIsaretle(o.uyeIdler?.[ui] ?? o.id);

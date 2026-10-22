@@ -224,7 +224,7 @@ export async function havuzuIsle(havuz, { simdi, mukerrer, yaz, denetle, duzelt,
       }
       // Standartlar süzgeci (kırmızı çizgiler): hata fırlatırsa (ya da süzgeç verilmemişse) derleme yayımlanmaz.
       if (typeof standart !== 'function') throw new Error('standart süzgeci yok; derleme yayımlanmaz');
-      const sf = standart(t, grup);
+      const sf = await standart(t, grup); // uyarlayıcıda ikinci okuma (kapı) da burada, bu yüzden async olabilir
       for (const a of sf.atlanan) await atla(a.o, a.s);
       if (!sf.yayin) {
         log(`havuz: derleme (${n} haber) YAYIMLANMADI: ${sf.s.gerekce}`);

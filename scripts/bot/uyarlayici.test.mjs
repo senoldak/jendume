@@ -333,3 +333,134 @@ test("isle: eski aday akış içeriğini taşır; sayfa okunamasa da 'kaynak met
   assert.equal(yazilan.length, 1);
   assert.equal(sonucu(sonuclar, o).durum, 'yazildi');
 });
+
+// ── Yayın kapısı (ikinci okuma) ──────────────────────────────────────────────
+const kapiOge = () => oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+const kapiKayitli = () => {
+  const kayitlar = [];
+  return { kayitlar, motorYaz: async (k) => (kayitlar.push(k), true) };
+};
+
+test('kapı: elendi yazmaz; üye elendi, motor kaydı elendi + gerekçe', async () => {
+  const { kayitlar, motorYaz } = kapiKayitli();
+  const { u, yazilan, durum } = kur({ bag: { motorYaz } });
+  const a = kapiOge();
+  const sonuclar = await u.isle([aday(a)], { kapi: async () => ({ karar: 'elendi', gerekce: 'kapi:kirmizi:kisi-suc' }) });
+  assert.equal(yazilan.length, 0);
+  assert.equal(sonucu(sonuclar, a).durum, 'elendi');
+  assert.equal(sonucu(sonuclar, a).gerekce, 'kapi:kirmizi:kisi-suc');
+  assert.ok(durum.gorulen[a.id]);
+  assert.equal(kayitlar.length, 1);
+  assert.equal(kayitlar[0].durum, 'elendi');
+  assert.equal(kayitlar[0].gerekce, 'kapi:kirmizi:kisi-suc');
+});
+
+test('kapı: bekle yazmaz, sayılmaz, görüldü işaretlenmez ve hata sayacı artmaz', async () => {
+  const { u, yazilan, durum } = kur();
+  const a = kapiOge();
+  const sonuclar = await u.isle([aday(a)], { kapi: async () => ({ karar: 'bekle', gerekce: 'kapi-hata:kota', hata: 'kota' }) });
+  const s = sonucu(sonuclar, a);
+  assert.equal(yazilan.length, 0);
+  assert.equal(s.durum, 'bekliyor');
+  assert.equal(s.sayilmaz, true);
+  assert.ok(s.hata instanceof Error);
+  assert.equal(durum.gorulen[a.id], undefined);
+  assert.equal(durum.hatalar[a.id], undefined);
+});
+
+test('kapı: gec yazar; ilk motor kaydı gerekçesi kapının gerekçesi (sarı gerekçe ile boşlukla birleşik, 300 kesilir)', async () => {
+  const { kayitlar, motorYaz } = kapiKayitli();
+  const { u, yazilan } = kur({ bag: { motorYaz } });
+  const a = kapiOge();
+  const sonuclar = await u.isle([aday(a)], { kapi: async () => ({ karar: 'gec', gerekce: 'kapi:temiz @model#abc' }) });
+  assert.equal(yazilan.length, 1);
+  assert.equal(sonucu(sonuclar, a).durum, 'yazildi');
+  assert.equal(kayitlar.length, 1);
+  assert.equal(kayitlar[0].durum, 'yazildi');
+  assert.equal(kayitlar[0].slug, 'haber-1');
+  assert.equal(kayitlar[0].gerekce, 'kapi:temiz @model#abc');
+  // Çok uzun gerekçe 300 karakterde kesilir; boş gerekçe kayıt yazmaz.
+  const k2 = kapiKayitli();
+  const d = kur({ bag: { motorYaz: k2.motorYaz } });
+  await d.u.isle([aday(kapiOge())], { kapi: async () => ({ karar: 'gec', gerekce: 'x'.repeat(500) }) });
+  assert.equal(k2.kayitlar[0].gerekce.length, 300);
+  const k3 = kapiKayitli();
+  const e = kur({ bag: { motorYaz: k3.motorYaz } });
+  await e.u.isle([aday(kapiOge())], { kapi: async () => ({ karar: 'gec', gerekce: '' }) });
+  assert.equal(k3.kayitlar.length, 0);
+});
+
+test('kapı: null iken eski davranış (kayıt yok, yazılır); kapı gelmese de aynı', async () => {
+  const { kayitlar, motorYaz } = kapiKayitli();
+  const { u, yazilan } = kur({ bag: { motorYaz } });
+  const sonuclar = await u.isle([aday(kapiOge())], { kapi: null });
+  assert.equal(yazilan.length, 1);
+  assert.equal(sonuclar[0].durum, 'yazildi');
+  assert.equal(kayitlar.length, 0);
+});
+
+test('kapı: belirlenimci kırmızıda çağrılmaz', async () => {
+  const kirmizi = taslak();
+  kirmizi.tr.body = `${kirmizi.tr.body} Ajans Beta bildirdi.`; // yayın adı (uydurma): medya-adı kırmızısı
+  let cagri = 0;
+  const { u, yazilan } = kur({ bag: { taslakYaz: async () => kirmizi } });
+  const a = kapiOge();
+  const sonuclar = await u.isle([aday(a)], { kapi: async () => (cagri++, { karar: 'gec', gerekce: '' }) });
+  assert.equal(cagri, 0);
+  assert.equal(yazilan.length, 0);
+  assert.equal(sonucu(sonuclar, a).durum, 'elendi');
+});
+
+test('kapı: ayar hatası turu durdurur (e.ayar, e.sonuclar)', async () => {
+  const { u, yazilan } = kur();
+  await assert.rejects(
+    () => u.isle([aday(kapiOge())], { kapi: async () => { throw Object.assign(new Error('token yok'), { ayar: true }); } }),
+    (e) => e.ayar === true && Array.isArray(e.sonuclar),
+  );
+  assert.equal(yazilan.length, 0);
+});
+
+const havuzDurumu = () => {
+  const durum = bosDurum();
+  const olay = (id, iso, uyeIdler) => ({
+    ...havuzOlayi({ id, taslak: taslak(120), basliklar: [`Baslik ${id}`], kaynaklar: [{ baslik: 'b', tarih: '2026-10-22', metin: uydur(60, 3, ['pek', 'lum', 'zan', 'rok', 'tis', 'yem', 'cuz', 'oluf', 'nab', 'esk']) }], kullanilan: [], iso }),
+    uyeIdler,
+  });
+  durum.havuz.push(olay('bir:e1', '2026-10-22T06:40:00.000Z', ['bir:e1', 'iki:e1b']), olay('bir:e2', '2026-10-22T06:30:00.000Z', ['bir:e2']));
+  return durum;
+};
+const derlemeBag = { derlemeYaz: async () => ({ ...taslak(320, 'Orionlab ve Zefirnet haftalik gelisme ozeti'), category: 'yapay-zeka' }) };
+
+test('kapı, derleme: elendi yazı yazılmaz, üyeler elendi', async () => {
+  const { kayitlar, motorYaz } = kapiKayitli();
+  const { u, yazilan, durum } = kur({ durum: havuzDurumu(), bag: { ...derlemeBag, motorYaz } });
+  let metinler;
+  const sonuclar = await u.isle([], { kapi: async (m) => ((metinler = m), { karar: 'elendi', gerekce: 'kapi:kirmizi:iftira' }) });
+  assert.equal(metinler.length, 2);
+  assert.deepEqual(metinler.map((m) => m.dil), ['tr', 'en']);
+  assert.equal(yazilan.length, 0);
+  assert.equal(sonuclar.length, 3);
+  assert.ok(sonuclar.every((s) => s.durum === 'elendi' && s.gerekce === 'kapi:kirmizi:iftira'));
+  assert.equal(durum.havuz.length, 0);
+  assert.ok(kayitlar.every((k) => k.durum === 'elendi'));
+});
+
+test('kapı, derleme: bekle üyeler bekler (sayılmaz), yazı yok', async () => {
+  const { u, yazilan, durum } = kur({ durum: havuzDurumu(), bag: derlemeBag });
+  const sonuclar = await u.isle([], { kapi: async () => ({ karar: 'bekle', gerekce: 'kapi-hata:gecici' }) });
+  assert.equal(yazilan.length, 0);
+  assert.equal(sonuclar.length, 3);
+  assert.ok(sonuclar.every((s) => s.durum === 'bekliyor' && s.sayilmaz === true));
+  assert.equal(durum.havuz.length, 0);
+});
+
+test('kapı, derleme: gec yazar, kayıt gerekçesi kapının gerekçesi', async () => {
+  const { kayitlar, motorYaz } = kapiKayitli();
+  const { u, yazilan } = kur({ durum: havuzDurumu(), bag: { ...derlemeBag, motorYaz } });
+  const sonuclar = await u.isle([], { kapi: async () => ({ karar: 'gec', gerekce: 'kapi:temiz @m#1' }) });
+  assert.equal(yazilan.length, 1);
+  assert.ok(sonuclar.every((s) => s.durum === 'yazildi'));
+  assert.equal(kayitlar.length, 1);
+  assert.equal(kayitlar[0].gerekce, 'kapi:temiz @m#1');
+  assert.equal(kayitlar[0].durum, 'yazildi');
+});

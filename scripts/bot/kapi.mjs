@@ -12,6 +12,12 @@ function ekler(b, t) {
   return metinler([b.perspektif ?? t.perspektif, b.why_matters ?? t.why_matters, ...(b.key_points ?? t.key_points ?? []), ...rakamlar]);
 }
 
+/** Yayın kapısının ikinci okumasına giden metinler: standart süzgecine verilenin aynı alanları, iki dil. */
+export const kapiMetinleri = (t) => ['tr', 'en'].map((d) => ({ dil: d, baslik: t[d].title, ozet: t[d].description, metin: t[d].body, ekler: ekler(t[d], t) }));
+
+/** Sarı gerekçe ile kapının gerekçesini boşlukla birleştirir (boşlar atlanır, 300 karakter). */
+export const gerekceBirlestir = (...p) => p.filter((x) => typeof x === 'string' && x.trim()).join(' ').slice(0, 300);
+
 /** İki dilli taslak (tr + en) için birleşik karar. İki dilden biri yoksa hata fırlatır (emin değiliz: yayımlanmaz). */
 export function haberStandardi(t, kaynakMetni = '') {
   if (!t?.tr || !t?.en) throw new Error('standart: iki dilli taslak (tr ve en) gerekli');
