@@ -2326,22 +2326,23 @@
     "nvidia-blog:https://blogs.nvidia.com/?p=99155": "2026-10-22T05:50:54.282Z",
     "kd9a613:63c30fd169c6a59c": "2026-10-22T05:50:54.282Z",
     "nvidia-blog:https://blogs.nvidia.com/?p=99181": "2026-10-22T05:50:54.282Z",
-    "k621881:f8043b5dd5b3ffeb": "2026-10-22T07:25:44.497Z",
-    "k12b4a6:777bf24ebf4b8550": "2026-10-22T07:25:44.497Z",
-    "k12b4a6:31866296e369c4b4": "2026-10-22T07:25:44.497Z",
-    "k38ef42:d45a8e5dab3a2475": "2026-10-22T07:25:44.497Z",
-    "k38ef42:e00f24f1295f4797": "2026-10-22T07:25:44.497Z",
-    "k12b4a6:2df9b91482e9a841": "2026-10-22T07:25:44.497Z",
-    "k12b4a6:0409c779844adbf4": "2026-10-22T07:25:44.497Z",
-    "k38ef42:db74d8f24603fab1": "2026-10-22T07:25:44.497Z",
-    "k38ef42:99d3f2b13d92752b": "2026-10-22T07:25:44.497Z",
-    "k031f42:bf8b0d536385603b": "2026-10-22T07:25:44.497Z",
-    "k38ef42:5793d75575bc6311": "2026-10-22T07:25:44.497Z",
-    "k38ef42:0f1fe148a7ff870c": "2026-10-22T07:25:44.497Z",
-    "k38ef42:cfe1ec471dec0f1e": "2026-10-22T07:25:44.497Z",
+    "k621881:f8043b5dd5b3ffeb": "2026-10-22T07:31:36.476Z",
+    "k12b4a6:777bf24ebf4b8550": "2026-10-22T07:31:36.476Z",
+    "k12b4a6:31866296e369c4b4": "2026-10-22T07:31:36.476Z",
+    "k38ef42:d45a8e5dab3a2475": "2026-10-22T07:31:36.476Z",
+    "k38ef42:e00f24f1295f4797": "2026-10-22T07:31:36.476Z",
+    "k12b4a6:2df9b91482e9a841": "2026-10-22T07:31:36.476Z",
+    "k12b4a6:0409c779844adbf4": "2026-10-22T07:31:36.476Z",
+    "k38ef42:db74d8f24603fab1": "2026-10-22T07:31:36.476Z",
+    "k38ef42:99d3f2b13d92752b": "2026-10-22T07:31:36.476Z",
+    "k031f42:bf8b0d536385603b": "2026-10-22T07:31:36.476Z",
+    "k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
+    "k38ef42:0f1fe148a7ff870c": "2026-10-22T07:31:36.476Z",
+    "k38ef42:cfe1ec471dec0f1e": "2026-10-22T07:31:36.476Z",
     "kfdedb4:3c36620c52648cb9": "2026-10-22T07:25:44.497Z",
-    "kaec085:3c789bc1d48c1282": "2026-10-22T07:25:44.497Z",
-    "kaec085:97a487e6cd40bad7": "2026-10-22T07:25:44.497Z"
+    "kaec085:3c789bc1d48c1282": "2026-10-22T07:31:36.476Z",
+    "kaec085:97a487e6cd40bad7": "2026-10-22T07:31:36.476Z",
+    "k38ef42:2afabd7428921b5c": "2026-10-22T07:31:36.476Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -5490,7 +5491,22 @@
     "haber:amazon-torchneuron-araciyla-yapay-zeka-ciplerini-pytorch-entegrasyonuna-acti|k38ef42:5793d75575bc6311": "2026-10-22T07:25:44.497Z",
     "haber:abd-ve-cin-yapay-zeka-kisitlamalari-hastane-entegrasyonu-ve-nvidia-gtc-berlin-do|kaec085:3c789bc1d48c1282": "2026-10-22T07:25:44.497Z",
     "haber:arastirmacilar-yalan-haberi-tespit-eden-yeni-yapay-zeka-sistemi-gelistirdi|kaec085:3c789bc1d48c1282": "2026-10-22T07:25:44.497Z",
-    "k12b4a6:2df9b91482e9a841|k38ef42:db74d8f24603fab1": "2026-10-22T07:25:44.497Z"
+    "k12b4a6:2df9b91482e9a841|k38ef42:db74d8f24603fab1": "2026-10-22T07:25:44.497Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k38ef42:d45a8e5dab3a2475": "2026-10-22T07:31:36.476Z",
+    "haber:kisisel-yapay-zeka-asistanlari-is-yerlerinde-guvenlik-risklerini-artiriyor|k38ef42:d45a8e5dab3a2475": "2026-10-22T07:31:36.476Z",
+    "haber:meta-amazon-ve-apple-yapay-zeka-cihazlari-gizlilik-sinirlarini-zorluyor|k38ef42:d45a8e5dab3a2475": "2026-10-22T07:31:36.476Z",
+    "haber:apple-riza-disi-yapay-zeka-goruntuleri-icin-app-store-kurallarini-guncelledi|k12b4a6:2df9b91482e9a841": "2026-10-22T07:31:36.476Z",
+    "haber:apple-silicon-mac-ler-minions-sistemiyle-ortak-gpu-havuzunda-toplaniyor|k12b4a6:2df9b91482e9a841": "2026-10-22T07:31:36.476Z",
+    "haber:apple-yapay-zeka-destekli-ses-duzenleme-girisimi-samplab-i-satin-aldi|k12b4a6:2df9b91482e9a841": "2026-10-22T07:31:36.476Z",
+    "haber:apple-riza-disi-yapay-zeka-goruntuleri-icin-app-store-kurallarini-guncelledi|k38ef42:db74d8f24603fab1": "2026-10-22T07:31:36.476Z",
+    "haber:apple-silicon-mac-ler-minions-sistemiyle-ortak-gpu-havuzunda-toplaniyor|k38ef42:db74d8f24603fab1": "2026-10-22T07:31:36.476Z",
+    "haber:apple-yapay-zeka-destekli-ses-duzenleme-girisimi-samplab-i-satin-aldi|k38ef42:db74d8f24603fab1": "2026-10-22T07:31:36.476Z",
+    "haber:chatgpt-kullanicilarin-sohbetlerinden-gizli-psikolojik-profiller-cikariyor|k031f42:bf8b0d536385603b": "2026-10-22T07:31:36.476Z",
+    "haber:chatgpt-slides-profesyonel-sunumlar-hazirlamak-icin-kullanima-sunuldu|k031f42:bf8b0d536385603b": "2026-10-22T07:31:36.476Z",
+    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k031f42:bf8b0d536385603b": "2026-10-22T07:31:36.476Z",
+    "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
+    "haber:amazon-veri-merkezleri-icin-indiana-eyaletinde-nukleer-tesis-kuruyor|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k38ef42:5793d75575bc6311": "2026-10-22T07:31:36.476Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13782,6 +13798,10 @@
     "perplexity-ve-nvidia-dil-modelleri-icin-jolt-yontemini-tanitti": {
       "zaman": "2026-10-22T07:25:44.497Z",
       "basliklarSifreli": "v1.mK4VK6wTuLcjvvsG.vZQXwUMyAhUDgcCRPWZh2hpVplYRgW+lhshFoSUYrXDCdpcfQxVy7mdfO6U83bswXnxOEDTGM+IElwUyHx1A4yDFD/GVtVBQBQuDnO95gERL1IrD62rzaP4wzehRfmMJfCaVPG2pFwLOKY2DE59WzXFpqIMGi7MvuTf1"
+    },
+    "ibm-ses-tanima-ve-ceviri-icin-gelistirdigi-granite-speech-5-0-2b-modelini-duyurd": {
+      "zaman": "2026-10-22T07:31:36.476Z",
+      "basliklarSifreli": "v1.wY5TrTQ0mMJpX+ox.RLRlxnXYYDN/wZ077fHh/1fJxIK8BYQafGp9tvhgO7tGA+miFDwB6Anb14L7PoBAuATe0KKX9mfKNx2RAIneqpU1a4IzV3rSoFNSlk0RAJMNYccmDKOO58mxqcHGyHPhh+nvf9uROpc="
     }
   },
   "havuz": [
@@ -16141,6 +16161,7 @@
     "k38ef42:0f1fe148a7ff870c": "2026-10-22T05:53:31.000Z",
     "k38ef42:cfe1ec471dec0f1e": "2026-10-22T05:51:05.000Z",
     "k031f42:bf8b0d536385603b": "2026-10-22T05:58:00.000Z",
-    "kfdedb4:3c36620c52648cb9": "2026-10-22T06:45:00.000Z"
+    "kfdedb4:3c36620c52648cb9": "2026-10-22T06:45:00.000Z",
+    "k38ef42:2afabd7428921b5c": "2026-10-22T07:30:00.000Z"
   }
 }
