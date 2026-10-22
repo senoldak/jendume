@@ -13,6 +13,7 @@ import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
 import { geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi } from './gizli.mjs';
+import { resmiKaynakListesi } from './resmi-kaynak.mjs';
 import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, dilimBasligiEkle } from './havuz.mjs';
 import { standartOzeti } from './standart.mjs';
 import { derlemeStandardi, haberStandardi, puanKapisi } from './kapi.mjs';
@@ -321,12 +322,13 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
         const secilen = [];
         for (const etiket of g.siteler) secilen.push(g.uyeler.find((u) => u.kaynak.etiket === etiket));
         const kaynaklar = [];
-        // Metni kullanılan kaynakların adı ve adresi; haberde yalnızca şifreli kaynakIzi olarak durur.
+        // Metni kullanılan kaynakların adı ve adresi; haberde şifreli kaynakIzi olarak durur. Hepsi birincil kaynaksa
+        // (resmi) ad ve bağlantı ayrıca açık yazılır (resmi-kaynak.mjs).
         const kullanilan = [];
         for (const u of secilen.slice(0, 3)) {
           const metin = await B.tamMetin(u);
           if (metin.length >= 200) {
-            kullanilan.push({ ad: u.kaynak.ad, url: u.link });
+            kullanilan.push({ ad: u.kaynak.ad, url: u.link, resmi: u.kaynak.resmi === true });
             kaynaklar.push({
               baslik: u.baslik,
               metin,
@@ -431,6 +433,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           ...yazilacak,
           date: simdi.toISOString(),
           kaynakIzi: kaynakIzi(kullanilan),
+          kaynaklar: resmiKaynakListesi(kullanilan),
           featured: false,
           draft: false,
         });
@@ -509,6 +512,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
             ...rakamSeritleriniSuz(x, kaynak),
             date: simdi.toISOString(),
             kaynakIzi: kaynakIzi(grup.flatMap((o) => o.kullanilan ?? [])),
+            kaynaklar: resmiKaynakListesi(grup.flatMap((o) => o.kullanilan ?? [])),
             featured: false,
             draft: false,
           });

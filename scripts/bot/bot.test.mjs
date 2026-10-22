@@ -146,6 +146,25 @@ test('ucDilliHaberYaz writes tr and en markdown files with identical slug and pe
   }
 });
 
+test('ucDilliHaberYaz birincil kaynakları iki dilde de kaynaklar alanına yazar; boşsa alan yok', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const blok = (d) => ({ title: `Başlık ${d}`, description: 'Özet.', body: 'Gövde.' });
+    const paket = { category: 'yapay-zeka', date: '2026-10-12T10:00:00.000Z', tr: blok('tr'), en: blok('en') };
+    const slug = await ucDilliHaberYaz(tmpDir, { ...paket, kaynaklar: [{ ad: 'OpenAI News', url: 'https://openai.com/index/ornek/' }] });
+    for (const dil of ['tr', 'en']) {
+      const c = await readFile(path.join(tmpDir, 'src/content/haberler', dil, `${slug}.md`), 'utf8');
+      assert.ok(c.includes('kaynaklar:\n  - ad: "OpenAI News"\n    url: "https://openai.com/index/ornek/"'), c);
+    }
+    const tr2 = { ...blok('tr'), title: 'Başka başlık' };
+    const slug2 = await ucDilliHaberYaz(tmpDir, { ...paket, tr: tr2, kaynaklar: [] });
+    const c2 = await readFile(path.join(tmpDir, 'src/content/haberler/tr', `${slug2}.md`), 'utf8');
+    assert.ok(!c2.includes('kaynaklar:'));
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});
+
 test('DIL_BLOK_SEMASI contains why_matters and key_points', () => {
   assert.ok(DIL_BLOK_SEMASI.properties.why_matters);
   assert.equal(DIL_BLOK_SEMASI.properties.why_matters.type, 'string');

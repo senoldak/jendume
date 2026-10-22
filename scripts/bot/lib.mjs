@@ -370,6 +370,10 @@ export async function ucDilliHaberYaz(rot, paket) {
         : null,
       // Kaynakların şifreli kaydı (bkz. gizli.mjs); sitede gösterilmez.
       paket.kaynakIzi ? `kaynakIzi: ${yamlStr(paket.kaynakIzi)}` : null,
+      // Yalnız birincil kaynaklı haberde (resmi-kaynak.mjs): sayfanın altında ad ve bağlantı gösterilir.
+      Array.isArray(paket.kaynaklar) && paket.kaynaklar.length
+        ? `kaynaklar:\n${paket.kaynaklar.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
+        : null,
       `featured: ${Boolean(paket.featured)}`,
       `breaking: ${Boolean(paket.breaking)}`,
       `draft: ${Boolean(paket.draft)}`,

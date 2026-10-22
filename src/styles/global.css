@@ -976,6 +976,13 @@ a.board-latest:hover {
   background: var(--signal);
   text-decoration-color: var(--sign);
 }
+/* Resmî kaynak satırı: yapay zekâ notuyla aynı sakin biçim, hemen üstünde. */
+.official-source + .ai-note {
+  margin-top: 8px;
+}
+.official-source a {
+  white-space: normal;
+}
 
 .prose hr {
   border: 0;

@@ -137,6 +137,22 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       <Content />
     </div>
 
+    {
+      post.data.kaynaklar.length > 0 && (
+        <p class="ai-note official-source">
+          {lang === 'en'
+            ? post.data.kaynaklar.length > 1 ? 'Official sources:' : 'Official source:'
+            : post.data.kaynaklar.length > 1 ? 'Resmî kaynaklar:' : 'Resmî kaynak:'}{' '}
+          {post.data.kaynaklar.map((k, i) => (
+            <>
+              {i > 0 && ', '}
+              <a href={k.url} rel="noopener">{k.ad}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
+
     <YapayZekaNotu lang={lang} veri={post.data} baslik={post.data.title} adres={abs(getPostUrl(lang, id))} />
 
     <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />

@@ -36,6 +36,8 @@ const haberSchema = z.object({
   rakamlar: z.array(z.object({ etiket: z.string(), deger: z.string() })).max(4).default([]),
   // Kaynakların şifreli kaydı; sitede gösterilmez (bkz. scripts/bot/gizli.mjs).
   kaynakIzi: z.string().optional(),
+  // Birincil (resmî) kaynaklar: yalnız bütün kaynakları birincil olan haberde dolu; sayfanın altında gösterilir.
+  kaynaklar: z.array(z.object({ ad: z.string(), url: z.string().url() })).default([]),
   featured: z.boolean().default(false),
   breaking: z.boolean().default(false),
   draft: z.boolean().default(false),
