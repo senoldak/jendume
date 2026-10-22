@@ -391,7 +391,20 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           ozet.elenen.push(`${t.tr?.title || ad} — ${sorunlar.join('; ')}`);
           // Yalnız uzunluk yüzünden duran olay havuza girer: dilimi bitince o dilimin kısa haberleriyle tek derleme olur.
           const uzunluk = uzunlukKontrol(t);
-          if (sorunlar.every((s) => uzunluk.includes(s))) {
+          // Tek yayının özel haberi derlemede de kırmızı çıkar (kapi.mjs → derlemeStandardi): havuza girmez, Gemini harcanmaz.
+          // Yalnız kaynağa bağlı bu kural ön denetlenir; metne bağlı kurallar (kaynak benzerliği) derleme yeniden yazdığı için beklenir.
+          let ozel = null;
+          try {
+            const on = haberStandardi(t, kaynakBirlesik);
+            if (on.kirmizi.some((b) => b.kural === 'ozel-haber')) ozel = on;
+          } catch {
+            // ön denetim yapılamadı: derlemedeki kapı yine denetler
+          }
+          if (ozel) {
+            log(`  havuza alınmadı: ${standartOzeti(ozel)}`);
+            elendi(g, ozel.gerekce);
+            await B.motorYaz(kirmiziKayit(g.uyeler[0].id, ozel));
+          } else if (sorunlar.every((s) => uzunluk.includes(s))) {
             // uyeIdler: olayın bütün üyeleri (havuzdan derleme yazılınca ya da olay düşünce her üyeye sonuç verilir).
             durum.havuz.push({
               ...havuzOlayi({ id: g.uyeler[0].id, taslak: t, basliklar: g.uyeler.map((u) => u.baslik), kaynaklar, kullanilan, iso: simdi.toISOString() }),

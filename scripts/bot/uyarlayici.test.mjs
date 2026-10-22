@@ -146,6 +146,23 @@ test('isle: havuza alınan olay bekliyor/havuzda; aynı aday sonraki turda eski 
   assert.equal(cagri.taslak, cagriOnce);
 });
 
+test('isle: tek yayının özel haberi (Exclusive:) kısa kalsa da havuza girmez, elenir', async () => {
+  const yazilanKayit = [];
+  const { u, durum } = kur({
+    bag: {
+      taslakYaz: async () => taslak(120),
+      tamMetin: async () => `Exclusive: ${uydur(150, 9, ['pek', 'lum', 'zan', 'rok', 'tis', 'yem', 'cuz', 'oluf', 'nab', 'esk'])}`,
+      motorYaz: async (k) => (yazilanKayit.push(k), true),
+    },
+  });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const s = sonucu(await u.isle([aday(a)]), a);
+  assert.equal(durum.havuz.length, 0);
+  assert.equal(s.durum, 'elendi');
+  assert.match(s.gerekce, /ozel-haber/);
+  assert.equal(yazilanKayit.length, 1);
+});
+
 test('isle: havuzdaki üye taze (eski olmayan) aday olarak gelse de işlenmez, Sonuc dönmez, havuz büyümez', async () => {
   const { u, durum, cagri } = kur({ bag: { taslakYaz: async () => taslak(120) } });
   const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
