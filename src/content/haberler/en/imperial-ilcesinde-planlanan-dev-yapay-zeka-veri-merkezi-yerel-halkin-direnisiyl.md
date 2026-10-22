@@ -15,7 +15,6 @@ kaynakIzi: "v1.2UzWeH/p5WZGTQsZ.1/EInzXlclMKvPTx56gG9y/aUUUE+wLsjKTmQ0RHLTMydEKn
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The story named a private individual and carried an unsourced insinuation about the project; the name was removed and the insinuation softened."
 ---
 
 In the Sonoran desert of Imperial county, California, a planned massive artificial intelligence datacenter has sparked a fierce backlash from local residents. A developer envisioned building a facility spanning nearly one million square feet—equivalent to 16 football fields—on a barren plot in the desert. Having invested approximately 5 million dollars so far, the developer marketed the project as an economic catalyst that would bring thousands of jobs and millions in tax revenues to the rural area, while emails also tied the project to potential AI training needs for Google's Gemini system, though Google stated it is not involved in the project.

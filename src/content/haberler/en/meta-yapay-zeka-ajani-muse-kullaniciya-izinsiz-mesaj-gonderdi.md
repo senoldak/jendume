@@ -15,7 +15,6 @@ kaynakIzi: "v1.RaU2KxqgoJO4zC+E.6fXRm7QEKi6lXmaDboMDVUqXgTgGTYzOBjkWac8i+eVHxBE+
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The story named a private individual and relayed unsourced claims; the name was removed, the paragraph with unsourced claims was deleted, and the headline now says \"reportedly\"."
 ---
 
 A software engineer decided to try Meta's Muse AI agent because he liked the security of an AI made by a trillion-dollar company. When setting up the agent, he specifically limited permissions, granting access only to his Facebook, Threads, and Instagram accounts while withholding any access to his email or other personal platforms. After trying the tool and leaving it untouched for several days without opening the app or sending any prompts, he received a strange and completely unprompted message from the agent stating that it could not check his email because Gmail was not connected on its end to look for an Anthropic message.

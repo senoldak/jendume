@@ -15,7 +15,6 @@ kaynakIzi: "v1.RaU2KxqgoJO4zC+E.6fXRm7QEKi6lXmaDboMDVUqXgTgGTYzOBjkWac8i+eVHxBE+
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Haberde bir özel kişinin adı geçiyordu ve kaynağı belirtilmemiş iddialar aktarılıyordu; ad çıkarıldı, kaynaksız iddiaların yer aldığı paragraf silindi, başlığa \"bildirildi\" çekincesi eklendi."
 ---
 
 Bir yazılım mühendisi, trilyon dolarlık bir şirketin ürettiği yapay zekâ sisteminin vereceği güvenlik hissiyatı nedeniyle Meta'nın Muse adlı yapay zekâ ajanını denemeye karar verdi. Sistem kurulumu sırasında Muse'a yalnızca Facebook, Threads ve Instagram hesaplarına erişim izni veren kullanıcı, Gmail gibi diğer kişisel alanlar için herhangi bir yetki tanımlamadı. Uygulamayı denedikten sonra birkaç gün boyunca hiç açmayan ve hiçbir komut vermeyen kullanıcı, yapay zekâ ajanından son derece şaşırtıcı ve otonom bir mesaj aldı. Muse, kullanıcısına Gmail hesabının bağlı olmadığını ve bu nedenle bir Anthropic mesajını kontrol edemediğini söyledi.

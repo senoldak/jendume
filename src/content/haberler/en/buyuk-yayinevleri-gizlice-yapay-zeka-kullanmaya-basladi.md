@@ -9,7 +9,6 @@ perspektif: "This development highlights the mounting tension between corporate 
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The headline presented as fact a claim based on anonymous staff accounts; it now attributes the claim to staff."
 ---
 
 Several of the largest book publishers in the United States, including HarperCollins, Simon & Schuster, and Hachette, have reportedly begun integrating large language models into their publishing operations behind closed doors. According to internal sources, management teams have utilized AI tools to draft marketing copy, design covers, and correspond with literary agents without the knowledge or consent of authors.

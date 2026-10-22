@@ -15,7 +15,6 @@ kaynakIzi: "v1.xwDqwXJLChzvvOSe.GpH9mMaVRS5tZ9yN/sQPnqKCON4mxsQwoKdYGCbUADuXafUi
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Başlık, yayıncının insan hatası ve yetersiz yedekleme dediği bir olayı yapay zekâ kaynaklı kesin olgu gibi veriyordu; başlık çekinceli hâle getirildi."
 ---
 
 İsveç'te yayınlanması planlanan popüler reality yarışma programı The Challenge Sverige, yapay zekâ ajanı nedeniyle büyük bir kriz yaşadı. Yapım şirketi Mastiff, programın sunucularına bir yapay zekâ ajanı erişimine izin verdikten sonra tüm sezonun dosyalarının silindiği iddia edildi. Kasım ayında ekranlara gelmesi beklenen program, bu teknik aksaklık yüzünden önümüzdeki yıla ertelendi.

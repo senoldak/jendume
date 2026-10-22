@@ -9,7 +9,6 @@ perspektif: "Bu gelişme, yayıncılık sektöründe verimlilik arayışı ile i
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Başlık, anonim çalışan ifadelerine dayanan bir iddiayı kesin olgu gibi veriyordu; başlık ve metin çalışanların ifadelerine atıfla yumuşatıldı."
 ---
 
 Dünyanın en büyük kitap yayınevleri arasında yer alan HarperCollins, Simon & Schuster ve Hachette'in, yayıncılık süreçlerinde büyük dil modellerini yazarlara haber vermeden kullanmaya başladığı bildirildi. Çalışanların ifadelerine göre, şirket yönetimleri yazarlara veya kamuoyuna haber vermeden pazarlama metinleri yazmak, kapak tasarlamak ve edebî ajanlarla iletişim kurmak için yapay zekâ araçlarını devreye soktu.

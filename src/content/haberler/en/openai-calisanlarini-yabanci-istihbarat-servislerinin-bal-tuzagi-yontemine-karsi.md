@@ -14,7 +14,6 @@ kaynakIzi: "v1.atTLLQsTtqb5Vkss.KwFRct3WMFa6iD1CE98yrNr5f59vBLQuoF3eWM8kBTp/lOm0
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The story named a private individual and gave his nationality and the possible sentence; these were removed and the sentence was rewritten."
 ---
 
 OpenAI has intensified its security measures to protect its proprietary artificial intelligence technologies from foreign intelligence threats. During internal security briefings, the company warned personnel about honey trap tactics, where intelligence agents use romantic relationships or friendly approaches to gather sensitive information. Examples shared with staff included agents striking up casual conversations in public spaces, such as parks, before steering discussions toward confidential work matters.

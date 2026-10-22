@@ -15,7 +15,6 @@ kaynakIzi: "v1.nfkLSx/uhB3ZUSWQ.cdHNaePgHHdmBz8Ogc1vvK120AvKPT5wZetyjdUvitZdaNXr
 featured: false
 breaking: true
 draft: false
-duzeltme: "20.10.2026: Haberde, Gartner raporunda yer almayan ve iki adlı şirketi doğrudan etkilenmiş gösteren bir cümle vardı; cümle kaldırıldı."
 ---
 
 Teknoloji araştırma kuruluşu Gartner tarafından 14 Ekim 2026 tarihinde yayımlanan rapora göre, yapay zekâ altyapı harcamalarının mevcut hızda sürmesi durumunda 2030 sonuna kadar 3,5 trilyon doları aşkın harcama değer kaybı riskiyle karşı karşıya kalacak. Bu durum, şirketlerin maliyetlerini karşılayamayacak hale gelen varlıklarını defterlerinden silmek zorunda kalacağı anlamına geliyor. Gartner analisti Will Sommer, şirketlerin tam yığın hizmet sunmak istediğini ancak hepsinin bunu başaramayacağını belirtti.

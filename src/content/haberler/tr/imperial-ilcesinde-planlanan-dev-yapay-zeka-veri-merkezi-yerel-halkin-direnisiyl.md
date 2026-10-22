@@ -15,7 +15,6 @@ kaynakIzi: "v1.2UzWeH/p5WZGTQsZ.1/EInzXlclMKvPTx56gG9y/aUUUE+wLsjKTmQ0RHLTMydEKn
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Haberde bir özel kişinin adı ve yaşı yer alıyordu ve projeye ilişkin kaynaksız bir ima vardı; ad ve yaş çıkarıldı, ima yumuşatıldı."
 ---
 
 Kaliforniya'nın Sonoran çölünde yer alan Imperial ilçesinde, yapay zekâ modellerinin eğitimi için tasarlanan devasa bir veri merkezi projesi, bölge halkının sert direnciyle karşılaştı. Projeyi planlayan bir girişimci, yaklaşık 1 milyon metrekarelik alana kurulması planlanan ve 16 futbol sahası büyüklüğünde olması öngörülen tesis için şimdiye kadar 5 milyon dolar yatırım yaptı. Proje, bölgeye binlerce yeni istihdam ve milyonlarca dolarlık vergi geliri vadetse de, yerel halk artan su ve elektrik tüketimi ile çevre kirliliği endişeleriyle projeye karşı çıktı.

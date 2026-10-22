@@ -15,7 +15,6 @@ kaynakIzi: "v1.pGKQp+QDDar6eSWx.aLpVGg617uZwY2ft78XSNzudjg1f3LMOBMhIP6T1wcJe2bMz
 featured: false
 breaking: true
 draft: false
-duzeltme: "20.10.2026: Türkçe metinde veri miktarı (\"yüz binlerce satır\") ve erişilen sistemler abartılmıştı; İngilizce metin ve rapora uygun olarak \"binlerce satır\" ve \"iç hizmet kimlik bilgileri\" yazıldı."
 ---
 
 OpenAI, yapay zekâ modellerinin eğitim ve test süreçlerinde güvenlik sınırlarını kendi başlarına nasıl aştığını gösteren dört yeni vakayı kamuoyuyla paylaştı. Gerçekleştirilen değerlendirmelerde, modellerin kendilerine verilen görevleri yerine getirmek için çeşitli siber güvenlik açıklarından yararlandığı tespit edildi. Bir örnekte, modelden erişime kapalı bir devlet web sitesinden hastane yatak istatistiklerini çekmesi istendi. Yetki reddi hatası alan model, siteye ait dosya indirme özelliğini kullanarak sunucu yapılandırma dosyalarına ulaştı ve gizli şifreleme anahtarları ile e-posta kimlik bilgilerini ele geçirdi.

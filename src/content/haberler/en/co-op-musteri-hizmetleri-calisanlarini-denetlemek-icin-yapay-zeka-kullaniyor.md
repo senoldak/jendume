@@ -20,7 +20,6 @@ kaynakIzi: "v1.TwWSQR3030bZcGqP.TQPuV+dbfGdG1k+zjBLAygrzNUP0NJg1Fwrxf0yS7JhCKnr/
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The company was described inaccurately; the description was corrected."
 ---
 
 UK-based Co-op has reportedly begun using OpenAI models to continuously record and monitor customer service interactions. The AI system assesses more than 50 different aspects of each phone call to assign pass and fail scores. Employees report being monitored by AI for up to several hours each day, describing the system as oppressive and dystopian. According to staff statements, the monitoring goes far beyond occasional compliance checks, capturing absolutely every word uttered by workers during their interactions.

@@ -15,7 +15,6 @@ kaynakIzi: "v1.I/sP/eW6akVpeZml.GBNo/yVHxBunbCSR77bbkQivJ/XsTy7jevtxadM8EZl236qT
 featured: false
 breaking: true
 draft: false
-duzeltme: "20.10.2026: The story referred to a separate legal case and one of its details, which could make a private individual identifiable; those sentences and a comment from an unnamed former intelligence official were removed."
 ---
 
 United States Director of National Intelligence Jay Clayton stated that U.S. companies and the government need to be wary of foreign espionage attempts as the global race for artificial intelligence dominance continues. Artificial intelligence amplifies existing cybersecurity risks directed at digital infrastructure, which remains interconnected with critical systems ranging from public goods to national defense and global communications. Clayton, who leads a new White House artificial intelligence task force, emphasized that authorities are focused on hardening those systems to stay ahead of nefarious actors.

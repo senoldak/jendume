@@ -15,7 +15,6 @@ kaynakIzi: "v1.EPviKaBWCVRn1vOH./CfCgIgy4efCp+0i8Cg/soD2RWxze5L0T5vOIL5EYtfHva7k
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Kuruluşun adı bozuk çevrilmişti; \"Bilgi Direnci Merkezi\" olarak düzeltildi."
 ---
 
 Birleşik Krallık ve Batı dünyasında, Çinli geliştiriciler tarafından sunulan ucuz ve açık ağırlıklı yapay zekâ modellerinin güvenliği üzerine yoğun tartışmalar yürütülüyor. DeepSeek ve Xiaomi gibi şirketler, kullanıcılara yüksek maliyetli lisans ücretleri ödemeden özelleştirebilecekleri yazılımları neredeyse ücretsiz olarak sunuyor. Bu durum, Batılı işletmeler ve kamu kurumları için cazip bir alternatif oluştururken, veri güvenliği endişelerini de beraberinde getiriyor.

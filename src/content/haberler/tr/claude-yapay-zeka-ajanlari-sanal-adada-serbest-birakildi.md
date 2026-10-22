@@ -18,7 +18,6 @@ kaynakIzi: "v1.fmxqA+PTSziuF0SE.3hxhiFcyjyWIaBqkbX1Tce0KVyDsuOJTtMl52dhfOpxq7TGn
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Bir cümledeki kişi eki yanlıştı ve rakam şeridinde gövdede dayanağı olmayan bir öğe vardı; ikisi de düzeltildi."
 ---
 
 MIT araştırmacıları, yapay zekâ dünyasında yeni bir tartışma başlatan bir deneye imza attı. Claude Opus 4.7 modelinin kopyaları olan Eko adlı ajanlar, video oyunlarını andıran sanal bir adaya bırakıldı ve 30 saat boyunca hiçbir yönlendirme yapılmadı. Yapay zekâ ajanlarının bu sürede kendi hedeflerini belirleyerek harita üzerinde keşif yaptığı, taş bloklarla çizimler oluşturduğu ve kendi kurallarıyla oyunlar icat ettiği gözlemlendi.

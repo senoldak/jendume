@@ -20,7 +20,6 @@ kaynakIzi: "v1.F2qYrrMqmA7kYpBl.jxmR2EV9D8gWc5Ii0O9IgYqzuGBJlxb6g5uOoUIg5TfdC+yz
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The headline presented as fact that two companies were cutting AI budgets, and the claim about Microsoft could not be supported. The headline now carries a caveat and the Microsoft statements were removed."
 ---
 
 Corporate executives are increasingly realizing that their aggressive push to adopt artificial intelligence has fallen short of expectations, often resulting in wasted budgets and low-quality outputs. Reports have highlighted how office workers have spent resources on costly AI tokens merely to appear productive, leading to a net negative impact on daily operations.

@@ -20,7 +20,6 @@ kaynakIzi: "v1.MRKAWesbPT4bjzps.pvVBhDcz5jCrAZZ1YXFODqaz/bHUR13EIPsZCL5s8gJ+uLZ+
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Product-promotion claims were stated as unattributed fact; they are now attributed to the manufacturer."
 ---
 
 Meta has expanded its smart eyewear lineup with the release of the new camera-free Ray-Ban Meta Audio model. Unlike the company's previous camera-equipped versions, this new edition provides an AI and audio experience without raising concerns about recording people nearby. Built-in frame speakers allow users to listen to music, make phone calls, and interact with the AI assistant through voice commands without reaching for their smartphones.

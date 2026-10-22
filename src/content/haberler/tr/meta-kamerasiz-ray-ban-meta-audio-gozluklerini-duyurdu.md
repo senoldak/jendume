@@ -20,7 +20,6 @@ kaynakIzi: "v1.MRKAWesbPT4bjzps.pvVBhDcz5jCrAZZ1YXFODqaz/bHUR13EIPsZCL5s8gJ+uLZ+
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Ürün tanıtımı niteliğindeki iddialar atıfsız ve kesin olgu gibi yazılmıştı; \"üretici savunuyor\" atfıyla yumuşatıldı."
 ---
 
 Meta, popüler akıllı gözlük serisine yeni bir soluk getirerek kamerasız Ray-Ban Meta Audio modelini piyasaya sürdü. Şirketin daha önceki kamera donanımlı modellerinden farklı olarak bu yeni sürüm, etraftakileri kaydetme kaygısı yaratmadan yapay zekâ ve ses deneyimi sunuyor. Gözlük çerçevesine entegre hoparlörler sayesinde kullanıcılar telefonlarına dokunmadan müzik dinleyebiliyor, arama yapabiliyor ve sesli komutlarla yapay zekâ asistanına sorular yöneltebiliyor.

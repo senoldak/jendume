@@ -20,7 +20,6 @@ kaynakIzi: "v1.F2qYrrMqmA7kYpBl.jxmR2EV9D8gWc5Ii0O9IgYqzuGBJlxb6g5uOoUIg5TfdC+yz
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Başlık, iki şirketin bütçe kıstığını kaynaksız olgu gibi veriyordu ve Microsoft ile ilgili cümle desteklenemedi. Başlık çekinceli hâle getirildi, Microsoft cümleleri çıkarıldı."
 ---
 
 Şirket yöneticileri, yapay zekâ teknolojilerine yapılan büyük yatırımların beklenen verimliliği sağlamadığını ve sıklıkla hatalı içeriklerin üretilmesine yol açtığını fark etmeye başladı. Ortaya çıkan örnekler, ofis çalışanlarının bütçeleri tükenen yapay zekâ araçlarına harcayarak sadece üretken görünmeye çalıştığını gösteriyor. Bu durum, sektördeki büyük oyuncuların bütçelerini gözden geçirmesine ve harcamalarını kısmasına neden oluyor.

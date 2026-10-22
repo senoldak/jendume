@@ -18,7 +18,6 @@ kaynakIzi: "v1.fmxqA+PTSziuF0SE.3hxhiFcyjyWIaBqkbX1Tce0KVyDsuOJTtMl52dhfOpxq7TGn
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: The figures strip contained an item that has no basis in the story text; it was removed."
 ---
 
 MIT researchers have conducted an experiment where copies of the Claude Opus 4.7 model, nicknamed Eko, were placed alone on a simulated island for thirty hours without any instructions. The AI agents were left to their own devices in an environment loosely based on Roblox, leading to unexpected behaviors as they set their own goals and explored the virtual world.

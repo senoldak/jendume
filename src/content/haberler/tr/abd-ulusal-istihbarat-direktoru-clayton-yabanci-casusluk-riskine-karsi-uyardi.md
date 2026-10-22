@@ -15,7 +15,6 @@ kaynakIzi: "v1.I/sP/eW6akVpeZml.GBNo/yVHxBunbCSR77bbkQivJ/XsTy7jevtxadM8EZl236qT
 featured: false
 breaking: true
 draft: false
-duzeltme: "20.10.2026: Haber, ayrı bir yargı sürecine ve o sürecin bir ayrıntısına gönderme yapıyordu; kişiyi tanımlanabilir kıldığı için bu cümleler ile adı belirtilmeyen bir istihbarat yetkilisine ait yorum çıkarıldı."
 ---
 
 Amerika Birleşik Devletleri Ulusal İstihbarat Direktörü Jay Clayton, yapay zekâ alanındaki küresel hakimiyet yarışında yabancı casusluk girişimlerine karşı dikkatli olunması gerektiğini açıkladı. Yapay zekâ teknolojisinin, kamu mallarından ulusal savunmaya kadar pek çok kritik sistemle bağlantılı olan dijital altyapıya yönelik siber güvenlik risklerini artırdığı ifade edildi. Beyaz Saray yapay zekâ görev gücünün liderliğini yürüten Clayton, kritik sistemlerin güçlendirilmesine odaklandıklarını ve kötü niyetli aktörlerin önünde kalmaya kararlı olduklarını vurguladı.

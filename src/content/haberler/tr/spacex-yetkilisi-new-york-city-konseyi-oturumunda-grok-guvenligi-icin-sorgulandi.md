@@ -15,7 +15,6 @@ kaynakIzi: "v1.QtnpKo6azHKNGNdg.9cOCjcjKbfjEkF5/NN9GfaQCaMc9n632/27bg+btJW6123N0
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Haberde adı geçen bir eski çalışan hakkında şirket aleyhine iddia yer alıyordu; ad çıkarıldı, cümle adsız yazıldı."
 ---
 
 ### SpaceX yetkilisi New York City Konseyi'nde sorgulandı

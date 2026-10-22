@@ -15,7 +15,6 @@ kaynakIzi: "v1.CFjs1nM9l/F/1+yq.Dddl6C39MYzFBVhRfIwpDjsm3RwQECDparMNBO/Br56+dpS9
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Haberde bir özel kişinin adı geçiyordu; ad çıkarıldı."
 ---
 
 Pensilvanya eyaletine bağlı eski bir kömür madenciliği kasabası olan Hazle Township'te halk, bölgeye kurulması planlanan devasa Amazon Web Services veri merkezi projesine karşı organize oluyor. Kuzey Amerika'da hızla yayılan veri merkezi yatırımları, yerel halkın yaşam alanları üzerinde baskı oluştururken, geliştirici şirket NorthPoint Development projeyi kabul ettirmek için sıra dışı bir adım attı. 'Project Hazelnut' adı verilen tesisin karşılığında kasaba sakinlerinin her birine 10.000 dolar doğrudan nakit ödeme yapılması teklif edildi. Kasaba nüfusunun yaklaşık yüzde 17'sinin federal yoksulluk sınırının altında yaşamasına rağmen, vatandaşlar bu teklifi reddediyor.

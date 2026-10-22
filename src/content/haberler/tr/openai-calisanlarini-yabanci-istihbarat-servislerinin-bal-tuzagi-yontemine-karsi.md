@@ -14,7 +14,6 @@ kaynakIzi: "v1.atTLLQsTtqb5Vkss.KwFRct3WMFa6iD1CE98yrNr5f59vBLQuoF3eWM8kBTp/lOm0
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Haberde bir özel kişinin adı, uyruğu ve olası ceza ayrıntısı yer alıyordu; bunlar çıkarıldı, ilgili cümle yeniden yazıldı."
 ---
 
 OpenAI, yapay zekâ teknolojilerindeki kritik sırlarını korumak için personelini yabancı istihbarat faaliyetlerine karşı uyardı. Şirket içinde düzenlenen güvenlik eğitimlerinde, ajanların romantik ilişki kurma veya yakınlaşma yoluyla bilgi toplamayı amaçlayan bal tuzağı yöntemleri ele alındı. Paylaşılan örneklerde, halka açık alanlarda çalışanların hedef alınabileceği ve sohbetlerin zamanla iş sırlarına yönlendirilebileceği vurgulandı.

@@ -20,7 +20,6 @@ kaynakIzi: "v1.TwWSQR3030bZcGqP.TQPuV+dbfGdG1k+zjBLAygrzNUP0NJg1Fwrxf0yS7JhCKnr/
 featured: false
 breaking: false
 draft: false
-duzeltme: "20.10.2026: Şirketin tanımı yanlıştı ve haberin iddiaya dayandığı belirtilmemişti; tanım düzeltildi, \"bildirildi\" çekincesi eklendi, çalışan görüşü atfedildi."
 ---
 
 Birleşik Krallık merkezli Co-op'un, müşteri hizmetleri çalışanlarının telefon görüşmelerini sürekli olarak kaydedip değerlendirmek için yapay zekâ modellerini kullanmaya başladığı bildirildi. Yapay zekâ sistemi, her telefon görüşmesinin 50'den fazla farklı yönünü analiz ederek çalışanlara başarılı veya başarısız puanları veriyor. Çalışanlar, günün birkaç saati boyunca yapay zekâ tarafından sürekli izlendiklerini ve her sözlerinin kayda geçirilmesinin baskı yarattığını belirtiyor. Bir çalışan sistemi baskıcı ve distopik olarak nitelendirdi; ayrıca sistemin sıradan bir uyumluluk dinlemesinden çok farklı olduğunu ve söylenen her kelimenin takip edildiğini ifade etti.
