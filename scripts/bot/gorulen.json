@@ -2650,7 +2650,26 @@
     "k2d427e:316d047e31cdae6f": "2026-10-23T03:50:56.832Z",
     "kb7f905:25d5cf9a29476ef2": "2026-10-23T03:50:56.832Z",
     "k2d427e:2edb367467924315": "2026-10-23T03:50:56.832Z",
-    "ke82007:3f55fcfe7f156ab0": "2026-10-23T03:50:56.832Z"
+    "ke82007:3f55fcfe7f156ab0": "2026-10-23T03:50:56.832Z",
+    "k12b4a6:35b5c045d40bf0c1": "2026-10-23T05:50:59.570Z",
+    "k38ef42:47da7b6d1db1f0db": "2026-10-23T05:50:59.570Z",
+    "kb7f905:ab36472d665ffb9f": "2026-10-23T05:50:59.570Z",
+    "k38ef42:b9d86699a85efa48": "2026-10-23T05:50:59.570Z",
+    "k38ef42:181fd2740de52c85": "2026-10-23T05:50:59.570Z",
+    "k38ef42:15985391b7acf678": "2026-10-23T05:50:59.570Z",
+    "kfdedb4:c4850380151e75ad": "2026-10-23T05:50:59.570Z",
+    "k38ef42:823d284008634b1f": "2026-10-23T05:50:59.570Z",
+    "ke6dccd:4fe33e0737320ad8": "2026-10-23T05:50:59.570Z",
+    "k38ef42:cbe98f619def92bf": "2026-10-23T05:50:59.570Z",
+    "k38ef42:ece63eaaa0d5b080": "2026-10-23T05:50:59.570Z",
+    "k38ef42:4511a75fdeda86c7": "2026-10-23T05:50:59.570Z",
+    "k12b4a6:594a9bfbeb0c7514": "2026-10-23T05:50:59.570Z",
+    "kad5125:0e1a24a430ac43f0": "2026-10-23T05:50:59.570Z",
+    "k1efb7c:64d84ead07cbe303": "2026-10-23T05:50:59.570Z",
+    "k38ef42:6ccf83b69b3b610b": "2026-10-23T05:50:59.570Z",
+    "k36ff38:70d039985b3c2481": "2026-10-23T05:50:59.570Z",
+    "k38ef42:46c9000567982663": "2026-10-23T05:50:59.570Z",
+    "mit-news-ai:https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023": "2026-10-23T05:50:59.570Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -6229,7 +6248,23 @@
     "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|kb7f905:7200e43f050d712d": "2026-10-23T03:50:56.832Z",
     "kad5125:f0fd47e38bf9b974|kd4ca61:84186ac54147796a": "2026-10-23T03:50:56.832Z",
     "kd4ca61:fab6de05877b11b3|ke82007:fac15f9ba722678f": "2026-10-23T03:50:56.832Z",
-    "kb7f905:7200e43f050d712d|kd4ca61:fab6de05877b11b3": "2026-10-23T03:50:56.832Z"
+    "kb7f905:7200e43f050d712d|kd4ca61:fab6de05877b11b3": "2026-10-23T03:50:56.832Z",
+    "haber:elon-musk-in-kredi-karti-bilgilerini-paylasmasiyla-yapay-zeka-asistani-grok-un-g|k38ef42:181fd2740de52c85": "2026-10-23T05:50:59.570Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|k38ef42:b9d86699a85efa48": "2026-10-23T05:50:59.570Z",
+    "haber:awear-ai-akilli-gozlukler-arasinda-kisisel-yapay-zeka-hafizasinin-tasinmasini-sa|k38ef42:b9d86699a85efa48": "2026-10-23T05:50:59.570Z",
+    "haber:gridcraft-ve-acik-kaynak-araclar-yazilim-pazarini-donusturuyor|k38ef42:b9d86699a85efa48": "2026-10-23T05:50:59.570Z",
+    "haber:tesla-cybercab-modelini-2026-yili-bitmeden-musterilere-teslim-etmeyi-hedefliyor|k38ef42:181fd2740de52c85": "2026-10-23T05:50:59.570Z",
+    "haber:tesla-cybercab-satislarini-yil-sonuna-kadar-baslatmayi-hedefliyor|k38ef42:181fd2740de52c85": "2026-10-23T05:50:59.570Z",
+    "haber:intel-veri-merkezi-odakli-yeni-d-serisi-hizlandiricisini-tanitti|k38ef42:15985391b7acf678": "2026-10-23T05:50:59.570Z",
+    "haber:intel-yapay-zeka-cipi-talebindeki-artisla-abd-fabrikalarindaki-calismalarini-hiz|k38ef42:15985391b7acf678": "2026-10-23T05:50:59.570Z",
+    "haber:yapay-zeka-sektorunun-onundeki-en-buyuk-engel-finansman-ve-cip-krizi|k38ef42:15985391b7acf678": "2026-10-23T05:50:59.570Z",
+    "haber:gorsel-modelleri-uygunsuz-icerik-uretimini-engellemekte-zorlaniyor|k38ef42:6ccf83b69b3b610b": "2026-10-23T05:50:59.570Z",
+    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k38ef42:6ccf83b69b3b610b": "2026-10-23T05:50:59.570Z",
+    "haber:kendi-kendini-gelistiren-yapay-zeka-henuz-uzak-bir-ihtimal|k38ef42:6ccf83b69b3b610b": "2026-10-23T05:50:59.570Z",
+    "haber:apple-silicon-mac-ler-minions-sistemiyle-ortak-gpu-havuzunda-toplaniyor|kfdedb4:c4850380151e75ad": "2026-10-23T05:50:59.570Z",
+    "haber:buzdolabindan-daha-az-denetlenen-yapay-zeka-buyuk-tehlike|kfdedb4:c4850380151e75ad": "2026-10-23T05:50:59.570Z",
+    "haber:google-dan-internet-gerektirmeyen-yapay-zekali-toplanti-asistani|kfdedb4:c4850380151e75ad": "2026-10-23T05:50:59.570Z",
+    "haber:yapay-zeka-laboratuvarlarindaki-filozoflar-ne-ariyor|k1efb7c:64d84ead07cbe303": "2026-10-23T05:50:59.570Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -6348,7 +6383,8 @@
     "k2d427e:7ec8b748c83fbcb8|k59b8ca:fc7816f8324779f8": "2026-10-22T19:51:05.575Z",
     "k59b8ca:fc7816f8324779f8|kb7f905:653ee9d513a8f26b": "2026-10-22T19:51:05.575Z",
     "kb7f905:7200e43f050d712d|ke82007:fac15f9ba722678f": "2026-10-23T03:50:56.832Z",
-    "k2d427e:f068262ec32ea10a|k59b8ca:6570984d4ec17241": "2026-10-23T03:50:56.832Z"
+    "k2d427e:f068262ec32ea10a|k59b8ca:6570984d4ec17241": "2026-10-23T03:50:56.832Z",
+    "k36ff38:70d039985b3c2481|k38ef42:6ccf83b69b3b610b": "2026-10-23T05:50:59.570Z"
   },
   "puan": {
     "k8601e1:2f0438cfaf23432b": {
@@ -6450,50 +6486,6 @@
       "puan": 55,
       "olcek": 100,
       "zaman": "2026-10-17T15:50:56.276Z"
-    },
-    "k38ef42:f1f4c9b1e450a7c2": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:07362d21848e70fa": {
-      "puan": 2,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "kfdedb4:ef2c856720c845ec": {
-      "puan": 3,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:2101f52d0484e543": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "kd4ca61:f3fff204f69fe72e": {
-      "puan": 4,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:8614ec6019b33c59": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:72b1ab78c0cb2a7a": {
-      "puan": 3,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:772192fd08f32825": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:1abb4048576d41af": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "k38ef42:114ca94c97052be8": {
-      "puan": 0,
-      "zaman": "2026-10-17T05:50:56.104Z"
-    },
-    "openai:https://openai.com/index/benefit-street-partners": {
-      "puan": 3,
-      "zaman": "2026-10-17T05:50:56.104Z"
     },
     "k12b4a6:04ed6c010c7a2906": {
       "puan": 0,
@@ -13630,17 +13622,84 @@
       "puan": 84,
       "olcek": 100,
       "zaman": "2026-10-23T03:50:56.832Z"
+    },
+    "k38ef42:b9d86699a85efa48": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:181fd2740de52c85": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:15985391b7acf678": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k36ff38:70d039985b3c2481+k38ef42:6ccf83b69b3b610b": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "kfdedb4:c4850380151e75ad": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:46c9000567982663": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:823d284008634b1f": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "ke6dccd:4fe33e0737320ad8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:cbe98f619def92bf": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:ece63eaaa0d5b080": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k38ef42:4511a75fdeda86c7": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k12b4a6:594a9bfbeb0c7514": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "kad5125:0e1a24a430ac43f0": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
+    },
+    "k1efb7c:64d84ead07cbe303": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-23T05:50:59.570Z"
     }
   },
   "yayinlanan": {
-    "inception-saniyede-1-068-token-ureten-yeni-difuzyon-modeli-mercury-3-u-duyurdu": {
-      "zaman": "2026-10-20T05:50:54.227Z",
-      "basliklarSifreli": "v1.q6ygeFq+81DHYwqe.laSSSc2povGZk6itAC7TSu+XiTGYxInQR+SvX129FEUjr3AuXQAyGFdwDYmrAbGnBcEb9WJ4eGhpUVgpc1zWn3HYAHuKkxrWCWPZre+kBesbYSlibS2WHtk="
-    },
-    "kamu-kurumlari-ve-mahkemeler-yapay-zeka-kaynakli-dilekce-ve-sikayet-akisiyla-muc": {
-      "zaman": "2026-10-20T05:50:54.227Z",
-      "basliklarSifreli": "v1.nJ/CdfcE/bXk1xPr.6hFXBpYx7ElvCsuF9P4ihb2h7izG+iV8fJAD9iRGtA9t7xO8T74G6vnG8Ogp+MauD6Pa5pylDetoNjo5ZtifjjlOxNA5QKDc5htOZz9k6dgU+TIy1z+Ol0oomkyRwbSuIWulZ9KbIsxgaXbpRo9Y1a9dNRkvsUfd6dI="
-    },
     "hollywood-yapay-zeka-aktorleri-tartismasi-buyuyor": {
       "zaman": "2026-10-20T07:50:56.746Z",
       "basliklarSifreli": "v1.l/azSKlQVX/w+rtC.no6VImOLsyJEwHQifTd3tZ7kHlQCleXWCljdKYMK7pm6OEYSyh2U/MT8QSxElGdDtGyBUaNQN10/kqRggAgwLcqjyzqfxAmQ8Cd2LuYtpY7da+bP2NVI1SQq6Y9pFzcl4EutQ0BL"
@@ -14192,6 +14251,18 @@
     "buyuk-bankalar-ve-meta-yapay-zeka-harcamalari-ile-ajanlariyla-gundemde-22-ekim-k": {
       "zaman": "2026-10-23T03:50:56.832Z",
       "basliklarSifreli": "v1.L6zhR2LGIUltmmX2.Wy65O5IRN9RYpqzW04jnaeeIto6XZt3kyeEngglhRWGTw9HqcNwqs17L8XUnI2EMiqaVKivVRfPsngkslm9hCJxwmKufH5H12tXe9OveMNseypUe0D4vfoMIMaosqm/wP5lA2ncyyXOuKRp77MWhi+sxJDEUIuK8LhgRUpo/BP5cFEr+9IIZ9GNnwqcFvZF5Ur4ea9PBDKhasZ2arA7GBRM4depWRn0yqW5ZRkUc1oJXtEx+cNbhUCd2PbrLfvi0PUmOdbLLWi8zj3RmrftdyvljyqXKROVoZSxQm16VypGU3tjTqt/y/PFtxoSuDu6oV4y7Ld3ih8rQj1tazKOR32FZecHjiOPfgk0ubFjSy5hvxk3SxHab5JcWS3SH9bXnY9c="
+    },
+    "canva-ilk-temel-gorsel-uretim-modeli-craft-i-tanitti": {
+      "zaman": "2026-10-23T05:50:59.570Z",
+      "basliklarSifreli": "v1.Z/DhVZlNLF0c2Pr7./RsyIr/X5e6w/DFlCqa6mQ2zYvjLsLjROTmsVhFmp60V1CmM5QJfvNfr3o9idtg5JE/pAAl+a59YITdS4VJkhjCVY2J/yV4seIbb6gT/w89FKg/y/5ggYyuzyfEi4bF5XW+wsJV7TqMXA3ImNgfZjqVrhFi8YWSba5d9I283XYgLigx7uqDQBwhn0UU0+J9p23ZpgiWSmX5f7w=="
+    },
+    "etsy-yapay-zekayla-uretilen-tarif-ve-kaliplarin-satisini-yasakladi": {
+      "zaman": "2026-10-23T05:50:59.570Z",
+      "basliklarSifreli": "v1.U9fQAAmjUiwU5cP/.JY0bY33ehqHz/JuW7jnrJOldhBtF3Npqci7fXvxfCeRH/nsBYROih2FFOUk71dWUHeLFBQSn28QvpwckDAXOVZebiJ1WD5c+wbH3wedf+v8KHn4="
+    },
+    "benjamin-lindquist-yapay-zeka-halusinasyonlarinin-kokenini-inceledi": {
+      "zaman": "2026-10-23T05:50:59.570Z",
+      "basliklarSifreli": "v1.E25bo3Lfej765f1J.PBjJZZrD8bvM/SNS2yLdpPjpUfQd7pPS+LbeOXIFuJ8U34133XRbheLbAbNRVceQk6wjpcQGv767pTRY3tv23FlKLKQ6YVHg"
     }
   },
   "havuz": [],
@@ -16904,6 +16975,25 @@
     "kd4ca61:84186ac54147796a": "2026-10-23T00:46:09.000Z",
     "kd4ca61:e1843ccc38b53f40": "2026-10-22T23:45:50.000Z",
     "hf-blog:https://huggingface.co/blog/microsoft/thinkingbox-training": "2026-10-22T22:24:34.000Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99413": "2026-10-23T02:00:13.000Z"
+    "nvidia-blog:https://blogs.nvidia.com/?p=99413": "2026-10-23T02:00:13.000Z",
+    "k1efb7c:64d84ead07cbe303": "2026-10-23T01:21:47.000Z",
+    "kb7f905:ab36472d665ffb9f": "2026-10-23T04:00:00.000Z",
+    "k36ff38:70d039985b3c2481": "2026-10-23T04:06:58.000Z",
+    "k12b4a6:35b5c045d40bf0c1": "2026-10-23T05:30:00.000Z",
+    "k12b4a6:594a9bfbeb0c7514": "2026-10-23T04:10:00.000Z",
+    "k38ef42:b9d86699a85efa48": "2026-10-23T05:40:00.000Z",
+    "k38ef42:181fd2740de52c85": "2026-10-23T05:20:00.000Z",
+    "k38ef42:15985391b7acf678": "2026-10-23T04:58:00.000Z",
+    "k38ef42:6ccf83b69b3b610b": "2026-10-23T04:52:00.000Z",
+    "k38ef42:47da7b6d1db1f0db": "2026-10-23T04:46:00.000Z",
+    "k38ef42:46c9000567982663": "2026-10-23T04:41:00.000Z",
+    "k38ef42:823d284008634b1f": "2026-10-23T04:35:00.000Z",
+    "k38ef42:cbe98f619def92bf": "2026-10-23T04:29:00.000Z",
+    "k38ef42:ece63eaaa0d5b080": "2026-10-23T04:24:00.000Z",
+    "k38ef42:4511a75fdeda86c7": "2026-10-23T04:19:00.000Z",
+    "kad5125:0e1a24a430ac43f0": "2026-10-23T04:02:58.000Z",
+    "kfdedb4:c4850380151e75ad": "2026-10-23T04:45:00.000Z",
+    "ke6dccd:4fe33e0737320ad8": "2026-10-23T04:30:00.000Z",
+    "mit-news-ai:https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023": "2026-10-23T04:00:00.000Z"
   }
 }
