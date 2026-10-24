@@ -2,6 +2,7 @@
 import { SITE, getCategory, type Locale } from './site';
 import { getCategoryUrl, getPostUrl, type NewsEntry } from './news';
 import { matchEntities } from './entities';
+import { analizMi } from './yazi-turu.mjs';
 import { KAPAK_G, KAPAK_Y, LOGO_G, LOGO_Y } from '../kapak/ciz';
 import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu, yazarYolu } from './yollar.mjs';
 import type { Terim } from '../data/sozluk/tip';
@@ -125,7 +126,7 @@ export function articleGraph(post: NewsEntry, lang: Locale, image: string) {
   const matched = matchEntities(`${post.data.title} ${post.data.description}`, lang);
 
   const articleNode: Record<string, unknown> = {
-    '@type': 'NewsArticle',
+    '@type': analizMi(post.data) ? 'AnalysisNewsArticle' : 'NewsArticle',
     '@id': `${url}#article`,
     headline,
     description: post.data.description,

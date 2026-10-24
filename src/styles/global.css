@@ -444,6 +444,16 @@ ul {
   font-size: 0.85rem;
 }
 
+/* Analiz etiketi (yazı türü analiz): mürekkep dolgulu, Analiz bölümüne bağlanır. */
+.sign-line-analiz {
+  padding: 2px 8px;
+  background: var(--sign);
+  color: var(--sign-text);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
 /* ===== Ana sayfa: manşet ===== */
 
 .front {

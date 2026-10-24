@@ -1,8 +1,10 @@
 ---
 // Haberin etiket ızgarası, başlığın altında iki sabit satır:
-// kod + bölüm (+ önemli gelişme) / coğrafya · tarih · okuma süresi.
+// kod + bölüm (+ önemli gelişme, + Analiz etiketi) / coğrafya · tarih · okuma süresi.
 import { SITE, getCategory, formatDate, readingMinutes, type Locale } from '../lib/site';
 import { getCategoryUrl, type NewsEntry } from '../lib/news';
+import { analizMi } from '../lib/yazi-turu.mjs';
+import { analizYolu } from '../lib/yollar.mjs';
 
 interface Props {
   post: NewsEntry;
@@ -23,6 +25,7 @@ const cat = getCategory(post.data.category, lang);
       <span>{fullTitle ? cat.title : cat.shortTitle}</span>
     </a>
     {post.data.breaking && <span class="sign-line-alert">{ui.breakingBadge}</span>}
+    {analizMi(post.data) && <a href={analizYolu(lang)} class="sign-line-analiz">{lang === 'tr' ? 'Analiz' : 'Analysis'}</a>}
   </p>
   <p class="sign-line-meta">
     {post.data.bolge && <>{post.data.bolge} · </>}

@@ -4,8 +4,9 @@ import Arrow from '../components/Arrow.astro';
 import Logo from '../components/Logo.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
-import { getCategoryUrl } from '../lib/news';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, yapayZekaYolu, yasalYolu } from '../lib/yollar.mjs';
+import { getCategoryUrl, getPublishedPosts } from '../lib/news';
+import { analizMi } from '../lib/yazi-turu.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
 
 type Hreflang = Locale | 'x-default';
@@ -57,6 +58,9 @@ const {
   author,
   schema = [],
 } = Astro.props;
+
+// "Analiz" bağlantısı yalnız o dilde yayımlanmış en az bir analiz varken görünür.
+const analizVar = (await getPublishedPosts(lang)).some((p) => analizMi(p.data));
 
 const ui = SITE.ui[lang];
 const other = otherLocale(lang);
@@ -182,6 +186,13 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
         </a>
 
         <nav class="overhead-links" aria-label="Primary">
+          {
+            analizVar && (
+              <a href={analizYolu(lang)} aria-current={path.startsWith(analizYolu(lang)) ? 'page' : undefined}>
+                {lang === 'tr' ? 'Analiz' : 'Analysis'}<span class="link-other" lang={other}>{lang === 'tr' ? 'Analysis' : 'Analiz'}</span>
+              </a>
+            )
+          }
           <a href={searchHref} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
             {ui.search}<span class="link-other" lang={other}>{SITE.ui[other].search}</span>
           </a>

@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { abs, type Crumb } from '../../lib/seo';
+import { getPostUrl, getPublishedPosts } from '../../lib/news';
+import { analizMi } from '../../lib/yazi-turu.mjs';
+import { analizYolu, yazarYolu } from '../../lib/yollar.mjs';
+
+// Analiz bölümü; yollar: src/pages/tr/analiz.astro, src/pages/en/analysis.astro.
+// Yazı işleri zincirinin analiz yazıları (ön bilgi: yaziTuru: analiz). Reklam ya da yönlendirme bağlantısı yoktur.
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const other = otherLocale(lang);
+const path = analizYolu(lang);
+const url = abs(path);
+const metin = {
+  tr: {
+    baslik: 'Analiz',
+    aciklama:
+      'Ülkeler arası karşılaştırma ve küresel eğilim: uluslararası kurumların ve resmî istatistiğin açık verisiyle kendi hesabımız. Her analizin sonunda yöntem ve kaynaklar yer alır.',
+    yazar: 'Analizleri yazan',
+    bos: 'Henüz yayımlanmış analiz yok.',
+  },
+  en: {
+    baslik: 'Analysis',
+    aciklama:
+      'Cross-country comparison and global trends: our own calculations from the open data of international organisations and official statistics. Each analysis ends with its method and sources.',
+    yazar: 'Analyses by',
+    bos: 'No analysis has been published yet.',
+  },
+}[lang];
+
+const posts = (await getPublishedPosts(lang)).filter((p) => analizMi(p.data));
+const crumbs: Crumb[] = [
+  { name: SITE.displayName, path: `/${lang}/` },
+  { name: metin.baslik, path },
+];
+
+const schema = [
+  {
+    '@type': 'CollectionPage',
+    '@id': `${url}#page`,
+    url,
+    name: metin.baslik,
+    description: metin.aciklama,
+    inLanguage: lang,
+    isPartOf: { '@id': abs('/#website') },
+    ...(posts.length
+      ? {
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: posts.slice(0, 50).map((p, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: abs(getPostUrl(lang, p.id)),
+            })),
+          },
+        }
+      : {}),
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
+  },
+];
+---
+
+<Base
+  lang={lang}
+  title={metin.baslik}
+  description={metin.aciklama}
+  canonicalPath={path}
+  langUrls={{ tr: analizYolu('tr'), en: analizYolu('en') }}
+  alternates={{ tr: analizYolu('tr'), en: analizYolu('en'), 'x-default': analizYolu('en') }}
+  noindex={posts.length === 0}
+  schema={schema}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <section class="author-card">
+    <h1>{metin.baslik}<span class="link-other" lang={other}> · {lang === 'tr' ? 'Analysis' : 'Analiz'}</span></h1>
+    <p>{metin.aciklama}</p>
+    <p>{metin.yazar}: <a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a></p>
+  </section>
+
+  {posts.length === 0 && <p>{metin.bos}</p>}
+  <div class="story-grid">
+    {posts.map((post) => <StoryCard post={post} lang={lang} />)}
+  </div>
+</Base>

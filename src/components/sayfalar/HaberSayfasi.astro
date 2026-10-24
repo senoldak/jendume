@@ -19,6 +19,7 @@ import { konuVerisi } from '../../lib/rotalar';
 import { konuYolu, yazarYolu } from '../../lib/yollar.mjs';
 import { dizinlenir } from '../../lib/kalite.mjs';
 import { medyaKaynakli } from '../../lib/kaynak-satiri.mjs';
+import { analizMi } from '../../lib/yazi-turu.mjs';
 import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
 import {
   getPublishedPosts,
@@ -161,6 +162,12 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
     {
       medyaKaynakli(post.data) && (
         <p class="ai-note official-source">{ui.mediaSource}</p>
+      )
+    }
+
+    {
+      analizMi(post.data) && post.data.category === 'ekonomi' && (
+        <p class="ai-note">{lang === 'tr' ? 'Bu analiz yatırım tavsiyesi değildir.' : 'This analysis is not investment advice.'}</p>
       )
     }
 
