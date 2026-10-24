@@ -1,6 +1,7 @@
 // Dil başına RSS: mutlak bağlantılar, atom:link rel=self, dil etiketi ve kapak görseli (haberin ya da bölümün).
 import rss from '@astrojs/rss';
 import { SITE, type Locale } from './site';
+import { kisiYazariMi } from './yazi-turu.mjs';
 import { getPublishedPosts, getPostUrl, kapakBilgisi } from './news';
 import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
 
@@ -24,7 +25,7 @@ export async function feed(lang: Locale, title: string, selfPath: string) {
       pubDate: post.data.date,
       description: post.data.description,
       link: new URL(getPostUrl(lang, post.id), SITE.url).href,
-      customData: `<dc:creator>${esc(SITE.author.name)}</dc:creator><media:content url="${esc(new URL((await kapakBilgisi(post, lang)).url, SITE.url).href)}" medium="image" type="image/png" width="${KAPAK_G}" height="${KAPAK_Y}"/>`,
+      customData: `<dc:creator>${esc(kisiYazariMi(post.data) ? SITE.author.name : SITE.displayName)}</dc:creator><media:content url="${esc(new URL((await kapakBilgisi(post, lang)).url, SITE.url).href)}" medium="image" type="image/png" width="${KAPAK_G}" height="${KAPAK_Y}"/>`,
     }))),
     customData: `<language>${SITE.localeTag[lang]}</language><atom:link href="${new URL(selfPath, SITE.url).href}" rel="self" type="application/rss+xml"/>`,
   });

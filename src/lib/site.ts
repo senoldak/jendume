@@ -157,7 +157,7 @@ export const SITE = {
     tr: 'JEN DUME — kelimelerin ötesinde. Dünyadan yapay zekâ, teknoloji, bilim ve ekonomi haberleri; sade ve anlaşılır bir dille.',
     en: 'JEN DUME — Beyond Words. AI, technology, science and economy news from around the world, explained clearly.',
   } satisfies Record<Locale, string>,
-  // Sitedeki her yazının görünen yazarı: içerik dosyalarındaki `author` alanından bağımsız tek sabit.
+  // Kişi imzalı yazıların (analiz, açıklayıcı; bkz. kisiYazariMi) görünen yazarı: içerik dosyalarındaki `author` alanından bağımsız tek sabit.
   author: {
     name: 'Şenol Dak',
     title: { tr: 'Yayın yönetmeni ve editör', en: 'Editor-in-chief' } satisfies Record<Locale, string>,

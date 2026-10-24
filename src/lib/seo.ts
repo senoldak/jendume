@@ -2,7 +2,7 @@
 import { SITE, getCategory, type Locale } from './site';
 import { getCategoryUrl, getPostUrl, type NewsEntry } from './news';
 import { matchEntities } from './entities';
-import { analizMi } from './yazi-turu.mjs';
+import { analizMi, kisiYazariMi } from './yazi-turu.mjs';
 import { KAPAK_G, KAPAK_Y, LOGO_G, LOGO_Y } from '../kapak/ciz';
 import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu, yazarYolu } from './yollar.mjs';
 import type { Terim } from '../data/sozluk/tip';
@@ -16,7 +16,7 @@ export const WEBSITE_ID = abs('/#website');
 /** Yazar sayfasındaki Person düğümünün kimliği (dil başına). */
 export const authorId = (lang: Locale) => `${abs(yazarYolu(lang))}#person`;
 
-/** Haber ve yazar sayfalarındaki yazar: içerikteki `author` alanından bağımsız, sitenin tek yazarı. */
+/** Kişi imzalı yazıların (analiz, açıklayıcı) ve yazar sayfasının yazarı: içerikteki `author` alanından bağımsız. Öteki yazılarda yazar kuruluştur. */
 export function authorNode(lang: Locale) {
   return {
     '@type': 'Person',
@@ -133,7 +133,7 @@ export function articleGraph(post: NewsEntry, lang: Locale, image: string) {
     image: [{ '@type': 'ImageObject', url: imageUrl, width: KAPAK_G, height: KAPAK_Y }],
     datePublished: post.data.date.toISOString(),
     dateModified: (post.data.updated ?? post.data.date).toISOString(),
-    author: authorNode(lang),
+    author: kisiYazariMi(post.data) ? authorNode(lang) : { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     articleSection: cat.title,

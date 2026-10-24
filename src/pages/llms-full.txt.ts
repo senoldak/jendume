@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getPublishedPosts, getPostUrl } from '../lib/news';
 import { SITE } from '../lib/site';
+import { kisiYazariMi } from '../lib/yazi-turu.mjs';
 
 export const prerender = true;
 
@@ -27,7 +28,7 @@ export const GET: APIRoute = async () => {
     output += `## ${post.data.title}\n`;
     output += `- Language / Dil: ${lang.toUpperCase()}\n`;
     output += `- URL: ${url}\n`;
-    output += `- Author / Yazar: ${SITE.author.name}
+    output += `- Author / Yazar: ${kisiYazariMi(post.data) ? SITE.author.name : SITE.displayName}
 `;
     output += `- Date / Tarih: ${post.data.date.toISOString()}\n`;
     output += `- Category / Kategori: ${post.data.category}\n`;

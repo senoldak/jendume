@@ -5,10 +5,11 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import { SITE, otherLocale, type Locale } from '../../lib/site';
 import { abs, authorId, authorNode, type Crumb } from '../../lib/seo';
 import { getPostUrl, getPublishedPosts } from '../../lib/news';
+import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { yazarYolu } from '../../lib/yollar.mjs';
 
 // Yazar sayfası; yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
-// Sitedeki her yazının görünen yazarı tek sabittir (SITE.author); biyografi yalnız ad, unvan ve iletişimdir.
+// Analiz ve açıklayıcı yazıların görünen yazarı tek sabittir (SITE.author); biyografi yalnız ad, unvan ve iletişimdir.
 interface Props {
   lang: Locale;
 }
@@ -25,7 +26,7 @@ const description =
     ? `${a.name}, ${SITE.displayName} yayınının yayın yönetmeni ve editörüdür.`
     : `${a.name} is the editor-in-chief of ${SITE.displayName}.`;
 
-const posts = await getPublishedPosts(lang);
+const posts = (await getPublishedPosts(lang)).filter((p) => kisiYazariMi(p.data));
 const shown = posts.slice(0, 30);
 const crumbs: Crumb[] = [
   { name: SITE.displayName, path: `/${lang}/` },
@@ -43,7 +44,7 @@ const schema = [
     isPartOf: { '@id': abs('/#website') },
     mainEntity: { ...authorNode(lang), description, email: a.email },
     hasPart: posts.slice(0, 50).map((p) => ({
-      '@type': 'NewsArticle',
+      '@type': analizMi(p.data) ? 'AnalysisNewsArticle' : 'NewsArticle',
       url: abs(getPostUrl(lang, p.id)),
       headline: p.data.title,
     })),

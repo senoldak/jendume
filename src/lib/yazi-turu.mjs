@@ -13,3 +13,9 @@ export function aciklayiciMi(veri) {
 export function analizMi(veri) {
   return veri?.yaziTuru === 'analiz';
 }
+
+// Yazarı kişi (Şenol Dak) olarak gösterilecek yazı: analiz ve açıklayıcı/referans (sahibinin kararı, 24 Ekim 2026).
+// Bot haberleri, bültenler ve derlemeler site adıyla çıkar. Sitede köşe yazısı türü yok; olursa buraya eklenir.
+export function kisiYazariMi(veri) {
+  return analizMi(veri) || aciklayiciMi(veri);
+}

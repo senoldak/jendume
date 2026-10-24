@@ -19,7 +19,7 @@ import { konuVerisi } from '../../lib/rotalar';
 import { konuYolu, yazarYolu } from '../../lib/yollar.mjs';
 import { dizinlenir } from '../../lib/kalite.mjs';
 import { medyaKaynakli } from '../../lib/kaynak-satiri.mjs';
-import { analizMi } from '../../lib/yazi-turu.mjs';
+import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
 import {
   getPublishedPosts,
@@ -88,7 +88,7 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
   imageWidth={KAPAK_G}
   imageHeight={KAPAK_Y}
   noindex={!indexable}
-  author={SITE.author.name}
+  author={kisiYazariMi(post.data) ? SITE.author.name : SITE.displayName}
   published={post.data.date}
   modified={post.data.updated ?? post.data.date}
   section={catTitle}
@@ -100,7 +100,11 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       <h1 class="article-title">{post.data.title}</h1>
       <SignLine post={post} lang={lang} minutes fullTitle />
       <p class="byline">
-        {ui.byline} <a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a>, {SITE.author.title[lang]}
+        {ui.byline} {kisiYazariMi(post.data) ? (
+          <><a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a>, {SITE.author.title[lang]}</>
+        ) : (
+          <strong>{SITE.displayName}</strong>
+        )}
       </p>
       <p class="article-deck">{post.data.description}</p>
       <SentezBlok

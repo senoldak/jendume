@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { z } from 'astro/zod';
-import { YAZI_TURLERI, VARSAYILAN_YAZI_TURU, aciklayiciMi, analizMi } from './yazi-turu.mjs';
+import { YAZI_TURLERI, VARSAYILAN_YAZI_TURU, aciklayiciMi, analizMi, kisiYazariMi } from './yazi-turu.mjs';
 
 // src/content.config.ts'deki alanın aynısı.
 const alan = z.enum(YAZI_TURLERI).default(VARSAYILAN_YAZI_TURU);
@@ -36,4 +36,15 @@ test('analizMi: yalnız analiz true; analiz açıklayıcı sayılmaz', () => {
   assert.equal(analizMi({}), false);
   assert.equal(analizMi(undefined), false);
   assert.equal(aciklayiciMi({ yaziTuru: 'analiz' }), false);
+});
+
+test('kisiYazariMi: analiz, açıklayıcı ve referans kişi imzalı; haber ve boş site adıyla',()=>{
+  assert.equal(kisiYazariMi({ yaziTuru: 'analiz' }), true);
+  assert.equal(kisiYazariMi({ yaziTuru: 'aciklayici' }), true);
+  assert.equal(kisiYazariMi({ yaziTuru: 'referans' }), true);
+  assert.equal(kisiYazariMi({ yaziTuru: 'haber' }), false);
+  assert.equal(kisiYazariMi({ yaziTuru: 'haber', uretim: 'yazi-isleri' } as never), false);
+  assert.equal(kisiYazariMi({}), false);
+  assert.equal(kisiYazariMi(undefined), false);
+  assert.equal(kisiYazariMi(null), false);
 });
