@@ -25,7 +25,6 @@ Son bültenden bu yana yayımlanan haberler:
 - [Birleşik Krallık orman yangınlarıyla mücadele için yapay zekâ birimi kuruyor](/tr/haber/birlesik-krallik-orman-yanginlariyla-mucadele-icin-yapay-zeka-birimi-kuruyor/)
 - [Eka Robotics, dokunma duyusuna sahip robotlar geliştirmek için 150 milyon dolar yatırım aldı](/tr/haber/eka-robotics-dokunma-duyusuna-sahip-robotlar-gelistirmek-icin-150-milyon-dolar-y/)
 - [Epic Games yapay zekâ oyun geliştirme yarışmasını duyurdu](/tr/haber/epic-games-yapay-zeka-oyun-gelistirme-yarismasini-duyurdu/)
-- [Microsoft yapay zekâ sistemi doktorlardan daha yüksek teşhis başarısı gösterdi](/tr/haber/microsoft-yapay-zeka-sistemi-doktorlardan-daha-yuksek-teshis-basarisi-gosterdi/)
 - [Anthropic Claude modeli yazılım kodlarını otomatik olarak doğruladı](/tr/haber/anthropic-claude-modeli-yazilim-kodlarini-otomatik-olarak-dogruladi/)
 - [Federal iş garantisi önerisi yapay zekâ işsizliğine karşı gündemde](/tr/haber/federal-is-garantisi-onerisi-yapay-zeka-issizligine-karsi-gundemde/)
 - [Lazarus grubu kuantum sonrası şifreleme kullanan yeni siber saldırı başlattı](/tr/haber/lazarus-grubu-kuantum-sonrasi-sifreleme-kullanan-yeni-siber-saldiri-baslatti/)

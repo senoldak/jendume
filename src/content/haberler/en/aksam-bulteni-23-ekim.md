@@ -22,7 +22,6 @@ Stories published since the last bulletin:
 - [Madrid is getting its first quantum computer from Telefónica and IQM](/en/news/madrid-is-getting-its-first-quantum-computer-from-telefonica-and-iqm/)
 - [Maxinsights raises $30 million in seed funding to supply training data for robots](/en/news/maxinsights-raises-30-million-in-seed-funding-to-supply-training-data-for-robots/)
 - [Meta Platforms launch of AI agent Muse sparks disruption fears across Wall Street banks](/en/news/meta-platforms-launch-of-ai-agent-muse-sparks-disruption-fears-across-wall-stree/)
-- [Microsoft AI system achieves higher diagnostic accuracy than doctors](/en/news/microsoft-ai-system-achieves-higher-diagnostic-accuracy-than-doctors/)
 - [OpenAI CEO Sam Altman warns advanced AI will escape secure sandboxes](/en/news/openai-ceo-sam-altman-warns-advanced-ai-will-escape-secure-sandboxes/)
 - [OpenClaw creator Peter Steinberger says token spending reached 10 million dollars](/en/news/openclaw-creator-peter-steinberger-says-token-spending-reached-10-million-dollar/)
 - [Oracle pledges one billion dollars over four years for partners](/en/news/oracle-pledges-one-billion-dollars-over-four-years-for-partners/)

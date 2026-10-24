@@ -20,7 +20,7 @@ rakamlar:
 kaynakIzi: "v1.L/qHyam1E6XdTqvN.l43JM9YMz1KJ0xxVjhW3TpsMbMmcvXA5HgB/ZCkadQGDi+Y1XsFx9Mmyi8VdKmHY78jRkY9ZvKUFuloIoXG3trFaOTKs2Bd0/Ts7cfD3nuEAa5MHrcZj85jGjdTR1xxeBmb9H0lm+scoaKWvB0F5vAGSgZdOr5swvGaIhOtvzSZGySe01p6wn/miVzdHqoPj2w=="
 featured: false
 breaking: true
-draft: false
+draft: true
 ---
 
 A new artificial intelligence system developed by Microsoft researchers has outperformed human doctors in tests based on medical case scenarios. Published in the journal Science, the research evaluated the system using scenarios generated from medical case reports and emergency room records. Named Diagnostic Orchestrator, the system brings together multiple AI agents to mimic a medical team, evaluating patient symptoms, determining necessary tests, and identifying potential diagnoses.
