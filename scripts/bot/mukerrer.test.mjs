@@ -157,3 +157,18 @@ test('yalnız Anthropic gibi genel kurum ortaksa üç ortak başlık kökü gere
   const z = hikayeIzi({ basliklar: ['Anthropic yeni Claude modelini tanıttı'] });
   assert.equal(ayniHikaye(x, z), null);
 });
+
+// 22-23 Ekim 2026'da botun yanlış eşlediği çiftler (mukerrer.mjs, "zaten yazıldı" günlüğü).
+test('"Next", "IPO", "Güney" gibi her gün geçen sözcükler ad sayılmaz; modelin kendi sürüm numarası ikinci işaret değildir', () => {
+  const kayit = (slug, tr, en) => bellekKur(haber(slug, '2026-10-13T13:00:00Z', tr, en));
+  const abdCin = kayit('abd-cin', ['ABD ve Çin yapay zekâ kısıtlamaları, hastane entegrasyonu ve Nvidia GTC Berlin', 'Ülkeler yeni kısıtlamalar getirirken Nvidia Berlin’de gelecek on yılı anlattı. Next dönemde 21 hastane sisteme bağlandı.'], ['US and China tighten AI limits as hospitals integrate and Nvidia holds GTC Berlin', 'Governments added limits while Nvidia described Next steps; 21 hospitals joined the system.']);
+  const iphone = grup(['Apple’s iPhone Duo goes on sale with tight supply and mixed reviews', 'Next week the phone reaches 21 countries.']);
+  assert.equal(mukerrerBul(grupAdayi(iphone), abdCin, { simdi }), null);
+  const openai = kayit('openai-halka-arz', ['OpenAI halka arz öncesi 30 milyar dolar ek yatırım görüşmeleri yürütüyor', 'OpenAI’nin IPO öncesinde yeni yatırımcılarla konuştuğu bildirildi.'], ['OpenAI reportedly in talks for $30bn more ahead of IPO', 'OpenAI is said to be speaking to new investors before its IPO.']);
+  const deepseek = grup(['DeepSeek reportedly raises $15bn from Tencent and CATL ahead of IPO', 'DeepSeek is reported to have raised money ahead of an IPO.']);
+  assert.equal(mukerrerBul(grupAdayi(deepseek), openai, { simdi }), null);
+  const elice = kayit('elice', ['Elice hisseleri Seul borsasındaki ilk işlem gününde yüzde 32 değer kaybetti', 'Güney Kore’nin Seul borsasında işlem görmeye başlayan hisse yüzde 32 düştü.'], ['Elice shares fall 32% on Seoul debut', 'Shares of the South Korean firm fell 32%.']);
+  assert.equal(mukerrerBul(grupAdayi(grup(['Sürüklenen iki dev buz dağı, tehlike saçmaya devam ediyor', 'Güney Okyanus’ta iki buz dağı yüzde 32 küçüldü.'])), elice, { simdi }), null);
+  // İki ayrı haber aynı model adını (GPT-6.1) anıyor; sayı adın parçası, olay işareti değil.
+  assert.equal(ayniHikaye(hikayeIzi({ basliklar: ['Terminal X automates investing with GPT-6.1'] }), hikayeIzi({ basliklar: ['Uber gives staff ChatGPT Work powered by GPT-6.1'] })), null);
+});

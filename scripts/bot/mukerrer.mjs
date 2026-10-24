@@ -24,8 +24,10 @@ perplexity cursor cloudflare oracle salesforce adobe disney netflix youtube inst
 stanford mit berkeley harvard oxford cambridge university üniversitesi beyaz saray white house kongre congress senate
 avrupa birliği commission komisyonu u.s u.k gpu gpus api apis sdk agi asi llms ai
 security labs lab systems technologies technology robotics intelligence research health bio cloud data network networks
-studio studios foundation institute enstitüsü enstitü ventures`.split(/\s+/),
+studio studios foundation institute enstitüsü enstitü ventures
+ipo ipos ceo cto cfo coo next code güney kuzey doğu batı south north east west`.split(/\s+/),
 );
+// 22-23 Ekim 2026: "Next" + 21 (4 alakasız haber), "IPO" (DeepSeek ↔ OpenAI), "Güney" + 32 aynı olay sayıldı: bunlar ad değil, her gün geçen sözcük.
 
 // ozelAdlar Türkçe küçük harfe çevirir ("AI" → "aı"); diller arası karşılaştırma için ı → i.
 const duz = (ad) => ad.replace(/ı/g, 'i');
@@ -126,7 +128,9 @@ export function ayniHikaye(x, y) {
     const kelime = adlar.length ? ortak(x.kelimeler, y.kelimeler) : [];
     return kelime.length >= 3 ? `${adlar.join(', ')} + ${kelime.join(', ')}` : null;
   }
-  const rakam = ortak(x.rakamlar, y.rakamlar);
+  // Adın kendi içindeki sayı ("GPT-6.1" ↔ 6.1) ikinci işaret değildir: iki ayrı haber aynı model adını anabilir.
+  const adSayilari = new Set(ayirt.flatMap((a) => a.match(/\d+(?:[.,]\d+)?/g) ?? []).map((n) => String(Number(n.replace(',', '.')))));
+  const rakam = ortak(x.rakamlar, y.rakamlar).filter((r) => !adSayilari.has(r));
   if (rakam.length) return `${ayirt.join(', ')} + ${rakam.join(', ')}`;
   const kelime = ortak(x.kelimeler, y.kelimeler);
   if (kelime.length >= 2) return `${ayirt.join(', ')} + ${kelime.join(', ')}`;
