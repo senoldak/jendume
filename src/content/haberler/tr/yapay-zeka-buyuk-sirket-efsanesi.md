@@ -2,6 +2,7 @@
 date: 2026-12-11T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "ai-use-in-eu-enterprises-55-0-among-the-largest-size-class-17-0-among-the"
 uretim: yazi-isleri
 title: "AB'de yapay zekâ kullanan işletme payı büyük sınıfta %55,0, küçük sınıfta %17,0"
 description: "Eurostat verisinde üç büyüklük sınıfında da pay iki yılda yükseldi; en büyük sınıfın bile yarısına yakını kullanmıyor ve listelenen ülkeler arasında aynı sınıftaki fark, sınıflar arası farkla aynı mertebede."

@@ -2,6 +2,7 @@
 date: 2026-12-22T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "the-old-age-dependency-ratio-rose-from-10-9-to-15-4-over-2000-2023-the-numerator"
 uretim: yazi-isleri
 title: "Yaşlı bağımlılık oranı 2000–2023 arasında %10,9'dan %15,4'e çıktı; pay büyüdü, payda da büyüdü"
 description: "Dünyada 65 yaş ve üstü nüfus %91,1, çalışma çağı nüfusu %35,4 arttı; Japonya, Almanya ve İtalya'da ise çalışma çağı nüfusu azaldı."

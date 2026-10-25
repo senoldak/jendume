@@ -2,6 +2,7 @@
 date: 2026-12-01T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-the-eu-in-2025-38-6-of-solar-photovoltaic-electricity-was-generated-in-summer"
 uretim: yazi-isleri
 title: "AB'de 2025 yılında fotovoltaik güneş elektriğinin %38,6'sı yaz aylarında, %10,8'i kış aylarında üretildi"
 description: "Haziran–Ağustos payı Finlandiya'da %50,3, İspanya'da %36,1. Yıllık üretim 2019–2025 arasında 3,02 katına çıktı; aylara dağılımın biçimi büyük ölçüde aynı kaldı."

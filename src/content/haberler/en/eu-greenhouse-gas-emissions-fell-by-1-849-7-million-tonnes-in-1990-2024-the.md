@@ -2,6 +2,7 @@
 date: 2026-10-30T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "ab-sera-gazi-bilesenleri"
 uretim: yazi-isleri
 title: "EU greenhouse gas emissions fell by 1,849.7 million tonnes in 1990–2024; the transport item rose"
 description: "Eurostat data show that energy industries account for 43.2% of the total fall, while the share of transport in total emissions rose from 13.9% to 26.7%."

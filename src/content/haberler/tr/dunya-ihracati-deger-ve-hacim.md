@@ -2,6 +2,7 @@
 date: 2026-11-17T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "world-exports-rose-338-7-in-dollar-value-and-144-0-in-volume-over-2000-2025"
 uretim: yazi-isleri
 title: "Dünya ihracatının dolar değeri 2000–2025 arasında %338,7, hacmi %144,0 arttı"
 description: "Aynı serinin iki ölçüsü yıllar içinde birkaç kez ayrıştı: 2023 yılında dolar değeri %1,2 düşerken hacim %0,8 arttı."

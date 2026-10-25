@@ -2,6 +2,7 @@
 date: 2026-12-25T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "primary-enrolment-can-top-one-hundred-per-cent-in-2017-the-world-s-gross-rate"
 uretim: yazi-isleri
 title: "İlkokul kayıt oranı yüzü aşabiliyor: 2017 yılında dünyada brüt oran %101,8, net oran %89,3"
 description: "Aynı okullaşma verisinin iki ölçüsü arasındaki fark ilkokulda dünya genelinde 12,5 puan; ortaöğretimde Belçika'da 63,8 puana çıkıyor."

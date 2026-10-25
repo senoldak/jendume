@@ -2,6 +2,7 @@
 date: 2026-11-17T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "dunya-ihracati-deger-ve-hacim"
 uretim: yazi-isleri
 title: "World exports rose 338.7% in dollar value and 144.0% in volume over 2000–2025"
 description: "The two measures of the same series moved apart several times: in 2023, the dollar value fell by 1.2%; the volume rose by 0.8%."

@@ -2,6 +2,7 @@
 date: 2026-11-13T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-internet-use-the-ratio-between-the-highest-and-lowest-region-fell-from-34-2"
 uretim: yazi-isleri
 title: "İnternet kullanımında en yüksek ve en düşük bölge arasındaki oran 34,2 kattan 2,7 kata indi"
 description: "Aynı iki bölge arasındaki puan farkı 2005–2025 arasında 6,4 puan azaldı; oran ile fark iki ayrı hikâye anlatıyor."

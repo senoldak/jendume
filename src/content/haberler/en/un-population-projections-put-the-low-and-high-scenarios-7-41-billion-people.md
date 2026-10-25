@@ -2,6 +2,7 @@
 date: 2026-12-29T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "nufus-projeksiyon-yelpazesi"
 uretim: yazi-isleri
 title: "UN population projections put the low and high scenarios 7.41 billion people apart in 2100"
 description: "In the medium scenario world population is 10.18 billion in 2100; the low scenario shows 6.99 billion and the high scenario 14.40 billion. The same gap was 1.45 billion in 2050."

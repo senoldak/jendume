@@ -2,6 +2,7 @@
 date: 2026-10-30T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "eu-greenhouse-gas-emissions-fell-by-1-849-7-million-tonnes-in-1990-2024-the"
 uretim: yazi-isleri
 title: "AB'nin sera gazı emisyonu 1990–2024 arasında 1.849,7 milyon ton azaldı, ulaştırma kalemi arttı"
 description: "Eurostat verisine göre enerji endüstrilerindeki azalış toplam düşüşün %43,2'sini oluşturdu; ulaştırmanın toplam emisyondaki payı %13,9'dan %26,7'ye çıktı."

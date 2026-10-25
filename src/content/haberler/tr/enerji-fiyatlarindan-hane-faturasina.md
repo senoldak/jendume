@@ -2,6 +2,7 @@
 date: 2026-12-04T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-2020-2024-eu-household-energy-prices-peaked-in-october-2022-two-months-after"
 uretim: yazi-isleri
 title: "2020–2024 arasında AB hane enerji fiyatları, dünya endeksinden iki ay sonra, Ekim 2022'de zirve yaptı"
 description: "Aralık 2020'den Ağustos 2022'ye dünya enerji endeksi %217,6, AB hane enerji endeksi %55,8 yükseldi; hane endeksi Ekim 2022'de, Aralık 2020'ye göre %67,5 artışla pencerenin en yüksek düzeyine çıktı."

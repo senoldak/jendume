@@ -2,6 +2,7 @@
 date: 2026-12-11T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "yapay-zeka-buyuk-sirket-efsanesi"
 uretim: yazi-isleri
 title: "AI use in EU enterprises: 55.0% among the largest size class, 17.0% among the smallest"
 description: "In the Eurostat data the share rose in all three size classes in two years; nearly half of even the largest class does not use AI, and among the countries listed the gap within one size class is of the same order as the gap between classes."

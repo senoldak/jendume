@@ -2,6 +2,7 @@
 date: 2026-12-18T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "china-s-and-india-s-shares-of-world-journal-articles-rose-over-2000-2023-the-us"
 uretim: yazi-isleri
 title: "Makale toplamında Çin ve Hindistan'ın payı 2000–2023 arasında arttı, ABD'nin ve Japonya'nın payı azaldı"
 description: "Dünya Bankası'nın Ulusal Bilim Vakfı verisinden aktardığı seride toplam makale sayısı %205,5 arttı; ülkelerin payları ise çok farklı yönlerde hareket etti."

@@ -2,6 +2,7 @@
 date: 2026-11-10T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "the-gap-between-the-low-and-high-ends-of-life-expectancy-narrowed-from-26-9-to"
 uretim: yazi-isleri
 title: "Yaşam beklentisinde alt ve üst uçlar arasındaki fark 2000–2023 arasında 26,9 yıldan 19,3 yıla indi"
 description: "Ortanca ülkede doğumda yaşam beklentisi 70,5 yıldan 74,6 yıla çıktı; en düşük onda birin sınırı ise 51,4 yıldan 63,7 yıla yükseldi."

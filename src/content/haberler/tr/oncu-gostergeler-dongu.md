@@ -2,6 +2,7 @@
 date: 2026-11-24T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-september-2026-the-oecd-leading-indicator-is-rising-for-the-g7-total-and"
 uretim: yazi-isleri
 title: "OECD'nin öncü göstergesi Eylül 2026'da G7 toplamında yükseliyor, Asya'nın beş büyük ekonomisinin toplam serisinde geriliyor"
 description: "Seçilen on iki ekonominin onunda gösterge bir yılda yükseldi; Türkiye'nin serisi iki gerileme döneminden sonra yeniden yükseldi."

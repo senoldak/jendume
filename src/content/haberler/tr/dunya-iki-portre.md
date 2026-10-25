@@ -2,6 +2,7 @@
 date: 2026-12-15T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "the-world-in-two-portraits-life-expectancy-from-67-65-to-73-33-years-under-five"
 uretim: yazi-isleri
 title: "Dünya iki portrede: yaşam beklentisi 67,65 yıldan 73,33 yıla, beş yaş altı ölümler bin doğumda 76,7'den 38,3'e"
 description: "Dünya Bankası'nın aynı ölçütlerle verdiği iki portre: altı payın hepsi yükseldi, ama artışın hızı ölçütten ölçüte çok değişiyor; Türkiye'nin değerleri ayrıca yan yana."

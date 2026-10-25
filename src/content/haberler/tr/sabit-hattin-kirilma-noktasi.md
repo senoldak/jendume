@@ -2,6 +2,7 @@
 date: 2026-10-27T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "world-fixed-telephone-subscriptions-peaked-at-19-2-per-100-people-then-fell-to"
 uretim: yazi-isleri
 title: "Sabit telefon aboneliği dünyada her 100 kişide 19,2 ile zirveye çıktı, sonra 10,2'ye indi (2006–2024)"
 description: "Cep telefonu aboneliği aynı dönemde her 100 kişide 41,7'den 110,4'e yükseldi; sabit hattın zirve yılı bölgeden bölgeye ve Türkiye'de farklı."

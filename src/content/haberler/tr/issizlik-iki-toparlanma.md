@@ -2,6 +2,7 @@
 date: 2026-11-06T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-september-2017-unemployment-regained-its-level-of-april-2008-in-december-2021"
 uretim: yazi-isleri
 title: "OECD'de işsizlik, Nisan 2008 düzeyine Eylül 2017'de, Şubat 2020 düzeyine Aralık 2021'de döndü"
 description: "İşsizlik oranı ilk dönemde 2,9 puan artıp zirveden sonra yıllarca yüksek kaldı; ikinci dönemde 3,6 puan artıp iki yıl içinde başlangıç düzeyinin altına indi."

@@ -2,6 +2,7 @@
 date: 2026-12-01T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "gunes-elektriginin-mevsimleri"
 uretim: yazi-isleri
 title: "In the EU in 2025, 38.6% of solar photovoltaic electricity was generated in summer and 10.8% in winter"
 description: "The June–August share is 50.3% in Finland and 36.1% in Spain. Annual output rose to 3.02 times its starting level over 2019–2025, while the shape of the year stayed largely the same."

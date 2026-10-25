@@ -2,6 +2,7 @@
 date: 2026-12-04T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "enerji-fiyatlarindan-hane-faturasina"
 uretim: yazi-isleri
 title: "In 2020–2024, EU household energy prices peaked in October 2022, two months after the world index"
 description: "From December 2020 to August 2022 the world energy index rose 217.6% and the EU household energy index 55.8%; the household index reached the window's highest level in October 2022, 67.5% above December 2020."

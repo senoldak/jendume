@@ -2,6 +2,7 @@
 date: 2026-11-20T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "dijital-basamaklar"
 uretim: yazi-isleri
 title: "In 2025, household internet is higher in Türkiye than in the EU total; online shopping and tax filing are lower"
 description: "In Eurostat's survey for the year 2025, online contact with public authorities is higher in Türkiye than in the EU total; the gap changes sign from step to step."

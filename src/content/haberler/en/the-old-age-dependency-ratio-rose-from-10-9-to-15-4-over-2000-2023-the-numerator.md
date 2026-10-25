@@ -2,6 +2,7 @@
 date: 2026-12-22T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "yasli-bagimlilik-pay-mi-payda-mi"
 uretim: yazi-isleri
 title: "The old-age dependency ratio rose from 10.9% to 15.4% over 2000–2023; the numerator grew, and so did the denominator"
 description: "Worldwide, the population aged 65 and over rose by 91.1% and the working-age population by 35.4%; in Japan, Germany and Italy the working-age population fell."

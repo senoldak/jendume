@@ -2,6 +2,7 @@
 date: 2026-12-08T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "according-to-ilo-estimates-agriculture-s-share-of-world-employment-fell-17-1"
 uretim: yazi-isleri
 title: "ILO kestirimlerine göre tarımın dünya istihdamındaki payı 1991–2025 arasında 17,1 puan düştü"
 description: "Hizmetlerin payı aynı dönemde 15,2 puan, sanayinin payı 1,9 puan arttı; tarım payındaki düşüş 2010–2015 arasında 4,02 puan, 2015–2020 arasında 1,35 puan oldu."

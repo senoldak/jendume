@@ -2,6 +2,7 @@
 date: 2026-12-15T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "dunya-iki-portre"
 uretim: yazi-isleri
 title: "The world in two portraits: life expectancy from 67.65 to 73.33 years, under-five deaths per thousand births from 76.7 to 38.3"
 description: "Two portraits of the world on the same World Bank measures: all six shares rose, but the pace differs widely from measure to measure; Türkiye's values are set alongside."

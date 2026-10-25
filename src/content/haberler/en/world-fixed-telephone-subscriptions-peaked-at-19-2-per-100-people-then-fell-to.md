@@ -2,6 +2,7 @@
 date: 2026-10-27T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "sabit-hattin-kirilma-noktasi"
 uretim: yazi-isleri
 title: "World fixed telephone subscriptions peaked at 19.2 per 100 people, then fell to 10.2 (2006–2024)"
 description: "Mobile subscriptions rose from 41.7 to 110.4 per 100 people over the same period; the year of the fixed-line peak differs by region and in Türkiye."

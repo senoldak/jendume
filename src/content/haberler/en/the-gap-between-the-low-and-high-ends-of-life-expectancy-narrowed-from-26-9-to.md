@@ -2,6 +2,7 @@
 date: 2026-11-10T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "yasam-beklentisinin-uclari"
 uretim: yazi-isleri
 title: "The gap between the low and high ends of life expectancy narrowed from 26.9 to 19.3 years over 2000–2023"
 description: "Life expectancy at birth in the median country rose from 70.5 to 74.6 years, while the lower-tenth boundary rose from 51.4 to 63.7 years."

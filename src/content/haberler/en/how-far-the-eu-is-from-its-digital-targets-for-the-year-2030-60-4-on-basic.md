@@ -2,6 +2,7 @@
 date: 2026-11-27T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "dijital-on-yil-hedef-mesafesi"
 uretim: yazi-isleri
 title: "How far the EU is from its digital targets for the year 2030: 60.4% on basic skills, 80% target"
 description: "ICT specialist employment is 52.3% of its target; 52.7% of enterprises use paid cloud services and 20.0% use AI. Each of the four series is moving at a different speed."

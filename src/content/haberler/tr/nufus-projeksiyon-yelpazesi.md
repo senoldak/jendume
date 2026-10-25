@@ -2,6 +2,7 @@
 date: 2026-12-29T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "un-population-projections-put-the-low-and-high-scenarios-7-41-billion-people"
 uretim: yazi-isleri
 title: "BM nüfus projeksiyonunda 2100 yılı için düşük ve yüksek senaryo arasında 7,41 milyar kişilik fark var"
 description: "Orta senaryoda dünya nüfusu 2100 yılında 10,18 milyar; düşük senaryo 6,99 milyar, yüksek senaryo 14,40 milyar gösteriyor. Aynı fark 2050 yılında 1,45 milyar."

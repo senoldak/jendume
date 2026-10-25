@@ -2,6 +2,7 @@
 date: 2026-12-08T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "istihdamin-sektor-kaymasi"
 uretim: yazi-isleri
 title: "According to ILO estimates, agriculture's share of world employment fell 17.1 points in 1991–2025"
 description: "The share of services rose 15.2 points and that of industry 1.9 points over the same period; the fall in agriculture's share was 4.02 points in 2010–2015 and 1.35 points in 2015–2020."

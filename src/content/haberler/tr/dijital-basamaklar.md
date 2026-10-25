@@ -2,6 +2,7 @@
 date: 2026-11-20T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-2025-household-internet-is-higher-in-turkiye-than-in-the-eu-total-online"
 uretim: yazi-isleri
 title: "2025'te hane interneti Türkiye'de AB toplamından yüksek, çevrimiçi alışveriş ve vergi beyanı düşük"
 description: "Eurostat'ın 2025 yılı anketinde kamu kurumlarıyla çevrimiçi etkileşim Türkiye'de AB toplamından yüksek; fark basamağa göre işaret değiştiriyor."

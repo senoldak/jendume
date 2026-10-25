@@ -2,6 +2,7 @@
 date: 2026-11-03T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "in-germany-gdp-rose-27-4-and-emissions-fell-33-5-in-the-world-total-both-rose"
 uretim: yazi-isleri
 title: "Almanya'da GSYH %27,4 arttı, emisyon %33,5 azaldı; dünya toplamında ikisi de arttı"
 description: "Dünya Bankası verisine göre 2000–2024 arasında Almanya'da ekonomi büyürken emisyon azaldı; seçtiğimiz ülkelerde sonuç değişiyor ve dünya toplamında emisyon %54,2 arttı."

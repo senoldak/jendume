@@ -2,6 +2,7 @@
 date: 2026-11-24T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "oncu-gostergeler-dongu"
 uretim: yazi-isleri
 title: "In September 2026, the OECD leading indicator is rising for the G7 total and falling for the total series of five major Asian economies"
 description: "In ten of twelve selected economies the indicator rose over a year; Türkiye's series went through two falling periods and then rose again."

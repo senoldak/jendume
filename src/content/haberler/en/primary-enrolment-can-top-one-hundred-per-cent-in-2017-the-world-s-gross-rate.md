@@ -2,6 +2,7 @@
 date: 2026-12-25T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "okullasma-brut-ve-net"
 uretim: yazi-isleri
 title: "Primary enrolment can top one hundred per cent: in 2017 the world's gross rate was 101.8% and the net rate 89.3%"
 description: "The two measures of the same school-enrolment data differ by 12.5 points in primary school worldwide; at secondary level the gap reaches 63.8 points in Belgium."

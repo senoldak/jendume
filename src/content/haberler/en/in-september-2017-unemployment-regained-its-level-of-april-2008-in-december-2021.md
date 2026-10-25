@@ -2,6 +2,7 @@
 date: 2026-11-06T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "issizlik-iki-toparlanma"
 uretim: yazi-isleri
 title: "In September 2017, unemployment regained its level of April 2008; in December 2021, its level of February 2020"
 description: "The unemployment rate rose 2.9 points in the first episode and stayed high for years after the peak; in the second it rose 3.6 points and fell below its starting level within two years."

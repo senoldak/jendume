@@ -76,13 +76,20 @@ const gunSlug = (simdi) =>
     .replace(/ç/g, 'c')
     .replace(/\s+/g, '-');
 
+const gunSlugEn = (simdi) =>
+  new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long' }).format(simdi).toLowerCase().replace(/\s+/g, '-');
+
+/** Bülten dosya adı: TR "ogle-bulteni-14-ekim", EN "afternoon-bulletin-14-october" (iki dosya esId ile bağlanır). */
+export const bultenSlug = (donem, dil, simdi) =>
+  dil === 'tr' ? `${donem}-bulteni-${gunSlug(simdi)}` : `${DONEMLER[donem].en.toLowerCase()}-bulletin-${gunSlugEn(simdi)}`;
+
 const tirnak = (s) => JSON.stringify(s);
 const mdMetin = (s) => s.replace(/([\[\]])/g, '\\$1');
 
-// Bir dil için bülten yazısı (frontmatter + gövde).
-export function bultenMetni({ donem, dil, simdi, haberler }) {
+// Bir dil için bülten yazısı (frontmatter + gövde). esId: öteki dildeki bültenin dosya adı (src/lib/es-kimlik.mjs).
+export function bultenMetni({ donem, dil, simdi, haberler, esId }) {
   const ad = DONEMLER[donem][dil];
-  const slug = `${donem}-bulteni-${gunSlug(simdi)}`;
+  const slug = bultenSlug(donem, dil, simdi);
   const basliklar = haberler.slice(0, 3).map((h) => h.title);
   const giris =
     dil === 'tr'
@@ -97,7 +104,7 @@ title: ${tirnak(baslik)}
 description: ${tirnak(giris)}
 category: ${KATEGORI}
 date: ${simdi.toISOString()}
-featured: false
+${esId ? `esId: ${tirnak(esId)}\n` : ''}featured: false
 breaking: false
 draft: false
 ---
@@ -181,23 +188,27 @@ export async function calistir({ simdi = new Date(), donem = donemSec(simdi), ko
     console.log('Bülten için yeterli yeni haber yok.');
     return null;
   }
-  const { slug } = bultenMetni({ donem, dil: 'tr', simdi, haberler: trHaberler });
+  const slug = bultenSlug(donem, 'tr', simdi);
+  const adlar = { tr: slug, en: bultenSlug(donem, 'en', simdi) };
   for (const dil of ['tr', 'en']) {
-    if (await var_(path.join(kok, 'src/content/haberler', dil, `${slug}.md`))) {
-      console.log(`${slug} zaten var, atlandı.`);
+    if (await var_(path.join(kok, 'src/content/haberler', dil, `${adlar[dil]}.md`))) {
+      console.log(`${adlar[dil]} zaten var, atlandı.`);
       return null;
     }
   }
   // TR bülteni TR haberlerle; EN bülteni yalnız EN karşılığı olan haberlerle (EN dosyasının kendi başlığıyla) yazılır.
   const enHaberler = en.haberler.filter((h) => enSlug.has(h.anahtar) && trHaberler.some((x) => x.anahtar === h.anahtar));
+  // EN bülteni yazılmazsa TR dosyası olmayan bir dosyaya bağlanmaz.
+  const enYazilir = enHaberler.length >= EN_AZ;
   for (const [dil, haberler] of [
     ['tr', trHaberler],
     ['en', enHaberler],
   ]) {
     if (haberler.length < EN_AZ) continue;
-    const { md } = bultenMetni({ donem, dil, simdi, haberler });
+    const esId = dil === 'en' ? adlar.tr : enYazilir ? adlar.en : undefined;
+    const { md } = bultenMetni({ donem, dil, simdi, haberler, esId });
     await mkdir(path.join(kok, 'src/content/haberler', dil), { recursive: true });
-    await writeFile(path.join(kok, 'src/content/haberler', dil, `${slug}.md`), md, 'utf8');
+    await writeFile(path.join(kok, 'src/content/haberler', dil, `${adlar[dil]}.md`), md, 'utf8');
   }
   console.log(`Yazıldı: ${slug} (${trHaberler.length} haber)`);
   return slug;

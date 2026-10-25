@@ -2,6 +2,7 @@
 date: 2026-11-27T09:00:00+03:00
 yaziTuru: analiz
 lang: tr
+esId: "how-far-the-eu-is-from-its-digital-targets-for-the-year-2030-60-4-on-basic"
 uretim: yazi-isleri
 title: "AB'nin 2030 yılı dijital hedeflerine mesafe: temel beceride %60,4, hedef %80"
 description: "BİT uzmanı sayısı hedefin %52,3'ünde; bulut hizmeti kullanan işletmelerin payı %52,7, yapay zekâ kullananların payı %20,0. Dört serinin her biri farklı bir hızla ilerliyor."

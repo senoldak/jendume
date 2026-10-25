@@ -2,6 +2,7 @@
 date: 2026-11-13T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "internetin-dunya-bolgeleri"
 uretim: yazi-isleri
 title: "In internet use, the ratio between the highest and lowest region fell from 34.2 times to 2.7"
 description: "Over 2005–2025 the gap in percentage points between the same two regions fell by 6.4 points; ratio and difference tell two different stories."

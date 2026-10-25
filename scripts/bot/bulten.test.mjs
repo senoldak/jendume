@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { calistir, donemSec, onBilgi, bultenMetni, bultenBasligi, DONEMLER } from './bulten.mjs';
+import { calistir, donemSec, onBilgi, bultenMetni, bultenBasligi, bultenSlug, DONEMLER } from './bulten.mjs';
 
 // bulten.mjs'in console.log satırları (CI günlüğü için) testte susturulur: alt süreçte stdout'a düşen düz metin
 // node test koşucusunun v8 akışına karışır; "Bülten…" gibi 3. baytı ≥0x80 olan satır bir mesajın hemen ardından
@@ -58,13 +58,32 @@ test('yeterli haber varsa TR ve EN bülten yazar', async () => {
   const slug = await calistir({ simdi, donem: 'ogle', kok: k });
   assert.match(slug, /^ogle-bulteni-14-ekim$/);
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
-  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', 'afternoon-bulletin-14-october.md'), 'utf8');
   assert.match(tr, /lang: tr/);
   assert.match(tr, /category: gunluk-bulten/);
   assert.match(tr, /title: "Yapay Zekâ Öğle Bülteni — 14 Ekim 2026"/);
   assert.match(en, /lang: en/);
   assert.match(en, /title: "AI Afternoon Bulletin — 14 October 2026"/);
   assert.match(en, /\(\/en\/news\/a-haber\/\)/);
+  // İki dosya birbirinin adını esId olarak taşır: EN adresi İngilizce, TR karşılığına bağlı.
+  assert.match(tr, /^esId: "afternoon-bulletin-14-october"$/m);
+  assert.match(en, /^esId: "ogle-bulteni-14-ekim"$/m);
+});
+
+test('EN bülteni yazılmazsa TR bülteni esId taşımaz', async () => {
+  const k = await kok();
+  await haber(k, 'tr', 'a-haber', { date: '2026-10-14T07:30:00.000Z' });
+  await haber(k, 'tr', 'b-haber', { date: '2026-10-14T06:30:00.000Z' });
+  const slug = await calistir({ simdi, donem: 'ogle', kok: k });
+  const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
+  assert.doesNotMatch(tr, /^esId:/m);
+  assert.equal(await var_(path.join(k, 'src/content/haberler/en', 'afternoon-bulletin-14-october.md')), false);
+});
+
+test('bultenSlug: EN adı İngilizce dönem ve tarihten', () => {
+  assert.equal(bultenSlug('sabah', 'en', simdi), 'morning-bulletin-14-october');
+  assert.equal(bultenSlug('aksam', 'en', new Date('2026-10-25T21:00:00+03:00')), 'evening-bulletin-25-october');
+  assert.equal(bultenSlug('aksam', 'tr', new Date('2026-10-25T21:00:00+03:00')), 'aksam-bulteni-25-ekim');
 });
 
 test('bir haberden az ise bülten yazılmaz', async () => {
@@ -85,7 +104,7 @@ test('standart süzgeci: kırmızı çıkan haber bültene girmez, yalnız o mad
   await haber(k, 'en', 'c-haber', { date: t, title: 'Suspect arrested John Smith' });
   const slug = await calistir({ simdi, donem: 'ogle', kok: k });
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
-  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', 'afternoon-bulletin-14-october.md'), 'utf8');
   assert.match(tr, /a-haber başlığı/);
   assert.doesNotMatch(tr + en, /c-haber|tutuklandı|arrested/);
 });
@@ -169,7 +188,7 @@ test('ileri tarihli haber bültene girmez; EN karşılığı ileri tarihliyse EN
   const slug = await calistir({ simdi, donem: 'ogle', kok: k });
   assert.ok(slug);
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
-  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', 'afternoon-bulletin-14-october.md'), 'utf8');
   assert.match(tr, /\/tr\/haber\/c-haber\//);
   assert.doesNotMatch(tr, /ileri-haber/);
   assert.match(en, /\/en\/news\/a-haber\//);
@@ -197,7 +216,7 @@ test('esId ile bağlı yeni haber: EN bülten maddesi EN adresine bağlanır, TR
   await haber(k, 'en', 'eski-haber', { date: '2026-10-14T06:30:00.000Z' });
   const slug = await calistir({ simdi, donem: 'ogle', kok: k });
   const tr = await readFile(path.join(k, 'src/content/haberler/tr', `${slug}.md`), 'utf8');
-  const en = await readFile(path.join(k, 'src/content/haberler/en', `${slug}.md`), 'utf8');
+  const en = await readFile(path.join(k, 'src/content/haberler/en', 'afternoon-bulletin-14-october.md'), 'utf8');
   assert.match(tr, /\(\/tr\/haber\/yeni-haber\/\)/);
   assert.match(en, /\(\/en\/news\/new-story\/\)/);
   assert.match(en, /\(\/en\/news\/eski-haber\/\)/);

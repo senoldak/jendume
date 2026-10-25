@@ -2,6 +2,7 @@
 date: 2026-11-03T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "buyume-ve-emisyon-ayrismasi"
 uretim: yazi-isleri
 title: "In Germany GDP rose 27.4% and emissions fell 33.5%; in the world total both rose"
 description: "World Bank data show that in Germany emissions fell in 2000–2024 while the economy grew; the result varies across the countries we chose, and in the world total emissions rose by 54.2%."

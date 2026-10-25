@@ -2,6 +2,7 @@
 date: 2026-12-18T09:00:00+03:00
 yaziTuru: analiz
 lang: en
+esId: "bilimsel-yayin-sira-degisimi"
 uretim: yazi-isleri
 title: "China's and India's shares of world journal articles rose over 2000–2023; the US and Japan's fell"
 description: "In a series the World Bank draws from the US National Science Foundation, the world total of articles rose by 205.5%, while the shares of countries moved in very different directions."
