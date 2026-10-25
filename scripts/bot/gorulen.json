@@ -3112,7 +3112,7 @@
     "kaec085:29ec83c8059701be": "2026-10-25T05:50:59.331Z",
     "kaec085:429c1e5b8eb3b975": "2026-10-25T05:50:59.331Z",
     "kaec085:99aa209e629c36fb": "2026-10-25T05:50:59.331Z",
-    "kfdedb4:a9a67fad7742cc26": "2026-10-25T05:50:59.331Z",
+    "kfdedb4:a9a67fad7742cc26": "2026-10-25T09:50:58.211Z",
     "kea595f:bd61d3412ea1b981": "2026-10-25T07:50:58.565Z",
     "k12b4a6:db2766e992182ad0": "2026-10-25T07:50:58.565Z",
     "k2d427e:2804fda7c64f82b4": "2026-10-25T07:50:58.565Z",
@@ -3124,7 +3124,23 @@
     "k09feb3:9adeee9f8784cd89": "2026-10-25T07:50:58.565Z",
     "k09feb3:0e4ced59b1ba1388": "2026-10-25T07:50:58.565Z",
     "k38ef42:7ce4267ca23ac189": "2026-10-25T07:50:58.565Z",
-    "k38ef42:c6e5592089721f12": "2026-10-25T07:50:58.565Z"
+    "k38ef42:c6e5592089721f12": "2026-10-25T07:50:58.565Z",
+    "k09feb3:aa8190a38e4c83ef": "2026-10-25T09:50:58.211Z",
+    "k38ef42:dc3b3e32f6342988": "2026-10-25T09:50:58.211Z",
+    "k78637d:c53a90baa0a42de1": "2026-10-25T09:50:58.211Z",
+    "k38ef42:c104214682300d5a": "2026-10-25T09:50:58.211Z",
+    "k38ef42:32d8e3dd6ad0c186": "2026-10-25T09:50:58.211Z",
+    "k38ef42:a725b8900048ffeb": "2026-10-25T09:50:58.211Z",
+    "ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z",
+    "k38ef42:aeb76bb4a62032e6": "2026-10-25T09:50:58.211Z",
+    "k12b4a6:03e416d7c92037ce": "2026-10-25T09:50:58.211Z",
+    "k38ef42:605f6992740cd1bd": "2026-10-25T09:50:58.211Z",
+    "k38ef42:500576bc10a157ca": "2026-10-25T09:50:58.211Z",
+    "k09feb3:26463b2b52d208e6": "2026-10-25T09:50:58.211Z",
+    "k09feb3:3427a80ae9190a08": "2026-10-25T09:50:58.211Z",
+    "k78637d:fe5d6a6e3a8ff02d": "2026-10-25T09:50:58.211Z",
+    "k12b4a6:d331755eaa2f7807": "2026-10-25T09:50:58.211Z",
+    "ke6dccd:439c86bed35cea46": "2026-10-25T09:50:58.211Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -7312,7 +7328,37 @@
     "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:950570732611b2b7": "2026-10-25T07:50:58.565Z",
     "haber:anaokulu-ogretmenligi-basvurusunda-yapay-zeka-mulakati-soku|k38ef42:ecda282b0a2cb791": "2026-10-25T07:50:58.565Z",
     "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k38ef42:ecda282b0a2cb791": "2026-10-25T07:50:58.565Z",
-    "haber:anthropic-claude-modeli-yazilim-kodlarini-otomatik-olarak-dogruladi|k38ef42:ecda282b0a2cb791": "2026-10-25T07:50:58.565Z"
+    "haber:anthropic-claude-modeli-yazilim-kodlarini-otomatik-olarak-dogruladi|k38ef42:ecda282b0a2cb791": "2026-10-25T07:50:58.565Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|k09feb3:3427a80ae9190a08": "2026-10-25T09:50:58.211Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k09feb3:3427a80ae9190a08": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-acik-kaynakli-sandbox-runtime-araci-ile-yapay-zeka-ajanlarini-guvene-a|k09feb3:3427a80ae9190a08": "2026-10-25T09:50:58.211Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:dc3b3e32f6342988": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k78637d:c53a90baa0a42de1": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-claude-modeli-yazilim-kodlarini-otomatik-olarak-dogruladi|k78637d:c53a90baa0a42de1": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-gelirini-16-8-milyar-dolara-yukselterek-yuzde-45-buyume-kaydetti|k78637d:c53a90baa0a42de1": "2026-10-25T09:50:58.211Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|k09feb3:26463b2b52d208e6": "2026-10-25T09:50:58.211Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k09feb3:26463b2b52d208e6": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-acik-kaynakli-sandbox-runtime-araci-ile-yapay-zeka-ajanlarini-guvene-a|k09feb3:26463b2b52d208e6": "2026-10-25T09:50:58.211Z",
+    "haber:town-yapay-zeka-asistanlarinin-ekip-olarak-calismasi-icin-108-milyon-dolar-yatir|ke6dccd:439c86bed35cea46": "2026-10-25T09:50:58.211Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:32d8e3dd6ad0c186": "2026-10-25T09:50:58.211Z",
+    "haber:moonshot-ai-kimi-k3-1-pro-modeliyle-yapay-zeka-pazarinda-zirveyi-zorluyor|k38ef42:a725b8900048ffeb": "2026-10-25T09:50:58.211Z",
+    "haber:satis-ekiplerinin-veri-toplama-yukunu-otonom-yapay-zeka-ajanlari-ustleniyor|k38ef42:a725b8900048ffeb": "2026-10-25T09:50:58.211Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-acik-kaynakli-sandbox-runtime-araci-ile-yapay-zeka-ajanlarini-guvene-a|ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z",
+    "haber:andrew-ng-yapay-zeka-kiyamet-senaryolarinin-rekabeti-engellemek-icin-uyduruldugu|k38ef42:aeb76bb4a62032e6": "2026-10-25T09:50:58.211Z",
+    "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|k38ef42:aeb76bb4a62032e6": "2026-10-25T09:50:58.211Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|k38ef42:aeb76bb4a62032e6": "2026-10-25T09:50:58.211Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:605f6992740cd1bd": "2026-10-25T09:50:58.211Z",
+    "haber:doubleai-nvidia-ve-dell-in-katildigi-turda-200-milyon-dolar-yatirim-aldi|k78637d:fe5d6a6e3a8ff02d": "2026-10-25T09:50:58.211Z",
+    "haber:einride-yeni-otonom-kamyon-yaziliminda-nvidia-alpamayo-modelini-test-ediyor|k78637d:fe5d6a6e3a8ff02d": "2026-10-25T09:50:58.211Z",
+    "haber:meta-ohio-veri-merkezindeki-prometheus-projesini-1-milyon-gpu-ya-tasiyor|k78637d:fe5d6a6e3a8ff02d": "2026-10-25T09:50:58.211Z",
+    "k38ef42:32d8e3dd6ad0c186|k38ef42:dc3b3e32f6342988": "2026-10-25T09:50:58.211Z",
+    "k38ef42:605f6992740cd1bd|k38ef42:dc3b3e32f6342988": "2026-10-25T09:50:58.211Z",
+    "k38ef42:32d8e3dd6ad0c186|k38ef42:605f6992740cd1bd": "2026-10-25T09:50:58.211Z",
+    "k09feb3:26463b2b52d208e6|k09feb3:3427a80ae9190a08": "2026-10-25T09:50:58.211Z",
+    "k09feb3:3427a80ae9190a08|ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z",
+    "k09feb3:26463b2b52d208e6|ke6dccd:796c8be78ed29f9b": "2026-10-25T09:50:58.211Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -7448,91 +7494,6 @@
     "haber:openai-modeli-milyonlarca-web-sunucusunu-etkileyen-iki-kritik-php-acigini-ortaya|k3595c8:fb612106f6921ad6": "2026-10-24T13:51:01.006Z"
   },
   "puan": {
-    "k2d427e:eac3e344231c5845": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k12b4a6:affcc847f2aa336f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k031f42:484c0bdede0b6438": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "kd4ca61:a7e18ba185be97e8": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k107ce4:711efeb153879d2c": {
-      "puan": 82,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k12b4a6:f0436b1d66df2b64": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "ke82007:bc86b99ffcf1884d": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k74f74a:eb853d64e2575246": {
-      "puan": 78,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "kea595f:2f22a9ce593c25d6": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k38ef42:16a1dd01b93df24d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k12b4a6:43cfee074e5332ff": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k74f74a:bcd6e595c122b080": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k12b4a6:a602b833ac310494": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k38ef42:b24393ee9df7c4a8": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k74f74a:3013eb0c1b3844ea": {
-      "puan": 74,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k38ef42:4e6d76dee4efb2c4": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
-    "k39a0e6:154e6612138eb024": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-10-19T09:50:56.164Z"
-    },
     "k12b4a6:2670ca986a5b7f9d": {
       "puan": 0,
       "olcek": 100,
@@ -14957,13 +14918,84 @@
       "puan": 45,
       "olcek": 100,
       "zaman": "2026-10-25T07:50:58.565Z"
+    },
+    "k09feb3:3427a80ae9190a08": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:dc3b3e32f6342988": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k78637d:c53a90baa0a42de1": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k12b4a6:d331755eaa2f7807": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:c104214682300d5a": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k09feb3:26463b2b52d208e6": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "ke6dccd:439c86bed35cea46": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:32d8e3dd6ad0c186": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:a725b8900048ffeb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "ke6dccd:796c8be78ed29f9b": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:aeb76bb4a62032e6": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k12b4a6:03e416d7c92037ce": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:605f6992740cd1bd": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k78637d:fe5d6a6e3a8ff02d": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
+    },
+    "k38ef42:500576bc10a157ca": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T09:50:58.211Z"
     }
   },
   "yayinlanan": {
-    "palantir-nato-maven-yapay-zeka-sisteminin-uzaktan-kapatilamayacagini-acikladi": {
-      "zaman": "2026-10-22T07:51:00.585Z",
-      "basliklarSifreli": "v1.o7HJyUXhbUsYpP7I./djb/DxyGHJRs4uQzhwpioWSSyjKMJ+1Ud4qtS0RaD1BNBoeJfBU917W9nIuhW0u7QypKyiiPBtFGODmmZqM05+WEkZTa3Gy8u6XYfL9yA=="
-    },
     "irlanda-yapay-zeka-yarisinda-rekabeti-artirmak-icin-yeni-adimlar-atiyor": {
       "zaman": "2026-10-22T09:51:00.926Z",
       "basliklarSifreli": "v1.1X99PrWnsZtRH57G.bwwkSvqPvABNlGcjvGddyp6KxImpEI0w51i7vGZqMR/IAeFUqtzRZMzQZN5Ip7yuNj6oCjwOXMKa4eGT0/QQyS+B74hz7S9mREoyTqqAPRDDZi6kOLzTzJXTt/LSo2+zg8jU69Y="
@@ -15327,14 +15359,22 @@
     "pennsylvania-yapay-zeka-reklamlari-icin-acik-bildirim-sarti-getirdi": {
       "zaman": "2026-10-25T07:50:58.565Z",
       "basliklarSifreli": "v1.ZoKBulfSNwvYABt1.ejhvVXQapLM1jIO2julJRYGedLlTjFhr0J7MMXwzwHQQu4xLxu0h0GmwXmbfmhfsZoEWxo+c5bj7TObHlzpEO55MpS/V5imppLBEzI5GUFRmT48eeh1zfbxeJ0Xw6v3tlsFcN9beEws="
+    },
+    "nvidia-internet-gerektirmeyen-kompakt-yapay-zeka-modelini-duyurdu": {
+      "zaman": "2026-10-25T09:50:58.211Z",
+      "basliklarSifreli": "v1.6oXSU3kjenpiqguj.X/hFd6P1fnAwKdh9fFjGThYfA1HfYWe/EaWLxvlRipmLNqeUe3h4dLA0hPQWgJgKOSdzW5E/uwR7ROfaMlUfwwF6+eSZp0l88kPZ06ibUy7zWntSjj4lEF1OcGCd/vZswukF+mLR"
+    },
+    "town-yapay-zeka-asistani-gelistirmek-icin-108-milyon-dolar-yatirim-aldi": {
+      "zaman": "2026-10-25T09:50:58.211Z",
+      "basliklarSifreli": "v1.eDm54uQqE7/g8CGK.YpAvsFM764yx96yecukDHC926keu5TUueACCU7gtIr8ta1L25DLh/34bnRlIND66im8kZ+9GzpcAmkf9QFwd0V/jXDPdDIp0J//nCq2AGUaWxO84bt5YBFg0Fc/Q64iXgoM="
     }
   },
   "havuz": [
     {
-      "id": "kfdedb4:a9a67fad7742cc26",
-      "kategori": "bilim",
-      "havuzaGirdi": "2026-10-25T05:50:59.331Z",
-      "sifreli": "v1.QroQWnUhLLJrWUyk.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"
+      "id": "k09feb3:26463b2b52d208e6",
+      "kategori": "yapay-zeka",
+      "havuzaGirdi": "2026-10-25T09:50:58.211Z",
+      "sifreli": "v1.EhIpp5A3fSf5xPDb.+ndnAhr3zgbMTHZaNAkKHYCay2P+l7Zj1w/kx6G8Ra5vrERfOPm/1042W8C14KYjNnLGQxuUbvBkfWQgXRQLuC/ptd2t8PpxkLaEdmCvunU3B5iog3/WH9J095E36tQVw8sU/nK4k5NMnGWheS3Dp4W6Hn8/eJBcju1YwKQCEk53ZGHaQhTSD43aRbMm+qnsspga1BEO6FjV8aBwIDZU2FNxN4ZlpDmMaSuTlSY/4JeYuWa3PsDpkFtCe3m5eU4vXNc5t6fSmq5tr+ZsVh78uudPTXZ8N/KAIftdDVR5DpN1iRn8M6H+jxDNwEGZNUsOCOORc2c0UtqhPUdK8Vl6JkjTtNz+5Ey583DPsxq0pNc+hUkKkFlmmsVUhHrvQpK1XYmEYdydIH8rdmjUhw1yjPp8LNk+ogxrjWZ80MR7fIUs/wiLnxbd76pEpW9WueNSRVDPGvORzoPfEtxroYOV/8i0x9UvxfmHCDFmZKNpOYiPuDA26xqUE5BhYwxTCvp3iRUXP3EsEDky2QJ044H+3imVpm/xzWfnFhVptY0RbLo14xdql0ZwrmjpJIvAr3Z242nMTDy6renmHA7U1rFYvizMI5bbQOQMXN5WkT2IVijT6qEr61HB+szmWdbmyf98yMWSGohC2fmG1CMItqy7V+S8VI9bwAQxxfD0pAlNrkyd7qO3qoNvlXbBVd/Bv2QEJhYpBzVZn18xsA2JV3RkHhlYT1pR0DnwU2S2PlSTybCSFS2bs0CdIn1aNPVn43ev1TuW1lWG2/wsK4pekIUMYZsRfa82vWove0aUk5iaZx6l1tc3pI2RKzOkgyg3uwOOLd8OxA1ASf1314Cdz4pDWWscrTqXYeVCVadIIVkF/IOhabb7flyB+sCQA7pTaDHtxXNySsyFU5IVV+YwVZAqID3sslQBVNa9q+lTXPtRaIkmmum34wQjuMaJsKKTQI3Dt/SdHLfutTiUMSyyWM/U0FGpwXeoSghAzAX1TqQOUcgeq48AD6+0jHQ3d5lEvJ/7DS+axJz2A0N0l8VDGRL1WVqfZFI3Tp8AjuRl7vLMXxJQJ76XOF/i9SMYOfJjEYiTvjK/pbcVplST6kKQCD8hsB1LxNxnM6N42n6fI7MowcfPW9UpJkpBRYTP9qCI/9n8q3fZmfzKGuQ3rYVkaY0mGqCl6gCUEjvINuYCcyTMGa9wYHR1hk06j2FK4FFs+HHCYrLjZJrFtxvvh45qY/Pl7GgPCRt2naAshkhN2FeqPP7EVbBIXVM/ijM9blN1EWrp89FKcHcOUjd7BU9oWq2Wf8fdNhSQk3PRoAgJKilFn9tVOBE5HahS/aEzTs8EdI6Z47vrwFO3JP6UjYW+7Ve9i/ck08Y4gHX1OmSRKA6LMEhCfWILW0tkhEpUXZ5jRYUXUiWJsBk1ODP24bhDSmnwEQjXavyiLPTZgBGp0Pr5C0eQMiogdzG2ExVe5En0CV57C+96E+yjyt+nHJq3egjqSjAeB/q36yo1WOTdk2gAuohip3wcT0fM7R9B5/FKhiS3QdP5hJ46N5yS4HPs0QqKvFJyuszxKLiXPbN/TGT7F7PsG5uIYFoKhIaLtVTpv7aVUYdXYalVezJor8YZOTxmDA434Q46FT3UsfTktNJ6h30DGwz+qesddD4/bLfcUNlR0E0ixR36A8YefWg/XZTTWqPAc03MU4TukMt9gWICIVk0w0VhIRzUo2pVU7qfhgutckRljHKUAPXIa6L1apjYhfBvmx2djAfmibAcM15676DRzH7YeWpf8Gyj+fP8WJd8tW76yLNNWyLNShtsPvZk7r4W4aytuKYHaZmzqpYt32bPzABDV4KZS5bsxk/COmiII4hGaXgOdt2vVCVNjbiMA0pSh7dv++c6uLSH+b7jLWcGOF0FW+RMJN+sOnSKojbaXQ+bpLmxauaZa9zr37EFnHr11Kr9FbMayCST/Mi/T87RsqWCIIcC5qBypLLg22dubJROG9MFJHp5hAKab/5aAuqMdi1KXk25wixBUuL30rfa0wMdqLq6eHS42GEu2Ft3aRmrVqB+wcLwb/8suPeiRsqJeK/d52nNCgVvd5VUvdFgz7tbunRyQK1p8MpG9U9OuNMtG1ADLc2SQpbea+lBiQzuLgTaUVC5AZ8Cl/7Z8ayoPMk3+1wZ5+9kctvtgi5pjvUvULYz4Txo2jLaYRuCU2CFvt/UHUfbm4kByE90zNCYjTODfqoMcCtavD4muB3pDwySXQeYS2rb9qQWhmoDkhOnnbH5GlmE0GNyx0m/H7NzGEQEKKDp6VCE13DeTWAyeo/h3UnmuAfO8kp0gLiL47XFWAM7JhHYEgZ+iFgOIsIJJ4zFcS3YUQYMxJqj6M0v4YLp2sVipojIcgkUFR0a28tsarngqXHmxEDwN6AXFqngLrov0W2N6A6dET+W02U60O3IREYtiCvG6qyB3RRHBlXlGEOksJeewvzo43KG98nRpLU+sNvTrep0wpt7SNAjy0MhmNm8C9/LUnSU8DOlF7GUB1iJXOsMuWwcz5POrUwv38t6EYGQ0cIuEWwtVXpWccLXXOslEXXB9pG/yZDiYoiiafCaNspKljUrqNdRgTcuisgvVj4ltAWDbFzfO155lz9ABizOLwMPusrtpo1em3uFUjiqip/Nll9UsiRNrkaUsyG5V7+yiP3oXNO7ShJbvI+M1VpLxuqxl7Quo2XccJEz8z5Fqwjtg2vrb7JgHeqLFyZzefQQODH3D/QMZg/C5X2wFtqQFRPyqp6Chrwyy0Kb8+LV2YgXsUTQLzT7WGGfcqHrjh3skOO/5Zs6NdBTSDHfcDSVsWMEoMov4oeDIdrCk9B9o4my1C/6qd4UZw8snsgKwlWJPUbuj0nhcrNRQf57C4ffF/e3K0Sk6r3qNOmEO58JPil2y+nZDT8lrQ93G0T7grJETWgIGDCwAiufBgtmxSnPR6dXqoNL+fPqQwyHSyFZqjW6RSVpN8leyWWqk30Foszy21qfrAH/rPi11B+8GVwHlZZ1xf02seky+Ib54xqqZ3DcpzPolueMnhIhNoyE7P+mqQ5v0q/1XgWK6bLb4RRl3Fax0ZFSzCEyjktPyD045hBUC2SsMqZcSgLQEtL80P5spCh22v/aGOjJxIvn85+ET3QU5g/Le5OtMKgtBd/H/Yc9uK9NSgoPnJML1EVVy0hV76RuSJoKM5LFDri1O/6vAi+fJO4AQi9jO5qMv2vz6dW/OFWo1AqS/40wIfWTcUQ2JgpM0lcOGfJOrgJsqTgcy+DHtEGo4thZaZf4fd/e5jRgBreiIgdSunEsVt18Ft7gMgG90zLna4s0lqu3FKH/tSuqptEKDO8RLMvCCoBLraadwHnIyJEJThDuYy48uDhpu5DS2TrwZ7InlKJ8SVdE4Cgc0W/TqqPqpCHrqGEpAQQ8yXo9K8M3BLdgwm8Ao9t1x3XTnAbniOi3u+Qn//AX/2VlmnaJU7C8foPkPj6gWiLiD9tr/AZDRTnIPEUCf/ixH/Enb/DeQSsKiPFnDTn++nhaLHrBtJ7ym+7WyATonzcrTN/gY+OKTbdyNw8Vxr9Z7UFg7Fz5M4uzKnwJliMkcz+nWmoZCx+0fhmXuo+KTf1iGKBrwdeb+lz0WyjVn0iPVPGF+rJlunBwZlV69liCsBjnohCGMOyDybOqRfYeJv4pspLnPgjRyGEK0VJIROIQvUUA9Titx6I91ocZegm3vFblySVRujxzeh2lIexw/FGDZfNPuGINQQ+gVN9RlqkDbOXzo3lx9pcbBmjXLXO02dBH3krx6JIqk/RrJPn8clStbYPG8I8ZwB7Wl7dIxokpR/PR3ZvKZSbXEE5DhSrQlED3JBZpa7aHqHiLw0N8uwu+YHoGd4aaPEG3WsALGqHhoNEMPM8dK+vwVwSTGYVNKdbV1Tc1pDOBpTfvUY0UdZ9JqLG27Ku01/GKNxub6xOPm1RPIsmW/n2ona1Gn7Oysiqnoa9Uy9YojcvIDOEOX/xA39WmMsjL1g18Y9SGyJcHi9l8bg0g3y6hANtIlOV4jqYWZxHjNfphY6MU15lJT1M1EqO3gZmbw29tc6C5y3wyzB1xpql9Rry/JYAFkTDoujygNJpanNCFwbe4LxBtI6bCIUd915fymI5Pio4aEhu2gbQYaB2/XFqTE1KjwbFIuOHD1Bu6VoP3fy5QBDdjf9KNUoJyMniB6ivCjKjBvpRbbBd/XsAh9yzaoOoTcYZrIHKvirltHtkues+zhD49ZIKyp5QHAo/zqWPmQj7Fd0nhwGBcjoGaDowaD80RUCHbKw9/Sq33k89oIXbssQ7j32PWu6do4bQOOmGfQbRNQnmTK5Jg5L+64YA+86Z/7GoZUMo8r2Ttoy0RKpAYCYRva3oAwH/1i/folEhwuzkc7Wvx75M47cja9tayRT/Hs5M2lZKEAR9Rl/YcfcD35U4/0k5rrJF1WdAGg9coqAexrEg5DtbiwmpM5OXCMSDJfTe3Z/EumUs9rtEGC8BgMt0yxfbZoxp0V6Eqcz1EWhwYWHcYb52BRWhRV8Orvc57wldx/XDkRARAq1POYuAV0ZLMjd+P4GIlcR3muyi8+S/aNZ/SYio+YT3YyB6fa++a3P1nfto4amBfJxX6KhVRWlzqlAqdj8Gzj8898AngyAUei72k64TDfBLRYuVwFNaK5qg4gw59oXog631+ZbHCImjAtrksG7Q1UOBUfrV3GeaN+/RQUYnemV0q2sR2jIuWBb10Hl43PAxcuUoigRehE6bhBMh5NcmHDrwNG7SBz5jiee5pLLoHVoHEceioWjVGjJh5o6+tTPQr0I0Rg7RYM50o+04sxw4MN5NMhr6KUVtR3lw9qxunIeuhbNF3db844d7EczTzwwi/XVv6P1DTsH2QxlsdNqOONOIh0KipRDhMVJdsixaGa3+TkiwlgFB62Ne79g9VQnsrFRe2Ry7ValmQUHuGjlNF2FqucLhJbkNCezTr0F8s2gY7Tv1A+Hlekg4uy0daEqZy5DnEeBgqWLtcf8qsXv9htG5mK+isubjNAJYPop+xYNsbzc4SM0gyD95PKLoqRvrp+dLnl7/PUbsUG5ZAl3PJ8J8Web4wMF/c750UqDpkHxkUny4SoF9XRIimQrrBNza1K/8OhqXtTBx1sG33VV2g59BkNQKJ23uvKaL9c4irOj0FlfZfjDGpaRO7UPtzFJBKJc15D5BgJWmnpezGfYsqB+p/QbDIXJpUexj2mUJtGE3dCM3T+mIoPprZ7gPeSCXCbKOTkrrS3Z2y2BavSLrQbNoIw07E3EIQLcT829TxFbd+UQXVAm8wioOvHc2n9UimG8e28gZpCkQ1Oes+om+Ay7qpOA8tzL2RyMNvdWJHbSX/aFDCbircTjnKDMt7IiK/YAShTFlPtUM1X6UPHIutG8dSb1ZzDcQQUPxMe4yqi4BLlXvyouWCUPtckkqpptc2EjPeTG+SFfrJcZ4W6giuVb2J/GMOyEhxziQAQAUVdIumGwWSjTzEGaFhISUxDBXcdQThLRSINK+mdoaNT/K/HOoMgDhlVaGUnS1N5Sh7aYAFzA=="
     }
   ],
   "taranan": {
@@ -18520,6 +18560,22 @@
     "k38ef42:950570732611b2b7": "2026-10-25T06:26:00.000Z",
     "k38ef42:c5cd07326af10099": "2026-10-25T06:12:00.000Z",
     "k38ef42:ecda282b0a2cb791": "2026-10-25T05:55:00.000Z",
-    "k2d427e:2804fda7c64f82b4": "2026-10-25T06:30:11.000Z"
+    "k2d427e:2804fda7c64f82b4": "2026-10-25T06:30:11.000Z",
+    "k09feb3:3427a80ae9190a08": "2026-10-25T09:37:46.000Z",
+    "k09feb3:26463b2b52d208e6": "2026-10-25T09:12:10.000Z",
+    "k09feb3:aa8190a38e4c83ef": "2026-10-25T08:09:32.000Z",
+    "k78637d:c53a90baa0a42de1": "2026-10-25T09:30:00.000Z",
+    "k78637d:fe5d6a6e3a8ff02d": "2026-10-25T08:00:00.000Z",
+    "k12b4a6:d331755eaa2f7807": "2026-10-25T09:27:00.000Z",
+    "k12b4a6:03e416d7c92037ce": "2026-10-25T08:10:00.000Z",
+    "k38ef42:dc3b3e32f6342988": "2026-10-25T09:36:00.000Z",
+    "k38ef42:c104214682300d5a": "2026-10-25T09:14:00.000Z",
+    "k38ef42:32d8e3dd6ad0c186": "2026-10-25T09:00:00.000Z",
+    "k38ef42:a725b8900048ffeb": "2026-10-25T08:43:00.000Z",
+    "k38ef42:aeb76bb4a62032e6": "2026-10-25T08:26:00.000Z",
+    "k38ef42:605f6992740cd1bd": "2026-10-25T08:09:00.000Z",
+    "k38ef42:500576bc10a157ca": "2026-10-25T07:55:00.000Z",
+    "ke6dccd:439c86bed35cea46": "2026-10-25T09:10:00.000Z",
+    "ke6dccd:796c8be78ed29f9b": "2026-10-25T08:30:00.000Z"
   }
 }
