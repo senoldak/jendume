@@ -3222,7 +3222,26 @@
     "k8601e1:b8f6fbcf98dd95be": "2026-10-25T17:50:59.053Z",
     "k38ef42:36413f6c96ae79be": "2026-10-25T17:50:59.053Z",
     "kea595f:c7d5d6a40024ed0a": "2026-10-25T17:50:59.053Z",
-    "k39cb2c:2dafa5afcd4f8e83": "2026-10-25T17:50:59.053Z"
+    "k39cb2c:2dafa5afcd4f8e83": "2026-10-25T17:50:59.053Z",
+    "k38ef42:0c82444dd71fdbd3": "2026-10-25T19:50:57.673Z",
+    "k78637d:0d3186e97bde5a21": "2026-10-25T19:50:57.673Z",
+    "kaec085:9da2878e828e61fd": "2026-10-25T19:50:57.673Z",
+    "k38ef42:4d130bde9b4ae6c4": "2026-10-25T19:50:57.673Z",
+    "k38ef42:15dd51771b64a558": "2026-10-25T19:50:57.673Z",
+    "k38ef42:cec3ae7af5dc6da8": "2026-10-25T19:50:57.673Z",
+    "k38ef42:6f74ac7c0a7cd2d1": "2026-10-25T19:50:57.673Z",
+    "k38ef42:e6306becdfc263a1": "2026-10-25T19:50:57.673Z",
+    "k38ef42:7641be003783b663": "2026-10-25T19:50:57.673Z",
+    "k2e841d:406e06a19ff4226a": "2026-10-25T19:50:57.673Z",
+    "k38ef42:f2ec3c6f91ccf6db": "2026-10-25T19:50:57.673Z",
+    "k12b4a6:5f3ee7a3b1e42a3b": "2026-10-25T19:50:57.673Z",
+    "k2e841d:688a862e81c0bc44": "2026-10-25T19:50:57.673Z",
+    "k38ef42:a70f15ec9fb5b34c": "2026-10-25T19:50:57.673Z",
+    "k2e841d:6bbaaa4c57e81372": "2026-10-25T19:50:57.673Z",
+    "kd9a613:cc9c32d6d10ec93f": "2026-10-25T19:50:57.673Z",
+    "k39cb2c:cfb60d02794cc38e": "2026-10-25T19:50:57.673Z",
+    "k39a0e6:6250c940ca9a7412": "2026-10-25T19:50:57.673Z",
+    "k39a0e6:ad7b34419f468d6b": "2026-10-25T19:50:57.673Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -7544,7 +7563,19 @@
     "k38ef42:bd2b230bcd97eeb6|k38ef42:fe6f45f1ecce6c15": "2026-10-25T17:50:59.053Z",
     "k2e841d:9143cd0159dc4223|k38ef42:28184863228b3d7a": "2026-10-25T17:50:59.053Z",
     "k2e841d:9143cd0159dc4223|k38ef42:de9cff691a9855d8": "2026-10-25T17:50:59.053Z",
-    "k38ef42:28184863228b3d7a|k38ef42:fe6f45f1ecce6c15": "2026-10-25T17:50:59.053Z"
+    "k38ef42:28184863228b3d7a|k38ef42:fe6f45f1ecce6c15": "2026-10-25T17:50:59.053Z",
+    "haber:linus-torvalds-linux-cekirdegi-kodlamasinda-yapay-zeka-kullanmaya-basladi|k38ef42:a70f15ec9fb5b34c": "2026-10-25T19:50:57.673Z",
+    "haber:litellm-claude-code-kaynakli-sizinti-sonrasinda-yazilimina-sizildigini-acikladi|k38ef42:a70f15ec9fb5b34c": "2026-10-25T19:50:57.673Z",
+    "haber:openai-ibm-ve-google-yapay-zeka-alaninda-yeni-hamleler-duyurdu-20-ekim-kapanis|k39cb2c:cfb60d02794cc38e": "2026-10-25T19:50:57.673Z",
+    "haber:calisan-izleme-yazilimlari-yapay-zeka-ile-is-yerinde-baskiyi-artiriyor|k38ef42:4d130bde9b4ae6c4": "2026-10-25T19:50:57.673Z",
+    "haber:kendi-kendini-egiten-yapay-zeka-modelleri-neden-kendi-kor-noktalarini-goremiyor|k39a0e6:6250c940ca9a7412": "2026-10-25T19:50:57.673Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|kd9a613:cc9c32d6d10ec93f": "2026-10-25T19:50:57.673Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|kd9a613:cc9c32d6d10ec93f": "2026-10-25T19:50:57.673Z",
+    "haber:anthropic-acik-kaynakli-projeler-icin-ucretsiz-guvenlik-tarayicisi-sundu|kd9a613:cc9c32d6d10ec93f": "2026-10-25T19:50:57.673Z",
+    "haber:anaokulu-ogretmenligi-basvurusunda-yapay-zeka-mulakati-soku|k38ef42:a70f15ec9fb5b34c": "2026-10-25T19:50:57.673Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|k39cb2c:cfb60d02794cc38e": "2026-10-25T19:50:57.673Z",
+    "haber:acik-kaynakli-isletim-sistemi-openkylin-yapay-zeka-caginda-linux-u-yeniden-tasar|k39cb2c:cfb60d02794cc38e": "2026-10-25T19:50:57.673Z",
+    "haber:yapay-zeka-sut-ve-camasir-makinesinden-daha-az-denetleniyor|k2e841d:6bbaaa4c57e81372": "2026-10-25T19:50:57.673Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -7681,7 +7712,8 @@
     "haber:deepseek-urunleri-abd-federal-sivil-kurumlarinin-sistemlerinden-cikariliyor|k74f74a:98501aac44e95f96": "2026-10-25T11:51:01.142Z",
     "haber:abd-hazine-bakanligi-yapay-zeka-yatirimlarina-kisitlama-getirmeye-hazirlaniyor|k74f74a:a85d6fca43d9efbd": "2026-10-25T13:50:57.227Z",
     "k74f74a:b1b23fd960590f0a|kd9a613:e8e588e3d0db9f2b": "2026-10-25T14:56:57.695Z",
-    "k38ef42:50b11a6b26596383|k74f74a:21c3a75fb992d95a": "2026-10-25T14:56:57.695Z"
+    "k38ef42:50b11a6b26596383|k74f74a:21c3a75fb992d95a": "2026-10-25T14:56:57.695Z",
+    "haber:is-yerinde-yapay-zeka-gozetimi-ve-calisan-haklari|k38ef42:4d130bde9b4ae6c4": "2026-10-25T19:50:57.673Z"
   },
   "puan": {
     "k38ef42:8b4bbb7a3f2d834d": {
@@ -14678,17 +14710,84 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-25T17:50:59.053Z"
+    },
+    "k38ef42:15dd51771b64a558": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:cec3ae7af5dc6da8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k39a0e6:6250c940ca9a7412": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:6f74ac7c0a7cd2d1": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:e6306becdfc263a1": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:7641be003783b663": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k2e841d:406e06a19ff4226a": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k39a0e6:ad7b34419f468d6b": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:f2ec3c6f91ccf6db": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k12b4a6:5f3ee7a3b1e42a3b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k2e841d:688a862e81c0bc44": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "kd9a613:cc9c32d6d10ec93f": {
+      "puan": 90,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k38ef42:a70f15ec9fb5b34c": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k39cb2c:cfb60d02794cc38e": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
+    },
+    "k2e841d:6bbaaa4c57e81372": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T19:50:57.673Z"
     }
   },
   "yayinlanan": {
-    "geoffrey-hinton-yapay-zekanin-bilinc-kazandigini-ve-insanligin-tehlikede-oldugun": {
-      "zaman": "2026-10-22T17:51:05.042Z",
-      "basliklarSifreli": "v1.PTlFFqh0E9bjvPm0.w8RibhoD35J1vliHO2Joe2xZxzGf7hqGsP2/eFXdMJNrAGEFtpDAd52gOAG82ZI1sPa5eJaqIWSi+TAIhS6JYN6kwtoHfR6U8FHt11qLdtj+/LG4uOZSSwYjU5LmBNrUMaKxZVUX"
-    },
-    "kuresel-yapay-zeka-guvenligi-ve-duzenlemeler-icin-uluslararasi-is-birligi-cagris": {
-      "zaman": "2026-10-22T17:51:05.042Z",
-      "basliklarSifreli": "v1.oZ58uiQW5Mxon7NO.O6VO9dlRnoOl8cCQakj1a5UbuLqw6nVqkhjEm5XOcW6ARYVonmCwEvAiy14AUPjhKdIXJkm+XzF36uGEYbcYkF4h/BriujmbFXj4dxpDxuZvYObBUH5aVy57WXCdSOwvX3vt91deSAOZLE8="
-    },
     "microsoft-yapay-zeka-teshis-sistemi-mai-dxo-hekimleri-geride-birakti": {
       "zaman": "2026-10-22T19:51:05.575Z",
       "basliklarSifreli": "v1./P4OQgy71zJD2s0y.YnvVo1EXNpAVE+WtpfiIXHlmIr4GUWJ2mxjKCIC1/b3pWqGSfzbwIFx9JEuvUhKJXYQAtiDZSYoni+Eh8dlu0k+haSnwvM10PeyOPbeLVgkHuBQLSpzRPQ+o41og+e+9ZcWqRLrK683fgs5s87odE2Ubyv5uoFl29G3LliIv/IyIWhZuVeAN+6NWXDwLYVafak8ZmNVz5A8aois02gG9EyiAIkEZ5o80gXlbhQoW+e4ZSn9rAtvP8gA3A09cP3i0FWQps0D0X1Apb2jFxGl3uuo+hLaWkdD+p2A1bSjT+i89TSYI5V6E1qGTRhMjKWoHzAcIcZCrnOpn6Bu0qDW/MEkoTSm1wjI7Zm4819Ilcn4wzbMXC37JY49Ifzqus+arEdAlDBKz/w=="
@@ -14992,6 +15091,10 @@
     "google-yapay-zeka-islemleri-icin-ml-drift-adli-acik-kaynakli-motoru-duyurdu": {
       "zaman": "2026-10-25T17:50:59.053Z",
       "basliklarSifreli": "v1.bKhG0UuLx/HnUovd.8/b9M2NoUQRbRi1eSs33q1HlELzaWTrYl4WpRMiE6yr2RAgw/5X+FhAlMW17xkSUkn1pNo5PBYDecc9sDMstVJfUvpQeK08HedmsQ7OmCt6xHGzFvU/QBX0h"
+    },
+    "google-ve-meta-pytorch-icin-torchtpu-yazilimini-acik-kaynak-olarak-duyurdu": {
+      "zaman": "2026-10-25T19:50:57.673Z",
+      "basliklarSifreli": "v1.Oh7hqkeuxX0ly6zk.NWW/9Q/5pDP8OODoGuvfX8z2zurQNcYJTTeMSkW7QaBVqVKqdfQ37tOscOVaLY6hUOsBSV/x9NftutpOsdwPCuoVnGp1Sh3DMg8ZrMGuWAoHSUzORayv9ZExGdeo8nSeJcWu0XH/BmDOdSUb"
     }
   },
   "havuz": [],
@@ -18276,6 +18379,25 @@
     "k2e841d:9143cd0159dc4223": "2026-10-25T16:45:00.000Z",
     "k2e841d:84fd340805b2bfb9": "2026-10-25T16:42:46.000Z",
     "k2e841d:2306807ce018565f": "2026-10-25T16:15:00.000Z",
-    "k8601e1:b8f6fbcf98dd95be": "2026-10-25T15:58:00.000Z"
+    "k8601e1:b8f6fbcf98dd95be": "2026-10-25T15:58:00.000Z",
+    "kd9a613:cc9c32d6d10ec93f": "2026-10-25T18:25:59.000Z",
+    "kaec085:9da2878e828e61fd": "2026-10-25T16:53:40.000Z",
+    "k39cb2c:cfb60d02794cc38e": "2026-10-25T18:00:00.000Z",
+    "k78637d:0d3186e97bde5a21": "2026-10-25T18:00:00.000Z",
+    "k12b4a6:5f3ee7a3b1e42a3b": "2026-10-25T18:31:00.000Z",
+    "k38ef42:15dd51771b64a558": "2026-10-25T19:37:00.000Z",
+    "k38ef42:cec3ae7af5dc6da8": "2026-10-25T19:24:00.000Z",
+    "k38ef42:4d130bde9b4ae6c4": "2026-10-25T19:19:16.000Z",
+    "k38ef42:6f74ac7c0a7cd2d1": "2026-10-25T19:06:00.000Z",
+    "k38ef42:e6306becdfc263a1": "2026-10-25T18:53:42.000Z",
+    "k38ef42:7641be003783b663": "2026-10-25T18:52:00.000Z",
+    "k38ef42:f2ec3c6f91ccf6db": "2026-10-25T18:35:00.000Z",
+    "k38ef42:0c82444dd71fdbd3": "2026-10-25T18:23:00.000Z",
+    "k38ef42:a70f15ec9fb5b34c": "2026-10-25T18:08:00.000Z",
+    "k39a0e6:6250c940ca9a7412": "2026-10-25T19:10:01.000Z",
+    "k39a0e6:ad7b34419f468d6b": "2026-10-25T18:40:17.000Z",
+    "k2e841d:406e06a19ff4226a": "2026-10-25T18:45:00.000Z",
+    "k2e841d:688a862e81c0bc44": "2026-10-25T18:30:00.000Z",
+    "k2e841d:6bbaaa4c57e81372": "2026-10-25T18:00:00.000Z"
   }
 }
