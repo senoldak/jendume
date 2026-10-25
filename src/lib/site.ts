@@ -160,7 +160,7 @@ export const SITE = {
   // Kişi imzalı yazıların (analiz, açıklayıcı; bkz. kisiYazariMi) görünen yazarı: içerik dosyalarındaki `author` alanından bağımsız tek sabit.
   author: {
     name: 'Şenol Dak',
-    title: { tr: 'Yayıncı ve editör', en: 'Publisher and editor' } satisfies Record<Locale, string>,
+    title: { tr: 'Gazeteci', en: 'Journalist' } satisfies Record<Locale, string>,
     email: 'contact@jendume.com',
     // Künye (sahibinin onayladığı metin; dört sitede aynı kişi, aynı dört yayın).
     bio: {

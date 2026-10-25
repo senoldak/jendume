@@ -32,7 +32,11 @@ const METINLER = {
       },
     ],
     yontem: { etiket: 'Yöntem', metin: 'Hesaplamalar “Nasıl hesapladık” bölümünde açıklanır.' },
-    ilke: { etiket: 'İlkeler', metin: 'Yazı, yayın ilkelerimize göre hazırlandı.' },
+    ilke: {
+      etiket: 'İlkeler',
+      metin: 'Yazı, yayın ilkelerimize göre hazırlandı.',
+      baglanti: { parca: 'yayın ilkelerimize', adres: '/tr/yayin-ilkeleri/' },
+    },
     yzSayfasi: 'Yapay zekâyı nasıl kullanıyoruz →',
     zincir:
       'Bu yazı yapay zekâ araçlarıyla yazıldı. Rakamlar ve alıntılar resmî kaynaklarla karşılaştırıldı; yazı yayından önce editör tarafından okunup onaylandı.',
@@ -62,7 +66,11 @@ const METINLER = {
       },
     ],
     yontem: { etiket: 'Method', metin: 'The calculations are explained under “How we calculated”.' },
-    ilke: { etiket: 'Principles', metin: 'The article follows our editorial standards.' },
+    ilke: {
+      etiket: 'Principles',
+      metin: 'The article follows our editorial standards.',
+      baglanti: { parca: 'editorial standards', adres: '/en/editorial-standards/' },
+    },
     yzSayfasi: 'How we use AI →',
     zincir:
       'This article was written with AI tools. Figures and quotes were checked against official sources, and an editor read and approved it before publication.',

@@ -7,6 +7,7 @@ import { abs, authorId, authorNode, type Crumb } from '../../lib/seo';
 import { getPostUrl, getPublishedPosts } from '../../lib/news';
 import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { yazarYolu } from '../../lib/yollar.mjs';
+import { kunyeParcalari } from '../../lib/kunye.mjs';
 
 // Yazar sayfası; yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
 // Analiz ve açıklayıcı yazıların görünen yazarı tek sabittir (SITE.author); künye sahibinin onayladığı metindir (SITE.author.bio).
@@ -39,7 +40,7 @@ const schema = [
     description,
     inLanguage: lang,
     isPartOf: { '@id': abs('/#website') },
-    mainEntity: { ...authorNode(lang), description, email: a.email },
+    mainEntity: { ...authorNode(lang), description, email: a.email, image: abs('/yazar-foto/senol-dak.jpg') },
     hasPart: posts.slice(0, 50).map((p) => ({
       '@type': analizMi(p.data) ? 'AnalysisNewsArticle' : 'NewsArticle',
       url: abs(getPostUrl(lang, p.id)),
@@ -64,9 +65,10 @@ const schema = [
 >
   <Breadcrumb lang={lang} items={crumbs} />
   <section class="author-card" itemscope itemtype="https://schema.org/Person" itemid={authorId(lang)}>
+    <img class="yazar-foto" src="/yazar-foto/senol-dak.jpg" width="96" height="96" alt="Şenol Dak" itemprop="image" />
     <h1 itemprop="name">{a.name}</h1>
     <p class="author-title" itemprop="jobTitle">{a.title[lang]}</p>
-    <div itemprop="description">{a.bio[lang].map((p) => <p>{p}</p>)}</div>
+    <div itemprop="description">{a.bio[lang].map((p) => <p>{kunyeParcalari(p).map((x) => (x.adres ? <a href={x.adres}>{x.metin}</a> : x.metin))}</p>)}</div>
     <p>{ui.authorContact}: <a href={`mailto:${a.email}`} itemprop="email">{a.email}</a></p>
   </section>
 
