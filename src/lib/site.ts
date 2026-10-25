@@ -160,8 +160,19 @@ export const SITE = {
   // Kişi imzalı yazıların (analiz, açıklayıcı; bkz. kisiYazariMi) görünen yazarı: içerik dosyalarındaki `author` alanından bağımsız tek sabit.
   author: {
     name: 'Şenol Dak',
-    title: { tr: 'Yayın yönetmeni ve editör', en: 'Editor-in-chief' } satisfies Record<Locale, string>,
+    title: { tr: 'Yayıncı ve editör', en: 'Publisher and editor' } satisfies Record<Locale, string>,
     email: 'contact@jendume.com',
+    // Künye (sahibinin onayladığı metin; dört sitede aynı kişi, aynı dört yayın).
+    bio: {
+      tr: [
+        'Türkçe ve yapay zekâ öğretmeniyim; yazılım sektöründe üretken yapay zekâ sistemleri üzerinde çalışıyorum. 10 Ağustos 2022’de kifobu’nun ilk bültenini yayımladım ve o günden beri gazetecilik yapıyorum.',
+        'kifobu, finfolis, JEN DUME ve tidsrøst aracılığıyla girişimlerden ve kitle fonlamasından finans piyasalarına, yapay zekâdan bilime, Norveç’ten dünya gündemine uzanan konuları ele alıyorum. Farklı alanlarda çalışsam da merakım aynı: Bilginin ötesine geçmek, bağlantıları görmek ve olup bitenin neden önemli olduğunu anlamak.',
+      ],
+      en: [
+        'I am a Turkish language and AI teacher working with generative AI systems in the software industry. I published the first kifobu newsletter on 10 August 2022 and have been involved in journalism ever since.',
+        'Through kifobu, finfolis, JEN DUME and tidsrøst, I explore subjects ranging from startups and crowdfunding to financial markets, artificial intelligence, science, and current affairs in Norway and around the world. Across these different fields, my interest remains the same: looking beyond the information itself to understand the connections and why they matter.',
+      ],
+    } satisfies Record<Locale, string[]>,
   },
   // Doğrulanmış resmî hesaplar (docs/linkedin-oto-paylasim-durum.md, Telegram kanalı @jenndume). Yenisi ancak gerçek hesap açılınca eklenir.
   social: {

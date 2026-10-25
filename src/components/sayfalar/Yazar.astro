@@ -9,7 +9,7 @@ import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { yazarYolu } from '../../lib/yollar.mjs';
 
 // Yazar sayfası; yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
-// Analiz ve açıklayıcı yazıların görünen yazarı tek sabittir (SITE.author); biyografi yalnız ad, unvan ve iletişimdir.
+// Analiz ve açıklayıcı yazıların görünen yazarı tek sabittir (SITE.author); künye sahibinin onayladığı metindir (SITE.author.bio).
 interface Props {
   lang: Locale;
 }
@@ -21,10 +21,7 @@ const a = SITE.author;
 const path = yazarYolu(lang);
 const url = abs(path);
 const title = `${a.name} — ${a.title[lang]}`;
-const description =
-  lang === 'tr'
-    ? `${a.name}, ${SITE.displayName} yayınının yayın yönetmeni ve editörüdür.`
-    : `${a.name} is the editor-in-chief of ${SITE.displayName}.`;
+const description = a.bio[lang][0];
 
 const posts = (await getPublishedPosts(lang)).filter((p) => kisiYazariMi(p.data));
 const shown = posts.slice(0, 30);
@@ -69,7 +66,7 @@ const schema = [
   <section class="author-card" itemscope itemtype="https://schema.org/Person" itemid={authorId(lang)}>
     <h1 itemprop="name">{a.name}</h1>
     <p class="author-title" itemprop="jobTitle">{a.title[lang]}</p>
-    <p itemprop="description">{description}</p>
+    <div itemprop="description">{a.bio[lang].map((p) => <p>{p}</p>)}</div>
     <p>{ui.authorContact}: <a href={`mailto:${a.email}`} itemprop="email">{a.email}</a></p>
   </section>
 
