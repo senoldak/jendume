@@ -37,8 +37,11 @@ test('yayinSayilari: otomatik, yayıncının adıyla ve zincir ayrılır', () =>
     haber('2026-10-07T10:00:00Z', { yaziTuru: 'aciklayici' }),
     haber('2026-10-08T10:00:00Z', { yaziTuru: 'referans' }),
     haber('2026-10-09T10:00:00Z', { yaziTuru: 'aciklayici', uretim: 'yazi-isleri' }),
+    haber('2026-10-10T10:00:00Z', { yaziTuru: 'analiz', uretim: 'yazi-isleri' }),
+    haber('2026-10-11T10:00:00Z', { yaziTuru: 'haber', uretim: 'yazi-isleri' }),
   ];
-  assert.deepEqual(yayinSayilari(h, '2026-10-01', '2026-12-31'), { otomatik: 2, yayinci: 2, zincir: 1 });
+  // İmzalı yazı (açıklayıcı, referans, analiz) zincirden gelse de yayıncının adıyla sayılır; zincir = sahibin olmayan.
+  assert.deepEqual(yayinSayilari(h, '2026-10-01', '2026-12-31'), { otomatik: 2, yayinci: 4, zincir: 1 });
 });
 
 test('boş veri: hepsi sıfır, çökmez', () => {

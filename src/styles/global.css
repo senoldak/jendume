@@ -986,6 +986,38 @@ a.board-latest:hover {
   background: var(--signal);
   text-decoration-color: var(--sign);
 }
+/* Sahibin yazısı: "Bu yazı nasıl hazırlandı" satırları; aynı sakin dil, ince çizgiyle ayrılır. */
+.how-made {
+  padding-top: 12px;
+  border-top: 1px solid var(--ink-2);
+}
+.how-made-title {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.how-made dl {
+  margin: 0;
+}
+.how-made dl > div {
+  margin: 0 0 8px;
+}
+.how-made dt {
+  display: inline;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.how-made dt::after {
+  content: ': ';
+}
+.how-made dd {
+  display: inline;
+  margin: 0;
+}
+.how-made-links {
+  margin: 12px 0 0;
+}
 /* Resmî kaynak satırı: yapay zekâ notuyla aynı sakin biçim, hemen üstünde. */
 .official-source + .ai-note {
   margin-top: 8px;

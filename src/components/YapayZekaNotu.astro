@@ -1,7 +1,9 @@
 ---
-// Haber sayfasının sonundaki tek satırlık yapay zekâ notu + "Hata bildir" mailto bağlantısı (Standartlar Faz 0).
+// Haber sayfasının sonundaki yapay zekâ notu + "Hata bildir" mailto bağlantısı (Standartlar Faz 0).
+// Bot ve zincir yazısı: tek sakin satır. Sahibin yazısı: "Bu yazı nasıl hazırlandı" satırları.
 // Kutu ve ikon yok; yalnız görünür metin (JSON-LD'ye girmez).
 import { yapayZekaNotu } from '../lib/yapayzeka-notu.mjs';
+import { yapayZekaYolu } from '../lib/yollar.mjs';
 import type { Locale } from '../lib/site';
 
 interface Props {
@@ -14,4 +16,23 @@ const { lang, veri, baslik, adres } = Astro.props;
 const not = yapayZekaNotu({ veri, dil: lang, baslik, adres });
 ---
 
-<p class="ai-note">{not.metin} <a href={not.mailto}>{not.baglanti}</a></p>
+{
+  not.satirlar ? (
+    <section class="ai-note how-made" aria-labelledby="how-made">
+      <h2 id="how-made" class="how-made-title">{not.baslik}</h2>
+      <dl>
+        {not.satirlar.map((s) => (
+          <div>
+            <dt>{s.etiket}</dt>
+            <dd>{s.metin}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="how-made-links">
+        <a href={not.mailto}>{not.baglanti}</a> · <a href={yapayZekaYolu(lang)}>{not.yzSayfasi}</a>
+      </p>
+    </section>
+  ) : (
+    <p class="ai-note">{not.metin} <a href={not.mailto}>{not.baglanti}</a></p>
+  )
+}

@@ -13,8 +13,7 @@
 // Şikâyet kaydı: src/data/sikayetler.json, her karara bağlanan şikâyet için tek satır (kimlik ve metin YAZILMAZ):
 //   { "alindi": "YYYY-MM-DD", "karar": "YYYY-MM-DD", "sonuc": "yerinde" | "kismen" | "yerinde-degil" }
 // Rapor, kararın verildiği güne göre çeyreğe sayar.
-import { aciklayiciMi } from './yazi-turu.mjs';
-import { ZINCIR_URETIMI } from './yapayzeka-notu.mjs';
+import { notTuru } from './yapayzeka-notu.mjs';
 import { duzeltmeKayitlari } from './duzeltmeler.mjs';
 import { sikayetYolu, standartlarRaporuYolu } from './yollar.mjs';
 
@@ -96,8 +95,9 @@ export function yayinSayilari(haberler, bas, son) {
   let zincir = 0;
   for (const h of haberler ?? []) {
     if (!aralikta(istanbulGunu(h.data.date), bas, son)) continue;
-    if (h.data.uretim === ZINCIR_URETIMI) zincir++;
-    else if (aciklayiciMi(h.data)) yayinci++;
+    const tur = notTuru(h.data);
+    if (tur === 'sahip') yayinci++;
+    else if (tur === 'zincir') zincir++;
     else otomatik++;
   }
   return { otomatik, yayinci, zincir };
