@@ -3093,7 +3093,15 @@
     "k38ef42:deba37a15de4b19d": "2026-10-24T21:50:59.619Z",
     "k38ef42:a514b20c81fe8005": "2026-10-24T21:50:59.619Z",
     "k38ef42:dcac2fa0a7d6496c": "2026-10-24T21:50:59.619Z",
-    "k38ef42:b6be5ce235b8eb5a": "2026-10-24T21:50:59.619Z"
+    "k38ef42:b6be5ce235b8eb5a": "2026-10-24T21:50:59.619Z",
+    "k2e841d:de78a41268011eba": "2026-10-25T03:50:58.151Z",
+    "k2e841d:3474de9bde012f6a": "2026-10-25T03:50:58.151Z",
+    "k2e841d:09e2d810b4c2066c": "2026-10-25T03:50:58.151Z",
+    "k2e841d:ba65412c119425dd": "2026-10-25T03:50:58.151Z",
+    "k2e841d:13a69c69592fac01": "2026-10-25T03:50:58.151Z",
+    "k2e841d:f591a9a2872ed90c": "2026-10-25T03:50:58.151Z",
+    "k2e841d:92bf897aae40cceb": "2026-10-25T03:50:58.151Z",
+    "k2e841d:7d14c083456cca8d": "2026-10-25T03:50:58.151Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -7254,7 +7262,10 @@
     "haber:abd-hazine-bakanligi-yapay-zeka-yatirimlarina-kisitlama-getirmeye-hazirlaniyor|k38ef42:deba37a15de4b19d": "2026-10-24T21:50:59.619Z",
     "haber:apple-cin-deki-yapay-zeka-altyapisi-icin-alibaba-ile-anlasti|k38ef42:dcac2fa0a7d6496c": "2026-10-24T21:50:59.619Z",
     "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k38ef42:dcac2fa0a7d6496c": "2026-10-24T21:50:59.619Z",
-    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:dcac2fa0a7d6496c": "2026-10-24T21:50:59.619Z"
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:dcac2fa0a7d6496c": "2026-10-24T21:50:59.619Z",
+    "haber:apple-cin-deki-yapay-zeka-altyapisi-icin-alibaba-ile-anlasti|k2e841d:ba65412c119425dd": "2026-10-25T03:50:58.151Z",
+    "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k2e841d:ba65412c119425dd": "2026-10-25T03:50:58.151Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k2e841d:ba65412c119425dd": "2026-10-25T03:50:58.151Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -7390,66 +7401,6 @@
     "haber:openai-modeli-milyonlarca-web-sunucusunu-etkileyen-iki-kritik-php-acigini-ortaya|k3595c8:fb612106f6921ad6": "2026-10-24T13:51:01.006Z"
   },
   "puan": {
-    "k38ef42:0a4fe0cda291ea06": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k38ef42:3be6dea0e4af5ac5": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k38ef42:bc0b14b256d7ec0b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "kd4ca61:8e0107c1a74ac52c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "kaec085:9406e4a9407ab6ea": {
-      "puan": 92,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "kd9a613:2cc69ce0cd09410f": {
-      "puan": 78,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:0c20bc135e51ca35": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:d3d0529813991ec7": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:7fbad1d8bcad181d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:ad3cdde4d91c0349": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:76e83b74e1500ff0": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
-    "k2e841d:8506f9068b4926c9": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-19T03:50:52.743Z"
-    },
     "k38ef42:d94d103d728c179b": {
       "puan": 0,
       "olcek": 100,
@@ -14954,33 +14905,44 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-10-24T21:50:59.619Z"
+    },
+    "k2e841d:3474de9bde012f6a": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:09e2d810b4c2066c": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:ba65412c119425dd": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:13a69c69592fac01": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:f591a9a2872ed90c": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:92bf897aae40cceb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
+    },
+    "k2e841d:7d14c083456cca8d": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-25T03:50:58.151Z"
     }
   },
   "yayinlanan": {
-    "openai-modeli-milyonlarca-web-sunucusunu-etkileyen-iki-kritik-php-acigini-ortaya": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.y9rx5wCrBZPTYw4r.oeYgXUqY5ES/6608FujMp8QYuWRr1PmoPDR5bfCAnUY7mYox+xKjFfsZ8jV2Ux2RsLz8Z34/RBMpM99sNgyDdk21T/SiAi/ONzh+XsiFHNVSk86wFPzto/xxlQ00nNkSehvIxKD7fPOD7i8ufhVY7H9AAkQQ"
-    },
-    "blacksmith-sequoia-liderligindeki-c-serisi-yatirimla-milyar-dolarlik-degere-ulas": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.Aks/PoXulNtcL6JS.nj7DXv9c0pvG71NcFN+C7lKwJBNEgU88pBc+GElzaD4HnhzvhRrriXeq62KDjES97+63s4M36pbWj4rWIdME17U1YkFgPbUGn2fDP4OXng3zyw=="
-    },
-    "guneydogu-asya-da-yapay-zeka-kullanimi-hizla-yayiliyor-ancak-abonelik-oranlari-d": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.w2GTvi048A0lsq+V.RjgFRuEzv3MTgbCjiQwgBjxi4b2cmCafsDMIPHD95PZz0au5dk7+++TDSGeCCm+QxHnWUFYimH/zF9pwDxzR3LbB9MoVH1TRclOdnSq22WrZnsh80S01RIZ4Z+zaCItpRA=="
-    },
-    "meta-yeni-yapay-zeka-ajani-muse-ile-gelir-modelini-donusturuyor": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.+s0mwmfp8yHVZHvL.LaRJy1bhYHLzHdcxdlxlEykatlQoZGY2l+subkozYqCLVZb1G3a7ydQaWVr2T4k6CA7s4n0Mf3CiJOCzLGo30z5mQAyeyyDwfuAu9WawdDK+"
-    },
-    "blackstone-yoneticisi-jas-khaira-yapay-zeka-altyapi-borclanmalarina-yonelik-endi": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.i83h3KNGYWE4RtKk.hoGhO75XklvdbZlGz3+HaM7w0v7dFDfzrVRKBpBd5YL/a0SOGdU60IX1jIM5TFqPsHOCb7GTUdTgyl1uD182nyyMB+cPcbi7yDCRP9t+BcNu3LvlxjOriT1urr0="
-    },
-    "les-editions-du-boreal-yazar-thelyson-orelien-ile-iliskisini-kesti": {
-      "zaman": "2026-10-22T03:50:54.679Z",
-      "basliklarSifreli": "v1.7NTb/uguk5TU4dfr.aKgEKinbRqVKM+4XzF7nzqEF39EUuwKi9tafr6mUHBJtvE2RBV/zcG49LyElAkpOCxlTG1soGPWG5MuzWLIpR7Z8bcKIZA/4VQCIbMaWPgrtLmEGCuYFbyw96S0Vm+uBisegwNsdPUMKYsz6udx3n6GaJ1A+piQb"
-    },
     "nvidia-cosmos-platformunu-fiziksel-yapay-zeka-icin-genisletti": {
       "zaman": "2026-10-22T05:50:54.282Z",
       "basliklarSifreli": "v1.zZfbp6a4JJJdlXOJ.gVP1wADshsUaCQTgWDFe3cfXSAr+dmjOytxBqcpsLoq3iyIzU3SBgOQv8hh2cgUQv/4EtNgsfGUwqksS14d0uCsYHlEjq8bQJfbPno1u99pPfkb0HvYjtlipQr4="
@@ -18515,6 +18477,14 @@
     "k38ef42:b6be5ce235b8eb5a": "2026-10-24T20:30:00.000Z",
     "k38ef42:deba37a15de4b19d": "2026-10-24T20:19:00.000Z",
     "k38ef42:a514b20c81fe8005": "2026-10-24T20:06:00.000Z",
-    "k38ef42:dcac2fa0a7d6496c": "2026-10-24T19:56:00.000Z"
+    "k38ef42:dcac2fa0a7d6496c": "2026-10-24T19:56:00.000Z",
+    "k2e841d:3474de9bde012f6a": "2026-10-25T00:30:00.000Z",
+    "k2e841d:09e2d810b4c2066c": "2026-10-25T00:00:00.000Z",
+    "k2e841d:ba65412c119425dd": "2026-10-24T23:45:00.000Z",
+    "k2e841d:13a69c69592fac01": "2026-10-24T23:30:00.000Z",
+    "k2e841d:f591a9a2872ed90c": "2026-10-24T23:00:00.000Z",
+    "k2e841d:92bf897aae40cceb": "2026-10-24T22:45:00.000Z",
+    "k2e841d:de78a41268011eba": "2026-10-24T22:30:00.000Z",
+    "k2e841d:7d14c083456cca8d": "2026-10-24T22:00:00.000Z"
   }
 }
