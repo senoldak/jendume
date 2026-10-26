@@ -3569,7 +3569,26 @@
     "openai:https://openai.com/index/openai-cut-incident-investigation": "2026-10-26T19:51:00.942Z",
     "ke6dccd:895d6e91b1c6f0c0": "2026-10-26T19:51:00.942Z",
     "k8601e1:8cf53878d8785778": "2026-10-26T19:51:00.942Z",
-    "k09feb3:026f84469732c29d": "2026-10-26T19:51:00.942Z"
+    "k09feb3:026f84469732c29d": "2026-10-26T19:51:00.942Z",
+    "ke82007:959c3ccbdce582a4": "2026-10-26T21:50:59.976Z",
+    "k3595c8:ee6d78b450f40863": "2026-10-26T21:50:59.976Z",
+    "ka5e8e4:1c214f8ddb004a8b": "2026-10-26T21:50:59.976Z",
+    "k9f3ec7:8217c5adcf9e4b0f": "2026-10-26T21:50:59.976Z",
+    "k2e841d:7281e96d30d459a8": "2026-10-26T21:50:59.976Z",
+    "k2d427e:eb2eb906502d84b3": "2026-10-26T21:50:59.976Z",
+    "k74f74a:e86ac5c1815ee3a3": "2026-10-26T21:50:59.976Z",
+    "k74f74a:f89367eb80edd738": "2026-10-26T21:50:59.976Z",
+    "k8601e1:079c5ad55fb676c3": "2026-10-26T21:50:59.976Z",
+    "k74f74a:e8e266ee65eb77f1": "2026-10-26T21:50:59.976Z",
+    "k74f74a:2fad0eb8ed0cad9e": "2026-10-26T21:50:59.976Z",
+    "ke6dccd:06e1f75b7009a1ef": "2026-10-26T21:50:59.976Z",
+    "k74f74a:6aeb4a4f129cdcb1": "2026-10-26T21:50:59.976Z",
+    "k09feb3:b6bdbc3c09f02dda": "2026-10-26T21:50:59.976Z",
+    "k74f74a:dfdc3c665e066f3b": "2026-10-26T21:50:59.976Z",
+    "k59b8ca:1fdbff4ee26375b9": "2026-10-26T21:50:59.976Z",
+    "openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T21:50:59.976Z",
+    "k2d427e:0b8503e4ea4b1020": "2026-10-26T21:50:59.976Z",
+    "openai:https://openai.com/index/building-scientific-understanding-with-academic-communities": "2026-10-26T21:50:59.976Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -8375,7 +8394,28 @@
     "k09feb3:3d8a1d523aa48079|k39a0e6:ee0f6752944c234a": "2026-10-26T19:51:00.942Z",
     "k107ce4:e9d11165351944e5|k39a0e6:ee0f6752944c234a": "2026-10-26T19:51:00.942Z",
     "k09feb3:3d8a1d523aa48079|k107ce4:e9d11165351944e5": "2026-10-26T19:51:00.942Z",
-    "k2e841d:4c8781aac97935cd|k2e841d:862567906a96e0ec": "2026-10-26T19:51:00.942Z"
+    "k2e841d:4c8781aac97935cd|k2e841d:862567906a96e0ec": "2026-10-26T19:51:00.942Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k74f74a:f89367eb80edd738": "2026-10-26T21:50:59.976Z",
+    "haber:openai-yeni-gpt-6-luna-destekli-decisions-api-modelini-kullanima-sundu|k09feb3:b6bdbc3c09f02dda": "2026-10-26T21:50:59.976Z",
+    "haber:tarayici-tabanli-yapay-zeka-ajanlari-76-kat-daha-ucuz-ve-5-kat-daha-hizli-calisi|openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T21:50:59.976Z",
+    "haber:acik-kaynak-yapay-zeka-modelleri-ozgurluk-mu-guvenlik-riski-mi|k59b8ca:1fdbff4ee26375b9": "2026-10-26T21:50:59.976Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|k59b8ca:1fdbff4ee26375b9": "2026-10-26T21:50:59.976Z",
+    "haber:anthropic-acik-kaynakli-projeler-icin-ucretsiz-guvenlik-tarayicisi-sundu|k59b8ca:1fdbff4ee26375b9": "2026-10-26T21:50:59.976Z",
+    "haber:apple-cin-deki-yapay-zeka-altyapisi-icin-alibaba-ile-anlasti|k74f74a:f89367eb80edd738": "2026-10-26T21:50:59.976Z",
+    "haber:apple-gelismis-siri-ozellikli-homeview-akilli-ev-cihazini-tanitti|k74f74a:f89367eb80edd738": "2026-10-26T21:50:59.976Z",
+    "haber:antimikrobiyal-direncle-mucadelede-peptid-kesfi-hiz-kazaniyor|k2d427e:0b8503e4ea4b1020": "2026-10-26T21:50:59.976Z",
+    "haber:bilgi-yonetimi-sistemleri-graf-tabanli-yapay-zeka-ile-hatasiz-calisiyor|k2d427e:0b8503e4ea4b1020": "2026-10-26T21:50:59.976Z",
+    "haber:github-yapay-zeka-asistanlari-icin-altyapisini-degistiriyor|k2d427e:0b8503e4ea4b1020": "2026-10-26T21:50:59.976Z",
+    "haber:buzdolabindan-daha-az-denetlenen-yapay-zeka-buyuk-tehlike|k8601e1:079c5ad55fb676c3": "2026-10-26T21:50:59.976Z",
+    "haber:itau-yaklasik-70-milyon-musterisi-icin-yapay-zeka-tabanli-yeni-asistanini-hayata|k8601e1:079c5ad55fb676c3": "2026-10-26T21:50:59.976Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k09feb3:b6bdbc3c09f02dda": "2026-10-26T21:50:59.976Z",
+    "haber:arac-cagirma-mekanizmasi-yapay-zeka-modellerinin-kararlarini-eyleme-donusturuyor|k09feb3:b6bdbc3c09f02dda": "2026-10-26T21:50:59.976Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k74f74a:dfdc3c665e066f3b": "2026-10-26T21:50:59.976Z",
+    "haber:arda-industries-uretim-sureclerini-hizlandiran-yapay-zeka-yazilimi-icin-232-mily|k74f74a:dfdc3c665e066f3b": "2026-10-26T21:50:59.976Z",
+    "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|k74f74a:dfdc3c665e066f3b": "2026-10-26T21:50:59.976Z",
+    "haber:gpt-5-6-sol-modeli-php-programlama-dilinde-kritik-guvenlik-aciklari-tespit-etti|openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T21:50:59.976Z",
+    "k09feb3:b6bdbc3c09f02dda|openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T21:50:59.976Z",
+    "k74f74a:dfdc3c665e066f3b|openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T21:50:59.976Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -8540,119 +8580,10 @@
     "k2e841d:4c8781aac97935cd|kd4ca61:c1aedec35e335d27": "2026-10-26T19:51:00.942Z",
     "k39a0e6:ee0f6752944c234a|kea595f:9ec27c110aa3fcdf": "2026-10-26T19:51:00.942Z",
     "k09feb3:3d8a1d523aa48079|kea595f:9ec27c110aa3fcdf": "2026-10-26T19:51:00.942Z",
-    "k107ce4:e9d11165351944e5|kea595f:9ec27c110aa3fcdf": "2026-10-26T19:51:00.942Z"
+    "k107ce4:e9d11165351944e5|kea595f:9ec27c110aa3fcdf": "2026-10-26T19:51:00.942Z",
+    "k09feb3:b6bdbc3c09f02dda|k74f74a:dfdc3c665e066f3b": "2026-10-26T21:50:59.976Z"
   },
   "puan": {
-    "ke82007:3cf6104793037271": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2e841d:94f783f98433fafa": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "kb7f905:dcd7a5a9034ff891": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k74f74a:9364b0c9fe83e25c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "aws-ml:733fa955e4db373fd2ec88938f4d9a6aa8ad0a49": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k74f74a:1bc7c0999d5140ec": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2e841d:646672a5948782d5": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "ke82007:5abca7d93fcc6c7f": {
-      "puan": 30,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k74f74a:6a221288e97e99e1": {
-      "puan": 92,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2e841d:1f299a7c114adaa0": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2d427e:4b67166cf2c08e30+kb7f905:a396e0df628f86d3": {
-      "puan": 94,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2d427e:2bdbc13cbe020b4e+kb7f905:3063b94dfe3aad9b": {
-      "puan": 88,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k74f74a:04e8295cdb09e1e2": {
-      "puan": 82,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k12b4a6:7caf42ffb8025385": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k38ef42:f4ce29e14fd79e8e": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k74f74a:35307c158051e9cd": {
-      "puan": 35,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k38ef42:7568e021b4028acb": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k38ef42:abc1b8917ce31267": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k2e841d:3afbde3aadae0d4c": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "ka5e8e4:699dac5829ee58c6": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k38ef42:b651d28608bc796b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
-    "k12b4a6:508668de4f14e8ad": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-20T21:50:54.756Z"
-    },
     "k38ef42:dd91c1fbd7105f6f": {
       "puan": 0,
       "olcek": 100,
@@ -15132,21 +15063,64 @@
       "puan": 76,
       "olcek": 100,
       "zaman": "2026-10-26T19:51:00.942Z"
+    },
+    "k59b8ca:1fdbff4ee26375b9": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k74f74a:f89367eb80edd738": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k2d427e:0b8503e4ea4b1020": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k8601e1:079c5ad55fb676c3": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k74f74a:e8e266ee65eb77f1": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k09feb3:b6bdbc3c09f02dda+k74f74a:dfdc3c665e066f3b": {
+      "puan": 95,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k74f74a:2fad0eb8ed0cad9e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "ke6dccd:06e1f75b7009a1ef": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "k74f74a:6aeb4a4f129cdcb1": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
+    },
+    "openai:https://openai.com/index/building-scientific-understanding-with-academic-communities": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-10-26T21:50:59.976Z"
     }
   },
   "yayinlanan": {
-    "moonshot-ai-kimi-k3-1-pro-modeliyle-yapay-zeka-pazarinda-zirveyi-zorluyor": {
-      "zaman": "2026-10-23T19:51:05.283Z",
-      "basliklarSifreli": "v1.gAJzcHscy5x+rJ8j.7hDlEd6STbyjCK74Dxxy3CLy2fqs4Rs0uI9W3EnXHp88FvKUgKujMitJhErvfOCgthSLKyGX517cTU0mqKRwzckLqYp5f5Sd+otgQx/UP9N8cDUcpk9ePhjZ6Rj7pCM="
-    },
-    "tencent-metin-komutlari-ve-kamera-hareketleriyle-calisan-hy-nomas-modelini-cikar": {
-      "zaman": "2026-10-23T19:51:05.283Z",
-      "basliklarSifreli": "v1.dM5tWeAfgmDgU+WT.IJIj7E3BI6PiVhK+K1q/MIQbsJg7A3uV6IANtSD4dfDU6gDXAwN6CgewUEtXUMiwF3KMzKTy9uh93QRn3yDkpQ/Zn3TEs6mO3XDk1qfp12blRaFwiNDSaVCE7RxLRc0="
-    },
-    "apple-ofis-uygulamalari-icin-intelligent-assistant-ozelligini-beta-olarak-cikard": {
-      "zaman": "2026-10-23T19:51:05.283Z",
-      "basliklarSifreli": "v1.i8gUBS/cbFw0lw6I.4PhKZQavNv0ANERiOyMTvLNp2QtuGA5RoP/RRBbLZgHl270N7s8TzgqdcpVNp8EoKj99AKPuhCDltIVgQGahmduqXn8HAuRqgRCNuZLp8i6eHgUXuVXP0MB3ztwh0ZebnG5aYDfiAp3yYw=="
-    },
     "pathos-ai-kanser-ilaci-gelistirmek-icin-237-milyon-dolar-yatirim-aldi": {
       "zaman": "2026-10-23T21:51:00.408Z",
       "basliklarSifreli": "v1.WuZTQW1vcFgz2Aus.lUwLrUvdHyPCpR+0uXbq/bsBdn95HPc4XGmL0lGmw+5wXamg/bq7nbVEvsQCYxx7y6IlnoSLSSPYJENM19TjzCYuAgW16Yi9j54gZ/yHP3Wg"
@@ -15442,6 +15416,18 @@
     "chapman-universitesi-anketi-yapay-zeka-korkusunun-yeni-boyutunu-ortaya-koydu": {
       "zaman": "2026-10-26T19:51:00.942Z",
       "basliklarSifreli": "v1.m2WbOmtHOrMnku/f.OT4SQVcuho/und3Nc9OtqJ3yb44HscovSArfHPJ+D2KuuY+L1gr8iucI1Oe663w4pURQINlLgLtrUGV9Im64EkJYainqzNYkrbWHPsW0WydvuIja8Ty9Sbft5E0H7Q=="
+    },
+    "openai-yeni-modeli-gpt-6-1-terra-yi-yari-yariya-ucuz-fiyatla-duyurdu": {
+      "zaman": "2026-10-26T21:50:59.976Z",
+      "basliklarSifreli": "v1.bBeLd9Qobz/qBks8.oIdXjPNQpU9js0eETeuV0AMzsN6sHfzsRrr1iWI4vZkiDrhZ2qlY7O8TPD6mheQmke05rjZKmiUa2XsxfO5w36vi4OzLSIOaZLTYaCkaFfzU2IoWf0R3XQNnK2cBmzzKYM9YRAkiPv9YNaN1PNrOKUDiemLc3URoRoUtSkiksayecXqpOxLkfVmXpix1dTrRLIiOwizcLGrZSXr+u3vlsqA82O4oZ7OR+LWsFM6OaBs+OPQT"
+    },
+    "coderabbit-guvenlik-analizlerinde-gpt-6-1-sol-modelini-kullanmaya-basladi": {
+      "zaman": "2026-10-26T21:50:59.976Z",
+      "basliklarSifreli": "v1.6vw+KEpZdAPxRUXb.c1mi9sMhvQYwXZmUsofQiEQ26YJ5CBXviNpppn8YPpOPV1lbACKtOVXnMlYiuJJhyzL1yByL93b9EukMBWGQFI1477w4EcFzL2B8rfQ3KtiO6XWbfJg602oOTn/5"
+    },
+    "openai-matematik-bilgisayar-bilimi-ve-fizik-alanlarinda-uc-yeni-kesif-duyurdu": {
+      "zaman": "2026-10-26T21:50:59.976Z",
+      "basliklarSifreli": "v1.dKbQO+Oai+nem2xd.GEUhkHw3XSC7V3EcsXiHsB7BxE4Ud2rmquGfb8GNT17lz5Lw0rRFrzZ7//+pB2pwfYSO5hLuM+iOon9C89ISri2IOUaP7jwJWGFhOqxlts2ARkAuJ1Fw"
     }
   },
   "havuz": [
@@ -19086,6 +19072,25 @@
     "openai:https://openai.com/index/openai-cut-incident-investigation": "2026-10-26T07:00:00.000Z",
     "openai:https://openai.com/index/introducing-gpt-6-1-terra": "2026-10-26T00:00:00.000Z",
     "mit-news-ai:https://news.mit.edu/2026/at-new-york-climate-week-mit-connects-global-network-1026": "2026-10-26T19:00:00.000Z",
-    "aws-ml:24d8d5b36e78caf18670ef6d83892be19ec25356": "2026-10-26T17:56:58.000Z"
+    "aws-ml:24d8d5b36e78caf18670ef6d83892be19ec25356": "2026-10-26T17:56:58.000Z",
+    "k59b8ca:1fdbff4ee26375b9": "2026-10-26T21:45:31.000Z",
+    "k9f3ec7:8217c5adcf9e4b0f": "2026-10-26T20:04:16.000Z",
+    "k3595c8:ee6d78b450f40863": "2026-10-26T21:27:15.000Z",
+    "k09feb3:b6bdbc3c09f02dda": "2026-10-26T20:30:55.000Z",
+    "ke82007:959c3ccbdce582a4": "2026-10-26T21:29:11.000Z",
+    "ka5e8e4:1c214f8ddb004a8b": "2026-10-26T20:52:35.000Z",
+    "k2d427e:0b8503e4ea4b1020": "2026-10-26T21:28:12.000Z",
+    "k2d427e:eb2eb906502d84b3": "2026-10-26T19:01:12.000Z",
+    "k74f74a:f89367eb80edd738": "2026-10-26T21:30:41.000Z",
+    "k74f74a:e8e266ee65eb77f1": "2026-10-26T20:34:30.000Z",
+    "k74f74a:2fad0eb8ed0cad9e": "2026-10-26T20:16:19.000Z",
+    "k74f74a:6aeb4a4f129cdcb1": "2026-10-26T20:06:59.000Z",
+    "k74f74a:e86ac5c1815ee3a3": "2026-10-26T19:58:32.000Z",
+    "k74f74a:dfdc3c665e066f3b": "2026-10-26T19:49:19.000Z",
+    "k2e841d:7281e96d30d459a8": "2026-10-26T19:47:56.000Z",
+    "ke6dccd:06e1f75b7009a1ef": "2026-10-26T20:08:15.000Z",
+    "k8601e1:079c5ad55fb676c3": "2026-10-26T20:52:03.000Z",
+    "openai:https://openai.com/index/gpt-6-1-sol-coderabbit-code-security": "2026-10-26T13:45:00.000Z",
+    "openai:https://openai.com/index/building-scientific-understanding-with-academic-communities": "2026-10-26T00:00:00.000Z"
   }
 }
