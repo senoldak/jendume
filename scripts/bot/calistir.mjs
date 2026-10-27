@@ -111,7 +111,7 @@ for (const kayit of [durum.gorulen, durum.taranan, durum.ayrik, durum.ayni]) {
   }
 }
 // Gemini Faz 2: yayımlanan haberlerin vektör dosyası (GOMME_VEKTOR=1) ve gömme önbelleği; hata turu düşürmez.
-await gommeTurSonu({ kok: ROT, icerik: 'src/content/haberler/tr', onbellekDosyasi: path.join(ROT, 'scripts/bot/gomme-onbellek.json') });
+await gommeTurSonu({ kok: ROT, icerik: ['src/content/haberler/tr', 'src/content/haberler/en'], onbellekDosyasi: path.join(ROT, 'scripts/bot/gomme-onbellek.json') });
 await writeFile(DURUM_DOSYASI, `${JSON.stringify({ ...durum, yayinlanan: yayinlananKapat(durum.yayinlanan), havuz: havuzKapat(durum.havuz) }, null, 2)}\n`, 'utf8');
 
 const sayi = ozet.yazilan.length;
