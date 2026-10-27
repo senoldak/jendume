@@ -4,12 +4,18 @@
 import { AI_ENTITIES } from './entities.ts';
 import { dizinlenir } from './kalite.mjs';
 import { BULLETIN_CATEGORY } from './site.ts';
+import { anlamBenzerligi, anlamPuani, vektorleriOku } from './anlam.mjs';
 
 export interface IlgiliAday {
   id: string;
   body?: string;
-  data: { title: string; description: string; category: string; date: Date; key_points?: string[] };
+  data: { title: string; description: string; category: string; date: Date; key_points?: string[]; lang?: string };
 }
+
+// Gemini Faz 2 (27 Ekim): anlam benzerliği; vektör dosyasında kimlik "<dil>/<slug>" (iki dilin slug'ları ayrı).
+export type Anlam = (a: IlgiliAday, b: IlgiliAday) => number | null;
+const anahtar = (p: IlgiliAday) => `${p.data.lang ?? 'tr'}/${p.id}`;
+const varsayilanAnlam: Anlam = (a, b) => anlamBenzerligi(vektorleriOku(), anahtar(a), anahtar(b));
 
 // "Yapay Zekâ" neredeyse her haberde geçer; ilgi ölçüsü olarak ayırt edici değildir.
 const GENEL = new Set(['https://www.wikidata.org/wiki/Q11660']);
@@ -48,18 +54,18 @@ const uygun = (p: IlgiliAday) => p.data.category !== BULLETIN_CATEGORY && dizinl
  * @param post  sayfadaki haber
  * @param adaylar  aynı dildeki yayımlanmış haberler (yeniden eskiye sıralı)
  */
-export function ilgiliHaberler<T extends IlgiliAday>(post: T, adaylar: T[], adet = 3): T[] {
+export function ilgiliHaberler<T extends IlgiliAday>(post: T, adaylar: T[], adet = 3, anlam: Anlam = varsayilanAnlam): T[] {
   const havuz = adaylar.filter((p) => p.id !== post.id && uygun(p));
   const benim = varliklar(post);
   const puanli = havuz
     .map((p, sira) => {
       let ortak = 0;
       if (benim.size > 0) for (const v of varliklar(p)) if (benim.has(v)) ortak++;
-      return { p, sira, ortak, ayniBolum: p.data.category === post.data.category };
+      return { p, sira, puan: ortak + anlamPuani(anlam(post, p)), ayniBolum: p.data.category === post.data.category };
     })
-    // Önce ortak varlık sayısı, sonra aynı bölüm, sonra yenilik (havuz sırası).
-    .sort((a, b) => b.ortak - a.ortak || Number(b.ayniBolum) - Number(a.ayniBolum) || a.sira - b.sira);
-  const secilen = puanli.filter((x) => x.ortak > 0 || x.ayniBolum).slice(0, adet).map((x) => x.p);
+    // Önce ortak varlık + anlam puanı, sonra aynı bölüm, sonra yenilik (havuz sırası).
+    .sort((a, b) => b.puan - a.puan || Number(b.ayniBolum) - Number(a.ayniBolum) || a.sira - b.sira);
+  const secilen = puanli.filter((x) => x.puan > 0 || x.ayniBolum).slice(0, adet).map((x) => x.p);
   // Ne ortak varlık ne aynı bölüm varsa en yeni uygun haberlerle tamamlanır.
   if (secilen.length < adet) {
     for (const x of puanli) {
