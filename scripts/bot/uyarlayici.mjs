@@ -7,7 +7,11 @@
 // Sonucu olmayan aday bekliyor kalır (puanlanamadı, düzeltme cevapsız, süre ya da Gemini payı doldu).
 import { KAYNAKLAR, anahtarlar, baslikTemiz, benzer, haberKimligi, tamMetin } from './kaynaklar.mjs';
 import { MIN_DEGER, onbellekliPuanla, taslakYaz, duzelt, derlemeYaz, derlemeUzat } from './yazar.mjs';
-import { ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
+import { ayniOlayMi, ciftleriKur, onbellekliEsle, ozelAdlar, uygula } from './esleme.mjs';
+import { gommeliEsle } from './esleme-gomme.mjs';
+import { ortakOnbellek } from './vektorler.mjs';
+import path from 'node:path';
+
 import { baslikKontrol, baslikUzunlukKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
 import { hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
@@ -18,6 +22,9 @@ import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, derlemeKaynagi, di
 import { standartOzeti } from './standart.mjs';
 import { derlemeStandardi, gerekceBirlestir, haberStandardi, kapiMetinleri, puanKapisi } from './kapi.mjs';
 import { kirmiziKayit, motorKaydet, motorKimlik, sariKayit } from './motor.mjs';
+
+// Gömme ölçüm satırı için çiftin dili: Türkçe harfi olan metin tr, yoksa en (sıralı: tr-tr, en-tr, en-en).
+const dilCifti = (a, b) => [a, b].map((t) => (/[çğıöşüİ]/i.test(t) ? 'tr' : 'en')).sort().join('-');
 
 const EN_FAZLA_HATA = 3;
 // Kaynak metinlerin toplam en az uzunluğu (karakter); altında olay yazılmaz.
@@ -78,7 +85,7 @@ export const gorulmeyen = (adaylar, durum) => adaylar.filter((a) => !durum.gorul
 export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
   const A = { enFazla: 6, teyit: 1, yasGun: 5, sureMs: 18 * 60_000, baslangic: Date.now(), ...ayar };
   const B = {
-    KAYNAKLAR, hentTekst, rssOku, tamMetin, taslakYaz, duzelt, derlemeYaz, derlemeUzat, onbellekliPuanla, onbellekliEsle,
+    KAYNAKLAR, hentTekst, rssOku, tamMetin, taslakYaz, duzelt, derlemeYaz, derlemeUzat, onbellekliPuanla, onbellekliEsle, gommeliEsle, ayniOlayMi,
     ucDilliHaberYaz, sonHaberler, geminiPayiBitti,
     motorYaz: (kayit) => motorKaydet({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, kayit }),
     ...bag,
@@ -256,8 +263,13 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           bySlug.set(x.slug, m);
         }
         const yazilmisAdlar = [...bySlug.values()].map((m) => ({ id: m.id, metin: m.parca.join(' / '), adlar: ozelAdlar(m.parca.join(' ')) }));
-        const ciftler = ciftleriKur(sira, yazilmisAdlar, ayrikMi);
-        const ayni = await B.onbellekliEsle(ciftler, durum.ayni, (c) => ciftAnahtar(c.idA, c.idB), { zaman: simdi.toISOString() });
+        // Gemini Faz 2: gömme ölçümü / ön eleme (GOMME_ON_ELEME); kapalıyken ve gömme düşünce bugünkü yol.
+        const esle = (c) => B.onbellekliEsle(c, durum.ayni, (x) => ciftAnahtar(x.idA, x.idB), { zaman: simdi.toISOString() });
+        const { ciftler, ayni, ozet: gozet } = await B.gommeliEsle({
+          ciftler: ciftleriKur(sira, yazilmisAdlar, ayrikMi), gruplar: sira, yazilmis: yazilmisAdlar, ayrikMi, esle, sor: B.ayniOlayMi,
+          dil: dilCifti, onbellek: ortakOnbellek(path.join(rot, 'scripts/bot/gomme-onbellek.json')), log,
+        });
+        if (gozet) log(`Gömme ön elemesi: ${gozet.elenen} çift sorulmadı, ${gozet.ek} ek çift.`);
         if (ayni) {
           const sonuc = uygula(sira, ciftler, ayni);
           for (const [x, y] of sonuc.ayrik) durum.ayrik[ciftAnahtar(x, y)] = simdi.toISOString();
