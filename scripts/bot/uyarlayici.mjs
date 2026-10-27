@@ -22,6 +22,7 @@ import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, derlemeKaynagi, di
 import { standartOzeti } from './standart.mjs';
 import { derlemeStandardi, gerekceBirlestir, haberStandardi, kapiMetinleri, puanKapisi } from './kapi.mjs';
 import { kirmiziKayit, motorKaydet, motorKimlik, sariKayit } from './motor.mjs';
+import { kaliteKaydet } from './yerel-model.mjs';
 
 // Gömme ölçüm satırı için çiftin dili: Türkçe harfi olan metin tr, yoksa en (sıralı: tr-tr, en-tr, en-en).
 const dilCifti = (a, b) => [a, b].map((t) => (/[çğıöşüİ]/i.test(t) ? 'tr' : 'en')).sort().join('-');
@@ -465,6 +466,11 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
             continue;
           }
           kapiGerekce = r.gerekce ?? '';
+        }
+        // Yerel kalite gölgesi (yerel-model.mjs): yalnız YEREL_GOLGE=1 iken runner'ın geçici dosyasına yazılır.
+        for (const dil of ['tr', 'en']) {
+          const b = yazilacak[dil];
+          if (b) kaliteKaydet({ id: g.uyeler[0].id, dil, metin: `${b.title}\n${b.description}\n${b.body}`, kaynak: kaynakBirlesik });
         }
         const slug = await B.ucDilliHaberYaz(rot, {
           ...yazilacak,

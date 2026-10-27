@@ -81,6 +81,7 @@ jobs:
           GEMINI_GOLGE: ${{ vars.GEMINI_GOLGE }}
           # Yerel model gölgesi (28 Ekim): 1 ise ölçülen çiftler yerel modellere de sorulur (yerel-model.mjs).
           YEREL_GOLGE: ${{ vars.YEREL_GOLGE }}
+          YEREL_KALITE_DOSYASI: ${{ runner.temp }}/kalite.jsonl
           EN_FAZLA: ${{ vars.EN_FAZLA }}
           # Ortak motor modu (private mecmua'dan salt-okur çekilir): vars.MOTOR_TUR=1 iken tur motorla sürülür.
           MOTOR_TUR: ${{ vars.MOTOR_TUR }}
@@ -161,6 +162,19 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REF_ADI: ${{ github.ref_name }}
         run: gh workflow run yayinla.yml --ref "$REF_ADI"
+
+      # Yerel kalite gölgesi (28 Ekim, yerel-kalite.py): bu turda yayına giden haberlerin rakam ve alıntıları LangExtract
+      # ve yerel Gemma ile kaynakta aranır; yalnız loga yazılır. Yayından sonra çalışır, yayını geciktirmez.
+      - name: Yerel kalite gölgesi
+        if: ${{ !cancelled() && vars.YEREL_GOLGE == '1' }}
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          [ -s "$RUNNER_TEMP/kalite.jsonl" ] || { echo "Bu turda yayına giden haber yok."; exit 0; }
+          curl -fs http://127.0.0.1:8092/health >/dev/null || { echo "Yerel model sunucusu yok."; exit 0; }
+          python3 -m venv "$RUNNER_TEMP/kalite-venv"
+          "$RUNNER_TEMP/kalite-venv/bin/pip" install --quiet --disable-pip-version-check 'langextract[openai]==1.7.1'
+          "$RUNNER_TEMP/kalite-venv/bin/python" scripts/bot/yerel-kalite.py "$RUNNER_TEMP/kalite.jsonl"
 
       # Katman 0 (Gemini kota planı): bu işin Gemini kullanımını model ve amaç başına mecmua-saat'e bildirir. İşi düşürmez.
       - name: Gemini kullanımını saate bildir
