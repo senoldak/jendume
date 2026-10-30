@@ -6,7 +6,7 @@ import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } fro
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl, getPublishedPosts } from '../lib/news';
 import { analizMi } from '../lib/yazi-turu.mjs';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu } from '../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu, grafiklerYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
 
 type Hreflang = Locale | 'x-default';
@@ -90,6 +90,7 @@ const aiUseHref = yapayZekaYolu(lang);
 const correctionsHref = duzeltmelerYolu(lang);
 const complaintsHref = sikayetYolu(lang);
 const standardsReportHref = standartlarRaporuYolu(lang);
+const chartsHref = grafiklerYolu(lang);
 const robots = noindex
   ? 'noindex, follow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -282,6 +283,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <li><a href={gizlilikHref}><span>{ui.privacy}<span class="link-other" lang={other}>{SITE.ui[other].privacy}</span></span></a></li>
           <li><a href={homeHref}><span>{ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span></span></a></li>
           <li><a href={topicsHref}><span>{ui.topics}<span class="link-other" lang={other}>{SITE.ui[other].topics}</span></span></a></li>
+          <li><a href={chartsHref}><span>{lang === 'tr' ? 'Grafikler' : 'Charts'}<span class="link-other" lang={other}>{lang === 'tr' ? 'Charts' : 'Grafikler'}</span></span></a></li>
           <li><a href={glossaryHref}><span>{ui.glossary}<span class="link-other" lang={other}>{SITE.ui[other].glossary}</span></span></a></li>
           <li><a href={aboutHref}><span>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></span></a></li>
           <li><a href={editorialHref}><span>{ui.editorialStandards}<span class="link-other" lang={other}>{SITE.ui[other].editorialStandards}</span></span></a></li>

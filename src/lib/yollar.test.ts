@@ -60,6 +60,14 @@ test('şikâyet ve standartlar raporu yolları dil eşlemesiyle çevrilir', () =
   assert.equal(karsiYol('/en/standards-report/', 'tr'), '/tr/standartlar-raporu/');
 });
 
+test('grafikler ve charts yolları dil eşlemesiyle çevrilir', async () => {
+  const { grafiklerYolu } = await import('./yollar.mjs');
+  assert.equal(grafiklerYolu('tr'), '/tr/grafikler/');
+  assert.equal(grafiklerYolu('en'), '/en/charts/');
+  assert.equal(karsiYol('/tr/grafikler/', 'en'), '/en/charts/');
+  assert.equal(karsiYol('/en/charts/', 'tr'), '/tr/grafikler/');
+});
+
 test('yazar sayfası yolu dile göre değişir, slug aynı kalır', async () => {
   const { yazarYolu } = await import('./yollar.mjs');
   assert.equal(yazarYolu('tr'), '/tr/yazar/senol-dak/');
