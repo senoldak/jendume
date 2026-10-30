@@ -1,0 +1,425 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import JendumeChartCard from '../kartlar/JendumeChartCard.astro';
+import { SITE, type Locale } from '../../lib/site';
+import { abs, type Crumb } from '../../lib/seo';
+import { JENDUME_GRAFİKLER } from '../../lib/jendume-charts-data';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+
+const path = lang === 'tr' ? '/tr/grafikler/' : '/en/charts/';
+const url = abs(path);
+
+const metin = {
+  tr: {
+    baslik: 'Yapay Zekâ ve Teknoloji Veri Kataloğu — 62 Grafik',
+    katalogBaslik: 'Yapay Zekâ ve Teknoloji Veri Kataloğu',
+    aciklama:
+      'Dil modelleri, GPU donanımı, AB Yapay Zekâ Tüzüğü, veri merkezi enerjisi ve açık kaynak ekosistemine dair 62 interaktif grafik kartı.',
+    rozet: 'AÇIK VERİ & ANALİTİK',
+    aramaPlaceholder: 'Grafik, metrik veya kaynak ara...',
+    tumKategoriler: 'TÜMÜ',
+    toplamMetin: 'Toplam 62 analitik göstergesi',
+    gosterilenMetin: 'gösteriliyor',
+    kategoriler: [
+      'TÜMÜ',
+      'DİL MODELLERİ & LLM',
+      'YAPAY ZEKÂ ÇİPLERİ & DONANIM',
+      'AB MEVZUATI & AI ACT',
+      'VERİ MERKEZİ & ENERJİ',
+      'YAPAY ZEKÂ YATIRIMLARI',
+      'AÇIK KAYNAK EKOSİSTEMİ',
+    ],
+  },
+  en: {
+    baslik: 'AI & Technology Data Catalog — 62 Charts',
+    katalogBaslik: 'AI & Technology Data Catalog',
+    aciklama:
+      '62 interactive chart cards covering LLMs, GPU hardware, EU AI Act compliance, datacenter energy, and open-source models.',
+    rozet: 'OPEN DATA & ANALYTICS',
+    aramaPlaceholder: 'Search charts, metrics, or sources...',
+    tumKategoriler: 'ALL',
+    toplamMetin: 'Total 62 analytical indicators',
+    gosterilenMetin: 'showing',
+    kategoriler: [
+      'ALL',
+      'LANGUAGE MODELS & LLM',
+      'AI CHIPS & HARDWARE',
+      'EU REGULATION & AI ACT',
+      'DATA CENTERS & ENERGY',
+      'AI VENTURE & INVESTMENTS',
+      'OPEN SOURCE ECOSYSTEM',
+    ],
+  },
+}[lang];
+
+const crumbs: Crumb[] = [
+  { name: SITE.displayName, path: `/${lang}/` },
+  { name: lang === 'tr' ? 'Grafikler' : 'Charts', path },
+];
+
+const schema = [
+  {
+    '@type': 'CollectionPage',
+    '@id': `${url}#page`,
+    url,
+    name: metin.baslik,
+    description: metin.aciklama,
+    inLanguage: lang,
+    isPartOf: { '@id': abs('/#website') },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: JENDUME_GRAFİKLER.length,
+      itemListElement: JENDUME_GRAFİKLER.slice(0, 30).map((g, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: lang === 'tr' ? g.baslikTr : g.baslikEn,
+        description: lang === 'tr' ? g.aciklamaTr : g.aciklamaEn,
+      })),
+    },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
+  },
+];
+
+const normalle = (str: string) =>
+  str
+    .toLowerCase()
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ı/g, 'i')
+    .replace(/ö/g, 'o')
+    .replace(/ç/g, 'c');
+---
+
+<Base
+  lang={lang}
+  title={metin.baslik}
+  description={metin.aciklama}
+  canonicalPath={path}
+  langUrls={{ tr: '/tr/grafikler/', en: '/en/charts/' }}
+  alternates={{ tr: '/tr/grafikler/', en: '/en/charts/', 'x-default': '/en/charts/' }}
+  schema={schema}
+>
+  <div class="katalog-kapsayici">
+    <Breadcrumb lang={lang} items={crumbs} />
+
+    <header class="sayfa-baslik-alani">
+      <div class="ust-etiket">
+        <span class="levha-nokta" aria-hidden="true"></span>
+        <span>{metin.rozet}</span>
+      </div>
+      <h1>{metin.katalogBaslik}</h1>
+      <p class="sayfa-ozet">{metin.aciklama}</p>
+    </header>
+
+    <!-- Filtre Paneli -->
+    <div class="filtre-paneli">
+      <div class="kategori-butonlari" role="tablist" aria-label={lang === 'tr' ? 'Kategori filtresi' : 'Category filter'}>
+        {
+          metin.kategoriler.map((kat, i) => (
+            <button
+              type="button"
+              class={`kategori-sekme ${i === 0 ? 'aktif' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-kategori={kat}
+            >
+              {kat}
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="arama-kutusu-sarmal">
+        <label for="grafik-arama" class="sr-only">{lang === 'tr' ? 'Grafik Ara' : 'Search Charts'}</label>
+        <input
+          type="search"
+          id="grafik-arama"
+          placeholder={metin.aramaPlaceholder}
+          class="arama-girdisi"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <!-- Grafik Sayacı -->
+    <div class="sonuc-bilgisi">
+      <span>{metin.toplamMetin}</span>
+      <span id="gorunen-sayac" class="gorunen-adet">62 {metin.gosterilenMetin}</span>
+    </div>
+
+    <!-- 62 Kartlık Izgara -->
+    <div class="grafikler-izgara" id="grafikler-izgara">
+      {
+        JENDUME_GRAFİKLER.map((grafik) => {
+          const aramaMetni = normalle(
+            `${grafik.baslikTr} ${grafik.baslikEn} ${grafik.aciklamaTr} ${grafik.aciklamaEn} ${grafik.kategoriTr} ${grafik.kategoriEn} ${grafik.kaynakTr} ${grafik.kaynakEn} ${grafik.id}`
+          );
+          return (
+            <div
+              class="grafik-karti-sarmal"
+              data-kategori-tr={grafik.kategoriTr}
+              data-kategori-en={grafik.kategoriEn}
+              data-tur={grafik.tur}
+              data-arama={aramaMetni}
+            >
+              <JendumeChartCard grafik={grafik} lang={lang} />
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</Base>
+
+<script>
+  const aramaInput = document.getElementById('grafik-arama') as HTMLInputElement | null;
+  const kategoriButonlari = document.querySelectorAll<HTMLButtonElement>('.kategori-sekme');
+  const kartlar = document.querySelectorAll<HTMLElement>('.grafik-karti-sarmal');
+  const gorunenSayac = document.getElementById('gorunen-sayac');
+
+  let aktifKategori = '';
+  let aramaMetni = '';
+
+  const normalle = (str: string) =>
+    str
+      .toLowerCase()
+      .replace(/ğ/g, 'g')
+      .replace(/ü/g, 'u')
+      .replace(/ş/g, 's')
+      .replace(/ı/g, 'i')
+      .replace(/ö/g, 'o')
+      .replace(/ç/g, 'c');
+
+  function filtrele() {
+    let sayac = 0;
+    kartlar.forEach((kart) => {
+      const katTr = kart.dataset.kategoriTr ?? '';
+      const katEn = kart.dataset.kategoriEn ?? '';
+      const arama = kart.dataset.arama ?? '';
+
+      const kategoriUyumu =
+        !aktifKategori ||
+        aktifKategori === 'TÜMÜ' ||
+        aktifKategori === 'ALL' ||
+        katTr.toLowerCase() === aktifKategori.toLowerCase() ||
+        katEn.toLowerCase() === aktifKategori.toLowerCase();
+
+      const aramaUyumu = !aramaMetni || arama.includes(aramaMetni);
+
+      if (kategoriUyumu && aramaUyumu) {
+        kart.style.display = '';
+        sayac++;
+      } else {
+        kart.style.display = 'none';
+      }
+    });
+
+    if (gorunenSayac) {
+      gorunenSayac.textContent = `${sayac} / 62`;
+    }
+  }
+
+  kategoriButonlari.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      kategoriButonlari.forEach((b) => {
+        b.classList.remove('aktif');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('aktif');
+      btn.setAttribute('aria-selected', 'true');
+      aktifKategori = btn.dataset.kategori ?? '';
+      filtrele();
+    });
+  });
+
+  if (aramaInput) {
+    aramaInput.addEventListener('input', (e) => {
+      aramaMetni = normalle((e.target as HTMLInputElement).value.trim());
+      filtrele();
+    });
+  }
+</script>
+
+<style>
+  .katalog-kapsayici {
+    max-width: var(--container, 1320px);
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2.5rem) var(--gutter, 1.5rem);
+    font-family: var(--font-read, 'Instrument Sans', sans-serif);
+  }
+
+  .sayfa-baslik-alani {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--hair, #c9ccc4);
+  }
+
+  .ust-etiket {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--yesil-yazi, #00783d);
+    background: #e6f7ee;
+    padding: 0.25rem 0.625rem;
+    border-radius: 3px;
+    margin-bottom: 0.875rem;
+  }
+
+  .levha-nokta {
+    width: 6px;
+    height: 6px;
+    background: var(--yesil, #00924a);
+    display: inline-block;
+  }
+
+  .sayfa-baslik-alani h1 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--ink, #16181d);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .sayfa-ozet {
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    color: var(--muted, #5a606b);
+    max-width: 75ch;
+    margin: 0;
+  }
+
+  .filtre-paneli {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    background: var(--ground, #f4f5f2);
+    padding: 1.25rem;
+    border-radius: 4px;
+    border: 1px solid var(--hair, #c9ccc4);
+  }
+
+  @media (min-width: 768px) {
+    .filtre-paneli {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .kategori-butonlari {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .kategori-sekme {
+    background: #ffffff;
+    border: 1px solid var(--hair, #c9ccc4);
+    color: var(--ink-2, #3a3f48);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.375rem 0.75rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+
+  .kategori-sekme:hover {
+    border-color: var(--yesil, #00924a);
+    color: var(--yesil-yazi, #00783d);
+  }
+
+  .kategori-sekme.aktif {
+    background: var(--yesil, #00924a);
+    border-color: var(--yesil, #00924a);
+    color: #ffffff;
+  }
+
+  .arama-kutusu-sarmal {
+    min-width: 260px;
+  }
+
+  .arama-girdisi {
+    width: 100%;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.875rem;
+    font-family: inherit;
+    border: 1px solid var(--hair, #c9ccc4);
+    border-radius: 3px;
+    background: #ffffff;
+    color: var(--ink, #16181d);
+  }
+
+  .arama-girdisi:focus {
+    outline: none;
+    border-color: var(--yesil, #00924a);
+    box-shadow: 0 0 0 2px rgba(0, 146, 74, 0.15);
+  }
+
+  .sonuc-bilgisi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8125rem;
+    color: var(--muted, #5a606b);
+    margin-bottom: 1.5rem;
+    padding: 0 0.25rem;
+  }
+
+  .gorunen-adet {
+    font-weight: 600;
+    color: var(--yesil-yazi, #00783d);
+  }
+
+  .grafikler-izgara {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .grafikler-izgara {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .grafikler-izgara {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .grafik-karti-sarmal {
+    display: flex;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

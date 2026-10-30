@@ -1,0 +1,325 @@
+---
+import type { JendumeGrafikTanimi } from '../../lib/jendume-charts-data';
+import JendumeChartRenderer from './JendumeChartRenderer.astro';
+
+interface Props {
+  grafik: JendumeGrafikTanimi;
+  lang?: 'tr' | 'en';
+  kucuk?: boolean;
+}
+
+const { grafik, lang = 'tr', kucuk = false } = Astro.props;
+
+const artisMi = grafik.degisim >= 0;
+const degisimOk = artisMi ? '▲' : '▼';
+
+const baslikAna = lang === 'tr' ? grafik.baslikTr : grafik.baslikEn;
+const baslikEs = lang === 'tr' ? grafik.baslikEn : grafik.baslikTr;
+const kategori = lang === 'tr' ? grafik.kategoriTr : grafik.kategoriEn;
+const aciklama = lang === 'tr' ? grafik.aciklamaTr : grafik.aciklamaEn;
+const metrik = lang === 'tr' ? grafik.metrikTr : grafik.metrikEn;
+const degisimEtiket = lang === 'tr' ? grafik.degisimEtiketTr : grafik.degisimEtiketEn;
+const kaynak = lang === 'tr' ? grafik.kaynakTr : grafik.kaynakEn;
+
+const degisimMetni = `${degisimOk} %${Math.abs(grafik.degisim).toFixed(1)}`;
+const zamanSerisiMi = ['alan', 'sutun', 'coklu-karma', 'ayrisan-cubuk'].includes(grafik.tur);
+---
+
+<article class="jendume-kart" data-kart-id={grafik.id}>
+  <header class="kart-ust">
+    <div class="kategori-satiri">
+      <div class="levha-etiket">
+        <span class="levha-kare" aria-hidden="true"></span>
+        <span class="kart-kategori">{kategori}</span>
+      </div>
+      <span class="kart-no">#{grafik.id.replace('charts-', '')}</span>
+    </div>
+
+    <div class="baslik-blok">
+      <h3 class="kart-baslik-ana">{baslikAna}</h3>
+      <p class="kart-baslik-es">{baslikEs}</p>
+      <p class="kart-aciklama">{aciklama}</p>
+    </div>
+
+    <div class="metrik-blok">
+      <div class="metrik-deger">{metrik}</div>
+      <div class={`degisim-rozet ${artisMi ? 'artis' : 'azalis'}`}>
+        <span class="degisim-oran">{degisimMetni}</span>
+        <span class="degisim-etiket">{degisimEtiket}</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Zaman aralığı filtresi -->
+  {
+    zamanSerisiMi ? (
+      <div class="zaman-filtresi" role="tablist" aria-label="Zaman aralığı">
+        <button type="button" class="filtre-sekme aktif" role="tab" aria-selected="true" data-vade="1A">1M</button>
+        <button type="button" class="filtre-sekme" role="tab" aria-selected="false" data-vade="3A">3M</button>
+        <button type="button" class="filtre-sekme" role="tab" aria-selected="false" data-vade="1Y">1Y</button>
+        <button type="button" class="filtre-sekme" role="tab" aria-selected="false" data-vade="Tümü">ALL</button>
+      </div>
+    ) : (
+      <div class="tur-rozet-serit">
+        <span class="tur-etiket">{grafik.tur.toUpperCase()}</span>
+      </div>
+    )
+  }
+
+  <!-- SVG Çizim Alanı -->
+  <div class="kart-cizim-alani">
+    <JendumeChartRenderer grafik={grafik} yukseklik={kucuk ? 180 : 220} />
+  </div>
+
+  <!-- İki Dilli Levha Göstergesi (BRAND.md §5 & §9) -->
+  <div class="levha-bilgi-seridi">
+    <span class="levha-noktasi">■</span>
+    <span class="levha-metin">{lang === 'tr' ? 'kelimelerin ötesinde' : 'Beyond Words'} · AI Metrics</span>
+  </div>
+
+  <!-- Kart Altı: Kaynak ve Tarih -->
+  <footer class="kart-alt">
+    <div class="kaynak-satiri">
+      <span class="kaynak-metin">{lang === 'tr' ? 'Kaynak' : 'Source'}: <strong>{kaynak}</strong></span>
+      <span class="tarih-metin">{grafik.tarih}</span>
+    </div>
+  </footer>
+</article>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.jendume-kart').forEach((kart) => {
+    const sekmeler = kart.querySelectorAll<HTMLButtonElement>('.filtre-sekme');
+    sekmeler.forEach((sekme) => {
+      sekme.addEventListener('click', () => {
+        sekmeler.forEach((s) => {
+          s.classList.remove('aktif');
+          s.setAttribute('aria-selected', 'false');
+        });
+        sekme.classList.add('aktif');
+        sekme.setAttribute('aria-selected', 'true');
+      });
+    });
+  });
+</script>
+
+<style>
+  .jendume-kart {
+    background: #ffffff;
+    border: 1px solid var(--cizgi, #c9ccc4);
+    border-radius: 0px; /* BRAND.md: Yuvarlak köşe yok */
+    border-top: 3px solid var(--yesil, #00924a); /* BRAND.md §7: Esperanto yeşili üst vurgu */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--sans, 'Instrument Sans', system-ui, sans-serif);
+    transition: border-color 0.15s ease;
+    position: relative;
+  }
+
+  .jendume-kart:hover {
+    border-color: var(--ink, #16181d);
+  }
+
+  .kart-ust {
+    margin-bottom: 12px;
+  }
+
+  .kategori-satiri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .levha-etiket {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .levha-kare {
+    width: 7px;
+    height: 7px;
+    background: var(--yesil, #00924a);
+    display: inline-block;
+  }
+
+  .kart-kategori {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--koyuyesil, #00783d);
+  }
+
+  .kart-no {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: var(--gri, #5a5d63);
+    background: var(--paper, #f4f5f2);
+    padding: 1px 6px;
+    border: 1px solid var(--cizgi, #c9ccc4);
+  }
+
+  .baslik-blok {
+    margin-bottom: 10px;
+  }
+
+  .kart-baslik-ana {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--ink, #16181d);
+    margin: 0 0 2px 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  /* BRAND.md §9: İki dil - eş başlık ince ve gri hemen altında */
+  .kart-baslik-es {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gri, #5a5d63);
+    margin: 0 0 6px 0;
+    line-height: 1.35;
+  }
+
+  .kart-aciklama {
+    font-size: 0.825rem;
+    color: var(--gri, #5a5d63);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  .metrik-blok {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid var(--cizgi, #c9ccc4);
+  }
+
+  .metrik-deger {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--ink, #16181d);
+    letter-spacing: -0.02em;
+  }
+
+  .degisim-rozet {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 6px;
+  }
+
+  .degisim-rozet.artis {
+    background: rgba(0, 146, 74, 0.1);
+    color: var(--yesil, #00924a);
+    border-left: 2px solid var(--yesil, #00924a);
+  }
+
+  .degisim-rozet.azalis {
+    background: rgba(22, 24, 29, 0.08);
+    color: var(--ink, #16181d);
+    border-left: 2px solid var(--ink, #16181d);
+  }
+
+  .degisim-oran {
+    font-weight: 700;
+  }
+
+  .degisim-etiket {
+    color: var(--gri, #5a5d63);
+    font-size: 0.7rem;
+  }
+
+  .zaman-filtresi {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .filtre-sekme {
+    background: transparent;
+    border: 1px solid var(--cizgi, #c9ccc4);
+    color: var(--gri, #5a5d63);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: all 0.15s ease;
+  }
+
+  .filtre-sekme:hover {
+    border-color: var(--ink, #16181d);
+    color: var(--ink, #16181d);
+  }
+
+  .filtre-sekme.aktif {
+    background: var(--ink, #16181d);
+    border-color: var(--ink, #16181d);
+    color: #ffffff;
+  }
+
+  .tur-rozet-serit {
+    margin-bottom: 12px;
+  }
+
+  .tur-etiket {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--gri, #5a5d63);
+    background: var(--paper, #f4f5f2);
+    padding: 2px 6px;
+    border: 1px solid var(--cizgi, #c9ccc4);
+  }
+
+  .kart-cizim-alani {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0 12px 0;
+  }
+
+  .levha-bilgi-seridi {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: var(--paper, #f4f5f2);
+    border: 1px solid var(--cizgi, #c9ccc4);
+    margin-bottom: 12px;
+    font-size: 0.7rem;
+    color: var(--gri, #5a5d63);
+  }
+
+  .levha-noktasi {
+    color: var(--yesil, #00924a);
+    font-size: 0.6rem;
+  }
+
+  .kart-alt {
+    padding-top: 10px;
+    border-top: 1px solid var(--cizgi, #c9ccc4);
+    font-size: 0.72rem;
+  }
+
+  .kaynak-satiri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gri, #5a5d63);
+  }
+
+  .tarih-metin {
+    font-variant-numeric: tabular-nums;
+  }
+</style>
