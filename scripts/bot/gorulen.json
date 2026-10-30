@@ -5138,7 +5138,32 @@
     "k8601e1:0153da59e60ba67e": "2026-10-30T19:51:35.637Z",
     "kaec085:b5db066ff419b9c0": "2026-10-30T19:51:35.637Z",
     "epoch-ai:https://epoch.ai/data-insights/biorxiv-llms-vs-ai-tools": "2026-10-30T19:51:35.637Z",
-    "openai:https://openai.com/index/helping-websites-express-ai-training-preferences": "2026-10-30T19:51:35.637Z"
+    "openai:https://openai.com/index/helping-websites-express-ai-training-preferences": "2026-10-30T19:51:35.637Z",
+    "kd4ca61:853ccca017d2f570": "2026-10-30T21:52:07.228Z",
+    "k3595c8:709fd46b76fe9589": "2026-10-30T21:52:07.228Z",
+    "k9f3ec7:ebc14e845783cbc8": "2026-10-30T21:52:07.228Z",
+    "k9f3ec7:45eda8e57673b246": "2026-10-30T21:52:07.228Z",
+    "kb7f905:a75c7aab109398f4": "2026-10-30T21:52:07.228Z",
+    "k2d427e:03c0af43265581ce": "2026-10-30T21:52:07.228Z",
+    "k8601e1:39d4ead8cebfd866": "2026-10-30T21:52:07.228Z",
+    "kea595f:fc366b05ac233685": "2026-10-30T21:52:07.228Z",
+    "k38ef42:ff8c0a907de5fb53": "2026-10-30T21:52:07.228Z",
+    "k38ef42:4d6cd13a06aa0dd6": "2026-10-30T21:52:07.228Z",
+    "k2e841d:aca228b9350038d4": "2026-10-30T21:52:07.228Z",
+    "k8601e1:450207aa48595cc8": "2026-10-30T21:52:07.228Z",
+    "mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "2026-10-30T21:52:07.228Z",
+    "k38ef42:525a6b4247f2b7ac": "2026-10-30T21:52:07.228Z",
+    "k2e841d:c932303402132919": "2026-10-30T21:52:07.228Z",
+    "k38ef42:2519691e3d6673ac": "2026-10-30T21:52:07.228Z",
+    "kd9a613:7c632d0ec65c78e6": "2026-10-30T21:52:07.228Z",
+    "k38ef42:8ebbfd47b23ee44c": "2026-10-30T21:52:07.228Z",
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38": "2026-10-30T21:52:07.228Z",
+    "kea595f:32aebe41bc59ad74": "2026-10-30T21:52:07.228Z",
+    "k59b8ca:44a2ef42d91a2e2f": "2026-10-30T21:52:07.228Z",
+    "k38ef42:1e7ed958a983d01b": "2026-10-30T21:52:07.228Z",
+    "kb7f905:8d8a667e8c49193f": "2026-10-30T21:52:07.228Z",
+    "k9f3ec7:9f204a7bd33e19d9": "2026-10-30T21:52:07.228Z",
+    "k59b8ca:67746ce2a7192ab9": "2026-10-30T21:52:07.228Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -12074,7 +12099,48 @@
     "k38ef42:c6f6aeba3312a1ca|k38ef42:e982ad0e031bf122": "2026-10-30T19:51:35.637Z",
     "k38ef42:cd8dc4240086ed49|ka5e8e4:babb0187f3f7d696": "2026-10-30T19:51:35.637Z",
     "k09feb3:2095aa7fc9995e67|kaec085:b5db066ff419b9c0": "2026-10-30T19:51:35.637Z",
-    "kaec085:b5db066ff419b9c0|ke6dccd:a7c57094ccebb872": "2026-10-30T19:51:35.637Z"
+    "kaec085:b5db066ff419b9c0|ke6dccd:a7c57094ccebb872": "2026-10-30T19:51:35.637Z",
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38|haber:amazon-tedarik-zinciri-sureclerini-yapay-zeka-asistaniyla-donusturuyor": "2026-10-30T21:52:07.228Z",
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38|haber:bayer-crop-science-tarimsal-karar-surecleri-icin-yapay-zeka-tabanli-ajan-sistemi": "2026-10-30T21:52:07.228Z",
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38|haber:moengage-agentcore-gateway-ile-400-dahili-api-yi-yapay-zeka-aracina-donusturdu": "2026-10-30T21:52:07.228Z",
+    "haber:openai-insansi-robot-projesi-icin-2027-yilinda-gosterim-planliyor|k8601e1:39d4ead8cebfd866": "2026-10-30T21:52:07.228Z",
+    "haber:openai-yoneticisi-sam-altman-gelismis-yapay-zekanin-guvenli-ortamdan-kacacagini|k8601e1:39d4ead8cebfd866": "2026-10-30T21:52:07.228Z",
+    "haber:openai-insansi-robot-projesi-icin-2027-yilinda-gosterim-planliyor|k59b8ca:67746ce2a7192ab9": "2026-10-30T21:52:07.228Z",
+    "haber:openai-yoneticisi-sam-altman-gelismis-yapay-zekanin-guvenli-ortamdan-kacacagini|k59b8ca:67746ce2a7192ab9": "2026-10-30T21:52:07.228Z",
+    "haber:awear-ai-akilli-gozlukler-arasinda-kisisel-yapay-zeka-hafizasinin-tasinmasini-sa|k38ef42:4d6cd13a06aa0dd6": "2026-10-30T21:52:07.228Z",
+    "haber:amerika-teknoloji-sektorunde-yapay-zeka-uzmanligina-talep-artti|k9f3ec7:45eda8e57673b246": "2026-10-30T21:52:07.228Z",
+    "haber:arge-harcamasi-siralamasi|k9f3ec7:45eda8e57673b246": "2026-10-30T21:52:07.228Z",
+    "haber:birlesik-krallik-yoneticileri-yapay-zekanin-verimliligi-artirdigini-belirtiyor|k9f3ec7:45eda8e57673b246": "2026-10-30T21:52:07.228Z",
+    "haber:google-genie-4-modeli-ses-ve-anlik-yonlendirme-yetenekleriyle-tanitildi|k2d427e:03c0af43265581ce": "2026-10-30T21:52:07.228Z",
+    "haber:cisco-yapay-zeka-ajanlarini-denetleyen-project-quarry-aracini-acik-kaynakli-yapt|kea595f:fc366b05ac233685": "2026-10-30T21:52:07.228Z",
+    "haber:google-uzay-veri-merkezi-uydusunu-yorungeye-yerlestirdi-ve-yapay-zeka-modeli-cal|kea595f:fc366b05ac233685": "2026-10-30T21:52:07.228Z",
+    "haber:uygulama-magazalarindaki-yapay-zeka-filtreleri-cocuklarin-guvenligini-koruyamiyo|kea595f:fc366b05ac233685": "2026-10-30T21:52:07.228Z",
+    "haber:bilimsel-yayin-sira-degisimi|kea595f:32aebe41bc59ad74": "2026-10-30T21:52:07.228Z",
+    "haber:japonya-ileri-bilim-ve-teknoloji-enstitusu-arastirmacilari-akilli-sozlesmelerdek|kea595f:32aebe41bc59ad74": "2026-10-30T21:52:07.228Z",
+    "haber:waymo-genisleme-surecinde-yuksek-operasyonel-maliyetlerle-karsilasiyor|kea595f:32aebe41bc59ad74": "2026-10-30T21:52:07.228Z",
+    "haber:abd-hazine-bakanligi-yapay-zeka-yatirimlarina-kisitlama-getirmeye-hazirlaniyor|k38ef42:4d6cd13a06aa0dd6": "2026-10-30T21:52:07.228Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|k38ef42:4d6cd13a06aa0dd6": "2026-10-30T21:52:07.228Z",
+    "haber:serval-3-milyar-dolar-degerlemeye-ulasarak-150-milyon-dolar-yatirim-aldi|k38ef42:1e7ed958a983d01b": "2026-10-30T21:52:07.228Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k2e841d:aca228b9350038d4": "2026-10-30T21:52:07.228Z",
+    "haber:buyuk-bankalar-ve-meta-yapay-zeka-harcamalari-ile-ajanlariyla-gundemde-22-ekim-k|k2e841d:aca228b9350038d4": "2026-10-30T21:52:07.228Z",
+    "haber:goldman-sachs-yapay-zeka-yatirimlari-icin-500-milyon-dolar-ayirdi|k2e841d:aca228b9350038d4": "2026-10-30T21:52:07.228Z",
+    "haber:baidu-yuzlerce-sayfalik-belgeleri-isleyen-unlimited-ocr-2-modelini-cikardi|mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "2026-10-30T21:52:07.228Z",
+    "haber:benjamin-lindquist-yapay-zeka-halusinasyonlarinin-kokenini-inceledi|mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "2026-10-30T21:52:07.228Z",
+    "haber:google-research-mit-ve-harvard-calismasi-yapay-zeka-modelleri-hatalarini-gizliyo|mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "2026-10-30T21:52:07.228Z",
+    "haber:apple-intelligence-dogal-dil-komutlariyla-kisa-yollar-olusturulmasini-sagliyor|k38ef42:525a6b4247f2b7ac": "2026-10-30T21:52:07.228Z",
+    "haber:f-22-raptor-pilotu-ucus-sirasinda-insansiz-yfq-44a-ucagina-komut-verdi|k38ef42:525a6b4247f2b7ac": "2026-10-30T21:52:07.228Z",
+    "haber:ingiltere-kraliyet-hava-kuvvetleri-yapay-zeka-destekli-dronelar-kullanacak|k38ef42:525a6b4247f2b7ac": "2026-10-30T21:52:07.228Z",
+    "haber:amerikalilarin-cogunlugu-yapay-zekanin-toplum-icin-zararli-olduguna-inaniyor|k38ef42:2519691e3d6673ac": "2026-10-30T21:52:07.228Z",
+    "haber:apple-cin-deki-yapay-zeka-altyapisi-icin-alibaba-ile-anlasti|k38ef42:2519691e3d6673ac": "2026-10-30T21:52:07.228Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k38ef42:2519691e3d6673ac": "2026-10-30T21:52:07.228Z",
+    "haber:amazon-web-services-ve-anthropic-yapay-zeka-yatirimlarinin-karsiligi-icin-muhend|kd9a613:7c632d0ec65c78e6": "2026-10-30T21:52:07.228Z",
+    "haber:anthropic-abd-devlet-kurumlarina-claude-modellerinde-yuzde-40-indirim-sagladi|kd9a613:7c632d0ec65c78e6": "2026-10-30T21:52:07.228Z",
+    "haber:anthropic-acik-kaynakli-projeler-icin-ucretsiz-guvenlik-tarayicisi-sundu|kd9a613:7c632d0ec65c78e6": "2026-10-30T21:52:07.228Z",
+    "haber:nvidia-rtx-5090-ekran-kartlari-cin-deki-tesislerde-yapay-zeka-sunucularina-donus|k38ef42:8ebbfd47b23ee44c": "2026-10-30T21:52:07.228Z",
+    "haber:nvidia-rtx-spark-dizustu-bilgisayarlari-kuresel-capta-satisa-sundu|k38ef42:8ebbfd47b23ee44c": "2026-10-30T21:52:07.228Z",
+    "k59b8ca:67746ce2a7192ab9|k8601e1:39d4ead8cebfd866": "2026-10-30T21:52:07.228Z",
+    "k8601e1:39d4ead8cebfd866|k8601e1:450207aa48595cc8": "2026-10-30T21:52:07.228Z",
+    "k38ef42:2519691e3d6673ac|k38ef42:4d6cd13a06aa0dd6": "2026-10-30T21:52:07.228Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -12336,36 +12402,6 @@
     "k38ef42:68f76ba036c18b5f|k9f3ec7:15209fb5689d65c3": "2026-10-30T19:51:35.637Z"
   },
   "puan": {
-    "k59b8ca:2e19d91b78742a81": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
-    "k38ef42:d3d453fc320ea72f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
-    "k38ef42:b6be5ce235b8eb5a": {
-      "puan": 95,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
-    "k38ef42:deba37a15de4b19d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
-    "k38ef42:a514b20c81fe8005": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
-    "k38ef42:dcac2fa0a7d6496c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-24T21:50:59.619Z"
-    },
     "k2e841d:3474de9bde012f6a": {
       "puan": 0,
       "olcek": 100,
@@ -20225,21 +20261,119 @@
       "puan": 75,
       "olcek": 100,
       "zaman": "2026-10-30T19:51:35.637Z"
+    },
+    "k9f3ec7:45eda8e57673b246": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "kb7f905:a75c7aab109398f4": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "kb7f905:8d8a667e8c49193f": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k2d427e:03c0af43265581ce": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k8601e1:39d4ead8cebfd866": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "kea595f:fc366b05ac233685": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "kea595f:32aebe41bc59ad74": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:ff8c0a907de5fb53": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k59b8ca:67746ce2a7192ab9": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k9f3ec7:9f204a7bd33e19d9": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:4d6cd13a06aa0dd6": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k59b8ca:44a2ef42d91a2e2f": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:1e7ed958a983d01b": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k2e841d:aca228b9350038d4": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k8601e1:450207aa48595cc8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:525a6b4247f2b7ac": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k2e841d:c932303402132919": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:2519691e3d6673ac": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "kd9a613:7c632d0ec65c78e6": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
+    },
+    "k38ef42:8ebbfd47b23ee44c": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-10-30T21:52:07.228Z"
     }
   },
   "yayinlanan": {
-    "anthropic-halka-arz-oncesi-131-7-milyar-dolar-nakit-varlik-acikladi": {
-      "zaman": "2026-10-27T21:50:59.920Z",
-      "basliklarSifreli": "v1.MdBE5M8e6xlrpV04.erbjs7nxMo1LETSuDHRLa+RgC0Qas10+9s/Bd6cP0joMQsbMse5PZLTsvIdRw5EExmjZ0AOQ4rnukRvcIgZB8zH+y9f1Hzs1zWURyW2HMh009VOl6YY="
-    },
-    "openai-icloud-e-posta-ve-takvim-destegini-chatgpt-ye-ekledi": {
-      "zaman": "2026-10-27T21:50:59.920Z",
-      "basliklarSifreli": "v1.0xgb1bi5WvT+vsw3.N2kbmKO9MGb6snpNev0adTLqn5zpMnBCi74A3MV300YfUg5Y00zZ5hnxXXFq+G5MSP74ADwcNVbYkIBFJvIOPD0jPgkwNWA5yf4PqtDQVF5hnorRcfEY3p/yvOPeVllvL+N4fw=="
-    },
-    "invesco-portfoylerini-anthropic-yapay-zeka-asistanina-entegre-ediyor": {
-      "zaman": "2026-10-27T21:50:59.920Z",
-      "basliklarSifreli": "v1.TnaRzSsMF2pt+rDe.RllKr2Co330zbYcqyuHhm/9UniKGSPukQlpzjLzdt5BkjRssfobhM6QY29M9Rm8FJAZj/tFnOa7SNKwBab5lWmPKnvHDFcobwbzeeZXLG79XRomcZUWdiSXi8wwSng=="
-    },
     "openai-sara-ilacini-birakma-tavsiyesi-verdigi-iddiasiyla-mahkemelik-oldu": {
       "zaman": "2026-10-28T03:52:26.757Z",
       "basliklarSifreli": "v1.qiIyR9Rk89CDsBeg.AyMP3fZFg14SKYA//QzkoOWE5jzH5GFj5EBuXpIX0Rtt9v1dwRWd5fU9gtwv0TrSVFXvvssBGCsBxPPuJAEnkGsJp71BgctF94C1B3ZDzNiNwcAoBaJVhw6xdME1fBjNAuQfQcM="
@@ -20807,6 +20941,18 @@
     "openai-web-sitelerinin-yapay-zeka-egitimi-tercih-sinyallerini-destekleyecek": {
       "zaman": "2026-10-30T19:51:35.637Z",
       "basliklarSifreli": "v1.qAc7M3ZUUaZ2QF5h.Z2qXde/vIAI3IJ4fRo3Q7nhZbpUsi0Yz2fUWHLLIQTWC0Ft60Cyi9fzRmYOOK/808bFAQwkjCLXoi71z5ejOHwzIMU8c1yMn3IdVP9ufc3WdGdQZ"
+    },
+    "amazon-bedrock-agentcore-oturum-uc-noktalari-ile-canli-web-onizlemesi-sunuyor": {
+      "zaman": "2026-10-30T21:52:07.228Z",
+      "basliklarSifreli": "v1.RwkNHTbOUZHNvLfS.Wsi3Od7UhbZEjQePXBCr5B5iwfjlhP95kkwPabxgwotgW7DL3+dBMMD2BhA7A6M89j146SG6szdTN3up6i9kBt/3ODS74UqZfKZwGfdNfecC0LO1MMMY+QQ96Q2xjoLH1GGDYpejDK7do6b3TAOhNg=="
+    },
+    "waymo-ve-toyota-otonom-bz4x-robotaksi-filosu-icin-ortaklik-kurdu": {
+      "zaman": "2026-10-30T21:52:07.228Z",
+      "basliklarSifreli": "v1.cp+nyN5Zq+spkzkW.Zf61SrjXIMqvAA+gp0UAwgcss28cjL+Zbi2lq/uWR9R9uAfUH2E8ra3nKdsjSnhjkeQG0ljAjJs+7WzjsRWrAGM81UsMnk+JlW/EKG6m1a4GyZcKNgwZ6JdUylA="
+    },
+    "alphabet-amazon-meta-ve-microsoft-altyapi-harcamalarini-artiriyor": {
+      "zaman": "2026-10-30T21:52:07.228Z",
+      "basliklarSifreli": "v1.MQjl4NkWlmMkxPql.p4tx1A7iqHKCzUk0sYRq5gOp8JVIBrs1jBzNo5Tt/84d/3kIOG9nVbC44t9hHZzWwPbPlRABbqwE+P3Pd21o"
     }
   },
   "havuz": [
@@ -26032,6 +26178,31 @@
     "openai:https://openai.com/index/helping-websites-express-ai-training-preferences": "2026-10-30T09:30:00.000Z",
     "hf-blog:https://huggingface.co/blog/nvidia/nemotron-halloween": "2026-10-30T17:57:24.000Z",
     "mit-news-ai:https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030": "2026-10-30T19:00:00.000Z",
-    "epoch-ai:https://epoch.ai/data-insights/biorxiv-llms-vs-ai-tools": "2026-10-30T00:00:00.000Z"
+    "epoch-ai:https://epoch.ai/data-insights/biorxiv-llms-vs-ai-tools": "2026-10-30T00:00:00.000Z",
+    "kb7f905:a75c7aab109398f4": "2026-10-30T21:26:59.000Z",
+    "kb7f905:8d8a667e8c49193f": "2026-10-30T21:17:40.000Z",
+    "k59b8ca:67746ce2a7192ab9": "2026-10-30T20:48:43.000Z",
+    "k59b8ca:44a2ef42d91a2e2f": "2026-10-30T20:26:10.000Z",
+    "k9f3ec7:45eda8e57673b246": "2026-10-30T21:41:54.000Z",
+    "k9f3ec7:ebc14e845783cbc8": "2026-10-30T21:09:54.000Z",
+    "k9f3ec7:9f204a7bd33e19d9": "2026-10-30T20:40:13.000Z",
+    "kd9a613:7c632d0ec65c78e6": "2026-10-30T19:57:13.000Z",
+    "k3595c8:709fd46b76fe9589": "2026-10-30T21:19:26.000Z",
+    "kea595f:fc366b05ac233685": "2026-10-30T21:04:49.000Z",
+    "kea595f:32aebe41bc59ad74": "2026-10-30T20:59:49.000Z",
+    "k38ef42:ff8c0a907de5fb53": "2026-10-30T20:50:00.000Z",
+    "k38ef42:4d6cd13a06aa0dd6": "2026-10-30T20:39:00.000Z",
+    "k38ef42:1e7ed958a983d01b": "2026-10-30T20:25:00.000Z",
+    "k38ef42:525a6b4247f2b7ac": "2026-10-30T20:14:00.000Z",
+    "k38ef42:2519691e3d6673ac": "2026-10-30T20:03:00.000Z",
+    "k38ef42:8ebbfd47b23ee44c": "2026-10-30T19:54:00.000Z",
+    "k2d427e:03c0af43265581ce": "2026-10-30T21:13:06.000Z",
+    "k2e841d:aca228b9350038d4": "2026-10-30T20:21:28.000Z",
+    "k2e841d:c932303402132919": "2026-10-30T20:07:00.000Z",
+    "kd4ca61:853ccca017d2f570": "2026-10-30T21:47:37.000Z",
+    "k8601e1:39d4ead8cebfd866": "2026-10-30T21:10:00.000Z",
+    "k8601e1:450207aa48595cc8": "2026-10-30T20:18:18.000Z",
+    "mit-news-ai:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "2026-10-30T20:15:00.000Z",
+    "aws-ml:f7fa53db3341459d6a27841fb8632835488a9c38": "2026-10-30T21:40:03.000Z"
   }
 }
