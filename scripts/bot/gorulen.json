@@ -5423,7 +5423,12 @@
     "k4f0fb7:fc0683972cbf6995": "2026-11-01T05:50:58.150Z",
     "kad5125:b515036271ed6ef2": "2026-11-01T05:50:58.150Z",
     "kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
-    "kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z"
+    "kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
+    "kea595f:1b514cd93f95870e": "2026-11-01T07:51:00.954Z",
+    "kfdedb4:3595a242093530ae": "2026-11-01T07:51:00.954Z",
+    "kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
+    "kea595f:7af2c45fd9376988": "2026-11-01T07:51:00.954Z",
+    "kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -12743,7 +12748,16 @@
     "haber:nvidia-rtx-5090-ekran-kartlari-cin-deki-tesislerde-yapay-zeka-sunucularina-donus|kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
     "haber:chatgpt-kullanicilarin-sohbetlerinden-gizli-psikolojik-profiller-cikariyor|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
     "haber:chatgpt-secim-dezenformasyonunu-onlemek-icin-karikaturlestirme-yontemini-devreye|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
-    "haber:chatgpt-slides-profesyonel-sunumlar-hazirlamak-icin-kullanima-sunuldu|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z"
+    "haber:chatgpt-slides-profesyonel-sunumlar-hazirlamak-icin-kullanima-sunuldu|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
+    "haber:chatgpt-kullanicilarin-sohbetlerinden-gizli-psikolojik-profiller-cikariyor|kfdedb4:3595a242093530ae": "2026-11-01T07:51:00.954Z",
+    "haber:chatgpt-secim-dezenformasyonunu-onlemek-icin-karikaturlestirme-yontemini-devreye|kfdedb4:3595a242093530ae": "2026-11-01T07:51:00.954Z",
+    "haber:chatgpt-slides-profesyonel-sunumlar-hazirlamak-icin-kullanima-sunuldu|kfdedb4:3595a242093530ae": "2026-11-01T07:51:00.954Z",
+    "haber:exa-3-0-arama-api-surumunu-ve-yeni-ozelliklerini-duyurdu|kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
+    "haber:moengage-agentcore-gateway-ile-400-dahili-api-yi-yapay-zeka-aracina-donusturdu|kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
+    "haber:openai-yeni-gpt-6-luna-destekli-decisions-api-modelini-kullanima-sundu|kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
+    "haber:anything-ve-lindy-gibi-girisimler-yapay-zeka-is-arkadaslari-donemini-baslatti|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
+    "haber:co-op-musteri-hizmetleri-calisanlarini-denetlemek-icin-yapay-zeka-kullaniyor|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
+    "haber:meta-ve-microsoft-yapay-zeka-butcelerini-dusurmeye-basladi|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13016,141 +13030,6 @@
     "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z"
   },
   "puan": {
-    "k38ef42:d78623c9a7a1c3a6": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "kfdedb4:7c20446c8dc3db7e": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:9400aea46ffbdee7": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "kd4ca61:3fa4ec938fbe5bc7": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:f8f1d55be2712c27": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:b581b87523c029c5": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:115065a538eab00e": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "kd9a613:f152467388e61102": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:30fe66eb0eb16f08": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:09a9d6fbc275b45c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:8ffbbe19ea63ac4c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "ke6dccd:14603636a94a5b0f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:a95d22e2db21556c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k38ef42:c81e3d12b29fdd11": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T05:51:03.994Z"
-    },
-    "k12b4a6:2bede2ec6e435895": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:458d019682d9b871": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:85f93a0e8641df72": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k78637d:6e2657870096ec25": {
-      "puan": 30,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k12b4a6:adb1d65d25a6f65b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:ca3a7c12f386e229": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:14d71516213bf775": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:a27e1f424e6e222d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:9774e8dfe9ee70da": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "kfdedb4:f42e3a6ed9a7fe0e": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k12b4a6:9bce486d0209f002": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:d1088b5a1b712d6d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
-    "k38ef42:e6670a5a53baabae": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-26T07:51:00.246Z"
-    },
     "k09feb3:9dd129ede6cee49e": {
       "puan": 85,
       "olcek": 100,
@@ -21280,13 +21159,29 @@
       "puan": 60,
       "olcek": 100,
       "zaman": "2026-11-01T05:50:58.150Z"
+    },
+    "kfdedb4:3595a242093530ae": {
+      "puan": 20,
+      "olcek": 100,
+      "zaman": "2026-11-01T07:51:00.954Z"
+    },
+    "kea595f:225d281eedc7954e": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-01T07:51:00.954Z"
+    },
+    "kd4ca61:501883cddbdd9402": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-01T07:51:00.954Z"
+    },
+    "kea595f:7af2c45fd9376988": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-01T07:51:00.954Z"
     }
   },
   "yayinlanan": {
-    "microsoft-ve-oracle-yapay-zeka-yatirimlarinda-one-gecti": {
-      "zaman": "2026-10-29T05:51:56.332Z",
-      "basliklarSifreli": "v1.Mf6sLQJ85kVlJ9M5.7XroT8RQzvIUtkTg6mYfGk6e8em6wVvjqmkpb4/fAxMDWvqVzAOFVzgg7Xh0/5TgDazaTKMnQr0yz243dPIOu4g5SiFiNCL6ZglJoFM8wjneQV51F3z7NQA="
-    },
     "ravical-muhasebe-firmalari-icin-gelistirdigi-yapay-zeka-yazilimi-icin-yatirim-al": {
       "zaman": "2026-10-29T07:51:54.567Z",
       "basliklarSifreli": "v1.G59q3aQ1jHQk9q66.zzTyToUBbzRjhUAnUyhn8Wulg4P0yaM1c3J4UvFxQb1kXgIEW8S3u4e2Ey9zlKiklVf9ltVXmCKX4YX1oflm7QdkuIbM5eb2FJTvAWZD"
@@ -21794,6 +21689,10 @@
     "openai-guvenlik-arastirmacilarinin-isten-cikarilmasi-nedeniyle-milletvekillerini": {
       "zaman": "2026-11-01T03:50:58.761Z",
       "basliklarSifreli": "v1.R9PCs0bV/CzIdM9y.hFNuXRWlaClwSK1GIRzxMpTc4whxvcuSjsaMUb1Oc1RnQ0RnLA2F6JExN2BBswsflWZxmj9G6pqM6W+6WBbODvdyavSb/egLAgszsG8VhZcROyJj7IYpCbGlCVDJ4RRmz8Yp6w9Hri4JbG4eXAYDC8Y9blQ1TerdjlusZ38x/17p9AnyoRre0rgqt5WyALPiTWJo9UL2g/gX3tdNLIxG4+tfWqujRpZ57gFwetjjrTdWF9jyh2oZN4E/X/U="
+    },
+    "sirketler-yapay-zeka-yatirimlarindan-somut-finansal-getiri-elde-etmeye-basladi": {
+      "zaman": "2026-11-01T07:51:00.954Z",
+      "basliklarSifreli": "v1.WaYzVejoEQ7XGgej.byRCUY8km6aCs1ofmslbhHr0MD8rlwz+khYwrIMett0CkIHF4bUxSYVZmFLI+z3dRopiarFQLJ/u/ZmutOp5mIU5XPeJ6jWXtP2qMBr+hpSUZtdEbYyanoH1/mjdeg=="
     }
   },
   "havuz": [],
@@ -27279,6 +27178,11 @@
     "k4f0fb7:fc0683972cbf6995": "2026-11-01T05:15:10.000Z",
     "kea595f:abd8a8ae57b359c2": "2026-11-01T04:30:02.000Z",
     "kea595f:80182129002d9d3d": "2026-11-01T04:00:01.000Z",
-    "kad5125:b515036271ed6ef2": "2026-11-01T04:53:55.000Z"
+    "kad5125:b515036271ed6ef2": "2026-11-01T04:53:55.000Z",
+    "kea595f:1b514cd93f95870e": "2026-11-01T07:30:10.000Z",
+    "kea595f:225d281eedc7954e": "2026-11-01T06:00:02.000Z",
+    "kea595f:7af2c45fd9376988": "2026-11-01T05:00:01.000Z",
+    "kfdedb4:3595a242093530ae": "2026-11-01T07:00:00.000Z",
+    "kd4ca61:501883cddbdd9402": "2026-11-01T06:00:01.000Z"
   }
 }
