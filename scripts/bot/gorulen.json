@@ -5418,7 +5418,12 @@
     "kea595f:8c24e4e969f8aa29": "2026-11-01T03:50:58.761Z",
     "kea595f:1803f8a4497b64e5": "2026-11-01T03:50:58.761Z",
     "kea595f:edbd97cb98c47f04": "2026-11-01T03:50:58.761Z",
-    "kad5125:fd01d4a51ea10318": "2026-11-01T03:50:58.761Z"
+    "kad5125:fd01d4a51ea10318": "2026-11-01T03:50:58.761Z",
+    "k4f0fb7:cb9df85cfc57ad1c": "2026-11-01T05:50:58.150Z",
+    "k4f0fb7:fc0683972cbf6995": "2026-11-01T05:50:58.150Z",
+    "kad5125:b515036271ed6ef2": "2026-11-01T05:50:58.150Z",
+    "kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
+    "kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -12729,7 +12734,16 @@
     "k2e841d:7751e918a3ec97b1|kad5125:fd01d4a51ea10318": "2026-11-01T03:50:58.761Z",
     "kad5125:48dea43a21436b77|kea595f:7706254ab926d478": "2026-11-01T03:50:58.761Z",
     "k2e841d:95f45751a9250ae5|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z",
-    "k74f74a:8498747854177551|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z"
+    "k74f74a:8498747854177551|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z",
+    "haber:openai-insansi-robot-projesi-icin-2027-yilinda-gosterim-planliyor|kad5125:b515036271ed6ef2": "2026-11-01T05:50:58.150Z",
+    "haber:openai-matematik-ve-bilim-alanindaki-arastirmalari-hiz-kesmeden-surdurecek|kad5125:b515036271ed6ef2": "2026-11-01T05:50:58.150Z",
+    "haber:openai-yoneticisi-sam-altman-gelismis-yapay-zekanin-guvenli-ortamdan-kacacagini|kad5125:b515036271ed6ef2": "2026-11-01T05:50:58.150Z",
+    "haber:dream-insaat-sektorunu-otomatize-etmek-icin-17-milyon-dolar-yatirim-aldi|kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
+    "haber:entire-yazilim-gelistirme-platformunu-yapay-zeka-ajanlari-icin-duyurdu|kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
+    "haber:nvidia-rtx-5090-ekran-kartlari-cin-deki-tesislerde-yapay-zeka-sunucularina-donus|kea595f:abd8a8ae57b359c2": "2026-11-01T05:50:58.150Z",
+    "haber:chatgpt-kullanicilarin-sohbetlerinden-gizli-psikolojik-profiller-cikariyor|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
+    "haber:chatgpt-secim-dezenformasyonunu-onlemek-icin-karikaturlestirme-yontemini-devreye|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z",
+    "haber:chatgpt-slides-profesyonel-sunumlar-hazirlamak-icin-kullanima-sunuldu|kea595f:80182129002d9d3d": "2026-11-01T05:50:58.150Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -21251,13 +21265,24 @@
       "puan": 85,
       "olcek": 100,
       "zaman": "2026-11-01T03:50:58.761Z"
+    },
+    "kad5125:b515036271ed6ef2": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-11-01T05:50:58.150Z"
+    },
+    "kea595f:abd8a8ae57b359c2": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-11-01T05:50:58.150Z"
+    },
+    "kea595f:80182129002d9d3d": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-01T05:50:58.150Z"
     }
   },
   "yayinlanan": {
-    "waymo-genisleme-surecinde-yuksek-operasyonel-maliyetlerle-karsilasiyor": {
-      "zaman": "2026-10-29T03:51:57.158Z",
-      "basliklarSifreli": "v1.zP4rdYbbLU7Ls7jL.yw5jQu8QEb7U2E4r/qvf13TmtqOvnW5e8vrDviK3oVjFibvDWtxJ6mkc7WmY30S5uLr+XIGlEaiJgHG1SsQO4CWkQdicru9/AMLXhOLFfOp98dk4JSfy"
-    },
     "microsoft-ve-oracle-yapay-zeka-yatirimlarinda-one-gecti": {
       "zaman": "2026-10-29T05:51:56.332Z",
       "basliklarSifreli": "v1.Mf6sLQJ85kVlJ9M5.7XroT8RQzvIUtkTg6mYfGk6e8em6wVvjqmkpb4/fAxMDWvqVzAOFVzgg7Xh0/5TgDazaTKMnQr0yz243dPIOu4g5SiFiNCL6ZglJoFM8wjneQV51F3z7NQA="
@@ -27249,6 +27274,11 @@
     "k2e841d:d5012d69e90c002f": "2026-10-31T23:00:00.000Z",
     "k2e841d:99c77e7399780c17": "2026-10-31T22:45:00.000Z",
     "k2e841d:0c325cdce4b62b3d": "2026-10-31T22:30:00.000Z",
-    "k2e841d:5006cd039d694ccd": "2026-10-31T22:00:00.000Z"
+    "k2e841d:5006cd039d694ccd": "2026-10-31T22:00:00.000Z",
+    "k4f0fb7:cb9df85cfc57ad1c": "2026-11-01T05:47:12.000Z",
+    "k4f0fb7:fc0683972cbf6995": "2026-11-01T05:15:10.000Z",
+    "kea595f:abd8a8ae57b359c2": "2026-11-01T04:30:02.000Z",
+    "kea595f:80182129002d9d3d": "2026-11-01T04:00:01.000Z",
+    "kad5125:b515036271ed6ef2": "2026-11-01T04:53:55.000Z"
   }
 }
