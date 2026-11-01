@@ -5428,7 +5428,14 @@
     "kfdedb4:3595a242093530ae": "2026-11-01T07:51:00.954Z",
     "kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
     "kea595f:7af2c45fd9376988": "2026-11-01T07:51:00.954Z",
-    "kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z"
+    "kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
+    "kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z",
+    "kea595f:d6f98bdf2f1ffcd5": "2026-11-01T09:51:00.812Z",
+    "kaec085:c902800906c538ab": "2026-11-01T09:51:00.812Z",
+    "ke6dccd:f62a62d07b9b8b84": "2026-11-01T09:51:00.812Z",
+    "k39cb2c:a4f4be848694c1d5": "2026-11-01T09:51:00.812Z",
+    "kea595f:4c24c49da354c4dc": "2026-11-01T09:51:00.812Z",
+    "kfdedb4:a25b9fb62f82833d": "2026-11-01T09:51:00.812Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -12757,7 +12764,23 @@
     "haber:openai-yeni-gpt-6-luna-destekli-decisions-api-modelini-kullanima-sundu|kea595f:225d281eedc7954e": "2026-11-01T07:51:00.954Z",
     "haber:anything-ve-lindy-gibi-girisimler-yapay-zeka-is-arkadaslari-donemini-baslatti|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
     "haber:co-op-musteri-hizmetleri-calisanlarini-denetlemek-icin-yapay-zeka-kullaniyor|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
-    "haber:meta-ve-microsoft-yapay-zeka-butcelerini-dusurmeye-basladi|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z"
+    "haber:meta-ve-microsoft-yapay-zeka-butcelerini-dusurmeye-basladi|kd4ca61:501883cddbdd9402": "2026-11-01T07:51:00.954Z",
+    "haber:openai-insansi-robot-projesi-icin-2027-yilinda-gosterim-planliyor|kea595f:d6f98bdf2f1ffcd5": "2026-11-01T09:51:00.812Z",
+    "haber:openai-matematik-ve-bilim-alanindaki-arastirmalari-hiz-kesmeden-surdurecek|kea595f:d6f98bdf2f1ffcd5": "2026-11-01T09:51:00.812Z",
+    "haber:openai-yoneticisi-sam-altman-gelismis-yapay-zekanin-guvenli-ortamdan-kacacagini|kea595f:d6f98bdf2f1ffcd5": "2026-11-01T09:51:00.812Z",
+    "haber:kaynaklar-farkli-olaylari-anlatiyor-26-ekim-kapanis|kaec085:c902800906c538ab": "2026-11-01T09:51:00.812Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|kea595f:4c24c49da354c4dc": "2026-11-01T09:51:00.812Z",
+    "haber:apple-intelligence-cin-de-4-kasim-da-gelistirici-testine-aciliyor|kea595f:4c24c49da354c4dc": "2026-11-01T09:51:00.812Z",
+    "haber:apple-ofis-uygulamalari-icin-intelligent-assistant-ozelligini-beta-olarak-cikard|kea595f:4c24c49da354c4dc": "2026-11-01T09:51:00.812Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|kaec085:c902800906c538ab": "2026-11-01T09:51:00.812Z",
+    "haber:apple-intelligence-cin-de-4-kasim-da-gelistirici-testine-aciliyor|kaec085:c902800906c538ab": "2026-11-01T09:51:00.812Z",
+    "haber:amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak|k39cb2c:a4f4be848694c1d5": "2026-11-01T09:51:00.812Z",
+    "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k39cb2c:a4f4be848694c1d5": "2026-11-01T09:51:00.812Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|k39cb2c:a4f4be848694c1d5": "2026-11-01T09:51:00.812Z",
+    "haber:abd-federal-kurumlari-deepseek-urunlerini-sistemlerinden-kaldiriyor|kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z",
+    "haber:deepseek-yapay-zeka-modellerini-calistiran-deepinfer-yazilimini-acik-kaynakli-ha|kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z",
+    "kaec085:c902800906c538ab|kea595f:4c24c49da354c4dc": "2026-11-01T09:51:00.812Z",
+    "kaec085:c902800906c538ab|kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13027,7 +13050,8 @@
     "k74f74a:bb9294bb3a0e41c2|k78637d:dca2f93450a31041": "2026-10-31T13:52:04.963Z",
     "haber:spotify-yapay-zeka-uretimi-milyonlarca-sarkiyi-onerilerden-kaldirdi|k2e841d:d468ace163bc3b23": "2026-10-31T17:51:40.651Z",
     "haber:amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z",
-    "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z"
+    "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z",
+    "haber:deepseek-urunleri-abd-federal-sivil-kurumlarinin-sistemlerinden-cikariliyor|kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z"
   },
   "puan": {
     "k09feb3:9dd129ede6cee49e": {
@@ -21179,17 +21203,39 @@
       "puan": 60,
       "olcek": 100,
       "zaman": "2026-11-01T07:51:00.954Z"
+    },
+    "kea595f:d6f98bdf2f1ffcd5": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
+    },
+    "kfdedb4:a25b9fb62f82833d": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
+    },
+    "ke6dccd:f62a62d07b9b8b84": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
+    },
+    "kea595f:4c24c49da354c4dc": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
+    },
+    "kaec085:c902800906c538ab": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
+    },
+    "k39cb2c:a4f4be848694c1d5": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-01T09:51:00.812Z"
     }
   },
   "yayinlanan": {
-    "ravical-muhasebe-firmalari-icin-gelistirdigi-yapay-zeka-yazilimi-icin-yatirim-al": {
-      "zaman": "2026-10-29T07:51:54.567Z",
-      "basliklarSifreli": "v1.G59q3aQ1jHQk9q66.zzTyToUBbzRjhUAnUyhn8Wulg4P0yaM1c3J4UvFxQb1kXgIEW8S3u4e2Ey9zlKiklVf9ltVXmCKX4YX1oflm7QdkuIbM5eb2FJTvAWZD"
-    },
-    "google-yapay-zeka-modu-sorgularinin-geleneksel-aramalara-gore-uc-kat-daha-uzun-o": {
-      "zaman": "2026-10-29T07:51:54.567Z",
-      "basliklarSifreli": "v1.WmAjgA1WUSzwEioK.6r1y/E61FntB/18dRHv4nTwEAXAXnnemV2imP55TZGAgbktGxCPz69W7RP7OprEbtq4WaDdrWhj3R6ud2S4BkMR/4pY7kb2Jv2x4TTeYY6wlY9EBIv+117VWhG+q0TybYvhLK4K2la7uowu31kElkl3rHzxOVA=="
-    },
     "block-yeni-ses-modeli-dessa-ile-metin-kullanmadan-konusma-egitimi-sundu": {
       "zaman": "2026-10-29T09:51:34.726Z",
       "basliklarSifreli": "v1./4N+ntZl+IcsASvv.D28TpTsp2LG7mImXYY4eNclLNQhG2E0zEXJw41mzLncRK9XLDfaipFHdTMR3EoWiSx1N4YdnbQIu/Qyj2pF0ongibEh18SInQGLbFL+SHIPySToP7b474oOf"
@@ -21693,6 +21739,30 @@
     "sirketler-yapay-zeka-yatirimlarindan-somut-finansal-getiri-elde-etmeye-basladi": {
       "zaman": "2026-11-01T07:51:00.954Z",
       "basliklarSifreli": "v1.WaYzVejoEQ7XGgej.byRCUY8km6aCs1ofmslbhHr0MD8rlwz+khYwrIMett0CkIHF4bUxSYVZmFLI+z3dRopiarFQLJ/u/ZmutOp5mIU5XPeJ6jWXtP2qMBr+hpSUZtdEbYyanoH1/mjdeg=="
+    },
+    "openai-ve-yapay-zeka-veri-merkezleri-kuresel-ram-krizini-derinlestiriyor": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.0Qo31alZN8LwtxcO.+Vv1PQZDwLCUO1krCzJWVdGpkqHjGNDP4d23ckjKhPVrf5IZERXuEWbl6J9FXF9vR2ANNbYNJXi7gMMlwqFuzjZI5Nd+GyrBRGPShpPWp9mZj2sVkDSL51Kju1+b72k="
+    },
+    "nace-ai-27-milyar-parametreli-karar-modeli-drex-max-v1-i-acik-kaynak-olarak-sund": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.X4XtD9Q6HL0OaLAE.PAedF8iI2E1IsmRKBCsMtU5n2pyoB0ZqeQUrvA1GQ+wnYn2C8nkRKlaIA6ugKb35jm/rk3q9WDOOveABSDXOQIPxz9l8CJ7Zt47EmVcmKetIZIW/Lq+IblrgjWyfoDB0NyG0VTxIGNt+Cfa34g=="
+    },
+    "otonom-tirlar-yollarda-insanla-is-birligi-yapacak": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.0zPB7CPGATxJajD0.by/ECvhGW8CQ9cTuDYzXvAjnLwhspowRJa/ZEkZpCOxVJXaViPda1JwCp0NpiVMTvD2Z/e9r9oyuRY7WaAS7Bno+prx3Vf0Hi65rPuEVjgJqVQ=="
+    },
+    "aws-bulut-kapasitesi-2027-sonuna-kadar-buyuk-olcude-tukendi": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.+RnEARru31P1g+7A.U9byLjfcNwERNO1ZUQ2oIDGZbSh3nGd8gddM78YhkUPFw9uWKbleDRmZoKh0ez8niR6rs4BgO6mtmH+F8JAQ9dLaoy76mgjXKSSA5RTUZS7gPhEBBwyrRdkc1PAEVIYA"
+    },
+    "apple-yapay-zekayi-sadece-kullanici-deneyimini-iyilestirdigi-alanlarda-kullanaca": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.COss17DekP9CQJH4.HbVtUeyQ9Qbdq7Ll0UAt3+X4eN0Jaag7mCGtoEyFQi9ZcCYq7Dyw2KAGBkpTliOOFuEOsw7SopOvB/oSD1ben7TUukGe4Q=="
+    },
+    "super-zeka-terimi-teknoloji-dunyasinda-tartisma-yaratiyor": {
+      "zaman": "2026-11-01T09:51:00.812Z",
+      "basliklarSifreli": "v1.SpqTRgOV2yIWbYyQ.YLlI3YOkMVAcQksay6K5HORbiL4NFah/VaZue97Rby8081wXKnUnfqByH8I45tmDmutETBAibyNewdEG/pyBZaQUlI429jIqFYIw+A7zFGU5KnNKOaJY4JSPXi8GY5icobDFkoIdM6A7DQmZpNJwyd4+9QHukkU8qBdEWbqUmsbpmA=="
     }
   },
   "havuz": [],
@@ -27183,6 +27253,13 @@
     "kea595f:225d281eedc7954e": "2026-11-01T06:00:02.000Z",
     "kea595f:7af2c45fd9376988": "2026-11-01T05:00:01.000Z",
     "kfdedb4:3595a242093530ae": "2026-11-01T07:00:00.000Z",
-    "kd4ca61:501883cddbdd9402": "2026-11-01T06:00:01.000Z"
+    "kd4ca61:501883cddbdd9402": "2026-11-01T06:00:01.000Z",
+    "kaec085:c902800906c538ab": "2026-11-01T08:10:07.000Z",
+    "kaec085:f5091c12704b3bae": "2026-11-01T07:47:17.000Z",
+    "k39cb2c:a4f4be848694c1d5": "2026-11-01T08:03:00.000Z",
+    "kea595f:d6f98bdf2f1ffcd5": "2026-11-01T09:30:00.000Z",
+    "kea595f:4c24c49da354c4dc": "2026-11-01T08:42:52.000Z",
+    "kfdedb4:a25b9fb62f82833d": "2026-11-01T09:15:00.000Z",
+    "ke6dccd:f62a62d07b9b8b84": "2026-11-01T09:00:00.000Z"
   }
 }
