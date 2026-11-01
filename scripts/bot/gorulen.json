@@ -5515,7 +5515,12 @@
     "k2e841d:997012a777a765b9": "2026-11-01T19:51:02.737Z",
     "k2e841d:66584ab8311d9cbf": "2026-11-01T19:51:02.737Z",
     "kad5125:1cb7ef58d6f47aab": "2026-11-01T19:51:02.737Z",
-    "k8601e1:3bab6c85cdb01995": "2026-11-01T19:51:02.737Z"
+    "k8601e1:3bab6c85cdb01995": "2026-11-01T19:51:02.737Z",
+    "k2e841d:fc5906185c74ad3a": "2026-11-01T21:50:57.053Z",
+    "kad5125:7601ca072135dace": "2026-11-01T21:50:57.053Z",
+    "k2e841d:76416a258b98cb9c": "2026-11-01T21:50:57.053Z",
+    "kb7f905:63a0fe3d47da2f3b": "2026-11-01T21:50:57.053Z",
+    "k2e841d:8bb08c49528d01dd": "2026-11-01T21:50:57.053Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -12979,7 +12984,12 @@
     "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|kad5125:1cb7ef58d6f47aab": "2026-11-01T19:51:02.737Z",
     "haber:openai-modelleri-google-bulut-altyapisinda-sunulmaya-hazirlaniyor|k2e841d:193668c8ff6da48a": "2026-11-01T19:51:02.737Z",
     "haber:faraday-future-robotik-biriminin-satisini-tamamladi|k8601e1:3bab6c85cdb01995": "2026-11-01T19:51:02.737Z",
-    "haber:people-s-party-tarafindan-yayimlanan-yapay-zeka-destekli-secim-videosu-ispanya-d|k8601e1:3bab6c85cdb01995": "2026-11-01T19:51:02.737Z"
+    "haber:people-s-party-tarafindan-yayimlanan-yapay-zeka-destekli-secim-videosu-ispanya-d|k8601e1:3bab6c85cdb01995": "2026-11-01T19:51:02.737Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k2e841d:76416a258b98cb9c": "2026-11-01T21:50:57.053Z",
+    "haber:apple-intelligence-cin-de-4-kasim-da-gelistirici-testine-aciliyor|k2e841d:76416a258b98cb9c": "2026-11-01T21:50:57.053Z",
+    "haber:apple-ofis-uygulamalari-icin-intelligent-assistant-ozelligini-beta-olarak-cikard|k2e841d:76416a258b98cb9c": "2026-11-01T21:50:57.053Z",
+    "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|kad5125:7601ca072135dace": "2026-11-01T21:50:57.053Z",
+    "haber:android-studio-rabbit-2-surumu-40-tan-fazla-kodlama-ajanina-destek-veriyor|kad5125:7601ca072135dace": "2026-11-01T21:50:57.053Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13252,7 +13262,8 @@
     "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k74f74a:bb88e8d67f1c3241": "2026-11-01T03:50:58.761Z",
     "haber:deepseek-urunleri-abd-federal-sivil-kurumlarinin-sistemlerinden-cikariliyor|kaec085:f5091c12704b3bae": "2026-11-01T09:51:00.812Z",
     "haber:deepseek-urunleri-abd-federal-sivil-kurumlarinin-sistemlerinden-cikariliyor|k74f74a:86890e94613f4889": "2026-11-01T11:51:03.050Z",
-    "haber:alphabet-hisseleri-yapay-zeka-harcamalari-golgesinde-dustu|k74f74a:ae4b2cc9480430e5": "2026-11-01T11:51:03.050Z"
+    "haber:alphabet-hisseleri-yapay-zeka-harcamalari-golgesinde-dustu|k74f74a:ae4b2cc9480430e5": "2026-11-01T11:51:03.050Z",
+    "haber:alphabet-hisseleri-yapay-zeka-harcamalari-golgesinde-dustu|kad5125:7601ca072135dace": "2026-11-01T21:50:57.053Z"
   },
   "puan": {
     "k59b8ca:1fdbff4ee26375b9": {
@@ -20774,41 +20785,24 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-11-01T19:51:02.737Z"
+    },
+    "k2e841d:76416a258b98cb9c": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-01T21:50:57.053Z"
+    },
+    "kb7f905:63a0fe3d47da2f3b": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-01T21:50:57.053Z"
+    },
+    "k2e841d:8bb08c49528d01dd": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-01T21:50:57.053Z"
     }
   },
   "yayinlanan": {
-    "anthropic-arastirmasi-uzmanlarin-yapay-zeka-kararlarini-kendi-kararlari-sandigin": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.JN/0HUYStr6kEjGp.nE4OlsMa33VLq8DxeCQxNET5Lky+CE0brzIBCRUJfBefCdcaTEg5O26O4zEtvKaeWIUKEw0HX+hZx/aGD/JT/FCtAmtly6i6DwtueM4Gvh8DVRZMyKHh+KF01Jj1ZWgEYi/TOaOkmYIJ8aGGG0ub"
-    },
-    "cohere-7-milyar-kanada-dolari-hedefli-yatirim-turuyla-rekor-kirdi": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1./eqh5y30sZRDaaN3.gqL7IP5cUxdQoAs/4tvtoFPAgHTNwgWH1cJ0nt9XIrxKiVYFj3zaCXjpQA+xfdWfPFtiUnKsn2IY9TkL4hvFoQSAPkuOR1SksDXx1hb5dlgaDQg="
-    },
-    "microsoft-openai-ortakligindan-uc-ayda-10-milyar-dolar-gelir-elde-etti": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.fhRb4HDIORrHiRKs./P71sJinGBgssSBVXBTXY+I0IH94U/wDgqEydJhJnHxKfeRNxmPHXkXcadV42473Ee9oWCG/KaIOSdYt4fqwgLyqGq3C4mGfcBYP+sdWU6T+EzweGg=="
-    },
-    "visa-ve-tencent-yapay-zeka-ajanlariyla-alisveris-deneyimini-donusturuyor": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.j9FGPMNsSbWvUB88.zIgf/facrq9b+/DPGd4+DS+a0eooOW7mSy3mIK8c1Qj5AWkGnK70E2Z7Rxup/KTXuGqJOdcj4ypLkfVInuROY3d3nlKWOqEjA0+ocguJeUoeV/6mLYpE3UfHIkTh6cjPkvTFQfN1Kg=="
-    },
-    "baseten-joey-1-modeliyle-yapay-zeka-kararlarini-ucuzlatiyor": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.kPO3PueTNIgr1Nzb.Ls1mU1Xficgm40k0vAWlKygiGlg1ngPiZHcwd7dbQqYYbTXA83ck8vY4sDis8pmZ4JXbz6HIiGV5OJuVL2N0IpBDzKx68m27LSrCTLJqX/L4krprDFw1FdgHHj9XQECWJ1I+eXiktEdtPLw+1bv+xFTzxon2lCbPA9uBTgRYgKSx3PkSG9oNhNpd48nx5T9v64gMVQ=="
-    },
-    "android-studio-rabbit-2-surumu-40-tan-fazla-kodlama-ajanina-destek-veriyor": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.RTk31rCfvAX4E0Bs.ieZ3uxA1mEfP6MIXJjxYxZlkDMneLudGABNzkwQTTE18lMH/injRr0RDeG47oNtt19r4dKnEvYLOne0UkiRRj77tyuPXyauU8LJ+PYFtIGSWjS0RUqA7K8s="
-    },
-    "openai-modellerinin-davranislarini-belirleyen-bes-temel-degeri-acikladi": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.FbR2Ql+0vNjm2rGF.V2tmNW0GNu4kuJ0bLFnmgj6btDNCeO4WVbuZVtujXgdos6tn7wuzrXR3JmQ7bqGEC496L9qzldNaYLWppPMszQDQmpfQzHCuA8kl"
-    },
-    "meta-yeni-yapay-zeka-destekli-moda-uygulamasi-style-sketch-i-tanitti": {
-      "zaman": "2026-10-29T19:51:47.673Z",
-      "basliklarSifreli": "v1.9WuLm1Jgo1pA+way.UEi+4g/tWiZnEsSsJGwmO4nIl04yR66hMDSgHdIJeB8MZ1mXzidpscxrQ9m5GQCiRA2UM873xu8V/nD0ndbXIoVAJyk9LgdjWCEySZvDig=="
-    },
     "glm-5-3-modeli-guvenlik-yamalari-arasindaki-bosluktan-yararlanarak-firefox-u-hed": {
       "zaman": "2026-10-29T21:51:39.618Z",
       "basliklarSifreli": "v1.QqTgR8dFm7enMXCG.jhhcpqRA6IVLRkQPQpoqVJS9XsU9BjTXkjLlQ6gLjknS4Sm/AWBIumM3j+fwCTukKMjyOPM4t8I49RRs5ejOygbSn30USrdYym64ikqlx2PW2aGZj6fw6cm+43D2w8wIyg91"
@@ -26808,6 +26802,11 @@
     "k2e841d:9377941b8ab85a7a": "2026-11-01T18:15:00.000Z",
     "k2e841d:997012a777a765b9": "2026-11-01T18:00:00.000Z",
     "k2e841d:66584ab8311d9cbf": "2026-11-01T17:54:34.000Z",
-    "k8601e1:3bab6c85cdb01995": "2026-11-01T18:10:00.000Z"
+    "k8601e1:3bab6c85cdb01995": "2026-11-01T18:10:00.000Z",
+    "kb7f905:63a0fe3d47da2f3b": "2026-11-01T20:57:58.000Z",
+    "kad5125:7601ca072135dace": "2026-11-01T20:48:51.000Z",
+    "k2e841d:fc5906185c74ad3a": "2026-11-01T21:08:32.000Z",
+    "k2e841d:76416a258b98cb9c": "2026-11-01T21:00:00.000Z",
+    "k2e841d:8bb08c49528d01dd": "2026-11-01T20:00:00.000Z"
   }
 }
