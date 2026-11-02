@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "In all six countries the emissions index is below its level in the year 2000",
  "kilde": {
   "navn": "World Bank"
@@ -80,8 +80,5 @@
     {"x": "2024", "y": 65.9}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

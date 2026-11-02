@@ -46,7 +46,7 @@ export function grafHtml(d, o = {}) {
   return [
     varliklar,
     `<figure class="g-kort${bred ? ' g-bred' : ''}" data-graf tabindex="0">`,
-    `<figcaption><${h} class="g-tittel">${esc(d.tittel)}</${h}></figcaption>`,
+    `<figcaption><${h} class="g-tittel">${esc(d.tittel)}</${h}>${d.under ? `<p class="g-under">${esc(d.under)}</p>` : ''}${d.tall ? `<p class="g-tall">${esc(d.tall.verdi)}${d.tall.etikett ? `<small>${esc(d.tall.etikett)}</small>` : ''}</p>` : ''}</figcaption>`,
     `<div class="g-sekme" role="group" aria-label="${T('Görünüm', 'View')}" hidden><button type="button" aria-pressed="true" data-g="grafik">${grafikAd}</button><button type="button" aria-pressed="false" data-g="tablo">${tabloAd}</button></div>`,
     `<div class="g-gorunum" data-v="grafik"><div class="g-flate">${t.svg}<div class="g-tips" hidden></div></div>`,
     t.nokkel ? `<p class="g-nokkel">${t.nokkel.map((n) => `<span class="${n.klasse}">${esc(n.navn)}</span>`).join('')}</p>` : '',

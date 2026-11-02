@@ -3,18 +3,18 @@
 
 /**
  * @typedef {{ x: string|number, y: number|null, y2?: number, mal?: number }} Punkt
- * @typedef {{ navn: string, punkter: Punkt[], rol?: 'ana'|'sammenligning'|'kunye'|'toplam', enhet?: string, desimaler?: number, isaret?: boolean }} Serie
+ * @typedef {{ navn: string, punkter: Punkt[], rol?: 'ana'|'sammenligning'|'kunye'|'toplam', stil?: 'esik', enhet?: string, desimaler?: number, isaret?: boolean, prosent?: boolean }} Serie
  * @typedef {{ type: 'mal', y: number, tekst: string }} Merknad
  * @typedef {{
- *   dil?: 'tr'|'en', form: string, tittel: string, kilde: { navn: string, url?: string },
+ *   dil?: 'tr'|'en', form: string, tittel: string, under?: string, tall?: { verdi: string, etikett?: string }, kilde: { navn: string, url?: string },
  *   enhet: string, desimaler?: number, serier: Serie[], merknader?: Merknad[],
- *   valg?: { sorter?: boolean, fremhev?: (string|number)[], toplam?: (string|number)[], gruppenavn?: [string, string], malnavn?: string, kolonner?: number, noktalar?: boolean, fark?: boolean, sum?: boolean, maks?: number, dogrudan?: boolean }
+ *   valg?: { trapp?: boolean, prognoseFra?: string|number, sorter?: boolean, fremhev?: (string|number)[], toplam?: (string|number)[], gruppenavn?: [string, string], malnavn?: string, kolonner?: number, noktalar?: boolean, fark?: boolean, sum?: boolean, maks?: number, dogrudan?: boolean }
  * }} GrafData
  * @typedef {{ x: number, y: number, tekst: string, midt?: string }} TipsPunkt
  * @typedef {{ svg: string, bredde: number, hoyde: number, modus: 'serie'|'element', punkter: TipsPunkt[], ramme?: { topp: number, bunn: number }, nokkel?: { navn: string, klasse: string }[], tabell: { kolonner: string[], rader: string[][] }, beskrivelse: string }} Tegning
  */
 
-export const BILINEN_FORMER = ['linje', 'soyle', 'rangering', 'smultring', 'helning', 'manual', 'smaa', 'nokkeltall', 'minitabell', 'rutenett', 'fossefall'];
+export const BILINEN_FORMER = ['linje', 'soyle', 'rangering', 'smultring', 'helning', 'manual', 'smaa', 'nokkeltall', 'minitabell', 'rutenett', 'fossefall', 'bidrag', 'gruppert'];
 
 /** @param {GrafData} d @returns {string[]} hata listesi; boşsa geçerli */
 export function validerGraf(d) {
@@ -28,7 +28,8 @@ export function validerGraf(d) {
     if (!(Array.isArray(d.valg?.gruppenavn) && d.valg.gruppenavn.length === 2)) h.push('manual: valg.gruppenavn [a, b] eksik');
     for (const s of d.serier ?? []) for (const p of s.punkter ?? []) if (p.y !== null && !Number.isFinite(p.y2)) h.push(`manual: "${p.x}" y2 eksik`);
   }
-  if (d.form === 'smaa' && !(d.serier?.length >= 2)) h.push('smaa: en az 2 seri');
+  if ((d.form === 'smaa' || d.form === 'gruppert') && !(d.serier?.length >= 2)) h.push(`${d.form}: en az 2 seri`);
+  if (d.form === 'bidrag' && !(d.serier?.length === 2 && d.serier[1].punkter?.length === 1 && Number.isFinite(d.serier[1].punkter[0].y))) h.push('bidrag: parçalar + tek noktalı toplam serisi');
   if (d.form === 'nokkeltall') {
     const ana = (d.serier ?? []).filter((s) => s.rol === 'ana');
     if (ana.length !== 1 || ana[0].punkter?.length !== 1) h.push('nokkeltall: tam bir ana seri, tek noktalı');
@@ -39,7 +40,7 @@ export function validerGraf(d) {
   }
   if (d.form === 'fossefall' && !Number.isFinite(d.serier?.[0]?.punkter?.[0]?.y)) h.push('fossefall: ilk değer eksik');
   if (d.form === 'helning') for (const s of d.serier ?? []) if (s.punkter?.length !== 2) h.push(`helning: "${s.navn}" iki noktalı olmalı`);
-  if (d.form === 'linje' && d.serier?.length > 3) h.push('linje: en çok 3 seri');
+  if (d.form === 'linje' && d.serier?.filter((s) => s.stil !== 'esik').length > 3) h.push('linje: en çok 3 seri (eşik çizgileri hariç)');
   if (!Array.isArray(d.serier) || !d.serier.length) h.push('serier boş');
   else
     for (const s of d.serier) {

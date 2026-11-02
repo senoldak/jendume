@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "The shares of China, India and Türkiye rose; those of the US, Japan and Germany fell",
  "kilde": {
   "navn": "World Bank"
@@ -74,8 +74,5 @@
     {"x": "2023", "y": 1.53}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

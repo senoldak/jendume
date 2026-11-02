@@ -34,6 +34,25 @@
 .g-kort figcaption {
   margin: 0 0 0.7rem;
 }
+.g-kort .g-under {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--g-gri);
+}
+.g-kort .g-tall {
+  margin: 0.5rem 0 0;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--g-ink);
+}
+.g-kort .g-tall small {
+  margin-left: 0.4rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--g-gri);
+}
 .g-kort .g-tittel {
   margin: 0;
   font-weight: 700;
@@ -109,6 +128,17 @@
 .g-s1 path { stroke: var(--g-ink); }
 .g-s1 circle { fill: var(--g-ink); }
 .g-s2 path { stroke: var(--g-gri); }
+.g-serie .g-prognose { stroke-dasharray: 5 4; }
+.g-esik path {
+  fill: none;
+  stroke: var(--g-ink);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+.g-svg .g-esik-t {
+  fill: var(--g-ink);
+  font-weight: 700;
+}
 .g-s2 circle { fill: var(--g-gri); }
 .g-svg .g-siste {
   fill: var(--g-ink);
@@ -271,6 +301,7 @@ circle.g-pa,
 }
 .g-nokkel .g-s1::before { background: var(--g-ink); }
 .g-nokkel .g-s2::before { background: var(--g-gri); }
+.g-nokkel .g-esik::before { background: var(--g-ink); height: 2px; }
 .g-nokkel .g-n-su::before { height: 10px; background: var(--g-yesil); }
 .g-nokkel .g-n-kontur::before { height: 10px; background: var(--g-ink); }
 .g-nokkel .g-n-gul::before { height: 10px; background: var(--g-gri); }

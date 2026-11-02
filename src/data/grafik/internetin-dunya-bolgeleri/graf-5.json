@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Internet use rose in every region over 2005–2025, but the shape of the curves differs",
  "kilde": {
   "navn": "World Bank"
@@ -104,8 +104,5 @@
     {"x": "2025", "y": 35.7}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

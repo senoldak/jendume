@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "In the northern countries shown, solar output is more concentrated in summer",
  "kilde": {
   "navn": "Eurostat"
@@ -110,8 +110,5 @@
     {"x": "Dec", "y": 0.307}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

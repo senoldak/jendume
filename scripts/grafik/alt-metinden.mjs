@@ -21,7 +21,7 @@ export const TURLER = {
   en: { 'Bar chart': 'bar', 'Column chart': 'column', 'Line chart': 'line', 'Dot chart': 'dot', Table: 'table', 'Slope chart': 'slope', 'Dumbbell chart': 'dumbbell', 'Small multiples': 'multiples', 'Key figure': 'key', 'Unit chart': 'unit', 'Waterfall chart': 'waterfall', 'Share chart': 'share' },
 };
 /** Alt metin türü → çizim biçimi (src/lib/graf/index.mjs). */
-export const FORM = { bar: 'rangering', column: 'soyle', line: 'linje', dot: 'linje', table: 'minitabell', slope: 'helning', dumbbell: 'manual', multiples: 'smaa', key: 'nokkeltall', unit: 'rutenett', waterfall: 'fossefall', share: 'smultring' };
+export const FORM = { bar: 'rangering', column: 'soyle', line: 'linje', dot: 'linje', table: 'minitabell', slope: 'helning', dumbbell: 'manual', multiples: 'gruppert', key: 'nokkeltall', unit: 'rutenett', waterfall: 'fossefall', share: 'smultring' };
 
 // ---- Değer ve nokta ayrıştırma ------------------------------------------------------------------------------------
 
@@ -219,7 +219,7 @@ export function grafVerisi({ alt, baslik, dil, kaynak }) {
     case 'multiples': {
       const o = tumOlcu(bl);
       for (const b of bl) ayniEtiket(bl[0], b, 'küçük çoklu');
-      d = { ...taban, enhet: o.enh, desimaler: o.des, serier: bl.map((b) => seri(b)), valg: { kolonner: 2 } };
+      d = { ...taban, enhet: o.enh, desimaler: o.des, serier: bl.map((b) => seri(b)) };
       break;
     }
     case 'key': {

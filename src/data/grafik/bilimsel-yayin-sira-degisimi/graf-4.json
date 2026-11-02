@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Çin, Hindistan ve Türkiye'nin payı arttı; ABD'nin, Japonya'nın ve Almanya'nın payı azaldı",
  "kilde": {
   "navn": "World Bank"
@@ -74,8 +74,5 @@
     {"x": "2023", "y": 1.53}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "The agricultural share of employment fell in all six regions covered here, at different speeds",
  "kilde": {
   "navn": "World Bank"
@@ -68,8 +68,5 @@
     {"x": "2025", "y": 1.48}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

@@ -103,7 +103,10 @@ export function trappSti(punkter) {
 }
 
 /** Birim: sema'daki enhet olduğu gibi ('%', 'milyar ton', ''). */
-export const kortEnhet = (enhet) => String(enhet ?? '').trim();
+export const kortEnhet = (enhet) => {
+  const e = String(enhet ?? '').trim();
+  return /^prosent$/i.test(e) ? '%' : e; // zincirin 'prosent' birimi = '%'
+};
 
 /** Eksende en çok `antall` etiket: baş, son ve aradakiler eşit aralıkla. */
 export function etikettIndekser(lengde, antall = 4) {

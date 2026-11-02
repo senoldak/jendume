@@ -19,6 +19,8 @@ export function tegn(d, o = {}) {
   const M = o.bred ? 300 : 225;
   const maksNavn = o.bred ? 46 : 34;
   const mal = (d.merknader ?? []).find((m) => m.type === 'mal');
+  // Zincirin referans metni değeri zaten taşır ("Türkiye: %4,20"); yalnız etiket gelirse (alt metinden) değer eklenir.
+  const malMetin = mal ? (mal.tekst.includes(bi(mal.y, des, enh)) ? mal.tekst : `${mal.tekst} ${bi(mal.y, des, enh)}`) : '';
   const REF = mal ? 22 : 0;
   const verdier = [...rader.map((q) => q.y).filter((v) => !tom(v)), ...(mal ? [mal.y] : [])];
   const lo = Math.min(0, ...verdier), hi = Math.max(0, ...verdier);
@@ -45,14 +47,14 @@ export function tegn(d, o = {}) {
   if (lo < 0) deler.push(`<line class="g-null" x1="${r2(x(0))}" x2="${r2(x(0))}" y1="${REF}" y2="${H}"/>`);
   if (mal) {
     deler.push(`<line class="g-mal" x1="${r2(x(mal.y))}" x2="${r2(x(mal.y))}" y1="${REF - 4}" y2="${H}"/>`);
-    deler.push(tekst(x(mal.y), 14, `${mal.tekst} ${bi(mal.y, des, enh)}`, `class="g-mal-t" text-anchor="${x(mal.y) > bredde - 90 ? 'end' : 'middle'}"`));
+    deler.push(tekst(x(mal.y), 14, malMetin, `class="g-mal-t" text-anchor="${x(mal.y) > bredde - 90 ? 'end' : 'middle'}"`));
   }
 
   const beskrivelse = `${d.tittel}. ${rader.filter((q) => !tom(q.y)).slice(0, 3).map((q) => `${q.x} ${bi(q.y, des, enh)}`).join(', ')}.`;
   return {
     svg: `<svg viewBox="0 0 ${bredde} ${H}" class="g-svg" role="img" aria-label="${esc(beskrivelse)}">${deler.join('')}</svg>`,
     bredde, hoyde: H, modus: 'element', punkter,
-    tabell: { kolonner: ['', s.navn], rader: [...rader.map((q) => [String(q.x), tom(q.y) ? '–' : bi(q.y, des, enh)]), ...(mal ? [[mal.tekst, bi(mal.y, des, enh)]] : [])] },
+    tabell: { kolonner: ['', s.navn], rader: [...rader.map((q) => [String(q.x), tom(q.y) ? '–' : bi(q.y, des, enh)]), ...(mal ? [[mal.tekst.includes(bi(mal.y, des, enh)) ? mal.tekst.replace(bi(mal.y, des, enh), '').replace(/[:\s]+$/, '') || mal.tekst : mal.tekst, bi(mal.y, des, enh)]] : [])] },
     beskrivelse,
   };
 }

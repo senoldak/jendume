@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Altı bölgenin hepsinde internet kullanım oranı 2005–2025 arasında yükseldi, ama eğrilerin biçimi birbirinden ayrılıyor",
  "kilde": {
   "navn": "World Bank"
@@ -104,8 +104,5 @@
     {"x": "2025", "y": 35.7}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Gösterdiğimiz kuzey ülkelerinde yıllık güneş elektriği yaz aylarına daha çok yığılıyor",
  "kilde": {
   "navn": "Eurostat"
@@ -110,8 +110,5 @@
     {"x": "Ara", "y": 0.307}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

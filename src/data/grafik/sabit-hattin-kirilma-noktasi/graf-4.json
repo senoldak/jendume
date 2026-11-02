@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Sabit hat aboneliğinin zirve yılı bölgeden bölgeye değişiyor",
  "kilde": {
   "navn": "World Bank"
@@ -80,8 +80,5 @@
     {"x": "2024", "y": 0.4}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

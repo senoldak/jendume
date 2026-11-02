@@ -1,6 +1,6 @@
 {
  "dil": "en",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "The year of peak fixed telephone subscriptions differs from region to region",
  "kilde": {
   "navn": "World Bank"
@@ -80,8 +80,5 @@
     {"x": "2024", "y": 0.4}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

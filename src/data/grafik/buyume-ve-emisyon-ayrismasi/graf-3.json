@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Altı ülkenin altısında da emisyon endeksi 2000 yılı düzeyinin altında",
  "kilde": {
   "navn": "World Bank"
@@ -80,8 +80,5 @@
     {"x": "2024", "y": 65.9}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

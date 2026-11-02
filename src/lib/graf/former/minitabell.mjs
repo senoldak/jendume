@@ -8,8 +8,10 @@ const RAD = 40, TOPP = 30;
 export function tegn(d, o = {}) {
   const bredde = o.bred ? 900 : 400;
   const [verdi, endring] = d.serier;
-  const enhVerdi = kortEnhet(verdi.enhet ?? d.enhet);
-  const enhEndring = kortEnhet(endring.enhet ?? d.enhet);
+  // Seri başına prosent (zincir): true '%' yazar, false ise genel yüzde biriminden bağımsız düz sayı.
+  const enhDe = (s) => (s.prosent === true ? '%' : s.prosent === false && kortEnhet(s.enhet ?? d.enhet) === '%' ? '' : kortEnhet(s.enhet ?? d.enhet));
+  const enhVerdi = enhDe(verdi);
+  const enhEndring = enhDe(endring);
   const desV = verdi.desimaler ?? d.desimaler ?? 0;
   const desE = endring.desimaler ?? d.desimaler ?? 0;
   const fv = (q) => (tom(q.y) ? '–' : bi(q.y, desV, enhVerdi));

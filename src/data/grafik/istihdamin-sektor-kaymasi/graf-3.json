@@ -1,6 +1,6 @@
 {
  "dil": "tr",
- "form": "smaa",
+ "form": "gruppert",
  "tittel": "Tarımın istihdam payı bu yazıdaki altı bölgenin hepsinde geriledi; düşüşün hızı bölgeden bölgeye değişti",
  "kilde": {
   "navn": "World Bank"
@@ -68,8 +68,5 @@
     {"x": "2025", "y": 1.48}
    ]
   }
- ],
- "valg": {
-  "kolonner": 2
- }
+ ]
 }

@@ -26,7 +26,8 @@ const duzMetin = (n) => (n.type === 'text' ? n.value : (n.children ?? []).map(du
 /**
  * Paragraf bir graf-N.svg resminden (ve isteğe bağlı altındaki italik açıklamadan) ibaretse ve JSON'u varsa kart
  * HTML'i; yoksa null.
- * @param {{ ilk?: boolean }} durum sayfadaki ilk kart stil ve betiği taşır
+ * @param {{ ilk?: boolean, dil?: 'tr' | 'en' }} durum sayfadaki ilk kart stil ve betiği taşır; dil: JSON'da dil yoksa
+ *   yazının dili (zincirin kart verisi dil alanı taşımaz)
  */
 export function grafForParagraf(p, durum = { ilk: true }) {
   const cocuk = (p.children ?? []).filter((c) => !(c.type === 'text' && !c.value.trim()));
@@ -39,8 +40,9 @@ export function grafForParagraf(p, durum = { ilk: true }) {
   const m = String(cocuk[0].properties?.src ?? '').match(GRAF);
   if (!m) return null;
   try {
-    const veri = grafVerisi(m[1], m[2]);
-    if (!veri) return null;
+    const ham = grafVerisi(m[1], m[2]);
+    if (!ham) return null;
+    const veri = ham.dil || !durum.dil ? ham : { ...ham, dil: durum.dil };
     const hata = validerGraf(veri);
     if (hata.length) {
       console.warn(`[graf] ${m[1]}/${m[2]}.json: ${hata.join('; ')} (resim bırakıldı)`);
@@ -63,7 +65,7 @@ export function satteriGraf() {
     if (process.env.GRAF_KART === '0') return null;
     const yol = fabrika?.fileURL ? fileURLToPath(fabrika.fileURL).split('\\').join('/') : '';
     if (!yol.includes('src/content/haberler/')) return null;
-    const durum = { ilk: true };
+    const durum = { ilk: true, dil: /src\/content\/haberler\/en\//.test(yol) ? 'en' : 'tr' };
     return {
       name: 'jendume-graf',
       element: {

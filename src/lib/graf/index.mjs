@@ -1,5 +1,7 @@
 // Grafik seti: biçim kaydı ve tek giriş noktası.
 import { validerGraf } from './sema.mjs';
+import * as bidrag from './former/bidrag.mjs';
+import * as gruppert from './former/gruppert.mjs';
 import * as fossefall from './former/fossefall.mjs';
 import * as helning from './former/helning.mjs';
 import * as linje from './former/linje.mjs';
@@ -13,7 +15,7 @@ import * as smultring from './former/smultring.mjs';
 import * as soyle from './former/soyle.mjs';
 
 /** @type {Record<string, { tegn: (d: import('./sema.mjs').GrafData, o?: { id?: string, bred?: boolean }) => import('./sema.mjs').Tegning }>} */
-export const FORMER = { linje, soyle, rangering, smultring, helning, manual, smaa, nokkeltall, minitabell, rutenett, fossefall };
+export const FORMER = { linje, soyle, rangering, smultring, helning, manual, smaa, nokkeltall, minitabell, rutenett, fossefall, bidrag, gruppert };
 
 /** @param {import('./sema.mjs').GrafData} d @param {{ id?: string, bred?: boolean }} [o] */
 export function tegnGraf(d, o = {}) {
