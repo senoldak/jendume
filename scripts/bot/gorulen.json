@@ -5780,7 +5780,33 @@
     "k2d427e:1a674b8281351c8f": "2026-11-02T19:51:01.794Z",
     "k2e841d:367212d09f838521": "2026-11-02T19:51:01.794Z",
     "k09feb3:e5d5d52471e0d27c": "2026-11-02T19:51:01.794Z",
-    "openai:https://openai.com/index/qodo-codex-plugin": "2026-11-02T19:51:01.794Z"
+    "openai:https://openai.com/index/qodo-codex-plugin": "2026-11-02T19:51:01.794Z",
+    "kd4ca61:cc987ad8eb9fa052": "2026-11-02T21:51:01.149Z",
+    "kd4ca61:ad440396fdde8ade": "2026-11-02T21:51:01.149Z",
+    "k74f74a:f7a00a94ff75e980": "2026-11-02T21:51:01.149Z",
+    "k74f74a:f075eebb797a7e6d": "2026-11-02T21:51:01.149Z",
+    "kb7f905:285b174252b0730d": "2026-11-02T21:51:01.149Z",
+    "k74f74a:4c7098a10927d983": "2026-11-02T21:51:01.149Z",
+    "kd4ca61:369b8d81d09cc569": "2026-11-02T21:51:01.149Z",
+    "k74f74a:6ee326b30dbce312": "2026-11-02T21:51:01.149Z",
+    "k74f74a:a5dc69dc5c77421c": "2026-11-02T21:51:01.149Z",
+    "k12b4a6:db2ccb263700027f": "2026-11-02T21:51:01.149Z",
+    "k2d427e:984148f14ac5b413": "2026-11-02T21:51:01.149Z",
+    "k74f74a:5ca39a1c449b3574": "2026-11-02T21:51:01.149Z",
+    "mit-news-ai:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": "2026-11-02T21:51:01.149Z",
+    "k8601e1:b560d4ece180813d": "2026-11-02T21:51:01.149Z",
+    "k74f74a:b04523fe298acfc2": "2026-11-02T21:51:01.149Z",
+    "k2d427e:360d71641ee96e36": "2026-11-02T21:51:01.149Z",
+    "k39a0e6:e0517d4bee2b16f1": "2026-11-02T21:51:01.149Z",
+    "k2d427e:37ea928eb89ff75f": "2026-11-02T21:51:01.149Z",
+    "k2d427e:4a5173bb5eaddabb": "2026-11-02T21:51:01.149Z",
+    "k74f74a:1b470e3b47d245e1": "2026-11-02T21:51:01.149Z",
+    "k78637d:e6121bb95a0c25a0": "2026-11-02T21:51:01.149Z",
+    "k2d427e:d6bbd805bbdb784a": "2026-11-02T21:51:01.149Z",
+    "k39a0e6:78c43ca1884177f1": "2026-11-02T21:51:01.149Z",
+    "k74f74a:d9741789badf5f09": "2026-11-02T21:51:01.149Z",
+    "k8601e1:2d8f51af8aa5593a": "2026-11-02T21:51:01.149Z",
+    "k09feb3:24a3dfd08e2b1d91": "2026-11-02T21:51:01.149Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -5824,9 +5850,9 @@
       "zaman": "2026-10-22T17:19:55.152Z"
     },
     "k8601e1:ceabf25b9b91e6be": {
-      "sayi": 1,
-      "mesaj": "Gemini bozuk yanıt (gemini-3.1-flash-lite): Unexpected end of JSON input",
-      "zaman": "2026-11-02T19:51:01.794Z"
+      "sayi": 2,
+      "mesaj": "Gemini bozuk yanıt (gemini-3.5-flash-lite): Unexpected end of JSON input",
+      "zaman": "2026-11-02T21:51:01.149Z"
     }
   },
   "ayrik": {
@@ -13569,7 +13595,49 @@
     "k74f74a:4e9a9c7ddbc06b17|k8601e1:ceabf25b9b91e6be": "2026-11-02T19:51:01.794Z",
     "k9f3ec7:0777468ffe255ea7|ka5e8e4:7a0e5b374a3d465c": "2026-11-02T19:51:01.794Z",
     "k12b4a6:5f4daa6ee671c59d|k2d427e:e9fe878979437e85": "2026-11-02T19:51:01.794Z",
-    "k59b8ca:11ca0a0ebe51d81a|ka5e8e4:2f6f4b6f3ac5c722": "2026-11-02T19:51:01.794Z"
+    "k59b8ca:11ca0a0ebe51d81a|ka5e8e4:2f6f4b6f3ac5c722": "2026-11-02T19:51:01.794Z",
+    "haber:anthropic-abd-devlet-kurumlarina-claude-modellerinde-yuzde-40-indirim-sagladi|k74f74a:d9741789badf5f09": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-acik-kaynakli-projeler-icin-ucretsiz-guvenlik-tarayicisi-sundu|k74f74a:d9741789badf5f09": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled|k74f74a:d9741789badf5f09": "2026-11-02T21:51:01.149Z",
+    "haber:elon-musk-grok-bot-maliyetlerinin-gelirlerine-gore-cok-yuksek-oldugunu-acikladi|k2d427e:4a5173bb5eaddabb": "2026-11-02T21:51:01.149Z",
+    "haber:grok-bot-artik-kullanici-adina-telefon-gorusmeleri-yapabiliyor|k2d427e:4a5173bb5eaddabb": "2026-11-02T21:51:01.149Z",
+    "haber:goldman-sachs-yapay-zeka-yatirimlari-icin-500-milyon-dolar-ayirdi|k09feb3:24a3dfd08e2b1d91": "2026-11-02T21:51:01.149Z",
+    "haber:abd-hazine-bakanligi-yapay-zeka-yatirimlarina-kisitlama-getirmeye-hazirlaniyor|kd4ca61:cc987ad8eb9fa052": "2026-11-02T21:51:01.149Z",
+    "haber:deepseek-urunleri-abd-federal-sivil-kurumlarinin-sistemlerinden-cikariliyor|kd4ca61:cc987ad8eb9fa052": "2026-11-02T21:51:01.149Z",
+    "haber:donald-trump-veri-merkezi-sirketlerinin-yerel-topluluklara-temettu-odemesini-one|kd4ca61:cc987ad8eb9fa052": "2026-11-02T21:51:01.149Z",
+    "haber:intel-yapay-zeka-cipi-talebindeki-artisla-abd-fabrikalarindaki-calismalarini-hiz|kd4ca61:ad440396fdde8ade": "2026-11-02T21:51:01.149Z",
+    "haber:anima-yapay-zeka-modelleriyle-klinik-telefon-beklemelerini-yuzde-75-azaltti|k2d427e:37ea928eb89ff75f": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k2d427e:37ea928eb89ff75f": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-openai-cloudflare-ve-google-guvenlik-taramasi-icin-yapay-zeka-ajanlari|k2d427e:37ea928eb89ff75f": "2026-11-02T21:51:01.149Z",
+    "haber:alphabet-hisseleri-yapay-zeka-harcamalari-golgesinde-dustu|k74f74a:f7a00a94ff75e980": "2026-11-02T21:51:01.149Z",
+    "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|k74f74a:f7a00a94ff75e980": "2026-11-02T21:51:01.149Z",
+    "haber:android-studio-rabbit-2-surumu-40-tan-fazla-kodlama-ajanina-destek-veriyor|k74f74a:f7a00a94ff75e980": "2026-11-02T21:51:01.149Z",
+    "haber:amazon-web-services-altyapisinda-her-14-saniyede-bir-yapay-zeka-hizlandirici-kur|k74f74a:f075eebb797a7e6d": "2026-11-02T21:51:01.149Z",
+    "haber:verizon-yapay-zeka-is-yukleri-icin-amazon-web-services-ile-2-milyar-dolarlik-anl|k74f74a:f075eebb797a7e6d": "2026-11-02T21:51:01.149Z",
+    "haber:almanya-ve-avrupa-kendi-yapay-zeka-teknolojilerini-gelistirmek-icin-hizlaniyor|k74f74a:4c7098a10927d983": "2026-11-02T21:51:01.149Z",
+    "haber:almanya-yapay-zeka-veri-merkezleri-icin-iklim-kurallarini-esnetti|k74f74a:4c7098a10927d983": "2026-11-02T21:51:01.149Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k74f74a:4c7098a10927d983": "2026-11-02T21:51:01.149Z",
+    "haber:anima-yapay-zeka-modelleriyle-klinik-telefon-beklemelerini-yuzde-75-azaltti|k8601e1:2d8f51af8aa5593a": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k8601e1:2d8f51af8aa5593a": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-openai-cloudflare-ve-google-guvenlik-taramasi-icin-yapay-zeka-ajanlari|k8601e1:2d8f51af8aa5593a": "2026-11-02T21:51:01.149Z",
+    "haber:android-studio-rabbit-2-surumu-40-tan-fazla-kodlama-ajanina-destek-veriyor|k2d427e:d6bbd805bbdb784a": "2026-11-02T21:51:01.149Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k2d427e:d6bbd805bbdb784a": "2026-11-02T21:51:01.149Z",
+    "haber:alphabet-amazon-meta-ve-microsoft-altyapi-harcamalarini-artiriyor|k74f74a:1b470e3b47d245e1": "2026-11-02T21:51:01.149Z",
+    "haber:anthropic-bulut-kapasitesi-temin-etmekte-zorlaniyor|k74f74a:1b470e3b47d245e1": "2026-11-02T21:51:01.149Z",
+    "haber:coreweave-ve-nebius-hisseleri-microsoft-harcamalarinin-gerisinde-kalmasiyla-dust|k74f74a:1b470e3b47d245e1": "2026-11-02T21:51:01.149Z",
+    "haber:astrazeneca-ve-oracle-yapay-zeka-ile-klinik-arastirmalar-icin-hasta-bulacak|k2d427e:984148f14ac5b413": "2026-11-02T21:51:01.149Z",
+    "haber:ingiltere-de-yargi-sistemi-yapay-zeka-ile-donusum-surecinde|k2d427e:984148f14ac5b413": "2026-11-02T21:51:01.149Z",
+    "haber:microsoft-ve-oracle-yapay-zeka-yatirimlarinda-one-gecti|k2d427e:984148f14ac5b413": "2026-11-02T21:51:01.149Z",
+    "haber:cybercartel-grubu-yapay-zeka-ajanlariyla-latin-amerika-daki-finans-kurumlarini-h|k2d427e:4a5173bb5eaddabb": "2026-11-02T21:51:01.149Z",
+    "haber:avrupa-yapay-zeka-veri-merkezlerine-elektrik-sebekesinde-oncelik-vermeden-once-d|k8601e1:b560d4ece180813d": "2026-11-02T21:51:01.149Z",
+    "haber:matematik-egitimi-yapay-zeka-caginda-daha-da-kritik-hale-geliyor|k8601e1:b560d4ece180813d": "2026-11-02T21:51:01.149Z",
+    "haber:meta-kisisel-asistani-muse-ile-yapay-zeka-bagimliligi-ve-kademeli-yetkisizlesme|k8601e1:b560d4ece180813d": "2026-11-02T21:51:01.149Z",
+    "haber:tencent-metin-komutlari-ve-kamera-hareketleriyle-calisan-hy-nomas-modelini-cikar|k78637d:e6121bb95a0c25a0": "2026-11-02T21:51:01.149Z",
+    "haber:visa-ve-tencent-yapay-zeka-ajanlariyla-alisveris-deneyimini-donusturuyor|k78637d:e6121bb95a0c25a0": "2026-11-02T21:51:01.149Z",
+    "haber:bireysel-kullanicilar-yapay-zeka-araclariyla-kendi-uygulamalarini-gelistiriyor|k8601e1:ceabf25b9b91e6be": "2026-11-02T21:51:01.149Z",
+    "haber:buyuk-bankalar-ve-meta-yapay-zeka-harcamalari-ile-ajanlariyla-gundemde-22-ekim-k|k8601e1:ceabf25b9b91e6be": "2026-11-02T21:51:01.149Z",
+    "haber:chatgpt-teknik-destek-arayan-kullanicilari-gazetecilere-yonlendiriyor|k8601e1:ceabf25b9b91e6be": "2026-11-02T21:51:01.149Z",
+    "k2d427e:37ea928eb89ff75f|k8601e1:2d8f51af8aa5593a": "2026-11-02T21:51:01.149Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -13855,169 +13923,10 @@
     "k2d427e:39beb30f7eac983c|k74f74a:83c0add8f5766e7e": "2026-11-02T17:51:00.306Z",
     "haber:anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled|k59b8ca:ad0fd68a2c83be3c": "2026-11-02T19:51:01.794Z",
     "haber:anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled|k9f3ec7:0777468ffe255ea7": "2026-11-02T19:51:01.794Z",
-    "k59b8ca:11c307da40d16cd6|kb7f905:ccdbf0c868e637e8": "2026-11-02T19:51:01.794Z"
+    "k59b8ca:11c307da40d16cd6|kb7f905:ccdbf0c868e637e8": "2026-11-02T19:51:01.794Z",
+    "k74f74a:f075eebb797a7e6d|kb7f905:285b174252b0730d": "2026-11-02T21:51:01.149Z"
   },
   "puan": {
-    "kb7f905:2853ca097ffa5ed2": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2e841d:67a33dd0d89463e9": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:939da6cb37c30861": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2e841d:0a5547c47afc2888": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "kd4ca61:2a91745c361d9dcd": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:1762bd9e56185a9c": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "kd4ca61:4ca65a227be57d02": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2e841d:94559cb990cc3abd": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "kd4ca61:dcb285965053b393": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:43831226938484f1": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:7d7ee96efee085e2": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:f0812ce1a814e26f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "mit-news-ai:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
-      "puan": 30,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k59b8ca:4b21351ff40322aa": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "ke82007:c94e0fed0c9ea55b": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:c21fe2321ceaef2c": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:ddf6cee13d926821": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:74a05218f376dfdb": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:a094ae8acf52b70d": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:07e591ac1b640949": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k74f74a:cc33c30e6edfbe5e": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:874ae3ba86689495": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:176033ebe6ddedaa": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:b4751210bc0a5983": {
-      "puan": 20,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:7f17efe947cde418": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:42646d2d1d72139d": {
-      "puan": 30,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:9484db8dc446bad1": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2e841d:93227aebcf253765": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:aff8c3bd1b4a305f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k38ef42:dadea1bcae1a533a": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "k2d427e:708933d954b3b7d2": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
-    "epoch-ai:https://epoch.ai/latest/introducing-the-ai-chip-imports-explorer": {
-      "puan": 50,
-      "olcek": 100,
-      "zaman": "2026-10-27T21:50:59.920Z"
-    },
     "k38ef42:73473666b75262d1": {
       "puan": 0,
       "olcek": 100,
@@ -20872,29 +20781,134 @@
       "puan": 80,
       "olcek": 100,
       "zaman": "2026-11-02T19:51:01.794Z"
+    },
+    "kd4ca61:cc987ad8eb9fa052": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "kd4ca61:ad440396fdde8ade": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k2d427e:360d71641ee96e36": {
+      "puan": 95,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k2d427e:37ea928eb89ff75f": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:f7a00a94ff75e980": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k39a0e6:e0517d4bee2b16f1": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:f075eebb797a7e6d+kb7f905:285b174252b0730d": {
+      "puan": 30,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:4c7098a10927d983": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k8601e1:2d8f51af8aa5593a": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "kd4ca61:369b8d81d09cc569": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k39a0e6:78c43ca1884177f1": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k2d427e:d6bbd805bbdb784a": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:6ee326b30dbce312": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:1b470e3b47d245e1": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:d9741789badf5f09": {
+      "puan": 76,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:a5dc69dc5c77421c": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k12b4a6:db2ccb263700027f": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k2d427e:984148f14ac5b413": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k2d427e:4a5173bb5eaddabb": {
+      "puan": 83,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k09feb3:24a3dfd08e2b1d91": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:5ca39a1c449b3574": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "mit-news-ai:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": {
+      "puan": 35,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k8601e1:b560d4ece180813d": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k78637d:e6121bb95a0c25a0": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
+    },
+    "k74f74a:b04523fe298acfc2": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-02T21:51:01.149Z"
     }
   },
   "yayinlanan": {
-    "exin-therapeutics-arastirmacilari-claude-modelini-kullanarak-fare-beyninde-otono": {
-      "zaman": "2026-10-30T19:51:35.637Z",
-      "basliklarSifreli": "v1.Xcmoe4p6Xw8SOmVt.jihbxLj+SoAXHiG/f8Y1qAgCeVhP9bM99DCBThLd1cy1ocfw/fTtys9m9RoIpRyImEGf+B7vFveMBKcpqbu1aQCbPYdLMJ1OMUB8xpzB/l22SpTqK8GSIQT7tBb74N2lEzbLsdF2+cukupaRMTSQ4UWwUw++2sKFWeyhYGRuM6Y="
-    },
-    "cursor-eklenti-magazasinda-sahte-claude-code-yazilimi-veri-sizdirmaya-calisti": {
-      "zaman": "2026-10-30T19:51:35.637Z",
-      "basliklarSifreli": "v1.q1VIZWRwUzvf2BEc.k0WjT8Meq6vF/rLh1dpDBRitkx1b+xyq7A/92nBx9T6vFGe/fMV0/BoZ3Efku49RYoUdEXAcHA/vBJiHBKWSvRFO/wJBZtGANmYmUfcTpGonY7tWV3dguDI2zKwkLZZvJbruMaojUv4heBQoN5AIc6kphNuWoKIbIB8HQj5ZlCX4PqOSJ3QYyCp980t2JVN5CHgRxRTWFvL5/oQpwOphoRGnurJVyHU0O3f1xoloFqGz4N/K0ej2r4nZ5q87xtHxUw3ERZZkYmo="
-    },
-    "anthropic-openai-cloudflare-ve-google-guvenlik-taramasi-icin-yapay-zeka-ajanlari": {
-      "zaman": "2026-10-30T19:51:35.637Z",
-      "basliklarSifreli": "v1.2729ZrR+WkV0Ckg1.jeHzeF+dTW8JNJX/SnXiC1+1KiRuq3UOSFrODh/51NUKoQ8p32pUaeU21RR4+r7gGcLN64U7f6WiZS7V67b/PErWs72ev+S6ZSH38NmeekJ6yA=="
-    },
-    "biyoloji-on-baskilarinda-buyuk-dil-modellerinin-kullanimi-uzman-araclara-yaklast": {
-      "zaman": "2026-10-30T19:51:35.637Z",
-      "basliklarSifreli": "v1.kgu6Al9mEA91+Q6Q.j0/llX2xDw8lLk0MWmGaIOztkERawjHnTDk46Rp1BVPPJ1cNbGx+pmOPKg65QyWpzuEaltEboMNIHGTnV4ul9ku3qOZA79iggUkIVibAp8hMJMpNHfCfLxCaov9vPMWCfQcPy0NwpkI="
-    },
-    "openai-web-sitelerinin-yapay-zeka-egitimi-tercih-sinyallerini-destekleyecek": {
-      "zaman": "2026-10-30T19:51:35.637Z",
-      "basliklarSifreli": "v1.qAc7M3ZUUaZ2QF5h.Z2qXde/vIAI3IJ4fRo3Q7nhZbpUsi0Yz2fUWHLLIQTWC0Ft60Cyi9fzRmYOOK/808bFAQwkjCLXoi71z5ejOHwzIMU8c1yMn3IdVP9ufc3WdGdQZ"
-    },
     "amazon-bedrock-agentcore-oturum-uc-noktalari-ile-canli-web-onizlemesi-sunuyor": {
       "zaman": "2026-10-30T21:52:07.228Z",
       "basliklarSifreli": "v1.RwkNHTbOUZHNvLfS.Wsi3Od7UhbZEjQePXBCr5B5iwfjlhP95kkwPabxgwotgW7DL3+dBMMD2BhA7A6M89j146SG6szdTN3up6i9kBt/3ODS74UqZfKZwGfdNfecC0LO1MMMY+QQ96Q2xjoLH1GGDYpejDK7do6b3TAOhNg=="
@@ -21202,6 +21216,14 @@
     "qodo-yazilim-gelistirme-sureclerine-kurumsal-baglam-ve-standartlar-getiriyor": {
       "zaman": "2026-11-02T19:51:01.794Z",
       "basliklarSifreli": "v1.0nqEg61FiJU4gBrI.mYFAzV/m1AVjnOYYZmNHUzgLZpDJnHkpYn7EcUDZovRrjtwuaq9Buh8QH0Ibczfu+Ulcp3RtXbj7pOxrxYcxRfLvdtY4Tg=="
+    },
+    "tencent-konusmalari-aninda-ceviren-hy-simulmt-modelini-duyurdu": {
+      "zaman": "2026-11-02T21:51:01.149Z",
+      "basliklarSifreli": "v1.KpYlhD4JlwcK8TMA.nCiae6yTNn3JfhD5NDsVJJTdALGAp1+eVriBAbOa0H+VvTgjY3a5LORF7YadLtgdxpt9zJHMbgstH+bTNIN09BJiaBfHBYLQvbwi/1j83nQME35C2toCYiyNX36G6Pz+UkQQhJ27kw=="
+    },
+    "openai-son-yatirim-turunda-hedefledigi-fonun-gerisinde-kaldi": {
+      "zaman": "2026-11-02T21:51:01.149Z",
+      "basliklarSifreli": "v1.CntvszhE+ZZopI/K.YaLlwnEqKfbTqQHS6X3pdcb4Z6v6WjEHINXgTQdZ1NXU7X4CO4MhGTNHo07a+IAvyelF89ixqCpkxvYuzywb8/AHK3/QhkJ/TzlDbDB8rmO7Sery91IIU0I0cIGxAVZqbJtwK3QMTdnYOyEAmA94"
     }
   },
   "havuz": [],
@@ -27045,6 +27067,32 @@
     "k8601e1:401d56d82d2563db": "2026-11-02T19:03:13.000Z",
     "k8601e1:ceabf25b9b91e6be": "2026-11-02T17:55:29.000Z",
     "openai:https://openai.com/index/qodo-codex-plugin": "2026-11-02T00:00:00.000Z",
-    "google-ai:https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/": "2026-11-02T17:45:00.000Z"
+    "google-ai:https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/": "2026-11-02T17:45:00.000Z",
+    "kb7f905:285b174252b0730d": "2026-11-02T19:25:59.000Z",
+    "k09feb3:24a3dfd08e2b1d91": "2026-11-02T20:00:03.000Z",
+    "k78637d:e6121bb95a0c25a0": "2026-11-02T19:52:00.000Z",
+    "k12b4a6:db2ccb263700027f": "2026-11-02T20:11:00.000Z",
+    "k39a0e6:e0517d4bee2b16f1": "2026-11-02T21:00:26.000Z",
+    "k39a0e6:78c43ca1884177f1": "2026-11-02T20:40:10.000Z",
+    "k2d427e:360d71641ee96e36": "2026-11-02T21:42:04.000Z",
+    "k2d427e:37ea928eb89ff75f": "2026-11-02T21:40:05.000Z",
+    "k2d427e:d6bbd805bbdb784a": "2026-11-02T20:36:05.000Z",
+    "k2d427e:984148f14ac5b413": "2026-11-02T20:07:04.000Z",
+    "k2d427e:4a5173bb5eaddabb": "2026-11-02T20:01:05.000Z",
+    "k74f74a:f7a00a94ff75e980": "2026-11-02T21:14:11.000Z",
+    "k74f74a:f075eebb797a7e6d": "2026-11-02T20:56:21.000Z",
+    "k74f74a:4c7098a10927d983": "2026-11-02T20:53:00.000Z",
+    "k74f74a:6ee326b30dbce312": "2026-11-02T20:34:25.000Z",
+    "k74f74a:1b470e3b47d245e1": "2026-11-02T20:31:35.000Z",
+    "k74f74a:d9741789badf5f09": "2026-11-02T20:14:25.000Z",
+    "k74f74a:a5dc69dc5c77421c": "2026-11-02T20:11:33.000Z",
+    "k74f74a:5ca39a1c449b3574": "2026-11-02T19:56:57.000Z",
+    "k74f74a:b04523fe298acfc2": "2026-11-02T19:48:57.000Z",
+    "kd4ca61:cc987ad8eb9fa052": "2026-11-02T21:46:56.000Z",
+    "kd4ca61:369b8d81d09cc569": "2026-11-02T20:44:00.000Z",
+    "kd4ca61:ad440396fdde8ade": "2026-11-02T21:46:46.000Z",
+    "k8601e1:2d8f51af8aa5593a": "2026-11-02T20:46:55.000Z",
+    "k8601e1:b560d4ece180813d": "2026-11-02T19:52:25.000Z",
+    "mit-news-ai:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": "2026-11-02T19:55:00.000Z"
   }
 }
