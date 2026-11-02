@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Frame latency reduction"
     deger: "40%"
 kaynakIzi: "v1.bIXSt3NEh9zx/udj.xUQOOp6xt3qfDo8KdJ1U8lc0L7zS9hDPxy9o5rwDzdxgtRIgLJC8w5cYqr/H70+wX0AgHMRpSS2ZbZVc1IYIbXESUAhJcDUIKYBU19GiJFpoOdnnJnooOpGI66QsH/TP8zm7OgUqYSb6g0eyrNJn0tw62CoiYctjFYhGOVwkwweqgLiRN39xqqQBA55rp/5PZO36kR7OPb/MxBwXVFxCwWaL5PUFTy6f1O5Q9xZWkzQrJE/nN+fEdBkRIGb8z9uwZ9Y="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/google-ml-drift/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

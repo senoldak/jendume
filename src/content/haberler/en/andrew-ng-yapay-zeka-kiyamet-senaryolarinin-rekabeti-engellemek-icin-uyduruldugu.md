@@ -12,6 +12,9 @@ key_points:
   - "Closed-model giants are accused of using safety arguments to block open-source alternatives."
   - "Physical bottlenecks like energy and data centers make rapid artificial general intelligence unlikely."
 kaynakIzi: "v1.+2v/i7cmBreg0wQ2.jA+HJDj9Drws1R3+BrNFo8KxDO1mB/k8LTmJYd37LJaKiFTKtKwdRX1wecw3WKlsXEMHP7d7MEzM4LfLKNgns6U00BbltReK39iNJYH4NVkmJNmaYE+mPoPjI+8vnC+JfLHMsgQn5rDzP0Z2KD7RZLfHBquMr3BWiGCg7IWBPKiUkS8="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/yapay-zeka-kiyametini-rekabeti-engellemek-439530"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Özellik lansmanı"
     deger: "14 Ocak"
 kaynakIzi: "v1.DrwXtbqyY1ozb4hN.JlDf2tgAJ6BYcPuVBTPpe2g218AqTf/Mz8aJXomF0uEJPbkJboazBuQ87GnYUAw1/Z+1rv09ekl8DnPBXANkvqRofHvrvuA6w1zvjyUZOu1btmoW+VLJlZfDHNeD9Mw7IvD190T6r45geYOayF1qgO+w8TcSbrdwn86S9uXHcygkJFXhDT4R7Q=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/google-privacy-policy-gmail-photos-ads-personal-intelligence"
 featured: false
 breaking: false
 draft: false

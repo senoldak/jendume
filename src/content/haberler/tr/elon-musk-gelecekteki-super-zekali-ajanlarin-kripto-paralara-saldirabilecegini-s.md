@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Siber saldırı"
     deger: "6,3 milyar dolar"
 kaynakIzi: "v1.9QG1dM2chNORMU8T.gnSWl0bNoFdOcpG8WfmmBrPRoRw5apAs+Vd7ir82ibt7Hs35qY/Ja6Nvjm7RX0H+8Z6C99w4vU2H14abT92o/Kn6cb5a9BaY8Zlx0aBrnGrXfURWkuU77/FjFatdGT1e3wJgIe+9GZaqATEjA7dkAEYjlFigrW+L06qYOHNrg3d1lMpNn9A2OWdPlrS4hyT93CXJUQ=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/elon-musk-yapay-zeka-kendisi-icin-kripto-paralara-saldirabilir--212272"
 featured: false
 breaking: false
 draft: false

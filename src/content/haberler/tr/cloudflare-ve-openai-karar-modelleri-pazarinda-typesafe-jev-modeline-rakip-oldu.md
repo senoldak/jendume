@@ -12,6 +12,9 @@ key_points:
   - "Cloudflare Clef ve OpenAI Decisions API gibi yeni çözümler piyasaya sürüldü."
   - "Yeni modeller metin üretmek yerine doğrudan etiket, skor ve olasılık döndürüyor."
 kaynakIzi: "v1.Gxzik0XjZx6fNEXO.lLFvdutXs5kPNMUa1KqRESOYOc4QEh3FXop8KXHnL3X6086SWYR0hFJQxSWNkXGq1sZ26iRTSAoQTk0ydDEIxg49dIY/DTFgXpjYVYAQ4OgdEwOothjHAzI5YUr9vpeB2zj8OyLPKJ3kRehpjH012un65ySvo/xFZJFFitCQm4zGqGivBKTWus4Op57s+i5/LzGi+0t7jv9sT5U="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/"
 featured: false
 breaking: true
 draft: false

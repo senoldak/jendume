@@ -12,6 +12,9 @@ key_points:
   - "İki şirket daha önce açık kaynaklı yazılımlardaki açıkları kapatmak için Patch the Planet projesini başlatmıştı."
   - "OpenAI, GPT-5.5-Cyber ve Codex araçlarını siber güvenlik denetimleri için kullanıyor."
 kaynakIzi: "v1.jYSA36ke5hEkDRPB.11i3+oIIdrrxg/5XKQH/tIHiiz8LyyrrqEsK47RFrN015W4EbyX2gydGSZEENCzHr5O0F/cQ11Ji70bxzHhp3KmF8qaYmN6ZVbHJo6nlSWQwlo64B7YCYhF8JzN5fOcXRSX1EMZvtvdM+nTy/q/tvBE/"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-trail-of-bits-acquisition-talks"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Çalışma için 10.000 model örneği çalıştırıldı ve 130 milyar token harcandı."
   - "Matematikçiler, çalışmanın iddia edilen yaklaşımla uyuşmadığını ve yüzey düzeyinde kaldığını belirtiyor."
 kaynakIzi: "v1.E8obfnbUGedLTon/.334utER/ordp65fxDn4ucydP0QJyM0+8JudO8OXnl5+lpXwGQ8B5yRwoPuNGOY5KAFU0jAwOJzWYCclUkKPjp+hdVppoW9KzL33eGe55f6rKiq8dja5vNYwSrdcHoKlMUXfuR/cb3Kc5NICPXMQdtJiAdSjCY8IBLVqsOuDnaxgSs7em3XDLf2M0zil7I/o="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/mathematicians-say-openai-doesnt-understand-its-own-navier-stokes-proof/"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Compatibility rate"
     deger: "86%"
 kaynakIzi: "v1.1AIBdLY0gJvHH6fo.xxnMNp6y5ubLK+nQ5K2TdiyT68sP8wyM21iZuVMMraizukt7oTuZ/nQhkuUW8drZtHqS8h3LMqNQ10F9R12xTl92aC/A2RLndPb+1TmfEvOc2r6zryMJixA2Vo7bdIK674A+gIiDDpKlMNF/NTDLvFx21t+/qK9CrjYCSBBKwuMftyEAH4WgERDWg9wMuYcu7KI="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/yazilim-dunyasi-sokta-photoshop-ve-excel-e-ucretsiz-rakipler--211777"
 featured: false
 breaking: false
 draft: false

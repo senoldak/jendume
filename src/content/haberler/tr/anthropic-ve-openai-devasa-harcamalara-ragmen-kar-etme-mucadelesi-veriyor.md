@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "OpenAI nakit yakımı"
     deger: "280 milyar dolar"
 kaynakIzi: "v1.kg631DGcfMjS0FoZ.idA0+pFGRlZRVLi9Wo/LBhr7268c304j5D0s9lNAvex/+HcAXPvtWwbfkLc6IQIKpbsj6D6cZDp0fxoAcufgTdKSD/IHyZjPZYnB9ql66TRX++0t2xT+wqA1rOLkuHZk/6Lx5q+g97LPiAUP7PsII2RL/AnjK16ogyM1cpz5hJR0eQwQnQAWS0qJXERXiLkyQ17tkezOBoNWKZRYkRoSwguMPEVo8hZlh8lQmvD1eN9j2a3lGvKEEDjQ6FiI8TJ62lMrZjt7LxyeM07JP7DbLbLrykUrlq3dSuJ+igHnx32vfkbBLomCRc/cWdh+p8bTOjPkjeLu2LEmO+mxJiUxtojC2K/9BzRjqvP+b8L75X/m2ORPdnQyx/5df0TdGBqmUP1YHitjWVRDIKfTc1qVopEzm/ExLg=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91620861/anthropic-and-openai-might-be-building-the-future-but-someone-else-may-own-it-anthropic-open-ai_technology-ai?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

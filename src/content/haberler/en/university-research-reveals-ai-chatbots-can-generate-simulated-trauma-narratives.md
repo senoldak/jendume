@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Clinical therapy score"
     deger: "96 percent"
 kaynakIzi: "v1.1UUWoH+FQSC8e5wO.29jD+iUMr1UbVxcntrWbYeDowhMW2lbC0Dp3Ph0uSFy6d6cUdqmMYfHIoC8S/PXnOLmVCFuoqKUvRQWZ6sm4bSCgDd+CZ/rhkoqA60IaZ/MVj/bwRHWkPnGrWfv3j1mJ+hrGo9Q0H1T4Hd+le0pK7dUaUvkkmoq5bP5V2nazu4DHm3RrZMxgM7N/ehRJFLSrKJ8nEUms8QJ7JvwqApsM0tYH"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/"
 featured: false
 breaking: false
 draft: false

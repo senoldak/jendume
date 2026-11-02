@@ -12,6 +12,9 @@ key_points:
   - "Open-weight models lag closed models by 6 to 7 months."
   - "The dataset includes 76 models evaluated across 35 benchmarks."
 kaynakIzi: "v1.FNpFmYilQv9yfEeV.DXcVIGRyrQzVZ7D8R9xcLjOADxZqx5+XSUylpSTdFXbLYiku019Jcr070+yjDBIbA+06etO4Bsw/QShCXGzag5M4dnRGr4uowmX67dHxmoSrPxONgHUP6W+PZkb8RfXbqISP8A=="
+kaynakAdlari:
+  - ad: "Epoch"
+    url: "https://epoch.ai/data-insights/open-closed-cyber-eci-gap"
 featured: false
 breaking: false
 draft: false

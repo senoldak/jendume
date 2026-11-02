@@ -12,6 +12,9 @@ key_points:
   - "Milyon girdi tokeni başına 0,042 dolar maliyetle sunuluyor."
   - "Çıktı tokeni üretmeden doğrudan olasılık temelli yanıtlar veriyor."
 kaynakIzi: "v1.CAeADstRVx+y55xc.T1fWKkOjGJaidcbBhMCqMnySqhkTCMWiRhosdtWSBtaF18PWXD98GrUUJgzMlDigcL45+PFVwSq1UWYxzGvrCrAS99hQcIhVY7fLn+mr/fcnb/oB9zlzcAlVs/qY7QFIVqogfg8j+MdkhDKLlL24q6nGx5VoRqTMVks="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/15/liquid-ai-d1-ultra-decision-model/"
 featured: false
 breaking: false
 draft: false

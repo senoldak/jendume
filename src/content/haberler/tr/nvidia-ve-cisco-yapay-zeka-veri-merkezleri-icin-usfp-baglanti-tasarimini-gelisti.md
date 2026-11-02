@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Isı atımı"
     deger: "100 watt"
 kaynakIzi: "v1.60BZGUNjMvb4oXfu.ahgNNZXU4Z/uRn9QBaY28WfVQppnlECac7N1KlckvkRahiQGWFwP0nS/HYgayawt9ziiizIX97SckLvdmeyqBRDDCQzzDoU7gJxBuQtGL/+eGvIKTxRlhREqgd3VY5Ba01Iuc0XCUj8="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/nvidia-cisco-usfp-optik-baglanti/"
 featured: false
 breaking: false
 draft: false

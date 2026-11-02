@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "İlaç seviyesi"
     deger: "0,64 mikrogram"
 kaynakIzi: "v1.+5eGoFP9PUq6DLAX.qla4yn8Y/g8rs3T/UIt3E8y4wc9Rrl3dcjOgfhPv0v8b6AaPZq5tnnvzz2enIxmVUFV9NsvpSINh5rZuTeAYVcnh3v2BBLbwqcJpy3dF1ce6iXZRFyRqbIUE4wFTnNQCCQqHrUlaKClYvihJjIEjMMKkLSWfa8wukwzpF8pr9HISW7upqBJZNeE7EgiFft837NFeOfmbao7hFOqKUsVvqJUeMhk="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/"
 featured: false
 breaking: false
 draft: false

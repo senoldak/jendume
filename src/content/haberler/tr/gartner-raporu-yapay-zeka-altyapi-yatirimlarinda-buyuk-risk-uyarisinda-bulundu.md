@@ -12,6 +12,9 @@ key_points:
   - "Yeni nesil bulut şirketlerinin yüzde 80'inden fazlasının 2030'a kadar bağımsızlığı bırakması bekleniyor."
   - "Veri merkezi sahiplerinin maliyetleri karşılamak için 8,5 trilyon dolar gelire ihtiyacı var ancak öngörülen gelir 3,6 trilyon dolar."
 kaynakIzi: "v1.nfkLSx/uhB3ZUSWQ.cdHNaePgHHdmBz8Ogc1vvK120AvKPT5wZetyjdUvitZdaNXryE0mLoZRLnFf5ihcUh8jDd15VCGwBWSrci3p0lv6RCZKIgTrSl3OJw71eJUhK5d9MBP1YmqXKjVeXP3m49ELbwtLUxEXmpqkgUumx1fL3IfNog6tGqjdkWUZWTR7vq8IxyeearaxpOQsCp7m"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/gartner-ai-infrastructure-spending-3-5-trillion-write-down-neoclouds"
 featured: false
 breaking: true
 draft: false

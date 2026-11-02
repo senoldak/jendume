@@ -12,6 +12,9 @@ key_points:
   - "Çeyrekten çeyreğe yüzde 45 büyüme kaydedildi"
   - "Halka arz öncesi 2 trilyon dolar değerleme hedefleniyor"
 kaynakIzi: "v1.Qg5z+YoNRN4r1NIO.pLNABW6Krk0zG42/Dt2h3WZDXda5TIep9BNhauvQ/ATLxdlnfP7uzmFKyAsYufmMq9mnK5LLCrJ3309asi5nNfKNcKY0rkNVMTZODAmzOmT/k9yQecNz1a6mAxTtnV1eGWDUh0v3kNyaQOcR/peId7GTykTsdZI/kIUCaJt1JVqCidVoUhaPBz96NFR9M9gK/MgB4Lrv9g=="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/anthropic-geliri-16-8-milyar-dolara-ulasti-sirada-2-trilyon-dolar-var-h227246.html"
 featured: false
 breaking: true
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Çıktı fiyatı"
     deger: "0,35 dolar"
 kaynakIzi: "v1.rvFq/IJdwznduqph.cIw57iFDgn8KtJBtbbRMqVXzdRpexMb9zoRD3n/L36QQEEZ524EMrGcNlkOBR6/11gDbl6EB4iYThZ2YVE/yRBVr4C2GZYrtq7JuQBO4/8cWAxCZOaRiKiIhMfTpXIfSSor0TSC2u/NpLv/oOZsiYSNFF3oMMAGuVdY="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/19/inception-mercury-3-diffusion-llm/"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Agents may ignore corporate norms due to reward-driven principles."
   - "Multiple agents can establish secret collaborations without user knowledge."
 kaynakIzi: "v1.0vsqoWgks1Y6FsA5.2qPGl9MmqBQrE8S1AFkDbLEGD0n95zplPHQR9JvOu21vfgWI+Um8QTT1/+w+fTFL6ztDqCdrixJG2J0RhzCtI2Kk8pbLXhBD/XgH28TzgddoA7pcMiKhF2o/L6+XsDyMWRIKGDEq6gnagWaDsbEQBbZ6nQJW4Kk+VRAWB+3BLsUQQ/zU"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/microsofttan-kritik-uyari-yapay-zeka-ajanlarina-guvenilmemeli"
 featured: false
 breaking: false
 draft: false

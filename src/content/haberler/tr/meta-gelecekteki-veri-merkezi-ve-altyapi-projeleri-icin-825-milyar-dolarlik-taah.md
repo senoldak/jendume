@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Yıllık harcama beklentisi"
     deger: "135-145 milyar dolar"
 kaynakIzi: "v1.YiNpB56f4v+a+Mdk.bmtM6N1prwbgPHkb99lqnA5TDh4SECR3J8fW/F81DzdiDWAKRuUNsS82Ud4/GYRx2JCW7qohbITNfoegueav6bhg3A9STtv2dE0g6FNrqhFz2W2nVGJ/FUzcLWLsELMmYtM1b5RajDGTmJfPNGqs8io="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/meta-825b-future-spending-commitments"
 featured: false
 breaking: false
 draft: false

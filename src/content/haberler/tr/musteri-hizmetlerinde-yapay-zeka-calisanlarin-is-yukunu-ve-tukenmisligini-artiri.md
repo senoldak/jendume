@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "2024 iş yükü artışı"
     deger: "%40"
 kaynakIzi: "v1.hF9vHOhjocGxhJzY.C8W6vMcYhAFnitJQDONUues4P6LWqGTgxK5SPEzW4cnnxY4s6NsN7uUB8LXa2I2xulkXKTvKG6HJ+Jp3wYKvtmipLyufV7+8ldkamcidkjiDctJChIe2Hg+4C5D4CGliDLnY0Us10Ldz2pwj9Qh7QbkDxSs9vQ=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html"
 featured: false
 breaking: false
 draft: false

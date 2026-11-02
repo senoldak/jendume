@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Kuruluş Yılı"
     deger: "2023"
 kaynakIzi: "v1.cE6fTopF4tjAWzZO.ZqIBx3gqF8RWrfplPf54Kyt95httMZ2PAozCmuaYND212U9l4wf7QpnFXLNpn0lnZt2PEvnuf3lotXoh7XrZtDiTgLmF1o5J4xuyLpRFGW34V9SeTpKqTMsdezlQCW578YgIgcVNQcdE8fzYKF8w8Ldf29+jJ3mkKKIXElOq13ULXfsaaNk="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/30/midstream-health-20-milyon-dolar-yatirim-aldi/"
 featured: false
 breaking: false
 draft: false

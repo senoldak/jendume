@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Yayın sayısı"
     deger: "400"
 kaynakIzi: "v1.RzlvJfSyD5fz+Jl2.+fC6ePfcCOMumrx+l9kSAa5sBRNOuxmYURQ/4Nntao9wJOkysfehhkZBGieXB28as/7NVfLcwdd+fqhUxkcsO1oCnqxG7k5xxRMFRxb8zvYjZJ8+cQgberw3LgGHHQFnAB0nHWMz87ZSZlv9rO+RuRFKmHpY68ln"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/google-news-ai-pilot-400-publications-cnn-ft"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Death toll"
     deger: "more than 150"
 kaynakIzi: "v1.1BK/fKLLOf7x9hip.+lzCsElnG+6jesEPittGj5y+EI95vppWzyGuKznxoFQoCCHUEMl+KMkJTVQljHd0fOCQHln4pU4E3mVuQrlQbGUHW38FX+F9oGv3vbK6EjX78qEPrHNaIDenltoiI1qlYozbuxyfeq3O1esHbuyL8hiDEJjtBiydeT30EfoJ3kIDlC0+icvHD6YyXOCv/B2zQAQb0vP6xmrJ"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/"
 featured: false
 breaking: false
 draft: false

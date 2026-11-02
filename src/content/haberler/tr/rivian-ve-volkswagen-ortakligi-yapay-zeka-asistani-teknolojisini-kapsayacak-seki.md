@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Ortaklık hacmi"
     deger: "5,8 milyar dolar"
 kaynakIzi: "v1.P7Nbj0xSmU910o24.Nv3IsAj+zRBkr3DQSXS2tmJgHpD1Z1sSvYe8ZbgMYGkA06+ibeJh3myGu8QAjExl1LODMNIYMH10UXcfaB69cZg6KY4UK75NmllHy1fwKdaeRJKt4sOSYhr71JNigTu3tNK5Nz39rDFDS9RH1g4toF8kqcqnipTEG8XJ2VjJv8xGpTnSW2zKz9WT3aPosb5K"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
 featured: false
 breaking: false
 draft: false

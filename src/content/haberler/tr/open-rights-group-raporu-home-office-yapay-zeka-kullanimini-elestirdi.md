@@ -13,6 +13,9 @@ key_points:
   - "Teknoloji yaş tespiti ve sınır gözetimi gibi alanlarda görev yapıyor."
   - "Rapor, yapay zekânın önyargıları ve ayrımcılığı çoğaltabileceği konusunda uyarıyor."
 kaynakIzi: "v1.V+YBiz99hCRS6mIb.la/o5Hf9GCOYUyjzWON1rz/WQHxn62u+FZ5kOjWKDDir+iwBzAh/YdXkwTmEN9muzr+mhpvTub5rB6RVTr/vBk/pAdnh3+34Eod6grINMSK9ryUpfmDdkanjmbx9q6B6EIpGXOmRJ0ynM9xa0cKjAFIKxJ12VN9uK1ezxbrYRRSL4yjRkLVI+iAv5PHR/zWwkj2hL4eUVWTkWBX2llVG/k9dK508ZrE="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/politics/2026/oct/27/digital-hostile-environment-ai-secretly-embedded-home-office-report"
 featured: false
 breaking: false
 draft: false

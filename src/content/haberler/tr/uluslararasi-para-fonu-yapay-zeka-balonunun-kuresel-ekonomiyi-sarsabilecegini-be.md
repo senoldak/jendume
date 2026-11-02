@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Gelir taahhüdü"
     deger: "1,4 trilyon dolar"
 kaynakIzi: "v1.0vRHWaZuDk7t5xKD.6TH+wAE8qQZVNxF73Z5aCiv+94ui2K/W6HjFw4LWCHDLOOaEIy2TdMXjUTDHQNW9lmTCVrEn9YHZ43iBP1aEW86oNxvFClcGVXKaCLnPrsLMFNJsNUNshEjjabaXldX1gNNTp1dZyEo0Hr4="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/imf-ai-bubble-world-economy"
 featured: false
 breaking: true
 draft: false

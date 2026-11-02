@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Visual searches"
     deger: "50 billion"
 kaynakIzi: "v1.CAi9pqLgp0pjLCv4.r1AkrlBvQCWMrc8wqRtPpevf3zMaXbR738k3tBXVAXxUmqt2nHhTO1vhCT6I7WMSIEwWWkS4bJ85Bws/CEd5xRef03BTW8Y/KFDUxk+9lVQC2mt/lXyMds8HPsL+LN//+nnyjCeTkmIejYvUKGPt6H2uRA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-yapay-zeka-arama-verilerini-acikladi/"
 featured: false
 breaking: false
 draft: false

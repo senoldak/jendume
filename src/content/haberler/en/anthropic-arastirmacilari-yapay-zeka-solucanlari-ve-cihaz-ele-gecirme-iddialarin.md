@@ -12,6 +12,9 @@ key_points:
   - "AI models are thousands of times larger than traditional malware, making stealthy network replication extremely slow."
   - "The computing power gained from infecting millions of smart devices would still fall short of standard enterprise AI infrastructure."
 kaynakIzi: "v1.L47Aqzgp25iQT0KG.EE2gEClfPPav5k01RCiR6TdkLRavbCr/qpeuGqk9fZpHFNTSt5DNLlm3SJrVDMbcy4mmyMeKfvI7OQcOZf5xW5Mz3/OZ7YknV3Sd7d0ntA9oeIjZKaM3fbUPRul2CP3hwf7jJezLnQF6loUZvJhQNm/mDx0cbPmlJSlPQzfvHr1kEHgvEw9Mj4S0r62stnjVWy5gMwq5hNGWZElUoov/IXkfkdPZEgkp8gszKgwo4XrKUlOp+hbgqZf2ljoVlYdAkRuf/IH5Zr27++qdfJGJVstFFxBn1s32m5gMRKwQ5dGSX5Z/lcNfoJkm+oG3I4Hd8Fvuz1aOhpop/xE4EP0="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2593983-self-replicating-ais-are-a-great-digital-horror-story-heres-the-reality/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

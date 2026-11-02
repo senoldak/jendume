@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Median task cost"
     deger: "$0.050"
 kaynakIzi: "v1.UamnJlPW7k0CPhNv.++dJzpht+Y7k7dZBPw1MxdhXSn5VFCIHxpkbo/IBN3cPXDVaCaxjSuLCbnRmDE8Hi4/6vHc8xlDi/9NPF8jBso6MwWuVMp1zb/+cJF8fJxqyw2SUSCtIPqqyfDNu4qcfeql9Saub4zlYl7y8hiY5Nu2TbaDhETDXZCcDQnDkOaovtaXvO9FZn3sVlg=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/23/tinyfish-agentic-search-architecture-deep-research/"
 featured: false
 breaking: false
 draft: false

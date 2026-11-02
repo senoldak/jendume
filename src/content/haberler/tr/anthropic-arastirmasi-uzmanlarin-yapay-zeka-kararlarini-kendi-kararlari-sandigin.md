@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Hata oranı"
     deger: "%6"
 kaynakIzi: "v1.ftKaOM6+wC09p/6g.+AmvWzPi7dv9RfpqTPL94YsEC8YbU5unQvxjI+/gTNmRjm3SxWENxtNZfMQuKwTNX+ZfvORyqYkebTUul3kdrwVI82JF9d2Lpw6jrC4KlgDhTRdKWQ1ik2H8+j+adsyR2DSVtq/8hFqsuWYWkshMUUdgkLMXAyt/++d2JcO/Ldx50H9QedHJubU3qJRLlZBINJRtPsK/v/OcRWnkgdDrhQ=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/"
 featured: false
 breaking: false
 draft: false

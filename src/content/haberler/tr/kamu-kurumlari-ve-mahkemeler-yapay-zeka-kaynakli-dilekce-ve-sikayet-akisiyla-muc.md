@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Dava artış oranı"
     deger: "%39"
 kaynakIzi: "v1.D3/lyJRZ+MqkFaQk.cxqK9YvbzanGFPlDumCvOIISwfEqf13QJUl883yfd6Z6OA8xXZ/wk0W2oVRkRA1Zo97QenWWGwws9cVimxdctNuOCINykeK4+Ye70j6Y8FQDbgFfK1+UA1mQg0ySZLSehK4Wl5HMXcrgNslFDDPipzZSkeTmYD9M8XSq7UTzj8Y+NkwTWAbNDmfLScet0lSWYBP2SdWbCiM="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/20/ai-supposed-to-save-time-opposite-government-uk"
 featured: false
 breaking: false
 draft: false

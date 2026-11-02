@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "İş ortağı sayısı"
     deger: "12.000+"
 kaynakIzi: "v1.2oLzHoJHNJW373OV.I4Jj0JhMs3HRkvm1vGfKtpvyJ/YO3hZO7xz6FiT5xh6cRQYPr37RhkFL388A9MQLabG1bB4c929hcbkLmu3VAzgrqfW2UroLR/6FfLpSrOd+D8PPLLszjwQmKssmIuywGCOjwcs="
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/"
 featured: false
 breaking: false
 draft: false

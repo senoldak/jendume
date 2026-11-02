@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "GPU sayısı"
     deger: "3.800"
 kaynakIzi: "v1.K3u+fHa/XhaGsQaW.dWDcqP7KehpoqqykIVRSHjMfBX9YeltfZuQWNBQ04nHfv7wh9XY0vjtV1snh8hmTQeY2eCboddJ1YFHgm7kbBA29kTWY5eXoTenHrN9YgIa26vCzr9QQsBrQa+nAIztSva3OduBhhryieaXkUtrL/t0WWuJbzXzg3pu7JvGeu4I="
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/"
 featured: false
 breaking: false
 draft: false

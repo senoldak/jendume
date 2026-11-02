@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Share drop"
     deger: "15%"
 kaynakIzi: "v1.nhH9eB/SFiBwceZh.SngC0ztUFJlpWaQsQTiZ9tz1QB98CQ8dUaNCGeW/TVtx/OlmZUVHe08M03fUcAJ8Axw0Ei/KnvnQyJcywej/MrDKlMmblyq/L5TOgeV/ZXYZFRLsq96P9hG7nFzEvpd7BJmxktWPvJ/ogF/CSn3LmndDjLVXLPSZ2WOyrRxz0r7tkTv9WzIeB13x1qj7f2QSd6VIOhthRRDPQ9a3oIqnZreVta9JVxn0WN8Bdkhum+R6G6X9fiI+hHEUPTnN5AFJnR9h4TtO7QuZjsz20eB1ZYrDnPqOlF4nvyKhmTMb53pmAveHBG1g5Hq+GWSs79Cr4ay1VnRlA7EMrQJuUJQavaTwZ+bMEOIl+AEwe74AA90qq0uVIjUTgJ1wOvTJa6w545qX7Ne39msOHZCFus+MvCTorh+lmt8qAt4fXtHk6Hmczst7BreSYP1MDv1gkQ=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/"
 featured: false
 breaking: false
 draft: false

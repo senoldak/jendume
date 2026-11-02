@@ -13,6 +13,9 @@ key_points:
   - "Yeni kararla birlikte tüm devlet kademelerinde süper zekâ ifadesinin zorunlu hale getirilmesi planlanıyor."
   - "Uzmanlar terminoloji değişikliğinin standartlar üzerinde kafa karışıklığı yaratabileceği konusunda uyarıyor."
 kaynakIzi: "v1.ypPdBNN5OcQkcLwC.wZm54+DxKNdfe0BqMuThgneTcKBIQ3UfrC43nCVinDguXUqvVBB3CcOdUXKwF4K1bCgadjRkeRb79xM3jy2joznTLmQDiVyesw33oAfAQ0E9Zj340XreiOk/aNyeJ0gbF9XWAr4drsNiFpZB07QPMPRqlm6yRjKFJXbSq3T+XQQn3fm0wV8hCII="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/donald-trump-yapay-zeka-yerine-super-zeka-terimini-zorunlu-kiliyor"
 featured: false
 breaking: false
 draft: false

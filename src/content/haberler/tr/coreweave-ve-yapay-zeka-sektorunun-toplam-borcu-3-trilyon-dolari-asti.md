@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "CoreWeave borcu"
     deger: "35 milyar dolar"
 kaynakIzi: "v1.uX0nb68vir6mb0pI.0iVR9pN5aee0G1XXLmFPu0MFh8pAhNiwEry4R5DJgsJGUghFfXg6kT1EjnHMxWztRQt1qBGxsr/LTTLSHlE2uMk0huAhOpEG1yHdb+eM/n7cCqXJrkuUWtzgVrPWfCdUsEcLrpy8zH17+rID/NSWc7SZjb+OmY6MwXCkNFnfkO85IYqSBFsB"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/yapay-zeka-sektorunun-borcu-3-trilyon-dolari-asti--211842"
 featured: false
 breaking: true
 draft: false

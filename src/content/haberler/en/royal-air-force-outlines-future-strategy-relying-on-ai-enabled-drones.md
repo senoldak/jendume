@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Personnel"
     deger: "27,850"
 kaynakIzi: "v1.4ZVRlPvVqsHIjuoI.ANAINrbTDjr4WaYHQo7KGYy0TsxiUaI2Vv7T4eW1BMSRzqZ/xAnnUiPsX56+qFuxdAK8wojl93ifc6pznvDy5mrBfctZUTT7JIBO6xlqCIcbNFuYFWg83Rb/2/+4+TigWtILz2275fhTZaUvV2mHQyuBqrsGjwZ21EQ3RqYYXgceNZIF52TtPa4PNBeh"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/uk-news/2026/oct/26/royal-air-force-harv-smyth-ai-drone-future"
 featured: false
 breaking: false
 draft: false

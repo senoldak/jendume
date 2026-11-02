@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Investment"
     deger: "$92,500"
 kaynakIzi: "v1.er+9+7jpustiTEwc.vcw34bFAuQEFmo3C3myKUQ5L/1PBNkWnB4UgmCSfp4+3OxYSY0wRbvKiRS96MLmIFnRU+PEeSH2jpLrAyXB3sYYSR3qpTUT1sUztlb/Zq4rwRX/gISDrmUmtNcL1FxY/V2Wl8GUjT2Ka7scfx7M9lgJZ60ZNBCSTE6BKGdgmml3hqCZfWVqWZhQT5TDwnsjqUmsL7dyxiFfyQmKItPjW7ZrVKrCgXJ+2UWFDbaHH2Ih5M9XYFv2FrzWJzJq0hWcTggBeruk/Yeyy3KjWqICzgERby3waQISgsxEsV8OK7hsIFCHr+bZseod5TAmzMcZOQSDr7LrHu8ioqot/AipGxkURDpiqJDta96evHNPoHnh6S+t63f7nCms="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91629009/u-s-treasury-wants-expanded-restrictions-high-tech-investments-countries-concern?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

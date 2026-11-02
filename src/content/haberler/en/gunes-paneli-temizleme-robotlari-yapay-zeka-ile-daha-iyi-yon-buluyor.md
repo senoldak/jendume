@@ -12,6 +12,9 @@ key_points:
   - "Image resolutions were optimized to 160 by 120 pixels for low-power processors."
   - "Testing included 200 real-world images from physically soiled panels."
 kaynakIzi: "v1.FP2eB2opGY0Rm8EL.DXMbEUFkJYUo92yGqlu6qlCM5h8HLiZMUG3QsYuN/Bc3o91575wnuOMze5axJELBViXsR9JVOHa1tmOw0nNnkAO046bctNTa+UxjvVM/VrANcpyb7FJDRZpv+q5FEPNQAKyvga1jFvqG5b4vabMYgxcTaAfL/nV4ikhso2bBRITybDa5M6BHXLwo84v68HzEWg=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/yapay-zeka-gunes-paneli-temizleyen-robotlara-yon-gosteriyor--211734"
 featured: false
 breaking: false
 draft: false

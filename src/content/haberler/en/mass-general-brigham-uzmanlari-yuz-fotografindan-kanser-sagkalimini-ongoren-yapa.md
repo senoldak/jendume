@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Risk decrease"
     deger: "17%"
 kaynakIzi: "v1.DKULPTfo+hMcbjni.YPswUXycHJh+FwkpXXqlJL6klKUumP4ayeKcXQFuM6tqk09+QSiqxfcMzv9SqlyBlzfVmsKGDb3ZbcSwMOXja0VzDXDeruaTxOmeR0LvgUmrJUT6McRhKPAzkQIyLylaeqN2qZl/2E0GxMZohI96s1XmMQxc68JjXGj7yYuihoxxqXOz2DzHwPuQrYTjNmAXojsDDQ=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/19/ai-tool-predict-cancer-survival-patient-selfie"
 featured: false
 breaking: false
 draft: false

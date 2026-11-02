@@ -12,6 +12,9 @@ key_points:
   - "Yatırım turuna PeakSpan Capital liderlik etti."
   - "Şirket 2023 yılında Matt Biringer ve Yassine Açoine tarafından kuruldu."
 kaynakIzi: "v1.4Z0tZqOCAxBKHRW0.FX/xJ5w2dnUB3a4rakAGHRflUC0+2O97k6RGf/7AMIGhCztBV3QY47NqqllZV4WJfTuJe57oiPqwiU3/kdOHn7Bk6C+I/W8YwJ58FUzTwNi/ETmBX6RUzhTWa32pSp/oSChjgZ5owTJ/HXFaqXUSL2HEtS7AqUWlNYJNTXVj37qY/aH4Zhn+bUMw6bsS9y0ma0eSkj34iP7Na/eGLXQGUkcKasREPtaTmA=="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/16/bulut-ve-yapay-zeka-maliyet-yonetimi-girisimi-north-60-milyon-dolar-yatirim-aldi/"
 featured: false
 breaking: false
 draft: false

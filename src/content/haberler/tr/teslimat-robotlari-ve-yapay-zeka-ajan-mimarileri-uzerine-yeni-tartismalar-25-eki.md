@@ -16,6 +16,11 @@ rakamlar:
   - etiket: "Sistem istemi düşüşü"
     deger: "%80"
 kaynakIzi: "v1.Mu1YwpOBun6lxCcG.DHZd5tadkHLFKSFI28xd+0B1INDndd/WuOXROmwi0B430GZ2LRsIpgiAv109M21RFk3czKRr5ROFOt3pR/3+uAHLj6AOTQBWsMcKWvJKAc5x2PrBFOKCFbvmKtyNMPfIoS3rV/68/HTjR+uBG0UAVLKwLoWbwT3McnyBJAEQ3UNu40fGOU7i5P7zA1Xdjv5jPPjoYDXxBbumJgwimfXOT9UNiiQAlCbVn0Va1kh7ZamzQefH05VRFPliap6mEhOXitankihOt9VrKY7Cu2A9TDdm/qzKYdxqwvBdjlyzJsJpLNgCCRE8WLxrtyiQEJ6plC2oqretSR1f/yP+KTTgPSS/scSmmw=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/robots-and-machines/delivery-robots-database-flock"
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
 featured: false
 breaking: false
 draft: false

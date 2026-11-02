@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Compute"
     deger: "4,600 GPU hours"
 kaynakIzi: "v1.3dSVRSCNB/aR6ITs.UyYLyFqAdEbS0kuyFii14gwgfdFFpMAIdbUdTnJvLCm0OAk0cF9ff7wGku7qfpZidRKdwNZY7SwAQhj5SzaTzWFeqViJ2PzXV9KmXTPL+tzhNw/K6glfvaRM4A6UdrLAMOaZwsE8biBUbyGYbx+hK0sm/rk63fbu5jNYcv563Q=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/28/flashmap-flow-map-speculative-decoding/"
 featured: false
 breaking: false
 draft: false

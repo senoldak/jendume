@@ -17,6 +17,13 @@ rakamlar:
   - etiket: "Cached input cost"
     deger: "$0.01 per million tokens"
 kaynakIzi: "v1.L7Es2XVpwsHCAvVA.mhdTdWvSdpaA0qxsiKfI0bxaktoayweTGijZLOo+2E0CPWrEdSDcka6dI4RDLq8btmttv8oNjlCH8Zh0E2lVaaFNZIgcw3dzQx2pVMxXzEILxfJQ53MoG8JSUdPTbEQFkugJtaS46ZRfb5/zd/Bcj+HtsdoH7vOeUBoX+CXHPnOJYXAy9/sqq+CabtEzvvKpYoQr+aQEvaWBSNBkxS5JdlvML8RcY3M2Sfl8QxCfdFiheOAB+YhHlPynKDW5qNuj7k++0gQnjpaZT3wghbGwJk6P84Cx2h1OgXVchkpbM96uXPC6r1MSnmgwRJYCsPXfeCvr5RmUet6XmCuC7BcNGrR6XVjyBvb+kmUmcPuNuEo8e/Bx3VXucuJYOMBGmx8k5EAWqWI6tG9xK2+dUmG7RsVnzb5+XjIGdS38XOCLrV6P/32Bsu+4PmXB4VslDpzf/lVIvGPguE7SX0Jxs1k="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/openai-makes-decisions-api-generally-available-with-gpt-6-luna/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/decisions-api"
 featured: false
 breaking: false
 draft: false

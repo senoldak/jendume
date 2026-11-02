@@ -12,6 +12,9 @@ key_points:
   - "Reproducibility and open access remain major hurdles in model benchmarking."
   - "Debates continue over the neutrality and qualifications of embedded third-party evaluators."
 kaynakIzi: "v1.QZUnDS//C0+vi9mM.EP0DukLwVV96DnBMOYOPt2nt8THt8kNU6vWl3zLn/iTluTw/xqc6HYdl2fvzTwvOgRYIiDOE/w7gopwHqlJYyez6xbyzQnSTQEA0fM64eBGFMlTeNRftx9EAqQMt8IWmKrjOhMXKajE5pb54V6+6dIEq1X9opTfIey6/vgaAaoHi5Ornvmlaz1EwSChBBtfdIKoVRyPZFEdwqdwjI/aORqycYQ=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/"
 featured: false
 breaking: false
 draft: false

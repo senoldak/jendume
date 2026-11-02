@@ -12,6 +12,9 @@ key_points:
   - "South Korean chip giant SK Hynix plunged by more than 10 percent."
   - "Dell Technologies shares sank 6.8 percent amid the global tech rout."
 kaynakIzi: "v1.RKA6jESFJ6Kkj5/l.bhMpFVoQoDcWfCRMAQlbL7gvwB5qjw75Tl5Hk1RXKFO38UDxMZeI2I7UGg9b01DiLf/BcM80XW3aQr87qxyqaiYUjGslIFrWuOfbnLj4WMEvSAzT/MoLOWhhZcXVHxUbX69xcZFPyv5zJyKl+ObAz3/jrTc27tgVd36XZkAIGftGBESdv2H4o704D7+q3s8jOORiH57YW586jb8="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
 featured: false
 breaking: true
 draft: false

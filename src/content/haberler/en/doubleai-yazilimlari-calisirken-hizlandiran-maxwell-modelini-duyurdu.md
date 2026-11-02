@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Cost reduction"
     deger: "67%"
 kaynakIzi: "v1.jAO1rB3jVsTCtDZO.IcrwpvB1CaZ7v92GqiaKSLAPWa5oKozEl8+i4rTI/uCDFfgDrBRyPdlJmRScbKcCmLcWjLx8g6lvB/YjpEJ5OgQHm07cXbIlfkfgpULOxnIPogECo6wRfiNTatWkeK4EBcC0jZ1cYzkvJb3Dz0G3Yrqs1zWDlmC0TQU6D9JpTg=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/doubleai-maxwell-code-execution-model-compute-costs"
 featured: false
 breaking: false
 draft: false

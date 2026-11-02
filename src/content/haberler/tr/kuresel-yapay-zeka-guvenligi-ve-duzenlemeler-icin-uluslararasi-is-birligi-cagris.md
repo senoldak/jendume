@@ -12,6 +12,9 @@ key_points:
   - "İngiltere, kritik dijital altyapıyı korumak için yeni bir siber güvenlik yasa tasarısını parlamentodan geçiriyor."
   - "ABD yönetiminin uluslararası düzenleme çağrılarına mesafeli duruşu küresel iş birliğini zorlaştırıyor."
 kaynakIzi: "v1.ul2eVW16mWAfoCWn./6uH52sM98qNOjP7P575EfMi1/ykBOOCHCoxZZ3WyUgeagXzbINSl5oRnBn0GWiBLNtm1wjdhrgipDvW0k3zhS63tZD/JIJh4SNtS6nWzyNLtq9rr3B7BjzmsLGjzXRFnC1emYjG45YDnSUUbNKmfQAy6/R225ReS+tFAfuNbbCOUEGKg8TcDNOm6xu3AhYb94AcrrnwTkMGVVEf0R+xszCsJKQl6rOFcRLCzpPI2HqKnEs="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/22/the-guardian-view-on-ai-safety-the-push-for-global-regulation-must-advance"
 featured: false
 breaking: true
 draft: false

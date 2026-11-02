@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Süre"
     deger: "30 dakika"
 kaynakIzi: "v1.Kp2yoZixJYit8tdn.dQjp1EcS6VmCllK7rAYaRcHa3aFr1nTeuk1Lj0vMcNjFf3Cv9Lyd/vY0ijKRm57rbuGODYPW+tRoHjfYxYDAEDJzcGziPVeuVwCbDk4nxDfKxhSJ3/+PUTE9EIgb+DVvvlkpB5yT6acQbWinGK3wWD4DzWA="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/"
 featured: false
 breaking: false
 draft: false

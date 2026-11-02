@@ -12,6 +12,9 @@ key_points:
   - "Ayrıştırma tezi, sanat üretimi ile kişisel gelişimin birbirinden ayrıldığını savunuyor."
   - "Çalışma AI & SOCIETY dergisinde yayımlandı."
 kaynakIzi: "v1.rNoSNZ+ZFu26Xbt4.odTWO3lr+HD3c1MRlhMPkZQqJd7AKwb2HAaOZrHQG4PQrsu3OLMbGQCPyKK4iexR51F8muaUEj0SEpIIjnmNYV9qVFSmAZUuMIJwSNfhrBIpcHidfBN+USMp9qThU/pFjVDmx5/CemCfPm29vy/xFVZ4AJYOhKW0"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html"
 featured: false
 breaking: false
 draft: false

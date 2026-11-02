@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Partnership budget"
     deger: "$533 million"
 kaynakIzi: "v1.6kD9pBy8qtKGV1Ax.C1r7W0kne0Z8qI7sAFjCbX10bqnCYR6dLwPPB2bZX94mD9ZDEOrwqLfmrEi8xgNqBMrfIDqNoJqarWSXP9Z7R/1nWS1+Ip9Pc2zJFYgQ3tZ0Q1riHxQJgSUgRW0GuSM4DvTTA9HKUH7mbdnnOfAX9iaGkqoLWw=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/getty-images-borc-icinde-yuzuyor--212020"
 featured: false
 breaking: true
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Yürürlük tarihi"
     deger: "30 Ekim"
 kaynakIzi: "v1.4+itQStvwuOQgJHV.9/3XXgxc05rFQHkKm1kl9sgUAwETBZXAz1v6JUHUk+l7fHRz9+UaixDUf4xCpNqWQuPIxqr+++l6AHr3wQhFe6WsPSNnXjOFXwzZqFEhuu3iaLj6oLJivF1q7OGHXIEKNUhwYIxHADroRz//rGXAt5Bs+lQIZ1GhwPejApBiPjnPJf1LA2m6tGkzbNlv0ofHX7Q="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2291188/meta-tweaks-its-new-terms-of-service-after-backlash-against-scraping/"
 featured: false
 breaking: false
 draft: false

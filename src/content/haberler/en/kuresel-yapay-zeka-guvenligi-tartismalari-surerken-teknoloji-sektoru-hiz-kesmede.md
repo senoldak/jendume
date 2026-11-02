@@ -12,6 +12,9 @@ key_points:
   - "Anthropic reported a 45 percent sequential revenue growth in the third quarter"
   - "Major tech firms released new open-source models and chip technologies"
 kaynakIzi: "v1.R+Up/1VTfXXeEDII.xG8jertn+SlE7rIXspxormWmktkyZFQBSCSVC7WqYIfjNLJWpde0wUrEYFz/GfBwGEJhHFBLB8RvSOrKL37jyopO0aLJcaSV+VTibnMS6xSYopr6Z8Iv/he9mB9xMF+zNp+itt2UFhQ6n69TBca/FZAXDN0pnpjT5crbe89ubXSeVQIDZVwisEsGuVbHoNLC9nKopelywgRdLtF5xJE="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/16/ai-safety-worries-multiply-but-everyones-still-racing-full-speed-ahead/"
 featured: false
 breaking: true
 draft: false

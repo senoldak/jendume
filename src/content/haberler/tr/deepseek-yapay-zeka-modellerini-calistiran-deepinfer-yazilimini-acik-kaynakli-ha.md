@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "GitHub yıldızı"
     deger: "8.000+"
 kaynakIzi: "v1.84H5B3bMaE4WKj30.JgFaNl2c8137stMe5p/GOj7eNq/XjHxKEbKkGCKdr1MogRXumZer5FCefSrLFW9CvSURm9S5m/avVoS59NVJe5RX0agH2W0N97tkzQK2X26zb+DRF28Ed7zxaJgFMouEsUujoB7eF7tICJWY2I8or26Hno2iukSrEN8N"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/deepseek-deepinfer-open-source-inference-engine"
 featured: false
 breaking: false
 draft: false

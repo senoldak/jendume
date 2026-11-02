@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Share Rise"
     deger: "2.4%"
 kaynakIzi: "v1.qwnvFYgiVfllo+KU.fkMTcbN1/V5HCQB3/xZnLykfGduqglloBmEOkwgBBpF1GdC515Zs5+Ji18UD77n/i9LPuEGtQU2wW6H8/tEON6fE5a9Y99+pjN3EQSQerewFikspuhH0lrQiApAjGsdnLzj/uDtRov9Age4+7g=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/verizon-aws-ai-deal-2026-forecast"
 featured: false
 breaking: false
 draft: false

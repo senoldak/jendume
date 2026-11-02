@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Süre"
     deger: "30 saat"
 kaynakIzi: "v1.fmxqA+PTSziuF0SE.3hxhiFcyjyWIaBqkbX1Tce0KVyDsuOJTtMl52dhfOpxq7TGnSpcABi1V1p4r8I9rCxeqMx5IfXatcs17LAhQQy0cHi9ZTw6DovrFFKNH9Ee9YyZT8mreOEsxXQ3DNwUZBpqmIk3Z9JOm+DpfLIEGU9qtKlQMxMg19BYU7nbrO6XiW9Poh4EYMUeu+/r4ncUwc34sVIzUwDMH48nVb5Q="
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/"
 featured: false
 breaking: false
 draft: false

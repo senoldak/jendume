@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Ortalama hata payı"
     deger: "4,18 gün"
 kaynakIzi: "v1.6aoq7qkpRvfY+MTA./+tjmYD+OUxmFgirhqmBGY0P+1SP+ZAE7UqV/Qm6P82juXMvx/jOUJzQyLR2dtG0MAA/ijdZySA0dtlbC/WfcgzIV7G1dhwDf9klqNbfjRE7+1ddU3saDWYGGg70v8XtC2Wk9JCTVdbcbOs3V9b3OzeZcr+JWi4C2b1W1Z/DkWiJVbvV84pzXQo2fpS8EMQ="
+kaynakAdlari:
+  - ad: "Google Research"
+    url: "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
 featured: false
 breaking: false
 draft: false

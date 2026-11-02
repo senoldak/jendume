@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Entity accuracy"
     deger: "93.7%"
 kaynakIzi: "v1.eTb8iFA+Hvhi808z.9Bjft1GSkmUbHXc29eZM+5lgt8yPQVK9zfHtYVCbNjYd+rpxjnpgGCARQRpLlqcnsjXhH/Pow0F4gH/yygMXNKE+a7QHeh2g2jpm3FQfDB8MxrDfd/la8aRaXDBbEnTsriNpuwS+80ffJQdvdJ8sow70aKxuO5p7bwZbLTMux5puzvUvNsdIqdWnAw29SsILHD+WQfSoHXJNkNKi3kxl8dcayDUl1TsGz+xH6rMP/Z0NsG+Xq1UpgQXto5Km6sUWLFqa+K4oT7mABMe+uXk5Ga8mleTVYleMPLv79QiMWZSuGWNX+WAFQZ2opY4G09PN6QRlXg=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/29/assemblyai-tts-1-text-to-speech-api-voice-agents/"
 featured: false
 breaking: false
 draft: false

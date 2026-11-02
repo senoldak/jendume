@@ -12,6 +12,9 @@ key_points:
   - "The company won a 250,000 dollar reward from Google"
   - "The patched bugs previously exposed around one billion users"
 kaynakIzi: "v1.0i/DbUdv+MAnFWHd.HjkBRRi/XcXNF0fYod/gClUgVZSHM8wftrrKIwEFr6RB+axmSajtGSoZly8161NxA/ueOeHfoRIz4L/EsGNFeUZn4egVIko+Q4GmgZsn9Wb3sISrH3rayz2V7B0IviJO0uc7m5vw8kHSDaIulkOOThqbkm0+uJ/6ielw"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/xbow-chrome-exploit-gpt-5-6-sol-250000-six-days"
 featured: false
 breaking: true
 draft: false

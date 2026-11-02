@@ -12,6 +12,9 @@ key_points:
   - "Ubuntu 26.10 sürümü GNOME 51 ve Linux 7.3 ile yayınlandı"
   - "Sistem Temmuz 2027 tarihine kadar dokuz ay destek alacak"
 kaynakIzi: "v1.gS+I+UdvLNdhhuaY.VhTnBkJJHtiPwmdxg0e9TmBNcRAMjljshb961XUv1IMghcKlLc9OkvVzMSIt7hZGt432JLV4Ag1eN+gtKnVj+2Dvojgg2dEXveKTe+7m2ooppP0uQZh5J9g78LreWeuhgnOnR3A="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/ubuntu-26-10-myna-yerel-dikte/"
 featured: false
 breaking: false
 draft: false

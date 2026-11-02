@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Kontrol listesi"
     deger: "5"
 kaynakIzi: "v1.QbdjXD5LHiYhBD7Z.qhDBeqRtoo8TgPG1gyANnLFGyg8SqWJkoHD1BGKXtAncGzAMk9WUu7KBlZ/21G+H9ZQ+E5YE78fjnFqUQHEw/Ez4WkT2eOS8OdrdzRdXxbJIgZdkoH5AXtkUhnUKE20uFq7X6Ku3i42FPHzl9hB2g2dwcmakJcS1sXcMyTQDr91SqOA5IM0="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/"
 featured: false
 breaking: false
 draft: false

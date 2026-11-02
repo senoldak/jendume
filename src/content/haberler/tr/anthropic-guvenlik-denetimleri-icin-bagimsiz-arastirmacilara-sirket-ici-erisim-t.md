@@ -12,6 +12,9 @@ key_points:
   - "METR, güvenlik değerlendirme sonuçlarını doğrudan yayımlayacak"
   - "ABD'de yapay zekâ güvenlik denetimlerine yönelik düzenleme baskısı artıyor"
 kaynakIzi: "v1.m9ReYWyvD7umkgU8.zddn4oEMD57/4WHGcehBjTiIYjmZRWHAmEM7N5g9yoBvrJfKhI52iqVrvx5QGnh66iGeV0at0rUFgNKumggx6uDQjpVwHXABUykNcViAz3EpLvN4y5s0fdvUuV3+495i5rkYgY3Wniunti0eNecu1W6SM7NJzKwrnYHfl3Y7QA=="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety/"
 featured: false
 breaking: false
 draft: false

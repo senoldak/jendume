@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Projected growth rate"
     deger: "40%"
 kaynakIzi: "v1.1JAfKQi3eK1/j4TZ.fgxSQ8e0k1ekhNQW7lRhEGcc1RDhCa/hVAV+i77ZLsAR5MDgd4yAmdAPLLM0+ley6IecBmoV6PBfUNS3pWDv2q1VMYW/u/38/M3NkoLZBeFeMcdke0P48iN5sER+7YLXzufZolzeYz6lUO7DHC3vJ56jqp8mEHwodsS6TBi/ExdmGOyzN0RqmsJksHngdZikCKSK7g=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"
 featured: false
 breaking: false
 draft: false

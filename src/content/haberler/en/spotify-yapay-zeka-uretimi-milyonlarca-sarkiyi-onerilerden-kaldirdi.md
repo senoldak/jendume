@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Previous removal"
     deger: "75 million"
 kaynakIzi: "v1.qCHlB2fB2BZstDeK.i0zDAOPJtJTKoJ/P0Dh6Rak/ciPOO8RGSKP747Wvb5uqS+CfP/l10s02av0cgFH7WR+eRRG8j3q4q+IvSx/2PhoQpyWj3HctUSo49mXHTqtdv+BfW8+pKR5dFh86sB077pNtEzwzxs0LXoGP7Bd7ssvmQfBCAgJfiA=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/spotifydan-yapay-zeka-temizligi-439728"
 featured: false
 breaking: false
 draft: false

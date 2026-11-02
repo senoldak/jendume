@@ -12,6 +12,9 @@ key_points:
   - "Kullanıcılar bulut tabanlı modellerin yanı sıra ChatGPT entegrasyonunu da tercih edebiliyor."
   - "Sistem metin özetleme ve veri işleme gibi görevlerin otomasyonuna imkân tanıyor."
 kaynakIzi: "v1.gWBi5A8nmNLUyzvS.URi+EcLoZuPBroKnI+R/28WalETWug6aFhzOpmkZXWNrmG8JmH3em/1lawl3Y6A/FwIbEnori5dWuLbYVQ6aPu8Gbl7eKhUn1pP4cjPpW83VeOCorlelmXACqoSs7dAl/b4w99nq4WjTHm7BKIiLbLkH3tM8G/iCy0vu8VSeZzTzsJkHvGTEKF/9LppHZP9sGZhhz29qvw=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2283983/how-to-create-iphone-shortcuts-with-apple-intelligence-and-why-you-should/"
 featured: false
 breaking: false
 draft: false

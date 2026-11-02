@@ -13,6 +13,9 @@ key_points:
   - "The company previously noted a Crispr-like enzyme discovery by Claude."
   - "The filing acknowledges the lengthy and costly nature of drug development."
 kaynakIzi: "v1.Wc3e9PwCzYspbJ2R.vnsdhzyPKoj86BrcNED2qDdM/8s2IvEglVmB4eGCbFFOX6rPT52fpYr+RRstJ6cYTSj3VCbAayuqo48rAmwgSSNlaR201yaFBB7FFpzgxmXQHWS05OX7iMIa5+bKMVbajwKkLb56DStrNxqrRiYgpi9lPyQX2AtSdlvZ6LJc"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day/"
 featured: false
 breaking: false
 draft: false

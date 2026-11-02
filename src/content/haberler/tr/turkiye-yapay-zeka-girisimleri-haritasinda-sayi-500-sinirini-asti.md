@@ -12,6 +12,9 @@ key_points:
   - "Ekim 2026 haritasına 43 yeni girişim eklendi, 21 girişim listeden çıktı."
   - "En çok büyüme 10 yeni şirketle ajan tabanlı yapay zekâ alanında görüldü."
 kaynakIzi: "v1.NlgsNoMGxKq+vJhL.GOesXV/6aDpbLSqdAB0WuzwwLEERO/9Yz8828JAlFiEup7X7ym5HA9SIFL4FP3A5GZlGbLgtNHH1ASKT/N3pR/1shxxndnbKWP1eT7Fx0pah50dbmuEWav3ENpW3zSPlBvX5F6Gh6Cxy6uiztCIgr8v2xJCgl1EH1MP+evNEd8dbO8yFGtamw0SMjcQ="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/haber/turkiyede-yapay-zeka-girisimleri-500-sinirini-gecti_184670.html"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Stanford Üniversitesi deneylerinde robotlar, GPT-6 Astra ile bilinmeyen bir mutfağı temizledi."
   - "GPT-6 Astra modeli ScreenSpot-Pro testinde yüzde 92.7 başarı skoru elde etti."
 kaynakIzi: "v1.N+pAoFWFAQO6fS42.VfxQETCIiWfG1CftpUEFVmzsC4igyTNFvRBEli2BaE5sjUhU812qLJoQly/iXDWCcZ36A6iU5DXZilJIB9Nf60gEMb51gBSu9bdvVxJuGTSAQRyPGBgUZfSu677XJ6KbOXpoD4e5NwFTRLSnEI+Rr3lI01cEG+/r5UZ7v6S5cK6GLhPMzoKIH0GiYNxSmvdWPTBJUVpk8KCklv7V427DaPrpIlZ1gt1Q4rdt2H8b4Mwn1cYoneyWCHHI8VsboTSgO00sv65k5pW0R33Cw04/6dvx6+9T28QxRIdL143UuAxHafbaRkTzMxo3yQaszP/cg7bT9A=="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/unitree-ceo-says-robotics-breakthrough-could-happen-in-2027-with-the-chatgpt-moment-for-embodied-intelligence-being-powered-by-openais-gpt-7-model"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,11 @@ key_points:
   - "Editing features vary between web and mobile platforms"
   - "New features are available to all users at no extra cost"
 kaynakIzi: "v1.Edohg+h+dMc3hzt0.ZrFD4nY5x2qo/rQUr2UctnXMkZaJjLDmdtJMnTHONDUAMcLxrMryDEwexuVyZE5APZEXH3zE1FbN5Elf+/mzTzHl9dasybB6nghH7sSI6QnkfidEg5U7UYcNJ1YBqY+Rkn8x8FwgNCvnl8TYu4TwcZQErJ51M1DfAET48h7D21JBghxsEu5JtSgwo8z+DoW8z8TWmsoIJgdMvo6GAsr2jyRdU00WkGNcbcTmlUn2fcQRwi1Cr+MQT1fm2PjJzmkn6DcOoljye2ZrRu1nqGEDxAK44oECCbajDpVnzlnWDBelHrtJo2mQhuyJCqZe"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/google-gemini-belge-duzenleme-ozelligi"
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/google-gemini-artik-pdf-ve-belge-olusturup-duzenleyebiliyor--212275"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "The facility was designed to consume 330 megawatts of electricity, comparable to the energy needs of Tallahassee."
   - "A county judge halted the project, ruling it must undergo comprehensive environmental reviews following multiple lawsuits."
 kaynakIzi: "v1.2UzWeH/p5WZGTQsZ.1/EInzXlclMKvPTx56gG9y/aUUUE+wLsjKTmQ0RHLTMydEKnhrqmqZcwSFLu9Iyg69q5Gcv3z/2YjQ4HsOoay4wi8PjzUo52P/SDoXEOUYQippOURS2wv/vfw4LKMTp+S0aEssLitJtzb6q8Eyfo2uqOboN2NT05uDgg7MqW2QpprdMEKUOmEh8y+U3BnruN"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial"
 featured: false
 breaking: false
 draft: false

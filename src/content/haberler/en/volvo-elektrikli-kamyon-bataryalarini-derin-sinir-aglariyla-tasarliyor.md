@@ -12,6 +12,9 @@ key_points:
   - "The LaserBATMAN project ran from May 2022 to May 2025, culminating in a dedicated design tool for Volvo R&D."
   - "The tool evaluates laser welding depth, temperature distribution, and SEI layer thickness to improve battery durability."
 kaynakIzi: "v1.gsCJqkd50eIFKKvc.tZjBTXdUTyXl8fHbNQlaBlqr1++tXRlhgZLVFog60Awfrx6GUowQEhH3yuIe52BnlIgWgVEQFEfm7Mre3dVub+GkU1RX4RB8xSyYvodBAIfqm+O1fAOHg8BQ3o9b8+5QQA9/EU/5xaTCWDMsZnDdkR8QA67MrQ=="
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/electric-truck-battery-design-simulation"
 featured: false
 breaking: false
 draft: false

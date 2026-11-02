@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Yıllık gelir artışı"
     deger: "%26"
 kaynakIzi: "v1.dfumnasYZYX0Ps6s.WLElRBYLWy2Tn7Se6hbJSvjWN4TkIWKAak16t5tTlJIPzkk1XBU/AUmVWcswumr8P0qrSlZQDyMYimhvytHSgpAjWNJdpTHpkQUVjKozH99Ye6YSrt85OM50fZwfDQ4waym5eDdDlB2qKvmHiiu/"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
 featured: false
 breaking: true
 draft: false

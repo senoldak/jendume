@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "TPU çip sayısı"
     deger: "8.192"
 kaynakIzi: "v1.OpEeHKV/X2lk/lDe.f2dI0RN64E7v9sZUcnpr6kDrMPtoedN6ZgyKQrfEY4Q2Kk1np3W5mEbeOQG9ZD1MoJtepni1z+S4Qa0ioE5cX9zFLbiyflA5+mK1hE0Gal2aKyOUg54MDw0SUDPD0zprQyHSnRndFydExmlz4/jKnsH6H32rSBuWhmUDFODw4lkJjB3W4UgdyqAI/xARHmhh2mTGsvJiHlSonGuaYT4N6XE/PIDrDiMjHwWLOth3JKWFdnFM0NvmbQ5ZmAzQNqD1hwkcVN8J3Q=="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/google-meta-torchtpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

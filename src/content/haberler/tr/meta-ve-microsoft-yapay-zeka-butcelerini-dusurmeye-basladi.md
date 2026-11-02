@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Yıllık gelir sınırı"
     deger: "1 milyar dolar"
 kaynakIzi: "v1.F2qYrrMqmA7kYpBl.jxmR2EV9D8gWc5Ii0O9IgYqzuGBJlxb6g5uOoUIg5TfdC+yzloKYqOVhycHMgKU+ujrQ6vthtYaUVlCi+5dApeRvIx78B+gRJUY+056qO29IxwdU+jaVIewM56MZ4+w6XhKIT1pbBG7o73vhr3uebFBI5Ey9GUa2kRtskz3QbJGK6KerL1M4KkCW"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/enterprise-ai-spending-generate-slop-cutting-back"
 featured: false
 breaking: false
 draft: false

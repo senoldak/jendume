@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Target capacity"
     deger: "3 gigawatts"
 kaynakIzi: "v1.YzyxY1VnqFMH14MY.44fYbYMwijZ1cBw6GS1Be7fSY8/dwkhQ5mNdnlsG8tnI606ZtlKpUvRsDV9lsltb3i6ah0GOt/4TODAI0vdvf46KHtuzRzGp3nzu+1EJzzZlIpn7k3bcX5FyyS+R/3sEknqIp1oo"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/aramco-humain-yuzde-49-hisse/"
 featured: false
 breaking: false
 draft: false

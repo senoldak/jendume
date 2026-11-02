@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Elektrik üretimi"
     deger: "1 kW"
 kaynakIzi: "v1.W1ONKuEzosYNX5by.sgOz2A+fVbrU9A1WpR28ML1oSvs2B6YkGOlsWPbocBpfHixPoVbXBgw0Llu7oXgWgHzYZ19UCtpm5OACwJ8cF+X1ugA7IxgzZTcVFy5cmGdRUAzL3Yj4bOUc8UFT4+cOgSkqYFIQJBSKhtOvAjsESJdk9dN7vht7KSU29jjq7BnxG6rIPbZbc2/TsD6K3Uod4ZY9oQ=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"
 featured: false
 breaking: false
 draft: false

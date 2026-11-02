@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Capital expenditure"
     deger: "$US425bn"
 kaynakIzi: "v1.hZzwf9wJyuCMw7XA.2Qzq56c05GlAXVs+XCLuiaAJRN7S5mWJ8u8XI0/ZOnmAk2WQFCpJto7N2T/1KP1G8Fi55Zmqd1UGZ8SbLSjqX49uwx01dB6HRYMvu2xgYzwVBu45z+D4By8b9SifjPsxqzkVbzcP+r0lRtTC3GNOlz8kbVtskom39A0pS3L25SYcTUfjtcipRpNxd4KqN71qHxNbMqXvmehE1x3IXwyOfpnwTQ=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/business/2026/oct/20/ai-stock-market-boom-beginning-of-the-end-imf-wallstreet-nasdaq"
 featured: false
 breaking: false
 draft: false

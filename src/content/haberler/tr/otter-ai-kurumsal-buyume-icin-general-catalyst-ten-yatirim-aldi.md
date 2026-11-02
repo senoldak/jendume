@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Transkript edilen toplantı"
     deger: "1 milyar"
 kaynakIzi: "v1.L0O7QZxnF7sGjhhH.kfnH/MZuJcgh0LQoj4Gp7xOHPjvqJOjsKsBBXwxAd0O9EA8YRYMtNGbnhNG/dYTJEe4Mh41EuAheW9L4RIQlmzP+dyAHpHlmcKXJri2mLFk0G+DTfiKO+7u547KHbJpFC+rSLUFL714D7Q=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/otter-ai-320m-general-catalyst"
 featured: false
 breaking: false
 draft: false

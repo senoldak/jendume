@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Assistant interest"
     deger: "70 percent"
 kaynakIzi: "v1.ihjf/9ei9DcrqjyA.kVERma1daF9TSW4GTaLdTVfUyBegeAkygFBKjtPi/g55f8vuJU1eVuR5qx2LF5Qcl4UiRo2kA6OwtWod316xeoDfRVt298fTmxTNyWkY8TIyJugzf8btEVO2VZNyAUXVr53VqE9JEaJYMjyzTIIykOvX8ctc4StGyA=="
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/ai-personal-assistant-intelligent-wearables"
 featured: false
 breaking: false
 draft: false

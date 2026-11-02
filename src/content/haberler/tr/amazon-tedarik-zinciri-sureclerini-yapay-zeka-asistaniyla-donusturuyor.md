@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Etkilenen sipariş"
     deger: "23 sipariş"
 kaynakIzi: "v1.Y5FMM2LqPhk73P2V.SBL7dXQ6UMmn+mkVHtZ3oA+J2PmedT8yOTUvbx/SOJuK2uLCTjJEhLjVxy6ztH9hzkDQFajTQI2SXTTT/FwsJ0aqyoJ+v1+/Z3zMl6RW1/H+VvXNOwjZnWGPhpCWLTKT/LTwTnd0UHbcKTmg1y6bLKqJqWSqSOKUEfQ0dl/orj7p7YcmXY0ujmaNtkwdpy+afecHTrfT0bXU0/xnbPD8xYkbd2ADdypcamC9+CMHAYFSurRw9os5FGslyQW25cHJxIuy3fO+4f1xmnQvHA/giawrOZkG7l/Vj6Q="
+kaynakAdlari:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/from-data-to-decisions-conversational-supply-chain-intelligence-with-amazon-quick-and-amazon-bedrock-agentcore/"
 featured: false
 breaking: false
 draft: false

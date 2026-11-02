@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Quantum simulation"
     deger: "104-qubit"
 kaynakIzi: "v1.0Kl7l9kOI8LRvp0q.V78JAZcdex4GKlRrvb/xPRGf94QHniVAf0pOjksyWJB8q+VaKy1+qrhTF3V0mdjmJ9NTW3n3NtGlJzom6ZqheNNB7CuxhD4UdzeavKmd+1bKZ/5AnSePhZtUPRhhiDHwW6KwOLrkhbrpBfaXojuqZZ3LFxNDZmj3a4QujYcY1mcBGHok2CnSrgTCipdbGGNTTMDa"
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
 featured: false
 breaking: false
 draft: false

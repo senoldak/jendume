@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Nisan ayı oranı"
     deger: "%7,5"
 kaynakIzi: "v1.ht/f2+BvbrHUCyfC.iw79uSDut7W/4+2a3p7+PKgt1VKAFDtbLEPXZoinKsbQTm569UVgzwzGE59oCaZBjYGGd9M0p/CysgvH1yq6CPfWbqWRz0PlYJn3zjC/GQqPicOKAIrnT8xJo4EGCrQ6ALr78m+gXoOdu+25/kIkV+L8ptmZZfkJSvreVkWrSkEX2WmXuycX"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/sergey-brin-gemini-recursive-self-improvement-safety-report"
 featured: false
 breaking: false
 draft: false

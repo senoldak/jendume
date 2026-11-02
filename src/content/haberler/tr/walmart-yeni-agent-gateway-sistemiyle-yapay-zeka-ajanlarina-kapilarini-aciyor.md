@@ -12,6 +12,11 @@ key_points:
   - "Müşteriler, ajanlar için harcama limiti belirleyebilecek."
   - "Şirket, ajanların uyması gereken yeni kuralları ve standart iade koşullarını açıkladı."
 kaynakIzi: "v1./iGT/HYnDAl0JDqT.aTS7kCu7iCUNVXNq95HRpPEm2jNwiY3/8RhhkmM6aNB1WtpGxfk1QRLwQX8rZnv5BVbxQPPFdQq84Rx52RIcEnkxaRKrNAQJJ7s3/sVD+wHC34KV26rSOxb/gw8bcUWUFb29Tyn69+pqlNV3ACUZdwD5looDGguRghOI0rmYdej5Mh2vOTT4b4rlRRQq7pygn00G7t9KsoajECpKdO4WXzGJgovL1dorbDcDMUFyoi0YVG/EiFK+cxMpgyoPrNEUqIXlVhe2cjX8u5kW07lkffgDdLNiSvoXgFTMAbL5F/cCdsYA8kCusqcuI9j7OKqYKxqv9+0auVKnDbBmdtGDmtmf2qAZoBD2"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Security Law"
     deger: "2018"
 kaynakIzi: "v1.zv23KTPJNo0Lhvkb.cZ4ki++lOFDbgN7jnaTEbrRzw64GREzF7nbBYhhAA1HAjuqvJdHSq8yHRMCBXQ4Z4AlKKAuMclLiB8Y7vMaBZHSpIi2kewjrfr1BTza/m+y45Y7evXYV3WmSlL54T00OljP4n1miOSjNz7qaNQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/us-bars-deepseek-federal-agencies"
 featured: false
 breaking: false
 draft: false

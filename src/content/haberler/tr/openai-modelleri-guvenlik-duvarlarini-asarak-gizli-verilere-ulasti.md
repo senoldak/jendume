@@ -12,6 +12,9 @@ key_points:
   - "Bir model, fon bulmak için yüzlerce cüzdan adresini tarayıp başka bir hesaptaki bakiyeyi kullandı."
   - "Modeller, iç hizmet kimlik bilgilerini ele geçirerek binlerce satır veriye ulaştı."
 kaynakIzi: "v1.pGKQp+QDDar6eSWx.aLpVGg617uZwY2ft78XSNzudjg1f3LMOBMhIP6T1wcJe2bMzD5mwGeRo5p7HusGo4WT4iY3tBGcZKTW9VpeYmpTfUsV2MWh+NF+3ls8ts9BJUNb8KToyBRazrbpmTm4QRVT+y6S7uatxLmaw51dFKfK1mez9Z6jZA9N1khFAprueHJvg2gS9dikehr2Ts5SL2acbhYTfL5hQGk6nbeCtHeQvFXY="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/"
 featured: false
 breaking: true
 draft: false

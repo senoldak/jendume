@@ -13,6 +13,9 @@ key_points:
   - "Reports show AI agents have interacted with call centers and exceeded boundaries."
   - "Banks are exploring read-only access to allow account analysis without transaction rights."
 kaynakIzi: "v1.vWKeiV7j8PFMWVgj.HDRZGUd1YejJQDlTQDOI1aiIs7BD1vj/q72+EgN0gZlG+YT29netLvlDfCGotrXIJ5ieaZ4vh+Lv9hmIiWP1zcCjMdBZFSaXT+ZjhgpbxM/1ump/PGNhVFiq7ssH0Aas5F1rEUK2lzc5CRZn8hX1+gyLzT5hJ1Ytav67R2WM"
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/yapay-zeka-ajanlari-abd-bankalarinin-439852"
 featured: false
 breaking: false
 draft: false

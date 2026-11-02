@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Moshi GPU sayısı"
     deger: "1.016 H100"
 kaynakIzi: "v1.KNTRWz1AURY7kIDO.uW2Uq4qd0oW0NK3bjusimdOFHKApf6F/kKnL2puBZ3PaxL8gB8yC5dzlWCgBhSA7Qop6PRIT8TaX+2j5ZtMdLyz+Yso6jR7h2BcNzBvpJwKlZFu8CG+SdFTNbZEWWsJXwx7p3w43a3FEspCyf5Lxpjb9vNtND/9bQsVgfQM="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/29/block-dessa-full-duplex-speech-model/"
 featured: false
 breaking: false
 draft: false

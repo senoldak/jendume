@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "İndirme sayısı"
     deger: "49.000"
 kaynakIzi: "v1.5RQkCypAEPPbGWz9.wCTSo8t+QfVzuJgRLdN0OKHDpDdPhgWNmtG0SpLh7BygI86s57FYkKdr3jUNqBZQSZ0uMUeY8StdmijpZaK/bLezLFlPntQqrNzqd9Ev2BykUmiJYnFkQHwPh4axLyIArL5z7LUAWXJRjG6l/PMTFpVa1xk3uq4="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/litellm-hack-github-tokens-logs-claude-code"
 featured: false
 breaking: true
 draft: false

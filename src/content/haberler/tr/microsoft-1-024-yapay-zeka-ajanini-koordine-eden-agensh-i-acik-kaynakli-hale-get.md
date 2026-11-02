@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "ProgramBench ortalaması"
     deger: "%28,78"
 kaynakIzi: "v1.HDQqZHO8dNSf4V1b.czJpBve18Kv/UPobBZk5umdv+koO+k/eTVXMjYHYqKsIDX/N4zP7E7wQ72V9+nlqFJhPC5a0p9TMP21LnsjpHUWirPREccDoSxhznKJFNm+cSV6cBgdLZ/vRWCDbr6dTWZ1lsWyuPlL9zNjAXDPCxJMXnL8v1cTsEHUyjvEuj3k5fX/vfK1r1aU="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/"
 featured: false
 breaking: true
 draft: false

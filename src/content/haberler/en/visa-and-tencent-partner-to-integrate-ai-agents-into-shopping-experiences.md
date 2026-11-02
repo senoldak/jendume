@@ -13,6 +13,9 @@ key_points:
   - "Visa Intelligent Commerce and TenPay Global services will be combined to improve cross-border payment experiences."
   - "The system aims to provide a secure shopping experience with user control and a governance framework."
 kaynakIzi: "v1.cD8dRi+zZNqdSMoB.HN3k7bRs94/42B2QYF+AiIKqj6o8VIy9kQbaSVH480l82TiDURSpIR+/p/YvTtpvNyYRKJ7SzzOM5U3UQKKTOTVtqEjF399vs8N5epipBFb/NSMsmeMYS+Wywy+K1JDrggSlAxo="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/visa-tencent-yapay-zeka-odeme/"
 featured: false
 breaking: false
 draft: false

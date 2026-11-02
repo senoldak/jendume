@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Seed Round"
     deger: "$72 million"
 kaynakIzi: "v1.kuB9dfwRc2RUQ0nA.H0OYYc0gtss4R4TI28eX3szC2kiLK0QNqUqCZuJCbxw4eHP2RD1+xR/2nN4T/VNEaY+NxTHfY8s/v1sQECTB2NsV2YPgCdGwQ/xZjyOIcMsBh2FJXDPhk0FuM/MMk9k16amQVLV9OSIqTFVtsgB6/hZ+bairm80="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing"
 featured: false
 breaking: false
 draft: false

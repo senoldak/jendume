@@ -13,6 +13,9 @@ key_points:
   - "Initially supports Snapdragon 8 Elite Gen 6 platforms"
   - "Compatible with Android ARM64 applications using Vulkan"
 kaynakIzi: "v1./X9b8agIoBerQHcV.heSVuuZn8tZmqhSdCAlzEQd+SDDIdbNKmhGx7odxw90ZQv6iW9IDQ41Z5qeWYzX95o8oMAyY68TttHFQRDhDTVvaBNWCqERqPyR5hny98umq5wmwKxo3AVzuc2grjKU8s0Fa9AGlO52ERWruGw7hUs9vjvJkeyPnhZAICsCQqwdrbPRvYJROgjjwc939ZmT/2w=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/android-oyunlarina-dlss-rakibi-adreno-neural-fusion-geliyor--212026"
 featured: false
 breaking: false
 draft: false

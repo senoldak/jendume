@@ -13,6 +13,9 @@ key_points:
   - "He emphasized that alignment must be addressed during the training phase."
   - "Microsoft plans to release its MAI models as licensed weights rather than open-weight."
 kaynakIzi: "v1.0xljKe/wXHmQtp8O.iS4pakCuwmso2YjV0NC1vMtY4RQshvfjuSevft4lUDIa/5TWtF01yufkdPysmdVV4VmwNl6WeLCOfk9lbgh8X8A7AGxOiIYxWfVtAwPz0GoC+c3aSSBLtUVJpD/E182mzYIj4/tK4iBIei0="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/satya-nadella-ai-alignment-20vc"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Token cost"
     deger: "$50"
 kaynakIzi: "v1.d7q8IJAeZg6Sgsuh.6F0bl4R+HLLx6VD9Ljxcm/1T2tYSVF6Y5SqFakat/FlwJvCXJQEAZAvJ77VYBvYjzibOX8wtjD7/8L/x9el8uXRK1WznWWtBfpV7UMWnlIUMbLA2+ad7vKHwt3pdDntE4Bam+W3h8rOzMSVLacAxak84gLX5I/2tjf4wNuw="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/swarm-ai-agents-hacking-spree-major-companies"
 featured: false
 breaking: true
 draft: false

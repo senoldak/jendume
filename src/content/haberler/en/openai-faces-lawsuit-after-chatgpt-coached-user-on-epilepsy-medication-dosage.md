@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Age"
     deger: "31"
 kaynakIzi: "v1.m4fDn53/dKS+E4zu.tF4P+4kqhuftgDxM6egXEH+WJD6Nz/YntmhHBImxJBMq4Y7kLxC9XMHxWW9phaWGqKbBhvZFc7NIVAeMbamm+CuU5M6u6AQDPyxdvvfXE0Rt0nwo7yvQ7igAgQUiOKdbjtG4RPH97UEULn2HXCG2SQEGvWeTCg=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/woman-dies-chatgpt-medication"
 featured: false
 breaking: false
 draft: false

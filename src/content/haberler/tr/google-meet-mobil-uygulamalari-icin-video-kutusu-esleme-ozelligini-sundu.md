@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "iOS dağıtım başlangıcı"
     deger: "2 Kasım"
 kaynakIzi: "v1.rhKp+3/WdbMeCdDm.kzYOLfkximlLypGfqDFpSQAhanm1udZvSI36lV66VW0GmJmh86WeF9sckqr/l6jdyJnblnb13+5GKspIiu9jQxwhNUxB89hBkZPZ5F90I8czTWRDiUvmO1I2EpkpL2qEQ/PEL+zxr95Z+QNg0WC6hR5a0/Y="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-meet-mobilde-video-kutularini-esliyor/"
 featured: false
 breaking: false
 draft: false

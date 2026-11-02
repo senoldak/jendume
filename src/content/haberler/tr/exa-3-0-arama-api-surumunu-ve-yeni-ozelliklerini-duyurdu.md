@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "BrowseComp skoru"
     deger: "%91,8"
 kaynakIzi: "v1.oVDBKPGG9ctRf9VJ.zLcrHlahKbV1h3LjGqZLnefAYjXOIMPSchTXVAPkzqB/fOOMnEzUbknIsf5TcxZqjmOiO0EeQO7lwHMx0Z8vnCj7+02Ez3dDG3a/Da4qgRcB3W5LhqZFHGjGA4TR7JixBV4kyYv7wriQp0gCJxQq3Q=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/20/exa-3-0-search-api-lite/"
 featured: false
 breaking: false
 draft: false

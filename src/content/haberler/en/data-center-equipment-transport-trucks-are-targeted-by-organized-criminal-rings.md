@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Total losses"
     deger: "$100 million"
 kaynakIzi: "v1.qSLJtN+uZPp6B5pF.08uC/hy5cYHiJNN0AyBRDLWkmfhcc3FB+m5flSyqNysGfEUI7Foab26EuyK/d9+bn9mNISq+0nURwo23shpc9KhAhHcM3POXFJgLm3BOqGdPW5dId+NOKE7dxzH/W4ud3tdxKhv+2bXMg8oKqwPqgCsNB0dHbP9g2bFazQyMIg=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/ai-data-center-heist-thieves-equipment"
 featured: false
 breaking: false
 draft: false

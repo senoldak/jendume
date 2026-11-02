@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Güç Dalgalanması"
     deger: "%40"
 kaynakIzi: "v1.jafTbxCeqKGAO4SX.xuMWVfFxOAYKPpDSt3lOGEH/ReW/FxukOvO8Doflsh6PCXzkEOPkpCactv2Eyc2yD+5Lmlngz+2ucIgJuQiPXWCKkayOCn5Rzkv9mbtZsvgJXrASSVD+c56SxzU08WlrsLPKPrNzp5INPx9Q6tmU9iul4UBwgViCz+XZ5g=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/meta-prometheus-supercluster-1-million-gpus-muse"
 featured: false
 breaking: true
 draft: false

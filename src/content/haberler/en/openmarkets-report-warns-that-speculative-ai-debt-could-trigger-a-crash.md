@@ -13,6 +13,9 @@ key_points:
   - "Speculative data center debt is reportedly being repackaged and sold to pension funds."
   - "Researchers found alarming structural similarities to the 2008 subprime mortgage crisis."
 kaynakIzi: "v1.ZbyxeTNvB/yEE7AA.MhMiWoVItqT5yPXXb33ocVV6DrJOgf6u6V7pwVkFHPZPAuuaZ1M8P5mLxn9MW48rvkNjvQUMBz4FHcbI7Hq73QrUlOxznsogm5NWF/qsAGjpAUKpUBKPS50lczisDIt8qiHDEcJpIGcBidr8q4vsVeG7GNs="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/ai-financial-bubble-analysis-finance"
 featured: false
 breaking: true
 draft: false

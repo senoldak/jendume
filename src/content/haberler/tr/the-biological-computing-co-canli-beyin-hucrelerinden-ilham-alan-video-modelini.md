@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Saniye maliyeti"
     deger: "0,005 dolar"
 kaynakIzi: "v1.V42Xd9FyPW0leyEh.4qaQ8G7wnsfHGy1E5KeWMAbxnIdJ8dQMdok9gd6C5H0f5tOWRXKmESHlEp03RQ8M3TJiJ/xk4D6B45fytHetAu+iVFE+r34w181A6AHGRmQ4IqNgCemJ85ZbFeLhyo/OV4FWV9l0Le53gwy72Ikts5k775bA4g=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/tbc-mischief-neuron-derived-ai-video-model"
 featured: false
 breaking: false
 draft: false

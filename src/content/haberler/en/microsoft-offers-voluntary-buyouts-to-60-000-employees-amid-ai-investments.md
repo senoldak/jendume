@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Capital expenditures"
     deger: "175 billion dollars"
 kaynakIzi: "v1.pihnU+JzUs9YLLXG.mqMqyyCKNUZYlRbdvDXYq3zQEuneTEa5kz7sH2+cbWBi4VvjwqP9vk/AAmjPSnUrSEkU2vZYVy3oIudqYmhn8ld0fjqRb9zevRGBrzP0yRExrHw/qWj3NlxVc+hDSSStNZSXD7nqgRQ10ittJJf5g2fF2XSvw32kEcjbalZI+1xH4ODywpIGLSuZwcnTxDEPgmfLv38DyY+irPhql9TdRbBuJIriVr6c8uGTlyRN7NFVDYtvV9qcjDmfHbp2F8cSRJuRLFhmwVk2UNL2VJ9kSd8Gs7gco3rrMl/zd2OqqrXARA5fgoTx0PkYsDh1UUjAebzR8w/RNKE1HT2vX5drcl8SAFSAXQwGoJh1GUUpEBq9/dgPoBWL7T8ILSrrcU3bzPCp+nz9YtFIfsGUtTJ9T68WzmT5eXTXROirKFocPocbSUTq4ZjFjqv3PYsYgHsT6wn6eQSd7rE2eXg8ApqOu7/IqP63yof9BvgQqQ=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/microsoft-gonullu-ayrilik-teklifini-acti/"
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/26/microsoft-offers-voluntary-buyouts-to-60000-employees-amid-ai-investments/"
 featured: false
 breaking: false
 draft: false

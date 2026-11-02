@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Bulut kredisi"
     deger: "9,99 dolar"
 kaynakIzi: "v1.EqMZOMIORxoXTGnq.1kttXKhvH0QlQluvgxjTc/BOggJhtgwo3LbBsNy7XqPEtbFinZpbuoGQEA9IVciJZ27cCXcYpWEpvcbQPmXc/eopX75ub8AZ86dkjSXQvS3jK4Ht7ZU4eiaQMmmITaKfZoH4+oURBA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/local-code-mac-yerel-yapay-zeka/"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Linus Torvalds araç kullanımından ziyade kod kalitesine odaklanılması gerektiğini söylüyor."
   - "Yapay zekâ araçları çekirdekteki güvenlik açıklarını bulmada etkili oluyor."
 kaynakIzi: "v1.zaWEjzDfQPddi2Va.i6PkxvSfLUQZ5Q3k8TQcqiZmU0gJ44C/fojUw7EyZNoLht3vn6GY7ctXm5d4r5FA44/4j1LbM9j3bsTsuKzMiwIfQ2LRBKgiXZtQ8k5lYVjje54IuPt70LTz52Fs4EoHe4aXQFk94YxhPz3OqLkrBbbpIjbQC+Ix2oZVg2Vub2Y7KxpRYZBTnBU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/torvalds-ai-assisted-by-tag-utterly-stupid-open-source-summit"
 featured: false
 breaking: false
 draft: false

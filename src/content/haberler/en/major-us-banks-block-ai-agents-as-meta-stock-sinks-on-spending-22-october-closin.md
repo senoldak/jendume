@@ -20,6 +20,11 @@ rakamlar:
   - etiket: "Full-year capex"
     deger: "$135 billion"
 kaynakIzi: "v1.vsceMj5JlJEE3LMT.fKNvyuND1eZHtd/6ca79k41AUSb3sfFSihhR3hoqo7tqRsuqcp2nqQNheD+LMYTBVekZOUsVFdq/Yozg8xVKm4bwbPMA8xhGP7C63taxuSfC3Z8zzol6TkoetH2tUBn36QtEHkNp+NSxN0ZnfvozUjZusagIJUrMjC/8X6VlrZv6cjAXzw7gwQp7EfDZuy2udPu9lLF1uIONAbzueW3i1I5VJanM6QZmZkmNEJTke9ypBTtON4z0aPJU13RWHojL4nnwH/p4hDyUlZoTMIh8Uw4zu2ydqF2QxPMf2rcJBm1Cms8jfwrWgxZwkoU5SPYdPl1jeR4N5+iA7WVzwFfMXGAwiwXh66oMOf/R2zOb2KZ1u4WA/DsIhGR3cYEZ5rJesQCkzgpzB6SQ1WiVpbNl02bVUSEuqEDb6g6Zly7euCD3KYlHM+BaoKl/NRYUclihAu8RXqgl0Q5ZamEge7QpM5fKM8Uj05sfYmj775mMyVa2KIDOvP7+PT1uUhO0kGCFJuPLAsamlNUEgRsJ5LrjB5DGBFZ4KKABCXjMlpap8Gb9Bg/TMMVwH7ZxsNHcjVw1ifRWGfK3A2G0NtA0wQf+zLcTYoVqoQN9miUHBCVB2rN/nC/VHwoaoADDWDO/kQZWNrhYxMxZdmSTLqbt1Ib7Aw=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/"
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
 featured: false
 breaking: false
 draft: false

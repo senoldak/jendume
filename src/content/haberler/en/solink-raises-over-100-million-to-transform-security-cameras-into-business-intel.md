@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Customer Locations"
     deger: "35,000"
 kaynakIzi: "v1.LF3mOyhI9HraCi1l.u5LEIlo6m51qVJvWYvJTsscX0FI26yFLpHiBkD0wLhzJYUlZcg4A6czulrB5+F+iedd4s+lWizCxJCRGdxVmXr7CCmPST+5fUVuifx+AoAdpfCSYhe622Iz9p5cz0oROt8u337I9GUw1vv48iiUjugV23JB7i78GM675NZg0a4EgVsrVCyenuB9tpZrVQjqPASyhUrNAUlGq9HhDCkEREyg2cPl2dgZt"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/29/solink-raises-more-than-100m-to-pull-business-data-from-security-cameras-with-ai/"
 featured: false
 breaking: false
 draft: false

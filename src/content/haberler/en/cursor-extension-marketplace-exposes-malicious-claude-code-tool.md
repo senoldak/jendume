@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Users affected"
     deger: "5,000"
 kaynakIzi: "v1.rl22TnEVzO97CyTr.an0kBcQLgKs8jGYrfEQ3TpysLM+AJIoHrAHY8drK8YHIY7kko3rA/SBTZVbTnkzvWtD5aqbOyeVl4aSd0UzrNKzD7VJ3TD0gVgc2YWB4ACzYgr4O3wM+yrImPwljWdm5t7CFnCCpV6SH64eOCmQTPJiYyKmMauzQ/achWBb+DpMFoQBG4pAx4xUnYaiKbZJFhtjI5OzXLHo0Nih48YJ0dktEtCQp+/ycckKSEYeL5SsqIOHT2HRx98B+jw4JyF/xKqTYySdC9xbFbABqzYHYz/YXQ/vz9+xscHni345Ce3jMCK9T+IfnMjoFdZHPAqQWK/JSIqcloGq3L4HjokgyAUIsPtmQx4DcLcSR6bp7X2MHJuwdcUP5NHSdoAs4yB4hreOnanLXQJtiSS2vspOkPuK7L18ajY6l3DgAtHwWiV1sM3+8FZvOUUPu9l18fi3W2VdmjFu8roKCrfVUH+IpNKpQlacsSoVXk8tSejQvEAhvDCUpj1xtIHxoya+R03tezVm1cVs0/4PFYqYtmklh/QSfGwcRLELkgZ46+d41K/o3ImBgXXjw5WoYkB0YSuU="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/"
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91633244/hackers-hijacked-a-claude-code-extension-exposing-yet-another-new-ai-security-risk?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

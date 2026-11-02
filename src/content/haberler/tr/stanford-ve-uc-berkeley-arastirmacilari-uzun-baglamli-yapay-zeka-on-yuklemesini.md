@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Maksimum bağlam"
     deger: "128k token"
 kaynakIzi: "v1.DivULyx1muRb9BUb.Voj4wI21Hjd19fIT0aRrK3fRlb+tdFdd/2NDM2F9VLvBTri8DamUS3V4NFme0ublEqFfi0lJ7xXcAoGDz9YeSbIR8JtSMPJnK164FgiYvn9plQ9lWj+VlFpXqaNqKNbzo8Q602d+XvvpXZWKC6bR7ZtNxaHIEmgSNQzesTka6Gjx7cnHWIVxvQldiuMYHOsGRFsEyb7C"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Formal policy rate"
     deger: "35%"
 kaynakIzi: "v1.9UWUMToCXbm5yA4t.r5RYtOxKUHl9LyzYXKIyZ53qi3bNJIEDR4N9zcNykLpkVgBf+HLiZl8uKceP/TFcnPOwnMwJkrVKaOEJ76Se34W0/zPthGa6qb94JUqJysnj27fwzYXhmXNgxJEzXRiaHGF0zm807f4Tunxe6+opLFsX5DwXS2FO4fOefJ3P06URdldmJdj1bInt9kXjLoLACilzkiNFdJCalHHyqhSWs9N3nsOBKNb2Pw=="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/yapay-zeka-kod-yazma-suresini-yariya-indiriyor-peki-bu-kodlari-kim-denetleyecek_184791.html"
 featured: false
 breaking: false
 draft: false

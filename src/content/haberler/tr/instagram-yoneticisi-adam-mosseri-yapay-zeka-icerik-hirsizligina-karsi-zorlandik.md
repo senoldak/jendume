@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Takipçi sayısı"
     deger: "300.000"
 kaynakIzi: "v1.5bhLzK/5VX78ZQDE.k+LX/UZhVu6L6XkiUw0Bt9v0alW7KXNUtR0vCdzBGD7w8SN1ubu+Fb5nWAcpNHnqqwtr+afIc6e/BXU4BazplGfuzMlfEwQ4O7rgXv5QGGVTOHn0rTk8ktoRGTH2HLHCxAFxxnVc//QSL4ceCusJ1sRrSO+pyyU="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/head-instagram-no-idea-ai-slop"
 featured: false
 breaking: false
 draft: false

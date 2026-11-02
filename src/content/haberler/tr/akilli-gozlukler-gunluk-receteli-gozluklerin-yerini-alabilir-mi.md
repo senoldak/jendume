@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Pil ömrü"
     deger: "3 ila 5 saat"
 kaynakIzi: "v1.+JTLxOBDI8Jr1lmo.UxkAXteHIfNS98Nvwkf/m6CM6QXbZq6rj/t4JjtKO1A0jOobl8b8MAr0Bm8/DkDZVi13k9LAfFpaeFg6XSwBbECzYoprFZPtNnM2ojNXOIGmIYQ6+jZ8cVTadNgHeFb4l1HxR0KJLixDk4HO8acOhweC3oZ5Rakuww=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2300320/ai-glasses-replace-prescription-should-they/"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Güvenlik testlerinde token tüketiminin yüzde 97,2'si yerelde gerçekleşti."
   - "Gemma 4 modelinin yanı sıra Ollama, LM Studio ve vLLM desteği de bulunuyor."
 kaynakIzi: "v1.g8fAij7q4IWFndeK.IspdsZr79qWKhIOpX8BfTQdxjOjZ03G65MQYazjQqVKRiTrvgNveoJWb9DVTwIIyMqE96bZL30H+sGbhe2PsWzwNczZKPzijhzaJLbH3WJ4oXX3e607+8zoLd01AJnEUUHcS5GJf0rxvu3bIc67L9y9JGXYkz6dNu9l+siGFWH3LYEUSWwYJ/j5WF6wbhX2mfbfArP4bPCKS+c2sd+UsIvouwC3egjCwulkSRF1OWOlHd/IeGdKAy3Wpjh/WxCEPHQxjlFC1Yn2HYnwmvUIC"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

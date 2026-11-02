@@ -12,6 +12,9 @@ key_points:
   - "43 new startups joined the map while 21 were removed."
   - "Agentic AI recorded the highest growth with 10 new companies."
 kaynakIzi: "v1.NlgsNoMGxKq+vJhL.GOesXV/6aDpbLSqdAB0WuzwwLEERO/9Yz8828JAlFiEup7X7ym5HA9SIFL4FP3A5GZlGbLgtNHH1ASKT/N3pR/1shxxndnbKWP1eT7Fx0pah50dbmuEWav3ENpW3zSPlBvX5F6Gh6Cxy6uiztCIgr8v2xJCgl1EH1MP+evNEd8dbO8yFGtamw0SMjcQ="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/haber/turkiyede-yapay-zeka-girisimleri-500-sinirini-gecti_184670.html"
 featured: false
 breaking: false
 draft: false

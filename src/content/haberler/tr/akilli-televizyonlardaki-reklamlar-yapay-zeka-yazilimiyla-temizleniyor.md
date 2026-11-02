@@ -12,6 +12,9 @@ key_points:
   - "Kullanıcılar Claude Code gibi yapay zekâ ajanlarıyla özel çözümler üretebiliyor"
   - "Yapay zekâ kodlaması süreçleri günlerden saatlere indiriyor"
 kaynakIzi: "v1.ebf8kS/PYRZ/JcDt.aydUjPaeF/YqnZeQ34+uFoA6jTrS1dVAonSR7ifmGklZslUg+8XngElo65sZgXH9lmTIRQDsWqACikmVvzgJ8wLr/h6qkPJkxxxLY3nsXAwxCsQed3TMGzlXmVR2zUdfqYowO7Lh1bbX+v9dBIQNYDL8zlt1HmHH+Pjuj6/swv+tst37gbYhKXkSJk0wQGKdA7D9QBr+4+1y8BEqcvb9UgDa6YnTm8iH97lr5FMoZU617NNkJXNTL1KHsg531KYEW0+5DKhUIqxP7gD8ns3CYR8D5lwM0jcNvyNF4VbiaA9v+pvTEoTz"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/entertainment/streaming/your-tv-should-do-what-you-paid-for-people-are-vibe-coding-apps-to-banish-ads-from-their-smart-tvs-and-android-tv-and-its-catching-on"
 featured: false
 breaking: false
 draft: false

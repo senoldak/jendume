@@ -15,6 +15,17 @@ rakamlar:
   - etiket: "Test score"
     deger: "67.5%"
 kaynakIzi: "v1.TBxVkPAl3KGL/0Zj.j7hdJW7WQjab0AfKgmt/FFSljAgFejBo1NlKw/AEZOuzdfhtKx1UW/VXxuTN9gv8/MZtPW5zwRM6bzrfMdGvV0Yk3qaiHHkmZBmpdhsgijT7MXGZbnJEWADS5DprDzHc8ksW3eNUU43w/rHrGSoFQL1r/4VdtKRdXN3GQFAVdewarNQh6QY7ZlnLpxBVEXfHIRLsPAWyH2TQd7vWDfvlBFsgTFSAeYI0bEqySSyCDV1+Ll24ieeGz5Jg/P2WvCd9oek8ZWD/EXgwSDZbDFRBzmX3IeKHF/tkOfzccDQrH8bLwUAueMy68RQfOtb9uMrsxUum6JV0kHaCNoNpSYxMWYAa+hugestrG7t5l/zCp/yStqNUmJXeJJJRNfiBoc0tibpzanEuhYtTEIRkubsQ1viE2HqjB+z8P9E2fWbiExcLqm1H0r2lv9em91n43CRTUhLEM+1mTl4P/TAEbOwEgGu5nI4B8I4uSMOj0j29FxhZ26u0UHU/2oilLYDXufutoPlaUZufOkBYHBLLKj5yfiEwErWRwixHB7os23Mbmper78o+gi+PqppsC2XgNLM6vw7bwWEB9It5b8cZKShcIl77vSpOznmzP6jEmRJouQFwixt1F+8XyqC/rcVNJM4r8E8KMZOjXsxc9q3xq9jvS0Bwuua4ituCtz786BMnbrQqmA7nFA47wZDr7JbRA/uEWeN1JPi2SkmA6VMDQjx+qHLneN0IQu5Cz125KAyVO5Q8NzFsmrhWcGgPkJSZLM5aApygmxUt/G+Ouq3FddxHUlrlj6hmZW6jo96XTXFSzOmMMQPXBelHxqGq+tSH+ak2TBVyjdFR8Fs+SUxfvlGVsFxxbOq5Sx2XRk9zRMKmgVaH/2N3UjBUyky9aDDOH1sHJc/Wjg2TF10AUabuY6omyduxQXUGMYor52lJG7UAqkSNOO+CuSnpI8LRRqM0Ip8rfdo5252qwMnxxVMXy0ceEm4SsAubNGDzHad3z5CA7ppGuGzxKw65wsTVeuRUBE9ogIcVCAvk2M3gLguNFn9bxjI9keJGURpmoGg="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/openai-acquires-orchestra-bio-to-expand-rosalind-life-sciences-tools/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/ibm-research-reports-learned-memory-tops-tau-2-bench-service-benchmark/"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/google-open-sources-torchtpu-putting-native-pytorch-on-its-tpus/"
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/20/google-torchtpu-open-source-native-pytorch-tpu/"
 featured: false
 breaking: false
 draft: false

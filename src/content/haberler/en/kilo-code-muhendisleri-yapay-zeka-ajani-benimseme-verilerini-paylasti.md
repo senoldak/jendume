@@ -12,6 +12,9 @@ key_points:
   - "The adoption process follows a four-rung ladder from basic auto-completion to multi-agent orchestration."
   - "Context construction, model routing, and feedback loops represent key technical hurdles in scaling AI tools."
 kaynakIzi: "v1.6d5kvxQa6YXJGOGf.0xyuaOwblz1DptTz3wuLKJ8zc6eHWpQcRlASdAJ1foo3x+eRHX/nMR0WECvo2trQ0JCSyruKZRuFHtj6ZuoiCZfcGDIuA2eJWMvueBcwWEMjAyOkoLfy0zCpPZn6l4QweFnAS40LMit2uZel48+bERd/6wY9xubv2oRwwjzjFDevVb4fUiFPs++16xwyrySaQz+gMZ3rvVXTnjfmzwy2O8qfFesdGtu+gaFgDFT2kevyhE/Fx5++vFuqyqyfObPVN0xr12bqMPuNRnOPnTKaZ977Z9axLSs="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

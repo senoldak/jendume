@@ -13,6 +13,9 @@ key_points:
   - "Süper zeka terimi, bilimsel bir kanıt veya somut bir ölçümleme içermiyor."
   - "Yeni terminoloji, kullanıcıların teknolojiye olan güvenini ve beklentilerini yanıltıcı şekilde etkileyebilir."
 kaynakIzi: "v1.n1K2O8H6GXexgytr.Nu2JAx546XmjO+VtOfsOX3bIxksRRi22LB1+QtT1Zppk9QUWeQNS0JnYwagSIzrDZ2JPuG22s8ELcfJ+IbUADRuxWLFw6tLvj9m0FdGFggQr84G5JiX8wXc8rRDKI7+NyzOWzJgjjSgiXFdUUunjJf0r1iHLZPXryilSR2wzbZNi5NSOp7zoxwM726u7d66JvsQsbT4xHYrbioNJCyXtzZoBmYvyEUoWeJNdj9f09g4="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/a-few-tech-leaders-are-rebranding-ai-as-superintelligence-calling-it-that-doesnt-make-it-accurate"
 featured: false
 breaking: false
 draft: false

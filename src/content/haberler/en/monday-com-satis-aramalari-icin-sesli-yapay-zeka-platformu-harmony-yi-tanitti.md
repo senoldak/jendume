@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Deal increase"
     deger: "9%"
 kaynakIzi: "v1.TU/+rr/LSajNd6CV.kdtyXdnpFTSiA6gNlAj4niqonPuBp6ZLkiMmiykDA/jV0aDAGoQiTFTyHTc3yhE+KPrpgZjJXZeNQgrJjoR/Z5QqVByrHmYRVEC0Spyf+Ek+zumOOR0a1MTOND2W3rlFiJ68MGDOcJz5"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/monday-harmony-voice-ai-sales"
 featured: false
 breaking: false
 draft: false

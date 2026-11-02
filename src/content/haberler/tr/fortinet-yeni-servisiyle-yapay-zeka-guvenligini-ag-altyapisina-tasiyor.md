@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Uyumluluk politikası"
     deger: "50'den fazla"
 kaynakIzi: "v1.AYGBulAn/cT4EwkB.34U1dG3YGY/jtiYfklCYJWhhOHYVJhK0oEzdgN4QTGqWEbMRpMdypZQ6ZSqO6dzau7oTIECFNzdtgJz2XmhoSxfz9DtdIBrl4PFEVUVp1WNLQeivpUB8SDlanRS00pc3uuqn7Kxe5LSC7Icd+QRVe/iZlxE951RibKbGygEXqjXtQhwkXdynM3Dsi4QhbQW6"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/fortinet-fortigate-ates-duvarlarini-ai-guvenlik-merkezine-donusturuyor/"
 featured: false
 breaking: false
 draft: false

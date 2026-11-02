@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Toplam maliyet"
     deger: "10 milyon dolar"
 kaynakIzi: "v1.+JOXEGHb4q1ltF7V.Ghc79QXnFuU921a1A2nSEXKj5WGxQvF6xIuZOs9/oiWBhJTuGreKfEAas9KLixrdODJUPmKjGymuk0AjxKHFk+rZJKCyCtPdMtaEtxZBZpOI7C7T22DCI0GhoVMKJh8C3JYaso9q6JWJES6YdxrvXb6VYrceZRiU6lb1OJPn"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/27/mirendil-fern-10m-token-context-model/"
 featured: false
 breaking: false
 draft: false

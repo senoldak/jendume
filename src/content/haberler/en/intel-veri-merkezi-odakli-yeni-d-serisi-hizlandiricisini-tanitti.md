@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Processing power"
     deger: "1.3 petaflops"
 kaynakIzi: "v1.8tsrzMcMB2uhNTHn.QI1UuJxbr5v8EZTp2t9bVe2xirgQWcpLAw8k8WeIx3ZmB7K8AdhzTzn0IA2DltA8CCJ1BSstLz8wu70oLO7ZSmfZ+HELmbAYc7ymkONEXonMtcZat/ijB01TqmRbjYwU0Hb5qHPMHzEJ5bNGd4Vic6fAeQ=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/intel-d-serisi-480-gb-bellege-kadar-cikiyor/"
 featured: false
 breaking: false
 draft: false

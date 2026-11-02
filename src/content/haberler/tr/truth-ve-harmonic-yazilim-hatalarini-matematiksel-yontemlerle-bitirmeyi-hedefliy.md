@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Apple Aktif Cihaz"
     deger: "2,5 milyar"
 kaynakIzi: "v1.dYmYTsZz4B0BQ3LH.gerDZaatzYslNizgHBMUedtKSgIE14z4tuAKoV1IoxhtDZ2I8ZVzqCi26suP/gVoTBfFnfiO9p/mB3uMzotTM0hKF+IdM+axVDB/e9MSsaHf63SYHGFSLXDbgWgR2dMDVcmIlD/TjRlAQfayYgVV1a62N2JTO1i4f5gRPreZk+FkNQLUMOLBj/detYM="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/"
 featured: false
 breaking: false
 draft: false

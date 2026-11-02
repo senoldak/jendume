@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Veri merkezi yatırımı"
     deger: "385,7 milyar ringgit"
 kaynakIzi: "v1.xcSQzAzRMCFZuEAV.WQT+R+0Mqw25nkLTQVtJ4X85XfYkl3i6BEJeRjsC6J9+txu95339J8P2+olcjgaWlPNWQQubjw0RRnKCeuYrm2Fxr36qvBB3PQ5pJkToBKjneReOBd6nQUt42L9E5xbHVV7mF+vmpGiF/w1dlcbkCxXOnw81HWF8"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/softbank-malaysia-50bn-ai-data-centres-anwar"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "The first program will launch in Abu Dhabi with healthcare firm M42"
   - "Future projects will cover cancer, heart, kidney, and rare diseases"
 kaynakIzi: "v1.JqGFxvCeGRTwSCxb.jQ2NA3aJGbcZQfTt4zJZk1m3TWG80vDcyPOdyFsq6hAsRsl8OeT1ZyLe1A3Qbvspig75jIAKF0IGaaoDa7p1jLJzUyR6avU2JF5WSiydcfOS7J1PKZPXeWKbc3SJ6Xzn6HiaDAQ1GqGMewhsjQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/astrazeneca-oracle-ai-drug-trials"
 featured: false
 breaking: false
 draft: false

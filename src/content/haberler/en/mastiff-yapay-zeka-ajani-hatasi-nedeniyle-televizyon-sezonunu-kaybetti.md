@@ -12,6 +12,11 @@ key_points:
   - "Broadcaster TV4 confirmed a technical delay pushing the release to next year."
   - "Production teams must now recut the entire show from raw material."
 kaynakIzi: "v1.xwDqwXJLChzvvOSe.GpH9mMaVRS5tZ9yN/sQPnqKCON4mxsQwoKdYGCbUADuXafUixn5Jy7hxPB/LZd7T9zkoe31aVU7cEIT1h56cNQG7IT8297ihVsngxz4ZJXjd8AZr241Gal9gLadoIYcChil9vU/TkgywS+DKRHTWRLFLrmJTmPjyUeAMC/5Cz7rmwsXHa1dlQNBinbO/Uq4cemGX7ziJAeB0gZQu3OXXXKqoXaNKctrKE0sg9zBkww8S3M4wigs9Tq4+VUbxK7Ksf4tdZ25rhm9Bmru0VhcQvKtVPO20FSrpKo+uhVeXlZhd2yjB/uKKuuSwuCMT6sDoDwKIKj7nXzhTcCB/zTKgMAvExwyqoo2GPVRDTqCb9/3lsFI+4aCs9UaEkQi6vIvHqfyWo69D8uw3UlbVy7vCg4XjoPVqWwogr/QvByKtpx6QRC5IoTxuP5qg4oHUD+/SzfINTv0VsSaC0F8F"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/ai-agent-deleting-tv-show-season"
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/rogue-ai-agent-reportedly-deletes-full-season-of-swedish-tv-show-premiere-of-the-challenge-postponed-with-hundreds-of-days-of-production-work-lost"
 featured: false
 breaking: false
 draft: false

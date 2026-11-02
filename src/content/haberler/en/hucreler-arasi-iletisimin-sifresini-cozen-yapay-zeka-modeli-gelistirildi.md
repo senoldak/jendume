@@ -12,6 +12,9 @@ key_points:
   - "Researchers trained the model using a large dataset of human embryonic stem cell responses."
   - "The system successfully predicted signaling pathway activation in developing mouse embryo tissues."
 kaynakIzi: "v1.hDWHK48gOAQgpiMG.1b8u1V3pJ3bhQaLBBnAS8jY3cImkgKg9iBLlGfeDTNHGuqLfXw75iBDAqeiYTU0RNu+2QTAhMqhIqE2J2Q1eo5+dXluUZmCAf3zL7xJ6UOLVcLTyKOsrToRa5D5N7pUtI7jpbPCernLOJCPCQ15Oh2zkqBJiaTn3r2yMryI="
+kaynakAdlari:
+  - ad: "MIT News"
+    url: "https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015"
 featured: false
 breaking: false
 draft: false

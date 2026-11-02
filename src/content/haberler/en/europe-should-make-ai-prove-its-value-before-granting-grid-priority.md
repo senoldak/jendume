@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Demand reduction"
     deger: "30 gigawatts to 13 gigawatts"
 kaynakIzi: "v1.4JVu3RH5nhx69QGK.uILYUNu/q+u2lIl5W5Tx4Gd5gRiulSKkAJn2s9y6SiFUaRdKTwzFZLF+s58l6gT4yvgGjk2ZZ6OaEil0+4r1oU+YVZXy5uJ1ZE+L9yVEobHoaGPACWHbKF72IgMU6k9nNBuSBSaIut6Gw7pe3yEuxZqoe5gyFA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/europe-ai-data-centres-power-grid-priority"
 featured: false
 breaking: false
 draft: false

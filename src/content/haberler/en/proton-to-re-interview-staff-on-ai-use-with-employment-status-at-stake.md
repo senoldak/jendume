@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "AI code share"
     deger: "90%"
 kaynakIzi: "v1.cja/yeWJ6NxD2lg0.rMisjGUJvaCchFQxANimo/6OaliKW1m/iRUeWIQ2jPZ3G9u1sN/bP2CkWPXLjRsg83eX4g1sDgf01ld5kbJyt+t/vgatLSCR74Wuqbnf6IS7clHXn6uFFuVuGwA1fXfGnCaErzl+U5CWyI4KOJ3TeayR2agq0kO+eoaoGQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/proton-ai-re-interviews-staff-andy-yen-404-media"
 featured: false
 breaking: false
 draft: false

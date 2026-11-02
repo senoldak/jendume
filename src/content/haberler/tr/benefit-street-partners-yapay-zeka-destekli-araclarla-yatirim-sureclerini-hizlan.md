@@ -12,6 +12,9 @@ key_points:
   - "Üç yüz sayfadan uzun kredi anlaşmalarının ilk analizi yaklaşık 20 dakikada tamamlanıyor."
   - "Yapay zekâ analizinin ardından en az 1 saatlik insan incelemesi yapılıyor."
 kaynakIzi: "v1.1GLHw7bCa8bribb+.uFBHGDRIvqtNhxRK4JWBa7ycGCx6d+mEtByQnpUdQTCwRO5T64/Wmzef3mYji2U7tDyhEsg/G8DkmcNDFat3s03xnJsN5Pzlu6ZfIujizbEiqsL6dhIv6AP5WrzGSVI="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/benefit-street-partners"
 featured: false
 breaking: false
 draft: false

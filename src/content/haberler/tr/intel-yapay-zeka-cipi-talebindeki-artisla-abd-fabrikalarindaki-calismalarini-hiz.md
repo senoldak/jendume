@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Yıllık harcama planı"
     deger: "20 milyar dolar"
 kaynakIzi: "v1.cetRmCr2JP8qjl6x.jGUbV3jODMoFxROKmdFrYHKsjvTl1QohEWdgQpi0jxQsWXPogt4AcueSYVpVpPGfe71ev0PUv0gA3se9rDl+r/iBTCaQBMTJ8ma6cBqLMBfB72pM6+WTkhjyRtilvwlwHSTLl+kjKuH70hTxTp8="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/intel-fab-62-ohio-factory-progress"
 featured: false
 breaking: false
 draft: false

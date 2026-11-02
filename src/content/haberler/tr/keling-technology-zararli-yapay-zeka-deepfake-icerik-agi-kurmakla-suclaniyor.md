@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "İndirme sayısı"
     deger: "350.000'den fazla"
 kaynakIzi: "v1.Bn/YnZ9m0dU3Yueg.NV4Px3pnagLr3vPeGTo9TAWvp5RI9Cr4pkSDdCCVK7gBRJ206ntK45nokBOQgBvOgWF04KupHtKrLAm5Qi3Ex2tXfN/fxC4b4GDH4PKCl/FWIKP3AvMGZevQLK8TU9O9gYG5Ft8FQXYZErZTR0MWFpJRxdgBGKranvM0VaZxyMb3m/BbfVB2VP0="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/"
 haberDegeri: 72
 featured: false
 breaking: false

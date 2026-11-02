@@ -12,6 +12,9 @@ key_points:
   - "Yeni platform, dağınık veritabanı aramalarını tek bir oturumda birleştiriyor."
   - "ProtNLM modeli ham protein dizilerinden biyolojik işlevleri tahmin ediyor."
 kaynakIzi: "v1.mPQQBbE6u667S2I+.pNYUh8C8gtRErlazmeZ+8V+S3V8G5N/Zo9hd5Yblw1ka6ezRMZusgqNyO/ZjCKbPmJiN7D1dw+bUJM5ruOMyKsuwy/9Z6EpfVyQ5Q1CHJLdm+NVEUNG7OES7pLIdr4sxTmR67YWWNa3IS/D7GchzRuw2ldO+"
+kaynakAdlari:
+  - ad: "Google DeepMind"
+    url: "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
 featured: false
 breaking: false
 draft: false

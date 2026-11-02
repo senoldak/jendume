@@ -12,6 +12,9 @@ key_points:
   - "Advanced technologies of 7-nanometer and below made up 79% of total wafer revenue."
   - "Mass production at the second Arizona facility is scheduled to start in Q3 2027."
 kaynakIzi: "v1.vbpWfdcB7i7tjuD+.8oiLZ06T5AVGYo/eIOz9Fdw1fVRIhiKC2qOWicckYddUFjCmZ8pE8jgVnKHeWYomrH4MhVcj97dve0FUg8PlLYkT8Rzw/5c/znbiNll+JRv92T8YSJEaLRqCLxdTlhdWb3AZDTBBUsiJt2AqJA9oZwHe69K3DY+ARgcW3h8="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html"
 featured: false
 breaking: true
 draft: false

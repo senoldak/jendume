@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Accountant cooperation"
     deger: "70%"
 kaynakIzi: "v1.7D71rTpbEdOFniI+.iKG7v2mNp/POX9XLd+2dZP11Rg+cTr2vB5ABKBtAaSWPOD/4ABNGg/IHKfg3SuOHiiy30ZFKjB84cwnnOsHe2xSEld7P8iqz2HVn3L1k8UySNob5jP9ewdugycEUgLQdIfexhFPOg/SV/W9Rn8oOnIuTUkvOJeHpGT/xFKw/cPCyCxZi8aRPVzGKRRs/1L6i0VVqCQ=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/mid-market-erp-how-intuit-uses-ai-avoid-failed-intuitconnect/"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Sunum tarihi"
     deger: "24 Haziran"
 kaynakIzi: "v1.2nvXJPAUvi2WNhvB.0QZFRiqfL0WgiwwS1wmRqJJXE7KqbJPbpRSF/nGz6lKndNEDiaxXcZBjBPX+Lv2SlvNQyljCEKkQtYcQh0sKTD2xWi800hjJ9pe265+DnAP5nJSa4gd+k5PpKrTosMCRYaX1yV/3x9qhY6+BAONbejIsD4mQVzMph8owCCoJ/dgug2yhGZHFNxiJF9PM+uUIzzc9bicbNtgSm4+foQ=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons/"
 featured: false
 breaking: true
 draft: false

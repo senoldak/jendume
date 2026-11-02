@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Brüt Kâr Marjı"
     deger: "%37,3"
 kaynakIzi: "v1.TO00jnhKG+hxWtj2.aL9BW4Nu6885dqy3y8hFaBKfFY/oM1u3BmRnod+eXsBKXhj6ECevt6zbbLAZn0yHxXQgOY2BatOY6NU6kM2Z1Dmbl65spulcI2eMhXqzzPVlhsFdTNnqgeJH5Ke9wTqDjC2+aQzm2K8loNyJVzu4ekREc6O6uyGNzcDfFlSC"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/stmicroelectronics-q3-2026-results-ai-data-centres"
 featured: false
 breaking: false
 draft: false

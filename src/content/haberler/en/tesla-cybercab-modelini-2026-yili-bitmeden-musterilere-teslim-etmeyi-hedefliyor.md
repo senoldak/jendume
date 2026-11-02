@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Zoox exemption limit"
     deger: "2,500 robotaxis"
 kaynakIzi: "v1.CEOJjOLeLos+XiGe.YjlGw/ka3JFfssxTjk7Gz96mblueBLaqrlcp6SgT9KdLdhyfCPL/gavNnZUlejVsnc+vHCn3hlbUrrLUwI24LWK28l2iCdYdMjKTnX+kwrHBgisHPv75cHLNaYUMpWs/V4a8RWKhPh54NquiYGpDJyMQLGiZ+7TC9g0="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/tesla-cybercab-ve-robotaksilerin-onundeki-engeller/"
 featured: false
 breaking: false
 draft: false

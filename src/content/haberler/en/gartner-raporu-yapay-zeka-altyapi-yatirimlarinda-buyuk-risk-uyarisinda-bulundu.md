@@ -12,6 +12,9 @@ key_points:
   - "More than 80 percent of neoclouds are expected to stop operating independently by 2030."
   - "Data center owners need 8.5 trillion dollars in revenue, but projected revenue stands at 3.6 trillion dollars."
 kaynakIzi: "v1.nfkLSx/uhB3ZUSWQ.cdHNaePgHHdmBz8Ogc1vvK120AvKPT5wZetyjdUvitZdaNXryE0mLoZRLnFf5ihcUh8jDd15VCGwBWSrci3p0lv6RCZKIgTrSl3OJw71eJUhK5d9MBP1YmqXKjVeXP3m49ELbwtLUxEXmpqkgUumx1fL3IfNog6tGqjdkWUZWTR7vq8IxyeearaxpOQsCp7m"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/gartner-ai-infrastructure-spending-3-5-trillion-write-down-neoclouds"
 featured: false
 breaking: true
 draft: false

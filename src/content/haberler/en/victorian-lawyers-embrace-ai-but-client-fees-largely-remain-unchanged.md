@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Surveyed lawyers"
     deger: "2,221"
 kaynakIzi: "v1.0S8DmNCHO3PXEfYH.fDN676fmz4G00dWnh+hpRy6JhUMLX78QuZAWJCESfVUStmDVGX14bS4iA80DUHiUm5JeAKaCXw/Mz0vhPg/3hgl12UbwIYwOyycDaR5CxlzyIdl1v4Qffc12gxi7qXfl7SXnMwSXXCt9X8Yvm+QngoZ8IstqNbW7fqrev4jlUG4="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/law/2026/oct/30/victorian-lawyers-ai-clients-fees"
 featured: false
 breaking: false
 draft: false

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Quarterly spending"
     deger: "75.9 billion dollars"
 kaynakIzi: "v1.VfFDsWs7e3SsE05o.RufXPBge5LjhNIn+m5xp1Fjx3Q5HNVXT3Kp7Ypf8ExkYQLCgJS0SXyT6jNRpW5DPSKtmrIldR7fChwOxb+nq3/iemHcnVw7K7Aex0slWPCBDnCSPo7LP6VrrLAUpqCh8FcuRQmkV5aD9AHThfy0MwmTX+C6A30QudQ=="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/aws-her-14-saniyede-bir-ai-hizlandirici-kuruyor/"
 featured: false
 breaking: true
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Cloud revenue"
     deger: "$31 billion"
 kaynakIzi: "v1.3ZE7aEVkHYDoR0Cz.a1BIHqZ5P8A03dH3D82Q8SZK3LSZWUs4e+miBB1jHqCF+bM0qcIc5I/QRAANzUHeGINbBdleWOold/t4rtctg31lA1hxNh9gCFx6qZej6f/gfb7adPAdsOetcqAZ4mC+gngtzHhttxHsUIXIIGSNhKSpNZQ1cNaq"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html"
 featured: false
 breaking: false
 draft: false

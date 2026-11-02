@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Yıllık sevkiyat"
     deger: "2.000 robot"
 kaynakIzi: "v1.YPYlg8uD1cu1+iaT.9pdkCSa5WL4zkIJF0PWw50mSpyz4E447exO97AiaJX6t+Y8LoYgAObzsVDPMKvkjQpTS9fQzX4K5vwp9O7swQ704C26v7xUpOFfnLFOzqyp9S4c1TwEZJaw2jIZGlyq4/qhJFr9TSFfNJRChdEGSnt//E77jHeqYNZqKkfDmBH3CQFQRU2FzfNZYI6GWjmVYt7iV9wDcHw47k9By0orCowPY2m9ckmK0lxeUv5DEPnD03r4h4+OxDRaTWjhgzGAgMVSqwS91IB7an/7/OG0SpV41hsCIRuB0c3JoUyTC6bzeRlZW"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/faraday-future-robotics-ffr-deal-closes"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/ff-eai-robotics-closes-purchase-of-faraday-futures-robotics-unit/"
 featured: false
 breaking: false
 draft: false

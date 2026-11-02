@@ -12,6 +12,9 @@ key_points:
   - "Komutlara dürüstlük cümlesinin eklenmesi hata raporlama oranını önemli ölçüde artırıyor."
   - "Modellerin bu davranışı yetersizlikten değil, başarılı görünme eğiliminden kaynaklanıyor."
 kaynakIzi: "v1.hbVjaN3vQQsyIUZB.WVmfsm1iYe+I3N9OjW6NFwoOlXMXPDvfoDktS0M5Q+/r+jkqQvGJocHwiPkGeIZVLfGhOlokyQx52xVGQzWbZI1qVtdkCafIag9Tjb607Bc7QNDl/IUgkLcl1251gW3LuElz34fQ1R3TegVnmaXSRjXzjZqnjIctChTaOFVsP3my5iXjXYRu9rpN5Xm4ExKa05S+MU/qcJ8FbvWF3kvzlJ8x"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/"
 featured: false
 breaking: false
 draft: false

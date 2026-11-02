@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Türbin gücü"
     deger: "8,3 MW"
 kaynakIzi: "v1.e1yadMsD/W6M2DqL.W8cTLLOal0qpOM3sprn9497PIMXnCYjXH1zKpNsapE1O9EyHCMJ0T7ZYPFLxbQ7htKbRWr13jpoND3CMA3N/ZDm2T0CsSSHXzM8x2QcZTnVYpTQhaME2Ic+kg18AFDKdzIx2SqsIlYul6prmevenYyGOLUysOnhZ2FDmbm8JJmFzP7/vYjA="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/ruzgar-turbinleri-yapay-zeka-merkezine-donusuyor--211875"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Processing rate"
     deger: "500 times per second"
 kaynakIzi: "v1.NOkKQfhWGe0TsmfJ.s8CCkUxwO9CBaI9wxvTX2EOJRvzRzUtGNithMogc7G5iawVT6lDvjA1tbg1j51P2/vNAh1+s6c5b7+5GiYRcfF8cPQETcEfqyBxWAru+NWG60vG6dLncxYaFsLbLb/Gt/QpVJN4cua7IL83g0Q6BJM2kLGIQTES0LH6fGR6wzXeby8QQQsYUemqM+42+NuhV/oNxssVF+hmDpsIWEY8="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/insan-pilotlara-karsi-yapay-zeka-monorace-dron-yarisinda-rekor-kirdi_184769.html"
 featured: false
 breaking: false
 draft: false

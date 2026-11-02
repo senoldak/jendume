@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Tazminat tutarı"
     deger: "76 dolar"
 kaynakIzi: "v1.b7VtrV3uPPB2r3k/.cdGerenA5ZDjPF5/dDuQDOLoNxayOhheijP4s550AodWX9jTev5q6lcnlt7z2YQJsZMKtyTc+4ZJFYtcdmj5yp0K44qZ5LCi1lkXAeUcp0WRNd7gmSDPsv6gTfcMFLVWHARA7WclHpCE1JNCnV/UQqQXWVdY0BVwbijgZQh3FU8k24WO4vLhznR3X1bxCc5qR8p21XUfmZXl7E80tMIlVKCpVkXqf/NW2sg="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/police-are-using-ai-to-track-where-you-drive-and-your-next-road-trip-could-raise-a-red-flag"
 featured: false
 breaking: false
 draft: false

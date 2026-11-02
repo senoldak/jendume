@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Microsoft 365 kullanıcı sayısı"
     deger: "500 milyon"
 kaynakIzi: "v1.rtCHRdsYtJSM7JcX.El0aMH8TvxUES9yapnrGQ8AIgi7nY7ZtAvGExZlEg9nkuK/kSyoQNsirESMC+3DUqA7XPqsepmKmdNgpt9tsu7XZJyWtR1g8bwbzvw9K3XkZ35rDSGPjoW7qAvshO2RH8LsCYw83GwWpGYp3Eej6mGTvRAtQG5HGa18oy/Oyu4FEo3dabjvGlNTUBdZ1weJpckZuFMWTz3sZehtbhqRx9TKdIelJbVuIFuGQZmp35e9UPVZs1zsDArCRpZCLKolWDIgA9XVSpJXBp4TAcAy/NhLLhEdXmb653tX2+8OXAcDp5TkZvD45ar2+Moq35C3mn7V6ES05e9we2v7uMQAoqJGmB3JGukHYJIAqRSuKgiDfSwLt"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91607730/microsoft-ai-copilot-autopilot-kevin-scott-charles-lamanna-mustafa-suleyman?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

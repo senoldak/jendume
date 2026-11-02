@@ -12,6 +12,9 @@ key_points:
   - "Price increases are spreading to sectors beyond direct data center components."
   - "Tech companies continue extreme spending levels despite economic overheating concerns."
 kaynakIzi: "v1.+Qiaiu6rl6NQeuI9.sTU7sd0yW8IilkWI4XlyvIvYkahwn36Quh532NHPRSWH2ew4OVRYjJKz2l/+u7p+mMqkqTgQ9Dc8wYOJ6nz+RNv5biaG+lcGZHwOAWdeNqi3WKlPenCDVrcPWgSuMKrRBe+Jm0gIaFYa9bzY7LyEwtFw5MRCaEEJzLTrtBI0GYz4WMVJ/+n2cPfxzUZO59I="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/federal-reserve-ai-data-center-buildout-more-expensive"
 featured: false
 breaking: false
 draft: false

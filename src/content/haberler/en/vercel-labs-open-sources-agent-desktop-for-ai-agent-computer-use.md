@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "License"
     deger: "Apache-2.0"
 kaynakIzi: "v1.bKYE8anXnhSJFyP1.Re20nlzkE0azsEYq5woOOx/e+LPDtPKL1RkgDMtv/lyzo5D8HJ1irjYmTPOoej04+mIhll/IE242IEBEBV+ohc57yCdvChZu3NfMVxwnhLzEFBpt7kzPyPolJYPEZ/u6gdYyepebXhWWCIWI86WBMjFXAi10dJ4Oxd/iWXcCtw=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/"
 featured: false
 breaking: false
 draft: false

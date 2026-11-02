@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Max input"
     deger: "131,072 tokens"
 kaynakIzi: "v1./BsIUCVUbbeJJe0U.SHJDdmiOzAuKF31V/aK08330qDhJA67pB14PsX3sMN3U3+nlC+0FvdYFKbWpMJQpVsA7hhyoidFHMYxAY1JZAZFioVQbg0fBHLdhC/3ZGNvNMSoHH/q2OLfrEHXRXJdqIHPheEF7yBqHGqpDeaBQuIuuRKTNdkV5NsS5gFvu8eYGcZ65bHziXuwecGC+jL0vkQ=="
+kaynakAdlari:
+  - ad: "KDnuggets"
+    url: "https://www.kdnuggets.com/google-gemini-omni-what-it-actually-does-what-it-costs-and-how-it-compares"
 featured: false
 breaking: false
 draft: false

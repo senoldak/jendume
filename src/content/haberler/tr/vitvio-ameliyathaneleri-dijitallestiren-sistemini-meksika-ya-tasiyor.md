@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Hedef Ameliyathane"
     deger: "60"
 kaynakIzi: "v1.l8xGPKhU//p++USs.emiNqZfBIfwiAeIAekeip/Hbce7ctKu+N+lEMBN+m7Qk3CDqkJ8GXDQg8wfnx/Di6yxFVIGB8In35oIlYLBsmPPynuVhkxZIscKHeEeiEJ0ptqCIUENyF6S+iv9uZNyKtiJm2lJbtvzN4nWbBql04m4SOXZTTYkwFG52ig3LJgaZYWaiCQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/vitvio-mexico-hospital-espanol-veracruz-operating-room-ai"
 featured: false
 breaking: false
 draft: false

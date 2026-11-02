@@ -12,6 +12,9 @@ key_points:
   - "Strategy focuses on utilizing personal data stored locally on iPhones."
   - "Privacy is prioritized through on-device processing and Private Cloud Compute."
 kaynakIzi: "v1.y81OL4haxXD9whBv.tesOyaMaBufmztfWRlPl5KwpiItHXpvE/hwvx0lVzWJzmjksCzdm2Fvo5n70X9cLuP6YLB02TDm5uMy8SeJ9ydzJ8vJzG5garkjIsbN5OIGPLYRkgpMXVEDmnmntn3uqimVKXDeCBHInYGZPBiosSoXIUZFwHjcg2EmJvyMKTl8xMU0m2uYusVC4eEaTNV1KPQqo3PcKSTihchbl"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/apple-says-siri-doesnt-need-to-beat-chatgpt-heres-what-its-betting-on-instead"
 featured: false
 breaking: false
 draft: false

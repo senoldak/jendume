@@ -12,6 +12,9 @@ key_points:
   - "Yasal düzenlemeler nedeniyle Siri AI ve Image Playground Çin'de sunulmayacak."
   - "Benzer bölgesel kısıtlamalar Avrupa Birliği pazarı için de geçerli."
 kaynakIzi: "v1.bEL/bKrzM4A2hkWE.r3jz758Zi8vJzEtvLlmF+V1dpQkE8+OSJrxokl/Q1JvpuyBaVmPDttHp+1leM5LtdVgBZOtApWjtbFu/esD4xO2DnDtXngW0mH3+7npWNMyP1/IU9Jq7XYboQQXX+31DaDGJ/kHINCOUUR2i6ulJtfyKTp8+aaLKn0ps6DsPILSPs90Ie6tV/H3xdN0dvSE="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/apple-intelligence-sonunda-cin-e-geliyor-siri-ai-yine-yok--211749"
 featured: false
 breaking: false
 draft: false

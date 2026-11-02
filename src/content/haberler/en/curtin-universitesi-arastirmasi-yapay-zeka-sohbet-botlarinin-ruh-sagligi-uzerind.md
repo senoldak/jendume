@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "First evaluation"
     deger: "2013"
 kaynakIzi: "v1.bRWtZvElItS3gNdl.mEdXGYFzUyfMzy8I7AhXjEXLCTsMFAs3bvB8nGCcvLBipr0XWkZvk7gtZGGhzizotykXhieQr3iG6Bfy4ceWvwLhEKEfWFMZvTuwvNMfNAWydU7GPqDwhCsQe3jh7imle7qch1J1SIRNrtZbucBd0tyKJQ=="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-chatbots-mental-health.html"
 featured: false
 breaking: false
 draft: false

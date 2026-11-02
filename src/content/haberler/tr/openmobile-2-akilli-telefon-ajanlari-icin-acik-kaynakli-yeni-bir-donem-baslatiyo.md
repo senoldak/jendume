@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "SPA-Bench puanı"
     deger: "59,6"
 kaynakIzi: "v1.40vXKJONPmer6vne.4eSXZaJxc72Mw2CFYjvKgRN94YAg4o6wlMn7yuYxuoHJ0YfjuQhr7cQUmha2sYIpKRTHTsK7IfEeemc4JRtiQQtuaDSwO6Ctfxnb1thz2fuALBIKiVajBl6FYMzVtZmd9S1bN99RqTaM3Wezj5U2MjVhtY1pocESntnWDMvTGhecNFGLeCk4eyyQmhENSSn9/0R3PBmE"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
 featured: false
 breaking: false
 draft: false

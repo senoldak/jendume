@@ -12,6 +12,9 @@ key_points:
   - "AI-generated non-consensual images are now explicitly targeted under content rules."
   - "Non-compliant apps and those failing to address reports face removal from the App Store."
 kaynakIzi: "v1.rksBaGFwBh3Wwnyo.RgwhZ7Co76lj2Cs618J1+niLFd7qLqy4AVe18tcmUCd/S2+TeS6k2KIRPVcMRuelKQydK6bG8QBXHq9HLMKTi3oTrKIEg5DAiFN/FXRLynfg1ZPWZfcoONytNeNdXK9g9ZGfYrjX8pOWWczISd0ePoGR6T3hGdet"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-app-store-guvenlik-kurallarini-netlestirdi/"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Model kalitesi"
     deger: "%97–%98"
 kaynakIzi: "v1.3+eIl3BHSx4kbIGq.N9NbYW+AOjLNarVsgwucT01FX1KLb2kigxZzoYZGtK5kZFQo/aio5G47n82w9YRqUa45VD9f+mApervcocejY0X4s6G34lqhkKbx3DiDXrwE2nTR7F4pCuRnPT0HWdmzWpnUN1wGw9xaOK5a"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-bug-ai-flaws-smart.html"
 featured: false
 breaking: false
 draft: false

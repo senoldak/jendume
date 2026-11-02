@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "İkinci çeyrek büyüme"
     deger: "%82"
 kaynakIzi: "v1.K3CQuyCdLAITCINe.4r/6PiV+bopMRaQRgDnn03pE5ucMdgaI6aCxqnwr9tEGHCALxKbd8VT7XprVt7zpt5v5WBOZ/49JyiRS9vvwbd41YWm7Lb1dljQJB+xNHeftEPBRumBPjdZI2Xjj3zvKmFJYeklVk7CzJahQX278t325upnH7GzIelZG5JgWes0GaNiyQ+uwA14ca5imzuthB7GGPCOkgfkbTe4qLg=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html"
 featured: false
 breaking: true
 draft: false

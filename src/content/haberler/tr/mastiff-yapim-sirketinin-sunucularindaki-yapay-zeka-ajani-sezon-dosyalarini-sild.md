@@ -12,6 +12,9 @@ key_points:
   - "Yayın tarihi teknik kriz nedeniyle 2027 yılına ertelendi."
   - "Olayın arkasında bağımsız bir yapay zeka ajanının olduğu iddia ediliyor."
 kaynakIzi: "v1.YTN0WuZRnVq97f/e.5U3pNk3D5iuKtjIrvV/Yo93lPYdGOcTrqdop89VQzeqz/CG8S/cNoICXkuDcWCHXhbxT90w3xg7DFutbWG6xqbe++E0iRCGFqybRk/Fa4VgLK2reFJn1YmX7qOvo3ltO5C1kDMZ+RmLiuiUX30+yIFuxHXJ+zkG5RyC862rkU865T7RX/6nOy+uhjaDhME2IpFaFp1+e2Vl96skb+mOlvQ=="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/isvecte-sira-disi-kriz-yapay-zeka-bir-tv-sovunun-tum-sezonunu-sildi-mi_184651.html"
 featured: false
 breaking: false
 draft: false

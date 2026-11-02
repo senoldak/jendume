@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Yönetilen varlık"
     deger: "2,5 trilyon dolar"
 kaynakIzi: "v1.QfpAbmdxBqldTxDf.7rBY7lQru59wI3R+B3bfUg/8OESVLmZQaAuNknqUW78qYFLS+gkq3VICLAnto1hhoudoZbezD3A5DPoDdvhJKd3Ons3OX5A7Pq73gmB4wnqGV2w9T3o7stsRdt4Yal6iRmK2K7in543gQh7K0J9kVCD2Nv72xXYbIIKUEpLm12Xd"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/invesco-anthropic-claude-financial-advisors-connector"
 featured: false
 breaking: true
 draft: false

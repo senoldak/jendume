@@ -12,6 +12,9 @@ key_points:
   - "Düzenleme, işletmelerin internet sitelerindeki içeriklerin yapay zekâ eğitiminde kullanılmasına izin verebilir."
   - "News/Media Alliance, kural değişikliğine resmi olarak itiraz etti."
 kaynakIzi: "v1.rfL9L2ltIQvl72Y2.vIX4W+Qhh1vpujbxeQsOiak+jpPEGKTfvree1T9vJqqc1wKtlFO7ilQHTRV6DcwzUshMbv0HRC+O//Bc+My5jE6kZ0F9GZKrF5Y2UL4jnVtrWVon2Adv7Tcc8Mtzj7Owecy8R01+Y3Tqq+ha65yvVOnFLuEAR3p8hv5pYQQQ7hnp4SPNS0LF7uhv7AhRluwI2W/k1KGxV8MHKUEc90jtp2gHu3YGrWjiuGfYFi5ghju33ZRA/qKF4xSqkw=="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/metanin-yeni-sartlari-haber-sitelerindeki-iceriklerin-ai-egitiminde-kullanilmasina-izin-verebilir_184711.html"
 featured: false
 breaking: false
 draft: false

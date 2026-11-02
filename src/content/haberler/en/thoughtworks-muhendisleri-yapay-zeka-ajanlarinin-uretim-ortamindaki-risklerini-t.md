@@ -12,6 +12,9 @@ key_points:
   - "Manual code reviews cannot keep pace with high-velocity agent outputs"
   - "Organizations must treat AI agents like new hires with restricted access controls"
 kaynakIzi: "v1.fV9WHaA2EsjKHNCC.SupI0xoKsnNyQqkPxiArVYThV5L9WDZZ5ELABKExV2bz84PxvRd0TCJo7gNElBIFd+ZHVYnEdCjMGlAZjC1JEq6Nc0cG7ZsMAeym80XUVpyW3iG95oC2ENNtnnE1StVocNwe2P5skT6hP8EE6SdXCaUQMDo0oTDlsJItyxCTM5te3FDPas89p2oQ0GVal3I80iDYkneZIyD/FMSwc7WpnWs57nbr3IVihnc6aR3nmT5M19bAR7flJCvXPqPtKaDyxN+uRNFw05U="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/ai-systems-production/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

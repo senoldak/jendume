@@ -12,6 +12,9 @@ key_points:
   - "Meta Muse, OpenAI Dots ve Grok Bot gibi popüler yapay zekâ ajanları destekleniyor."
   - "Her giriş için kullanıcı onayı alınıyor ve yetki yalnızca ilgili oturumla sınırlı kalıyor."
 kaynakIzi: "v1.tapzpoTxXo/YV5pO.uylgXIMbvyCkrqt8Mt5oR/O2CFim9vy7AQ1nuzFCLrmPrUGyrBG7ManY2liIWvDuPRQowWP24SRyqTbqmvXcDicz8BqWDOD/nWEfe9X8naXbSYcsGFfnzeXYIyA9YlrqXngSmzIiZrVWtt6BhBCygOqESat+kJKVHw=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2293844/1password-opens-up-ai-agents-muse-dots-grok/"
 featured: false
 breaking: false
 draft: false

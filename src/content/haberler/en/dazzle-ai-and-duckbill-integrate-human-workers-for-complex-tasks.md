@@ -13,6 +13,9 @@ key_points:
   - "Startups like Duckbill and Dazzle AI are integrating human contractors."
   - "Duckbill launched an API to connect AI agents with human workers."
 kaynakIzi: "v1.HGhU/o3r8+yEO2D7.2b1KBpX0VnJDyOsz95pzZ63nleBOsqaXB7DlDMk7JwnBU1QvmkV10lYDA8+o9zOQMzD5GBENFUQWKSJEWhpM5viRpBgbr1ghubiy2enHNiYhTR0zI9MqGWg9MUdfOaiu+aukmVWvI4VuPgACSmjHaizEhqhrS8P1v+XXATcw"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html"
 featured: false
 breaking: false
 draft: false

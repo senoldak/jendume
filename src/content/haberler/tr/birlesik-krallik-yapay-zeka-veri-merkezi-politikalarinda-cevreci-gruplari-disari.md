@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Ayrılan üst düzey yetkili"
     deger: "38"
 kaynakIzi: "v1.y2z4a7+vk39K3nLg.O9f7AQi/nOomXJ2NBOXY1gp5kjXc1+qq2UkzQklH3ModI0DMDhPKrXCbs4NRtHG5qA6nBja4yipUsNmciLCjLMUznHi3RtW7MrzbLWneptUPpFwY0vIxiS0zxbdwNU+nIWcYD4oTS4Hea59FQmRkAZ3oTFTNrhR67p5AH2lqXSEENLXkLWoChcGdlyxupU3C7EKK6TioZDrjxoOvKb92dyhRYXMLGqpHzBRYucSE8bUqkg=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/uk-news/2026/oct/27/uk-government-environmental-groups-ai-datacentres-expansion-plans-investigation"
 featured: false
 breaking: false
 draft: false

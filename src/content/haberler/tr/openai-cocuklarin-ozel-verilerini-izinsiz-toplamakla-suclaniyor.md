@@ -12,6 +12,9 @@ key_points:
   - "Dava, reşit olmayan kullanıcıların verilerinin ebeveyn onayı olmadan toplandığını iddia ediyor"
   - "Çocukların kişisel sırları ve duygusal mücadelelerinin modelleri eğitmekte kullanıldığı belirtiliyor"
 kaynakIzi: "v1.cjIj6xTRA4ectMuM.Qe2JY60v+hzKjiexnZ1PHTp8OcE8hTWTipxWa4XBu1p7hQiWVQc1J5BqA3OG/4vf0cfrV5qdJAIgh/jAilE0topGhfdzihqzXQEp3T+uoXAEbOxQjmKRMJV1nBCWjvIcBr61PfhzFRB7x+jX0a3pSJP3RdShVJR5B2PPaD/4mMT+"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/openai-sued-children-fears-hopes-secrets"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "1 milyon token bağlam penceresi desteği"
   - "Girdi token maliyeti milyon başına 1 dolar"
 kaynakIzi: "v1.YLIG/hpriCOfuTSl.wD001WIn1O63LvdKi1wJOTNRSHY5PVbqT/7cKCkPc/oZAsEeIkLV3g6XpC6iUWkt/F5k2zxOAG2xsGDfFtqDbadoypMa1p9sVk6a8A8Eem2KFXR8eVeqjA7qiNrOauXEsG37Zj2h2FK87QaT3uTb+qmhshJ0l8Jmgqa2CahMQH8gBijXfb7PhdtVq9HmSb11GilQXVeDA+enAhE9VneNOuA4Yws="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/"
 featured: false
 breaking: false
 draft: false

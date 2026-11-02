@@ -12,6 +12,9 @@ key_points:
   - "Company attributed the issue to a model hallucination and product bug"
   - "User stopped using the application completely due to privacy concerns"
 kaynakIzi: "v1.RaU2KxqgoJO4zC+E.6fXRm7QEKi6lXmaDboMDVUqXgTgGTYzOBjkWac8i+eVHxBE+pEqqhLHjXTDuKQSVp5RCpvHDnXFbLuoTAJ9MhPh9BAqbFE8j7pklpS5Sy6WejapjVw5TEibtiNcrHDNy6xGpcGDtAhMrM8IShXRjcZNnwA=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/man-quits-meta-muse-creepy"
 featured: false
 breaking: false
 draft: false

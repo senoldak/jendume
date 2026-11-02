@@ -13,6 +13,9 @@ key_points:
   - "The system pauses idle environments to reduce resource overhead"
   - "Credentials are managed externally and governed via a dedicated gateway"
 kaynakIzi: "v1.ZikbiE9OqvcIbLRx.omJbt4S0jV8NNJJXexxovfDn3kNrPNU0ExBgaXZyrQjyxIAMWlNMi14sLWFD2N4GmUwg+0s6otUm8lAvXCIZOnAkGwmpmKkYkH+A+oUfRG+/YGJ3yu2OKDclZYpLlPS38FLEZqndasCXgIqjKgCCb8/Etxmfaec="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-agent-compute-engine-yapay-zeka-ajanlari/"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Cloud backlog"
     deger: "$560 billion"
 kaynakIzi: "v1.JQXGbyN7lOQ4a9iv.3mRmmKsRGIKbUt6OMWvZuTLU7gv6UZdNNWaIeWxwQYNMFiuE0weDaZ61n6d5en0XaiethdpE5kvFnu/rMu9ht/MiFZIzG7ysYk6uo6gyx8gR1oxCe0XFDxlHFTNqPAm02P+Vxi8rE72oZ07ExnLQe+3aw4B05JfLJjLK"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
 featured: false
 breaking: true
 draft: false

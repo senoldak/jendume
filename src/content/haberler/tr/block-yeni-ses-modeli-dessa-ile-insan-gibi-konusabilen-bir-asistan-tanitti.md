@@ -13,6 +13,9 @@ key_points:
   - "Tek bir NVIDIA GPU ile ve tamamen insan konuşmaları üzerine eğitilmiştir."
   - "MacBook M4 Max gibi tüketici sınıfı bilgisayarlarda yerel olarak çalışabilmektedir."
 kaynakIzi: "v1.Jeskbr8pONGpMVok.VcZhBiu5RR7aFdEE6U2k0tlRuTv5mkrR0sdr+J9EohbeL7zMGJsg1FPEMxxWQGQqA3IfhyWhrqMXoHtu9BPnHS8w4j8qdLVyJ/MylhT7iIGz8L7CnlC1eNSl6IuMOswSFgKa2NKwh2V0uidvXT4e5iVy3NS9CoefUzNJxk4e"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
 featured: false
 breaking: false
 draft: false

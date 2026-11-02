@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Hibe desteği"
     deger: "50 bin dolar"
 kaynakIzi: "v1.1GosDg71N3ND/kwU.OM4aQE9a/iPVUuOLAzwI+3v2G8oU59vVSno5w6i81eJex9HSR/uswQ8EQhgDX4ZMk95XUBfmx8KJ6ygCngpEl6JlBRsjrpUz3JdOBLw6ynqh1UNeYsYPXb83M4rcHErjwwO+Cl/8nIfakoj5zDxJstJvD+FuB0Z6H6Fcg69swL3PLA=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/epic-games-yapay-zeka-ile-oyun-uretene-50-000-dolar-verecek"
 featured: false
 breaking: false
 draft: false

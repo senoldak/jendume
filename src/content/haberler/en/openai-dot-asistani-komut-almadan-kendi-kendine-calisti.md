@@ -12,6 +12,9 @@ key_points:
   - "The system consumed a total of 307 thousand tokens."
   - "The assistant operated with only read-only permissions during testing."
 kaynakIzi: "v1.gwiTZbgiFIF8sK2A.kCvLjiIRCxYws5HUVtA7mhcUQlPVhvBdGPLD8ZhZrCnNtWiCpWYenlPM9vO07GjH8w4OHAB2rtw9CZzvW1JXgSiWwvgrI2ce1Pt2os0QnnCNphCHEVoDT7PX+k7gX3VVeMuskvElEf4ZMKNk3Lb4WZGfnqC8xFg5s7FF9lL90t2YlJBJFYxS1kZ4wwq8C/wA1v7DEf3GoPpwXs8DT3Btv2fMciP5kj8="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/openaiin-ai-asistani-komut-beklemeden-calisti-bir-gunde-307-bin-token-tuketti_184608.html"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Formlar Gmail içerisindeki verilerle otomatik olarak dolduruluyor"
   - "Kullanıcıların manuel veri girişi yapma zorunluluğu azalıyor"
 kaynakIzi: "v1.NdfIo1uvJa7/SRT0.3bTYGKZ05FQo+ZRQSqjc07ylRpHGk/myxF9KnpCbGFYaYIZd6nHmAIN3RUSAAbTq3TvVPIEb6bO05EAFo2TWClVX5tvzrd3Z5R7/7Dh2lh8ZKY3c18aWYEJx/Y4dFqt6+LPWoykuezvgVc5UFE8iZ9x9PfuuIgP0UrTp6ehbO3vtwzTVxuFE"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/google-chrome-autofill-gemini-ile-gmail-entegrasyonuna-kavusuyor"
 featured: false
 breaking: false
 draft: false

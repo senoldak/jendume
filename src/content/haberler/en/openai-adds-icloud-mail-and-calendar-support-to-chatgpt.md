@@ -13,6 +13,9 @@ key_points:
   - "Available across desktop, web, and iOS for all account tiers."
   - "Pro users can also utilize the plugins via the Dot AI agent."
 kaynakIzi: "v1.r433xEJiciU3QZon.K8iXJuYUGcg+dMo3nFdIuLtr5GIkjnepHwvjGEgpI2P8x0Z33SxzKxCAGzHfYyGFmnXlq6u5rEUNVK5gYWok71unQBmQFhR+sg3ASzaTXe1/yL8KHVvhYGPP7ySL5LlOXeAk1WpwuSfzhyT+0ficf9wzXjtlVIofSzW5602ubXUmtoWs41/5WT6DuvU3kefseqm6G4zChJs8pvX7rfE="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/"
 featured: false
 breaking: false
 draft: false

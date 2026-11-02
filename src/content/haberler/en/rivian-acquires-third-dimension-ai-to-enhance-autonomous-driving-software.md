@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Seed funding"
     deger: "$7 million"
 kaynakIzi: "v1.h8D7GXG9jzzOaw92.AxUZpKpUU5dRozqGjSTon+3i4sTmeD88iKSIZD1W18Npe0MJdR5iBl1x89M1q9o/20fPHYvSL3jpxWgAWOR/cpbpY4rZigGGyay6jtslfpgF/CrNaVK6MkGizuANGhhq/NkTfED0n13OOBgJ2QUo7L7hyFTu4aRyX/HW6dfbfLuD7T5w"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/rivian-third-dimension-ai-acquisition-driving-simulation"
 featured: false
 breaking: false
 draft: false

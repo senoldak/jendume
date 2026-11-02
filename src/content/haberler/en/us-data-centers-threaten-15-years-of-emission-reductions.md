@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Data center capacity"
     deger: "1.2 gigawatt"
 kaynakIzi: "v1.oZ38/5/YO9duG097.L+y1y9d1FZYQJaEe4Z/Bjht874DdieQ34mwFhQJ9vXIXCqF+UT8iHmNiTW0i9I5gH9hh6ZDuQWbMiLcc5OCzWakqYxa7a6tl+fZ/ZhiXw07OS/Jkx5gWEUP5SaRh9qkVPTN17QSq9owC3h5qAH7jc7+6b5LxUg3ZLvbnF87t7MbRoy6+Tiqiz7lH7DY="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/data-centers-us-greenhouse-gas-reductions-emissions"
 featured: false
 breaking: false
 draft: false

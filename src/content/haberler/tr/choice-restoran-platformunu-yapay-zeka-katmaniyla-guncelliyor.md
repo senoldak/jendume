@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Yatırım"
     deger: "7,1 milyon dolar"
 kaynakIzi: "v1.hMW+PPjxinS6/Bp8.HFWzmtEf4yt/463cB72yBDKZ1UW42HUAxUN2wvi9P6RDMa6gVn28Xhhp5enLyhwkfUJbf5lhjg5oQehplbGQmoxiHBGXd12CadxYWnLX/3EfA7awp+ru3071PWavUFXxt15tXnaCMIhsScRNwvAQ7jfb"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/choice-ai-restaurant-manager-exclusive"
 featured: false
 breaking: false
 draft: false

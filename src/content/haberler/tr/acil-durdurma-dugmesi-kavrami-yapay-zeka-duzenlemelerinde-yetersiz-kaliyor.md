@@ -12,6 +12,9 @@ key_points:
   - "Gelişmiş modeller birbirine bağlı çok sayıda veri merkezinde çalışıyor"
   - "İnsan denetimi ve sorumluluğu süreç içinde kritik önem taşıyor"
 kaynakIzi: "v1.bd4hRuoBf9so1bAL.duyaeNwxqrQSF7zWRSlB09Wt6f0+CVj5pGfsvuxVm9/VyhEN3713cTl9Xx41jwUGnd+udss3QsNAQedmW0sVXDf3zxS1JVoJY+2zUxJyiFvGot00yKCfii/+BngXnRgUXsM49ji2NdodCm4M081jIl3ySzZv/15+izpbFHQDEA7scmPweC2YgdhX90OezxBmsFhdSJxwsUqKIgduGRPYn9hzTCElGb6wa8hxtrzz6kDd1kqONoMbg3TE6aP4EtsxPSFTkEs17K7rlYg4gKlTW9E2UAUP1WpGgApQoW4ZRAe3601O/ML2rguCVXEl"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91626958/ai-kill-switch-wrong-way-to-regulate?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

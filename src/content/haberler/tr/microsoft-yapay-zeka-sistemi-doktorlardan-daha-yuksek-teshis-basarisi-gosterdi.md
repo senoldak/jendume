@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Doktor doğruluk oranı"
     deger: "%47"
 kaynakIzi: "v1.L/qHyam1E6XdTqvN.l43JM9YMz1KJ0xxVjhW3TpsMbMmcvXA5HgB/ZCkadQGDi+Y1XsFx9Mmyi8VdKmHY78jRkY9ZvKUFuloIoXG3trFaOTKs2Bd0/Ts7cfD3nuEAa5MHrcZj85jGjdTR1xxeBmb9H0lm+scoaKWvB0F5vAGSgZdOr5swvGaIhOtvzSZGySe01p6wn/miVzdHqoPj2w=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/yapay-zeka-doktorlardan-4-kat-daha-dogru-teshis-koyabiliyor--211995"
 featured: false
 breaking: true
 draft: true

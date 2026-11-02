@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Piyasa değeri"
     deger: "5,4 milyar dolar"
 kaynakIzi: "v1.9h5yiz4yeqIkOPb/.NNHS0fq/jODMitfEWBcI2EyTiplQJ4dCMAKh2L9C2BG3is9Wzgqv6oLaMl3PpaYroQEa/BSBhrHdHECcPjmY8lUlkeXAKb1NRhFH22kMjGnxbD2jFuZpBNWpDjB0EHhfa6SHTG29h6y24B8KtVpl7ncGCJKOp7Q3gWA="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/26/blackberry-qnx-physical-ai-robots.html"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Avrupa siber güvenlik yatırımı"
     deger: "1,3 milyar euro"
 kaynakIzi: "v1.kDBfF1jNNvMAUdPa.8cYA+cN2xNIz0D1okSUFDktJTnYb0DAz2mepbkMj+ooCuEfhrpR2QgIDsJU8f9ZZVccqcLTK8QUIqVgiQ3lrJ581JIDWuADgHQCVaANbUxFCrDu+8orf4WNLxXnbgudQemCkVzwzziWT7Q9zUp2Owzj/vJpiDfufSQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/blackwall-100m-series-c-2-2-billion-valuation"
 featured: false
 breaking: false
 draft: false

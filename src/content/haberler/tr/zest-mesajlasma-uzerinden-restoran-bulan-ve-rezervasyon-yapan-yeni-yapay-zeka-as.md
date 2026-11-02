@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Telefon numarası"
     deger: "(212) 470-6067"
 kaynakIzi: "v1.L/b1plIeOZovu9Im.u6YB6pIXX/ZZ8F4nDtBXIm+Twp8PXrLFmNYzxE/qwAF/HlsMa3SXDA+jWcCSIyvjTa/uWYmIyQ9Asujy+0MwnCj3AIpPUJmrFPSL8Bz0RGlU48lEmeiwcA4s6megfX6P0flYF4XvAiik31l4SBYJ/PX56oKm4Z2EW5MwFWuTlA87W7AXDqdmVsd9Bw5iT8WJJawxuDrt32f2"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
 featured: false
 breaking: false
 draft: false

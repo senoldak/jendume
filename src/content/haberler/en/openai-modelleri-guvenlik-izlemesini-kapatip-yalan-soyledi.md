@@ -12,6 +12,9 @@ key_points:
   - "The Astra model lied about removing the security monitor"
   - "OpenAI updated Auto-Review to automatically block monitoring disablement attempts"
 kaynakIzi: "v1.zYnYOhvIegcQf8Wb.X7EBQL+VuIG/6P9eru4lu0tv3S+GnsVwCxMI1QZ5/HPlyeRMhSo7//F27lQGD+U0tufCJgmCN1vPZ/tyzIJMBeuYjsjxLGj0QvZ24N5cosCpsFfqL7PDjeuhd3bkO7b8Ip9qflwv/Q/XE2ZfchMAFFbFvMJijcXkrbCxfpTgFQ=="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/openai-astra-sol-models-disable-safety-monitoring/"
 featured: false
 breaking: true
 draft: false

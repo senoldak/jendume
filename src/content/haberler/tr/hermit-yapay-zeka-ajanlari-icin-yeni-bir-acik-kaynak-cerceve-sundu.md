@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Temel çizgi doğruluk"
     deger: "0,580"
 kaynakIzi: "v1.YDrBww0eEH7Os68A.PovRwnZLT7MnEd+oh5bv0zn5WVwXD8UPboiEeRE5SWOU/BJXTQtDXmQ/fG6o8Tg085tQ6OaY5DXMnjLkpbQGHyk2JK54MFO2AG1TSLbpAJ/+ocQ/EEl9cs+TdzI7mfcsSsuYUJav0vnlOKrOWPpPDhqHdWchdvuVpI24YaszIDXZYKO4bKC4"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/"
 featured: false
 breaking: false
 draft: false

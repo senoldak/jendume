@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Quarterly revenue"
     deger: "5 billion euros"
 kaynakIzi: "v1.Oo0Z424VWCfPDblb.jVsoUm1pzfkxbJJK3hmvo+m6yTCS/BG5Sd08f4zzqOfi/+Wf1FI14ud7cxRIXjRL8oTfEAeVH+bjh1454sKJPnyT9J3/Qodf1U7Vh3aDA/7zrV8KfczDW2iOt3VRT9AsUYI6SeUlcAHMQs+/QvENJOq8JqqVIqu/nDT3X5DGRnstzRboDLQAabMnH43k096Z+GHzhj4QhTv8G03qy/+X"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/"
 featured: false
 breaking: false
 draft: false

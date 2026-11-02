@@ -12,6 +12,9 @@ key_points:
   - "Yeni yaklaşım, ajanların yaşam döngüsünde kapsam belirleme, tanıma, sınırlandırma ve gözlemleme katmanları sunuyor."
   - "Sistem, kesin kuralların matematiksel olarak kanıtlanmasını sağlarken belirsiz durumlarda insan denetimine başvuruyor."
 kaynakIzi: "v1.hrFbe5ATyzg66mjc.p/ZsQEffy5gjNQvqTYjt0SLwd0mh/PirLRNiRPbGv2QF0Nor1yAaHIHYTpAx9C+1dkCMLM4JBpvVZv+GzaB6H1u/cD2mt046YzMy+jZfFLwSvOfHZOxVOVUnon058FmthH1KBZodDJd0xd1bd879hxJ8vs0KINCIKfLHEuu0v/8sPcD3GeWf+70g9cSGuiRzA1dJBOHdCQti7xEgBG4Y9ncq7gtVDjLFpxcnBJg="
+kaynakAdlari:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/"
 featured: false
 breaking: false
 draft: false

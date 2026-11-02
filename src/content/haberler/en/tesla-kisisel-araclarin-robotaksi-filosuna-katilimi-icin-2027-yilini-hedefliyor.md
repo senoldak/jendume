@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Target date"
     deger: "Q2 2027"
 kaynakIzi: "v1.aaVEntxf2ex4+lMu.RcvFYvxPO7F+T9D3Kiyz++Cm9HMdV+Aw9zqt9uF56pHXwSn+gyEqTxmXeiAoDRsdCBd/dFP/hbp5iBaSx/uEJgyOkpnivOj8GtoQTGQQtyh8jaiY+CzXTht9lULrrgVsIGhXMVju17rJR/6nrb+9uGAzLnTfC77VA/zsXGZjQGsL6jxlvnQ9ohGs4BKNqN+e"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/tesla-sahipleri-araclarini-robotaksi-olarak-kullanabilecek--211968"
 featured: false
 breaking: false
 draft: false

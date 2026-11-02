@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Other companies revenue"
     deger: "$550,000"
 kaynakIzi: "v1.q0A4+YxVKZU2gx4x.q4KuWL4rrT7cXKDdiTM2Ph78RZUImapsAddGKqiy3LV2dOHqlgN/B7SCfOLBjPqhpudvxHczYqyI2ihfzPr4yi8agDsN0WI9IEubDlrQletQ6yN/plToazE9dmkraPhCtZfpaEFb2SGRWcCY60V8S/QAuxIz+pbvY+3/eog1Ns9P5CuQYySlAJNSRPC6Ldwyxo0cnoze65M84eWCkUEb/JaI2bPF8ixWN1LirFCVvxrqKdWAOPjP22MH/LjSwYez"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/25/apollo-analysis-shows-that-no-one-apart-from-the-biggest-tech-giants-is-seeing-any-real-benefits-from-ai/"
 featured: false
 breaking: false
 draft: false

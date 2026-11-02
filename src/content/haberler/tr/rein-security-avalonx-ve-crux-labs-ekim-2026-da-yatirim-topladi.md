@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Toplam Yatırım"
     deger: "41 milyon dolar"
 kaynakIzi: "v1.llrBtVGCT4S95zYA.y27yRNWOFn9Pr+N3QlNIhKiK/x7hsWN0lteSM6ZGzuPGakHaTqWR4jICacwc5j73KBiz+o1u/rg8PFS/jEqg6n9TBAdRZ9Hmka5PDxKfAN+OGLvJQCOoLUM2L7p5+7cSo067v91mYULNrOlGue6A"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/yapay-zeka-ajan-guvenligi-yatirimlari/"
 featured: false
 breaking: false
 draft: false

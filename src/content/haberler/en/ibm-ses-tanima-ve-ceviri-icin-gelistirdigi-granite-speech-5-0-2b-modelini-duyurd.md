@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Training time"
     deger: "40 days"
 kaynakIzi: "v1.542xWcs1JBKFnd1e.s6QaPpTBXmuF6jwkKnpjN/rFJCoEyFMUf021Jn1jJAzh2xvCrDgv7apyGQj+EHPlGztHkLzsRLVcs0ciYwVyZKyMD07pIswDbe+nJ1U8T3/d2ElvrEHUEnDK/mM/q3DTo+2EK7oievkvQvtp/7KPUZPBrbh3L4ms4us="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/22/ibm-granite-speech-5-0-2b-release/"
 featured: false
 breaking: false
 draft: false

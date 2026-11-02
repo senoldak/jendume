@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Test süresi"
     deger: "30 saat"
 kaynakIzi: "v1.lxxYRRfH3g0vQDUf.FfWY+UBEW46aX8OGPd59jsha7/n28gdlsouRfJ1nPLTyZLGhoAiXbEnx3NC3EZyHLhqjC4V2tUZf2ypJFS1kIQTMude1EiaN1IZO3nrYl4MhVHe8ul799hA9JSWFeyX1PN3VGQF0BMJMZ+yHXYmb20kPZKQqMfEO0AV10y7RM/rvh/LJ414XLWNhrg=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
 featured: false
 breaking: false
 draft: false

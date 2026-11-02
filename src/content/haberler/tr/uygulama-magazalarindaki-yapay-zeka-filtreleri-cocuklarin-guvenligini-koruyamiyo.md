@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Google hesap erişimi"
     deger: "51 uygulama"
 kaynakIzi: "v1.77OlMOASZ/fsE5On.7irI7+fNOrngjuciEApqOq1+JEGrf63ehasKDZX5H5VecOoy+GuKiFW31XrEBp8LM67opDnw/qlnj7MCbmrZwp06Mv8UiPuS2f+beSF5W8JHyKh49CV0WxVJv0syNB87PzLMO02H5QWpyiCOxoaHScQzOvYLgqmGS5dUO3DAVUVH8fTDHu7JfJJHGVxWMUVz1cubEnXw+Yok"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/19/us-teens-nudify-apps-apple-google-parental-controls"
 featured: false
 breaking: false
 draft: false

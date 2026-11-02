@@ -12,6 +12,9 @@ key_points:
   - "China views AI primarily as an opportunity for industrial leadership."
   - "Cultural perceptions directly influence regional AI policies and regulations."
 kaynakIzi: "v1.emN7u+8hhW9xVYWl.dSz25L5Ilrwn6NtS9ajcQ1ofAqNxYk5Q7PGyVVe8SwTXXzZU77PeyrB2/ZXv5m0DmldtCfZ18i1pfiU3Ld/zSS9BnkojGqEukQGwPQB05c3xlgqKRu02lHRpeZFVCROkYjz6BwQx/YylSTBphi1PXxRIbk3E4CxvLAnfxlKOT5kVApQZb7EZ/GMYNyBDsUGGwhGBUKS4lPe5ecQ08A+6mvHqTPiPV1bqu8LAJUQjZ2gUjROSBW7WGskVn5HqVuUDTKT1n5UoAvlUEzG+7BOrkTT1FdgrCq96GQZ7EODq9BcKYNXG55tlG8tqQJ6JukZKF6Gg0Rlk"
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2594390-the-roots-of-ai-fear-in-the-west-are-cultural-not-technological/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

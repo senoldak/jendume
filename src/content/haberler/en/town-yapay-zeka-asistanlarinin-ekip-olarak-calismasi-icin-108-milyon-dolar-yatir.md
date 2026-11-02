@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Company valuation"
     deger: "1 billion dollars"
 kaynakIzi: "v1.T2lSwAVE6O/KRhFf.ky37/AP8IyFQKEXqhEFQA6DyPP/dhXkk8ZQ/qJ+JYEqGBmHVS4KpcqXgtu7Y2VQep3piPoZvD/sAX6nb6IvbJBmYhfTDNJmVvfVivVyTquAjg5CrGrlUlwXp5di2S3rjT9OlVC+lGe3q7xk4geRA7TTvpwn41473vw=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/town-108m-series-b-1b-valuation-ai-assistants"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Observations"
     deger: "32"
 kaynakIzi: "v1.ugb9yDqyKidsgNkR.JQOs+XHffqYEU7y66B2wrI8FoVdukOg83Io+DuDpOfpKHq1NIwTRzhWeJqt4/0MIGQQtsoFkX8wCjCcHPKWsOLIf8ZUbkqXKODMToL5mFyuOn4D3iImIeMafjf/xfmMaEqHXCMcenawX4qZXUxoX53d2a0IxV/G8mqppvHLAgbcPpRoS0P8QbPKkUknO83xsucY8lHfwoz4RKGQ5RHjYm15mdc9jU8I+rT1Zy9e7FBVnEh50"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/"
 featured: false
 breaking: true
 draft: false

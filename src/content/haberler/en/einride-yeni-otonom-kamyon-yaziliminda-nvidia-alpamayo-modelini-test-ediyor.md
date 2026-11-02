@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Target period"
     deger: "2027"
 kaynakIzi: "v1.vQwjFthRq2eVf6da.9bj+QEAkM2K9z3TX5UISbRV6qHiRFy5HA56QWMrVV9PbXMcGEACTDaHZTdbSeR/w7qDW81PBGa4I9bb++Tb8sjdyMHjeFONJT+cePaMfvO+9kRGa989uclywjOjWcDBnomJ7UiN/IqU/M4q5llbE+g=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/einride-nvidia-alpamayo-kamyon-test-2027/"
 featured: false
 breaking: false
 draft: false

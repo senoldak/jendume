@@ -12,6 +12,9 @@ key_points:
   - "The AI-driven shopping assistant boosts purchase conversion rates by 83 percent."
   - "The company is expanding internationally, launching first in Japan followed by Europe and Southeast Asia."
 kaynakIzi: "v1.CWTjLSdmPnrasa3Q.UQy/KNpAmSm9V6Puq5jj4F1Z7w9AXBoOdlwhs6iV7KlvDXjpbGAYegolQ78i26t0VJzepnHWlL9FehCYGTVWsXrwLUrBihViYhHUR+mlkXTg3VFM1YWqBk4qy/yzm91YMlF5/U3i2jRsrGRclMxlNeVPfFfeEz4CtemazGTLfsHtcAhlqiE="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/online-alisveriste-arama-kutusu-tarih-oluyor_184691.html"
 featured: false
 breaking: false
 draft: false

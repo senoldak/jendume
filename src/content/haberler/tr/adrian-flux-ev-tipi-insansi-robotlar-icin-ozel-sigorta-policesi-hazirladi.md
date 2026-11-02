@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Beklenen yıl"
     deger: "2027"
 kaynakIzi: "v1.QU1Nv7mGFSoJ8wBd.xz3FgM81DXObanJbyuFkL0WD1kWR6q6Edg6PZ4qptJJiEgnG23ZhqdhOSlzivibbihtB/jKXL2jPIgwR+N+N1YKyFMuEy9savWTUCz7ZkaVsU9ejuCeJ3cVQDV3070VMpun/PuBdyFuocUg9MYHY/9Uq6GBZ8365dPUf+IO9vjvCjtdvEvs="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/ev-robotlari-icin-ilk-sigorta-policesi-ingilterede-sunuluyor/"
 featured: false
 breaking: false
 draft: false

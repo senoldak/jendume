@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Series D total"
     deger: "275 million dollars"
 kaynakIzi: "v1.IOi48SxyLyDpGVR0.V8CBgFFmFEIxlJGASlGEKS9kYfPtbc5g2EpdywuSaVNDl1AGalwYlRWjpWRbYdV8Vr5kTmih/0FRLCzD90o4dchvA5CiFA+lpQmequH/wH09pLohQFeH9/IZ5HC8XLhIjxkPBO8ZSHlxdwYI2W05RjoFDWuNZA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/reliable-robotics-115-milyon-dolar-kaynak-aldi/"
 featured: false
 breaking: false
 draft: false

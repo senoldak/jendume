@@ -12,6 +12,11 @@ key_points:
   - "Kullanıcılar form doldurma ve randevu ekleme gibi çok adımlı görevleri yapay zekâya yaptırabiliyor."
   - "Eklenti Microsoft Edge, Brave ve Opera gibi Chromium tabanlı tarayıcılarla da çalışıyor."
 kaynakIzi: "v1.pWfSi2zWDOmRk8sY.efbTWB7SEqSXUgHe9rvWb4reqnbg9YZUD3vBUFao8GqxpePHiHzUH/CWAYDxt24hxVhTBZkUgbi9wJZ9/TmdbK7iEeJYvMpoaRonbW2So/3LmbBd2/Plvv6MOfT3XQm/Z0Je0aOX783ryOd2aqQjB62iZGt5vrjteX1x1Vn79GmY4KpTeV6+FCrzs9ZfL8sv/6pwzYn1kNSOg0w9UYp5U4BzS72mry1QEal8RPtwEmr7p1i0eHR+m7IQLGA10Ku+/PuTCvDfVvs2h+wIG36WbyjZRTVvqWu/AmxlKjEBolbv6d8Lg6qbjjodyW8="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/chatgpt-artik-chrome-sekmelerinde-islem-gerceklestirebiliyor--211727"
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/chatgpt-chrome-eklentisi-sekme-okuma"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Özlülük puanı"
     deger: "%95'in üzerinde"
 kaynakIzi: "v1.1kRTcdgYPrtjmTU9.PzZTH5bDHGyT4quNoRH3O9tFejl8qyg1Zq0Jr6LbgtqGIc8sen0c3iVh/gXa8AeQ1TMptwAmtAmHFukYjGAWUS6shdKqgdOzmBsmZLwX6KPy/Gfvpsz5Rqz3QixH22npFjuuCsC3ZJ6faC04C+hROw7B0FS8JIHVygwUCYkeCad4hkmADGICfodkXRuon0TB+vA9/D2zH9xke+8SCwkReDbRtrZFMVw0+7yOfgcr/vcOGWNf/YujEd4Vl1HzyZMZsMXEv/I2yfGenvVqMM84OgSbSANCFfwkxjZ5elCMHqWg8HFvZprzNtAYw8f6tITdj8AOvd8zbj2V"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/microsoft-copilot-hukuk/"
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/26/microsoft-hukukculara-yonelik-20-den-fazla-yeni-copilot-ozelligini-kullanima-sundu/"
 featured: false
 breaking: false
 draft: false

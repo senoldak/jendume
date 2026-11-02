@@ -13,6 +13,9 @@ key_points:
   - "Deneyim süresi yaklaşık iki dakikaya kadar uzayabiliyor."
   - "İçeriklerde SynthID filigranı yer alacağı belirtiliyor."
 kaynakIzi: "v1.uCSWalpEJSIF7uKN.YN3N+a2KmsypzLQY4WcbbfE5ndLIH8wS1XsKVQh8HtEvxGk30ExmbZ49K5IkvCmJFQQf/2kh0TSD3WBBQYCyPorxaWhCvfqgSuityL2Z4X+8PVXgTGusOm+QrBXtSYHESScvqOJ4I/1ij2852Qmelg3tWgrlY7eKIu8a2q8fklfXINqsBY44OA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-genie-4-tanitildi-etkilesimli-dunyalara-dogal-ses-geliyor/"
 featured: false
 breaking: false
 draft: false

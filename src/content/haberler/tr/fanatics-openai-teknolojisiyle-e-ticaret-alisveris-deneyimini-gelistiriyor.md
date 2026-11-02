@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Ticaret geliri"
     deger: "7 milyar dolar"
 kaynakIzi: "v1.L9DFk9mbj8mfEuNz.f/FnrbHyi/B+LPNO0kFYAX1RrYPFJ3wX/15yHvcb4Q2hA+ZaOUJYM3kXtNFlOqcod7FQfQg1NDdk6VxgeDoxCKksD0h05D5O+WLNFhAdzHt3D0t1h4Rc7NcXuOOj8gENAuMqLYycpcoalmOG8xvjS49imiom3afE/sAM7iqmD9GEsZDqah9IBO6V"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/26/fanatics-openai-codex-sports-merchandise-shopping.html"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Yeni standart, tüm jeneratif yapay zekâ tarayıcılarının tek bir robots.txt girdisiyle engellenmesini sağlayacak."
   - "Öneri, ilgili standart protokol kurumuna taslak olarak sunuldu."
 kaynakIzi: "v1.J9gSb9qDkLG8mCw/.2taN42YbPF0ucps1oUFTtYazM9ySf8Xe4PH24WG7Kd/9l0sBs0OnjW3yqk0GkPavMCd87INT79VAvHAWTgIGsXrOKE2D3Rwu0rr99EbEpGuYubD/8m4X+7hW7CgBmwS5C9Gq7ODxc9OQaDNFtjiu8ROWTJX60AqMIosiCcAO3pK1mbSGMqmJDF3PQBjsX94DlJVeUVXq6pdDVnNAvysM"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/"
 featured: false
 breaking: false
 draft: false

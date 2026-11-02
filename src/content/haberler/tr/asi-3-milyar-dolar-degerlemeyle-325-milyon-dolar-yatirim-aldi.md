@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Kara Kuvvetleri Sözleşmesi"
     deger: "99 milyon dolar"
 kaynakIzi: "v1.89jv6Dt0OrqJk+pJ.t6grcnkLTr8C2uO9EHL98DymIXQ+3MSsjAsX6wZ2CxWxjV+VFNorI4AAM3hrcqzMdjM0BhNzvNxp+zKwgTVyPbz/msB92UEsZnrJ8j2aOHsJZelTWpc8cowJFLOmIaTDLcAx+LVzo1sBS8PSLwZQZgcyUfl8GwEpJRNFJg4RFPp+Mw=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/asi-325m-series-c-3bn-valuation-air-space-intelligence"
 featured: false
 breaking: false
 draft: false

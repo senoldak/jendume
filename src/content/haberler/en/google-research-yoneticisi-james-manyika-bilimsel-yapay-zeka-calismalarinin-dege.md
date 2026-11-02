@@ -12,6 +12,9 @@ key_points:
   - "The quantum computing moonshot has been active for 13 years."
   - "The language milestone recently reached 300 supported languages out of a 1,000-language goal."
 kaynakIzi: "v1.xy0r7L/OEd3ZQHmM.oo4csFscMpTvBFvdViokAHXMmR2PgMvQa23NUYpq/Lhzzzlc26HJAmBq/b/r8PLCVRgt3S4YNCYL8ib0qhaSXPzRPM81ntRG4fjS7oqDlyYFnAaO66JJyxkkZqaE23NS2xvP40e0us658pl22NKx0ScX4RnO3m7bsPdcjR4x5AaiBEQz+/vMnoaYrHYL9jK/0YikfukYdaEOoIuwLqd39tZdsy/OGarI1uAVxafJfzSyWAPNS0yS7Jv7kAE70aBncBjQ66YW2OfTVOVxR8JeFCNEesgxU/QQ7oe7Ic6ULanxUIs50tQ="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91624458/james-manyika-google-research?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

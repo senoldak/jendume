@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Paid plans"
     deger: "$20"
 kaynakIzi: "v1.d6SVqGys4zyjMnC4.a9yZ+WwiNYdxfrhtSwo2EeG5Ox4fMOrAkVoNfzm178NyaqVQ9LQUYxA0thWQf8xm5AA8rBHWH/R3JBpiSKgzGHmt7X4IVg1nu3Y5JwfQquqI5E6MjJQcQ+tlqpoOteG/u0BghAXS6lkbsQqbUnn6K0ab7lF1nwrnsCKR"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness/"
 featured: false
 breaking: false
 draft: false

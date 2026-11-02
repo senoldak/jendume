@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Tohum yatırım"
     deger: "2,5 milyon avro"
 kaynakIzi: "v1.hFOBturA139lx8Ct.DJAhTnL7/QTtIpowgzL1BvN+ASjpETF0ZA09+RfR6AtzR/PA7vH+BFLvcB95hPJmKPV+wSsHTZ5CQ+yHm4xXef8XuxdZrO6+BowPNPQ+1PkdCBJSxxKCmCz/EVfCeX9+beRAjtpYWh5pkMAu"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/destinus-perciv-ai-i-bunyesine-katti/"
 featured: false
 breaking: false
 draft: false

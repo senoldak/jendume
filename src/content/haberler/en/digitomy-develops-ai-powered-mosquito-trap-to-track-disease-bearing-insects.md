@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Research timeline"
     deger: "since 2018"
 kaynakIzi: "v1.lq3yWV0MNsUsByex.L5ULeH+D3dLa+npdiRwbjAYsrxiqxvih0YLjv6rGhSOLo7KyR/ZWSFnb1ua0pYdBX3+QVfqCZhwj7zPsf65LNQ+2eAhf5eNWBPJnwHDBgJ3XAtbJZcRfmCkRXWCKugdbgGqLp4vJRkLHfYe6O0Fw2XWfn9CPOaB6Yg=="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-powered-mosquito-curb-dengue.html"
 featured: false
 breaking: false
 draft: false

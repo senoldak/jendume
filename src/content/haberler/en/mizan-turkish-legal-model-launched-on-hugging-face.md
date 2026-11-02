@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Question examples"
     deger: "165,558"
 kaynakIzi: "v1.HYrVVn6uGo5rHZGd.SmuRLJHTrg5lzgTy2y83ngQtnjzN3MceXCi/sPLD+6mmlSDNZIZnNsx2AgPqvD6ddzPO4pfagh+1nHC/aS5SsklfVrvQVsxOPCcrU8wLFxScOhIqtvbJmiAXv8FqK1NUYLNKeWPIig=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/mizan-turkce-hukuk-karar-modeli/"
 featured: false
 breaking: false
 draft: false

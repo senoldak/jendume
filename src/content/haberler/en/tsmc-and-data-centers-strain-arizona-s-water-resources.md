@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Water reserve duration"
     deger: "47 years"
 kaynakIzi: "v1.w241ZyXWDOwRrCE5.WdhhpjbynyUw+R5r97WI01Icv1ggw2TUwRv1y/k4439v5TVhwGRcCZ/QrxRTa4ZSjfWsMjBkfAZ7qSO66hYx8/mAHs+PnHHJ6H25ooN9Q97nLrEyyGEpbEfC1uIhHgeMQEdo1yEkLhshzP59AqH/9Fm11MN1TLBZ37kk"
+kaynakAdlari:
+  - ad: "The Verge"
+    url: "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Hız artışı"
     deger: "3 kat"
 kaynakIzi: "v1.PYCBM98mMQNILNvr.OLD2cJCe+L7wEnrhiRyNciNjyIQBOnDfPLDn00VkSogBPNZuDm7lYTtWj6N+tI0XyQDjRk9DX6sF+IuO7v4LYwMG9YLKcOkLPafXpBZO1FffKTNf8N5aybrzeDNbKHWj4KQMX3MRNYOtvCr6fHM8IA=="
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/"
 featured: false
 breaking: false
 draft: false

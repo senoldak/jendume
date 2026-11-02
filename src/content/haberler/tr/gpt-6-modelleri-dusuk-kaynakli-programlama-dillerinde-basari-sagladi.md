@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Maliyet düşüşü"
     deger: "%78"
 kaynakIzi: "v1.HRGfmF+Gnp5GTp7/.zlGSM/+gJawExZ5pw/+VNvv3WB0GQP1SrVbnoC9paYl4g3/bCn9+y0YymtEPJRY5uqvplD5DdfXRwDQE1zU1AkQjw2CJf39k9565n9HG1xRr4kcR2LRMGURLFU2NpTw7+xWVvKidY/uB9g=="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/low-resource-programming-languages"
 featured: false
 breaking: false
 draft: false

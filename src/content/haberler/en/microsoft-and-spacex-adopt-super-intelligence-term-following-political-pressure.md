@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "SpaceX filing"
     deger: "85 times"
 kaynakIzi: "v1.qQjXqVbd3klVdUOH.mX0ZSCs55NHb0YB2i7Xw+c7hPTCQHbapZUzfJTXtN9l0l2FubLK5rUKmszNLY1KmOzAqZg3vEZQx9Q5mTAAYtjvFPaxnE3m1KHEF/hYmP/GOdKkawXrf/GOnPEwEN6AyUYFHJKR0kxFVfV1BRBITNw2ZiNrnLihEFMyr9YXy30k="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/tech-leaders-kiss-ring-trump-call-ai-si"
 featured: false
 breaking: false
 draft: false

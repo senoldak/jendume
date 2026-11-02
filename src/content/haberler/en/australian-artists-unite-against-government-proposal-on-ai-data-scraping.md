@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "National creative workforce"
     deger: "4.2%"
 kaynakIzi: "v1.y1DZNAHDwiL/LAxN.33IesJqGA8D7vXorRdmpA242H+m0UynIeGakoC9zuytmVzirggVcHyJ4CTr2XSz8cVYtLytSXkoku9w16tn4sYfr+kphxgHJ5ZcMpYSrZXUxOFPfk3wte6TL+8oxQDb8d2TWUfCFdcfjH8qT7wCtoA+D6tqhQ7rauBUNkNGgoM92eDR1TFsuHM3pAj3uMQsxix+LBa12gos1CrDuHMwrsLnAyB2jJUmw5i04PjO4DZ+cww=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west"
 featured: false
 breaking: false
 draft: false

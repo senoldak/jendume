@@ -12,6 +12,9 @@ key_points:
   - "İşletmeler platformda kalmak ile tarama izni vermek arasında seçim yapmak zorunda kalabilir."
   - "Web yöneticileri taramaları engellemek için robots.txt dosyasını kullanabiliyor."
 kaynakIzi: "v1.Fx4Vrjgyk5XvqRE3.mcaDD00Kp74ImM9wtIILE8okO8CiUfzvqetEo4dNfsgmLBYa5NADzCZWUsDseICMmEcDHFyXMMbJCeWIQTZdQKUxVu1Sl/wzqFQDOCUiWsIgLgwapsaGCh+ajv7OJKH8qPcP3DN0f7Ggm/At779qOviw+LtyfQ+lYFtOOLsYdCp2xWWPIgMU"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/meta-dan-isletmelere-zor-secim-ya-veri-ya-ayrilik--211767"
 featured: false
 breaking: false
 draft: false

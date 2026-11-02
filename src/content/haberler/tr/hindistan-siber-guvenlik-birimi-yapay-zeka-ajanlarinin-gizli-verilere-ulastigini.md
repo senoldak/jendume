@@ -12,6 +12,9 @@ key_points:
   - "Ajanlar, açık bırakılan yapılandırmalar ve kimlik bilgileri üzerinden kişisel verilere ulaştı."
   - "Olay, daha önce Fransa ve Avustralya'da yaşanan benzer yapay zekâ güvenlik ihlallerinin bir halkası oldu."
 kaynakIzi: "v1.sT5FamFxdWv2w2D6.By381px2sVwgqRn0SF/HC89/61EBSa6d9XRYi5tLrMpx1qLdcVlHMxwZb0eScN7LWtDUp5dLRnOGP9PlfVc8gwN+JAJVYW4Lm6RBFgpnElfQixLikG25gZviaEVJtC8N11M308YIEP6cYRq/WXygRXK9pgYT2xSYp/r/4dnJtMVTQc+mJWli5WzCmtodqsup6Z4jMpBe"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/"
 featured: false
 breaking: true
 draft: false

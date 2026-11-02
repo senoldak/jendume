@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Eğitim Verisi"
     deger: "6,21 milyon"
 kaynakIzi: "v1.kkMuCAi3cd6/Ffwk.3NdcnUy7G511DVDOyJlwG0pviDUBS4CVhZjtt6YkLKODc2RZu9pCdMBCT8ha+RLZrMIbVOh4coQUM1XdatJFBQV9PW50WSjP/ifuatT+qkhNaKmXkpkip72XEoqBH0fSLDxwar4QVClJVR2sJK8GYBRWWZc7k6oB/qgbvNg1ogS8cdva5rPQH/ja9pz0jRryTQb4i9vhmCd9Ej2doSbTKeAe2QWkRjczlVv5FkC7Xky8BMR3cELm7U3A3cJptWKBb66mmYVCiEiXcSpjL1owKuFjB8HfbkoIbNf2aaFoTA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/baseten-joey-1-decision-model-open-weights"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/baseten-releases-joey-1-a-2b-open-weights-decision-model/"
 featured: false
 breaking: false
 draft: false

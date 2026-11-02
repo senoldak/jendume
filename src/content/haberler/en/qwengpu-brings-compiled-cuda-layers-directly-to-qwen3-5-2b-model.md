@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Free memory"
     deger: "16 GB"
 kaynakIzi: "v1.n176BsJPyfsnawyz.vWxrKgg0JoYWOGosEbZb2GtLOJ6f768RoXe2dqgkqwmjvHL5IX1e8gxQgTgsbulOmV2jLQby9tiEA5AR5yCra9nbq1k9FrXo0C8tVcLF75uWaKQaO/FBELwefnO06M009Vd9Ox77yxFpRyvD+8l5UQJsoIrUVr2G9v1DYK73SdbUPP/6uVX37g1rndyTxMILj0bsUw=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/11/01/qwengpu-simt-gpu-compiled-into-qwen3-5-2b-weights-runs-cuda/"
 haberDegeri: 88
 featured: false
 breaking: false

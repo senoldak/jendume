@@ -13,6 +13,9 @@ key_points:
   - "Sistem konuşmacının sözlerini, yüzünü ve dudak hareketlerini gerçeğe yakın biçimde düzenleyebiliyor."
   - "Teknolojinin kullanım alanları arasında gerçek zamanlı çeviri ve kelime filtreleme yer alıyor."
 kaynakIzi: "v1.AjxS6m21rVojNCg9.5VL4VVP20ST8FzUyqe4ObnqmsNSC8kjCtyZQBh5Pa7Co86NY9IxFri5YNsPr4s2UAjGlFRX8ywmmgBsCmU/FA/ONS5bNZqOK2+p2liCIirm3podhru9pDsV5eDeHNe0amRGS+HPnM+PW/rw1kNEHTC/B7lvexzchKJjuP3TS5LBy+NiCWA=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/microsoft-patents-ai-words-in-peoples-mouths"
 featured: false
 breaking: false
 draft: false

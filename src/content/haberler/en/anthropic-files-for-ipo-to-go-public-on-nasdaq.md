@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Net New ARR Share (H1)"
     deger: "90%"
 kaynakIzi: "v1.C7eFai3KOliOkfIS.WCENKq/9upls26AT7Gw+3QXyRDC7jswldOu70wJ0TMea7M/5+fVOczOwJ9tqIJcQgWmrAm5rMwJQWLzMXSnrc8nAHopNNbhU4cu8AXHSkWnsohkUP82LuG5QstGgyADpNg5cshKNv2OuSCgshGdgryTieYBgPzBWs+FHYav2imgtq7+TAeoXcTcQop5/yTFDqlZAsDIZd85TZh3IDO8="
+kaynakAdlari:
+  - ad: "The Verge"
+    url: "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview"
 featured: false
 breaking: true
 draft: false

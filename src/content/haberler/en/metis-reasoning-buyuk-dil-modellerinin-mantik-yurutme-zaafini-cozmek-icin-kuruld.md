@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Team size"
     deger: "12 people"
 kaynakIzi: "v1.DAPZxoqHxj+xjXXQ.xozGdIOAHiU2GhLiPZ7RQ5Y6FC1x5dcRc3oNFura3bfI0AZSMCfXTa20LVlDRrwASwHMAHcrFBIBSlqh54rpiwQ8pplIc1v8MkJNQ38xYEQbtFTfHWxO5c5uiJxj+EqZvlzaAf47Wu7ateXfZbeCTNNWKhQAudoPVkEca03zxQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/metis-reasoning-thore-graepel-alphago-london-ai-lab"
 featured: false
 breaking: false
 draft: false

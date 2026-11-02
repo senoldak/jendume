@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "İnsan-AI uyum oranı"
     deger: "%60"
 kaynakIzi: "v1.VcwuBrfJ2H/C52mG.DqpmoHsymxTsfi0BnJgkpQJj9xXF4h7/hzh6BBiy73RUC9jAH9fka6j+0M1LeQsC7ddvwPJVbaD6R/zGalFq2x39Tau1Y7Si8PVv72SNg1c8V8Ism4qxULu/nLjPd0Px7eWTu3FzuU65Fp5jKiSINbiU6w33NsA4fRuUHFQQ1wtFTG+dSY4o/7Lf99CaV2elftTxVbGdjOgiVBA63Vf4IRcXBYWTHizd+G1rDiCWUHVIZXeXlDxLdRPkOp079I6l4kiy4BDamf8uEY2XaqahxWV69w=="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

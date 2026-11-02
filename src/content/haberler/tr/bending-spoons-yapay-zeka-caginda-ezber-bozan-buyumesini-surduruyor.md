@@ -12,6 +12,9 @@ key_points:
   - "Bending Spoons, Airtable'ı zirve değerlemesinin yaklaşık yüzde 90 altında satın aldı."
   - "Şirketin piyasa değeri yaklaşık 30 milyar dolara ulaştı."
 kaynakIzi: "v1./qGfEuFNVwA3OgUj.JYUj3nvjxtV2D/TjkmmWOlkl5111GOy11KAmxV6XPZmb+FFNskOIGuhGxSCwf/ellpX739gHeYXChSoIclwmZdH3FwKur2D1qT5k7fu5iIBC7lHcwEtMUGJmOQ7bAeDylxmWf8FdH4HWxDGAvpEOQ6SIoEJQWEwMSs1Orxs0uvpJje5R1QCHquLdOeCYQ92Ao7ItJ/UsdY4Ro8KkdQ=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html"
 featured: false
 breaking: false
 draft: false

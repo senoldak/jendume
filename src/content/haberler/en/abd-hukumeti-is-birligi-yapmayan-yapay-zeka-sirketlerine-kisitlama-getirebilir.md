@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Previous user count"
     deger: "80,000"
 kaynakIzi: "v1.S4/PscmspE6t5RSg.NX4cyDWphOsDW2+JOG6sjmVXw8gTZOh+8aiJ2q77pmBPsGwiinN5mQBv4t/pErXP+xysSa9Tq8mqk1Jd6pAxM1QenWW0M0rXBFcq93II38jenrWtvNF1UsoBHcoRBe5t1HXEgN5wlmnEMNKuLErVRAiTha3cOUiw9O9w1yjbkXe3bjXe4duehKRP"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/emil-michael-export-controls-ai-labs-anthropic-the-information"
 featured: false
 breaking: true
 draft: false

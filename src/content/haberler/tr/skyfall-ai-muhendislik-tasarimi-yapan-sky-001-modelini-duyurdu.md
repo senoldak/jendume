@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Maliyet"
     deger: "0,005 dolar"
 kaynakIzi: "v1.nZCoAT3AsrwGIJCk.ARivSkfFhagQYFP40gA6qgxt8Zf3DY8d4+aMADmRhtV+J8DABRo/LsQUWR37Q8CjLBrvCjd2yig9Za9HujPIuIetzI6/HYhQTXCO38ewo3tZqwkdzuy0dQfJQZUi6GG1cb4aH8k3P7a7RdV83stkzgKy"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/sky-001-muhendislik-tasarimina-odaklaniyor/"
 featured: false
 breaking: false
 draft: false

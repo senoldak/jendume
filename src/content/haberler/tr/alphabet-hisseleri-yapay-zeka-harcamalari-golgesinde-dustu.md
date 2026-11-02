@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Alphabet mülk harcaması"
     deger: "51,4 milyar dolar"
 kaynakIzi: "v1.oI6xKPy/E2z02G9Y.DqjFtFwRzzkS3mDfh2Oo+o1eyfH990XUPm8Uf5wnIqJuY/VOwuC8K9+LXmJMECr4lYtCQCvMR7ahV97UJrmxuJnE4wDv1pkEhzYMStnw5dLV/+j4ziw7M62i0kj00pPi31hsw+Dzz7kZKl3/Dxzk0Ns0sEUPdA7Ub3I3W6pA4rJt01n68t9sbclCplu4/wVkyabSVzXuhBhesoxOM3/Dx/z6iXjQNZzLQHeG6Qz5upEJBgUzAZLZnkjGcyJc4fz0EC8w1c6jixC/8Cs9cQVQVj/1ARj10sHOBs3igi0Siv9GxhXeP8f2/Q0rUVDEtMeTGveOBzgWM27/Tw=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nasdaq-futures-alphabet-microsoft-results-ai-spending"
 featured: false
 breaking: true
 draft: false

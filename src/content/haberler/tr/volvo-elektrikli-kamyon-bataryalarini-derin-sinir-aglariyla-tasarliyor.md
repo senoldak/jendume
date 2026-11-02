@@ -12,6 +12,9 @@ key_points:
   - "Mayıs 2022'de başlayan LaserBATMAN projesi, Mayıs 2025'te tamamlanarak Volvo Ar-Ge departmanının kullanımına sunuldu."
   - "Uygulama, lazer kaynağı parametrelerini ve soğutma akışını optimize ederek batarya kullanım ömrünü uzatıyor."
 kaynakIzi: "v1.gsCJqkd50eIFKKvc.tZjBTXdUTyXl8fHbNQlaBlqr1++tXRlhgZLVFog60Awfrx6GUowQEhH3yuIe52BnlIgWgVEQFEfm7Mre3dVub+GkU1RX4RB8xSyYvodBAIfqm+O1fAOHg8BQ3o9b8+5QQA9/EU/5xaTCWDMsZnDdkR8QA67MrQ=="
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/electric-truck-battery-design-simulation"
 featured: false
 breaking: false
 draft: false

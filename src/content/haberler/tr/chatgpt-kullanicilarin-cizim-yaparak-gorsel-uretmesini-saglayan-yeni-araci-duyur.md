@@ -12,6 +12,9 @@ key_points:
   - "Kullanıcılar çizim yaparak görsel oluşturabiliyor ve detaylı düzenlemeler yapabiliyor."
   - "Araç, fırça ayarları, renk paleti ve en-boy oranı değiştirme gibi özellikler barındırıyor."
 kaynakIzi: "v1.nb1lNNtQPmfI1u1M.IgLhsGGKwuY5hLhxovnng19zz6iskEuyJsPXnduZkuTgKeFsK5HIWPsWP9hVshLao48FIooKSggJtNNsCFiDf29aB0PpukdFvnEEsgxBZuWhnK1r7ViPIFo7SbQhn1jHqhIXPuVt6Li1xOSMn3OsLwW/KZ/uEuQExMxg69bgVWPKw+0x00h5O3ogS7+rGcSAtoDfXiag0CY="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/how-to-turn-simple-sketches-into-realistic-photos-with-chatgpt-images-2-5"
 featured: false
 breaking: false
 draft: false

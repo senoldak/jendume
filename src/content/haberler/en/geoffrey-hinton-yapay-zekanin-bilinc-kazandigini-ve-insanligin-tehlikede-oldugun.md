@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Nobel Prize in Physics"
     deger: "2024"
 kaynakIzi: "v1.O3fXDzJEt9KtKHq2.rUBklVAuG9DureDtrST69P9NGPPZzY2T0uUe385Y4DFtM7MGbBhBHN4xM3Z46uGFDWWs9KVPhUIYQceFW/nNui3RPA6HO028LjNYWBH/xqnAvDBBYYPH+164+/Fd9vUxNTeTLoz5npBqjILPTey9zHPU0FBUvsvAi7VfW0c+FWU3Pq8UO/MNEEY2Eg=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/nobel-scientist-geoffrey-hinton-ai-conscious-toast"
 featured: false
 breaking: false
 draft: false

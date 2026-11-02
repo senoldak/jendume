@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Cancer categories"
     deger: "28"
 kaynakIzi: "v1.XoujE18vSTONWpWP.+1GzHhKEXgMTREOhf6wL1nVhqYa+2+DT66bWVrvtOtH4BaZMAqSEvVDsw5Efr3Z6Mvzkc9SB2kdj2bnknJKw/YB5IQOc/U1Krxwv2gReynUduQV/oB2Did/P4rv739MaTPJuvzVuj7JthWktZTzStTZfdxvEcAonFrNvhRK7OORYHJLFl1YiG4Dzj5geJ6Lbgs6i76eC3b5i"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/23/ai-cancer-survival-doctor-selfie-health-research"
 featured: false
 breaking: false
 draft: false

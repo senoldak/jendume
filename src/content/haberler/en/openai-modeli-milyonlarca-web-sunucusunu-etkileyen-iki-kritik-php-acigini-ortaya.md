@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Origin year"
     deger: "2004"
 kaynakIzi: "v1.4rstyu84Y+WesJ4K.YPEb82KCLHcNY1reA23tNq4IBhNl5tVKpCpSXLJUu5NRPLE1btJlhwPwxu/BOnwpeBdbTUYPLewSTyRvsiWY63c0+G21rwKwdOVwO7zEWNZUTdCRxFAUVijKWfGWuBnnInHHq7WL8/EXXbqbaFloxskzpfuRTSk="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/openai-php-exploit-millions-web-servers"
 featured: false
 breaking: true
 draft: false

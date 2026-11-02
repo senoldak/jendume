@@ -12,6 +12,9 @@ key_points:
   - "Theoretical peak download speeds of 7.01 Gbps"
   - "Winner of the IFA Innovation Award"
 kaynakIzi: "v1.UwqhG+5N4a/BFmnT.MIkEB6wLNNqgJAu468qXxmcTXQ7YfQzx9GA74UQzJSMASw7NcL7TyEfUMIoKLDCmfJOGi3Q6M59YK8ACVVTXd94GLdg2hdnbipkWSWoGW56yVh3Swky2rIesLnWG25HGA8hMQzyNhArY/H31fgSeMv9105OMvjSIRbELq5wWbA=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/tcl-5g-ai-cpe-x5-yapay-zeka-ile-ev-in-439488"
 featured: false
 breaking: false
 draft: false

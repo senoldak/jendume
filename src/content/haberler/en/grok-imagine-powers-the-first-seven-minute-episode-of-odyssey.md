@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "View count"
     deger: "7.9 million"
 kaynakIzi: "v1.33S2QCXB6xz+yVXO.aMFaGijtkHMWqORR+mBszif0/vUQM5to7X1oHNKLZBZvoyh6Ot3wtZyOjH5Xb/q+c0vQcbKisYfTNPqAZIR6Z+IwgoPQEzTXgRdDZZ6E0G1jUjqXAS4ahdhScdJ2LbNnxujO4Gk8LyTScnVUqVJVlMMGMWQCw80="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/musk-ai-odyssey-grok-imagine-wonder-studios"
 featured: false
 breaking: false
 draft: false

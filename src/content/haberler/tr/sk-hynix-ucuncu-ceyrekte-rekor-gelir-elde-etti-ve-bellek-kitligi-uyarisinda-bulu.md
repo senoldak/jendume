@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Net kâr"
     deger: "39,8 trilyon KRW"
 kaynakIzi: "v1.ADl46VsJ503zn75J.huDfp1e2H6LfVpkp9QkU6F2f8eh6LNRW+hAaINoqJ5byLCuMSRKKxijy9fLyCWaJVZCl+hyzIw9uUue5kREE5RPFChVCO6nHQ4JvpZb504jm3/QDdG3d86qtqU87SPkL7TAYcOkaPJbTSdVKk6gKQj0APIokSbRBKy++ImeOdEkS5nlxMTysEg=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/sk-hynix-rekor-q3-geliri-acikladi-ve-bellek-kitligi-uyarisi-yapti"
 featured: false
 breaking: false
 draft: false

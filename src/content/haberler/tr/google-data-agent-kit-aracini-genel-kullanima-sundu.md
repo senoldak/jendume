@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Beceri sayısı"
     deger: "37"
 kaynakIzi: "v1.o+KoYi1vWHklM19V.ibqM2BO/xzL7pey1rMSzTT/qGOQ03xWZ18hQw5NhMoiuPgECnI/A5+UifL8QLzJpPQJyjrOLxZbQ3lSiJHYCMF/959duDRyLKTeKIQi7AXwK1bRvISD9vYyoK8jKBIASj+U574Cm/NEE7ytTCj91HDWNhRazmUoDM7e6qWwWarJc0JVj3b4U4x2NpydgLwc+Y9STtMbUsm5ygih6WhpbLWEJjAXfiANl+6YDe303Nm35r7j6I7BiPDkplBzM4VhYv08aVg=="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

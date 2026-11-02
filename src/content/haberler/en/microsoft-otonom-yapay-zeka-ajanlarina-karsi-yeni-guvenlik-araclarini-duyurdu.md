@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Agent types"
     deger: "60 different agents"
 kaynakIzi: "v1./UC3nYBaUVQZ/hrg.TVb5WCsJMU5RY6BFasHVteX4vYFeedigP9fW5tVFu/70RNEyYQRIq7MgAim2hKb7BuxQvBHku7qtzQ9mLtATPHI5AtTrbrDoDxQ040sn04fTViWYd02M48XoA/1Qs2GhpQKcK9nvRKU7/vAvwGHGau7uDjOp4cJLjlWDuZUiogHN3rWJEgG7xYqt8iRG0zcWKGhv1Ts="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/microsoft-yapay-zeka-ajanlari-sirketler-icin-ic-tehdide-donusebilir-h227497.html"
 featured: false
 breaking: false
 draft: false

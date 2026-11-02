@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Çıkarma süresi"
     deger: "0,46 saniye"
 kaynakIzi: "v1.l2mvZV479sVE1iHY.bfTHlGPto1i3JNb+YsdMSgRjXbYYrSQDpHj187CJfDd65Xu8ZBlnBzdTTXou0LviZyIB1wyffVm7yKH4zVvOWDUtqU5aWkt13YjVeYYBffS6KQmeaORzJx8bakNaOlD60EgBJoFi25noPohtutPexo7tVyHPIoQ87tCZmSKJxK8KFFpjJWBSyr/+7qMOIRU0fVKb6i/Nr5hgNG4V/hL8bQ=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/20/cloudflare-releases-clairic-a-system-one-extraction-model-on-workers-ai/"
 featured: false
 breaking: false
 draft: false

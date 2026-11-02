@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Data rate"
     deger: "1.6 terabits"
 kaynakIzi: "v1.ActfWQezAijMaeQG.hNj8oEV0iKLkoVNeEu0uN+gpoIv30hNw9fqfduGI3nJqgBRAkNVxGYeWKCdxYur7CiAg5E16wU5sH7ykeczYz2pOZu3XabYNOSADuJR3mkhGTuarQ5dUOFzuImCVtjYHEJVJyN7E4tlZ8hNFyJgJW1TBqRoE"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/ciena-ceo-gary-smith-ai-boom-telecom-bust"
 featured: false
 breaking: false
 draft: false

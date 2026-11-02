@@ -15,6 +15,13 @@ rakamlar:
   - etiket: "Kaldırılan parça"
     deger: "50 milyon"
 kaynakIzi: "v1.XfovM8D8aqX/fHGF.SUa7TB+DdkCW+RdwOpGW2eKo9TY7Qv7pBWEeQQuU5FQ1yWUJ95/lIgtTjQ7sQ7C+LolJ5+wjjZX8b+P8eHYq64kG2GVRw/5QePZJoP7iGhGnmvQIXzS6ISvw2SdZJSCWWuIRJYU5pg9PHmJCVaJkmxltEnI+9lKQucP1gFDCIgQRvKP3fYcMVd/fmI4yWMmznsHMmEOHv2A63t9cwkHjlA5OSvkzainDClBC1RFqH29z0c3bu+p+Mf023l8l+pgNoSAp/hZWuPg/UfhvSOaT1lLZv8F/TzTQ55Sd4iTuBlvnTX8sDXkpMgmlaRqrcW8qRZKOE7l+5J7xJRwKpOyQ8wcLsxwSQ96Z+u9avJMhcozmKZoAlLo3VKGQmmtd+9Jma4sBhutoTGP7S6Gb4YiZBiTPLBTEXLo9Gcpxk6jkbqJ7w4MoY7C3vJ2Cx1/R59hcTWSWUamZSNaACmwi"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/spotify-50-milyon-parcayi-oneriden-cikardi/"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/spotify-progress-report-over-50-million-ai-slop-tracks-blocked-from-feeds/"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
 featured: false
 breaking: false
 draft: false

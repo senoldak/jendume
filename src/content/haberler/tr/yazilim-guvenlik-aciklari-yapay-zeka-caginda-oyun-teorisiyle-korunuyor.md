@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Süre kıyaslaması"
     deger: "10 saat"
 kaynakIzi: "v1.Z0p97LwjbLghWPNT.cVMNvVPr9671A8K6VDe8bZCunlfVkXWnQ4IiE+5opRem0a10b7EEWrGyiSJvXSiruPfIimV/S+J5sfQgiEZEIFn/jjGjRQr3s3EcEyre2WdJdco101x3EDvsm/keHSIcyoXl4ALa85G+hU56nuEJaykaR7T7neMTB+hnqsY="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-red-queen-game-theory-cybersecurity.html"
 featured: false
 breaking: false
 draft: false

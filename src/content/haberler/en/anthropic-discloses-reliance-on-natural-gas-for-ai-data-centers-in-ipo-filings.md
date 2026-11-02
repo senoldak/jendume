@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Electricity share"
     deger: "40 percent"
 kaynakIzi: "v1.6V8Ol3IXRvsv0A3G.JHUAGlQDpxvH68J/1N6hMgF+EnTquheTGqUbLK3Pjmzj5pMGlwwrdTqboiA78itwSPQbrbYei9oyxy6vuL74X9HfZZL5RrLFrIYmRrIiBXL6WTjxfaj4b1sxy8qUU7uUaaLtsU1D9lk+wx8VKcw3fUCzrYOI1WnPvj2KGCIIr5yx4g=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/anthropic-yapay-zeka-veri-merkezleri-dogal-gaz-bagimliligi/"
 featured: false
 breaking: false
 draft: false

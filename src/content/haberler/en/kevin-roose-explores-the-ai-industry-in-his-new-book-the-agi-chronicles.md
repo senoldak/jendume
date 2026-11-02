@@ -13,6 +13,9 @@ key_points:
   - "Kevin Roose transitioned to independent media to cover the AI platform shift."
   - "The AI industry is moving from experimental research to commercial product development."
 kaynakIzi: "v1.AW9gQJCsoSjhE3KD.xMxa73cgpxafdxC7/a7a61Up48RE4zQ+VkLtjHjgMFp1kX1m562vN32p6mopQBipeHTFaENNyw/nZGFG2LeLbXRdsWrNTZ0w4wrAG6njcPnEqjXDdI1trTtoii2xl0LpmYAiO18JKS719P8cUHu/9a2VChHQg3nSfj0wbPeJ/Zc11CQZuiep204DQkNitHSh3txyi7VhPNHXevP6nLS64SCouQQV"
+kaynakAdlari:
+  - ad: "The Verge"
+    url: "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic"
 featured: false
 breaking: false
 draft: false

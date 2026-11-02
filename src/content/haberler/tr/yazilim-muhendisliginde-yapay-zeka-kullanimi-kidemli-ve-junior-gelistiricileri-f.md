@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Görev süresi farkı"
     deger: "%19"
 kaynakIzi: "v1.wlGYjyGKSUSF7G75.Zhsf8J80BqpC66tEU6elUhAjz7A6y/YBqV7QRsP/aaM3Nn9dPIr0ZIfGJxokl1wLwompmMvg5O8dIgmzI0CuMtajK9q3qXNVn+P64mAtER6Tkc5WtKZtbDgDv9QrKgBQUerGrGscNWziloChVejw+goJSu0NynsBnS+yCLbNur/BiKgJWjO5EtpUTpn8WuzSvjG3vfl3cJXZn+yJ07Mc73sSJQTuQFuH2WJRd7GqUzszgjfGFIBtA13rHyAR8vW6bsDOJx73iNt/Ga/u0ieKoGPuFeg="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/presentations/ai-software-engineering-pipeline/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

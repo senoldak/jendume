@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Faaliyet kârı"
     deger: "10,3 milyar won"
 kaynakIzi: "v1.vyjaslsVQWqWTZoQ.8VL4Im4zbJP4iykxXNFcNeAgELo7GdNh7iKlxGnLslZ2XSXzxJ7Sx90WzCn9gGH3XgRQHZ5ijkLllNgsymjzQiRJ8akhATXWTeAe7LdcB1rkH/BDCuu4JxjWpyP2W3AV6JsyopR3fLtCR/x4S8QIHBpI9doaHN9RsnPWTKVjdCuxbZXd"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/elice-ipo-32-percent-debut-korea-ai-data-centre-neocloud"
 featured: false
 breaking: false
 draft: false

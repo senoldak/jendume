@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Temsilciler Meclisi"
     deger: "163'e 40"
 kaynakIzi: "v1.fgk607YmfpKerZA+.Hcqm0B+xl4ptTgl0CO8nbMLnFUw8GuWhwt8xOfXpEerf2Q3x9QdAv5/RKhpNBCs3dI+hGUg8FlgCET/3Jxx82Q8HCGPPp2hetolJsGVaqbCnkoDPVQErEsZOcaJl01XLitQGE24JYI/5XSqyznzWBQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/pennsylvania-ai-ads-label-law-act-99"
 featured: false
 breaking: false
 draft: false

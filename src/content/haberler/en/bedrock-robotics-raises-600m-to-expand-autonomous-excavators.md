@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Valuation"
     deger: "$4.1 billion"
 kaynakIzi: "v1.T0S5PvSSznPRIndu.DYqDa1eb3FsYLFlIcbdxv8cgo/9zkZKlDIwNr2C6aviIL8S8mcObK317fg2xiIxwNYSK+G116ApNoM985ftzgosflu9p6JR+3ajJxB1Q/ZZfriaRBlh+spRHrRGJkdKNKD7dGNRGWOd5whNl7zphJ/DsjyjXY3mPzjY="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/bedrock-robotics-600m-series-c-4-1bn-valuation"
 featured: false
 breaking: false
 draft: false

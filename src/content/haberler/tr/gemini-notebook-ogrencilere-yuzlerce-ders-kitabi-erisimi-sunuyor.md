@@ -13,6 +13,9 @@ key_points:
   - "Kitaplar Open Textbook Library, S Chand Publishing ve OpenStax gibi kaynaklardan sağlanıyor"
   - "Yeni özellik kullanıcılara tamamen ücretsiz olarak sunuluyor"
 kaynakIzi: "v1.UqfJ2kejl2oj2rV2.VkZbpJrtcvGADmwW9HAu6MhYFCyTMiEPqFe+uleTj7gNb1GckRh8zz7apQa3eNwVH6/VrU/JZqikxYTKG2Ma/3S0GMyHx9yIOzbY8SJjj/y3R/R6AzvHkMqUOKzlXKKYy9D51x6uoMNwDMgcjjCz2rOeBCOl4JEMbGaQqKHzk3CEn3p+izIZ1PlXQhdjFBHc8olf/zFNAP2vEK1LH5pqtQ7ePY/4NGTF7qqkGcAc5D5z/H880MXFnlI/lx6YZJzCsGfq"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/google-just-gave-students-access-to-hundreds-of-textbooks-in-gemini-notebook-heres-how-it-can-help-you-study-smarter"
 featured: false
 breaking: false
 draft: false

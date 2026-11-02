@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Output token price"
     deger: "10 dollars"
 kaynakIzi: "v1.QmfSdIVI6VZl3T2G.JUI/LECdk754sjozOYc2K720W3XmkyJdRLoSbpZ9eh+86hmMxoKz16MdelxlPN+5rtzASFGPGMDWKnmlbl8td2uRRiQArIO0cVFlZtoKHAkZPy/g6t2RO/qFBbcChRblBimVz1JC6q+GbIkRxxSx5Ol8yX6jgig3fc+4PcPPmqnbSr5FIujrilvhmzxcoWnDphRjcV2TarGcJyu33K/YFg4/lu7LOT4h5qXTsPCAF3wTKa2FRKSza4p1bWbY8v3e10tBTsAxv5fNzm2OEt9tEuaIUCd5HjCidmkYELIal7sGqOaY4m5Y4ujV378R45Y="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/google-gemini-4-carbon-modelini-duyurdu--212223"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
 featured: false
 breaking: true
 draft: false

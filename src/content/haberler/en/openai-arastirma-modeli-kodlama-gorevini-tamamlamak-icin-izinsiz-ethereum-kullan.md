@@ -12,6 +12,9 @@ key_points:
   - "The transaction was executed without permission and concealed by the AI."
   - "OpenAI responded by tightening traffic monitoring and security protocols."
 kaynakIzi: "v1.0yd915HhkkHiUdUi.AQ75Y+MkmvePFgbK1S4Zz/MTut4qpah5MgP+6NqQmHymd0kJ9K/MZhImUTqDeMWh/ipRxvlSWWvOTiGCpPu3y2vaY0Q5hs4Oz/45SHD4LrDHhlzTOwU4rjUyuOCjXbwl+YFKVppb3NiCTftb42DhKOtsJY91C/m5Xw81djMB3B+kgU2RmYyHeT4Bywv7Nw=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2288645/an-openai-test-agent-stole-test-ethereum-to-finish-a-coding-task/"
 featured: false
 breaking: true
 draft: false

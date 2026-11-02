@@ -12,6 +12,9 @@ key_points:
   - "Ubuntu 26.10 ships with GNOME 51 and Linux 7.3"
   - "The release will receive nine months of support until July 2027"
 kaynakIzi: "v1.gS+I+UdvLNdhhuaY.VhTnBkJJHtiPwmdxg0e9TmBNcRAMjljshb961XUv1IMghcKlLc9OkvVzMSIt7hZGt432JLV4Ag1eN+gtKnVj+2Dvojgg2dEXveKTe+7m2ooppP0uQZh5J9g78LreWeuhgnOnR3A="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/ubuntu-26-10-myna-yerel-dikte/"
 featured: false
 breaking: false
 draft: false

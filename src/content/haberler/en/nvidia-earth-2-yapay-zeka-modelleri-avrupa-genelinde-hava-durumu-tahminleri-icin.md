@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Simulated seasons"
     deger: "1,000"
 kaynakIzi: "v1.z4TAWAeK5gWgNNUJ.B21xniVgiHaRJ3+BgFrTrDlHH2qh5BdtlXioGl2U92mpwyodrCbVwJPK7U4+gc59Me9Aa1iCjkNFdxOJVxobpmGj99hu2KDjuaFIzzjtblSakm9HbCckFUCd8i/9l2HiNNBv1ulJlxJbj0Z9u78TrfhAJEgpIU9RmHy2Xf+IqcgLeQw="
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Annual education plan"
     deger: "1,499 TL"
 kaynakIzi: "v1.OEN8uNZDLd4jl0Tf.2yVMi+k1Vckw1QpPPtWSlk8clZ2iR8AItChSjKJDMwTbE8QQmdL7HoQM0DmhXZ9oMlxQrcaaPsSIK7vg3KuGeY0Q6WfIY0NY86DrneLOufFZVdCX8k1Ymythvf5FJfIT4/o5sNi47F3Kl1ewko3iOed1KZbqfe3szsGi5rWO"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-creator-studio-yeni-ozellikler-ve-turkiye-fiyati/"
 featured: false
 breaking: false
 draft: false

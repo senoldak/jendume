@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "European deals"
     deger: "2 billion dollars"
 kaynakIzi: "v1.W7VwBR8H3SIXZVyf.ljLKYU5reQycwQ5d17OPGm5clM0gAiiNRoijhEX/0RbqNbSMGb+P3MhqHS+wsf6hOZpM6Wz5SL3lA30gxwdk2y4UoZHmSEl+2dQ2knuVOm4PAxP+Kk//m9h/qMQXmNi5cHh6X0PilcohOdCqxZN2DfY4BN50SNOKUJPu4VjQ"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nvidia-openshell-ai-agents-safety-anthropic-openai"
 featured: false
 breaking: true
 draft: false

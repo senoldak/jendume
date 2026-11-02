@@ -13,6 +13,9 @@ key_points:
   - "Weather and complex road conditions remain significant technical hurdles."
   - "Drivers are expected to manage \"first and last mile\" navigation."
 kaynakIzi: "v1.5ZlmTWN416sTRQD7.hHZ2En7NJ/mTDEUJKAdNXStMSssqsrIm8Ec9xi5YfIBGOzH41rrdoDTxTA0BCSnZfdxFNfyw0aUfGDKHPMjK8YIp/8ARrHBmMMsa8vc2XtmSydN/xJ9IONVo8HU+XIAHmzwD+z4azoGMmvc8EZ9SEpQfrfy0VOY9virNHXUDmdOTow9d9yNzF203G+T3CzB4KgmCn0i2tXjwr92mXK0V5sYbAiA2RlGFFN0g4uqSnezwGjvGldmKgWr/oP8J2ZIQoDbOAwf4EKAbRY1asbPtd/BoMcOddgbtiS1Xe4c7MmLc2/fBlYZY9SrPtkQpvRMtoZX7EkTn62aiEZ+qkzvT7Q=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91632428/driverless-trucks-wont-be-taking-over-highways-just-yet?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

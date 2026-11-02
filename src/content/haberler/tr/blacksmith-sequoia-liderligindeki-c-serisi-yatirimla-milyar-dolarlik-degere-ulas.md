@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Toplam Yatırım"
     deger: "125 milyon dolar"
 kaynakIzi: "v1.eXtnF1w13Ur0rPN0.6no1+/LXv/nls0rqyXv0RQDAigNFiBIiyCA5VTBSoU+HKEJ66VOlSMIdQWnSV2XWepYJrXp5wNTYTE9IyRzsB/0EE1W29qv0TJBV0fYwBylUhyRnwCsQjlRIIgcv8znAguq2vA+RtKrFmPMDYneb/JvZnmfTi3FjqL4RcvQ9zODiKHJnMBjsc2M3T7s7UZnMCxU="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/"
 featured: false
 breaking: false
 draft: false

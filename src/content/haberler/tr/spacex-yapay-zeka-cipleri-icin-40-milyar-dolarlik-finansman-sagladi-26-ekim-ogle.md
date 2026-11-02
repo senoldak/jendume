@@ -22,6 +22,15 @@ rakamlar:
   - etiket: "Şirket Sayısı"
     deger: "200+"
 kaynakIzi: "v1.Rrq4YyxVmroNfSu1.mHVwkrEHMki+JYmEh+VuHjqoWjnVSEIb1lE7zfrP/JxvMWHSwqlUBmmsaY+fCcSn+PJo3yxLey+ALPKJODXT9SgeXfyBLPVXwOJG/wda+T6MtESzCSOPBz878IWI/3QAHnxngtYfytIKUQruIhOZZdKt1ag13TodZ3ayZsLYCcevFImxltihRR09BiFvdXspsNPotVMsbKiKvHfSEVzYGvCXq3ADxBZUY7rXVL8lmKGqRU0miFxu3u58gxISqp0OL7gr6eIKFzSsL3fTe72OZL1TUQlWBvsTyI+rdyDtRcPgo3bB6y5/ASa4MBBKIYrWiZq8gKNSk9RuLJXTvZaGDo+6BeqXmzI6hUB0wVoRauwUzo+jUEfiIEMmPJde/ywXL+XVZkmUMoLxQuEVnhL3Wk4UklxW8HVn97gI4usK7nklN7CJQzo4XkeVx+LKM87yQa0VUsyEIXDRWoj2rhW+r4uIg04ZHfkK4+ds0tDH2AkllY2tJ6Xkxz1RTAa/EhDSa0ff4w8XX56nMmjYwC/WfHr+C1vkCBG+YxYCk9sPRiNHPv9GYsBIrrDaI3KJtvCv1O4+2C4/Pvqxxs6G8OhVOtY9n+qfTTaA1pkUSjM2+f/z1ZMKQjC8URKP5WtGqwTd+n6oIJfqzU+NNyxG"
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/26/spacex-gpu-satin-almak-icin-40-milyar-dolarlik-borc-anlasmasini-tamamladi/"
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/spacex-40bn-debt-ai-chips-musk"
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/26/neocloud-stocks-today-coreweave-nebius-iren-elon-musk.html"
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/"
 featured: false
 breaking: false
 draft: false

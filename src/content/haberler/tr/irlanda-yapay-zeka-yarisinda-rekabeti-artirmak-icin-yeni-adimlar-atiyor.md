@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Sermaye planı"
     deger: "19 milyar euro"
 kaynakIzi: "v1.KNEOUTwJgcf6Mggy.Nra2teYIR/z/iTbQ52QAP9RA89o2AxerkDZnMHtu/7WOHI4Ov3gA8/EoQdobFAoW07jw2r1l/Zc4gSenWJL5ZeCUtd5yC85oG7JxUBkfHCLy4tjJ+N5iQPd7ZR4Pv437jYS5E6//CdBaRmFy+DW9UcvUGyL1DZ/6mmq13bqALmpoZJrha5pNhE6H8/kR+FYX7TzI5r2JP7MO9p93PHGjrSCiLpRnb/TTs44pL/JBAtT0w4b9HR/ClYtSl8you6Lmuhzg92roRbmqwcu55pMJZ5KtOgVD2TEdmRijeFnGrAR18rUd44LCLafb70xirO61XwPJFigUr6HpXr/Z63nN1ksE5BjYEZGSucFLS93aFUG9dFd8V+N8sD4="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91627640/ireland-wants-a-bigger-piece-of-the-ai-boom-its-enterprise-minister-explains-how?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

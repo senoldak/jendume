@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Hedef yıl"
     deger: "2028"
 kaynakIzi: "v1.zGePHoeJSo4HB+jk.S/aI33TJKMULizFsBUqnSrW3AnMO78eh6x8RRkfMQMEuPxvKza4ou9hOiYuV+yynFoP/Xl3EQ6WFRuG1Lmu+ApmUrHr6n+JpzUEvWvYJ/X0xJBgE4W3gzAZ0RECZtPCr9usURj4ZtpFarIEX4YFutQ8YTvvd8TopSowcbKOIkpH6uRbk+o/GPlJTu9cSKuKAIqQ7KwlnAe9Y7Dw="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/googles-ai-chief-says-human-level-ai-could-arrive-by-2028-and-were-not-ready"
 featured: false
 breaking: true
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Yılın ilk yarı zararı"
     deger: "80 milyar dolar"
 kaynakIzi: "v1.Hx6gDqKyy6cNHFEM.UIkmiAbwC/y3PH83kOOS5IFAHXwq/ig8Y9ukZyXPFCAmWBcI2xlr/MQYxOsvMRB5uUBsdvtrGmZFFozGFvbRhf+eCsV9CbBjX2E18ghzDVjUy591jz47AG/OtodmHvcBS6iCJjWuvWeVXpxSoIn0blWtVKkRuY+FkJVrVxCF1Tagi1qYC87Y1kM="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/anthropic-first-company-public-destroy-humankind"
 featured: false
 breaking: true
 draft: false

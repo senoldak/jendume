@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Model parametresi"
     deger: "30B"
 kaynakIzi: "v1.qUFo1145Sb1oFcF9.Z/zUJpehBI44EUcc32j1FNH3iGLcoZIsY11vYXAu4rMEFST0w7s6bYg4SDSdEMaJQuggZOIaJZku3k5d4LGKzMEiOtxhR2RwsHBhYytzXhBZD4gq52sh7kjtEsWIS9ZRwwl6W2gXKiu6SREIY+45DHi2lorTdjU1FhF1aNTK16AvQ46nR8mIlEr8OAecHUPgsW8="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents/"
 haberDegeri: 85
 featured: false
 breaking: false

@@ -17,6 +17,11 @@ rakamlar:
   - etiket: "Closure date"
     deger: "September 17, 2026"
 kaynakIzi: "v1.X4SqDQBz18ErD9hB.hgPNRZeWRBcGi3RDraByZhMFgddiyCvDPvRW2gHUa7r8lFxSB9pNBRreAEqWbK5dpnODxhEaa6NH45lHI+8MHsesXbwQikN4M3Blxl+xpM4sgECuHjgjcYlglIQvAsM+s+XKnHyKPLIOmDvWsP7FetkWc0Xu9qVOBWUOwOh/ZWwNfg5cIOlxBcQlEZ1c5XByTIRP5rM5P+NLrG0CiQNNWuQ1xr+mzV5cftGrhMcBnK9Js6FMB+mTbG+D2mnFhpXgfeiPdiaZCNorEc15dbP6I0K7CL9QBnfEiEf93Ps="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/apple-yapay-zeka-girisimi-samplab-i-satin-aldi--211852"
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/apple-samplab-satin-aldi-h227521.html"
 featured: false
 breaking: false
 draft: false

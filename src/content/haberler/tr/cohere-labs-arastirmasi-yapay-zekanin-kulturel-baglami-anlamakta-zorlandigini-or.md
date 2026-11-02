@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Dil sayısı"
     deger: "51"
 kaynakIzi: "v1.hb2594hY6D/ZsZPX.jDPcYcHgvz65Pf5mZmhwVNGB7DZYMA89IAJ/BAUXMKACxZnXW+aaUhVgRrxJvU2syjPfT+GqzFnVah/k+bw7zZkwzPXVJ+HKckkRFmWGX1nBn9ymzItIG5kxaMGJM/sHxlv0itmxbrEXUi2pIGsHn6nxrsNWpTfcSViTPXPfCrCeJuhonzUPS5dl3kPpNszIb0mhWDwUYRkDdtWT+7kYIKCBEQHv6yucZ2TK3A+zKUhEQYdCNA0LTm53n4aVlGorysryO9zi8aV+rhcowLWJNxxdBPEZ1l2l2XENn+pD9Kvl6PGrhmkK8A+2P0y0B6nwlaDeg2mMXX4COL1+pO6Yp7ZFhULK5w=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91627566/ai-chatbots-struggle-to-understand-cultural-context-new-study?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

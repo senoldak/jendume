@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Target capacity"
     deger: "5 gigawatts"
 kaynakIzi: "v1.+lMYIC7ddxSwJtEO.d+wR30gc/Mjmvf1fgjg0xX2e9Qc7zKysMalRxYcVZbQnJPI2B7HljW5hts5wsJRYZ1s1VB+TljzlJoqRvcW9jwmPtZj7zpr7ylUdMaYkEm1K713ymCeG5ZvbtZ5v9iAKCcDUNrzUnUS7jSWnSHLhBcDh9c6y8jR7H9RvOhqjtsT5D4eF"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/amazon-yapay-zeka-icin-nukleer-santral-kuruyor--211851"
 featured: false
 breaking: false
 draft: false

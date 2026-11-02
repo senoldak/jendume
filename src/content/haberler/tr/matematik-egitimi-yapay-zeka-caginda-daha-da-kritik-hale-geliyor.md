@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Ekonomik katkı"
     deger: "19%"
 kaynakIzi: "v1./0PAP30F+3sa7T9k./+Ru7xZxraSAgE5AH78jERIbvsY1nAwQhdPl/CK8TrNmUF5q/U6VlujoUMGSCl2eq9SOnPH7k7fe04iQv7RLfVhAG59suSHIKdW3+QlcX4pKkSeCi4yxXFBA91Werefh7v+SKfWXVF2n2a72Kg9csK//cycu8qMa2ZrGQWacz4swueaSfR6lEDjj/VISzIm1QDlS7ZlJMQ=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/education/2026/oct/21/in-the-age-of-ai-learning-maths-is-even-more-vital"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Prospectus pages"
     deger: "93"
 kaynakIzi: "v1.SNLLceObCONMGJd1.5D0+7tXwBtFYX7HcNKXgchExOPA7+az/hm3b4voSLA8Ce/xdVtCt1YYkG5s38eDuLsDRHT6XayPwmHJqvccfA5Wjbjab6n6XIwREJ+JlgJURsIqtj6ZItxH+/Zxh9w9Jpmqrup7lNxOzD8rc+tr9ULxkmWBBpJD9KCfsHkWjyuR+394ES/6AwwQyj6fqfKfekBZjdzjlbyc="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/the-hidden-threat-in-anthropics-prospectus-diseconomies-of-scale/"
 featured: false
 breaking: false
 draft: false

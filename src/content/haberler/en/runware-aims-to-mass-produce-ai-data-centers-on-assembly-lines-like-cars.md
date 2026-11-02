@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Committed Interest"
     deger: "$1 billion"
 kaynakIzi: "v1.lPsVJ2sTqhMKiquB.HwJajXB1yvtR48o10DHLDEX9e2oY1MQgPNlY6rREOT5dxFMnbeWbHXFag0hNEq6uJzzBvu4Qk4n1yl+xk1XJJkl2CW5VXAyW+sgKaaWeblGn1IpW9bC4sTiaJv1WXbNOu8qvX+uXimiFMR6ph7Pa2TS0lGAWDku5AasPy7/SMtupiL36rODYcVCUKkEo/Hag2eS582nSc4DmhJbPqs/AueoAV+q1ap4pDFAZ5mvkjYZ//X0qf2oT"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
 featured: false
 breaking: false
 draft: false

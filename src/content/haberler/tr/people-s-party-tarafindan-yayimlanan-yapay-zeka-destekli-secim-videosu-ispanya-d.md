@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Seçim tarihi"
     deger: "29 Kasım"
 kaynakIzi: "v1.Mqr5Mf6sz2HTNIa5.UWDPzabbUZV0AlAs0Nrkz9lb/4aeVsSNcuM/ek0YLnVICf9+inFtwoNqNBhGoE1Na49+w5EyNTIE5uUDbm5/LBnx//VS3u9x8YZ2bT2s2IppGarwmJVrKpy7/g46epV6mmc5OiShCkt96hfev+ZdO66JcjNL24EFPElgaDRPa4JL16WnLrlOJz0="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/world/2026/oct/23/opposition-deepfake-video-spain-election"
 featured: false
 breaking: false
 draft: false

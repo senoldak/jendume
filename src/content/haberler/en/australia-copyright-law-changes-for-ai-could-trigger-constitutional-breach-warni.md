@@ -13,6 +13,9 @@ key_points:
   - "Experts warn of potential global compensation claims from rights holders."
   - "Music industry leaders urge AI companies to rely on existing licensing deals."
 kaynakIzi: "v1.dpT57dDAL3TPDnbZ.OyC1Ey3tcm6zjjqo35K9WT4mjEi8KFfTRemXAPGqTNGNYmnnOT6CdcKAL+hscgfCx9V8E0jIVOsawgpv1SZZOZLXHB8eTNBZcHzPsXlYfnxtpVk0lXZNPQA7GQSQyJn8+UFYDZps7ykJjcpMVKfNKU8zKwc7GrLG/hw3HCfj8oQpBHAtUTyafTE/E2m48MUu1C3BcEDT82ASqLk8Y1DoxhGKrxtDhNW1/v5UayfvD4amrA2WeKYYpKcCdt+XSCpzoRBouKLoA1ZipaarWw=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/law/2026/oct/31/experts-warn-ai-copyright-changes-could-breach-australian-constitution-and-spark-huge-compensation-rights-case"
 featured: false
 breaking: false
 draft: false

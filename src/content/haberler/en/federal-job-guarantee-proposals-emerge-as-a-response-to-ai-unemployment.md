@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Minimum wage"
     deger: "25 dollars"
 kaynakIzi: "v1.OtZvnuu717jua0Gl.jp0wCrx46A4Wvr8sZ7V6/I7MtKwhZySMwjsgekT+BEH6p/kSYEJvHS5NWXcWg1SoNR0l8GkNCIG+zVX5Y55IAyE6rQvFetKSy1UGwL62yIgAA2NoXwVqxvdAPo/FUO1yTmXrEiImFx0HUgYu7hpbiDrjTMntn1Gwg5vngarAqzVtoViBtr8Lqw=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/23/job-guarantee-ai-mass-unemployment"
 featured: false
 breaking: false
 draft: false

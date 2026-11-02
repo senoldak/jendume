@@ -12,6 +12,9 @@ key_points:
   - "Yetkililer, hem ticari hem de devlet destekli casusluğun ciddi bir gerçeklik olduğunu belirtti."
   - "Beyaz Saray yapay zekâ görev gücü altında raporlama, altyapı ve kolluk kuvvetleri odaklı üç alt komite kuruldu."
 kaynakIzi: "v1.I/sP/eW6akVpeZml.GBNo/yVHxBunbCSR77bbkQivJ/XsTy7jevtxadM8EZl236qTjsHKBMphYIidCTMxcmSY9LFfzKbvQjXiORGmaKAEGr+rODBUIagtiip2ZHN6p233XP1Yzybvb8YWkMur1zA0CGyiQcgL4MeOJcdiGBCcDBvev+WV"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html"
 featured: false
 breaking: true
 draft: false

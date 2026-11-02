@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Güç azaltımı"
     deger: "%40"
 kaynakIzi: "v1.2XygI0LXK5Bin4mu.LUpGPfb72ihW34i4XR2klVEnH7oHWYQ2WXAocWtmhR6uPgXdGmpvz0o9Q0Cb55LkfES7Me9mZo96WJrnjNofdsjPK5KG9SSx0FOQbdtXSX/VvDFekNGXQYarg1Q/GdfeEb1HNVTo9L2oMUaj"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nvidia-dsx-european-ai-factories"
 featured: false
 breaking: false
 draft: false

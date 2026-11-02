@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Max options"
     deger: "255"
 kaynakIzi: "v1.CU4G306bEfbw9cif.elh9aOoF+c3/jxXVjWdbgG8HNVpOfOIhD6+1Ukmi5NF/bZGe21yCzeWqMUm+eIZV8ym0TZR88wCrq8njSuoi6mM/F+NcAObRpLeI7lTQX00emSMk7e8iwVlhp3wk0yf/fOSn47Ui8pHlJbbmOn795uWn5EwZ9tzNdpx50SF+0BmVp1+QVlZtR8c="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/"
 featured: false
 breaking: true
 draft: false

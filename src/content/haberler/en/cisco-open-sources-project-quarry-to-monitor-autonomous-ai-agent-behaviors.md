@@ -13,6 +13,9 @@ key_points:
   - "The tool uses a Snort and YARA-like rule structure for standardized security monitoring."
   - "It is designed to detect suspicious data transfers and unauthorized server access in real-time."
 kaynakIzi: "v1.LuNSVvVEH46QOI8/.TryVRUjSODlVepsGMGO4toGLbP4XtXnOwCLwTs2CSoElK26Zy4hOgLqXY69p1FJOro4ebdlpnNyUMWu59m8Z45RR/Q3uOHAJWuBesAk+ycsk/FbX0ULDq0gpGfsZYhX6irDYJgp1dDqNE5ODQwfKus98tqAYwYr4ccxmNhguVGz2Zd0WIVw3CESuInc="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/cisco-yapay-zeka-ajanlarini-izlemek-icin-project-quarryyi-baslatti/"
 featured: false
 breaking: false
 draft: false

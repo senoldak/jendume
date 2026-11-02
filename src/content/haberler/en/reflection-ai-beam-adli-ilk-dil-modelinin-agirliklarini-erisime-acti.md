@@ -12,6 +12,13 @@ key_points:
   - "The model weights are available on Hugging Face under an Apache 2.0 license."
   - "Cloud platforms provide deployment support for the new model."
 kaynakIzi: "v1.NR62bUYIfNxLilfW.nvrdNemUcVXoVsTgEBXB6wXvDtAeSDLWnMbaLhKu3sEe4aI9XvLhzQfeAbDA0X5yRSMDorRmY5BsOw5GBGtBogeuJdf7wmPD9dwQsXihg1NxlCjWSZIaOMuOr6URjXD+ZqKqRguWmfSE4ukAWVrkc0+XyO3wHhBW5QnWlHhiHeP9hNxOVePjsBIjGXVuGE7a8ii1cV9X7RiwJDP3Dj6NKJOKNg2pocImo44slwyhFjJ9Uw7AhBRrfr2LkH1IZMvC8MPqkQfxwhyO6/ui4oqUANQUKW/RNLx0+0l2cstYC3FqJ64lC1AutrixiWuSZxmaDa1tu4fl2bN186knKWQxxmVnX3SaRGefjE/WGBUXTOKv8BbauFrJYg4XaNcZ71hehH3WRKKo34/lmuRaNzMOmwdU9+rcrZBAQt706lGpj7KnlrywuWl6dOGv3G4Naowvkh8NEKhj6Hciflm9hqSk8k986ikuK9k0sZ8baJerJkLB77PMz4xZS/oAGcTK1FIHv2yh+aKEFTOdOAKScM1sX5XHFDO2paeS21js0zyKSYcHXyS31a47hvcL+w=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/16/reflection-ai-open-sources-beams-weights-post-training-recipes/"
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/reflection-releases-beams-open-weights-under-apache-2-0-license/"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "The researchers denied leaking confidential information."
   - "The dispute centers on transparency and access to AI reasoning traces."
 kaynakIzi: "v1.WXX2ROymYjNnTm14.gCJU95H1Jjk1DLiKUDRVopSVyrBr6mJLsptCPoXlvroPaWyZ7zLTPO06KSpEyVHQaUIwjJ8cT7dbFaWBRThKrX6EEcoD5oOohLtetBLLjTkOyAI5kl8L1Uhj3tcufGOYEakzTw3Mzl4yTkJGR7UDTm+Ig4+XMeSjZuNSDFn2bO2cUTZ+33UcggatALTQHbzji37v8LGulAB+2bc5IWAfPA=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/three-fired-openai-safety-researchers-say-they-were-never-told-what-they-actually-leaked/"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Cost Discrepancy"
     deger: "311 million dollars"
 kaynakIzi: "v1.3ErAbWasBhVwH+lY.UkItlM53FHZV7+JJP1jydwgt6La9mHo/vyAsz/X+WYSbdsYbolpqzRDAJ8DwbP78unV830OTIKGjIP/XBfRMfO0n9rFSfI0tALbks89x3GAhX41wuw6qVEiP4Es8JscyBtMSporUcaqoQBPHc7c2DFGGkUktS+ymUcBFAW62YwfWZsuuA+l94fBWbOncn2FQOL1ThrcFnTN41Ci5S7mgoqivApBa4np04qHMtzV7UgUgTjZ0CDD8ya86aM+fgeXIYRSygcm0jSNOoEiG3XDKm59aAmslSqmwX6z+KoWwxHE3hMc9XXJJwy4QvslrAQxF2N+O9nSGMreq4kYjHIFLYNehLJaTNwcUoIz0HukN/4Rr77/+"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/western-australia-deloitte-refund-ai-university-report"
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/australia-news/2026/oct/26/deloitte-report-wa-university-mergers-260m-discrepancy-ai"
 featured: false
 breaking: false
 draft: false

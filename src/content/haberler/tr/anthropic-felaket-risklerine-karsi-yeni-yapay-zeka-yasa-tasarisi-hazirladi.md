@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Bildirim süresi"
     deger: "72 saat"
 kaynakIzi: "v1.CkAu7qXAV+aR8V8h.m6QZVAJgbw31EWRjOgp8IZfBwVeZGBaXADgDjb7GAzxXczrBMlpKnLSk+lXW8hIyyRHdFHD4DMq0a0mv06ad9gmt5+x17eXuMIbPQgVHA8KfLfE2Y1SsUooXiVcuDwaJcrDqYzuGd63tQwHgbtJTMHdd0Sf+MVFZ7orXmXAB9DBlq0k7/ETmThMluAq8KvBdrQllzyz7OsJDpbvxtOPaJbu4qocmZ15o"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
 featured: false
 breaking: false
 draft: false

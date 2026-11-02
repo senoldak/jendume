@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Önceki değerleme"
     deger: "15 milyar dolar"
 kaynakIzi: "v1.Dz1he+ToQ3+M7c8O.mAcCWg6EedvCMqOl/38mfBY3Ibvg8pdUQ6ulHp6AcjSIIsMJDREcieOVLKX6ioopPIuvmuLf/oL/vxBIpQ5fDl3TXtBCHeGJHTdi6UvM5wnqP7WuTvVkf306Fdk95OWCxR3APLNQe8YcKamZYNT0spZI"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nscale-ipo-valuation-investor-pushback"
 featured: false
 breaking: false
 draft: false

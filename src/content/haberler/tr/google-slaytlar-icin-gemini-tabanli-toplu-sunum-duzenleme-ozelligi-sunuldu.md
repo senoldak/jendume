@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Tanıtım sınırı tarihi"
     deger: "1 Aralık 2026"
 kaynakIzi: "v1.ZgXisQmOyuhnPPsA.RTeBf2rUShpYwtJDKEtvTU3PtMNSh0j+fznwEE8s2U9/0oKnF8puri122uWB21PGdrm2FV1qVMQh71elaRm2qOD/+HrsY8tqSdWNrZH55O74jANrWTLdNdIiw1ZUGyJXavIIVJzFpvnFSBTQyQY="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/gemini-google-slaytlar-toplu-duzenleme/"
 featured: false
 breaking: false
 draft: false

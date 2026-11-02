@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "İş ortağı"
     deger: "800'den fazla"
 kaynakIzi: "v1.PXPZdF/R7OVRsNe/.5Wpr6ijkzpR8eu/Aav1x74KK4qXC4nWHxUtCdHDjEZm/m8SJKnjosHTFcz24QCOBQ+Hv+DUzpY9cwl1ihDhnJOJq/V5uuWC/y5HYt/nMHOE0jChBXq8GXQPEroDNrEGn5MIWn5bu96mHT2weTY2Jkhlikxer1kRaujgthto="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/steve-lucas-boomi-ai-accounts-payable-tnw-podcast"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Aspect ratios"
     deger: "30+"
 kaynakIzi: "v1.XzEBXf6tmHAb9Nsd.iZMI+ENknB9EXNBWh2V0HaJFI+6kr416BkDfI1JpiWyW5E264xgSb+qYhc84g1Ftq3Ee7Xa7J3NNKdZ4wlHC3ni/8ffzeY/P/qd5aopAbGqE123VrX87ydWefgEGjmNXVJnBhcDGF8F1S9zInHEB6eezLgvbd0IsqnXBPD9r6CH12FwHpIWJKzaNjaAFyCOLDKD2qdXFuMfDTYSIDI5wczGhP8xVVhTdV9QlwIxGZOX7fSraN+cfWge09w7qAZfymhX3wLOhylLJQCZl3g=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/canva-craft-gorsel-uretimi/"
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/canva-craft-gorsel-uretim-modeli-duyuruldu-h227764.html"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Geliştiriciler Adobe ve Microsoft yazılımlarını taklit eden alternatifler inşa ediyor."
   - "Yapay zekâ kodlama ajanları kaynak kodu olmadan tersine mühendislik yapılmasını sağlıyor."
 kaynakIzi: "v1.eKnSIDEsZpEntuzP.NFXdW5JE+77SWNrcodgWS1QTIAXjIRjzCwz/JVRhQvYuYMXLlk1CJQb0iHZlOA2zqr2t5ahPX6iSs2/D5ALVqWks7JGRs2KGiJFMl/Wh1y9OgGCcvhezsofbFd4lerKKqt1XkDqS5sJHmSgoyqhq+/LpdBrDNmyLX6N4tYjOT7W0N7rtyO8nkmvQ"
+kaynakAdlari:
+  - ad: "KDnuggets"
+    url: "https://www.kdnuggets.com/the-rise-of-ai-software-clones-why-rea-and-artcraft-are-going-viral"
 featured: false
 breaking: false
 draft: false

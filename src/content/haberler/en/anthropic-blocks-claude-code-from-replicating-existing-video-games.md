@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "App version"
     deger: "2.1.314"
 kaynakIzi: "v1.qCES3AN8R6nsWd8Q.3tf3dVKspwIyTqlW4KnjqNLGgEOcFznZnyblamSl8ZIRZCTxsAtH2ugrlr90c5IrJPoAfHP8Fz9eArcREgc+wAC6pwalYqCurgyUiragRHSIu6eruEIhmLbmQGgfAkS8DvVvNArYBZR3aNKKbRs81WMh"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/claude-oyun-yasagi-anthropic-mevcut-oyunlar"
 featured: false
 breaking: false
 draft: false

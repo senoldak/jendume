@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Gas turbines"
     deger: "69 turbines"
 kaynakIzi: "v1.M5eren0aV9+6x16F.dV4HcT5gdUwkps67bgV/Vpo2J1Bqw6neI+ujWnzg69p+jxs9Umovow2TrdlWRiyxyt9CdB0SyIqMlDJZldz76JneUzE1n6k7l0N5RNNGs7YRytFkGZrvUlzfcp1uwix2hsiZoMi+JygNWA2pp2LSwea0gHHvoeXKURUeui9afrU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/xai-homes-southaven-mississippi-noise-lawsuit-buyout"
 featured: false
 breaking: false
 draft: false

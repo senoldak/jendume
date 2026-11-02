@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Internet users"
     deger: "30 percent"
 kaynakIzi: "v1.6+/f6Uv4YpK6eMZ9.Bja7L15BdBMUC1yghoYql25/fo2+1uaHTJF3XnInpfgBUh2Ovsck9atGxceImlpQU/Qwagj2d2MRoPDXc92+5gvWpWl76b5b6WTR/XegSSlYhPOnSBavwxdNOLNbnq49ERSvEU8lUA+M2xneiDUa3fLxwN+suyPq53pILs1NSWecNTyNmxO6VmUIiTWUdlFd5rQFTR4ZxjmUQrsQmaWZ1vKcpKAdyrAqDaxIl8p9NaDxCXM3IYiANwouKMAjjsHPFFDZ21WNX1GEBt8b5+EC/mpHyYJ1U+v2WP2XWSC/+J6d3jzOKCn2DejeHGX1uEo/Xi6Tdnl611Yu6g=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2595251-people-are-vibe-coding-copyrighted-apps-with-ai-will-tech-firms-sue/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

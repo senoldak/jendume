@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Hisse başına kazanç"
     deger: "2,12 dolar"
 kaynakIzi: "v1.8ed5hv7bi0CP1R8z.lubLCQjEJhCPQ4QSDB+8vkWNGliYZY9ES13MtqFBM119De8pG9OtkXBOjMagnls5Y/IH4njFcBcdhRsqXTp+xK0DPTXXS5L7jeA8miQrWd9xzOHoz3P/P0YsmcOaX0LIWVot6nXQ3a0qs3UtGlDgob+YsapjmA8t84XyJ2y5+o6lBxIQLmSUpmNzNplf8ll//Sj8OSyD2MSYKxzA8zOCzE+0nqvrHw=="
+kaynakAdlari:
+  - ad: "Ars Technica"
+    url: "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/"
 featured: false
 breaking: false
 draft: false

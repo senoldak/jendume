@@ -13,6 +13,9 @@ key_points:
   - "Instagram is implementing mandatory labeling for accounts that utilize artificial intelligence."
   - "A complete ban on AI-generated content is deemed impractical by platform leadership."
 kaynakIzi: "v1.AK8F/ooxw8ycBzs+.5QTFD0O74hZaO5Vx3zz+kxnedKhX5fcxv/uEj8MLK4ftTIhx9tgtPcYlk1gEbqb+fAecVSpxJUDj1dafBP2qYdK+36TgZnXO9vJJ/Ta+ExfSTLsfu4v+LgUgbZPvIzqZ/6mincm8F7kUiVzmIP0VfuI3fwqw29Jg"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/mosseri-yapay-zeka-tepkisinin-artmasini-bekliyor/"
 featured: false
 breaking: false
 draft: false

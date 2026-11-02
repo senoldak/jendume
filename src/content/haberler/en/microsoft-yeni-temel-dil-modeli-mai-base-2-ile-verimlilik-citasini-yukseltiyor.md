@@ -12,6 +12,9 @@ key_points:
   - "The model was trained over 38 days using 16,000 Nvidia GB200 chips."
   - "It delivers up to 12 times greater hardware efficiency than competing open-source baselines."
 kaynakIzi: "v1.RZ1xisse3aSwzwEO.3I8UCmcBeaqPqTyrn05aYytorUw0eBhCR319qKUAQ5tp6DrPN7ArAWqB8IyrF9fHyZKMERjNdIixi5omNVzJBQWnafXM3c3Q/N5iAHmmfkOlcKm9Pipyc+tQ1fAAT1uOAnlYYmVhbS2nUNdl8JKDa4PyfiHh4ID16R7T7RMGkfjLLo+ziBbPUZXNwGk+4K8GfKlRkeAg8172cQ=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/16/microsoft-reveals-cutting-edge-mai-base-2-model-with-2t-parameters/"
 featured: false
 breaking: false
 draft: false

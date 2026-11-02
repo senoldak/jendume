@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Güvenlik açığı"
     deger: "200'den fazla"
 kaynakIzi: "v1.X2vn19LyvMVCsVHZ.m6hxbSlPF4/iaWS+fWq7NkheqSg1TsIiUfSWvSqoEyNNVvq0DpJA15lkNApUtpGMNhIe/owj3OlsqmVECXoxHJq0agTvyrk4z1JE7kXlL3pzmACeydU1MfcY3/KdbseA6tQJO6gBLKJdWptqroUVePCuVtrUqHZAYFdfr3dkyWWT/NgiUEeNecUfIe65d5V0SERm"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/hackerlar-yapay-zekayi-kullanarak-yuzlerce-bankayi-hedef-aldi--211963"
 featured: false
 breaking: true
 draft: false

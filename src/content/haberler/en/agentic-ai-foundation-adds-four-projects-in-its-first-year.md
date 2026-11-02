@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "SDK downloads"
     deger: "4.17 billion"
 kaynakIzi: "v1.HaIkBPFFdjItf+NL.XlzWFpJgpMOtpjo2GROiixwSxXZ98V1Nq/1+AUBoJQJD/Z2GP9/KmMT2bFPx4gbb+WrHp/gR2wddIPKZf+cKUTQnu7iw1uezbAywu/Yy3R23b1graAubuNzRUivXe95qh2BpCMd8Lh0pajFC4+lbuywbO8bHd0WISAgW5kg1wh9Cl6nf1YLoGsr365JmMC2wGHIMvLWOPGGUD6Tbq/0iLO0SWq+R31H1vrOmvCrITHRNmvfg9IBP8+fdR0TPq5QQdJQul9+v"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: true
 draft: false

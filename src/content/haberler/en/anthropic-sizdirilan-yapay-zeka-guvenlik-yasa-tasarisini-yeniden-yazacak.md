@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Reporting window"
     deger: "72 hours"
 kaynakIzi: "v1.hX7vFQEAsMsDgZeu.xZl5nZNyMdqcWplelRqsClZEhW7TYjol0+fpmYKj2xxXI6fNyxNlXP2a2/9NQSEU4ofAFyv5PFG3QSsoOCAcFOFh8ncOkKbGTdzK3UpyGztCOGc7a4mFCoBkC3MDBy6WG9CGHxEO3PKCo/HcVfSA6/VEnje2aVOQiaXi7JE="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/anthropic-leaked-ai-safety-bill-backlash-frontier"
 featured: false
 breaking: false
 draft: false

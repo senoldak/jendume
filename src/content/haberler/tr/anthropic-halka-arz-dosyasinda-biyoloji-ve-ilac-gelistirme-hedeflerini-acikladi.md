@@ -13,6 +13,9 @@ key_points:
   - "Şirket, Claude modeli ile Crispr benzeri bir enzim keşfedildiğini duyurmuştu."
   - "İlaç geliştirme süreçlerinin uzun ve maliyetli olduğu dosyada kabul edildi."
 kaynakIzi: "v1.Wc3e9PwCzYspbJ2R.vnsdhzyPKoj86BrcNED2qDdM/8s2IvEglVmB4eGCbFFOX6rPT52fpYr+RRstJ6cYTSj3VCbAayuqo48rAmwgSSNlaR201yaFBB7FFpzgxmXQHWS05OX7iMIa5+bKMVbajwKkLb56DStrNxqrRiYgpi9lPyQX2AtSdlvZ6LJc"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day/"
 featured: false
 breaking: false
 draft: false

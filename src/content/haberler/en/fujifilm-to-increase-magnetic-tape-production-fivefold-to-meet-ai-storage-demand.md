@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Quarterly increase"
     deger: "57%"
 kaynakIzi: "v1.EkAMbTSUtlW6O4Aa.ZWnSB/lvjvcvg7DDNZIrBGOPtl0IfcLdh8VCt1Pb662x2E/QyxsQzDkN7KDrFdTo6l2qqAs2TquHk8Dgq0mHHwTaEdgqHAvz86GHRD+Sa7dAfLmrIMDWWp3zxpKSCjNXt7tWe1Z0LcFqfg9UwUd0knXcq17QDLn+TA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/fujifilm-magnetic-tape-production-fivefold-ai"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Asıl pratik risk sihirli yapay zekâ değil kötü mühendislik ve denetimsizlik"
   - "Özerk ajanlar için en iyi güvenlik önlemi en az yetki ve insan denetimi mimarisi"
 kaynakIzi: "v1.4bBF4wbTd0U9G59O.WBOveH8BSUsiy/jnZO498i4qgW0uvYPjgqbX5B4xlJfwoSdFRnIVDSLdnZ0gUgNkwNezx0hfmYahAJIhFl9DIVetvAvqOppunHFOMaK0/fIwnlUtKvkaglI5aD42/V4gjurgC0J4c4uxNr7q6NfexduYyHs926cxGOyT5SAR3UaldpO9hY6CCslTGJUchT970Sq+Pf1azWexdHH7D2NwZ8kNtGOXaF5FKfw9pVV7mDf7qH+9LuDqCKrLTdB0rI0bNwUNIU0j/7LunqZwiPXtzLByxhiuqhg="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/bill-gates-warned-everyone-that-ai-could-cause-a-billion-deaths-this-cybersecurity-expert-explains-how-realistic-that-scenario-really-is"
 featured: false
 breaking: false
 draft: false

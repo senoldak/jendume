@@ -13,6 +13,9 @@ key_points:
   - "French, Spanish, Japanese, Korean, and Portuguese were added in 27.2 updates."
   - "The assistant is currently available in beta across multiple operating systems."
 kaynakIzi: "v1.ccPUrf33u/STIwrO.z+VjBwJrhowLSloFri/K4yr0ahSkbOyuT8/7MALWYnjYeNPuh3ZReIEZlj2zj3+0sTp94NaOD/yaGKfwsh2rEgqTYJ2ImKWlD2C74cCF+KNiU1eidFEWEO1Sy08f04NhDmZ9Uglx9/Qns54n/io0PxuJ4OGadSztDL181BOR54++pniMcYAh/zHRvIFUkA=="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/27/siri-ai-yil-sonuna-kadar-turkce-dil-destegi-kazanacak/"
 featured: false
 breaking: false
 draft: false

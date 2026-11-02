@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "European deals"
     deger: "$2 billion"
 kaynakIzi: "v1.7ON1j2rtZQXjHqBX./g3OHkfDig9ppKo2TIbwXON1CiWJoU8Juh8lCs44uBJMejqIVh3oOa/+id5Ei1QH7jwT28/MsX4RzXnj2O2Nyjjp5L8yFQHw7hVjwaxjKvupyEkdODBjQznvfirC7p17ht9yrck5PdRLanI7GmTD33dF98+shnxYIm6Df83ta8RVG/9l9TwRMw=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/huang-gtc-berlin-keynote-protest-nvidia-chips-russian-drones"
 featured: false
 breaking: false
 draft: false

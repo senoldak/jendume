@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Yeniden başlama tarihi"
     deger: "1 Ekim"
 kaynakIzi: "v1.qi5YpLdHQ4lLVioR.Ginj9HIIsKC1Fh2FYaHw+lYLlHRE6Lo84fI6a/Aj/AkkiXlrfNzOSBYBYFYOx4IliD20MXecRi40eP2pnSjZWQehK9VaF3Qeiw6N3raxo6zjVHEJYx8c04wrwQFXR/T4hlZ8gxTpB/nmV97sb8Hx7rZEWtjFIocV6aVJdnsBdgh4h6VH+T1wcMajLisVUeiQH3rkiBg="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
 featured: false
 breaking: true
 draft: false

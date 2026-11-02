@@ -13,6 +13,9 @@ key_points:
   - "Personnel are routed to Microsoft Copilot following security evaluations."
   - "Additional public entities have also introduced corresponding limitations on software."
 kaynakIzi: "v1.fbbYiCYSUPLGF87S.5Iz6y6PUDULkGCZTOMwZMHk2V0JVraDpQR/0YVkuT6Eu02JmP+o2iotqC+pTIZbpoK/uNiR5Htv8Y/giCMS+lcwDn05BSpxSz3XqWeZ+8hMk8xfhZsOdvy+sRdQIH0GX/HpQVqcvdkgb+OQ84Wz2J+QpFQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/sweden-government-blocks-chatgpt-claude"
 featured: false
 breaking: false
 draft: false

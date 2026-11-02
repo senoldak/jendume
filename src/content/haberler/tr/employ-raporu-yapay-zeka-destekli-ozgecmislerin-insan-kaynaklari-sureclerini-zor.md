@@ -11,6 +11,9 @@ key_points:
   - "İşe alım uzmanlarının yüzde 33'ü yapay zekâ ile parlatılmış özgeçmişleri en büyük stres kaynağı olarak görüyor."
   - "Kuruluşların yüzde 27'si yapay zekâ destekli aday sahtekârlığı tespit etti."
 kaynakIzi: "v1.gRSkYTEpkk6mcAdA.QUWEOFaHD7Z2Jb1CiiCmf6rP1Rce3dNIagRhxhXGeDSJbhInlnRadUNHNRofNCbHiVao0qrQD3VV+FXSMENI3SWnehLdT16PbOxpMGBrdOdd/Btfm3E12WhZ6zU2+j+haJN8psVk1w=="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/education/employ-report-ai-hr-hiring/"
 featured: false
 breaking: false
 draft: false

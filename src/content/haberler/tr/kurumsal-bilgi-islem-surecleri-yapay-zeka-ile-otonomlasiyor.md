@@ -12,6 +12,9 @@ key_points:
   - "LogicMonitor bünyesinde çalışanların ChatGPT benimseme oranı dört ayda yüzde 95'e ulaştı."
   - "Bir müşteri teknoloji altyapısını 72 araçtan yedi platforma indirdi."
 kaynakIzi: "v1.whrgtdgsx2tJrAOh.8i9q1vuHal+Lc4ao/z/OvTbodtu/fr2V0az/EzEgm71nGcX3z/Ql5ITFZiCKQ3EnuEO1F1ORLlM38XTMBfsbJxYhFDKNW9yUKbBoDL3Fs7yIhZFCxotVoiADWar4KASiqQx9VSFDXv0skvaQCuPt5M8qoSQ6CYkiDmPcqHke1E+lFESZiFlQpeKCPQgSwMOz2913LXfPANdi66dEtw=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/15/ai-driven-observability-logicmonitor-elevate-2026-logicmonitorelevate/"
 featured: false
 breaking: false
 draft: false

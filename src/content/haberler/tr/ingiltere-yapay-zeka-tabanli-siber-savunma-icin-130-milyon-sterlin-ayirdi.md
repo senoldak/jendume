@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Biyogüvenlik yatırımı"
     deger: "165 milyon sterlin"
 kaynakIzi: "v1.o3v5FMttaTk2n6fL.OQmBCiQFEZWnsSRlekRrpMFrw0rDRODtofviE3C6nsBqrC74kGoiZVPWlcdOyhCpEcjTpuxVEpk5fByyh+MGlBHSk7n0Mr37PRpzu2baaOyzq4/kiNlLwzMiV60Gh1erp7CiiBzBHNi/s9lx4mC/CPUt/kKmPqrtzrsrlxH53mhf"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/uk-130m-ai-cyber-defence-national-cyber-shield-budget"
 featured: false
 breaking: true
 draft: false

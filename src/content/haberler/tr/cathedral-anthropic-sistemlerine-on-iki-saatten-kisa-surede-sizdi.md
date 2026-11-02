@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Sızma süresi"
     deger: "12 saat"
 kaynakIzi: "v1.qaIP0AY38sF5jd3F.OzHbOPOWuocJvvX3Ipes0xXWFCy6JflpceoA/deVZrj9h7bj/Zow/qOLe800Gssb2gwn7BX1bsRC2Bq7Rt0fl6w+GqxhYbzm6IZs7AM60OPhvpBwZU2JcmvoHRjns5hNTKN4P9VsPs23O8Uce9lNOzbkEmVA76zNa7URm5kBh3PdG2Wt6BL572a7C6qO8JK4RejxOw=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/yeni-bir-ai-girisimi-anthropic-in-sistemlerine-12-saatte-sizdi--212213"
 featured: false
 breaking: false
 draft: false

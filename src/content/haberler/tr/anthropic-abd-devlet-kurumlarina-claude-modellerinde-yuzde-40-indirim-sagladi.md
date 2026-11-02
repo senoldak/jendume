@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Anlaşma Süresi"
     deger: "27 ay"
 kaynakIzi: "v1.+tVxk0z1TdK+VdvW.G28LJ+ZYoWfh4e4FHEpn5aDQLOfeJ/+54XnB9GddulNAGkVTe6N0RMK6f5XNktnCmiyq5zOp/5nJKWB62HnzvyfUrMNZTTM3N044bgMrziEkMIiM+d7F0SHnxD6XEQgK8NHi7L7dg8PGgyArVgROdjbrFAbwG5p5h74N"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/anthropic-gsa-onegov-40-percent-claude-discount"
 featured: false
 breaking: false
 draft: false

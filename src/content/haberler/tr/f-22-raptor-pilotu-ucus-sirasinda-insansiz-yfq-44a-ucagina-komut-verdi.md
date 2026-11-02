@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Sistem hedefi"
     deger: "500 sistem"
 kaynakIzi: "v1.ZOFkMoEVOQq8BaSP.j8RW9138AN69DlzWVe0vxbz8RJl/aj77DkdEYLIlhIJb7DV5KutvcH/6sj7e/5EJvNQdtVWp51OeG6E8sXX9NJnG1juPxifiKEw9BPSjrmEXgicAZG6nm4uSCYKR1b+I9XPVvmFd59sJ9Q=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/f-22-yfq-44a-ya-havada-komut-verdi/"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,11 @@ rakamlar:
   - etiket: "Pro plan ücreti"
     deger: "20 dolar"
 kaynakIzi: "v1.jyqy577gQEh28deF.Vv79GWHFsOhc94jpmxt093Cig6GitqvSZUQc5QvhDTGz9RSPcdlgLwOMmw44Q1h33VCgNufcgPMePwjls+tmz9U3TzehGw5OFUw1YIe32u7wkmv/gKS7Ngacfyi+yqFGBVfS0wylEMAiGCpQY+E1jE2pFTrC18yDml2klTiDrYgl5mDQWC8pby/efKIpvPgnBSCAhGc6Rtq91j+2pL5+h++dFOMV84ZCyJX6TjeDxAiMCW45JHTWfI5sJKyDbN6A/Z8voHptTNGLkW0hV9Zrg1ksGLwY3ViqrLj3Bjw02WrsSIGSUyTVJNPAhPPTJKnsJdcfwwQMQwL62twnjYxJE3HVvXA="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2293646/claude-duet-is-anthropics-answer-to-meta-muse-and-openai-dots/"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
 featured: false
 breaking: false
 draft: false

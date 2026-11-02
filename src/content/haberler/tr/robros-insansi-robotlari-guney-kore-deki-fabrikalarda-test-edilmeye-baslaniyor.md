@@ -12,6 +12,9 @@ key_points:
   - "Yarı iletken, otomotiv, gemi inşa ve lojistik olmak üzere 4 farklı sektör seçildi"
   - "İzin, çalışanlarla aynı ortamda çalışmayı kapsayan özel bir istisna sunuyor"
 kaynakIzi: "v1.H4LAnTrOkBphcC+Q.mMvaTlQewngO4l3vq8rE3HIgQty+OkcSTV7NsjWp/FMTrQMSGbLOoQKjI3oHF6bom2KuvS0in6ciV58ufp8eKFUEeCkuJm0tF58z3CWIaPMfJz09oI23i/nmTNQLT6i0VNlShFjJ9u1wySPt1AbjdbZN/y24n5JEAA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/guney-kore-20-insansi-robotun-denemesini-onayladi/"
 featured: false
 breaking: false
 draft: false

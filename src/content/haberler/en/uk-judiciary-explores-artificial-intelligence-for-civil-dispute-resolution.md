@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Case rise"
     deger: "10 percent"
 kaynakIzi: "v1.iScM8W11p2DnaNNH.Nzrn3PgMvhv355OrXDQd7wm2Gx5S/gBMS4P14bI3mnGlcrOzqGdBYWGI2UrpJfmE9oS0x5Bc8qyogWSjc27hBH9dH0v/RPhgpxp0YLbikaqoQ6YJeM+Bm5LQFke1Fq+tb2Wpq6I0PHy5doIfWXYCCpj4WG2vlg+y4BnXzz0="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges/"
 featured: false
 breaking: false
 draft: false

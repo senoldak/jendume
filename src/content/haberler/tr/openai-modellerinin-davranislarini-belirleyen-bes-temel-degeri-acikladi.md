@@ -13,6 +13,9 @@ key_points:
   - "Modellerin kullanıcıyı pohpohlaması yerine nesnel ve dürüst olması hedefleniyor."
   - "Şirket, mevcut modellerin henüz bu yeni kurallara tam olarak uymadığını kabul etti."
 kaynakIzi: "v1.03zi99fIme4RduEO.0O2Z/i9WBCzTtvaKTwNvdZ/EWjgmK72gyMX7P1n/Ynqm3fnvjiLB9fXcvPXsJAveAxDoH3PNQzJ1mbSoYrBWwl2nB8yhpFumokHlkZvCMhn67imcfofApUFV1ED8b8h9IpRVKE4IdgoOZYLVP4+nyA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-model-spec-five-values-update"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Başvuru Amerikan Hümanist Derneği'nin desteğiyle Title VII yasasına dayandırıldı."
   - "Üniversite yönetimi çalışanın itirazını kabul ederek muafiyeti onayladı."
 kaynakIzi: "v1.wXC3POQqZLEYmpWb.533+AyGfX+nKhM2xKrylGcFnBG7mhrb/K1ARR5bY+HqeGOSn/SZF2+97yljIU2gGM+6rT6JzsSOzwXuQsZlt0tj5+GXBjpibWecwRNdsBmICT1l1IW4+dB4dFYBy6dHh9fR5JL6JCB3AyzrZl21rwFefQfqLLCEcTIdXyGZ+CBW+jxAevWPjocFNDrKAU+iX1FSnKaGWeHuVCBNML3ZfRIwgfOk7drkqnYZuhY0p9APbcyLnE2i2RhRypXCoCjaXOr9co53MWOTmnOdPbDw1QoHGXlt729MndsFxtnNg3HR+yOmVcr8v+3bRWUPx1THlvlD+u+YcTs9O/KhwxpM="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/humanist-wins-first-of-its-kind-religious-exemption-from-using-ai-at-work-civil-rights-ruling-says-kentucky-man-cant-be-forced-to-outsource-thinking-to-llms"
 featured: false
 breaking: false
 draft: false

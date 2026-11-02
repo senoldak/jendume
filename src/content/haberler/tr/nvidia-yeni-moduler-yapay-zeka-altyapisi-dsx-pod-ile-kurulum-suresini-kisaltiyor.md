@@ -17,6 +17,11 @@ rakamlar:
   - etiket: "Güç girişi"
     deger: "800 V"
 kaynakIzi: "v1.ja61Eh9tN4pv/BIZ.uQo9YoNT3NywIzzGC2HWqn4EiqQ/WulrWsG/X0QNLIAW9AR+86D1vTmSFcrDvMWRQEMkc8adfyNxJcPXeMbSNIofIBhPT/GNfab5gS9M3I0xPN/JMRBp3hZXPUcJIR+bJv83+/tk4Nm4LEfwvdQ5IFdPs2M3fjwiqIUzVsUZhuVjWZF4cVsf7uZUfp6O03+4JOG3WBDzLtpolJAvTKv0UCOgIx24Yvc6mHt+veEhVSCrC2X1YpnoXAevnkXYrxAmf9U0yv4LtqOctGa4zSXEBX55lF/2r3ilx6kDSToGZw5PofjeZrtp"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/nvidia-dsx-pod-moduler-yapay-zeka-altyapisi/"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/nvidia-says-dsx-pod-cuts-ai-factory-deployment-from-months-to-weeks/"
 featured: false
 breaking: false
 draft: false

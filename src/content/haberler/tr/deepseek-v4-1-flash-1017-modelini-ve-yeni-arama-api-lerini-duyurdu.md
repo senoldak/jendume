@@ -12,6 +12,11 @@ key_points:
   - "Model, görev başına maliyeti düşürerek daha kısa ve verimli çıktılar üretiyor."
   - "Arama ve getirme API'leri bin istek başına 0,75 dolar fiyatla geliştiricilere açıldı."
 kaynakIzi: "v1.fP49XSjqfh5ItyWZ.hzQn99Ib6Z8JYJ9n6eLkImTCvmR9dYUYBKORK9G++urP+hu0pE+WPf4Oncxp86dql01YW4StyAlWQN4f70tM7veGoxZNtW1RiRPB+n21/vdiTU+tDWps5bVCGt2Deuia+hvV0qZxmZby7w0laU10PuvziS10C+N7n6L3kbYeeyzUrtGelQCd9EgPUd0BYqXieC81Ih0DYFx4NunV60l+zmsxIozqwZESWq08gCrq/aHnvInlr9vjtbsPi++barnoPKm9ydz4nc0SnbSCR6fZlH5fdTDMYIToAbUYhYLnDF1aJLbT3XrBclFb89ysSX3VT9hHTfznvD+U7r1ZkCWOZ0NlF9jcIYCMYeHWQT3/7rwN6B37+Vft5IU+fZO/MCqR2XixCYv5xOp3C9CKy+PoPl1+qF6PUNYvlcW++4iQ4abGwgiLEo4I3xOBl6jA"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/"
 featured: false
 breaking: false
 draft: false

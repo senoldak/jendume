@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Gelir artışı"
     deger: "%30"
 kaynakIzi: "v1.GDg0y1VSKSG/ov/a.JhiHXhXvVfxyM160IoW8Gyt/MkROxJ97H5UlHt1O0+wU6V5yZXgaL4x5AgBcSsS5ngEDf8xT4jePDG/7jWcHj8yiFbyXlk4SY51/a+GfUAg/2ezFLNL1avfvP0i95hVJZWGaKQfAEhOB7uzxiFXqixoypV7JAwcRqoEqi0hFl5jzWatl5TZMlo03"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/oracle-google-tpu-is-birligi-ile-bulut-stratejisini-genisletiyor/"
 featured: false
 breaking: false
 draft: false

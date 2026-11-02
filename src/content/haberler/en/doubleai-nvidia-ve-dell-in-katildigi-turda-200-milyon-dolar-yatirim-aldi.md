@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Company valuation"
     deger: "$1 billion"
 kaynakIzi: "v1.i0hfBejxVr/crJJY.odmKMmNY1XnFaMr4Iz9zzveIyI54zuYI0q8dQOiiKRccXrC1OnNkbwN50AmnoINknbcPH+4RZ70gk3TP4lt1N5ghfIei1rPZVltakEz05ynznXHR/v6R3ytIp0BOvbdxDkeHNGCh64/VrnNZTxc6/azXdDdJUjeMrnz0Yjun2BRltFCKvHlaSfgZrmzjigx6BPEl"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/19/nvidia-dell-back-200m-round-for-ai-model-developer-doubleai/"
 featured: false
 breaking: false
 draft: false

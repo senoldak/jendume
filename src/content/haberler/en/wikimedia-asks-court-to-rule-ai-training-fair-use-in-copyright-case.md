@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Languages"
     deger: "300"
 kaynakIzi: "v1.MJf1c+xiP/JKkAPc.yFWOpj7eLcknthi64vhrLBa9kVPdHfK+UahgxIH2WrEx9yokrl6RhaWaa6ip7cFToQuk3jfJWpYropmNNJURe8XzycAw8t9Nx/RWLQC8E2IvsPKzA9G5wJYmBT9Z0h2KvgUqmjWMXlazED+pO4zqc/D0SFcgk9IB431yE3es4rJ4Ynag6g=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/wikimedia-amicus-brief-openai-new-york-times-fair-use-rag"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "The development involved 10,000 model instances running for 88 hours using 130 billion tokens."
   - "Mathematicians argue the proof's approach differs fundamentally from claimed foundations."
 kaynakIzi: "v1.E8obfnbUGedLTon/.334utER/ordp65fxDn4ucydP0QJyM0+8JudO8OXnl5+lpXwGQ8B5yRwoPuNGOY5KAFU0jAwOJzWYCclUkKPjp+hdVppoW9KzL33eGe55f6rKiq8dja5vNYwSrdcHoKlMUXfuR/cb3Kc5NICPXMQdtJiAdSjCY8IBLVqsOuDnaxgSs7em3XDLf2M0zil7I/o="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/mathematicians-say-openai-doesnt-understand-its-own-navier-stokes-proof/"
 featured: false
 breaking: false
 draft: false

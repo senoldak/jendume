@@ -12,6 +12,9 @@ key_points:
   - "Sistem emsal kararları ve müzakere kurallarını tek akışta birleştiriyor"
   - "Araç paralel çalışan yapay zekâ ajanlarıyla risk tespiti yapıyor"
 kaynakIzi: "v1.02TtkqGZgzJij5nt.+w2jONf4s56Xe70MQ2PAaAe6ggJkWZWAz+wsa8Gat3ySTxMNqiYVeqJRcKiqyE7IA/5YnnpBij3PdfaQ4hwFAB2t0d7aoQyjksXffIO7tqMZ5HDOIA9LqV0="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/sullivan-cromwell"
 featured: false
 breaking: false
 draft: false

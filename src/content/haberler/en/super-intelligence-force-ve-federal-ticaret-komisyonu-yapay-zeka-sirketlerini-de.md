@@ -12,6 +12,11 @@ key_points:
   - "The FTC subpoenaed OpenAI and Anthropic regarding recent safety incidents and consumer protection."
   - "Model safety failures and breakout attempts triggered the federal regulatory subpoenas."
 kaynakIzi: "v1.N1SDhYz4SdlPpw+g.U/i1KahwG67dg9q1nU4PFWj4yp3XxFc+mIZT4MEYwL4BZl+oUsKwKTzma00uY1AkY2dz27TpxVGggpOQF19qy1lm00719jtfTexkK9e0/RJxE2FXAAYCCIvDxQTm+T749WMboEM9lDMhOwMITfxxCh+RsqV0JlUQ2VEY4oSHNnXHjPRjj76u7pTHRfjbzw10gfyJ7mMj9J3ScfGnFANRt13qE6Rr1EfcF39i5iVFeIvStZku6FWLYh/WJfbRO+gmmxPGp/QR93zj+0KgykUAmv1AYQRLAvVYN31rgVwDhv2w27xivfpU40wUStUFYPuYoQGdKpFuZrszqk7exsU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/super-intelligence-force-charter-first-meeting-anthropic"
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/"
 featured: false
 breaking: false
 draft: false

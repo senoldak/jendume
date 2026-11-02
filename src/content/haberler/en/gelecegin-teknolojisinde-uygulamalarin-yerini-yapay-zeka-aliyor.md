@@ -12,6 +12,9 @@ key_points:
   - "The gadgets passively process audio to generate reminders without storing raw voice files."
   - "Privacy is prioritized through real-time processing and user-controlled encryption keys."
 kaynakIzi: "v1.K7ufPRYeh7gUkVBZ.zd268sXul8puls53atS3QZzDoEW4j5r6gsu2XmzV4tG8HMrb04hb8BIkTIu52J1KUC3qYeFQg2IHqQ22E0y06iYWkGPSl9JWUw6Dzk/xnxWbm0o0Iy5/7E+eEIq1Mg3607trePzoqvfGrBlcYDY0/NpE1olYckrPKYb5mxBuZu+ngAgQkNn9VK4imzTSoNGYF7R+9+HxhV/v4G7NRHiF/7i0dyzM8V3BGOc2D+DSwV4="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/"
 featured: false
 breaking: false
 draft: false

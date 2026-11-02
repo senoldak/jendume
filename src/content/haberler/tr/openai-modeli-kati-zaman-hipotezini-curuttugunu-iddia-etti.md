@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Bağış tutarı"
     deger: "5 milyon dolar"
 kaynakIzi: "v1.qM912n02NIDKNeSY.EQlRFiAWCnkPR41kWDBaKHAiBqON4KDRnMSz39qXq/Qa0Zi++b7LnCJPGPL54D/IKO+985YVaekd9tXQhiUSYZ5oMYf6Ik/fGehAQtIbUtnW712xdjzeWBr8EKQUgDM9BTnN7H0YfRlrxXnWalT3em83WSJXiGQsAoWnM95iAdvz22o3tWw="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills"
 featured: false
 breaking: true
 draft: false

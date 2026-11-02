@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Sohbet sayısı"
     deger: "70 milyon"
 kaynakIzi: "v1.sXh24rRoAfS+8Su2.VpMlm4Dda7YxsahG+Sg17mNyzeP3sjh7Jm6RCC+dXMWSBNy59Z+Yv9Y8eELFEGGLDyk5ZoRO5B3ZF8T/s/k25KmzhMLmxQd/8FVN28fJBHCNoRxFwP66lcDRdlkPsne75I2dDaFMzmqvjgPXLXpHHwV+60QFRmaHll42Hd7LEXAdeRd6OIU80udNh86v2ahP0Pd3T5Xy+A=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/"
 featured: false
 breaking: false
 draft: false

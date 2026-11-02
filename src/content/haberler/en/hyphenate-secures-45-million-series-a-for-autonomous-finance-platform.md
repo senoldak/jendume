@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Audit exceptions drop"
     deger: "75%"
 kaynakIzi: "v1.BEBljtvs9LQcecAQ.Qs0bCHmGx7J68SNR2aUsooWkApPfVHW+29dM3huQW0wltoNgEwThwcbF/fctRXGYIqw544787Kel9SwHdpQwK5QqJOWVfEeiQ05bAXDWRnl81TGQhSsaNoHsZzb/6/a9+qhYn2B/XmapSy3cmfv7MIPuvy233AhrizYY0CiqB/sTRwQeyF726gRx3e846RRttdxKdh/xJwwEum6nj4DpV4vMwREQziTKZM9BGFkYnZPFMmg0cV52KTdfMa63X16rgEwu64czUzp4YoYO4ngKV+3ad+WDhdXfy0+ezNg="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/hyphenate-45m-series-a-autonomous-finance"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/hyphenate-raises-45m-series-a-autonomous-finance-agents/"
 featured: false
 breaking: false
 draft: false

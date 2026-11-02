@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Manuscripts"
     deger: "722"
 kaynakIzi: "v1.kgZtgFQivHVNZEBr.gyp2XkNdODDQnzMWf/fyWT9B3bUtlAc4zhvPddVJ3TFCYV38VFgsWfffrqPiHitrGgkV034Z9aO4IhCTrCT4n29TIBKWSq1ZJz8kYouEuOtZ6LYoY9PiVJB6BoA902o8bDFK+KCqSAn9R5zqXPh2m+bvC274RBcJ2enqmH6hXcHCgHqbgdohz8zVWfq7mM+5HwKP4EGwPRrtWr8J8PpdSVc1V0s+yrUqOG9RGue5X9NtJpPyS5H5E5d7UgruCt9v2G+uPJjtGGDicQEsa+Us"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/openai/sam-altman-says-openai-wont-slow-science-paper-blitz-even-though-academics-are-calling-it-a-giant-bomb"
 featured: false
 breaking: false
 draft: false

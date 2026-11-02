@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Desteklenen ajan sayısı"
     deger: "40'tan fazla"
 kaynakIzi: "v1.+8Y4wFWdv0wTJElJ.HZHMdnm7eycI84QvbfJGm8WacOKSLnjrNVKLhktZSO96cOTZ5px2W9SQ05SWMo4WJKNKGSoslrVeEmQt4eDPO8cVnV5CPT053U12e5sr/nt1V7DLl6HKx1CCA8zWkcFu3efDDQ=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/android-studio-rabbit-2-ajan/"
 featured: false
 breaking: false
 draft: false

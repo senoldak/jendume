@@ -12,6 +12,9 @@ key_points:
   - "Araçta direksiyon ve pedal gibi manuel kontroller bulunmuyor"
   - "ABD Ulusal Karayolu Trafik Güvenliği İdaresi süreçle ilgili soruşturma başlattı"
 kaynakIzi: "v1.nEsqfI/2u7onvkt3.3mVDs0FX1T+B5fY0Yti7IL6KGiYb4e7bqg9DS5R39Rouz6wfjUNaZpw76ChnAkoYwsTaVGHd6gTBdCrZR5hFgnVRtIra3+87UGDbPalmaDjZiVw2w0p3nmK/mbHXHtfdlg=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/tesla-cybercab-satis-plani"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Rollout duration"
     deger: "up to 15 days"
 kaynakIzi: "v1.OnQc6fUNOmpSHvCJ.bdVqf0fE8oTZk5S59aFcxUwmn9eaSP2tYsWbXqAkcnyFR03XKuVQZBmfOdIqaooYZ1WFS76Fr8kHombOACeN1cv7NHN6uCS89t4wiVea/9M15mbh22gjOE4xWIaYd+f2szAF"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/gemini-ozellestir-beceriler/"
 featured: false
 breaking: false
 draft: false

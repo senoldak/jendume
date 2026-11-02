@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "AppWorld başarı oranı"
     deger: "%72,09"
 kaynakIzi: "v1.BVQ1VbCEjWJ3YXcd.TwVJKpa4jU7EL69JPQi8c+J4tBljwPlHP1597MfBczeYtr2KmWpxsjcc9FsNhOT608DjtW6l1oHJansbgWKQ37O3QtNMEbQrhBlRgZZ/CuZUS6nTqCXbtiw3z0nhEMvMYeruZUaITTur1VXkpqse3zvSe3eLRL2EFJuBwB4dlm1zngacD4tIV568"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/21/perplexity-jolt-joint-on-policy-learning-teaching/"
 featured: false
 breaking: false
 draft: false

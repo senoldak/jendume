@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "API cost"
     deger: "61%"
 kaynakIzi: "v1.9PR4Io/VlM7KcGIm.7+mk26LjE2g321XwcwKCGdBqORywqE0xyZb3XNk2MZTNeErHbVZPL47osFGrP0s0rNMVE+Jlzj2BkZ8GEBShzqaKrrO8FzDYWWG3xTorFytzBvki4cmFVBa7rSke62KXKt6eD836ZzzT64kgKIJa8cPe9KIZuJk7"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/cobol-tasima-testinde-dogruluk-yuzde-979-a-cikti/"
 featured: false
 breaking: false
 draft: false

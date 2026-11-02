@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Gelgit türbini"
     deger: "300"
 kaynakIzi: "v1.Xd2LhObUBplVz6aN.4tOKlpXctI29Kqd0H5wyzQleFL+xkI+I5HkQzr9N375UmXXGW3+/uGfvIm3mrfhtaPwgnAjuWb04QviQkYENWPb5CTXnKcBL/CzcwTKaBFb95w/f2+YxV80eOCmNQcJlp10dzBuV0FIAHXheqWhh8/jrP7cjRtkLN6Xeaxtce9g8ThXpAdv0kYAUbKEIJOUvvk42aw+dXY8HmvmOfGJUHTUgkZsNWUAE+nOAI1thB9yL6ZIedL/bxtgrs9rLaDVjBO3dvSx+ZJQEcC6eRhg="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/were-deeply-concerned-underwater-ai-data-centers-proposed-for-maine-and-alaska-but-critics-say-they-could-endanger-whale-species"
 featured: false
 breaking: false
 draft: false

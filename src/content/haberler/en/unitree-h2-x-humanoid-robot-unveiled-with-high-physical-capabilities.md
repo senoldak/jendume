@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Degrees of freedom"
     deger: "31"
 kaynakIzi: "v1.UBnpDJ5J+OTFHdCQ.2DEB1Ogh8pFhnZLxYKCRdWtNJ+ChoNZsM0MDaoyUoHCG3Uwgq83cxxJLK2h1VlaNsvdyBxPPc7s5sDJU7hXrXQa9jTZHW9Qr0xiGGCb1l0q4DLkPAQ9/Cki51f8SX/mRruoXczECbLF0g+UpygZEIpeJNAp2P4jsR/NrJ6Vmp92K2tVu++a2Hbb5Q9oC"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/unitree-h2-x-tanitildi-araba-kaldirabilecek-kadar-guclu--212096"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,11 @@ key_points:
   - "Amazon Web Services committed $1 billion and OpenAI backed its deployment business with over $4 billion."
   - "Anthropic plans to train 10,000 specialized engineers by the end of 2027."
 kaynakIzi: "v1.ayvm4eb9KZHf9iLB.+kFZn601BCFfKCs7HHQlNYGC3yDqh8xo1lFev3J8aiZutAg8HD+vSbif8VGXcCGkzMO9objLmXz5RDJPkJOco5Xv7YS7PFFUDs0gXOTkFil0bHO3HuaaaTzGwGIuPicgLwC3cSFnw+JSk/mlEBSXQs4ii+JcK0A2IXwUGkKwPBOENHMMemL835TeZAdYD4xJwEIP64+4hDVI/PolKFx9VXKRroGHw5MHuPkm72Vw5lfPiTfjowzNJT9zQWNCsUp2o1pL9gvTpch5SIE8miyL45btG9gIB29mL0As16rXTkVNqlWWUzm9wMDPkGNVcxER+SCQQmEk8cv+YHO3VuzREoRuj2wKGAMY5xQimnYmXHhIwN4kOxqv3FbvbojoyfAh95vATWRv137kI3nzTCTdx094hbhk"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/thousands-of-specialized-engineers-deployed-by-aws-anthropic-to-prove-ai-is-worth-the-investment"
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/15/aws-anthropic-racing-to-deploy-army-of-specialized-ai-engineers.html"
 featured: false
 breaking: false
 draft: false

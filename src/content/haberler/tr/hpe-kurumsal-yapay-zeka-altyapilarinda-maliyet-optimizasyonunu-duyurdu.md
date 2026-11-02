@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Planlama vadesi"
     deger: "12 ila 18 ay"
 kaynakIzi: "v1.GDmdsinKGuKAgteN.7WKLk97BH/Chte/5Iju27n2K1KhkWEnbegJZngPjsUg7cN8VU1a7Vk2akeT7/PF7Abv6nE68EYFe4J136euD3MbGJFjAFoJNOveIZax7BxcEph/IASN373ttge3RXJNy1uKcfsWAFwE4iCXmh3EbUAmbkVXvTBqzMYyy8Hf+i33NiTPdLZKn5daG7LPQl6cZ88zE"
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/10/20/1146937/the-new-economics-of-enterprise-ai/"
 featured: false
 breaking: false
 draft: false

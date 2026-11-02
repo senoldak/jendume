@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "İlk deneme boyutu"
     deger: "1.000 kişi"
 kaynakIzi: "v1.l/mJg37bxtVzCTaS.Sp/so42u38QTdDVvlKpVNt71ibf+a6rcX/5knIJ3gTmu5XzR5pYVJpRNoxw1TbeZ4NES+QKSBGFzBpHgggQNRCDuzWrMxG14gNOf5HrW2eF0rlzHTn2mtR+RQ7WrMXMwqj43Ieb1l0w="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/uber-chatgpt-work-30-bin-calisan/"
 featured: false
 breaking: false
 draft: false

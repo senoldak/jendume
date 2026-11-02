@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Three Mile Island kapasite"
     deger: "835 megawatt"
 kaynakIzi: "v1.z5VmeGLDmWvXFwRZ.OsDn94G0cXJkO2O42wrEfgPh1w7qkIKxJf83+5fmeB2yv0O1GoZvX2DOQRcvp36SY/pXM+cWSwc7aktHlP81F4EXpuiYH1ea+PTG7kaZ6ZJbV2Qzg4fsunYUahmPApAsSy7ZoGcICR8WW20qiCIAGVOF9Q+JYvYSA6ZLrP64VUfLB8b3n5vdcNXB4JsW5A=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/abd-kapattigi-uc-nukleer-reaktoru-yeniden-devreye-aliyor--211930"
 featured: false
 breaking: false
 draft: false

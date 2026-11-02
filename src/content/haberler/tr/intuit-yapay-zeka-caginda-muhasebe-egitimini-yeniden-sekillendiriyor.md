@@ -13,6 +13,9 @@ key_points:
   - "Accounting Futures programı ücretsiz bir müfredat sunuyor"
   - "Program kapsamında ücretli mikro staj imkânları yer alıyor"
 kaynakIzi: "v1.0ZAWJmqq3ZTuqEiL.+759uUIHmUwU5c2qxQRZ73AKje3eKHt0wlmFCujf7s077xielP4n6EMb0D2CHQJar0wF2f+YydN2cXfOtFayfAl+V/bghIDtrPx5OtfB4AXQdHrKU4fTnyxm+FzcH44RQSh4GtfRd84VZ/D5A6DcPsMHjRuJtaiRhw2hhoN/7NBvRNmlDCqgxAxHjn2cY6NR4b9FV74lxTPr3EQ="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/28/advisory-services-reshape-accounting-education-intuit-intuitconnect/"
 featured: false
 breaking: false
 draft: false

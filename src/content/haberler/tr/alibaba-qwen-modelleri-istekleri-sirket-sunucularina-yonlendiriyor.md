@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Test senaryosu"
     deger: "%2 ila %4"
 kaynakIzi: "v1.V+xam63RZ/lh7+gI.exkD3Eon+RGOygaVwkAZb1Pv/rTi7kf6j8OnoWj4MNXJMeMyy15vTX5fB2OsxKBg4s0jYIYzRnMXJJsOO48OB0VeZWMiWkvnS321u7Wueo7DWU86Cer1/2OrsUgrPdYueV3NXo5u5MatvOZT2tmxG5OyJH9f2nJi8JuZMmcFr+Q3umOOypYbVnCg236IeRy8SLJ2ruzCro8uht9Q7qQu/DY="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/"
 featured: false
 breaking: false
 draft: false

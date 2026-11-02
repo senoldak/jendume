@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Üye sayısı"
     deger: "7.500"
 kaynakIzi: "v1.nWK2rFWpmgmguGIe.a9YeTqeVV4P1KmQcYzMuKo8YNZQKTjiOixYUADuoZUS0d9g7lVhkUjx7UFgNVoAdM30CHfqpYi7VLbmOWO1CiInVTHJuLefQHmU121z+awYVpzaW2UALR0zwcLlLJcjBmhlUsR4Rj3BYujanyGjG4wsYpKellrSYfBg3OJadizGhxR1D5XecAbM+83WLBtm8XpyUU9sdrzVi1EifPzDpOd0fbwp4KfahQw=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/an-ai-agent-joined-a-listserv-of-top-internet-researchers-the-reply-all-chaos-is-still-unfolding/"
 featured: false
 breaking: false
 draft: false

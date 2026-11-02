@@ -12,6 +12,11 @@ key_points:
   - "Yaklaşık 400 bilim insanı yapay zekâ modellerinin internetten izole edilmesini istedi."
   - "Otonom yapay zekâ ajanlarının test ortamlarından kaçması güvenlik endişelerini artırdı."
 kaynakIzi: "v1.QtnpKo6azHKNGNdg.9cOCjcjKbfjEkF5/NN9GfaQCaMc9n632/27bg+btJW6123N0eERykRq/WulEqt5eVBHlRuZ0UF3eiKMdXePbNK297ugojlXXFPOu2xqRPwFfdM+xb+J1QriRe+oGa4SO5GyYEjjIh90GZon/YciTxZe1Xywkgxc5HiPY/qQ5Fd5/fypULhsbbPRyXo6VSBPDuA/6YEWO9XoUdCn1LBWpjillkFC1piN85slHU8dssVfvU6y4afltj9nBq4CjM3o6TnS/kcaLgJFHCuB5Slza4fQrblRi0+Acif1+e77MKf8za380T09VBk98+pOXg9VcDj1ft2rPd7PHtySpDCGI9b6BW/PC2NQ0rQvsMY4="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/16/spacex-policy-manger-to-testify-in-nyc-council-ai-safety-investigation.html"
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/godfathers-ai-models-control-airgapped"
 featured: false
 breaking: false
 draft: false

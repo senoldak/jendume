@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Customer concentration"
     deger: "25%"
 kaynakIzi: "v1.8Mg+IttMTN2IN5xM.EeLhJorlnevGPRlccqayUbACIk9MiCfD3TDsDgB4/upmd8COvrWn6xt4vJDYqq9f0BGkz6QvBk94R0nRTpCf/PWzzwqupAX4kaCXidt+18Z5d4pA/Q57gJVIsj/tzp7E9AWCCQHZGENtmbgfdQd8R6hXChrqnAAv1O1BL/VbJJf9nGwdZ6fFSNRsugzC"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/26/anthropic-stock-market-filing-takeaways"
 featured: false
 breaking: true
 draft: false

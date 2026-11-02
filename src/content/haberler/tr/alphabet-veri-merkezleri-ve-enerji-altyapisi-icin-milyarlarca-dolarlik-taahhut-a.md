@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Şarta bağlı taahhütler"
     deger: "98,5 milyar dolar"
 kaynakIzi: "v1.tOXd+8GxUSO9xuAe.eyT4d+t1z9AXigMO9cr4fqQ5FYZewDKStPPQWPQhOgr02jEibO9smrCQ21kAh7q1ZoBc3gOc+RuI9a0korYb0IOywMeJpSkIJXLtT58AK82xnuteQ2Muy/YXpKAqihTVlK8Rl6TxA+6Bhd3CT72MZ5eS3w=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/alphabet-commitments-1tn-ai-agents-10-q"
 featured: false
 breaking: true
 draft: false

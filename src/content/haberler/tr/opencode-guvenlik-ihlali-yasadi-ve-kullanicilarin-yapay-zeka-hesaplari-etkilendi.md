@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Etkilenen kullanıcı oranı"
     deger: "%1,4"
 kaynakIzi: "v1.kMF+6HUPljui5Azt.lxk1ZEzQkvFJYrIU1KdYGX0XeYVvA0Al1u8fHYrCEN0hWCT0/W3KiHn+y0xoGDg4qGWaiEBn9yvdNOiG4nbZzTQ69Z2xjYqcSOc0P9ESd9McvpHBiGK5HRaj4vOMCJEapaULZyHbFcDCv8XEJgYSBGBuIUMib+og0ouIfxACWzkvk0UV+RqHfrnB4lu+2cA33qvQpakLN4EQ7XI96NsG"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/"
 featured: false
 breaking: true
 draft: false

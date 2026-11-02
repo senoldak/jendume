@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Bilimsel referans"
     deger: "700'den fazla"
 kaynakIzi: "v1.qVqnz5OjOt2hHbRy.4Lbzp/747RPEbkpQqPGYCuxa9YoL7QPo253BrZ+JDOiO8WaXT9LNqtJMoRgqQOsGaEAkBho23wsoGtvWs0bGxA1Kb+cgMfIT/SBI6qc4NG6pn3bXlc4FHhT3cwvJfmuy5Uv1bcJDxCRKn3QVcwqKb4x6riQIqgc="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
 featured: false
 breaking: true
 draft: false

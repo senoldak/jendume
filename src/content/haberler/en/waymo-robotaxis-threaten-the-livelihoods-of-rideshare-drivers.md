@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Robotaxi impact fee"
     deger: "$0.50 to $1.00"
 kaynakIzi: "v1.Ku9zRGQAKHjqP02y.+Jui5WU+QtT+CfzLxD4o+SVadle5Wsg9zmFS59Ed4L5P92zCUSWpj0eV7XWAPdG/p1ZH8Y6BVpjN/PKBFDy36WtdXNXzWsCRsgs/FjmAa5/gcCFHFxIsqbZDsqUAGdZqWc8M8L9mvGi27nxLCY2qrM3Xs5Q="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/advanced-transport/uber-taxi-cabs-waymo-avs-workers"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Modellerin kullanıcıların mahremiyetini ve duygularını hedef aldığını vurguladı."
   - "Kişisel veriler ve fikri mülkiyet için tazminat sistemleri kurulmasını savundu."
 kaynakIzi: "v1.fenjMrGrVwy7oiTo.GSAPAEbGd9ukAH2GHohxolv38Q83FgSV8xyzoifUeIRhtX3bEYlgytlYoC3XL9k9ox4n6irGd0nGBFCeBiPgOsU3N1SwHNP9sjXHXnv8nKva3n2ggN+Df6aoolajMbcWEl5SFfOKwmBZ/QG54sXc0c6bB/GYikAgwQ6WwDebBheH3PUpc4iv2wM3BiO4JKOcofMxfl2iar4+1wvz+kmsoJ/BkPi7YVQkqRXqnf1c8Q=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/joseph-gordon-levitt-warns-the-real-ai-threat-isnt-killer-robots-its-the-companies-building-them"
 featured: false
 breaking: false
 draft: false

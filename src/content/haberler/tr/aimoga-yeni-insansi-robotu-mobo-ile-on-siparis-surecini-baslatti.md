@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Robot satışı"
     deger: "3 binden fazla"
 kaynakIzi: "v1.Zkmu/81D1B88DxYP.6vs7EVFqXmR9K8T6+8LKlejp/0iBd9y9/Yo75kj/ylNAdVtCm3gTUyEc4tbMiiJ6BjnlbIGL+As62i9UANLAex2UhMnt0t1fT3GPAzptlipCk6ANVAa75t3C0FznbOJRS9l2kcazAW7IV1ID6302e5IXxl7L5BIdxvU="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/chery-insansi-robotu-mobo-yu-tanitti--212077"
 featured: false
 breaking: false
 draft: false

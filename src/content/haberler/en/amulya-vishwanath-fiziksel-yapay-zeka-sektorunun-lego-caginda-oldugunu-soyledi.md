@@ -12,6 +12,9 @@ key_points:
   - "Foundational robotic components like hands and actuators are being built"
   - "Human talent remains a critical moat for the U.S. market"
 kaynakIzi: "v1.JDmCiySk7fDouJ3Q.+BHew8dZz0Sk4y22E+35kmu8xoJEAAG2awqcUQKK2sv3xmMxRKPIh34Ol8SPj448ie676rmrPqoA8mQ8lx1cj+lt/T+jYsDPqljY8gdL3YZtw5tEg+cBbL26D5FlIuinqSTSruiTorv/bAYePc3WROtmhO+SNGEY9f+EsMxLnTLIQ4PVnMycXG5PXeV5aCOGW4lXWaplNos="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/"
 featured: false
 breaking: false
 draft: false

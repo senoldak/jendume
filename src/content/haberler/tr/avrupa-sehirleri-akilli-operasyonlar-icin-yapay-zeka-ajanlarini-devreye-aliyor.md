@@ -12,6 +12,9 @@ key_points:
   - "Belge arama süresi haftalardan dakikalara indi."
   - "Projeler Belçika, Fransa, İtalya, İngiltere ve İsveç gibi birçok ülkede uygulanıyor."
 kaynakIzi: "v1.JmWDikpR3JXdD4kx.dAx5Z15/9Tn5w4WCAwQZqJmorDGZ6tfaz2UcggaYepqtlu4/Uy6k1LyzLGkZhvwJynL+EOIlAWE3V5bhxee3RhV6yc57iQ8/eDcjgrEzNvkveWy3INcQ+I8WF639R4yOx2FdQpEkUzNKcJFsi4FxX/7ycWaW"
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/"
 featured: false
 breaking: false
 draft: false

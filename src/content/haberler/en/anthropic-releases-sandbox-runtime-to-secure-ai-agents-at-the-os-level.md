@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Prompt reduction"
     deger: "84%"
 kaynakIzi: "v1.Gxif6RletSlVgPha.hbdV0hIWvX9d/RqxJ48635vBJjW8L9DcpW45QsmlZqB8kcjPOi18cZXTk8B9fCiHbIwyhtJedCo62Nt/Sy4G+bye1DaPfM9QcuEns3oyTtAGvrde6O0UJtbU8FUxO5JlwYyaKBJ1nb5s7dIvvghSCOnKZYVqLQQH/1pJBuG5UOrS5PQ="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/"
 featured: false
 breaking: false
 draft: false

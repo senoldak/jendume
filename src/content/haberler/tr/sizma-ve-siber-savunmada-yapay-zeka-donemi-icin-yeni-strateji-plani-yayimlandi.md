@@ -12,6 +12,9 @@ key_points:
   - "Modellerin güvenliğinin artırılması ve kapatma kontrollerinin sağlanması hedefleniyor."
   - "Kamu kurumlarının bağımsız teknik değerlendirmelerle desteklenmesi öneriliyor."
 kaynakIzi: "v1.sU8661YHkWThX1EO.8uDpMN9ofLMCoAA2LlEHsm4x51kaBj8PM+xs5L/J78F2+SHXMjOF1oaEbwn9e7kvaeSY0zlG834mYCyoCSJOfOtToo55kMVCd5p7ZJjs2pwA8uZfM0HCb0AJYXFYVBKzuTw="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/empowering-cyber-defenders"
 featured: false
 breaking: false
 draft: false

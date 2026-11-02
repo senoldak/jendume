@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Yatırım artışı"
     deger: "%85"
 kaynakIzi: "v1.chNvXupm+92zxkZz.vs/U8GeNZh8JCaebZTdlwI93A2Ifr+OP94ZARrY4wdhWM+3GjbdBC/iGv6bnaoFgkUzo9mIg3Ol+Z8wXmBixR1O/Ps6sNtX6ISWO+isiY3+4l0Gmj8dmoqTujThQ8h6/djbWjh8At+HK8oO9+FLMsP4/6/yLC+Iv8cSUCWe+YB6G7qU6RdyBRSSy+5V7lPH4Hbs="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/kurumsal-sirketlerin-sadece-yuzde-3u-yapay-zeka-verimliligine-ulasabildi/"
 featured: false
 breaking: false
 draft: false

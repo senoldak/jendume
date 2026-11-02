@@ -12,6 +12,9 @@ key_points:
   - "New facilities recommended to generate their own electricity"
   - "Power consumption and grid capacity remain key constraints"
 kaynakIzi: "v1.WibL+6Wc4yBjdjj5.uKoQqmAth3QqUj0VTTQiDeld0WVLH31NgHeDLHPXoQdGMlAmi5VG/l6GomgNxBBsaSs3QBV3kArZV/DtEfKcAzQS8suXvIsqjNu2Cb8ShgRjO92UbbMkjkM6WLB8XV0DGp/A/NInclEy9R89Xe8eyeohS//DJurHTEWC/dcH"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/21/trump-data-centers-community-dividend.html"
 featured: false
 breaking: false
 draft: false

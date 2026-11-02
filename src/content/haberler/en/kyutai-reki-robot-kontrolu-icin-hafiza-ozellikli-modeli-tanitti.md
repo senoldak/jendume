@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "LIBERO-Plus score"
     deger: "90.4%"
 kaynakIzi: "v1.ISQA+7gBgC8G1sDY.7LsgLQZGYejpJTMb6gCTiLBv4l7nxCAhDq60LqbXWxLILtN3bwJJKfWtcDiYbtW6DvChcm4xWYHfXBAxvsUTf25Pv4XvcIOqSMNQ44UxuiofH2N563ojJSWRyusPdpaR8xCuRRZqZSeBVo1AApCdu7EZ1ulgxeHhkQRYPoTC7dc9hM0RnUofRbBro47WLFS3j65ze9ss6jhrFp03Y+FrmFbFfoKWcasz9jPfHQ=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/"
 featured: false
 breaking: false
 draft: false

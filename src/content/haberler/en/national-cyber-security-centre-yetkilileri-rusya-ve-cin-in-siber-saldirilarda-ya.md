@@ -12,6 +12,9 @@ key_points:
   - "AI eliminates traditional limits on the speed and scale of cyber threats."
   - "National Cyber Security Centre is developing bespoke AI tools to enhance national cyber defense."
 kaynakIzi: "v1.WqmmRbty2ryWG1CW.ELYMH7IOL8MDU4+pOnKXJWhuNewp7oWTqra9Xh7qqaBsN93X2CX1lJXVQj5K6b00IrB0QgXQ6S1XVrs6Rd/duS0h3X+6enxMnkRKpFIOu7amnMjQTzIHZszO9iHXq28MlWgYl9Tti3uafnbaavNX17YcP3IZRv1y76Us54bBaFvoJK9GmwAXmTBsbvVabblX/msdTAYiXMNsGFHzsoUGv2otlIMJLCdm141c5gGFlLu6LqSkTyh6RfE7TFxnroAXjSla0cHRXTpZhNKwQU43E9MJ4G4ib1YngrAf/2yx/H0A9oVC8xPmxNHNZuqMoDIvV1UM3j9AGhvCRMBdVhJ21egvVECY"
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2593414-russia-and-china-are-using-ai-to-stage-relentless-cyber-attacks-against-the-uk/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

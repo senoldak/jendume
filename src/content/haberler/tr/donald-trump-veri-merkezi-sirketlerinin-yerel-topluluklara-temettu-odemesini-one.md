@@ -12,6 +12,9 @@ key_points:
   - "Tesislerin kendi elektriklerini üretmesi ve fazlasını şebekeye vermesi önerildi"
   - "Enerji tüketimi ve elektrik fiyatları sektör için temel kısıtlamalar arasında yer alıyor"
 kaynakIzi: "v1.WibL+6Wc4yBjdjj5.uKoQqmAth3QqUj0VTTQiDeld0WVLH31NgHeDLHPXoQdGMlAmi5VG/l6GomgNxBBsaSs3QBV3kArZV/DtEfKcAzQS8suXvIsqjNu2Cb8ShgRjO92UbbMkjkM6WLB8XV0DGp/A/NInclEy9R89Xe8eyeohS//DJurHTEWC/dcH"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/21/trump-data-centers-community-dividend.html"
 featured: false
 breaking: false
 draft: false

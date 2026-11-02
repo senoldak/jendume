@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Total public benefit share"
     deger: "20%"
 kaynakIzi: "v1.7jiHITvt/7E8UW98.UaJrDwlPkJBuNOiG1HWXVJe3XinI/1wwlxtFsCl2362wcu6LftFSQEIkcx0L+U7sh3jSTaCSxIKudQgezcug2sbK5L+0qvHlNK/+NlQ3FDZjMN98HA78/Bn0eF1g7g7VxqQ="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/anthropic-kamu-yarari-fonu/"
 featured: false
 breaking: false
 draft: false

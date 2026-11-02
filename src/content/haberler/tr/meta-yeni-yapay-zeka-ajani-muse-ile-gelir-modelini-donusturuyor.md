@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Ortalama harcama"
     deger: "200 dolar"
 kaynakIzi: "v1.sp/KJjL95blZJkTG.dJTzv87nkeim4QUXbLnMW5mjFicmdeDq8A9urPPO4l+U42hN2geu8QY7ndNVmhZ0xNNxe7HICjk/UlV0OCPNRrhHb1IpY6CBrWdISGGMvEp5ClfXiHtkAxpJBAFGp3Vcp+mfQy8+bGopc7P6XgFVKSVOxKsQDGX4MFCTsEnmHqCCmnVfSzU2v4E="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2293705/mark-zuckerberg-says-meta-is-entering-a-new-phase-with-muse/"
 featured: false
 breaking: false
 draft: false

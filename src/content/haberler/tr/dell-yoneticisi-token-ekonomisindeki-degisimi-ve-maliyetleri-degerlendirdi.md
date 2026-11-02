@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Token değişimi"
     deger: "%80"
 kaynakIzi: "v1.IeBi9Wix6SZZOTFm.HlmHn8SjoTwOTCLb9Oiwg1J56Ys8P0lID5BZY9xQEviJtx2iB0b2O+C7lWDOsEzM5sCTKFqJo3qlOtD7bBu2XQ35dMqKJFVGmeFb9jDmfX11J4jYXgWBU1aWKIyAXkAIaluTutTDx2WMd8DTUtj/bgxydT5kN4cCwySyBV6MXSC90+Neq/zsvDeaQ3qKpCSiRmgC8M7IRjM+tChZSaxz"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/23/hybrid-infrastructure-costs-push-ai-inference-edge-dellnewyorksymposium/"
 featured: false
 breaking: false
 draft: false

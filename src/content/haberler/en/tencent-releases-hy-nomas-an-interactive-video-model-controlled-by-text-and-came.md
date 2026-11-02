@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Camera trajectories"
     deger: "220"
 kaynakIzi: "v1.hO+60mwQEjfS+b7k.XGM/OvaUoSb13+euFfPWFkDcN7gEnuM+QBYlgr/BWVlpaEpwHiNvtpy70YcJqs2ODdio8aln71CedzwS4XZHqsD42SZ2w/Xu7hxG3hO6Xt51QfVG1YzZGBsvqfGzI5o="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/tencent-hunyuan-hy-nomas"
 featured: false
 breaking: false
 draft: false

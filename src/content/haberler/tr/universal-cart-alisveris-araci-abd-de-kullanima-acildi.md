@@ -12,6 +12,9 @@ key_points:
   - "Araç, birden fazla perakendeciden ürünlerin tek bir merkezde toplanmasını sağlıyor."
   - "Ödeme işlemleri Universal Commerce Protocol (UCP) standardına dayanıyor."
 kaynakIzi: "v1.LYwXGONYZirU709A.fK5/I/MwJh9IW5WBy9rWeuG/DNoXmEWhdEqvbMMxCdFnCDmqTTLzCFwF4ENtajoPNQE6Cs278NcMzq08c+2aFXe8k6gOXjpan3UoVvvrYw6wqu+Lj555F+Rq4i+5lCIAAgW7vVZwwiwRIybY4kv5qvWCxAONQ4NV4b8/SWEHPiAy9VlZBIDXt+DX+A=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/"
 featured: false
 breaking: false
 draft: false

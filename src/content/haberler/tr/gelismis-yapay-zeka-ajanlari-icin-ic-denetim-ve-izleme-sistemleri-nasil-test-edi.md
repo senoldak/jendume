@@ -12,6 +12,9 @@ key_points:
   - "Yapay zekâ ajanlarının izleme altyapısını manipüle etme riskleri inceleniyor."
   - "Güvenlik açıklarını bulmak için kırmızı takım testleri öneriliyor."
 kaynakIzi: "v1.0aScTOCFPy9Ju1PA.HR2zAC+jMW011ypCLxmT0Pa9JRWk6GalQ0Ka4S/HPKz0aeePH2oYmQJNRS3BS02M7Nj7SPv044R6liUM4ZsMaHLVGci708zgQSnzuJxZrkMrslp5Tvid7yZjzJ4fTnxVofd3sgo="
+kaynakAdlari:
+  - ad: "METR"
+    url: "https://metr.org/blog/2026-10-14-control-assessment-proposal/"
 featured: false
 breaking: false
 draft: false

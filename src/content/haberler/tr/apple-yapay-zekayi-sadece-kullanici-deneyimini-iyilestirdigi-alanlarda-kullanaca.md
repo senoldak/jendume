@@ -13,6 +13,9 @@ key_points:
   - "Şirket için temel ölçüt teknolojinin adı değil kullanıcı deneyimi"
   - "Daha güçlü Siri sürümü yaz aylarında kullanıma sunuldu"
 kaynakIzi: "v1.SkGdhZqgJzP8ANYl.jxdEC7ysaUiuFDc6xZMoP20iRZM29QexDfHUSjZ5s/I01CBeNKqG3yD2bcvp9kgVmXfzGqh0mCc3zUCvJKzhmstNnyVzZ7DZrHHFSAYFYs4f5KznGFu+uidiE1BOfO3JHVFInioSMLeog76oKMc="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/john-ternus-apple-yapay-zeka-stratejisi"
 featured: false
 breaking: false
 draft: false

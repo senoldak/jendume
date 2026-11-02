@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Active projects"
     deger: "10"
 kaynakIzi: "v1.L1lueDLcSGm/FbhV.yXAK3BBn4ClzquOwKNR46aXENnV1kAb9SJE7/nzoPNAsHWQaJaYFDXDg0NWBEtha7bpwxZsVzebf+CAuk0l5UMuu2CPUx0+wSMmuO4+lLjMHqUlcH+eWwc0GPQdD5D+D97sJTiXE6N/qPriR/4I8I4BocniWZzI8+8sb9H6TktTLhZhojek7CBrdffANx/e01B3uhAbKTlrkdNyj4MFdGv98aRLfswuXVelimqzRUA=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/"
 featured: false
 breaking: false
 draft: false

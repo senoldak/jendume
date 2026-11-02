@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Current capacity"
     deger: "1.25 petabits per second"
 kaynakIzi: "v1.2f+6NkiFTpDs1ZUZ.KCBW/Kro8txmwZBWknCB+mYns77WCKr/o1NXY7niVo4JssoCPkPJN8za/83ezATW3/E/7LECyPSaF2aTx10DkQ6g/BT9rYZVgmvxnXADB9zjUMF22cxOA6woF4aq3hONSmo147PajfeD9ajqP6O1m1OLxL37VKJjv1td"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/tata-communications-450m-ai-fibre-network-india"
 featured: false
 breaking: false
 draft: false

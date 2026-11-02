@@ -12,6 +12,9 @@ key_points:
   - "Enterprise contracts grew to represent 15% of Replit's revenue."
   - "B2B accounts for over 50% of the company's total revenue."
 kaynakIzi: "v1.BHYPWRoapfFCOka/.pe3ML2B68JNAIcpJ1Z/6YM3bKH/HKTU0SNAobgaSiw3rPjGrB/J3BIgU8f+csj7KYIiAyEBkRF+/xM/Z/Zi4YHlGD90cIZuyubuTvGvPfPdlK6v6sIIgUy3j1qL528s7r/75gGnjWU7sAxMTBzbxeAkMHETJB/2nIasiEmYsccavO8D7q9zA"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
 featured: false
 breaking: false
 draft: false

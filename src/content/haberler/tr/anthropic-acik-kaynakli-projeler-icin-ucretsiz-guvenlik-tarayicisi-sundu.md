@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Doğruluk oranı"
     deger: "%88"
 kaynakIzi: "v1.vonCJRhdvVIzdMG4.ltYH4VDy6nZ+mDjZoPht6Mf3UBt2e7nUv/4l+gUJbH84KWEsafz45r4tKStjv5vcQMoo4awNUWikg/JMCXdBMFaCJZNh52qAjO3o8HUHhl8aEhWP+CAXEV+QoAmWcwLH8IcL+WS9v5vrIIYC0yimuOKQj1ibsuC7cs/xaVDLvZGivCICLey9ULLdY2+G7/EWJrt4CxNgcA=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner/"
 featured: false
 breaking: false
 draft: false

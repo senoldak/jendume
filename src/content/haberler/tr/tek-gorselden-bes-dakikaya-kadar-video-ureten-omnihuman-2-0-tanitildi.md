@@ -12,6 +12,9 @@ key_points:
   - "Modelin maliyeti önceki sürümcüye göre yüzde 40 düşürüldü ve saniye başı ücreti 0,07 dolar olarak açıklandı."
   - "Sistem yalnızca insanları değil, hayvanları ve 3D karakterleri de sesle uyumlu şekilde hareketlendirebiliyor."
 kaynakIzi: "v1.3H8yb7KCZUxu7DaI.P2wTl6KNvHXvX10jPIJYtKkoWrG0ZWGxB+O7G7Fiu/4CUxbKWPbEBULee9A4pB7iZ5fB8FMn3lSlM8A1NOSQnsanzzmysGWWDSMA6ZN7/FzjoQcAgQftIvhpGQA2IoQgBc5cshWap3ARoHnXMB5O9gf/C9+vG4R1RwKjoiGtDdVWfb5mLM1X4fmqzICejF905uFeJmJ+tnTiN3ktdlB2VVOFaW+pMKi7aRlc"
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/15/byteplus-tek-gorselden-5-dakikaya-kadar-video-ureten-omnihuman-20i-kullanima-sundu/"
 featured: false
 breaking: false
 draft: false

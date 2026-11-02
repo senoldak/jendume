@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Kimi K3 context"
     deger: "1M"
 kaynakIzi: "v1.qxVqKUU3j7ajGNUF./HABXH9nsepc47ED6QIc7D0ARkAGAnbDs8PaVb64nx1R5+UGyOxAQ8L+TwRwzGOxgmALknhEhNgR8O2Y+68c1bHTanj/t2VBOo35ySYma44D9Iz0j1h8VZQlkn5rDpfoF+XGz7ipCYSjS30+MCVzGcOeql8H1KeQ6z80FGFVOsYoSXVBkDVL2E5uB/sgeOo="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/22/you-com-inference-router-open-weight-models-uptime-sla/"
 featured: false
 breaking: false
 draft: false

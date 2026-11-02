@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Update"
     deger: "Release 26D"
 kaynakIzi: "v1.scRXcmiAjvqR5+OP.YMk7Oejxbs6mwauqN5wrUxobVR+3L8UxcnM1DLDotoWYSo6vm5bXGMAI7eOwceOboEyeBjlBfP/72+yueIHIPISU1HrqU9h++Qh19HrYl8m4OXrfpqZHIiAevzJRf99JXG1gQw5ayf5o4+K5aK8osyJXfgHX7dFZjEdGKFbErXwbyymfju35TpavvcRv"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/oracle-fusion-companion-ile-kurumsal-is-akislarini-otomatize-ediyor/"
 featured: false
 breaking: false
 draft: false

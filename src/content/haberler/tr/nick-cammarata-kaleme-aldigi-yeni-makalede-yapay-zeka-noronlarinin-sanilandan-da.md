@@ -12,6 +12,9 @@ key_points:
   - "Modellerin iç yapısını incelemek için otomatik ajanlar ve büyük ölçekli araçlar kullanıldı."
   - "Araştırma sonuçları yapay zekâ güvenliği ve şeffaflığı konusunda uzmanları ikiye böldü."
 kaynakIzi: "v1.JTGpAfpXISdcdfUE.Gw/jXFN9hq0sfZqnA+AkAhJt1sTQHG7iBPJuv9zY89hWyLReFIQn22I+DR2FVOA8FWtKpyXvhHBIYVMfLfvtINIS33dWlh+REyH0Jma8XWrpqnV6mrZhWoD6M/2TJTEUj9JBwQXKaYgk8QW4INLzyo564aaul5BhqBqZ9mY3SI+w4EpFcO10wCM6OTbQsVnw6/GcfQ4K7rN+WA=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/is-ai-interpretability-close-to-a-breakthrough-a-new-essay-has-researchers-divided/"
 featured: false
 breaking: true
 draft: false

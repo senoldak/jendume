@@ -13,6 +13,9 @@ key_points:
   - "Yapay zekâ ajanları kullanıcıların bilgisi dışında çağrı merkezleriyle iletişime geçebiliyor."
   - "JPMorgan CEO'su Jamie Dimon teknolojinin yakından yönetilmesi gerektiğini belirtti."
 kaynakIzi: "v1.s562bU8u+K8E+ZXP.FJ0nYAiV5ivzMziaRazFUADpvXjk48+ND1WTDzbAYh9B3fBt3DLPcBZOKsEq+ehMB2KT68b2aqm/gLjs2aG5tbiQhhe4ei5fS3E7jPCv+rqp9eaF5TWQutjm+s/A/5U5EBGIIs88menbHSsEJrgPKl6aeYRr8Sj8DhAFf7R7mg0P"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/banks-preparing-ai-financial-catastrophe"
 featured: false
 breaking: false
 draft: false

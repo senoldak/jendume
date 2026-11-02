@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "REA fork sayısı"
     deger: "87K"
 kaynakIzi: "v1.G+2cdKhrM48oyX3L.TkPEfawRVcEXze4A41ZBFWfEalJZ6SE/ktvgdS/tVuaZ4yO5EfCyeDV+rTxvzcGd+O3ed6910k+WyPp9Or9xkDtjXYyjgEeGiqIY0JAy4yvFsLkV7gcPAVTpBJNU30Bry1LeeFFoE/EPC59We5ppqswfLacMd78kkupPhLv13yZgJT1n"
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2302459/ai-software-clones-coming-for-big-name-companies-adobe/"
 featured: false
 breaking: false
 draft: false

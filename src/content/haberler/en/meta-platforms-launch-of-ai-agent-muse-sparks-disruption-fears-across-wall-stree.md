@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "AI info trust"
     deger: "49%"
 kaynakIzi: "v1.DYT5+3CdD/S/4dPL.GdOLmYNq2lAlj5L6tQ0vVNP2AVc72QXQsWY/MsX5+RgHoOHWgQo3k6xQpITzlTbU3fPXrL6ps0XQG4T0BS1KDsj4DkWfpxQQD0z3UfY1TfGTcHgZPHOONw3I9IQoyTMKY6iEjPaciMNblhKvI7fqIK/sdJknxelImBzjrptQK5VQC8kNosRZlrWeOlxB1bhZUT/kJJEXRdtVb+8nktbHYbqHe69Wswf/J35SqHGFjJU="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/investingclub/2026/10/23/ai-agents-could-disrupt-bank-deposits-why-wall-street-may-be-overreacting.html"
 featured: false
 breaking: false
 draft: false

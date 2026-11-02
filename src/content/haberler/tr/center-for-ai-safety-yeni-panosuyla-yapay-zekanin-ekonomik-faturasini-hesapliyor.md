@@ -12,6 +12,9 @@ key_points:
   - "Toplam yıllık ücret kaybının 8,5 milyar dolar olduğu tahmin ediliyor."
   - "Yapay zekâ ajanlarının profesyonel kalitede tamamladığı uzak görev oranı yüzde 15,8'e ulaştı."
 kaynakIzi: "v1.aU6eOyqmd1chyIHd.JBGGx6jcB6p74DqLNjTpcO//hvWhYCLCIvJ0+IVVlHykyNKABpRGm4CCchSZESlUWvec5hOLgTwSajw39T1AkfyAABKXs2CAhiqtrQx6J+gFk74xqkZvH2YdLiom2XZMNiTfuVcPjJaREMaTDeR1WYzZyQ0="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker/"
 featured: false
 breaking: false
 draft: false

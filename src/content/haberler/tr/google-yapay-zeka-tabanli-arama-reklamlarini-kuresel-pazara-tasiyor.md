@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Bulut Geliri"
     deger: "30,7 milyar dolar"
 kaynakIzi: "v1.P1NBBFkcM5W77YOl.R6LfeVkbcAn8G3FNEsxGAU9Kk5WvGxmZpstEul2tb+h+NZDZFBEe3vWz62En6hyLyiOes+TsUuFxQY+NWN0xbQDKZH6hc59KUwMWrlAugQ/WIRR+CC0L4d106HyKBN6pl+x7wmJ5oB6usH8HRPTTZ78q0c5Lc5JEe9n3odpz7RmaGvnC6SXFeiZcNYTf0uOQbA=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
 featured: false
 breaking: false
 draft: false

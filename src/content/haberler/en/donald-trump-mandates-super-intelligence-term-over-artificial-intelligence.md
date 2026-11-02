@@ -13,6 +13,9 @@ key_points:
   - "The new decision plans to require the use of the super intelligence expression across all government levels."
   - "Experts warn that the terminology change may cause confusion over standards and official documents."
 kaynakIzi: "v1.ypPdBNN5OcQkcLwC.wZm54+DxKNdfe0BqMuThgneTcKBIQ3UfrC43nCVinDguXUqvVBB3CcOdUXKwF4K1bCgadjRkeRb79xM3jy2joznTLmQDiVyesw33oAfAQ0E9Zj340XreiOk/aNyeJ0gbF9XWAr4drsNiFpZB07QPMPRqlm6yRjKFJXbSq3T+XQQn3fm0wV8hCII="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/donald-trump-yapay-zeka-yerine-super-zeka-terimini-zorunlu-kiliyor"
 featured: false
 breaking: false
 draft: false

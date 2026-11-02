@@ -12,6 +12,9 @@ key_points:
   - "Human oversight and transparent processes are mandatory in critical sectors"
   - "Testing processes prevent errors from spreading to wider audiences"
 kaynakIzi: "v1.lEyMbWEvFEvcpkXB.1H1RmUm0F0mBqlxcmBbpBhRJHUFBJdIHFd5Jf3X8CpRVnB+neWBptHnQqScUwFhoC3wJVlkW2KPIHz2uEQk6qrDfJBuTvzGtNS6WExx7BIUctRpgOuUioKX/a66GZ7W6y3k9GE5iRzOQa9742kesetAnPdaLq38pb5LP8VkxbuedNI4BoTHz4GFrylsIoA=="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/yapay-zeka-destekli-musteri-hizmetlerinde-halusinasyon-vergisi-riski/"
 featured: false
 breaking: false
 draft: false

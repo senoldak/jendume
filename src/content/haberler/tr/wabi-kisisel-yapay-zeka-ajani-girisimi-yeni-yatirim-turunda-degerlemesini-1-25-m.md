@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Değerleme"
     deger: "1,25 milyar dolar"
 kaynakIzi: "v1.gNRA8X8orgolGDH7./GTMDOh+hYtn7XD1REivk64fTx7eN9Pr6rcuUu40F+5tbNG5VGh/Pbd6wcQ8unw469BBEcyFRUB+jHJYFPJh//X1cHIh2DUKZz+KWSJA65X0dlY1OklJCQ21OfDiaVEyCJVjb4mzGTd8PyhaPgd7upACPSQiqVAoK9UE1zC+oCqH2OkWDMcG64zSkf59y/2K1Y7DIIwfX0FDiN63klFZkCdT"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"
 featured: false
 breaking: false
 draft: false

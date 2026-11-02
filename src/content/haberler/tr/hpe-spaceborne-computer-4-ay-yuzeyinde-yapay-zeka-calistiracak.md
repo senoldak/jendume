@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Görev hedefi"
     deger: "2026 sonu"
 kaynakIzi: "v1.Z1j8qQQx8gZYoYUP.cOv0mVN99wOzTpyqRKfE51XAjeSO58MqBbxwDY55feNX/7ha0FlYubMPZtCAb7LK/qOrosV+8cBK2d6tfSDubfi1J7aTC2E0BxdI6OFUVq9l4MMqgyXfyjpM9j6mQ959WeVv+Zn2Aay3K3zRkNqfdy0364zdqIXB+w=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/hpe-spaceborne-computer-ayda-yu-439776"
 featured: false
 breaking: false
 draft: false

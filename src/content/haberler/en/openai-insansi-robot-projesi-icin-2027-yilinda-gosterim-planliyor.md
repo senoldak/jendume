@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Past study"
     deger: "October 15, 2019"
 kaynakIzi: "v1.idy38FUa1L0I6kHg.1uR8++B4dfprt3zBIrnY34OHaJLDHJ/f5RkIfCvqNiknsnRXGOs4a+52y3C7c72OhLnao9RgLHGgiu+S84Az0hoXSXee72H98kjVZKCdzW5F824w+ZKpo4Az81P2Y+IiiA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/openai-insansi-robot-demo/"
 featured: false
 breaking: false
 draft: false

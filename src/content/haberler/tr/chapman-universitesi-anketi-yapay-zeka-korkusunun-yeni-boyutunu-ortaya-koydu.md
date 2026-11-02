@@ -13,6 +13,9 @@ key_points:
   - "Siyasi süreç ve ekonomi korkuları listede üst sıralarda yer aldı"
   - "Amerikalıların üçte ikisi yapay zekânın insanlığı yok edebileceğine inanıyor"
 kaynakIzi: "v1.fGDmdgjSwtJbDUs/.yQhlvZt35NQw65SzdVKmtJdCnu8Rn1csBewRHLOgGyp8o93V+A5WaxGSm6zOi/IEwMH0SnGDo3EdGWTiaeX9hLRWmCzMAHB2JzMyRkI6GxuWKbT+mEGUgDHauAeCUnh6I6N93qKufzyLnTz9cliqFbOLjlDlOatIr/g3PE7Sag=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/americans-more-scared-ai-loved-one-ill"
 featured: false
 breaking: false
 draft: false

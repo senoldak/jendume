@@ -12,6 +12,9 @@ key_points:
   - "Okuma başına çekirdek döngüsü 2.950'den 725'e düştü."
   - "Çalışma, Anthropic’in Claude Code aracı kullanılarak gerçekleştirildi."
 kaynakIzi: "v1.246BNLFo46XFP1iy.QL+A/z+cgCswGSOG+k/IY2kAGDLly/79rBZJ3FWgyGjrqNVrRXeaEFFsX5FGTlSxwzuJpPWpyNKP0m+bVw1iOGm13A9kuh+EAsFmS9xQOdRwTHTxg2xYXuIcryZOuI8nRzKJjprWS7gJhcnoqtR/0Hv7F9MFeMOhJWlEy2YmcsE="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch/"
 featured: false
 breaking: true
 draft: false

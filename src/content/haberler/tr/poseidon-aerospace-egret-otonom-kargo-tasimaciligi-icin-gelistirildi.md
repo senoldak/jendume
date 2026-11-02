@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Yatırım Tutarı"
     deger: "60 milyon dolar"
 kaynakIzi: "v1.nM8lBHGSUki2lvjc.ypGHTM3InkKHr093zEDpu+diIfkpWENW235PStoX30Ln9hWNc+BGxURobTuA4aAAyG5AHrIbgjIxptXUn60htNkh8IBp4pYjB3wTxxrH8rgHumeCMwrBb0yO8BWKN6AopwokDiaGK0uc+ZPbFQb4glKn"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/poseidon-aerospace-egret-otonom-kargo-ucagi"
 featured: false
 breaking: false
 draft: false

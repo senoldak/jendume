@@ -13,6 +13,9 @@ key_points:
   - "Victims face complex corporate bureaucracy to challenge wrongful accusations."
   - "Civil liberty groups warn about the dangers of unchecked biometric surveillance."
 kaynakIzi: "v1.pYfzKmkz7o19BPPD.58/v74dQdOKYz/cTmpB78BqS2RrFHRRDSVnTlpU0ms8Q30C3XeUpCPiXz99WqqHEFkLCJFXagd44ceUP+/nkcWjFpEYmClqMnKzP+PZrMyJDDA2+7okMN0lETzMa4xk/3xIUi84VYm0YqjJjl2tMLXMMjCJ4Czr3XaHXJmI="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/ai-facial-recognition-innocent-shoplifting-uk"
 featured: false
 breaking: false
 draft: false

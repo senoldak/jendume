@@ -13,6 +13,9 @@ key_points:
   - "Sistem işlem yapılmadığında çalışma ortamını duraklatıp kaynak yükünü azaltıyor"
   - "Kimlik bilgileri sanal makine dışında tutularak ağ geçidi üzerinden denetleniyor"
 kaynakIzi: "v1.ZikbiE9OqvcIbLRx.omJbt4S0jV8NNJJXexxovfDn3kNrPNU0ExBgaXZyrQjyxIAMWlNMi14sLWFD2N4GmUwg+0s6otUm8lAvXCIZOnAkGwmpmKkYkH+A+oUfRG+/YGJ3yu2OKDclZYpLlPS38FLEZqndasCXgIqjKgCCb8/Etxmfaec="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-agent-compute-engine-yapay-zeka-ajanlari/"
 featured: false
 breaking: false
 draft: false

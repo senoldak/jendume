@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Data chunks"
     deger: "60 million"
 kaynakIzi: "v1.o5gaH1ls4MizqHXk./VmOGgwoG24YuFVnsrSjMstIHblZN3IYOQjO6Te6IUvZkWvfg9HokKgOr4q83LICrLrXVwlaXOhcpnngijnIx8DR8ZbdhBAFdtO+QxEs0+IKoamKfXu3u1xjeNZxc7fwhmyefqqZtEj+ev/Um6+kzN7ziMBeaw=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/27/leann-vector-index-mlsys-2026/"
 featured: false
 breaking: false
 draft: false

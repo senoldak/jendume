@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Typical duration"
     deger: "45 minutes"
 kaynakIzi: "v1.lX2vMcmjw+1VTkJr.hT0PJAVllbXbs2sCMrq86u5F2DKZo7d8W1Ze80IOtCURaBYRs8P4EkgXOkNfzZpY+TH+xR5EF2wAl/Upheaw7eIosXnlhXNIIt7CadoAEvjKV4eTjhOKAndgNWTGX0ctIO/Lu+jtqZIYzrQKN7pa4EUKg2o="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/"
 featured: false
 breaking: false
 draft: false

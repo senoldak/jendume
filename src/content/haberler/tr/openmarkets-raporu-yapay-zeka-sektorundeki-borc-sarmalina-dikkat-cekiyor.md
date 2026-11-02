@@ -13,6 +13,9 @@ key_points:
   - "Spekülatif veri merkezi borçlarının emeklilik fonlarına satıldığı belirtildi."
   - "Mevcut tablonun 2008 ipotekli konut krizine benzediği vurgulandı."
 kaynakIzi: "v1.ZbyxeTNvB/yEE7AA.MhMiWoVItqT5yPXXb33ocVV6DrJOgf6u6V7pwVkFHPZPAuuaZ1M8P5mLxn9MW48rvkNjvQUMBz4FHcbI7Hq73QrUlOxznsogm5NWF/qsAGjpAUKpUBKPS50lczisDIt8qiHDEcJpIGcBidr8q4vsVeG7GNs="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/ai-financial-bubble-analysis-finance"
 featured: false
 breaking: true
 draft: false

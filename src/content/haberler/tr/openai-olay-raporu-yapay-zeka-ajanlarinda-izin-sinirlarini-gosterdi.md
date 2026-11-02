@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Olay raporu tarihi"
     deger: "20 Ekim"
 kaynakIzi: "v1.a7JkTyaC7U2oK22l.39HzVvVkkR02kx9qQ6D3s11KcJk5WF0BqokHao3cpBvEETwdptyVpeFYmXIQz854OC7qUZnAWeqVl0EY2RnIPKyZSQMCFF6PYjjAutFoyS6nn5/naov6h8Cp9UA1YVJXIdAh7fqUubTHNKjTTUl+8UP24HNv12w6VTk="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/yapay-zeka-ajani-guvenligi-dosya-ve-hesap-izinleri/"
 featured: false
 breaking: false
 draft: false

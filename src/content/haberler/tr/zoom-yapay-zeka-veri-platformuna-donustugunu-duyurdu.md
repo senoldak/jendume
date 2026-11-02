@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Satın alma bedeli"
     deger: "98 milyon dolar"
 kaynakIzi: "v1.tLzFRUQR+B6UWMp4.aiOouhwrAvBmbOIAP+aUk6SeFcEv0ky9vHqqgViRAH342wtXQTAY6+qjempwaC4oAwRDyaueVHH6TjXO0ZTnihraGFKz1YG5E9vcVNE14yON4gsC6zge6rMGDEDNoI/z1CnBkayjGZOAdKxbmVSdKtqJdvM9K70ek23mtvQdM2DBvIc+BNhMN94Eqhlx"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/22/zooms-next-act-from-video-company-to-ai-data-platform/"
 featured: false
 breaking: false
 draft: false

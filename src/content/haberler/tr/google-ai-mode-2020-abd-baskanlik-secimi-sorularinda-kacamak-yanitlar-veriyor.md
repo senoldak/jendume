@@ -16,6 +16,11 @@ rakamlar:
   - etiket: "Seçim yılı"
     deger: "2020"
 kaynakIzi: "v1.Kgo3qmGQhldmKkei.CrfmEPyfcPtRjAz4QUokle7Tmm55EP4OrHJjMYY83e+RsSA9jOuVlQtBfVf5B70xKlB6mPL+4VVameBVCkmlUoAjBpEgXeq0eVJM6MrkTLDuyl2+XsLhoUrZGzMJqYUBTC3UM7sWkE4XVtJUYXe7HpgdwFDQZ99+rtWiHx8QT4gZ7pDAChfv8RVUF4l7sMV1TBZsnpCjByM6nzZRHN1dqv0/zH99x87jBoCqLHaXqpPwTgVvM2UBl+02naGCIjeidJdkCKUkGpIWF37Vw8jpB0hRbNw/aCUr3679L8WrlORcPXn8vhaQH68EADoykLfjQSabgt2ZP+ZHclII6+0yeUVdwnQb0rlKq3ly6fX9UO04pWukBjMa8OEW0b2yhwSHCmKyufMPRFfnqemCN95T5HgnQkorDpTQUIguAmf5NCYAd87ABIh3nnpP5qTN1sZB0gMBCgs7FtXzc0CzAXAh1Q5wGEmXHiJT1IwGjedNw+o8PmoQ4cOk6pHaye1WIf277n7BRbmpQXIybw71tdOR9z7ZgNvuS08BoOYIET05GZP4elFkY/EZJao="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91631521/googles-ai-mode-wont-say-biden-won-the-2020-election-in-the-u-s-but-abroad-its-a-different-story?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
+  - ad: "Ars Technica"
+    url: "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/"
 featured: false
 breaking: false
 draft: false

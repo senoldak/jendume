@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Business share"
     deger: "70%"
 kaynakIzi: "v1.bRkfCC/KtOEXQKbk.6ECNAmuSBqNjHWl4o0WLAwptgnBZnvUHPtFXA8Z75D0oLoVrnwHe8vBIn/CJaVPQUEKS69GMM+byJWwQKuUy9Pwd7DB3CnO0iAF8TB5Ft5HRve01ZJMuksxrtlgNE8zSDc8fUxm+BzNoSQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/ravical-17m-seed-ai-accounting"
 featured: false
 breaking: false
 draft: false

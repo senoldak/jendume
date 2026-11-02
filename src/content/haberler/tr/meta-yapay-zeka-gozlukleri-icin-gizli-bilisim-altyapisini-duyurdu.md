@@ -12,6 +12,9 @@ key_points:
   - "Sistem, donanım tabanlı Güvenli Yürütme Ortamları ve şifreli sanal makineler kullanıyor."
   - "Teknoloji henüz kullanıcılara sunulmadı, ilk aşamada bağımsız güvenlik araştırmacılarıyla inceleniyor."
 kaynakIzi: "v1.KdCd41SxbJBK5eYK.6aU59/NAZXsAap57edaN/MXUR6IDG5gS2TjncUVVO8W+tFc+/aW1mXBoKLkN6uOrGAyNIT/pR4KfUNjSXv3QVXvB2RP47vLA442JDntK8hr4qfKvpWDRvbBYmrBjW64cSYAlR6A8eK0HNPvcRMSOWP9BONsZJKusAOexKgKOuLq0o63PQ005MH+MyAYBnVjJN+SQLpbD3BX8zIfYo0gpXKV05AT97iBOEWQWQXpKdMzsp6RbP+uUqMz4nGa7XPbBZ7KPZeNgSUibkrKssm3fxRdZ"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/meta-private-process-ai-glasses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

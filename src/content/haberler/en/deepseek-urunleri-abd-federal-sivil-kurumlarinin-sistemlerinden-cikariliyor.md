@@ -12,6 +12,11 @@ key_points:
   - "The restriction extends to third-party products using DeepSeek technology."
   - "China criticized the decision as an overextension of national security concepts."
 kaynakIzi: "v1.HNhbMHlUMv8BN8Qn.WeWLfjc9g1lJesDvHDv9CNCJ6X8QmKtfZIyosNd36jaBc9WOxK1StdwOPzWQLsFKRNjcuznavZY3Z8OanH0X9PjosvvWfez1sFms0Sa8zyaKScFpkazR4oG0gO02aBonRrRsIgkwEjPMnFo5ti+5nYjnH4U1Mmnvvq4tlbYu0tVPJjs5fuKBH4/n1OyqxgbrMQN+Bb+50e5hEHCeRe652ECvle4hZ6RumCHESFd1hbPsNlJGebHaSJ9U80h0m689hNjWwwscTR8930KizljxZ01GL3/7vCOFi+B6Xsfsbagvk8BqMQYaLo0cvRaI3Ir1MO5u3z5OzJVl81MUEowddp3seiunint2//LdpJQ0xAUVRsVDFaFfjh9o+2CD4S56S5CtgELvN0bX7+aoftCSsgA7CQsDe/gQ1E7WcGsLym+7sqZoJslz8pU44drsevEnPWKkMQrq86DW9uWPckqN9DP5jRK/Kww="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/abd-deepseek-kararinin-kapsamini-acikladi/"
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91626740/u-s-bans-ai-startup-deepseek-government-systems-china-responds?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: true
 draft: false

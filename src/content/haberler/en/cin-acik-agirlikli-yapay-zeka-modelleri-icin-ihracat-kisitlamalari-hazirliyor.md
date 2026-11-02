@@ -12,6 +12,9 @@ key_points:
   - "Controls apply to models exceeding 10^26 FLOPs or 2 trillion parameters"
   - "Fast-track automatic licensing is introduced for open-source publications"
 kaynakIzi: "v1.Tl1e0a15QxMqyXRv.3GVvYow1OU/5KQ48vbe/CR+/54Uz+OVBMqb2ZJsOq/J7Twab1LZ5YCNwn8Tv+m3Pl2ljbg+sTxIGxYXmSuNFg7rZPoWVrkCM/olYiiBTGMW9KQdLpBPxrAN7XxaYYz3e9dd5vs7TNjLjMTIqWDGhTsXSsJyx3xvHowEKLpJI2vcPxxJYSHuH0HSQZP66dKn1WNsf8urY1rROJn7FS5kV"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/china-plans-to-tighten-export-controls-on-open-weight-models-and-23-key-ai-technologies/"
 featured: false
 breaking: false
 draft: false

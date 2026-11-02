@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Türbin sayısı"
     deger: "35"
 kaynakIzi: "v1.1ouP2EL9qQ7AXI6a.W1LJWrIAbd7k3Sb82ijGN3YokfGwSsgey6W55RMyQxF4YNxoif9w3fYQt3sRhGt0ZEbyIJoV3Yg7Rp52dG5pjOrbpZlAxTXjKRkNHgItx2C3hC9EtKouQp5o9r181+QPJra8YrunQx4IQujviQFeLSF4CSp17tgFq3SPu+V0/OBlk6+kbLhn3KwsXuAAjMzrHxTAlPcXzfy43nlKwA=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
 featured: false
 breaking: false
 draft: false

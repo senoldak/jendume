@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Kapasite blokları artışı"
     deger: "%15"
 kaynakIzi: "v1.7/rmB8dUM8LGOHEF.qQaG9efc8pJrDWYrNqG6kRTocT+/Ac4RqJqDe+GmX90MdyT4HY7c+2QdC2OC+14Qsrz5uMbrG2EujJvAopUdvV/k5d+B4p5EEor65uJYv7XrvWarg2jJ+VRNG+vwR9Zy7emPvEeCvPQQ0hLGXw8WwyKvBjwgv2Z3lhBnwiUYpSGqCF4hg5ooigiIA4OteL8/zRk3kkduhLZ+FbjFAOtmAMGx9i+dyolRkX+mtQO+4ca2JMgdSrP2ZDtv362zdEPrm+yEjH7TTBM="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: true
 draft: false

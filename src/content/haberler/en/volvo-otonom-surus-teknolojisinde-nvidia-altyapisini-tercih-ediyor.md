@@ -12,6 +12,9 @@ key_points:
   - "Nvidia's Alpamayo AI family will be utilized for the software infrastructure."
   - "The first Volvo model using this technology is expected to debut before 2030."
 kaynakIzi: "v1.zuEUNZ16mevY4r/s.PK9FAajhhDpzxKhRQap61mQLk/9EeDI6y0RZx/pMnOEhtJKLKRpgFcTpsB6kDeowP3zRsPbj8rFL/FbYFYyAS5WZLfyySt8C1/w7ot9ViFoL6utu+H671CenpmLMKN4DfznJAwGqtLO5EVyKt1jWrB5Etfdd733ggMZ2EpPk8V9j88HYIdBbyygEKh+b+MLtFA=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/volvo-otonom-surus-icin-nvidia-nin-teknolojisini-kullanacak--211698"
 featured: false
 breaking: false
 draft: false

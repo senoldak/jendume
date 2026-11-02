@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Güç hedefi"
     deger: "40 miligwatt"
 kaynakIzi: "v1.g+Jg6qTeAWwyDDXP.GKYu/UXreewtGeOlDuZybYXWqmzD+9wjHoJg1LThFtk/LBl3xvO3UL5usa6b1BmmOhSxSJKfAo7Fzsdn2BTLv6c+xmo/FI4bhiFWEZb7T2hGBbdM1fk14I6VUp2AA5fPAFSi4UcdNhRRJL3qLA8zNpyPXg=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/photon-bridge-10m-ai-data-centre-lasers"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Yürütme yolları önceden kodlanmış sabit akışlar yerine bağlama göre anlık olarak şekillenir."
   - "Karar kalitesi, gecikme ve kullanılabilirlik gibi temel bir güvenilirlik unsuru haline gelir."
 kaynakIzi: "v1.NzPTq7OmZpLHQsmj.+xTqBnvuRidXKVPuL37uoqWpNdwq5RJC+RLD5YuYSrMvANvlGHkZM6j+99wNvgPpbBbcbaEigSLKopR7PvI3NdEhwYdaa+ipZaTYnvHHEPin3DxBoZilTnPmSpr79g2r8vYUTlEgg8TqxvdisrJ6ahqMwdngbgBajZ+URu+jVftVIovFqp+PmfIW0AeQZxFF3NszDRm9Ipbwf3Zm3y+sFhyUcW8anlbsRfCEyuR2apbmkJ/Q3omfP4hh4ZmCJaEVhC5WeYYTulfU4cz2M0pllf490aehjVDvB5lj"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

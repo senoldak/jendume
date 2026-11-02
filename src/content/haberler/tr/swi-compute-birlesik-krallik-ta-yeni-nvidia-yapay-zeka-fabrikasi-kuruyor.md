@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Hedef kapasite"
     deger: "2,3 gigavat"
 kaynakIzi: "v1.fLml1Jpqh7PWCzrS.8LXFniF+8Qp/+OFWYTR1HrR3KRKsV1PL+7/j6LZwk/to5bFeT7teFdve96yZ4XRivKqVVqBLHABqe2w4Rj9sf2k0z+BLe2ni1CS1wKi/37Xp3FOLqbBGaIYXdcu4JHme505YHkh+C5W0uSpIifNf2gs4TpusTwnaiKTW"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/swi-compute-nvidia-ai-factories-europe-uk-530mw"
 featured: false
 breaking: false
 draft: false

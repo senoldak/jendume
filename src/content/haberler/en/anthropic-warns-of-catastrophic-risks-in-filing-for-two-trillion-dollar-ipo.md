@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Stock index drop"
     deger: "40%"
 kaynakIzi: "v1.yEtMeLj1nh/w9nwI.g6ARaRZs+2f3BYuRu3F40nROa6JByfRuf1ZSd5HdoEdTN6SSgA9EYns2Np1jc4i3+6vE2UJ5ECykRLto+tbgi+NQp0DLIYNKg31sF54NAgM26Z6XzjRlKLoL9PkuoTbhMvfynUMYegme+sMj5U3ottgdJ76iBCb2WWS/VB9aOUt2SESCgj+Mrj78nWo5IPlDw59FqItzC8sGL9Cs0x6XUf/Fj6V3aw6oJJV5LguBqxIC5dBmV3lj7BrhMv/y+86Eqe6+yiSw3PaXcvN4hcUlc9idWJE8q87EdKRuUm66sNcoSaFQEARECUG2BQ7Y95qa4KTw7w=="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/anthropics-usd2-trillion-ipo-warns-of-self-preserving-ai-and-data-center-backlash-as-chinas-ai-bubble-reportedly-bursts-in-usd480-billion-meltdown"
 featured: false
 breaking: true
 draft: false

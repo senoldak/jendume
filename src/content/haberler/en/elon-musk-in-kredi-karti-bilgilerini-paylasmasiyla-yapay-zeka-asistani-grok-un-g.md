@@ -12,6 +12,9 @@ key_points:
   - "An unredacted screenshot exposed sensitive order and card information."
   - "Online users manipulated customer service bots to alter and duplicate orders."
 kaynakIzi: "v1.vF5eK0/l+0lupisx.JSeGi/9yl5K72VxObaPQAfxITrT217oAxi1JJyCQ7x/cjhIL+D+y99Y43U7J99zuocVHmQxDQeaj8L9y3bBYUoKQc6QdQLvntWBMPQ7mCEvxCAJ6+bVlRRfs4R9ywhvisX8y95ZG4+lxhcZR76Hi8GCzy5yrhKlOpyJnlsnWWL2DPpi9tPQ="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/elon-musk-grok-control-credit-cards-backfires"
 featured: false
 breaking: false
 draft: false

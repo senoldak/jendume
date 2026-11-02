@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "German taxis"
     deger: "50,000"
 kaynakIzi: "v1.CxOrhZ7Qtc9ESqhD.FX8jrGYNwMCabyycDmEcbVuez/5VBX9LRSzMkPekvZ0GYhahI2MRVdLYEq/zzdP2C7F9X8YbqoSo7Y1lXuUS89GxfJBwigprzjhnIqxKYdj6jzTueNmNZidhnZBeEHaoRH+ejgWGHq8DvNV26YOD"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/tensor-mtz-munich-robotaxis-germany"
 featured: false
 breaking: false
 draft: false

@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Mini parameters"
     deger: "4 billion"
 kaynakIzi: "v1.M7+T1McS8rByEt40.oVK8Yn3ttlgYtYTYc19hwYwy3oJs5n/xm38cbX2j4aDt9z6azHvubyd1ty1jG86SDw4gCMkKXwB6k4ve+xvEWOgP209km5mJrqBccmyuiKyOrh5OcThTuIM+8X6eLsgCeBDZuNHlfsI4qxLsHNs1jmriIzTIk4b8Pz0oTJDAR8FpvzVE3K6n3hwlyw4aVXePTf7wwi79CY4m2zbcLMryHDv3wZ5bkNMjAn2FeuBAwyzKhkzZ+YK8a7pi0D/vzmlAX3w74Xuyr6FawdXInPc8gGx02jhx8dHfFOn/2ES30VRm70EZwheFMA=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/"
 featured: false
 breaking: false
 draft: false

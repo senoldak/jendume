@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Deepgram Series C funding"
     deger: "$130 million"
 kaynakIzi: "v1.tJBd0L/1L1HyZ6u5.AWB/NLz7T8U0UoawKo/vTNtiOLA7J0mp4eqOHkdMK6adTmkHFsf94CU3VYVIlohobA8zv53lv0witNbnCsjYf3SXT81gnyIuOYhncKW2iou6yVauvv8L+MP45DnpRxiXzH6QhdnEOTgHbSsyBrDHJwTn3kc2Kzn+lCoxiTgd8uQzu/WYpHYT0vIS99xbxrQ+Y0zKe6QyCcbaqeu+Z4AYD6zh1hFWDiV/smb3c0jY4yBvGBMZlUB2ZBXHybNSHwsOuQfmQgi281gNEip6BIt6f+7XRsc45WyVfwia9gpuHn7ZYCuKxLG0d9i9AOaERDTPwbSMFDOS6//nUANbj7DL3GxF+G5iX5uAHQiSfOb5AQ=="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/deepgram-acquires-daily-commits-to-keeping-pipecat-open-source/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
 featured: false
 breaking: false
 draft: false

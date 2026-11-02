@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Benchmark score"
     deger: "77.1"
 kaynakIzi: "v1.bH4VNVz0sLd+Cb3f.Rdfu+eWPe3oxyNYw8NYjQxAzAdHCXAXtm7mZuLv4ThHZiPNEBDfa7JR4/xoMEelm/mn2+LALWD5P1ZeRlW2+pCc9IV6hAMte1yfjfzbpGKOkkN95yzaB11G3BSl2gQe3u/FlFStOnxpE3g/Tg3a0/yS99F8X5+ipCM32x9/0cMvvkXfC4AY9MP98k/o="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/26/baidu-unlimited-ocr-2-open-source-long-document-ocr/"
 featured: false
 breaking: false
 draft: false

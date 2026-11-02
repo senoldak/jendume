@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "İlk test yılı"
     deger: "2021"
 kaynakIzi: "v1.GNp29ZmeYcDxDxYi.I2JSahkryMlG4RsNA2fkgEbC9tJulFybzup2uQcQ8TrPcK3yLC69Kob8YeXnKg9DgybkpSSil4Xub8DXRYdJqG2ON072NeiU+Q1IV+4bCdfUoI+pAYJwVhN8Mu53ohVCn5cHF+u/djCUv53M9/E0jl+NyJDlRd1SU2ruRWnbttl5ROT7S2894Et8Epg4+wRVokIGoUkUuigFGzg1WxOVxlaN31XJnHBXk05upyhi5gDpu1BfeeUVAITZUbnMvPJPTz9Edt+iqRJ6yujuEPTV6zzSDiZrq1LrDtacvp30B82vzfwLEonD1x9rIN0xnEAapTzRAbCcdUByog=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2594537-robotic-dog-controlled-with-a-computer-powered-by-human-blood-cells/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

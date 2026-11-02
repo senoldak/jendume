@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Karar tarihi"
     deger: "24 Eylül 2026"
 kaynakIzi: "v1.E4UVo048wuxvF2Mz.p6Cvaht9DyMQQBkbZHZ2m3m+K4lss2eyiDP9Y/CMxttyXz+OGdZUyqqBJgGnJHojSztCojHAmvLfkI1AihdEPST/yLe+I5U43yAwfPwhJmigVdU2IkZ9nG+V0qFw+Yjs0wYw035a3rT7nVCEK2GAbpFPAf4v7wNXli3z5KrfMTS76yiaOSdweuaDCexHaQ=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/"
 featured: false
 breaking: true
 draft: false

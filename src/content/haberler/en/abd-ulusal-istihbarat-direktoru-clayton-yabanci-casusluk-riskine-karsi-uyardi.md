@@ -12,6 +12,9 @@ key_points:
   - "Officials said both commercial and state-sponsored espionage are real and serious threats."
   - "The White House AI task force established three subcommittees focusing on infrastructure, reporting, and law enforcement."
 kaynakIzi: "v1.I/sP/eW6akVpeZml.GBNo/yVHxBunbCSR77bbkQivJ/XsTy7jevtxadM8EZl236qTjsHKBMphYIidCTMxcmSY9LFfzKbvQjXiORGmaKAEGr+rODBUIagtiip2ZHN6p233XP1Yzybvb8YWkMur1zA0CGyiQcgL4MeOJcdiGBCcDBvev+WV"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html"
 featured: false
 breaking: true
 draft: false

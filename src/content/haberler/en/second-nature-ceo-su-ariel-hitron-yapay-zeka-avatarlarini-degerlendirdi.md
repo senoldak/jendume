@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Workplace usage"
     deger: "38%"
 kaynakIzi: "v1.yGkdDIWKuccOEXpf.9HPg/r5vr8WappTiLNFmwrRvqR8MFp5x9ZbSau1bzpgOs3nh77n5rnhkCBwboTBIs3lHj/FOczT7RHn+zYzxRZl5ZljiswKKYMhWITSVyDhTrvaf+ayCE5r0VCSidv4lLl/sI2S5lUfcL8WEYFd6MkbQ3Wqeai9KJJpMZuNixEYr1hMq645Tie6LC3aFcuLIpIQSUOuqvXGvQoq5TsNKTNf4Bt4HvC5gx24F9bzpSREl3rpXNC3gK2N6Y8rnlSRyZ9NtiKWw61VsnQ=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/chatbots-and-agents-like-muse-are-getting-a-face-but-does-that-make-us-trust-them-more-heres-what-this-ai-expert-had-to-say"
 featured: false
 breaking: false
 draft: false

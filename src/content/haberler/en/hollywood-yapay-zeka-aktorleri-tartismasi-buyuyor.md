@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Cully Hill Boys runtime"
     deger: "115 minutes"
 kaynakIzi: "v1.llVXC+G8kzjv+FAc.UlyFUXfDNN7sD3h5MHr56dCwhvQqSmBxG9tJ4+Jj21nSxD3woZAjZB58f1yPUt6dtbbsv/l53nToS2dxgtvsPqBzLZ8NPrFwTdW+Enb9J/uBmnBfVLIFOGdpBMG0usbypfCbxmiFyl9CRTq0uE9rK7zvAlnZUFIVF2yD9N5SkKyV+wdtBSCkhGtE2x5X8hO6W+U9fCR9Xw=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/film/2026/oct/20/ai-actors-val-kilmer-as-deep-as-the-grave-tilly-norwood"
 featured: false
 breaking: false
 draft: false

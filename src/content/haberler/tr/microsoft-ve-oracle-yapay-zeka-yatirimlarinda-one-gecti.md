@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Microsoft nakit akışı"
     deger: "18,6 milyar dolar"
 kaynakIzi: "v1.vPYyWcynT4oGUfc+.57FK980lEimxm8GjKerGJZKPrLQumWY5qjEC3mBlt6CrxR1mOMZHMPznYnJ2TXJVJZDga5ijSaEC/wtYEi36/shLB/VQE8ZGNH+Vp17WJotRShIrjytpipwb1k4m5cjNFQlYXm4JE7p4Yg53eg6Vdokjp0k77qFnZLKJ"
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/yapay-zekada-hesap-gunu-microsoft-440139"
 featured: false
 breaking: false
 draft: false

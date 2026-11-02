@@ -12,6 +12,9 @@ key_points:
   - "Airlines and financial institutions block agents citing security"
   - "Amazon and agent developers clash over automated purchasing"
 kaynakIzi: "v1.baKR4H8xpmCeuJ0P.vw4CvGplJeriwKSa7LP2btM27cMFDogdKsuOqhT1G9Y3WhDy/3gLsa5AbK+6h+T8LpHnUv6Aw1VPV4yjsjGqU/MDQzyDJT8FMS5hQaSkn/Rek/AQGhQQqGE5uiqmlec8eEGLLtxGMAFxyLw3S9bwjxinAY1u"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/yapay-zeka-ajanlari-erisim-engeline-takiliyor/"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Supports real-time collaboration and templates"
   - "Available for Pro, Business, and Enterprise plans"
 kaynakIzi: "v1.KDtp9Ic3iOhdVueI.PRklmej4N5KQlV+6swG1WO5p44+lcOYZ8I8hJndSniNTXr/1GI3Ei02CeLTyc6+JSbV/BzW3fYz7nOYTjDka/ZTfRmfHuMiXwrGqXgG+2FlwU8k4gPYj+seucmj/kdhzFnKcBl+VeuKbve5YqiT5E9tR"
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/chatgpt-slides-kullanima-sunuldu-h227512.html"
 featured: false
 breaking: false
 draft: false

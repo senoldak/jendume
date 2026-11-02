@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Yayında kalma süresi"
     deger: "11 saat"
 kaynakIzi: "v1.qdFjYVAUclfrK8Gu.wgcm1XOrONolTmhWxC1cBJZBCvt6E7veVRQAk90+3kGHdDG3T/SmKGZgKlhTVOxP7Ivm3XBjl8iySZ/F23Ye6B6CCk3fcebLCkDhf5sRHwiDqorvhl/4EtlOWvCYz8HpJ+MD83p/U82ziac3z+eUOGhb"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/sahte-claude-code-eklentisi-cursor-magazasi"
 featured: false
 breaking: false
 draft: false

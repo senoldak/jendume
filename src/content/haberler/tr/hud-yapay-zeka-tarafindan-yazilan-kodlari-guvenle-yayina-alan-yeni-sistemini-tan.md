@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Kod birleştirme artışı"
     deger: "%98"
 kaynakIzi: "v1.5tEVtjEKDbSyXnXP.0m9/X1R5WRW9QzL6kbNhvuRuQZ3q8fRk+RJ7QZP4ZyA6FwiNposrh3fjHmcAxj3OIT9SFpB+UE0azoKwRaXwNlT+4KBNMVkU0BwCvZTBHnlcjPtRTtKki09lVh8QdkkHNgmkcgZva6YVfmxPApEhWF2Bug=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/hud-agentic-rollouts-ai-code-production"
 featured: false
 breaking: false
 draft: false

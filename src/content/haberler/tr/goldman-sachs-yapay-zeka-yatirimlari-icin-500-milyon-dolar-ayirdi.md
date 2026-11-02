@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Düşük bütçeliler"
     deger: "%73"
 kaynakIzi: "v1.rsyFXXU8iz4Z32Kh.+YueVvtoee69VZdwlSjkX5qKPt1bM6RpbVwvAyAgUfYROe1jXDqeYJJPYzdK/3Ue9+9C9uVxgNwDoYE4At/AjmvCb2KjIEQsZHRAwOfx5rGHdK0oHg3RH8RfWU1Xy7vkoqYvxIJLzSLK9tpHfSzU00DqBlas2aKbP0suRmdHnmUpGOCe1gy6vug5"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/goldman-sachs-frontier-models-small-business-ai-institute-500m"
 featured: false
 breaking: false
 draft: false

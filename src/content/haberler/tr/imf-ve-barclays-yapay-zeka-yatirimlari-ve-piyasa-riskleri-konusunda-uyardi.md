@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "ABD üretim düşüş riski"
     deger: "%1,8"
 kaynakIzi: "v1.fUeOC9OAckiWC8yy.6UvXzTLLjcdNXRP3reKlsvwoQgKqpGzezM9sl4sS5fJAGQseL7XfKIFb4CNHyUDX2e+x7EyTfcc/oFuKu69O7/al7+PwLpaPB8ADFpl3MvNg9uxS65ZBUtaOWzRv0yj7fELYQIeJEMN3UoPBxHtPNgbJm4qMtmUQ/tsAzSKywfubF6KbAz2KHcYuSNX3"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/imf-ve-barclays-yapay-zeka-hisseleri-konusunda-uyariyor--211817"
 featured: false
 breaking: true
 draft: false

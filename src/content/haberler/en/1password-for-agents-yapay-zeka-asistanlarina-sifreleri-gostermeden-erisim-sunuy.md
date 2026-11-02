@@ -12,6 +12,9 @@ key_points:
   - "Supports major agents including Meta Muse, OpenAI Dots, and SpaceXAI Grok Bot."
   - "Access is granted on a per-session basis and requires explicit user notification and approval."
 kaynakIzi: "v1.tapzpoTxXo/YV5pO.uylgXIMbvyCkrqt8Mt5oR/O2CFim9vy7AQ1nuzFCLrmPrUGyrBG7ManY2liIWvDuPRQowWP24SRyqTbqmvXcDicz8BqWDOD/nWEfe9X8naXbSYcsGFfnzeXYIyA9YlrqXngSmzIiZrVWtt6BhBCygOqESat+kJKVHw=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2293844/1password-opens-up-ai-agents-muse-dots-grok/"
 featured: false
 breaking: false
 draft: false

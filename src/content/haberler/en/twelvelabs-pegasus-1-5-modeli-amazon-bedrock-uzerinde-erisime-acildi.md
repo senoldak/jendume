@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Processing capacity"
     deger: "2 hours"
 kaynakIzi: "v1.090kgB0Dhf/m+nL4.5XqjJBg0hGbMcHKOgPXFANChpfAVV0xSkRL59PYiiF/5kWIamk0Cm97rvxshFyiNYXOB7PkSudU2u76vvSdeTx24q+WtCjgTGrnLmVI8e2wcaSRyHqPz5cZKBAM5rM1yU1WcQ0JlIOrj7lhjb2p92E4pMtA0gyX1dF8XiTiEHmr+Q8gmPP61tStus1hZPhlHBESWuO9rXRZflJ4ylFXODcdRoPCWMqwNAZc="
+kaynakAdlari:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/"
 featured: false
 breaking: false
 draft: false

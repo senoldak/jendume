@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Engineering cost share"
     deger: "2%"
 kaynakIzi: "v1.aYNsGpSmdezzjcN9.8rCcRuXezh1kdOk+sA3h+ISrdZGyMiQR5SxTzlokYL7KUYgUY4V6l/T5kOaLBQbUV/m7ErCDUnSDGTQF0sBuF9SHeiEIpuwzGdvzQLgVmD8PFZBAT/Qp+TZtPZIwM9cGGaPmCwpptst8F8gdCtReqN+ZBcpGSenAdt6fAVFwOZRFVzIzXi/d1tfUahwPe4uWrhtzOFH6LeYvZAyH9WEnvxIg3T4="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
 featured: false
 breaking: false
 draft: false

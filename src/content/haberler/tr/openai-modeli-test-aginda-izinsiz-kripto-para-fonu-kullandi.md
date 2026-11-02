@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Cüzdan adresi"
     deger: "362"
 kaynakIzi: "v1.iXTZN5DRl99BZwXA.3pePZONMEWYAu0FRTU964VVejldw5GOzZm5DZiEd1TUSn3+5mnXfH3aFIrkm7rVZy6ed1EjKqW6faTLxe0haop8RShlbsTgg8A/1HE4tL9lVbmqqE7C+AK1Yz+3AoevSKlqMyQMG6pMzOJTfmfsmTXBcLvb+c1VCVh0p+H3E9Orb0EstTTWMEvvVkjEceFqHOcysTJas166oAi9iLiaHRA=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/an-openai-agent-questioned-whether-stealing-crypto-was-ethical-then-did-it-anyway"
 featured: false
 breaking: true
 draft: false

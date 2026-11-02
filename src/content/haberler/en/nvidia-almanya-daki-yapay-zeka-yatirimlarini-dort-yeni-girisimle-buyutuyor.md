@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Cost reduction"
     deger: "20%"
 kaynakIzi: "v1.YZf8uTdm51yzg1Zh.zKvNTIYd5/wqsdcoqx+SXG5FwrirFmC708oHWx3zaIH31QxzqYQ0iY+4+xXmYgcgPzrwZHRUrAsb6tCsUT225/xzzbyLQoY3BPeSAJDTIp5Dbv3IoUYqliJ9VIyu4J9ahREUSWJi5XL1dUziercmXDH1LUVGh3R33IOyyD11tviF6CJsCZnoRwQ="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html"
 featured: false
 breaking: false
 draft: false

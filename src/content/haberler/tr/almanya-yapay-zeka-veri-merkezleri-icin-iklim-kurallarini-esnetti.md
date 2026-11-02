@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "İklim hedefi"
     deger: "%55"
 kaynakIzi: "v1.f94G27zqE4PcY3Rr.lxXxI6/+9CRKuzUuSXXaKYgfy254Ct5ibsnwLL5gPUH3cwf0E0n5KSDQzSnP3JGa3PaiC3Tr3THQwzZ6yoa8Rz6EzJKwoDAl+9fZe/5HEksKizk9fn0YmOSwljMNFlGjLW2t2lw4cCRULMc="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/europe-data-centers-climate-change/"
 featured: false
 breaking: false
 draft: false

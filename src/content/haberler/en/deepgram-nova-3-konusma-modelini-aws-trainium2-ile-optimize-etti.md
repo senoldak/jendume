@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Throughput gain"
     deger: "11-70%"
 kaynakIzi: "v1.TbIPDcJeVndhjBR4.EtPi+IElXdtO3o9bcDky0mLxzBi1F+3qBJHCAjyCyhPnD0k/vxEsRexsns6N/DQYxV5857NNHsrXqbJ7y8a1ZItTEwclUt0CAAvgf4x8lJ0zizcdUFP+f4uCYwoVIhmVtxHwFhbxyx2HALxmjZ+Q2FWX0c9BidFNyi1JwPEq7BuE/vqPnD+ivcZNyRyMeNJQ2iV/rwpiJw7nZZcqlnMQyIJ/lGAiLA=="
+kaynakAdlari:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/"
 featured: false
 breaking: false
 draft: false

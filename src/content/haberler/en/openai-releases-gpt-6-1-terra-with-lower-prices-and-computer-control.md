@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Output tokens"
     deger: "$5 per million"
 kaynakIzi: "v1.T9cr9lCjLxtxirR+.uf+8hqsFUU9bxzDhYrdpy+1Poj4swZ/p4HDrVEd+W/Pf9ON1uWqUJNSNsP/+NSE2YAJ3ydNuS4dfgBUMRXqylXjuc5woNaqGOC0LZTiouTO68wGbdKijzSwxZH0/phLJw3zAD7987DHezGVJVJKkxZ5kQ9mjC/Crsx6F1LQbQ9X58xOcdB1E4cizSClbs8zAoK7t7Ieh14oVJ0I8LnQpOa0f7EXbbvdZgciGjcGrc2xj8Agm0115RbxHOEslLiAAdxMT33trj3MM1ewF115taLxZOk+C3dlIbdSx2lPlkjzIjYQYZGWGvAUYjd4vSFi3f8nQ8AEnfw=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/"
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-gpt-6-1-terra-computer-use"
 featured: false
 breaking: true
 draft: false

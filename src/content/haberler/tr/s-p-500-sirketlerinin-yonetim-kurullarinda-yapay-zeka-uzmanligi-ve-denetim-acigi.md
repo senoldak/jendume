@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Yüksek akıcılık oranı"
     deger: "%23"
 kaynakIzi: "v1.lme3/p79P4Ng13cg.6mkLh+ggimQ63mtNnogMuo3WWBu4uokmLMl4t2ddH9fbm0uthEC+Rk/tFblJGLRgnS2tycxczjn2K4rmZIbqZKPlw02JHyA+wGwlJ+Zbg/mgVWQ0ptYQe7eVHWEsYT8tK/2KOGeguvKH1oCaehZpa6EOXZEggp90fKlFqNc1V+x/+AbmLMPVS0RcI30h5ZiAzQKzX5O/zuTcye0Bf2rQBr7ngGAgb85DBvb55pOZeBiyAAycUUtmmNXVOYNLEBV0+oCziNOsFI02jKIXECi8YuakRAanLDfYWr552vXqqHzXVhWOUlCbktcPDVkSoxWE"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91623699/ai-expertise-oversight-boards-need-both?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

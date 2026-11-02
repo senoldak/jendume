@@ -11,6 +11,9 @@ key_points:
   - "33% of recruiters cite AI-polished resumes as their primary stressor."
   - "27% of organizations confirmed encountering AI-driven candidate fraud."
 kaynakIzi: "v1.gRSkYTEpkk6mcAdA.QUWEOFaHD7Z2Jb1CiiCmf6rP1Rce3dNIagRhxhXGeDSJbhInlnRadUNHNRofNCbHiVao0qrQD3VV+FXSMENI3SWnehLdT16PbOxpMGBrdOdd/Btfm3E12WhZ6zU2+j+haJN8psVk1w=="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/education/employ-report-ai-hr-hiring/"
 featured: false
 breaking: false
 draft: false

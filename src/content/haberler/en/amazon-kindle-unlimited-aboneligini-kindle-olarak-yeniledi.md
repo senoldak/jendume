@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Borrow limit"
     deger: "20 titles"
 kaynakIzi: "v1.x6GSy8zFQG6yg6Jo.sWSkSuMu+juX/ykb1cRxaqeX+GY8llcJamlvppqTxNQ8Z7MZ0JgATDTVWnS778jaQdsP4Kd9TJwBaEDgQO+DObBk+daKdQyi5SFhKdxESgPX+yJOJt+SUcfQ9M5c/ZjLIjH84/R2q0bCdFct89ttGNOJ"
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/tech/kindle-unlimited-kindle-plus-audiobooks-ai/"
 featured: false
 breaking: false
 draft: false

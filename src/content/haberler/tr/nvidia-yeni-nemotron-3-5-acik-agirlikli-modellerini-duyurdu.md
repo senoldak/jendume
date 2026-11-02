@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Bolt parametre"
     deger: "74 milyar"
 kaynakIzi: "v1.8u/kfu5ujAJtT5dE.AG5yVYT8N7AvX9MZwQzeymh3ApRSBE9FBb706PaetgWCHdu8J+Uoe9+5hISh5d2IV07Z5RqdRQDWBeiDrjDH2xH7czqfaD99b0H5UC36ihSOWWkSknuOOJUZ3rrgLUulN2rKovvEglxso0lUTzpfHK0NA8e8nMteJj8="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/nvidia-yeni-yapay-zeka-modelleri-duyurdu-h227513.html"
 featured: false
 breaking: false
 draft: false

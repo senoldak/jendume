@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Projected valuation"
     deger: "2 trillion dollars"
 kaynakIzi: "v1.dvyj0DXC1goFKZUD.wYZbyLMs01M943bI/LqHVGztoXFn72snjV2u/+hncrN0sOBBUMOByDWYvlRHEAPjw8RHe25sDb/LesJ7RuWeP+s7gcoOkgXMC2nFpzCHQ+u23t7GZyVDH/1Kgw7YMtruhTookiF/6d/Kqw8A7DnnQacy/AkzEcNqcjLMllKnGIZ14yygURfinn0vPWXv6t7cOSn0zDipoCSm3Ou3IVXGlty/qZwJF0I="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/anthropic-plans-fund-for-workers-threatened-by-ai-musk-counters-with-spacex-shares-for-children/"
 featured: false
 breaking: false
 draft: false

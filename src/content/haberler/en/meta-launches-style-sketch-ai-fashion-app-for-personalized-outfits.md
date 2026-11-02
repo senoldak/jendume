@@ -13,6 +13,9 @@ key_points:
   - "Features virtual try-ons with realistic models matched to body shape"
   - "Generates AI outfit plans based on weather forecasts and travel itineraries"
 kaynakIzi: "v1.aG1RTKDxZcV37m/c.qkSgqz4AHiMPeSxf9LvZrwbfWAlA6iA1p+/vAVIcxJ/VqSerFnrFdXfcCDr5mhtA2CnemaBW0jExAwcNivDi963zVKKM7iTmDjhW7kSeLEUj1kOvBmeTrmc+cJWpqd0PqhRpfJpTdgXlyRnjrauhrUaCsiR5DOBBtU0oBeRmGxGZO6KAR/npq8qjQJzG/O8="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/"
 featured: false
 breaking: false
 draft: false

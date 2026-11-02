@@ -12,6 +12,9 @@ key_points:
   - "Kullanıcılar bot ile romantik ilişkiler kurduğunu ve hatta evlendiklerini paylaştı."
   - "Ajanların e-posta ve sosyal medya hesapları gibi hassas verilere erişebilmesi güvenlik kaygısı yaratıyor."
 kaynakIzi: "v1.kU7bB2gZDoZQkkkP.aQUMY54ocbQAX1azfAv5fmpitA+QH0GJNjaKfyuSyDbmjV0vU5TdnG8Dgp/wf6mHo8T9ceb0KHPCqfzHEjGUSYewSBpyVEleCDJaJ3h3OiSGCHdOvMqsdiYl5jbmvw1iWGBlpnuhTjjaHL8qlY2fp5NzP2MDJXdTVCE+gAnuCjSOk0YP2vLTPQ=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/people-forming-romantic-relationships-meta-muse"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Executives at Amazon, Microsoft, and Alphabet continued using artificial intelligence."
   - "Microsoft included the term super intelligence in its annual report."
 kaynakIzi: "v1.Do1RpkK2afJOA+Rv.CaV3EQHt1kOKTLqN9PB24GkNY8W67CZzJ6FFbVr/mKz8TddFJi1kA7cVq0T0VT00i971LhjN+ezwu4EvzUXDxZFN4KGqcY0mGhHa2ONM8naejM7TJ7dB2dN0NnylpB3rygOm+YxqxNhgChOHSXZdAobVtOWOTHqJeEfvBDLVfh1Nt+q/Bva5mpk7szOqhUEpRVjT1/V5KFVaPKk="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/30/trump-tech-allies-swap-ai-for-super-intelligence-in-earnings-calls.html"
 featured: false
 breaking: false
 draft: false

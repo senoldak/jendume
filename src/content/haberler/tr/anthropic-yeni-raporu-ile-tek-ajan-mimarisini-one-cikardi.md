@@ -13,6 +13,9 @@ key_points:
   - "Tek ajan mimarisi işlem maliyetlerini ve token tüketimini optimize ediyor."
   - "Yeni nesil büyük dil modelleri uzun bağlam takibi yapabiliyor."
 kaynakIzi: "v1.PtlXUgFXxHiLmmsD.1smXmIlnPIG5fMO+nPkS6eRL7XLBU5HaW2VkCGBaC2QsOtYJ3AD2A0gKe7Rcb8HryLpWC89jqA4O93Y4whFbzVyyCY5x4KYT9OpqLbpYXGpDwfbDTReY8Rqudx5JaG/dcyLPScg/BS54R6LsgUc084EUw8XipY2GFow3GAchitGmuXKJJzi7DCjrJPin"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/anthropic-tek-ajan-raporunu-yayinladi-coklu-alt-ajanlar-artik-islevsiz"
 featured: false
 breaking: false
 draft: false

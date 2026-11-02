@@ -12,6 +12,9 @@ key_points:
   - "Attacks exploit the limitation of language models in separating instructions from data within the same context."
   - "Experts recommend whitelisting metadata and properly labeling external texts to secure systems."
 kaynakIzi: "v1.BPShvGxdPjnY1boP.Ac3FcC8UYgrP/Qny55UBERl7YU8QAbcTSJH4mkEzTMAHnVHAFWPdxekzFtbs3oFyReNCqPiu7kGZwVicNhU3LE6OciLOnWwr2WS/mfwP4GvwJcaZ/JdnN+pCkN1/cA8GuCd+X4OODWP1zq2dXtcpRxCQZYg5xOJccfs5PTq2rfoF+E3tZEEiiKq+NoY="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/web-sayfasi-basliklarinda-dolayli-prompt-injection-tehdidi-belirdi/"
 featured: false
 breaking: false
 draft: false

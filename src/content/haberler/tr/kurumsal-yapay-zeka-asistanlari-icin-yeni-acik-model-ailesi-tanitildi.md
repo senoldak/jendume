@@ -12,6 +12,9 @@ key_points:
   - "Her adımda 12 milyar aktif parametre kullanan mimari"
   - "Yerel cihazlar ve uç sistemler için iki kompakt model seçeneği"
 kaynakIzi: "v1.aKZJl1sA1wZC2xQP.oszrhR12HSThzwxAWn3cKCnB6M+TonINQr/4ro6DtB/hqWjpRcSZgBF19mkEfSe0Kw/bKpD6vcuPLCR4MjA8gGoz0GUyXrgfjkn5k7yYIsnJNjAZ0ZG/QP+rZX2F+4x88I8tN/SBdv0DefmqIn4h++bwjQ4OQDVrQefTAl8E5faS9ZC7haxvabjTd7RktKgIXwEtEGXKHMP/bCT03uZAEg=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/"
 featured: false
 breaking: false
 draft: false

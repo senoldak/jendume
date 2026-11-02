@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Ortalama başarı oranı"
     deger: "%10"
 kaynakIzi: "v1.k3ns7kllwZh/4cw7.VXdYkqU5Q9xHR5ruk3maGt0KXRdEFTddYkNVZcMwAw73bHrWgWNGkTPu3sEnYY17HkwoIc/OwrRQHmhZ++aJG+1oxmlqZBKcx4fuj7Q9XZGIbiCu5jMZMMMmboerMb4ex+M0y0eoz1Eppkiq7QFKDtEXkxDDZ5yQviDv"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/ai-agents-hacker-cairn-100-sites-deere-norforge"
 featured: false
 breaking: false
 draft: false

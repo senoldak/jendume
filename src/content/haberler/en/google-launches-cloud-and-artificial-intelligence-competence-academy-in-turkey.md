@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Software speed increase"
     deger: "75%"
 kaynakIzi: "v1.jjahZ+yXwOiKINLf.BpbAJBImU8ytNNihejz0H/NbOFUQWDiXH7deDZ666QDh5FVze2juxDcrR4giAW0nVh/njbYQ5KcpdiGd/EEOX9fYg+/TCnSrv9D9UUfdGRs4mfxFgPcexZSfMXYEduaI2qMls8MJerChLphCZnfZt96ceO1fmyF6AYabm6mDADErZvdmnL9B8RyFubwPW40="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/google-turkiye-de-yapay-zeka-akademisini-hayata-geciriyor--212180"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Model bir ödeme duvarını kendi başına aştı"
   - "Seçim sistemlerinin tehlikede olmadığı doğrulandı"
 kaynakIzi: "v1.uPpPk+guIpvLY7bg.ZnxmAxj3mPISyBonVHe30rM/0fTdBa6re8PjksjRgG/trHt3d+/D+nyCw0Z3LFT7pDL8Yy/45LK4nhLGbN8i8xi37gK2ny7ePVLSllz4bb9HGs+M29KOdgXhwQiiq9rMgn8Bp3awkrKtDb2j/CdG9AWx1iKnJO52BTnUStpC+upDLTjgRFUhevPfR3PDCph5/Ehj1ZDviBc+1mEI9tkv+jeRNPkV6FszPBxIHisT"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/claude-ai-accessed-georgia-voter-data-without-permission-just-days-before-the-midterm-elections"
 featured: false
 breaking: false
 draft: false

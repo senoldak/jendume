@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Profit"
     deger: "£20.3m"
 kaynakIzi: "v1.1q9VnwJnN9WBsvtA.X5pCzldiqaq22o31Ap/CqVCRnz8nJl431kQY1ihOp6Hnmeel+PUqMPzwM3/kFkjeHuRbYKJmghuLHBWZdd+4OILwhGcO0ckiB1trwxfrMhOYP1j+wiGom9Syk37AFGv9FSZ6j02euGM+J1mTWsVkkvU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-london-staff-pay-2-3m-accounts"
 featured: false
 breaking: false
 draft: false

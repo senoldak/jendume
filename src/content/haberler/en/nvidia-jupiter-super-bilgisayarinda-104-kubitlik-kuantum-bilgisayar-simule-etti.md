@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "GPU count"
     deger: "8,192 GPUs"
 kaynakIzi: "v1.npTo1DeDgtyhcdEa.R2FsqFuxQeUfol/d5gkR8U1ZJRMxPisX9zaxvLniNMkYeT1X6JYUDgyjryOsXuLCwSp3WraxqmTv+d5pZo1fUKtX2P6fWdLSUrpVdb0T1bcV38zF79qGEjwC2lHxyx9yavwg7iSI41bIJ4Bud7ngN7NHiq0="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nvidia-quantum-simulation-jupiter-julich"
 featured: false
 breaking: false
 draft: false

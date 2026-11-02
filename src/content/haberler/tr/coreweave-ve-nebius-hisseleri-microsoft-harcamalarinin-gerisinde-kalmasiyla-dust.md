@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Alphabet Harcama"
     deger: "51,36 milyar dolar"
 kaynakIzi: "v1.lM38b/QGVaRNszqJ.T2gVwScsQBSZ3whbP/QZgE7iCHgpICGeGy0CaHwY1HH5tEU29kNyJ10WU9F8Ra8D7SEv0RH2lvK4mPXJYOtljVdpDZuR5kk7B6i6VI3uU1REPK00MULIc7e9N4cReMj7bDqtZdSnKVkeSfS3XiVPx9vpIxkWNa3Ol7+e2rri0q8Ojed87OOvQ7i+GLtY78pr"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/28/neocloud-stocks-drop-after-microsoft-revises-capex-down.html"
 featured: false
 breaking: false
 draft: false

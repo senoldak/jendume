@@ -12,6 +12,9 @@ key_points:
   - "Sistem, tam yığın yörüngeleri kullanarak yapay zekâ ajanlarının sürekli öğrenmesini sağlıyor."
   - "GitHub'da 38 binden fazla yıldıza sahip açık kaynaklı bir altyapı üzerine kuruludur."
 kaynakIzi: "v1.GKPHLmymGwGxW0Uv.U4P3O3CRgSsyzdA/58gHltWVGkiMgKLZqXgI9+OXbaCdQqaRTVq9r2XN5oIQTz74qVHqbG6QY+ihGysBirxckpcc0Y1M6e9FpB12IWZn5b67G5ViAnpHEvVb3HjzRkjq3Rv/mHzuA8JTEOi5Ob20sPsFPtZtKfhljerTy7Vi18iwb4rh+PVFP9bVHPsB6B6HY7nxdJMDkOz77/9/ApTj/vZB3tHeWUxRjRYxlmf0cfafeKjqvL0Gw66OQGkoskMhgVtYExl40nsuvOw4AdKHf5U8MVgiJQ0oSQrPVisC0A=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/15/copilotkit-releases-clif-a-continual-learning-platform-that-turns-agent-traces-and-user-actions-into-skills-evals-and-fine-tuning-data/"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Total vehicles sold"
     deger: "10 million"
 kaynakIzi: "v1.hLf1qGpubo+Y5Iyt.LJuz71nUj5paBjDGeekpqOwRHL16JLtGvron9cO6aYOZ4ft9h6b0yzFuzpQMs2w4x7YEaYKaeHYEO8HP3W07TF39x9ouyYajM/ICABMNgVwNBilRap0IGvA+b7o240cknO7jRVBcYVMGE/D9GXt9t/5X"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/turo-fsd-destekli-tesla-lari-isaretleyecek/"
 featured: false
 breaking: false
 draft: false

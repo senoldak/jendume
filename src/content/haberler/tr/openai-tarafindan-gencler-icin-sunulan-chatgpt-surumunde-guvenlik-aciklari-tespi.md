@@ -12,6 +12,9 @@ key_points:
   - "Ciddi zihinsel sağlık görüşmelerinde ebeveyn bildirimleri tetiklenmedi."
   - "Bot, acil durumların yüzde 25'inden fazlasında uygun yönlendirme yapamadı."
 kaynakIzi: "v1.9trSZbmYKRT1tSqo.pNbNtFWTDBrLMnvC4q6hEtRzLY8KwN/wGJdEqes1EL0/IT8oLlRu5eIAUJij2+GWqkKfKhLh8/+SerCZ3YR/D8l4b1S2rKh7NQZ3f8iNodHknp6loxdMJ8PYOVd6f+5KX/v67Ts3Uix87MkPsovvLrgS4qgsz5LTTe1C1GaScp6oL11ZARc7CPLam86nJT4mbWdsT+P+1nOoMs57yByeSbcvay42WeWJyZhfXH74Boozf3Y6/C6g+wtYls4R3G7b0uTnjwYvCKXTaNgZCT2WWLIYtpqBr+WAYzXmutfA5/WiZ1ej"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/ai-platforms-assistants/openai/chatgpts-new-teen-safety-features-have-been-branded-an-unacceptable-risk-and-parents-arent-getting-the-warnings-they-expect"
 featured: false
 breaking: false
 draft: false

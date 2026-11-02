@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Huawei loan"
     deger: "$2.3 billion"
 kaynakIzi: "v1.9So5Z7TjS+koUmJ3.taYxzeh2qbh16zOl8a8A5+mWBBODM+TVNGjAZMp+5OtWfIXXPpUu39Pj73wz9wG5SCUbqhh8lTZNebTLmspM1EPmgJwgdbN7PghdMcnU2XJg9jF2GliVE/gmuZ0df1qHHzj6THeJE0k2t8cvzFY="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/ai-bubble-burst-china"
 featured: false
 breaking: true
 draft: false

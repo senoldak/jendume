@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Muse indirme sayısı"
     deger: "5 milyon"
 kaynakIzi: "v1.HFPGGMjpBvSHxWGD.ctuRKEPFbZeoQZnkx5w4CxaQFiiAFvI6QABIky+eiMf7gnXdwU+PJUBWf8Wrez15Oxp27xgIjbJ+vu8TM4ZBWJu7a2Ntk0I7WDX/dIs9FG8wCWlGHmlUUQPItwuUvP/pnESuY8vUJSAtZQ9dhEQholUp4phR2gp8MbtCLhSUsYZmmYS+oITHGQbb2Hefjn9YC7MnH5A2QE6XbOYqTbxiAIifhC4jvlTJmeS5eqxJUjeSqhJ747RVNKNirpg4ZKM="
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "The model costs $0.60 per million input tokens and $3 per million output tokens."
   - "Glimpse achieves competitive results and outperforms certain frontier models in scientific chart reasoning."
 kaynakIzi: "v1.kc9jIkaytubv8SRy.a8tm432pYTdmHI01+zT7sD0z1LIrie/VZibc//JbbDQ/9cLBy728KnJ9ODOCeuR2nDsAbA04k5PbBHDp5zWA8DcPQfolRgP8Ak1RWQN/SNXxXAyRJc72bYufws1mPSkFrvHYssKe+/6Ptmty26tgedMDBl3JP3OlumIOK1Q+Q4MkukoxUCKMOcdr3NYDDGvUabTnklM1mTSthM8="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
 featured: false
 breaking: false
 draft: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Seçim Yılı"
     deger: "2028"
 kaynakIzi: "v1.gZ0QOZ0Dvnc0eQLj.nYcEGoSJET/aqgNWjBXVshw1HxL3tqrqj2t0jvmN7cZ7PKE2HJoQ5gRg+cscnuU4JEdwPm1srS/d3dS+gOCn94oRe9P/e+TYxLSSQOnckns9R0EdjRgMHRtUKbXjch+CJzesaez6Lds4xEmuRMaq187mfZRkNtoC9+O1/v8OZXii2GYZ3CltRIHO73rTpSYO"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
 featured: false
 breaking: false
 draft: false

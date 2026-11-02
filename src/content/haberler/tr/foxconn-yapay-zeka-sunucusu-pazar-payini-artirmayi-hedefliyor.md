@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Yıllık yatırım planı"
     deger: "3 milyar - 5 milyar dolar"
 kaynakIzi: "v1.41qqx4sWUcKdUoz5.fjZHujeuRHbBkeT45VV/zZ7Y5Gm1jBm9i44rYojfoOZ1iAo7BM/gZIcC4oQU4yr6DGjqK4NGad9DaFcc8Ek5Nv1WPnJ6DhwLUsKE4h5C6GHeIMBnZD0qeZWDSld7giC7ce6Y7ALkQLYF8VF2VW88Z2wRsXfzdHR8ADQmCB3+G0s7VcxxswyCV0rzqfyKoQ=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/30/hon-hai-technology-group-foxconn-ai-server-young-liu-.html"
 featured: false
 breaking: false
 draft: false

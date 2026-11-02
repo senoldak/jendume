@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Önceki değerleme"
     deger: "852 milyar dolar"
 kaynakIzi: "v1.euKnynhx8AibRAgF.oyjPyNc9OO0+Ie1G9hjCS96PhlYOh7XOVYkOTSllr5daBEZUbC/WShFYrYlGHjcCHDbvva1a+T9ox4DTZc5Whz5zojIFzdHgMZOuPDta1Csz7Bi+d0uVmAKqD6MCI0OuTpGfxXGETEFH6GiZYE7hv8hCAoeOdmtD+zFK2680h02aKKGZP6Gt5r+8CnOC28TIR2MhxgZp0lSEiR/9CFCV+G11FO/YM7GybVLVnMZArfU6E/eeni7jQc9+AAfi+gJ9Np+SEFNULLtNnay9l+j5DXCsgMHPxAGhfDQErXNs/RvfooVGPjFXU67yQ8BjBS2KWLClEfrDBH07++4pKDrHEn7URRAI8SagTfid62/OIGrisfEdIsz1uMSTp2GavUBoGHoPHRwQ"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/22/report-openai-closing-on-30b-bridge-funding-round-to-tide-it-over-before-ipo/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
 featured: false
 breaking: true
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Mobil sermaye"
     deger: "120 milyar dolar"
 kaynakIzi: "v1.6Bz+TjtEulZqfWyU.jQLgdL6hcoK7Z40JLHx1T+bcXrgvvKGF2Qf/4BuO4DtLFzp9uG1dNxfb29RfZbt6vDGrIRc8kklO7KvrUCrxTMFbMGYeVxxe1PivbOWWTQmkQfeH5TKdMsm1qon8VFo+8F+LyiaXUjqH1kp6LbZPShUuYx+RXKs/jBHx+KQcpjXdyf16PeoKYg1m0vxmGcLTSjLZ+Xk33iQ60N/hDw=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies"
 featured: false
 breaking: false
 draft: false

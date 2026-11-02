@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Success rate"
     deger: "95%"
 kaynakIzi: "v1./yPXBd6buapg+L/u.cBjgSm5m9c+G2BO9yKLuCLafY0CgjORUeKtN8LNjicHJqLctKgMkIyDPmAfHlPSCjz01hl4NJRBkE5LcvQybvEyZRARsJnYH6FQd+k52dASFGjAg5szX8FoQan9+ZM4snljqH01gvOW0XmFYlUM2llGNIeoM+v56c4s="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/eka-robotics-150m-series-a-vision-force-robots"
 featured: false
 breaking: false
 draft: false

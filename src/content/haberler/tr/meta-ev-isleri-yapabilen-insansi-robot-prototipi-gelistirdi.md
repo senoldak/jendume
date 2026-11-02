@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Boy"
     deger: "1,5 metre"
 kaynakIzi: "v1./vgcpVYAvC59f1iV.EsdmpxkWhK6vpepIAGWYCrVOSWuqPpER4b1Bsmo1E+BW1QQeOmJGXoWrtCEgl6dhLGCIKkr1PbwF+DTlm6Md+UsmGzeOqSWB37Qe2En1bQtwnneFy41UH9oWd+VZCvt9M5jmwPDPA+UMfwVjMXrMuV3n1uboAyWwn/CMLjTrnUmI3DOLn8NPMjmkhpKp/CO9HEOySmxZfDLxZbo="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/"
 featured: false
 breaking: false
 draft: false

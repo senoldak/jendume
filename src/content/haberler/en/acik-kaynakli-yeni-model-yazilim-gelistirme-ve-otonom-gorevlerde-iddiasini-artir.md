@@ -12,6 +12,9 @@ key_points:
   - "It scored 89.2 on the MCP-Atlas tool-use benchmark, outperforming listed rivals."
   - "The model is free for developers to adapt, excluding military and critical infrastructure uses."
 kaynakIzi: "v1.qheJgBcH8VIGLaJ6.SzvMM/oWV2eRBkbsYzhWvVyCzl4QiCE/7/Gv+ZbLMcskcinycxSWOKdem9d3gbg32U0EA4XNzWgQIhMmM2f2DtcmNqZ+dKjBPGJigVKa/VYK80Ihhg7EoaNpONOYb4gIMTle5XO8R5cd1NX6iB3/QVag09O/iy3c6kq+82HFnlVx/q2HPAElyDJ/7X76Q3A5Jhw5KRMgLqf746Gxxx4="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/"
 featured: false
 breaking: true
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Market share"
     deger: "40%"
 kaynakIzi: "v1.z1k1bDVY9iKKHmWk.qHZIAznF23k6COsWB+ZCgJl5vhsQT8Hpn9mJhJxf143CRKN0S1x6X9076l2tBuxJmDebzZAmM9ZSv46O3g57n8Im0E97o5Gz/Plyqdpq+QhMAQ7wzifguGpg+LnWC2MPdPjFR/gwf5ohomw2clNl1dtgfgCmDQCsV2Gq82BBbtJ9jwiXzsA2IlsDwt3z/CQ="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/world/2026/oct/27/chinese-markets-lose-trillions-ai-race-beijing"
 featured: false
 breaking: true
 draft: false

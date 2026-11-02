@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Yatırım"
     deger: "110 milyon dolar"
 kaynakIzi: "v1.ouhuWphKufBajRRN.r8VlIEGnaklG7n0AcHHi3yXn1KGN1TQgCTLNzDIUm6sMAwXeWV1OO81oa/Qov1a5zs9mc75fAYlvF1jiFoH8aenKIpaa6Xe5uii6OF6rRqoHNuRl/oyziEkh7BSn65l9MpMrMtbstUNDg8jErRXV0jdKceWtMTlx8SR+ANPbPX6IRCAJ3aBM077mEI8JkwYKdg=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/"
 featured: false
 breaking: false
 draft: false

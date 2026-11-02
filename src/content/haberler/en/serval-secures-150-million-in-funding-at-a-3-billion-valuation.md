@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Founded"
     deger: "2024"
 kaynakIzi: "v1.UGu3UTHUdfX5SgRv.fyQeAV8NCyA+TLN9jC0M2FSGu++DgsjqkR3owsG2QJtqJC59h5XzHH19LpfEDBBfY+EdWpiaNLPafD/q52jCqE+0tFGJz+CKEhwroLmHxOV7IKTN2bUysl/XWJ8NyGavmJsRgUoabULybajneQcNhl/1A2tGhvNbU9L+BWtthFO+KwYdnW7MgriyXvUY8k6WYzbXFiN36EGj1w=="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/30/serval-3-milyar-degerleme-uzerinden-150-milyon-dolar-yatirim-aldi/"
 featured: false
 breaking: false
 draft: false

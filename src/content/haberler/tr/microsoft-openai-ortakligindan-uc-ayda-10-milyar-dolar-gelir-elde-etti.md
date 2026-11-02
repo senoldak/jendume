@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "OpenAI Borcu"
     deger: "7,2 milyar dolar"
 kaynakIzi: "v1.GTQPvjGNHDx2EG4S.A4sUO+jIq8VD1K0NgE0EdE7QX4uPnY5A7Tm31QvDuBaa3RE+rxphiuKhNtqHELCctijMUYIE5Y4npeWF022updA2No9cISnjtH9PRwSdI+e7QkacNqRtyMq609GNyGZZFxyfSIdgPfvw/56kcIZXExU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/microsoft-openai-revenue-10bn-quarter"
 featured: false
 breaking: false
 draft: false

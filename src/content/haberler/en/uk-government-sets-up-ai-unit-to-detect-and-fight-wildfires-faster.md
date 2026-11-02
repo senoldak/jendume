@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Peatland Restoration"
     deger: "25 million pounds"
 kaynakIzi: "v1.2L2Ydah4UFj5ElUs.79dOi4mBWQsZmrdZIrveMKHCmnerZnWC/jJ7UopfLW6xPAGwkZ61TS5FCxoVpn3h99oPcXXwYsLRFysHCkghjS5qi9waSgCr0vJpBjmmZN6vyk0Mv2HUd4aUpLY2BpKwPb6lW27cge43p8lxXB/RtBzAENDOuvMGu/It7de0OSocSH0="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/uk-to-set-up-ai-unit-to-spot-and-fight-wildfires-faster"
 featured: false
 breaking: false
 draft: false

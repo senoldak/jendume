@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Önceki teklif"
     deger: "20 milyon dolar"
 kaynakIzi: "v1./pJCXYps1ZotfQRM.1Tqj7vkfOlFRxww688bNoTW4lSwB++BVqWh/NTa33CA8BJvgwmMHsIvr8zy4GJginptns1KBfeP7m0Uxx5Z0/LeDi20MFzhMVn9K+UwlJ1LzLtwRZycCzNG7IN/RG9WybX08nz6Cv8jlrdQqLCPHimSSQXD+fNlH+5Exxp4/0ywdgpM6cnly+nstRKZNXiQmxKkhfWD9gbM="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/19/disney-character-ai-calisanlarinin-cogunu-ise-almayi-kabul-etti/"
 featured: false
 breaking: false
 draft: false

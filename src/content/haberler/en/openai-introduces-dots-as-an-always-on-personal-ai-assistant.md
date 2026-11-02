@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Monthly subscription"
     deger: "100 dollars"
 kaynakIzi: "v1.+QGpwLzrKi6VcxtF.LTaMGDapBO6s7SjcEeJ8VtygmyhYOn6vFE29MBjim+kqVMkgC8qvVjOxTobQOGz2p/Ex1kCRb62ICCkNhuaIEIOHMjwlPmOxTre3HgVcisRk/h3VEDkALvd1CNu8nlYLOzuQeZGg0wrF0VHFfQrZidFj7jm3ZMOYTIARxarSc4eCZAX/DK4b/4cck4QQn9UhWi95ZMGC6LKojpBqaEDYDg=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/"
 featured: false
 breaking: false
 draft: false

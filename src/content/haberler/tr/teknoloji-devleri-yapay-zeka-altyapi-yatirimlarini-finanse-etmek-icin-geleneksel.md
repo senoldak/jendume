@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Microsoft nakit düşüşü"
     deger: "%27"
 kaynakIzi: "v1.qb7hO+0jZuNNvfbp.j2Goglb9t3tFJoqUyRjNBZhrC2GQ60vZyvuA8qxYroeGCLq78+hLE6kIB56gv6t+7/QiySfVco845yeZMtIEucAmkbk5QIa9aa07rc15Fjxq0mxmU+P/zb28jnlUAID8p6wDcEle7pIuHfSt34WQHtt0UjwxSFxdx97BL3F1vfrVURbjUfAyBXMqAGx2Rnli"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/30/tech-giants-alphabet-meta-microsoft-amazon-ai-buildouts.html"
 featured: false
 breaking: false
 draft: false

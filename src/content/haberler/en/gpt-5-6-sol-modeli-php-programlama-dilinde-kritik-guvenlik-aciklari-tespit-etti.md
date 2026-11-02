@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Subsidized access commitment"
     deger: "$1 billion"
 kaynakIzi: "v1.O6qW7X8oq4UALGCK.50XJjIvDgc4/tGFSXFS8HsmrBt7Fck/YxNID33ItcRZt/jO3gJqyFsRM9C/nP/+sM0O1w9XUvNQ/IPugTXZEO6C5MOvPjXevxULni06crN5LCtRvtkobmo/OZllkujcyzGyBSzFCrdBiK/xRSsrgBPXSNsVhgC7m560="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
 featured: false
 breaking: true
 draft: false

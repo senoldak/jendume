@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Kira yükümlülüğü"
     deger: "321,4 milyar dolar"
 kaynakIzi: "v1.pAfyjwE3Q9iL8sJt.YiI8Ee9AgIrB20IgHC8Ycrjy5BB117O9Jc6007kc9YIACsc5RWCiz4xUggxiU3wIpC4P3UsXeTpyZ0Tw6mTkjxj3njcfMML2WyuC7BOZoeaWctDITQVGST6EDLTgAy4DqDYO98nZktQmklKG0vQ/LIBmQYoI5wI="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/27/anthropic-cash-investments-ipo.html"
 featured: false
 breaking: true
 draft: false

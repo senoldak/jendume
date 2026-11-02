@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Kamu fonu desteği"
     deger: "%69"
 kaynakIzi: "v1.BPaSePZy7xARNSKB.kWfnCqWFuffGFEk/ZT62RY32Ile3zs9wjaqjVAthdveOomWArxGF7cyknhgW2Vybpc559dH47zomAkH16FjSssJgsTpgMQ4MM2aM+/jbsnd/VIoqO47IlmkDYqWkoZOHDGHCx5kBEia2NHkwtIZ5OEY2H3ti6xeHB3W8T4Xrzp3GYZMx1/7hDosFAsZmB3PJEiHDZUg="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/29/abdul-el-sayed-ai-companies-public-ownership"
 featured: false
 breaking: false
 draft: false

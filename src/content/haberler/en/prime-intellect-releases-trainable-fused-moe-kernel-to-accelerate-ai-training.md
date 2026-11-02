@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Performance gain against baseline"
     deger: "55%"
 kaynakIzi: "v1.zomiIlULg6XZ1O1b.INYw2VCVs5XYmHBMugJEtWhYEvOyfydhll2pLuqlUykouMzZiqSTHb0Wq1t91m0oN9vcAwtHVXh9T71LCQA44X1algPfS1bYJEnwH0vQDo0MIgQtRA4WltSuuwHb96QhEGeXyfnCpo36ooXOzVtft+72JFlsDEJ3J1Re18hslD1CbIMU8kHbMroA6z56cxNVIg=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/"
 featured: false
 breaking: false
 draft: false

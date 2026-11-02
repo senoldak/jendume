@@ -12,6 +12,11 @@ key_points:
   - "Gmail, takvim ve harita verileriyle kişiselleştirilmiş yanıtlar sunuluyor"
   - "Özellik tamamen isteğe bağlı ve kademeli olarak dağıtılıyor"
 kaynakIzi: "v1.zRkcimq79F+Tci0W.gR3+N8WIdSjcXedgZDBhVQnIWqabFxAxEFBQ9ZB/qNGY7OEzb3phj6Y65mvtXLAZaL5wQIzlqIQrJpxjnDX2lJoa0UHDa6kR1jHaghXYD7B9gNp66ALwgytfyBeRczqXGlJQijOjAOseVez95Awi34Tpsid0tKXTQFGPW9ltcIvVHMH2rTB0PKUQqH6LUcpy/1gw4fy/6jMz88Kmda+a0SN1ch/slvhiPmEXY9caxRRxmA91hh1VYMwIdeoh+5anx2FiM0ED+DieDw=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/android-autoda-gemini-artik-daha-zeki"
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/google-gemini-kisisel-zeka-android-auto/"
 featured: false
 breaking: false
 draft: false

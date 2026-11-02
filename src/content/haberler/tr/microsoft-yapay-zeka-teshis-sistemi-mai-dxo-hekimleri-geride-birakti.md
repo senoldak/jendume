@@ -17,6 +17,13 @@ rakamlar:
   - etiket: "Hekim doğruluk oranı"
     deger: "%36,1"
 kaynakIzi: "v1.Rviftp4fglPhmdiL.pCxydJcOfIZISVEpMB/U8qGv+1jbeJpEFkReUbzRAlczbJrXwsyGFAQbCbdsb2pVs5FO5/a/Z6QBPXc4WnA9vYWDEV6qEfMtC5BhRxmdfbJqkhSJoP1mx+e058duWhUl8QR60dGbnuNuqxqXVrDu//LxZZpLFy1wzlFmW4JGD1g8B7t99Vqu9Lz1h5ENH+rlzotJl4uPrkkmFGXsIts0h/Z3oM70DE+pLKtxOuVwMHgKyVzu4li7Jit/7kGy6vENUZ6ze9urmyNdqqDkUVCJTjnPX4o6sNRfqrXDePV7qVHvHctvWHzsZEKd589W2Zul6DXM+gL+B6wuPKUI9ySjlvqEg3lN2ThVmlxwLfi3zjOrnwX1kk3dIvU/o94brBW5FeJ9AIGJ8T7Dgh5pvbcfKXIH28gQ3/aBnrQelu77ikQk+6eJoiAeBgIZoaOiU/S0FNHmMYNfYUOlVf9xFxAjVeaf6DKRN0goWUjrnVGsZzhqsrU15BvrL+taQK4lGJIBWAIfPmF1EbG5T7VQjGMBYxYc/tm1lCLIJPDcgWrlXc4h0KqlJIs6IVh2qkArgZh2tMI716Lv05LiPXloGI/fkUjoMtTk6jar+ZGUHhEglcE52y3JIssJp41bZQHNweEcB89gAaEy"
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/microsoft-diagnostic-ai-outperforms-generalist-physicians-in-science-study/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
 featured: false
 breaking: true
 draft: false

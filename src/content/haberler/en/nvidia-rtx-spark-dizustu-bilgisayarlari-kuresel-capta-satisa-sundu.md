@@ -12,6 +12,11 @@ key_points:
   - "Supported by major brands like ASUS, Dell, HP, Lenovo, Microsoft, and MSI."
   - "Engineered for local AI workflows and creative applications."
 kaynakIzi: "v1.n9TQamAOwpJy/AVx.VlFD/bOTDd39/RfaGWIJrFfefSnT7ddRt/dSald+K8Do1c3kiHjFcNhMaA8v+Wgh3Ph6ag7ElY8UOWwRrbmahpC8wRFl8HNnlMJvgrgGqXd/ozuJSvEbun1tqNIXrdbYaS8JV/oBxE5nzfcDpslDd3I6egC1A02OmFiYPYgkBfx+V26nWdrCVsN1rT8tXNRNPeVOceD82ngkwRSlBdoN3K5fe2FIkfiqdekkS4tOt818G8aMFYJYjmU6kiVbM+eXB1YAxvP8KoMdRTMRW+U/OVuVafRBHbsBw3cst8VOj0hGZO+lI6cNJhjc"
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/nvidia-rtx-spark-laptops-launch-worldwide-with-local-ai-agent-support/"
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/"
 featured: false
 breaking: false
 draft: false

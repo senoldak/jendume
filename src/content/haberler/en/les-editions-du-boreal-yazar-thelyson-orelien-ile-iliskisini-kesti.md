@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Target translation countries"
     deger: "More than 20"
 kaynakIzi: "v1.HGGuhGK/et/LbXIM.4I2B0Ivsf85Pdak/Aze1qxfMS5H3qaZO5JTkxN1WpqpRHLenwAXlt7NqVJwIc4hPu3QhQ9dEz74iA2F/y4nSVmefJcDpUEb3M56l5WAhgPXgXt8B5bA2jUjRktMIRyrN0xBTy8IySHZh7m7H2/EwXsbdE/tzUdvVGFyP28bjEtckW4hvVwyQUZAfFTkZCrQ1opx1wYmagg8WngBTPZGW+05V13jlzSJRr5GxzoAz"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/culture/2026/oct/22/canadian-publisher-boreal-ends-relationship-author-thelyson-orelien-over-ai"
 featured: false
 breaking: false
 draft: false

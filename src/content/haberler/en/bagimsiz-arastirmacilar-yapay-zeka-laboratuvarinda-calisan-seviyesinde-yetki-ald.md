@@ -12,6 +12,9 @@ key_points:
   - "Researchers maintain the right to publish assessments without company veto."
   - "The setup mirrors resident examiner models used in the banking sector."
 kaynakIzi: "v1.2nYHYyUQfWMqSlJ5.Ese9Dk372HQ1ddf1GS6/BBB0JMWQ5ADxom3+dPbfBRaKcNm43FundGhBs+PPVi4YuHaJ70ETHEsEPwmR84d7cOPGuQGMfIoNqQK6hmFN6nJPF6S/JuLxvvQWVStB76WuPUGYM+XTiRF2SoJdtK+CmPb+m42OYMz03I+AeM6wFOhZpT+JhdqXOG+74CwezLh8CzoicYU6eyEWpF4y+W39rApEPOfMEVIk"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
 featured: false
 breaking: true
 draft: false

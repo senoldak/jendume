@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Teams user cap"
     deger: "150 users"
 kaynakIzi: "v1.Z8fCbJzBRO6X2yWo.2I8+b0bdyZW0JME+1hSf7jiA3NfK95iFHtC7ldhDmgcP4tDjXWLNeswVpctTyOh/Ik+EZx/M4sZUebFNH+b2YsU9UKIxatbO2jkAFdQ6KpiiGnYHsm8TsAEFGSjfQ6MEHQaDSmBf/F7XN3rJhklHvPljbhoDxY7S"
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Piyasaya çıkış"
     deger: "2027"
 kaynakIzi: "v1.6DdCvfnUkFc443b3.B1pJ0KoUXlAtavONnRSeY2vgwHVOiGU96mjZaeOQ6pCj+x3D8dI9loUoEEFUBeJ4Cb4T5ImJHyuAWiJ6Ws4Q0R7bWub5LIqrurMkxJI0q5ho4Y25IvdBOJ+OLVcP9ITP8KqS9aRGVO8SEScH1MvNHfmuJyazcYkvFGAiCXBlO81rrXUBfWum/i+T"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/vera-platforms-yapay-zeka-ajanlarini-devops-icin-guvenli-kiliyor/"
 featured: false
 breaking: false
 draft: false

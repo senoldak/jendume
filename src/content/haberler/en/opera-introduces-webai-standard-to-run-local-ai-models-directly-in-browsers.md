@@ -13,6 +13,11 @@ key_points:
   - "Supports open-weight models like Google Gemma and Apple on-device models."
   - "Available as an early preview in Opera One."
 kaynakIzi: "v1.woQOiw8UoZzbNJBz.aJJ+HXcTwGEoytjDJBeFnYrJcpVtEAb2nUl/2P40FO9gH7njPI8vBRcZm2je6Z10LvfjYmSW21Hju7tiDWchwU89yXgdVdqOi5B0vuoJGbzSaBwHo4F64JBlz5oiOcCV82WCGlHwwu1rWCtWdVw8hCQJBNuxuRTHJC4TqhjO7VveHFgZRDVYCqqWixinJTIjUw8WEOK8yecGMjMWeKP+fCS9uZI4TQaXe4sA5MQYqqRPnRNMM1K4gZvhpAP0On0kjC1LPBVolo622Uk+/7jOI7dMgpY2yspgANbaBJJMyjwBRelCZzFFpwrAZbqj5y7uGGsRbz2X38XDEeHmDVAuKSQ76xWB8bJN3monXUEvCMDKXA6Utw=="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/opera-launches-webai-bringing-local-ai-models-to-its-browsers/"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
 featured: false
 breaking: false
 draft: false

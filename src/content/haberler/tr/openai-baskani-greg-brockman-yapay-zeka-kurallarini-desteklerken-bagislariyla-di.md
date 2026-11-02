@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "İlk bağış tutarı"
     deger: "25 milyon dolar"
 kaynakIzi: "v1.mhna0XPNE54kfziN.8MFFfUUWtlFfRzSWFln3vtX9EQKTpvgmmBgQ8/+zAIychg1LsDyCdK7v1QrreBGmF9Pd4v+MO4J4W0GIZ6YuZr5gHkKm9HicTLf+h4EbFEQ9ShypKLT5b5023IgVclncdRXncmttt1ECWCsZz/+Yy1y5AAnJGkZkHmvi8lp1Z1Y="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-brockman-ai-safeguards-leading-the-future-pac"
 featured: false
 breaking: true
 draft: false

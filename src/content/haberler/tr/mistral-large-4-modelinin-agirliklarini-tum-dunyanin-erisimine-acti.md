@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "Siber saldırı reddi"
     deger: "%96,6"
 kaynakIzi: "v1.a7b2uiyAFFEdpyBM.MK9Lb4fc63/bmJxoSLXAY4LRCckIlEhmSpTrd/lYLgo/SKqr47LVZsinbqdPAXsedlZV9aauZVeIdZp14UMTxvrV4bvWMLJGCjlhz9heH/t+lIQszXkrCYySKTrurmQcK05z1gNrYd8ntYV5VZApWO8ji2FdEFV82r4p/LbrJzyAX65X/gVAOiwN7XQCyq/rozoyEBS3AYCwHTalyLEbH6zakkSPuBWIJ8zsfiXX2gPtrkxucEQ="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/mistral-large-4-weights-release/"
+  - ad: "Mistral"
+    url: "https://mistral.ai/news/mistral-large-4-oss/"
 featured: false
 breaking: true
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Sermaye harcaması"
     deger: "170 milyar dolar"
 kaynakIzi: "v1.CjZvkUUha4PDsv81.OPcCGTjsWGzUYu5LvvBO2t+HvKcGQk4YbZYe6aDDdr1mwGvW/MJX4vPVAYDbeHD5f1FmQn1u2YbLGG+4hqPkeiu/guePv3kjBq1ps0omklBhgwuiBoNTTO76DPmn94zGeL25SHrEKafhsreLBBTFi47UPh56Nz1fvPak"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html"
 featured: false
 breaking: false
 draft: false

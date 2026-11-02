@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Market price"
     deger: "$10,000"
 kaynakIzi: "v1.usoyvPcn2aC4nmsN.lD0wpbTmJBd0MsnYK5p3ii+1OGHNiuZgOM1HfVJqLeXKj4QckHE94DyuRmvqQ1v04NZDfi3yUmWZBWOxLp7eudTFHB1yLkGx5wHrkA8sHB8UHC+5qNyFK1K8/oV0/1uaVXln4elP+5ZVWAM1uHoCT6uA2GM7T5LsKWHOLxAt7A=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/video-china-rtx-5090-graphics-cards-ai"
 featured: false
 breaking: false
 draft: false

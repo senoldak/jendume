@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Original vocabulary"
     deger: "151,669"
 kaynakIzi: "v1.s3sIkln5+vtOv0Db.9HAU/Q6bGfgASaAV2qeEfSP0GZZUn/IwNkbbqOQ9g2s6tBFnt1tCV0R+eL9E8MhYUyerphSp3n0CprmoXxyPdpJM1qdOh0U/MMj98aqwCnkdc8L1MUrE020t1OyEbut3KufLP+ZGddhzD/i42izgPHxpLT5mmTtePaVO"
+kaynakAdlari:
+  - ad: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
 featured: false
 breaking: false
 draft: false

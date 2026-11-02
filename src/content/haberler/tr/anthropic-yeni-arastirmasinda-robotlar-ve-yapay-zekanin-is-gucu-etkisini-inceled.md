@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Olası çalışan"
     deger: "2,8 milyon"
 kaynakIzi: "v1.I8Enl0w/8fXc4Flx.2tKhhth14lQvBb7sDFHCeFdhAR/qU7mEcEQRNmN3nzCWg9LmHF5Cla+qD2Zd/OqHi/gjK2IQNQmLlVKdier5TiVPw/XWrcKFyUvDB58FY1Ql5+qQgeQMWGsX0oXUsqTTMcs+1x/0aXWP0kJUuVAQvpnqZPpufnMNy2O0v58ffdtwTXBI7pabiG4L/dVycCXoXnk="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/robots-and-ai-could-reach-80-of-work-but-rarely-cheaply-anthropic-says"
 featured: false
 breaking: false
 draft: false

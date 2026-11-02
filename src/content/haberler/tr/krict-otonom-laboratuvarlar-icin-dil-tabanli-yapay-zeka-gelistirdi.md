@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Ugi reaksiyon arama sayısı"
     deger: "30'dan 10'un altına"
 kaynakIzi: "v1.Jhiy8EcmM38WyMQL.R9rZNHPKxiFBQpCwcDAPEOWJIHUmvK95xmu2LWDRpvRwq29CX5gp6JcgE3Su3FPV0s8W1uEm7JItkSX3N+fcB/efZWXmToEY6cUHcY0/xy+rRAhjQvDMWFy2bLkd/Vj1c4KnqfLn4TGQCD8pBBYfQg=="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-conversational-ai-labs.html"
 featured: false
 breaking: false
 draft: false

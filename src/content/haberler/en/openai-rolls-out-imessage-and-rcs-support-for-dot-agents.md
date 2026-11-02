@@ -13,6 +13,11 @@ key_points:
   - "Preview is currently limited to US Pro users"
   - "Users can send text, photos, and voice memos"
 kaynakIzi: "v1.v+vPvAQqOZRlCxZw.2H0vWfeHmfwP6K+4r4cT1YVwNuw9SIG3tHKMUDfFRCx8bPlbe4lhZFxHh41co9i5MMUy7KKc/RAwoJr1fms1oaAArR8AcpQoxg8ubh+XUrrKbU4gYzP7Gyaa3owc/OaKBudj/F1a7fx0yO7zD7QtXmCQ6x4jJQzanxHstuQyqhbNvoPoA8YdNqyzZfroXqHT9O5fp/m6tISdztbPhFCXOUS+n3OJ4Lj8T69QMeE6Tekk1gISCN45hrd/yVYOZwBG7PtIonOJrl0RzWnb0okk1kD/4XzxTf6tRyIwuFsIy8Q="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/chatgpt-dot-icin-imessage-ve-rcs-destegi-abd-de-beta/"
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2300235/openai-now-lets-you-text-your-dot-agent/"
 featured: false
 breaking: false
 draft: false

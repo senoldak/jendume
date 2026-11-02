@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Katılımcı avukat"
     deger: "133"
 kaynakIzi: "v1.ZHCT7UUbphCPa28R.UW5bon2FOU+9VD+EAokPqOI+IAtQBG/gEJgduiOoO+tW1zpgvl/5TP6KIjGnZ2VHDuD2pHcLvhib0hOPb/IQFm7R8I4W7Nhtcq9On4jI0DfpY5Wfc5t/RdXynpCslksxwBZl1Y3+BL5cj6CvnPrj1QoFhpnMZEeZe6k0Yei6j8IBMiib7n9A3g5OUMq6opfkZzdtkUqScSavdRhbaloZh0JQD9Mfenvmfw=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/ai-makes-junior-patent-attorneys-instantly-better-but-may-quietly-stunt-their-professional-growth/"
 featured: false
 breaking: false
 draft: false

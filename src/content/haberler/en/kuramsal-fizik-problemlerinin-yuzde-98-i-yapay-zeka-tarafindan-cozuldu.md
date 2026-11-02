@@ -12,6 +12,9 @@ key_points:
   - "Average cost per problem was approximately 2.40 dollars"
   - "Benchmark developed with contributions from 35 researchers across multiple institutions"
 kaynakIzi: "v1.4HIcnmTcOqzW7Kje.ogk3ViUpMkEGeI31ANDVM/H/rEuOyzmQyCx1i2HwY7cn0ZnRIqGyWy6srsfKsCRshih64lsTfoQX8zrkoy1h5m87yF9AyJgcR9Sdfom1NkYzENnOT001O0s8ZD5R0tMHtfp4wPaGaFvp3QiXOnOjCfTR4r7hTzWA+EkISpZexTnmLESqhvRvyJnmor4="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece/"
 featured: false
 breaking: true
 draft: false

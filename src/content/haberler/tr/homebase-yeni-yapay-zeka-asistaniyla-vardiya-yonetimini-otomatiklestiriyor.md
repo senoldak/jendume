@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "İşletme sayısı"
     deger: "150.000"
 kaynakIzi: "v1.yiQ8NnlyrxrgXFoh.I+ToZ8V6AL57ACIRT7DBoz1aVIIqCAn5hPZqa+NphTpfFkJPoZIv3OcVO8buobY8v1LQ+632m43YCxbs4Ah7Kmrtf7oe0aI4If3nmA1aehD4SwUkqTv2Oxx5L+e6XYQ+sEsIQKAFX9GqDyU7M90="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/homebase-ai-assistant-fills-shifts"
 featured: false
 breaking: false
 draft: false

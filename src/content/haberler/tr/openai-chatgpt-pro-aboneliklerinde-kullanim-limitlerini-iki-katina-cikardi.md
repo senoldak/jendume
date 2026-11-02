@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Aylık planlar"
     deger: "100, 200 ve 500 dolar"
 kaynakIzi: "v1.2HnhNUeeJfEwsZUP.DJCiIVavHqYFOw48XXZHC3sDwyJU1S8kwvJ4Vt1qWJYPee+Icl++/ZBkrfgwR/ZAzv2LLND6Q8ORQQLfdUuY86V7vffbkU4L4TyXoxzslRKwf92dzQiceaWKO3Q992ean0RU7DEQIdIhuu0nbvpRJ4o08Tg2AA=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/chatgpt-pro-kullanim-limitleri-iki-katina-cikti"
 featured: false
 breaking: false
 draft: false

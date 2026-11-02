@@ -12,6 +12,9 @@ key_points:
   - "The startup closed a $250 million Series B funding round at a $1.5 billion valuation in October 2026."
   - "AMD Ventures participated in the funding round, and Vinci's software runs on AMD's hardware inference platforms."
 kaynakIzi: "v1.SZgg0gbTQvegD1Rb.HtuLxQw4Rfxqk0LGtgT/b2+HmaK/+GRvMg8//0E6fQWrBuwxf5KTqPvNtdN6pF5UAwjURQPmlfTSV3H0Okbtynd+/Jwhr0ejoANrd0hZoRL+Thf7Y9CFXHeajlR4YHpafViji4Rkydl0mjwuEBs689qWzNwfwo1lBtiozuvpYxx46qTa4/cX1rH2rJsDTQ=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/15/simulation-vinci-physics-driven-ai-thecube-semiconwest/"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Founded"
     deger: "2018"
 kaynakIzi: "v1.mpCHgg09UczZMRCu.tr9FAelz6xUEl41pUaPcSJ1J9003dQ6cJCRy8Op2bDlxNWcwGhETby3joq1yZiAx81xpy0sImmRG3H0doknwEWIi5ZSVYMvaineAlNMCOEgIv7Kpk56UQjzHmazRkfomQqT4GmYtMJYWROcMs8XLiF9qmq8xXvbB"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/telefonica-iqm-madrid-quantum-computer-spark"
 featured: false
 breaking: false
 draft: false

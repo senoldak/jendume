@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Gelir payı"
     deger: "%51"
 kaynakIzi: "v1.Da2D1T2PZbVwq+MS.Br/bPBcqRpOeY3d6W19dviyUhREaWINSDpb7G9Ph7YAoseaeQMg0FAVIjXQYDxchybp1GQkUu/BzG4gWJKA9c6iPUWQasLaCW7zIxhXFYzYqVlbqn5p2JMjo4fb3EgjlhAvLxGH6ZXbSKr2i7Z1cJoo6"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/foxconn-openai-new-tie-up-no-ai-bubble"
 featured: false
 breaking: false
 draft: false

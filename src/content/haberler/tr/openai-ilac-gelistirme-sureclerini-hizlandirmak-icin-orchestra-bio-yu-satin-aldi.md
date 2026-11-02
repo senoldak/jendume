@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Önceki yatırım"
     deger: "20 milyon dolar"
 kaynakIzi: "v1.0FrbKhgUbPLYGQd3./XcU1UrBIPphOLTFdLcJ2pXZmBqg7Kjgz5g3JoQZAreqpNilIoxtSZdjYtxODCQ6YmrsAartfEEkIn0O3CK28ow4AUaiEatJ+4L1Y20KAMkX1vimiXEiKiChwUwcb5faAc7igWRf3IjMtMCDUwdLT2+EgacG28kdHKQHOQV8Gx9PrA8mastQVRxJSJkCkaMdk/bZJOQQvA979NB2NY4="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/20/openai-acquires-orchestra-bio-to-bring-ai-agents-into-drug-development/"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Geliştirici hibesi"
     deger: "10 milyon dolar"
 kaynakIzi: "v1.LkUDuF639Rf+lZf/.ibaoqvea0eM/jRF1sNbu8H2nfTTP6+SwF7zeto23+ER80fhX++iUYuMhRqNEytczX9GsZRfFCxOUpYEVSGZMSaAqQ+C99HFdO6x+irkg0FiZKbfTBWDJCS22Jur1rxZ75wUWigyLVipCaf8mT+vVGErpuMCc4MokXqg="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/nebius-loan-citi-3-5-billion-gpus-data-centres"
 featured: false
 breaking: false
 draft: false

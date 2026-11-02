@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Lisans bedeli"
     deger: "55 milyon dolar"
 kaynakIzi: "v1.g3LAZpwivhK3ooay.Tl+kva9tvjyUdoEz2SjenABOFW+NP4uQKwt7UhtqAv7XIr5wnLGxVBJyEQJ68elLgkcMoFaOlYYusBOHZLc/48KzLyB9M4UjvKyXP2IbBZVnEr1X+jiOQRO7UuGtupXJQYLazkAHWJ38Y9KO+Pk9f1CxYwRvGfWJbbbqvzFs5ATQyYpeUW8Shv4GP1GZ8UXweXtLLg=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/23/ai-drug-development-startup-pathos-ai-closes-237m-investment/"
 featured: false
 breaking: false
 draft: false

@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Ortak girişim"
     deger: "1,5 milyar dolar"
 kaynakIzi: "v1.0KaTiSZNalQZfTOV.Ab2WKxJGnWKAXAGERjngee3xGEmFZNcljj/y2InJbC8P2HThevrTsbVfTgc+Sr25AhwdjQBNHgJw1Bg/ExcodftBZ/Ag88TduCqrGh/0Wjm1N38Pg9LHSFRbIh63SKXX7958wbgwvwqTbBFPEq0QQxPFJ8+XXX19ioKbFlE2up3lE2qqJT8qx51Vy6cxbxIfh+YnjK9qxZtq"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/"
 featured: false
 breaking: false
 draft: false

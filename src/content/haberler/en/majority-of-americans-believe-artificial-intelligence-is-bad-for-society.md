@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Data Center Opposition"
     deger: "66 percent"
 kaynakIzi: "v1.jJ/CBEk9YsWD3KCf.Kn/V9km6eNAyiqhFwW+gER6jdXXrLDDRkjL/o9S1heCRlN0OTnkNuyH6gNtU8A69TIMZNi85LHC/1cFXB77y9lb6Kk5J+rzO+Gz7CvIKK4p6DSNwLeO6flQLV2vR43uqn0T1WT5LWCkqO6/Qg5q8/HCrQTplCCYcwys="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/majority-americans-ai-bad-society"
 featured: false
 breaking: false
 draft: false

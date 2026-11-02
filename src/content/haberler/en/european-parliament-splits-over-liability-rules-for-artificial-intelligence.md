@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Directive proposal year"
     deger: "2022"
 kaynakIzi: "v1.V7PKrRl2SiC29DPa.2H+vWzFDcbAqvqc91Fse+VK/GdPpS0XgQKz9kAz7y0sIwEDaAKSbqIqjTazJK+riuCEqV3x99GM5xsTa7L0RwdM0YvAWJ73qQ3nMZAR0wcJzMXHMpWLVjqC2dmE9fiTqTtFXr28icXPpnfq/IBYsCT9q"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/ai-liability-rules-eu-parliament-split"
 featured: false
 breaking: false
 draft: false

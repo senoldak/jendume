@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Yeni kurulan"
     deger: "25 şirket"
 kaynakIzi: "v1.AypYMaokV42YukeB.QXwwXUoiQv1ht76/hWdBLMguMjWIdL/933+itldSejf7rvjmKPZpdtkOHV+WnAKKuzM1bBabAJCtXlG7/TMiM6sVIEJiU7NQvIk3n+ol2x2gTbKNPORxTgpu/aSeMR5r8rsdB0y2BB5WMAuJMRTQ0QMSqTDVYKqoc+C0ToWL/5RrF4+0BIqvk1frwyB3LRoL2QPBaHIcMpCHGc4XzDWhB6hrIFauOCvWrmTS"
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/hukuk-ise-alim-sirket-isleri-yeni-yapay-zeka-girisimleri-hangi-alanlara-yoneliyor_184729.html"
 featured: false
 breaking: false
 draft: false

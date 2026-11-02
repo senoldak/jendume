@@ -12,6 +12,9 @@ key_points:
   - "Görüşmeler yapay zekâ güvenliği ve risk yönetimi etrafında şekilleniyor"
   - "ABD ve Çin hükümetleri yapay zekâ riskleri konusunda görüşmeler yürütüyor"
 kaynakIzi: "v1.LjyNS32ds/yhfP53.i4IQOfw/pmrTRqPwnfTNkvxm7RWG1EoeyhDkwA3k6IYQmpel8KwfbHocxTrQWgsh8OLnlkLAlSqir2gPidqCQOlcoAfd8njlDc+8fiLggJhOBt7Hja05EI4ZeCl+XqUPDbajGSbtGfK9MbHTigefvcuw9mBp"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/15/jensen-huang-nvidia-china-ai.html"
 featured: false
 breaking: false
 draft: false

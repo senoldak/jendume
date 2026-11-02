@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Prototype size"
     deger: "100 inches"
 kaynakIzi: "v1.lcL3sAlhghs8wxP6.foAOTV/Clza9EkdhWyaQ+U5fxVq1QSRRv6azTOu6ZAVGDXEDyrVFYB+zXn3OmByG6N8F+Pn8ABj6wZ2csGzZLBXePFe8xj3zDKSPDWRPF7Xpgm9HZmqfYpbdjcg+DTz1mY5R1BbmH9KbNhpZ5Tr/zEd/qNs="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/kimm-ekrani-sesi-nesnenin-yerinden-cikariyor/"
 featured: false
 breaking: false
 draft: false

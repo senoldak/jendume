@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "İş gücü oranı"
     deger: "%27"
 kaynakIzi: "v1.7msVq+TzFSRGAlpi.QsI+yKIvBU/M5yO+FHe6Zmd5lQnUFTFRoiVFJjjbAPsNc9OKAe5MWRqRvwsFSeHade4anKqf815MfpOg3LdZG7AdS8cQBi86H+Uhy+2o1BWYGTrDnUyirU2T1aITDJkS9JB5vvKjIZSaEvYkxQbl2xAnxEo19tpnVople541/IsLT4mp1v38C9fXFAHQyhmDptXThPAppUUib46xITUzj4x2praVQFdiH004Qf0NUFG+q/B13rjP0LI="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/microsoft-just-offered-60-000-workers-a-way-out-as-ai-spending-soars-heres-what-it-could-mean-for-your-job"
 featured: false
 breaking: false
 draft: false

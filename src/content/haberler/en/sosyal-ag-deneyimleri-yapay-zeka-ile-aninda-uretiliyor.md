@@ -12,6 +12,11 @@ key_points:
   - "Bluesky currently has 47 million registered users."
   - "Private data support is in alpha testing for a year-end release."
 kaynakIzi: "v1.qVR9Kr4zwqkKlbaC.QQkH6TtqGir/qY8ylzcZClYjavyuXjIHrMGKC1mEDwCPNxRm/KK8qMssjFyRRF/mlTxIyAH9PZSJZQwzWc1TH/J4N82cCGv5BxBieEDHXRjLSGwxvX57mtiFlQpfzpHo/invTSSQ8jW9n69961zTSalsSdStpAZxS2v39oAKNiylt0vX2gJZwvvOMePydrSiJ+iiOL96Au8z3RAzmZr7oDlKpbQn+3Os7dBGXhDuXPOuxZY8ge9vAQwp+skQ8Qylh8m9NY5wKiv9S7RxaAu6SAyDDNOv62LRx0Drb7gW6NQEx8qyiZPfRKOUKiW0VYMRRKE34sh9Qad+m2fZhpS7TPNmBTbb4cxTqfjrxWXCWCEWNGiuSw=="
+kaynakAdlari:
+  - ad: "The Verge"
+    url: "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps"
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
 featured: false
 breaking: false
 draft: false

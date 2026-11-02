@@ -12,6 +12,9 @@ key_points:
   - "Magic state cultivation was successfully demonstrated in practice."
   - "The technique enables error correction within smaller patches of qubits."
 kaynakIzi: "v1.nMZoAy9zzSkX/W/e.PgwxhM6bStpbN5RA0RxykDj3o2xdYKRzSygfrNiXiuBTcNJOveyvKKWM7xhMgVCXr7Y8804/uq4Q8+mWojKjizxImAiV8/XMzrIfYlMehgKv+AdLpM+PPJ0x7okV0PtFbXu0P8l9rqya3GEiHx07CaJSRv3kn6G9mnknRTAmSufRLJogp6jEyI/EF78a0SZa8Dt7FvXQo6CUL5WUn5f/1n2dM1PErUtqc1e7DLQH151ctu12IPk3csx+Wh3BHHYssk8toMrpcnx/cVnqQBwoR44ULKtvNn0uF0mBhk75E83ATtRUwjthapmtcA2kGmHa2Da6svqkcjNX1EM="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2593999-google-showcases-way-to-fix-quantum-computer-errors-more-efficiently/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

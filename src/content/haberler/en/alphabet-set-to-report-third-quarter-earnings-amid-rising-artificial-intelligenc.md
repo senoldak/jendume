@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Cloud revenue"
     deger: "$28.7 billion"
 kaynakIzi: "v1.EPlHiItDp4VFXRqy.olsQDgFdt0Mn/aBqCQAAsHUx7+XofKcBvrlAkFJwyigTKNhMY8rSGIDKYVkklmJI1XlSlDsqJQvU2afZzQAl/WxHS4XJc/39uC+G9bJMf6W46XP9UXeiHmz2PoSvaQy7nxNh2xm3g/TswgMNb/fdcnN/K5IaHZcl"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
 featured: false
 breaking: false
 draft: false

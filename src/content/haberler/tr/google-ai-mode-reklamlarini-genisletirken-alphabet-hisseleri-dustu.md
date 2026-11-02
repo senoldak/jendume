@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "En düşük değer"
     deger: "273,14 dolar"
 kaynakIzi: "v1.YoMXP573PYe1E67N.u0uuDdV/bZNw2ZlrUkAmt1pA3Pi6agoLGi9U/BzTuCq32q6m+vS/QHQBHocfvsozQj9l6hmFZIHdSCS3oVtMbiZIcxqui2g0e5nVu1ymPe1dj7gbsPyyJK8RBverfOAEw5yNdNs0QZkNjEF9"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/google-ai-mode-reklamlar-hisse-dususu"
 featured: false
 breaking: true
 draft: false

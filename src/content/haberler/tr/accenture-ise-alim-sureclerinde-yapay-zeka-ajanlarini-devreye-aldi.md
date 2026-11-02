@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Müşteri sayısı"
     deger: "9.000"
 kaynakIzi: "v1.WBvTOKYz4Y5QoJwm.x5eT5EkQ2wF+SzHN5NJViwMObuu69E+drOtLdS84kiGtRzyQizpVgHXg6uAZWjXAVJn79ov+wahBNc2RT8Ihsub02dsQpwcxKufEmFxMlQdpxJA0iTFPKSbnzI96PO04FtsW4qf+eg7ZpJDHW5uO7qzL7oBsItpekVQV64Q/mL0Fldt+JLcZbqbD"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/accenture-ise-alim-sureclerinde-yapay-zeka-ajanlarini-kullaniyor/"
 featured: false
 breaking: false
 draft: false

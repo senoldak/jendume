@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "OpenAI hissesi"
     deger: "%26"
 kaynakIzi: "v1.9LrhXIAmTX30G4UF.GBQhPcRQm5bZs5F/+EjBUxmQ85p3DVVWVyfUt2zx50J/M/OnA1k1QjTbX8F75Wh2rVN/ENu8nqAtTNuqpefG70A1jlMG0Ex4fTND3lgDZ8BK7wSilANouaeSFHLRgTsb9HlkxZLLcMMBVwCB2Csf4fZnolWryhCz4rwG"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-carnegie-claude-ai-wealth-reshape.html"
 featured: false
 breaking: false
 draft: false

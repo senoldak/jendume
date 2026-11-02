@@ -13,6 +13,9 @@ key_points:
   - "Yapay zekâ tabanlı zararlı yazılımlar farklı donanım ve yazılımlara merkezi sunucu olmadan uyum sağlayabiliyor."
   - "Siber ihlaller otonom araçlar ve robotlarda fiziksel güvenlik risklerine yol açabilir."
 kaynakIzi: "v1.p0dm0uAabTj53Fwi.258cwO1X/ldWlSL2qAvs/4oQ6HnXO8WNMncv9ScKejCdpg2mj9ombhY0JvO8zHxWTq8P3d+KdA8lUWlNHvYLSx/KIB974pTyFIoo1mUOOw24966dHHbayQHZkmjjgxnpSdlpFRnjK2ZqD3MIRJHrqT1MbS2PH8+kr5KTd7fwhHPL9uor2pJNhNulcDDWHJMbXyk85IJxNUnReIeg+K+2P+Xow7lXKg+trQrwJX2/3chQQb6hBcjP3GzGXqscnXQSVGnlLHPrEw=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/a-cyber-compromise-could-potentially-translate-into-unsafe-physical-behavior-how-ai-worms-could-threaten-cars-and-drones"
 featured: false
 breaking: false
 draft: false

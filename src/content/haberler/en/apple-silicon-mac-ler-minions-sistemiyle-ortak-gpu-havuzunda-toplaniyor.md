@@ -12,6 +12,9 @@ key_points:
   - "Startup queue times are reduced to minutes"
   - "The system is not a consumer macOS feature for all users"
 kaynakIzi: "v1.3rQP8guaJ9AOXZ8U.O0/nph+8eJ+d9ogTPYIdt5DMDgl5iRSiu+4nyM3V+50oWIEnFkPu7u2NCEvfo39xcTuImmXeHkeJr86Chhw3ZyRWpERCwLP6lo6OzHCWLvlCongWdOHSN2lcqzCPWwcd"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-minions-gpu-havuzu/"
 featured: false
 breaking: false
 draft: false

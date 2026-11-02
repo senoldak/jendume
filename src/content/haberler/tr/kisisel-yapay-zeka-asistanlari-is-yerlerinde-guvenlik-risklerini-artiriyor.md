@@ -12,6 +12,9 @@ key_points:
   - "Çalışanların yarısından fazlası onaylanmayan yapay zekâ araçlarını iş için kullanıyor."
   - "Kuruluşların önemli bir kısmı ağlarında habersiz yapay zekâ ajanları çalıştırıyor."
 kaynakIzi: "v1.33RLkZUaxhY4DcPF.J69kaJNLzg86PdHVk7MIMh4u058g8Rbl8jNaMEP40wD7Kj+k/JUOi5SjCvbVAMq9nkaNKyZTk36FAOiP9jYPXfQYWyoCVqiovJyGs5Up/c02A2/Uw4vBR6Er0eaoHwd+GW3/WFsCFpMdwmmmt/hd7LDV9qSUHnAx8rJ4HURxH54lpWzt+pqHSK35AmZwNpKOjdPmV4ERuC87/8TYX0CK6hWK75Uf+/ZYnJXmHIUCVwzKPFkhUWeD83lr2ux5ATy+Hv0z36/wIlYm3KfQrv+tagfYVLL5IhZNGfIDef2zfg/5leiqW+Mx"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91623134/ai-agents-work-employees-risks?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

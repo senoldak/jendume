@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Audio processing gain"
     deger: "70%"
 kaynakIzi: "v1.az2nuy7HAQQJpQwA.O4SHRHb7qYEuYxtFJC4rKcrIWpJjfi3pX6XLODS9fn6lY+tmLmOKJVkwxQkLnSgcorJEDN0JCDLFT0jYc+XSWLyoDWLr90pd67jxmTYe/Lyj5Tg40zqXn1tMPV2TAnt5ACC2/6BuqRoAe2iMZpjvxdxzBwYYrYVRUqgcNojRgZ8F4TlvttPL//puJ2MDc7srWnJCgfAk4wGUW7JFJaULVP0="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
 featured: false
 breaking: false
 draft: false

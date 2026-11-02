@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Date"
     deger: "28 October 2026"
 kaynakIzi: "v1.LYjj62e1CP71fcpB.fWXoseYzvLvXd3jjeUwZf9Sj540yBAkFzqAyKP8qLyaGh313Cdg32PJMeZzK3sagxqizrfs8qIxcYfbsRRQ7H+hc4aP0pNifYH+5a7250rhM3DThiMSC/7VdErvR8y4h8qBH8/M9wnhrFG9rDwdQhfSQpfGuZCq9afYDL5xzbkPwETJrsxaofgSlJhIrgRw="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/australia-duty-of-care-bill-ai-chatbots-emotional-intimacy-children"
 featured: false
 breaking: false
 draft: false

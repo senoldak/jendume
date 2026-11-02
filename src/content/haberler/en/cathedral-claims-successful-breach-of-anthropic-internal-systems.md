@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Valuation"
     deger: "$1.4 billion"
 kaynakIzi: "v1.ksQTIASulKLzLMhz.vUYhNJygCNsD2rJozpQg1vvD/eBLJD8edFF4e9s04xzmuVBE0qUAQp9Gdgit/3k0E9ZFOfDsBbZNfTIpCJtR8pg+XnduuSXENE1+/E6PUSf/vIdD0M7d2SMVESPak61ERhmG3QteFJPrP7gFrdS7rOXHgovZIWfFZbx2uPxw/+jYG7G8NaxD079/zBlXUIsmYEKVbWFI67NrmrcavKEgcHY71vAxR0dZO/9Oksy36MbXxfY8k5LpTzaJCH+JAeasoaDh1PuWnWvm7HqP/gMJHgMA7f3j1ZYBMPOBEIGZCqz8wlrOYdSRGBcJxuWCHgWaaMuJLLFYaSWtanKGPzyWBctljWF2cGm5Kyl95bSy+4mm4w=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91630974/former-doge-staffers-say-they-just-hacked-anthropic-in-less-than-12-hours?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: true
 draft: false

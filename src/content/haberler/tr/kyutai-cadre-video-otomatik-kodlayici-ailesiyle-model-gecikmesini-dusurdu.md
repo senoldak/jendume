@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Parametre sayısı"
     deger: "1,2 milyar"
 kaynakIzi: "v1.l5LyjvyOrqMVxumj.XvO2TagSmXhQEZ0FWFBQzZqbrKuyLtZqktNa4/bQzydP5/HQ03oCADtK3v6kA3kWhBYDa1KWFLfonASEMRiReXUigD2Xsv/1NeC9zuiOplnQbfLqy0seOapAEA8jCS/2SwBM4Ge02J2wsB3BXs+8kq9TZ7Qq0H02SvtXppZw7EVLgOsA5krBEoQGlz36+htHSg=="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/23/kyutai-cadre-video-autoencoders-interactive-world-models/"
 featured: false
 breaking: false
 draft: false

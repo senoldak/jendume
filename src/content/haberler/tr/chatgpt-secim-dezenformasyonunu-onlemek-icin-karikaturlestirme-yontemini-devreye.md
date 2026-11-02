@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Seçim tarihi"
     deger: "3 Kasım"
 kaynakIzi: "v1.4OiWbdVrpBQuqKis.m1Gsun4BsAErgAd1vDtZYjydW7VFqRhd+E/zPl94v9dmxRduSe/pPz2Gy2hmlxjv16DIMTO8p0GPl0GRsh5k1+GdbiFNAjVwLlCyhQYVefuULKjFY8Q2/4gyULWaZdZG9II/Ubed0xXGjmVR+81XGyqYGGboBFRNppFC0u+7Ja6ovKVh9kLtIdHr7wAQdHEOSSILZnSaKtPnuYjImowlt2hk/hoqeYKLp9Ufbay7wvHo974T0g=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/chatgpt-has-a-clever-new-way-to-fight-back-against-election-deepfakes-i-tried-it-and-it-actually-works"
 featured: false
 breaking: false
 draft: false

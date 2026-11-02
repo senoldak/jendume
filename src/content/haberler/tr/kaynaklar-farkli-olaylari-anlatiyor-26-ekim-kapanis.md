@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Test puanı"
     deger: "%92,05"
 kaynakIzi: "v1.bB8Jk2Mkjrtc1Ni9.BAdbQpPL6Gn09Oap7jjoCiPKKoSIlmsZMSf2lkYSX//Tugr0QVyoFHqRQuEWnkKJ2+cdgMKsLG1DpnpCmFcGCwubnRCQeAio0B8Tz4x2i6W/x8HGS5ToiLQzAcrwsRsslOuVMwIa0OZvJgZqC3EuedNpUg3POoFN1+TMwP+/xx9ssVKqrbWZMNIX5DJKYFRTyb8e5PUv6Z50st4qQAyLXuF3+CwaHAJ9sY3U7sjUV8uqztlbGx+pzsH0wTJC8RaSyyNwqTooFjoImYRtHC97six2qUl93ms3wIax2CVMFPieMcv6QwYoeb7V3ixPSwbaEctOIrroTHT4ynRATATlz8jrIAwXQOL5+5VQUVHX/q8MWBTBKxvBxrM4L0xyntlxsADcBx2AnAnzTu2usUVEX1l55pYCroBS1zkQ1dNOdtduM58/1uFaeLS3p0EDKtfrJPzfNjMR2/PgA8WFlu4r4iHQ2grwInOasFkM7GqGYQu8bx5quwazc8GLDuEUMkeOcQ=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91629888/great-scott-the-back-to-the-future-mall-could-become-a-data-center?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/26/nace-ai-releases-drex-for-search-for-ai-agents/"
 featured: false
 breaking: false
 draft: false

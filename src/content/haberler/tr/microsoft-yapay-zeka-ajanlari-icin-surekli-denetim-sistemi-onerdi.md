@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Eklenen yeni tür"
     deger: "35"
 kaynakIzi: "v1.sykUF2d0jgxFb6BS.QPTzKu5RHmrfRyiNxJcC8pTPJuatGBVw4keuMbEHv2GbaZfzWQuU0oaZHlJEvfztY5bgRLGXNTb0AHO04ZcAE0IyGdxdrjfS/ciMDCLhL6HLxU6lZ9d9uMwiU6btSkGsmpvZzTqGba0fXGdwMRe2auD0"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/microsoft-ajanlara-surekli-denetim-istiyor/"
 featured: false
 breaking: false
 draft: false

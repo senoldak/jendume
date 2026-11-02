@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Announcement date"
     deger: "October 22"
 kaynakIzi: "v1.dDxvLfhDBPMdK/5r.JfRNlIHyhtkV7Nh/dOV24zX23QyQWwAhmJzlZK9i72zSYUHvkuIUxjzYaNNEtjl0lMNOiUUS2ZtjefIgOQZ7c9YBGSUGjQNh/Zueg7q+V84p0Ba2JvQEVXNk7H9Lm8s2zuUoDAxe150irhFwB80="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/etsy-yapay-zeka-tarif-gorsel-kurallari/"
 featured: false
 breaking: false
 draft: false

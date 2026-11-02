@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "CPU cores"
     deger: "88 cores"
 kaynakIzi: "v1.A7EdopHfLUadU1gi.XOtExsMMGOLys336dCD3Kj+z8eAGoCezpXSv731yHEpBH0wxi0SJgLwbTRYncHFVsbsHcDBoTSuLsXwf5qgaQlhKqH42p6iWCw/J8OuQCWE61CI2u78ktP1JQjlVlf1dRX5L/O9hHg3o5UY="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/modal-nvidia-vera-cpu-sandboxes"
 featured: false
 breaking: false
 draft: false

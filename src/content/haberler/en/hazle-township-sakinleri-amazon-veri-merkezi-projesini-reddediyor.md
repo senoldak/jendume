@@ -12,6 +12,9 @@ key_points:
   - "Nearly 17 percent of Hazle Township residents live below the federal poverty line"
   - "Locals rejected the proposal, viewing the cash incentive as a bribe"
 kaynakIzi: "v1.CFjs1nM9l/F/1+yq.Dddl6C39MYzFBVhRfIwpDjsm3RwQECDparMNBO/Br56+dpS9WzCQ7iySpYSwZSMKDY2/Q6xM9+k8W86km0RMWISECjXDoIKZTGH55lKcFDQu1gu58MrNhETBY2uWlY2oR1F01kiizKBr5+SnwAXxiFS47a6PzbZfre8b6ZHYvGf5p8C4uyiccgdCXcgjOEY="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/residents-reject-bribe-data-center-amazon-pennsylvania"
 featured: false
 breaking: false
 draft: false

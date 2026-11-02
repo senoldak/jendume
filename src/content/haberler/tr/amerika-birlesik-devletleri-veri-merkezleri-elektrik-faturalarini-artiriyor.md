@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Tarife desteği"
     deger: "%84"
 kaynakIzi: "v1.MrWW9trD7gLJPdU0.W/+i0GkAp7ydjG7f4SVqhs3qXFKNwSoSQoddX+bu7kP5JN9BndF3/Hh+DvcpE/cM/uQZFI+xUX/HSk3ismWlU+EpbhgMCFhNGH5lpyWILVmJtYH3KgEbY+GTZxW3yGM7LEy0K3paMm5X4syPyrv1ZArrMOgN5Jv+oJjAO/HV9uCi9dDAgtl6T2OGAc5PC6EPnXwzKpOv9trw9Tkxdgu8iyvrLNHbJ6Lvkw=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/ai-data-centers-are-hiking-electric-bills-for-millions-even-if-theres-not-one-in-your-town"
 featured: false
 breaking: false
 draft: false

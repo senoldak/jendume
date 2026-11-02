@@ -12,6 +12,9 @@ key_points:
   - "Agentic RAG utilizes an autonomous loop to plan, execute, evaluate, and repeat searches."
   - "The new architecture dynamically routes queries to the most appropriate data sources."
 kaynakIzi: "v1.cDRVJqlPZjqqdaFS.MkkZwHNENYbceUEBo/ZiJIgwCvR7jlu7AGbFaazBOZ7dAlvGHQc4thtWtN8NQQHSEST/lsKrAiHvsoHikIYtxWMk+CfVlWqFcq0q16QVNZPuptIeTdaPz4HRyDiA68uXq+8/FxyHSqpsstRb1MWYfQefR0IgWW9cfLCKFuo5s4bV/be0/WtdIEVVGzYyRFP7/dI="
+kaynakAdlari:
+  - ad: "KDnuggets"
+    url: "https://www.kdnuggets.com/agentic-rag-vs-naive-rag-when-your-retrieval-system-should-think-for-itself"
 featured: false
 breaking: false
 draft: false

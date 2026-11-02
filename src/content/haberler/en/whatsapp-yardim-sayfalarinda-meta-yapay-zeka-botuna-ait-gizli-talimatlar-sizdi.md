@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Help pages"
     deger: "80"
 kaynakIzi: "v1.t7rv2VZ9zOM8xr5l.ARxih6wDacEKSBFPCCwJDtjucEbFahsSg4tkZQ8zF0kH1WY/SFq/Bp9ybp2jACQiMoouoXM5RSbubIUFZ6EtZXuutw3Q+5xwc49queJLBCixvzPpkl37inhzIyI2tgQVWJGMWPZoYZEL1WIWNqETJ0BpBNeggHjqjNWc+o/+luJaOBGkMRhgGKNZ"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/"
 featured: false
 breaking: false
 draft: false

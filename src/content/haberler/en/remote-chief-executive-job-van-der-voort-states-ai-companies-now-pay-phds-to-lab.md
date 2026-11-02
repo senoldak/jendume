@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "US staff share"
     deger: "20%"
 kaynakIzi: "v1.ACNNXaFZgDrZoTUM.rDR7PLp+YJMgbY4D+ZaXi2VyP96mjEm5mG6Oh3bniaORSwqE+DRhUk+fpdzPZzYfA7/Nby9jDfM1zzC0z3Qi4/x7X7r9QuEiFlXmkFxRvFkynDBhP1JqeOXIhbYR+r0X7S7KH1sL4EM39elGs+ezXFDJ+JctQy4kmRYaDpW6byU="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/job-van-der-voort-remote-ai-productivity-tnw-podcast"
 featured: false
 breaking: false
 draft: false

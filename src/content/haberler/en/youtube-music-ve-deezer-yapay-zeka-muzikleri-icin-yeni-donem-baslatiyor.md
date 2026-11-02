@@ -12,6 +12,9 @@ key_points:
   - "Deezer is launching a toggle to let users completely filter out AI music by late 2026."
   - "Deezer has removed over forty-two million AI tracks and tags ninety thousand daily submissions."
 kaynakIzi: "v1.L7rgwWoZ5V/KMDt3.7itsZCY80UUJurOI4XaINohNkEUA9Fwf3oN2Obcz+vy58CmvMQ1FeHTm2e/PILm6Z55nbNTHkeB3ZkF1hKpACY2CnoP3pWDTjg82lOifD4dY/Nac1WeyuPL0wC6nRKBxE3qs4GtUcgT/dgCiB2WRtJlyjMmofBPQjZQZVto/T0S3r1OAZH7Cqp5W2QZ4+nKjVDlnyq2lmXGy0SRyjcn7eROVExWLWnPdR3weKn0yRhw+G1LVMnGrxFXfB8mH7B4ethhbby+ysrGGOLl2btJC7T2JSTNzSZnhlYch1U8UEkp47kkH"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/audio/audio-streaming/youtube-music-adds-ai-labels-to-warn-you-about-slop-as-deezer-goes-further-with-new-on-off-toggle-for-millions-of-ai-generated-songs"
 featured: false
 breaking: false
 draft: false

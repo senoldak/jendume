@@ -12,6 +12,9 @@ key_points:
   - "Eğitim sürecinde 16.000 adet Nvidia GB200 çipi kullanıldı ve süreç 38 sürdü."
   - "Model, bazı ölçümlere göre rakiplerine kıyasla 12 kata kadar daha fazla donanım verimliliği sunuyor."
 kaynakIzi: "v1.RZ1xisse3aSwzwEO.3I8UCmcBeaqPqTyrn05aYytorUw0eBhCR319qKUAQ5tp6DrPN7ArAWqB8IyrF9fHyZKMERjNdIixi5omNVzJBQWnafXM3c3Q/N5iAHmmfkOlcKm9Pipyc+tQ1fAAT1uOAnlYYmVhbS2nUNdl8JKDa4PyfiHh4ID16R7T7RMGkfjLLo+ziBbPUZXNwGk+4K8GfKlRkeAg8172cQ=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/16/microsoft-reveals-cutting-edge-mai-base-2-model-with-2t-parameters/"
 featured: false
 breaking: false
 draft: false

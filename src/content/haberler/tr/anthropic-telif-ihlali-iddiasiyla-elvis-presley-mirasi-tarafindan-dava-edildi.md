@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Şarkı sayısı"
     deger: "274"
 kaynakIzi: "v1.qwNDPAAbfsIK3mBp.Fl2OFyH8bfLOwcIdNmxOpE8WBCwCoznnGjBxuWJ7D+7kzu5YjiSLxJhD7IdkGkjeYpEVBcQMa2hMAerzy7WRqD0xqQijhuKgmkL6FE5cPnINllI36UmaUv2VrWN35cD8+iQqFBqC3GyIVdOMMWzxwXsPFhD1jqAf/7oV4tkrbOxiqdGdCAqSjRR/MK38PQ=="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement/"
 featured: false
 breaking: false
 draft: false

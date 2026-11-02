@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Millennials usage"
     deger: "53%"
 kaynakIzi: "v1.WhxflpJivpxOlT27.2jdfzg5hmj8H2MM2EVxGUS/m1VD1UZN2SCFPhQ6olNHl1VVEdbhgtrNuIWxAIaZbRcWxweyLuPbtUrGEiEPCuODnInzHkzYSSoN6ktfW1w47nsLMyILmGfKQ33itb8tXaSwTamIQbSm1BSsKKWiNOFFFLWM2gtwiaW4cC1n431gQYzir4c74rt+vD08mTjwSEh9bUg=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating"
 featured: false
 breaking: false
 draft: false

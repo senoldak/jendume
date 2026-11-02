@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Question sets"
     deger: "11"
 kaynakIzi: "v1.s4cBtHR2lAzObdIF.vSOjPE11bB5xGaP2METNhee/SQlNeHU1Hz6Nn49f+Y1KlKAbmwsm0I5cHlHNhyCW3TONw39JCSCiHBIM2GCWHeJ+nSlkGSp3QZh+PQ5WYO5ST+gIdDtZ6lmC5IX+iLcos2DfNT1Snr/XCbkvyh3SpgBMFJLTbkbk6d1s98WGKElJlT/wPs0UvSns6++stLmajSAlTD4B/RtRqQTAJA0zkK14A+XvHoGtpTZnULPl7A8/vZL79dDveIHashXlVP7ONCyycoFP4sfDhGBRTwdo+qFCDU+7oYDNRZsnHSjndTCp1wFxc92lVarrKZZnWpOvZm9JX9WVC2ywN6+hgVrTs9wGcB44RICaoL5hAdHYcG5RcAIFpBC+MK6ph2XlqjDRH8J+4GByS73CjQUmn6Bnc2nKwAgLTQMsxINs0qdG//X9ZS4SLSwrPE+tcGBPQxL6iwNfNQyBzveRfEFCdQk="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openai-whistleblowers-house-democrats-casar-letter"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Research time"
     deger: "2 days"
 kaynakIzi: "v1.lf1RsbKoRaLqP9aJ.IvYHLGD8Ccc3jMvidEYSEuY1AkupMttfGMvYnM08tzDL37v+kheyADj/PByfQYxpbhCQ0vcH+1PTE0WzMlDTlBGdMHMh7VDIAp3AaqIh+Y7PZ90oY99S3mxxIWn3EcDKiO0F7PLe6ZMJmzHD8iwNCxd7XH7j4Se2fRVGGqWEoes6cus1YZT2Ia6khi+OKjHRPgPc+jvw"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/agentic-ai-helps-prosper-global-speed-crisis-research-evolve26/"
 featured: false
 breaking: false
 draft: false

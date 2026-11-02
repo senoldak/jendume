@@ -22,6 +22,11 @@ rakamlar:
   - etiket: "AMD yatırımı"
     deger: "1 milyar dolar"
 kaynakIzi: "v1.uuNLles4bcfZYtQ/.SOsINGTwcq7anue3ui7nbKgG0NK0Z8QEGdDTAKgKt0g1B8eOtPmPrTi8V+2r1JufgUNgGyp/+E6JUU0au8yFjxBCoFTFuVuUuOgnI34g28y2diGo404Umok6jC1Qzi3Z54p84wikOD+uhiM7On/Qd6oUOg3usTN24Hf/I4E1guAJ3BL5SG1e+ODeJUpYSqWcuwkt0zeRBfEXflUcFcMZ6Vz4OtF+OG3R3m+YA65Cn0hnCnqLEBXHgpqbbt4aQEKGmPOwvvro0rPuB6vsBbkIdARt0PbV0bsvK2EH166RJwVP6hlB4tPBoQO6zY85z6gMms/9erzF5R35vV0IyWlp1x0S11PrTRLxhi6pqowvXzGlCaMHhk5C"
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/28/nvidia-ve-amd-metaya-toplam-4-milyar-dolar-yatirim-yapacak/"
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/amd-ve-metadan-dev-yapay-zeka-ortakligi-helios-ve-epyc-gucuyle-super-zeka-cagi"
 featured: false
 breaking: true
 draft: false

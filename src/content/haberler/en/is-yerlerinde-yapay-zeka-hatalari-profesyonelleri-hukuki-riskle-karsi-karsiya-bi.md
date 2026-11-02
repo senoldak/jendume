@@ -12,6 +12,9 @@ key_points:
   - "A Stanford University study of legal AI tools found erroneous results in 17 to 33 percent of responses."
   - "A 2026 Nationwide survey showed only 36 percent of businesses have written AI policies."
 kaynakIzi: "v1.JwZjb94j+zhg6SsO.d42DfzYEOfL/3ZxkHWoRjRLLSj0856ajKokS0Rb2BzRtrOWRHv9g3DvRI9wBDi2ge/vCyc1X/p0kWsJ9OBy3Ic9zlXGbkM/U/HKyY+FBgSrg7E9lKIzrNP5ES/8WgEieUkTwMM3l9C/eRfgwF86QsFZjDtZCwYYisUTZulbe9Ylb2Q1ui03LKtY2cN6R/wW4f4ZOBXYtKxzRRTw5VupGSlf/jc+M3w8qap5R74IkmWaNGgv4l2OwzaalMKwxenq2FRTmKVkhfrsBASwqI9jclRvP0oDOJzBa7xAIkiEf21skRT8="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91623691/companies-liable-ai-errors?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

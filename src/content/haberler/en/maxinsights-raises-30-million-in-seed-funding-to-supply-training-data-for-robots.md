@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Footage captured"
     deger: "2 million hours"
 kaynakIzi: "v1.gdE/ZLgTLHUnh4iE.8xOjbO1vXa+w7KrPEnmZdPGUynPikJUGTVCHsnscVntRlxUz7qolJnwQCrGzp85jISqmTgUCXPqCnCbc+7DSblN81HnRm6ts5/eiLLhm+r60E50Tu/wj7kYf1KrhTQCz/C1BMfBV3RSpV2iCulD5fR66lsg="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/maxinsights-30m-seed-robot-training-data"
 featured: false
 breaking: false
 draft: false

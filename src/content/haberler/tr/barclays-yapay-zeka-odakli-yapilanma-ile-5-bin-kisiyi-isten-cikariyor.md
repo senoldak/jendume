@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Üç aylık kâr"
     deger: "2,3 milyar sterlin"
 kaynakIzi: "v1.H0+KXQqRWVGLATe1.L5Iy8Q3PShQI8OI5ZiAPurHlBAosiTvMDuwnGx2z0FRdhm6grgS2JGKkMZ17LRojqfm8nLEhL7AC2XHBMHFtlrNhOwOK6Cq6MOG5EommAGTyWnx6xhjzNvzfvvO8twF9g9IApbFnavR+zgjf+04M2thx6Rg9Sr4WK3NvuNANIw=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/barclaysta-yapay-zeka-etkisi-binlerce-439856"
 featured: false
 breaking: false
 draft: false

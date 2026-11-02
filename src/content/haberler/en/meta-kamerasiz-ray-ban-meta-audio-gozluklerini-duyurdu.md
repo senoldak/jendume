@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Mixed use battery life"
     deger: "12 hours"
 kaynakIzi: "v1.MRKAWesbPT4bjzps.pvVBhDcz5jCrAZZ1YXFODqaz/bHUR13EIPsZCL5s8gJ+uLZ+PFiA3TDV65hynxeyktgLq+mXhcATaBr54jz9Kjpeo80iJXnreficZGMWwDfoEnJ1vjQ59oOgvOBNG9hECsaXfUN0YURA8w+ps4zB7r7dyq3Cx6CZR3fznHehPzI6aFjSGDIIYra9dpxD98bfWmTOt6+dAO94NLEw/snA"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/i-tried-ray-ban-metas-camera-free-ai-glasses-5-unexpected-uses-that-surprised-me"
 featured: false
 breaking: false
 draft: false

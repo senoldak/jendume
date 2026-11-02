@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Valuation Target"
     deger: "30 billion dollars"
 kaynakIzi: "v1.ltNxZRlxHFNm4Tob.tRrTwNWOKCsMvRGb0fE6QSVty4mOFEyMNP56V4kFXuldhpZlDwX0O6D9g5uBcX99qHwe5jvOUOaWKzLORYxoNH+GeYnzYJBBmfe6CS2xswJ4V5UddrIzj9aEmegSYHglZM3Qxgg0ZS7qGQWFJNHzlgWBaDVQpFfTxjEESAo1EbrUeHJS2GCuaaF/5nlAyi+qmIzEOXo/R+lPPJgm3BObMSyuJcO5gJ5XIkIy9A=="
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/claudeun-arkasindaki-sirketten-ayni-adrese-45-milyar-dolarlik-yeni-anlasma-arayisi_184781.html"
 featured: false
 breaking: true
 draft: false

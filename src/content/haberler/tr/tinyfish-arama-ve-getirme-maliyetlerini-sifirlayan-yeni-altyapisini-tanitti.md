@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Görev süresi"
     deger: "59 saniye"
 kaynakIzi: "v1.z1xNAWvfggpHyehJ.y5kwc0ey9fX1XsOXgfa0zT4AuI4YmaW11oCnZavdd9ZeAVlz+KPUiaheHuNN/nA3bLJAI2kuP6sKj5iF5So59Ciu0Qs+Zkx+bZH8vtbzUcio4BTn+zRgDTkXgy4r2NRssl9fjAQYDyClRIsFW7IdSEC3eNP8FWm666XE1TDPLkBK"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/"
 featured: false
 breaking: false
 draft: false

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Başlangıç taahhüdü"
     deger: "100 milyon dolar"
 kaynakIzi: "v1./uAbpW1nMGIixqNd.3JAWGQDJCGzAdpIA+rkZOYUMKCYYkcxZQmpq+nKoS5CTV7DPIfVkUqg1M2206s/8zYLt69+6Jitc5k/ySJiGknyJE2wzWw3Z61bViE2whzkz0gGRZA/jCgPvLSuL/SLzEMxJkc5zhaH7ItDeXoTaKE+sPFeToU55QPvI3UwXV6/l/Yc6yn8="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/27/ai-political-spending-silicon-valley-election.html"
 featured: false
 breaking: false
 draft: false

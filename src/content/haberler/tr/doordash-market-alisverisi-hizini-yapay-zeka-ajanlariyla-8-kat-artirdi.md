@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Veri analizi"
     deger: "90 gün"
 kaynakIzi: "v1.SwVDscx67DOzdTMf.5MS6T7vsFh0u5PtizV+dyAYVukKf1J5tqja3bmddItcceBmmPnAtYviTGA+Mrm5EvG5OLo7bpYs4L31s8shHgxXWkzVIhqrBbEhDJqFQhdX+9YM9L9UUE8a/P/69abHMVlsIhb4LfgKbvv2y54vP6mnBEqUJUf3njtTMpdxKUGkR0Tc8t21yDBL/MBBtUJEOEiiNXRQEC+4cecFEowgMIixhsg0J026bBvxSB5QvUB9Gm/edhpwcPWA+9sYZZZgGD9dRNWgEX0ENl9kQhv0="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

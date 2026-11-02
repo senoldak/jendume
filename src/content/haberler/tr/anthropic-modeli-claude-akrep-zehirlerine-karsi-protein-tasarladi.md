@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Başarılı aday"
     deger: "17"
 kaynakIzi: "v1.oMxx81b28xtpvPza.SQk3fd1kE9yUz2hZmYxHqemtrqpH4KO2wm4z68jcqqY5sq4qMwUCf4bfDk0UpGvOORALdsu5KAKvdYbV4azuzkYZZgwrIeovtvsOL7srsNwjf9BxuOeQI8K/PIgIFWDdPkuNccB6OfBb8IsN1GKEf5Gkr4Ox3or09XGu/kRhYNk2gkz+nEEGsMBJf/Yg4VIXUTmvtyaKOYxlZsaLlu3m"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/claude-science-tackles-deadly-scorpion-stings-by-designing-protein-binders-from-scratch/"
 featured: false
 breaking: false
 draft: false

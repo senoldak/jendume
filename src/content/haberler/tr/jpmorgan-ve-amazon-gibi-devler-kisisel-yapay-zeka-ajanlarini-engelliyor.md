@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Banka uygulaması"
     deger: "%71"
 kaynakIzi: "v1.KCVzlCQpSdpU8jk5.HV0CoYwCJTtqy1DI7tP9WGcjiE6L8EySdIHP9uRsv0V2Ao0dPQpnox60i3EuOPP88x/T7ZyhSicLE0Wkhh0Kc4U7SeEUYVp5JXGYNfMMkiaH/1upmmgZ/DU3LhG7y0wMbGllIK607jc6Q6v3i6LA1o6lgVqO06hl26AlrQ=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html"
 featured: false
 breaking: false
 draft: false

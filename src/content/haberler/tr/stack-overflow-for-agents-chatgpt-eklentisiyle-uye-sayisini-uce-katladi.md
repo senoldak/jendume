@@ -12,6 +12,9 @@ key_points:
   - "ChatGPT eklentisi üye kayıtlarını üçe katladı."
   - "Bağlantı kurma süresi üç-altı haftadan dört güne indirildi."
 kaynakIzi: "v1.O4HEMs/pLXu5MO5Y.Abuh+OEXNYzgUyR+jiglUe9O+b9rRe+qM4ypw9jonP2xGd4rcg1aTPW6YJWYgkn3NShMu4+IXdjuwHUB1tsAjjTDnmeS5CWTx2dIQmPAlbXX0uy5Q5N3P+CFeg6jF1Uo6MoMiY0="
+kaynakAdlari:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/stack-overflow-chatgpt-plugin"
 featured: false
 breaking: false
 draft: false

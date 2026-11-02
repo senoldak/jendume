@@ -12,6 +12,9 @@ key_points:
   - "İşe başlama süresindeki kuyruklar dakikalar seviyesine indiriliyor"
   - "Sistem tüm Mac kullanıcılarına yönelik bir macOS özelliği değil"
 kaynakIzi: "v1.3rQP8guaJ9AOXZ8U.O0/nph+8eJ+d9ogTPYIdt5DMDgl5iRSiu+4nyM3V+50oWIEnFkPu7u2NCEvfo39xcTuImmXeHkeJr86Chhw3ZyRWpERCwLP6lo6OzHCWLvlCongWdOHSN2lcqzCPWwcd"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-minions-gpu-havuzu/"
 featured: false
 breaking: false
 draft: false

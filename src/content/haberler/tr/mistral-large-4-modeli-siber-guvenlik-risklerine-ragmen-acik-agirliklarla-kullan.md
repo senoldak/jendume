@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Reddetme başarısı"
     deger: "%96,6"
 kaynakIzi: "v1.R470FWmLDpUWWNDJ.dYhZlxM+MOP2r2w5MZ8ueFzTcbolMWKVbysEJR11a8RnTAztVFnUfBpQZemHB6BOPGreliAQ+uzwHdgiH49rnvpF3xIicYTWznVRRAQJgVzgwTlGGxfuS5KQkzbYVZBgXltKIVEWr8vfRwXAJZ17CIi5tQoKZT1gHJbMGhfH6wIvUYgs3zuYu6Y="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/mistral-ai-siber-saldiri-riski-tasiyan-buyuk-modelini-yayinladi/"
 featured: false
 breaking: true
 draft: false

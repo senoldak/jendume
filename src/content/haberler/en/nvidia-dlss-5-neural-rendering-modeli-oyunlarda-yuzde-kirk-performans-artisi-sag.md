@@ -12,6 +12,9 @@ key_points:
   - "The processing speed of the new model is twice as fast as previous generations."
   - "Frame rates were observed jumping from 108 FPS to 150 FPS in community evaluations."
 kaynakIzi: "v1.jDv6jN2uxAY4f2a+.zgRn11/f2BNniMaE1YBcXwdWZfJPll00/HtPSQBy/mxfv4P9dyxMclV3wycrtpECNIZ/4am2kOUr+NAtXyqGcxF2K/y8XvGMs5+snU6XQBK2UmXKruQ4/27Y/s19LJU4EVdlmoet72WT0aVZPSYZZtic8nmfcVTfTw7eHZfzKQ3ovtXB5F4="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/nvidia-dlss-5-ile-oyunlarda-yuzde-40-performans-artisi-sagliyor"
 featured: false
 breaking: false
 draft: false

@@ -13,6 +13,9 @@ key_points:
   - "Dizinin yapımcılığını Türk stüdyosu Ay Yapım üstlendi."
   - "Senaryo Kerem Deren ve Çisil Hazal Tenim tarafından kaleme alındı."
 kaynakIzi: "v1.uA0jFzv+vYo+rjCC.V7pmOPI08fPNpcPRadYUIztTfuq52c3HbXUDoMWJ49s0K4e28BlG6ZPIJre/rT7VBFzyCO+Jk4Y9qQvtUk02WVl623kfirBfBv5A+4HS9kKyu9JzUb9YODHipQtzKkoSlch86lqoiX33J3DxeqofnJGS5IhvcDqc8nnY7X4qWy7D+FieTMu7AOp05M3GlrEhyrfVdNSAofBwhdo8b4kbe6z2"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/tv-and-radio/2026/oct/29/castle-walls-review-prime-first-fully-ai-generated-tv-show"
 featured: false
 breaking: false
 draft: false

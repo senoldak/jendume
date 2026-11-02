@@ -18,6 +18,11 @@ rakamlar:
   - etiket: "Toplam Fonlama"
     deger: "19 milyon dolar"
 kaynakIzi: "v1.e6uqx7PnkvAtJTFO.hGOXpeHcfTxiobFIsp5oNYBP/RG3qa6JnjPu9a8wiQPrNNohe8Au1/JuHcRB9SyHbpMpeJEKwUzvmP+bhRRPETTnDljiWcCFshKvS1T852VfidXDl3K7OMiDzeeJdjuQfJ5Sf8Ex5CHevIxEN7hrarfY76Whxekn5+vVLM2L1Dwrj14qO6oxZg43DNLp/1jLMIYCMn7+cAfyuGGOSdRVemTK1NCSGQj1fihIRUabCsbSESCqPx9IcPvIQjHYnS8oAVhhqkWkug8lJhfgvx0VW5SkMMHONgd2dIANxb8nq6joe3fWhDCmqXxXK9d/"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/plato-16m-series-a-simulated-workplaces-ai-agents"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/plato-raises-16-million-series-a-simulated-workplaces-ai-agents/"
 featured: false
 breaking: false
 draft: false

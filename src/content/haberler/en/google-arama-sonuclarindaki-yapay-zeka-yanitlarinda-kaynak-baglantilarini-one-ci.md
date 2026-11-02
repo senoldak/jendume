@@ -12,6 +12,9 @@ key_points:
   - "Video creator profiles are now clickable to help users discover more content"
   - "Dedicated spaces for official websites are added to the top of AI responses"
 kaynakIzi: "v1.sNUSewQ79HqXCv+w.ie6eBG5DZeN4ldD/T02e1UirbwYcruuAv6orSvm9twuP6sIob7LEV3bu96+vngvm5YhBCLRXIY8y5PiFE/Jsk608Cx9sJtYN/fsFsS8darmYd2Ro1Pu5Sz2GjR+tA4mR52AUtfUdKR5UJSZkLZxdUGajkif3rhD6byBVNumywC1ppJBWROURnLwBiGa+XTknLNg="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/google-yapay-zeka-sonuclarinda-baglantilari-daha-gorunur-yapiyor-h227317.html"
 featured: false
 breaking: false
 draft: false

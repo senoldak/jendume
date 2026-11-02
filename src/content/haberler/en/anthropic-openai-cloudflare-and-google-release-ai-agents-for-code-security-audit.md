@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Token reduction"
     deger: "85%"
 kaynakIzi: "v1.FF9g1WQQx2R82a/m.1ByaONFcawudr7mF5cnf90Acz4TmF+xwQTYeP/Zm/VwG1gDxNkyZGqrinwl+0kQIaX/JEx6snWWwkH+uyx8PgGKSr9xNL85QQsOtNeo8irqNabwFa1MUnvnRiCBS95mwbyifF1gsCQlbFpUjRzbBtnIm9S6rgt8ruk5htrSOIhsJ24rpTDfC8EX0"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/30/ai-security-agents-claude-codex-mantis-cloudflare/"
 featured: false
 breaking: true
 draft: false

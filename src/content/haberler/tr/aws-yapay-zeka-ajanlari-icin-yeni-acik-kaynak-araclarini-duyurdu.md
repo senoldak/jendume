@@ -12,6 +12,9 @@ key_points:
   - "Model, NVIDIA RTX 3090 üzerinde yaklaşık 115 milisaniye karar gecikme süresi sunmaktadır."
   - "Strands Box, işletim sistemi izolasyonu ve politika katmanı ile ajan güvenliğini sağlamaktadır."
 kaynakIzi: "v1.jRSnGhaddycIqq04.si6RuGg+PuCaqhpIvdKQFF0r6jF6L9slDdH8wsw/HvObHzgDAo1lsJv7PXKQY21d6hJJRFTv+I9uorHTXkfvtRFKbXNp0TPenflYCGw1Z786ScCqTsIx/UKSv/IiF4RzKUDl0+vDvppsnqTyA4CEhtF7yoXfpANYM99aPBIPQeK6TaHfN0JkyRCIDA4+pZoIDt8f9qN9TirMB/9MCnvBy46wOpsHXrlyix63BJIIevSLopnqfrWdZoh1PED/ivqS5ErP/Jg="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/aws-strands-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

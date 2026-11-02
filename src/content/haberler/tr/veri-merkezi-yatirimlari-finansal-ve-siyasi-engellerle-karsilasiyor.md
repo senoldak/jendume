@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Hisse düşüşü"
     deger: "%27"
 kaynakIzi: "v1.Ph6oTLtTlOV30stR.gi7mGOFT3ul9IMBgZ8Ta+S5dIXCT/A9zWEZ95oHlBeqycY8l0ZHvDbf55aXRBahqisIypwTKZeciUIDZRVJev6mlge058gMqdBar3B/J8BUZNOdrP1EdwwWf2K33ekaH2ByvxtEFBTTZ6F9ZxrStivUlUh9lMAFvHRPG"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/signs-trouble-data-center-industry"
 featured: false
 breaking: false
 draft: false

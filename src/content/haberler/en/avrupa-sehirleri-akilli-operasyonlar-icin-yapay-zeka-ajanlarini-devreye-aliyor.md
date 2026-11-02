@@ -12,6 +12,9 @@ key_points:
   - "Operating costs decreased by 10 percent with a target of 30 percent."
   - "Projects span multiple European nations including the United Kingdom, France, and Italy."
 kaynakIzi: "v1.JmWDikpR3JXdD4kx.dAx5Z15/9Tn5w4WCAwQZqJmorDGZ6tfaz2UcggaYepqtlu4/Uy6k1LyzLGkZhvwJynL+EOIlAWE3V5bhxee3RhV6yc57iQ8/eDcjgrEzNvkveWy3INcQ+I8WF639R4yOx2FdQpEkUzNKcJFsi4FxX/7ycWaW"
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/"
 featured: false
 breaking: false
 draft: false

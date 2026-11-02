@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Unsolicited saves"
     deger: "96%"
 kaynakIzi: "v1.R5bLq7qSlzDLG/DF.5GYljaz/iJUWcjD8XZI0UJQrmKFSA8TWbZn3xwvXOu1aeLQF4NNJBzAFbRJl9fp71vwQ2bUUhnO5eavbBHlHAYtWe5KxQPSZSWFBpJASaKPaJe3+I1yEs7+ub1bTMNOfmxOZeYmblR7voAV8gcvl0xMtGHv5k/Xpk14gPFckpX0O3a3tjTE6aAIsk6BxM4Gs4d8V53aORQ=="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/chatgpt-sizi-gizlice-analiz-edip-psikolojik-profilinizi-cikariyor--211905"
 featured: false
 breaking: false
 draft: false

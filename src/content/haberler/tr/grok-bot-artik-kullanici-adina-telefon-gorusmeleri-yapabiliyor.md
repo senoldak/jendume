@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Fiyat"
     deger: "30 dolar"
 kaynakIzi: "v1.Y9f8enSAR6oaL4ae.pGCoovDmoFeD8ZA+j9FuZ7VSkLaB1QjeTMZs8v2WKfVcULkRPrYMOEvhJM3+tJe3JSivFGjdDWANWpekfeRBpKOGbU0zDcyqe8/hmmzmrpLq3Tm0yDLzPOm3XjaY11ziRp/3NrzJU8WHl4k="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/grok-bot-telefon-aramasi-yapabiliyor"
 featured: false
 breaking: false
 draft: false

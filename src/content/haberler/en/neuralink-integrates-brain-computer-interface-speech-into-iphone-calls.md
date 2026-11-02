@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Hackathon duration"
     deger: "72 hours"
 kaynakIzi: "v1.l4VbQ0cSpNAPNLa3.h+9zTYXF5+ZWlKZVVu99fezgs5lqmwX+3jj1/Q+WAKjYCTaZk4z3kddCiUBfWpwQU98ev7Evw3TaNyePGyBWXiX2qFTjF2caTChkvw63sige+5oWhkwPoaCjnqV1otch6bqU4RGFGwLhn/qHih6Gqa4tMS7WvNa+pM8S5dwUMCkbrsc="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/neuralink-implantla-uretilen-sesi-iphone-aramalarina-tasidi/"
 featured: false
 breaking: false
 draft: false

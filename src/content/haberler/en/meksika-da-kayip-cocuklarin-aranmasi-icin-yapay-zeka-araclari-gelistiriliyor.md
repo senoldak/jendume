@@ -12,6 +12,9 @@ key_points:
   - "The UNAM-developed Regresa tool uses local demographic data for age-progression."
   - "AI mapping helps analyze disappearance patterns by age, gender, and circumstances."
 kaynakIzi: "v1.+lxNH+MNqAtmBTpz.LIXCoOjQ3Aci7t5MFfaue4vMoY0RTp4GiiuLg32cf8eexCnybypj891UX3HssG3Zmw+EJjNQNNdY44C7JH6Um7tAiX5pfErb+bw1/qVtEYpxvZMKmthc86Mq501spIOzjNC8vDys6DL9077jveXQcrV18Jo="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-mexico-legions-children.html"
 featured: false
 breaking: false
 draft: false

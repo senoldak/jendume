@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Paylaşılan sohbet"
     deger: "6.800"
 kaynakIzi: "v1.QY9pC4c5Fd3nv3u2.AFaeum9H61ZiEOiChQSs7UIxsONtUfIuFpb9sz/VRwzhqWaHwnWAvbQZ0Yi7sxHNO1s5trlIRdR/V523aFExpL17PAxci5EvJeAgMvV5qY11q1VziwDXpdrrmH2/9N0tAOcknahM5UzM4uBh6e2y60QLx7EG/wr7MPjifSAmFriQ6exQ8ELrnp1RVI0roSqY3HtJMlmUa3BcpMwM"
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/"
 featured: false
 breaking: false
 draft: false

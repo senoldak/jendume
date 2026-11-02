@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Global average"
     deger: "4.99 million dollars"
 kaynakIzi: "v1.6TcoV040KSepcVE7.scE+FSvu4bNVFJu0iHyW39C8m6IssyHCphHIbnW8liaRg+I+Br/unL3f87EgAkR5Xdr6fiaGAfDoOskofFsrhcrQ9iK+N2cgOIgoByNftbu15zJG37n0d9C1Evd+Tke+l8FwOzf5hGYRH0WGX+CPHS15zSCOy4w+PXSarjO1z68PD+v32mNotDILRQH9xW36HuyJZsy+X/2WCZh0ViAdtfzqB6QVR+bCWr/1IZ4SBG8kNg=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/golge-yapay-zeka-kaynakli-veri-ihlallerinin-ortalama-maliyeti-539-milyon-dolara-ulasiyor-440144"
 featured: false
 breaking: false
 draft: false

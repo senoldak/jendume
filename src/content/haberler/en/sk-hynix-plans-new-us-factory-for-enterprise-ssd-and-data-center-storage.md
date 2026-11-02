@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Market share"
     deger: "21.1%"
 kaynakIzi: "v1.9ScvwJ0v1abHCnoB.bp95D6rHYe8i5AHok1MWR8B2A4JHyBva/1CFIF10Y+HsRlLKFpNo2HwZpRYOaxovI3ZhlnGslrAb3MGQrUUxOMaeUyx+2DfzASLdJFPP7LgNJ/addwWCohwBGjhLEfngCdjw0g/H6ZTcmjF1orwB0uoArfJEFlswy8JXFdxg1FDoM7CSi/xZiwImk5LjepEXUov+"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/sk-hynix-ten-abd-ye-dev-yatirim-solidigm-icin-fabrika-geliyor--212079"
 featured: false
 breaking: false
 draft: false

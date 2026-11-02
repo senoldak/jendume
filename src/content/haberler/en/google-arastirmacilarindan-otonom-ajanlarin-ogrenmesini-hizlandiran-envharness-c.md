@@ -12,6 +12,9 @@ key_points:
   - "Evaluated models such as Gemini, Qwen, and Claude achieved performance gains between 2.9 and 3.7 percentage points."
   - "The framework integrates with tests like WebArena, SWE-bench Verified, and ALFWorld without altering core agent logic."
 kaynakIzi: "v1.euYNyvx0GExWf1oo.rmWxXUfI9z7EAuYVvs4enRjTy0Mefv3Yyk5MMbaQpYvV1bACv6mEl02kMH0jOTnBasPt3y44Dtfu+lCLbiUjDgBWHpljTU8qBy/YkOqw6DYUld6wTqRrnrDiOU5hnqhAZehN6E2puK6IU+zb1I+t3rQNCXXJVPzvCWqMfoyL4patJ0g5J8blezo0dpAucr9WZ2qz4C6GpPu8RFfZowecXVedueQBTD/QcJxUbZ9UkUA2cGyo8jkNxC56Zu5vh88fazAXQF6qXLEIQBWrf/EsjGCk"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

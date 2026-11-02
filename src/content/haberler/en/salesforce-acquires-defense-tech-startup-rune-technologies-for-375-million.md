@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Valuation"
     deger: "$127 million"
 kaynakIzi: "v1.k59aQu2Ynm4t72fH.eYLKntquaFuyeh9ss7pjkS0Dkbp4dapkkB6gEExtL8CnaU4Wbg5uEEITYhLkriPwVy0PJDKeQ5F0gYmsl0Rq99XmFvOzUyLaJo88t6DVAsLSlaTOcOyHPfOte4LSuq1xJGblPu8ZvpqRtMBc/lJMWqP/lIHJll6gfwYbt/wpa5tDf9ZQ3pcnSENd+ffAwcmsbaLNzllv2EbDDoDgBY7AzIWO1h6W/I4="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/11/02/salesforce-savunma-teknolojileri-girisimi-runeu-375-milyon-dolara-satin-aliyor/"
 haberDegeri: 85
 featured: false
 breaking: false

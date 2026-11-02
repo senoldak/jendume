@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Full capability date"
     deger: "June 22, 2026"
 kaynakIzi: "v1.Fh1kstorPHp31If7.eYFXmEnCqgkBWbQR7ZL9nPXEuEzKX7Xmtz7/cxgxyi/dX2pBMd5mdyg3KFlCp6LIXSLPRgzvJN9HxfVYSxsCET5Fc9Gqvm113V5hz7PBWwjkKfb4OeoN0sVIJ6dt2VEOYCCN7ud4Xd5JmwzFs+xD8En2F1zCqRuNnroJ8tB4dRjG4DsF"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/palantir-says-it-cannot-switch-off-natos-maven-ai-system"
 featured: false
 breaking: false
 draft: false

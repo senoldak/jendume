@@ -13,6 +13,9 @@ key_points:
   - "Critics warn the policy could weaken creator rights and devalue creative works."
   - "Experts call for mandatory content licensing by AI firms instead of free scraping."
 kaynakIzi: "v1.clgRz9IfCVEHLbHa.I7ZYMMr5814TEbMPeje+DPB0gycL36nAtIgV5cIHkESJmOi4JQtT7jDKlEaeaifdiTuIA/URh3O+/0OZUD1zDyPr61M3bgmWz9Pvvlhp14i3PqjR30l1iLh00qxL+Zzx0EXQbQW8TZP4KYPxFi+39DA6HTpUAW2E9AcGKe6qF0u33j6/UjG3tUTsdapJJHZTdc5O4QFSaO3sfupJCUEwQkuaELG7vASRpTPqTQ5D10W2DvF59ORi01aO7Ft0lNG7qUelzcq+0oMPvUVtT7d+RLOLSSi+GgQCzxAgjEBwzWCESftq"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/27/in-a-rush-to-lure-ai-companies-the-australian-government-risks-undoing-a-creative-ecosystem-that-has-taken-decades-to-build"
 featured: false
 breaking: false
 draft: false

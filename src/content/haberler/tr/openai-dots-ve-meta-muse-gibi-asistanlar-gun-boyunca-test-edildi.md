@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Grok Bot fiyatı"
     deger: "30 dolar"
 kaynakIzi: "v1.UHvBsXQr2ezhHpAq.FK3WvECv7zkPntHCQBSvgmSIG2R97dyx3CX4NNNT5nOO4fMh4tBa6zjkpi+Vd9vEMga16dfG7BCmentd/QJNsu25NCO1fppaFs7tFnb1j/1NBebu1ADXiYAeYJ7uy9nmumiGt/EvYDrO2HstHeCq4Gac+eR3K7x1ZQwqnmKJOImqqSo="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/"
 featured: false
 breaking: false
 draft: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Review conference"
     deger: "16-20 November"
 kaynakIzi: "v1.gyoGFHH0VZ8jtZ06.aZy/HrpCkqQOS63dZq1coOOFNX1nxHfF22nGuY1x41pJpOUzSCMXWqL3z58GoI5AUS2G+Wy7JtObLvr+O4bja/TCPsoQyw9gimw83NQjgm6d/S2GwQwaBNPtZfLFH+N9MYgq0x5XU6EO3KzubEQJRotJsunGoOQjRzt2lkCaSg=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/pope-leo-disarm-ai-lethal-autonomous-weapons-geneva"
 featured: false
 breaking: false
 draft: false

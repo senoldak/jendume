@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "2035 tasarruf hedefi"
     deger: "3,5 milyar euro"
 kaynakIzi: "v1.jptXmgfhGCSNq2Hl.thpg7x3V8cSkl95dhENKhPSGc3MCqi70GKotsOTu506oy6YIFj9INUehvweEMRIn5iFlGUzqmFNEJXbrrfBvRGCx8NdkRXqgXg2ls1jXs/DrsxQeW0HM9fabnonSP/idxRkp7F/MR0Jd9YflVu/JkTITsaa15/diwdP78UN2N1TBsaRrtV6LAzkU/Z0eij+dyY4Obl8RgjzGB+M="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/"
 featured: false
 breaking: false
 draft: false

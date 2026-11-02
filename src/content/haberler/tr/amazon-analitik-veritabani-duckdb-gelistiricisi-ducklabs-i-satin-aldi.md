@@ -12,6 +12,9 @@ key_points:
   - "DuckDB ve Duck Stack bileşenleri MIT lisansıyla açık kaynaklı kalmaya devam edecek."
   - "Yeni entegrasyon, ek ETL boru hatlarına gerek kalmadan canlı ve geçmiş verilerin tek sorguda birleştirilmesini sağlıyor."
 kaynakIzi: "v1.+n/mw95j9MErDa7B.Y55Wr0lQoeCfiOLu/QAG4b/9WwMwVPO3fZXeGSnsEjAHhX5TwRQN/I7gh2NJiuy/uhPTQAPwL6gZn6udp0zo9XXudZUhYwwo1YxaNq9L6ZeRjo0H8hUmjXyDTN/eh4du9n2/IXjcGbh5T4vyhyJR8jBG5+XIwq5YCS4fYRNahqDsYmPW62jC/ypPRY1gYLFNMqm8Cezqt+Rii9eG2mfsapRq+5A9S2QVV3GLQnPEdVZChZSYJ3FIKhl1M9fAEFnKs20ssptuq8383zI="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "ToolSmith enables employees to build integrations using natural-language instructions without coding."
   - "Nvidia partnership integrates enterprise policies directly into the agent runtime environment."
 kaynakIzi: "v1.WrGsyXw7RnuttHhP.gTMWvNXxohFobIUXOh5+WMh1Vep0R5UCmk2IZ+NoV1r1iM2tHA3ZYFT5tkchgJXRH1WtQt6MmIUN9kAUzX8Ejw1vNcKyAJiDv205QXLDC989o/yHG6jU19Tw4GrOXoLGEhWxdgJ8kOiaYqzl2y54QqfvBdvqyWDseaDaIqMphhS6A4MWqAYYzHEEFszgWaGSPFR1bed4Wg=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/15/servicenow-adds-ai-agent-controls-and-employee-automation-tools/"
 featured: false
 breaking: false
 draft: false

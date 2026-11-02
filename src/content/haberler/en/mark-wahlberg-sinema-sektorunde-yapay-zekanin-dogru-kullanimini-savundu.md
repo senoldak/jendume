@@ -12,6 +12,9 @@ key_points:
   - "The actor is open to letting his family manage an AI likeness of him in the future."
   - "He emphasizes that storytelling must remain at the core of filmmaking."
 kaynakIzi: "v1.UeKy1hb0OlYTwIXP.uMWGKiiocLTtQaToFDxFIM25g0ZIyw8LxhSAz4E9q5n0WyXi9+XXbpvkg51RrTvtzaUNObddTWHPxxCkBlCK0V8kuREO1bozU3jZpSsde4mX8EzDK7e9oKIXhpq82Sn+salPs7Gn4K2J5jSrD8E30idA48YzQMlukHhxk13Uu5NJVl3FdZ0DW6uArMgObuxVGIett/smtMbHkXMwL6p/NlabuP7uGVuKfP48cnZp2shkI163BjVbJw=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/"
 featured: false
 breaking: false
 draft: false

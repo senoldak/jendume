@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "İkinci olay"
     deger: "6 Ekim"
 kaynakIzi: "v1.soIjYrXxGVLN++3b.xVKNI2cY9ytbIIr2uV1aSohzcq1ShgjtO+1vgZ9fIwOJ6DfH6c6QExRULmIOCuRoZg0hnpuhUlJtfTRmVSclVPQNS9MkH+bPY6iFLI3TpLce7byntc8QE/kPlhXIQpKgFhGEIxXg7DrcFExYIDB1KB2/g895wI1Ih3A/3J032k/TiGVq+7liTUa0/1P3CNxBQyuUTA6ujFo="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
 featured: false
 breaking: true
 draft: false

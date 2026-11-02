@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Token tasarrufu"
     deger: "%40"
 kaynakIzi: "v1.1BgJmU3iQf0/i6kl.1rq6Rti8XvIr/fAXdfsSVoB0cL0O2IZw2t8jQx0kv1weAfiZWGZuGiM4qb4SNMCHxgnH1QQlIn94U8RwPLb2L4tde2wUomY/hNA5b/5jRp/2j1nzkBNGigZik5iVMgMisKBO9dSzlEBVn2uXcHwdTQmjzldnBhR6Ok24QRF97WqcTqOa5qD/t8kg"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
 featured: false
 breaking: false
 draft: false

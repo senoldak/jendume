@@ -12,6 +12,9 @@ key_points:
   - "The system is planned to infiltrate isolated systems and self-destruct"
   - "Experts warn against the risks of cyber weapons lacking human judgment"
 kaynakIzi: "v1.BkHISxjCSIh1nJF6.LrIxngE4NUDbELZWagykfBptC5KMCiMZRru0F0gh5MofqmX3fhAqZYLxE8hkvEeHIun9sgji9PBo6i7yk8awFO7kDoa6I4WFoi2ljlXNZ80oP7Sg8H/imu8nMgB2iJcVmQ8nD34Ui0HLOPFEfCtCrZWGD5e2g/BVAuKOaygPTncXcAbRUDPhesBspNXygWFVuoGH/YAHDZoO7N6EoskBj6zroG9mIV0="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/abd-ordusu-inanmasi-guc-bir-yapay-zeka-ozelligini-kullanacak-cok-tartisma-yaratabilir-h227602.html"
 featured: false
 breaking: true
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "AWS spending commitment"
     deger: "$110 billion"
 kaynakIzi: "v1.ZxCtlEDrv8vPb2G7.cRMgbgIG9HDbe2O/ubulJhzSNqSIMEqXctwmYdfXW8QiIWJkMT50owO67qOODIRBlyCTLWYt6AnyoqkYMvEFPQe0SyHB2wcH6Bv0yFKqwuULWxdfaodgpAmk7r+MD0azpxGwHJTXFw8gcNJiKkkvM/lb7QLECDyM5ukWcaYEvqhf5/TLBkl5ttjBZ/vKjwKt7PtPtyxWjd8Wwl1/k13H1YdwDCzV"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/"
 featured: false
 breaking: true
 draft: false

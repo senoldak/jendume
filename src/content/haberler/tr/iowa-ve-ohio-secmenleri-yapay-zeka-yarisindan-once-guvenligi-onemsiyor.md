@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Ön test desteği"
     deger: "%85"
 kaynakIzi: "v1.6fWStHoMjRIOoqvl.diW008csllOX3swjqqqYTkYPvjK58zZAqlDfK/CG8PttZLK+SmuolSNlpNqo27mpRb7z9wr/sRC8Ke2W1eNlu10mYINGAUp7zD9GoZJwxMtJk5AP5C8URJOqcjeM77mUqXNcjIrxeT4I2LR7bVjHsxWPxfUJsSReS1s="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/ai-safety-measures-poll-iowa-ohio-afl-cio-bill"
 featured: false
 breaking: false
 draft: false

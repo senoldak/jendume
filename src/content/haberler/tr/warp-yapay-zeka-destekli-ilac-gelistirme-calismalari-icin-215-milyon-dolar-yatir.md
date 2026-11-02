@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Kuruluş yılı"
     deger: "2026"
 kaynakIzi: "v1.nXnfUWodJJh89JlU.kx5rE3uyks/UX9m79ZaD8PVIHtef0SW4oxU38Q+nOPcNEm5l2wrmsagopcENR37gZc2uuwLac0rGBvRfN74GlAvXWas5BMSwNlN6fnCyA+F4nRxa4AZGmnEywiZqrXUFLlPSWqBOILbQJagfbfj7Xs94dWT1AzncKU4q0sJQrJeRXccT6sVWz6zs5GrI+fqQPMF2pWF91LdGJg9Sy7RnLCJ44p6jhICc"
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/23/yapay-zeka-destekli-ilac-gelistirme-girisimi-warp-215-milyon-dolar-yatirim-aldi/"
 featured: false
 breaking: false
 draft: false

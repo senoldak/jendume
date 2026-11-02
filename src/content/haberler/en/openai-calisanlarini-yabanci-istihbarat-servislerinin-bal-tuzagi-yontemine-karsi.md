@@ -11,6 +11,9 @@ key_points:
   - "OpenAI briefed employees on honey traps and espionage risks."
   - "A covert recording device was found in an OpenAI meeting room; the U.S. Department of Justice has charged a former employee over it."
 kaynakIzi: "v1.atTLLQsTtqb5Vkss.KwFRct3WMFa6iD1CE98yrNr5f59vBLQuoF3eWM8kBTp/lOm0vyOqfVsoGL/g/ZH5Yk5arhaDPZ7mEcZa6cFwmzWia0lhvgjSbTPqkdjklQf4G+bXHjH+vKQolDhk43kwdGYtFohD4ljL+bSfTqwwFTbUVQm5fJ4mRsI="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/openai-calisanlarini-uyardi-size-439528"
 featured: false
 breaking: false
 draft: false

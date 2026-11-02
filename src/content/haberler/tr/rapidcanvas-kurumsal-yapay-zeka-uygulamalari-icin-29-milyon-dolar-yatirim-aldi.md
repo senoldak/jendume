@@ -12,6 +12,11 @@ key_points:
   - "Şirketin toplam yatırımı 52,5 milyon dolara yükseldi"
   - "Yatırım turuna Vertex Ventures SEA & India ve Hitachi Ventures liderlik etti"
 kaynakIzi: "v1.X3edLkoiO+aK8PtS.l+o9kYxNE5VnhZRxJL0GDXXyV3t4OM78pyU/ITCMFvIDh/W5iL2zsudTnV+8KQiCx3fmuecoXVPDDxxSnA5FGlB/xT7hhtko9KWdckeakAnFQmA0zyB8f+Y3mJj8Pz3xGXZ3NS9Rniv+Sa4CdgGtFmydo8+BxCXS4BmAucqNnfRS7f8zjmHexEzOPPe4dc243pscfHRbYLEgksPYs9wm4puJqk1x+9dEotqENbxHlZbVZHJdgT6Oc/cYEbRzCqSTBf5e0mIaenbVxg92Pkcx34i3YkMstJ+kyg=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/rapidcanvas-29m-series-b-enterprise-ai"
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/rapidcanvas-raises-29m-series-b-enterprise-ai-delivery/"
 featured: false
 breaking: false
 draft: false

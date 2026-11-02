@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Pre-seed yatırım"
     deger: "20 milyon dolar"
 kaynakIzi: "v1.2fEcSmqS7I1xsRDl.wcZkZnRO0UFi89bjaZtL0ZXchvvFhDNxd226JNXzpe86PqgJlyhXv0501fMWckVXta/Aip7m7kBAEN6irIwi+UAU7bQJ5ooh/vfOlUHp4mpDV8DYa7WCU25nZuMp6Rvdb4vWoqhuyKRnr7pVo4p/aLLAW5f+dZcE3S+6gWUla44FJMZ9bbIjm1lS2dRy4WBgRgwc3W9+dTCvdwOu2LrY"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/"
 featured: false
 breaking: false
 draft: false

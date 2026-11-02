@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "İncelenen seçmen"
     deger: "3.000'den fazla"
 kaynakIzi: "v1.QeFF2O+7REmpJYcy.nWPlRJ9SzZ4KxbCMJLrIXzyAkM/3fFGbTG/p9AWJeww1kaUv7tbnGQF2JbZJWfz26sodiQlXnYBt1J/nK1hWjBcgHXJ8XqYEw4Uxo9oN57I14haZc1+hEeIQsbF6OKDVI8FlW4S8eAo44X0eqRcQWyknUlA="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/ai-billionaires-elections-backfiring"
 featured: false
 breaking: false
 draft: false

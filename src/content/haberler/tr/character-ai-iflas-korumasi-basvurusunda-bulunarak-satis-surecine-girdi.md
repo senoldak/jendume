@@ -12,6 +12,9 @@ key_points:
   - "Disney yirmi milyon dolarlık lisans teklifiyle ilk alıcı oldu"
   - "Yüksek sunucu maliyetleri ve kârlılık sorunları süreci tetikledi"
 kaynakIzi: "v1.S92/LOO2ByJ8upy7.dtNQu72J2JaZW/xfmvOo0lcfW6xUGNDeu2+tWxPLhJVXvROALb1iYRDr7S6KIOLZdDh0z+WBCDEJxD6cik+Pcvn+4I/oCLgVzcpUtp7qMm4Xw+gCpnMIhuhilgGiATPeRjoTlW0sakmQ4gNKp3movrANf9rQdz7XdTert9PW17R/Xlee+DSe7IixNFSGQwR1oy/9rXUO8TxXgleHyCgkk5TPW/DtwLIvYCzQqoUjVD/DcF1SZJWh/bap5i2JOLns3lq6TnJtN5Vau+4f32gbfZyXVOb9oZVO+BMz9DfA47kM+wpNAMWCjAhcaYDvQGv6ZXtDNWB2bHVxQrYPFmApuR8KOaWl5AsA/IJQFg17e66zEw=="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/character-ai-files-for-bankruptcy-what-happens-to-your-chats-and-ai-companions-now"
 featured: false
 breaking: true
 draft: false

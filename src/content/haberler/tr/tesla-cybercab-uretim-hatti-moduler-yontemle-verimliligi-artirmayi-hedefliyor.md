@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Otomasyon oranı"
     deger: "%78"
 kaynakIzi: "v1.n65arDQfPIzAeXOp.1lsTYn9SgYGwzn1ve4+DxJXYBq4r7ur62ns20rfGWLqCZX3NfZ6kcrzgPoSRc/Whbyu5jXhEz3vakPHuXTryANc3TTWbzgCDz2o3EFEfDJlZPx86yrqbMh2saQiSEb1zh8N88Xw="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/tesla-cybercab-moduler-uretim/"
 featured: false
 breaking: false
 draft: false

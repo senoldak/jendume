@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Model yılı"
     deger: "2027 model"
 kaynakIzi: "v1.ZQ2v7XskyrDT5+uB.elTamPvGvT5YH8qZPUkPSg1KgMv0CQFMuyK1MliPrvUSKc0dYqAdXRaOCur2Xa2ees1e/aaWRqfMM/BGdxXJHisIBytUMOJ7fLG3I0BTJpzO40af3v+kadhZ8pke+yEDeTftFPEk1TojlQ=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/waymo-toyota-bz4x-robotaksi-japonya"
 featured: false
 breaking: false
 draft: false

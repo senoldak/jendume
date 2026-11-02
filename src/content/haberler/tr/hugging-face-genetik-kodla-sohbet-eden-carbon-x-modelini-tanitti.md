@@ -13,6 +13,9 @@ key_points:
   - "Kullanıcıların kendi donanımlarında çalışarak yüksek veri gizliliği sunuyor."
   - "Mutasyon etkilerinin tahmin edilmesinde ve genetik analizlerde kullanılıyor."
 kaynakIzi: "v1.s5yLXTQ70g/FXleu.hDCnjolfz2V0jQo4qWwvFMO9FBtka9EK1lvN7DfaYS9A3+EcAaZ94nUEIVstu6e1AcXaV19/fwAKrN+z8gqYn9XZsPfGDzoAupNqqfK3FBlN7Elj3Lx9y5JaVebIi8U+FTT5KFG1gg=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/hugging-face-carbon-x-dna-modeli"
 featured: false
 breaking: false
 draft: false

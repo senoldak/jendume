@@ -12,6 +12,9 @@ key_points:
   - "RISC-V optimizations deliver a 2-5x speedup in FP32 inference performance."
   - "The community reports 27 million deployments and 2.9 million active users as of October 2026."
 kaynakIzi: "v1.WV7hy8gsErNO1j5d.JqBQBWiznIKQsjGB+qBeC1NTzV24R2diGZYJSMHSSC0LOMGmgWXqovoiDFQ8ZSnP5KOlIHJLU3+jLPljA9Dbw6klVTno96rSG3hDZhqt6yIMvffxQVE/EKVoHPKaYGSQATEdfoDZ+2Z52oxzen1ZGebtY664nbhd0KLmg9lVQoXuVP10DmXxuEjlZsZYWTY6E8TbyMlClP08EprC0r/KNe60z8oByObFJ482K7XhbDFwJ8V4PG0tlbpkAPI="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/15/openkylin-outlines-its-vision-for-reimagining-linux-in-the-ai-era-at-open-source-summit-europe-2026/"
 featured: false
 breaking: false
 draft: false

@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "AI compute"
     deger: "1 petaflop"
 kaynakIzi: "v1.cnb05k0dgDy009uU.DdMCV36wDVPPszNABAsS7GcCBkJEHsd5J6zM1sbMMbw5ciq5SQ1OmWF+wF8kPuucftpIiKiq0Ah8O6LGnu3+7wxNMGQffVaoLJdjzLE1/H341sW8NDYeIJoe3NIBR0XyEGJVb8et6TsC0aWxLjBQ01K0pB62ciAhpI/GQ3LEaFORCO1CO/x7oUTwMrr8ucgZkXH0chU98LasObbieDBwG8TEdwpQhgrEq9Iu0hANqQAV5RuFzBfH1mDdUASGhRmmQCAEetN5WW3SCyCJS+3WbfGu4oBT+UqFqR1prE14P/RFCB8UkI+4FUwtKQtfwyMM4KhQRJnHj+4aci7NESC3LZQFqUSCTrepZm4ugVHnjqV/uSdknJ3n7ivrH6tSmGrWglcZIggfJhWsM6HAZ3wrJJev54MfHoW62+TE8NYl3RT1tSJbOfZOkzfEo4EYC2w6zSAvtJp62zd4bDowCq/tbK6ueArBKDAXkQWlDTQlva4+6R3fzPQSwxqlPZ3c8wecE3+qHEdsu9jRj/3JwKK2kP4N/5cz10JrLaYw7iPDsENkp0QgXPZTplVyRrRWCFQfTO5o1lsglEsl1KCbGQmV4EeiM911yL8obxoYYvIOO69V2wlQicJHx/PsjxAkImi/8YXUgtQaxJgHTNpiq67ieUU0HTVhFHBObBCf5i8b4C8lgrly6rPX6ENZZx4dV4wmpwdv/QHCc5mcpqPYHLIqPnC81VuHQ3ogDWV3AnwWrSRB"
+kaynakAdlari:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/"
 featured: false
 breaking: false
 draft: false

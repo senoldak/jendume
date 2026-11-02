@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Token spending"
     deger: "10 million dollars"
 kaynakIzi: "v1.8sF/nWsUZy2cmhhH.cAwWC+ndjo7NM5GcA0Mnenv7FDNgyQWbpA43W/V5g8NiTSs1eEQy7NKS0B5Q0nn/4rUImP3f5SEiHhalnC5D5BshD1oxI1QL+RYNeGDuc0duyJGPwHs0NUROvy+H2eQwDzKYXxmA7g5aJ8sG/MpkZ0ThRgQlUDhgss5lTaZh"
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/openclaw-steinberger-10m-tokens-cloudflare-connect"
 featured: false
 breaking: false
 draft: false

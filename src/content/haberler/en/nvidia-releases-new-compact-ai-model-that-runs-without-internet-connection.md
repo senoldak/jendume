@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Language support"
     deger: "35 languages"
 kaynakIzi: "v1.RHqEy3w6rEr99V3v.jODQFF7uk54hp9XKUfww2XftbuB5atdpo05mVahqBzMLY5UP5D8H6aPNY+GrF+YINXAQD11cOPFg6O76gBxdiMMt93c/fnvlvHEXP8RTq7jmCtFAyHcsnS8DgNBg1z/By5y35tHC/4gkDqLIecxPzHipnGve7Ny0gqr1BJ6pgVJFfCpydzjOm/kqaCI1WG98kfKC"
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/nvidia-dan-sadece-4-gb-lik-internetsiz-yeni-yapay-zeka-modeli--212057"
 featured: false
 breaking: false
 draft: false

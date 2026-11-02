@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Üretilen veri seti"
     deger: "600'den fazla"
 kaynakIzi: "v1.T/QCygr7P+djgnGg.MS9H0lii//dxNf02+cOnwAIZakFtW0s9lKwkApOQ0HaQJRoFVwtXRcA9AYD/mkeZSnctGCSd8UfsouZKPxYy0wU+9e1pfx2Va9Xh7BBg+i2Sm+T+5awNF6DiVDPwf14gTh26FgpImaxk69N1qE10+fdVXQFdqogLRNn+0uQU/rkx+9cfylTRnhW6wn3MQ9CeE8adnRcm"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/"
 featured: false
 breaking: true
 draft: false

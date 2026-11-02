@@ -17,6 +17,11 @@ rakamlar:
   - etiket: "İşletme sayısı"
     deger: "200.000"
 kaynakIzi: "v1.aabPTsn/SmlX3zB5.h8JZuiNnORgds6H49HK6lPTPE5oykpSqB6wuG4/WlTi92u4zOVom/OXdKLXT2/aiOg0T1z813UPFCApKqlpF3WuY7akXOfH3XVYYmpqEnJ7g0NGvgkZ6xTInKoTtOJBeuTr6ygNyHKCDpHX1xc/x+O7yuaQyuxLWbKhciTSqdNgRkejXukYeUnVl5H26aCDemc6uGbi5ezPyPiOBYRHcOh+N2AdTeNXBemfEh155wDwZ4aFOm7WQ/1tCKCwWrcuiNHCOmj0EXy4u7w0otc0cARTAF+NNOiY/9TW5npR6Ow3meHzAxc5u3zY9KuLBAA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/1password-for-agents-ai-agent-logins"
+  - ad: "The Verge"
+    url: "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in"
 featured: false
 breaking: false
 draft: false

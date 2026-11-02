@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Storage limit"
     deger: "20 GB"
 kaynakIzi: "v1.ih2J4uaP+bxJ6ozO.zl28tGFVxIgLt3OdJzkDDHwDAA2M+Z/rp1JXA16CVd2y4Y3c9JfFr/l4XXX/wrviB/s9ORN2kWaXR83FpnHppi14g2Y86v2r7htIGrDTkUBNb4aGGaMbiRRZ34HXxGEm7HeE+3h9hoGI/DGR6KgWSxNDYBtYI0YXLwwohGBc"
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/"
 featured: false
 breaking: false
 draft: false

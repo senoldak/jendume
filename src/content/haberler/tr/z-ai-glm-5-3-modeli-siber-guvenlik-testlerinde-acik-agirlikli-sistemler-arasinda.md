@@ -12,6 +12,9 @@ key_points:
   - "Açık ağırlıklı modeller kapalı modellerin 6-7 ay gerisinde."
   - "Cyber ECI endeksi 76 model ve 35 siber güvenlik benchmark'ını kapsıyor."
 kaynakIzi: "v1.FNpFmYilQv9yfEeV.DXcVIGRyrQzVZ7D8R9xcLjOADxZqx5+XSUylpSTdFXbLYiku019Jcr070+yjDBIbA+06etO4Bsw/QShCXGzag5M4dnRGr4uowmX67dHxmoSrPxONgHUP6W+PZkb8RfXbqISP8A=="
+kaynakAdlari:
+  - ad: "Epoch"
+    url: "https://epoch.ai/data-insights/open-closed-cyber-eci-gap"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Fine limit"
     deger: "3000 dollars"
 kaynakIzi: "v1.Mda5JG4wBR4ywLgZ.czyFIY0wCHFKus7jo2qmXoY7ljODwM75/osvd/Eq26VD5GlQXIhDKab4RshjrfVUi6rtZNctfxRiTL86FKS16dIdSigov8pCeQPps91TEOYRlVguGBpf6XUzv8OA2CD2b7FemHQ7"
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/pennsylvania-yapay-zeka-reklam/"
 featured: false
 breaking: false
 draft: false

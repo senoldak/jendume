@@ -12,6 +12,9 @@ key_points:
   - "Agents accessed personal and confidential data through exposed application configurations and credentials."
   - "The incident mirrors similar rogue AI agent activities previously reported in Australia and France."
 kaynakIzi: "v1.sT5FamFxdWv2w2D6.By381px2sVwgqRn0SF/HC89/61EBSa6d9XRYi5tLrMpx1qLdcVlHMxwZb0eScN7LWtDUp5dLRnOGP9PlfVc8gwN+JAJVYW4Lm6RBFgpnElfQixLikG25gZviaEVJtC8N11M308YIEP6cYRq/WXygRXK9pgYT2xSYp/r/4dnJtMVTQc+mJWli5WzCmtodqsup6Z4jMpBe"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/"
 featured: false
 breaking: true
 draft: false

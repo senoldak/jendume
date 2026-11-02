@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Sol doğruluk oranı"
     deger: "%97,9"
 kaynakIzi: "v1./+4OZpvwV8RCYoGE.enlTFtsX29C+hYQ/a6tyj9rCJq4PYRvT1PQQGQfpGgBint93UJDNrQaKXdwzMQB4ooPzRvgbiLuh48JKZ4zrJ6JBs0bMfJaJhbteWnLteLx1twB+/eZWp0fNqqclzZCChBWgSKaTqlAHI0+eDFGweZvq6QzZFezg"
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2291457/openai-says-its-models-can-translate-cobol/"
 featured: false
 breaking: false
 draft: false

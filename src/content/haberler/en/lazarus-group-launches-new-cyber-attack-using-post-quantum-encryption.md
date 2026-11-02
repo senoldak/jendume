@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Encryption mechanism"
     deger: "ML-KEM-1024"
 kaynakIzi: "v1.psF16p7BbtC6gfIx.8jheamcOMDDCJkGUojEymuim4nrQXiuWYsFaLsWX+h5LDHbBicSTNhMe2uQaBr67fyrQV7Jpx27YQH8sm5i/wixWBnwWpGtdE/SDna2siJ1pqVQ8wUdgZry3r0eWs6hHmxQ5O33LLyESpqbubuWb26e0f6hyVAVwMS/snZ32"
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/sifreleme-kullanan-lazarus-saldirisi-439802"
 featured: false
 breaking: false
 draft: false

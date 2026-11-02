@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Backlog orders"
     deger: "$95 billion"
 kaynakIzi: "v1.UYTqOi+H9IooLt3Y.dTuDo819LzvnF5kZwufd1oJmlRLzgYSa7FTmBUDlPsM2RuNHh2CfdrCpkrYQBYQh9CkuuZhULa9++LYR1fsVwmSh4Whw8FmCPzl6Tdsxrn5QCIztDoHNzguSI/6W3HKnC7ZtyZjlSjI="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/michael-dell-bellek-kitligi-2027/"
 featured: false
 breaking: false
 draft: false

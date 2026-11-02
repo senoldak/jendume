@@ -12,6 +12,9 @@ key_points:
   - "Şirket, Ekim 2026'da 1,5 milyar dolar değerlemeyle 250 milyon dolarlık B serisi yatırım turunu tamamladı."
   - "AMD Ventures yatırımcılar arasında yer alırken, yazılım AMD'nin donanım platformları üzerinde çalışıyor."
 kaynakIzi: "v1.SZgg0gbTQvegD1Rb.HtuLxQw4Rfxqk0LGtgT/b2+HmaK/+GRvMg8//0E6fQWrBuwxf5KTqPvNtdN6pF5UAwjURQPmlfTSV3H0Okbtynd+/Jwhr0ejoANrd0hZoRL+Thf7Y9CFXHeajlR4YHpafViji4Rkydl0mjwuEBs689qWzNwfwo1lBtiozuvpYxx46qTa4/cX1rH2rJsDTQ=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/15/simulation-vinci-physics-driven-ai-thecube-semiconwest/"
 featured: false
 breaking: false
 draft: false

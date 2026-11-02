@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "XSS açığı"
     deger: "500'den fazla"
 kaynakIzi: "v1.Vmbz+04VtggwQ+fV.EGdcEtnSW0jXCa1foSdRlCpkQSEGisXwZ/z1a1OhtDxcQjM2ntPepqVsmK0FbLxzuebwxbwuJi8c5eNlw1bUajQWFyqTc6ViIE5SNSBula5IOyzcGpQFj3KO4l73hT8rTQIvE8bVnEqCTZYlp2vrpn/ohrSIWYA20bPRjXVtUN6CiVLGKEqcnJeNy2KsyGBm2TE/aCNW53u0TlUwLciDjTvagC3sCF3BZu/Y5ci2zSEZnKfy0vG1fQEcu51oczC9IpXvyR12NWgD3loR+lMY1UfF"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/google-pagebreak-security-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

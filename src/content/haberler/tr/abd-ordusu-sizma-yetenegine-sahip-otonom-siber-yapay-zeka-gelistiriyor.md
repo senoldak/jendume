@@ -12,6 +12,9 @@ key_points:
   - "Sistemin izole sistemlere sızabilmesi ve kendini imha etmesi planlanıyor"
   - "Uzmanlar insani yargıdan yoksun siber silahların risklerine karşı uyarıyor"
 kaynakIzi: "v1.BkHISxjCSIh1nJF6.LrIxngE4NUDbELZWagykfBptC5KMCiMZRru0F0gh5MofqmX3fhAqZYLxE8hkvEeHIun9sgji9PBo6i7yk8awFO7kDoa6I4WFoi2ljlXNZ80oP7Sg8H/imu8nMgB2iJcVmQ8nD34Ui0HLOPFEfCtCrZWGD5e2g/BVAuKOaygPTncXcAbRUDPhesBspNXygWFVuoGH/YAHDZoO7N6EoskBj6zroG9mIV0="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/abd-ordusu-inanmasi-guc-bir-yapay-zeka-ozelligini-kullanacak-cok-tartisma-yaratabilir-h227602.html"
 featured: false
 breaking: true
 draft: false

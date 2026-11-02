@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "Carbon emissions"
     deger: "50%"
 kaynakIzi: "v1.gRZ7X7Ol16B8lJpy.aswQ1sZoOGSnu9lzmESBe6D2PNj7Ur5eER1IcJsk3tYOcvTnvxbvIt4/7XhFq/bwWj/JSbRWrxaR4nggNnp+Wd6AnHE8xCkQnrSK5C8VVsX2iPYt5tMS9M7S1/YcgfFm5+ke/5swZAvdiE+Q62g6a1WfDfSwAJDCGMw+ECGUVsB3eQBfkKA6Gdi4qKnAhg/Zpb+lA/C5Fsnq8OwTOeQml//PLbLUo2uAGVdh1Vp19puyaMht+qyU"
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/22/ai2-releases-olmoearth-v1-3-state-of-the-art-ai-ready-satellite-embeddings-for-the-whole-planet/"
 featured: false
 breaking: false
 draft: false

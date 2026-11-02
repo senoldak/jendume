@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "İmza sayısı"
     deger: "93.000"
 kaynakIzi: "v1.CUBPeEk3zqF3lP+R.fBZeNO7Iyk7TMO1131rG1bwD5wjCYOKZ0jNP14FRnlI8JBi6DAHLzGAp76iFj2fYdoOFcYIqzXXhXyM2wXK5qIki37PMj744F6wMOofe3ZuQU78n28vyw8Cn9A2N4MMPCcY0Y6nBYvw5yB7M5r/xeYjh70YA/oMayXl3jTGzHMKcgPcvKx8H9ng2paTrW6/OaeZ8iTKTOyIVFjnmnQ=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/environment/ng-interactive/2026/oct/22/finland-google-felling-trees-datacentre"
 featured: false
 breaking: false
 draft: false

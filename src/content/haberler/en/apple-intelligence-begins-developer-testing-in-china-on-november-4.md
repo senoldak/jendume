@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "OS version"
     deger: "iOS 27.3"
 kaynakIzi: "v1.6y6e3D8g00bkf8Te.yEMn4OiwSFzCQQPMUjZJX4pdkoeJqkGYJ7dp3yQVF3h0gXAAiF4A5NZSz6vWH3VYRLOdwezzQ/r6i5rdRx90FZQSGcCqDLmdOMo/4Nn6agCINKCwJMA/dzZ5Fk1q+a1CK1DMTmBTvzdwJBaqKM2bNw=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-intelligence-cin-de-teste-aciliyor/"
 featured: false
 breaking: false
 draft: false

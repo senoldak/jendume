@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Input price"
     deger: "15 cents"
 kaynakIzi: "v1.gDFiaCc3zy/u1xpY.NmMeHS1UZ6CtFl3zmSI0dG4nMF7N0qRe5gW4xNgD/5FGEYlJ/6rNVxe4IhcLifx6SpNIyrP+7Qg5rfUrW7pNSG89y1VmO9DzZsCSwGRfXD2TdHPWMriIWLSj/xFgxIdqv9NRaYXORD0x+Yr4MD/Eq9tbHyt0UqhFRWAgYn/OYrlRptu9GV0IbLLCk7gUQQzXNUUptlJyc6yMj+w="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/19/minimax-launches-m3-1-flash-model-says-it-cuts-ai-agent-costs-by-70/"
 featured: false
 breaking: false
 draft: false

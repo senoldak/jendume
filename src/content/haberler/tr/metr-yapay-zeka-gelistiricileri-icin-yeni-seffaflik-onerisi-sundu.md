@@ -12,6 +12,9 @@ key_points:
   - "Öneri; hizalama, sistem kontrolü ve Ar-Ge hızlanması gibi kritik boşlukları hedefliyor."
   - "Kuruluş daha önce Anthropic, Google, Meta ve OpenAI ile pilot risk raporları hazırlamıştı."
 kaynakIzi: "v1.JYHqc/9e8En2zfeX.YOBa2Aygw+Ng3fdfIyDP8anYHQCB6yptwKzVoZaNIIPBGhTf4L/2ZCGZQQWLNudV0i0yzJCsLefB+Lp34G8bMcaPRxM0dE+RvEJaKJYN8YeBohID6Dg6NITMUPOtHbHYuCiv+xM7+Jb1SEN06LVLE9UE0x8Ps+ROjievld2qwV4G"
+kaynakAdlari:
+  - ad: "METR"
+    url: "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/"
 featured: false
 breaking: false
 draft: false

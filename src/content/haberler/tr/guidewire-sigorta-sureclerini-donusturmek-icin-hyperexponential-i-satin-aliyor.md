@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Toplam değer"
     deger: "2,1 milyar dolar"
 kaynakIzi: "v1.RKEwseCYsK4HI8Gf.vfPgXYjUE2GLTLdxlGkfnpSvlp9eVJCYgA8bstxQhM1OMt+t4y1+xlMHPfTdNhWrIdzlZAmBA9sBM/EKq16Y+H9VXPkcIY8jdxry4wiJGx0VvSQdBlzslNhl0/XK5liJMCisoQKIRf4d98H5ZkGjbnzRhDZ4l84dhgXWGKxl0jbmkurcR2xV+o4xgXPZrAFPRdSnf/JKt9MTjVDDtonBFHXsX/60mw=="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/28/guidewire-yapay-zeka-girisimi-hyperexponentiali-17-milyar-dolara-satin-aliyor/"
 featured: false
 breaking: true
 draft: false

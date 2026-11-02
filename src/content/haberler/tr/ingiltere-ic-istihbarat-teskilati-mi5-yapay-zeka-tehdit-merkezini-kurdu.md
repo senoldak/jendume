@@ -12,6 +12,9 @@ key_points:
   - "Parlamentoda yapılan oturumda önde gelen yapay zekâ şirketleri dinlendi."
   - "Güvenlik endişeleri nedeniyle bazı yapay zekâ modellerinin yayınlanması ertelendi."
 kaynakIzi: "v1.1RBr7DrIzK3cXR6R.wGuOKo6mrdkDOpGSXlAhOPSyec/NpvcMHPWMjZkS+a2NOfpK9BBcUxbpavXqniycu+xxc9HuhffSy7qC2+6VdhZz4/xDn1MH2YUH1leZw/Rl+jYQHKBERGVJPgmgevsQXvqjFgu27qS/zPlWgiAunVCnwRMZIQ=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/mi5-ai-threat-assessment-centre-openai-mps"
 featured: false
 breaking: true
 draft: false

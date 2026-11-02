@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Burs ödemesi"
     deger: "100.000 - 167.000 dolar"
 kaynakIzi: "v1.tFxDd1m1aXEGEOFc.znCY6hw3Ni6j0tKn7Vdn/oVJP+nJis7fZsvZpqD0PP/9vQQY8BLmmX6OyTU6GOhPUOf0Kk9mGbc+g8JP9XYthpRV7jri/NtlueuiTxvb3HLRwggafIyS5YL3XC9CSEDiGsPb0JqYgVb2msYmh/3UNs9alqh3Sj02PVflHEli3rX5OaBSus/J78Mu1vURxns7Br6HWWpIUguv/xJLCa48wjJq3Uw26o8="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/"
 featured: false
 breaking: false
 draft: false

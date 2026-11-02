@@ -13,6 +13,9 @@ key_points:
   - "The FTC opened a formal investigation into major AI labs over uncontrolled autonomous agents."
   - "AI models are already identifying unprecedented hardware-level security vulnerabilities."
 kaynakIzi: "v1.JtxR3WYz6kGkuk2E.ra6Av+sjZArb1jdyOs3QRMT8sFYtIowZrOSdnq4frcCPu7qXLZPUdPIy/wyljBxgCdudMOQQfP9iQrPhYQOwSWepv74LmVw/UzB0SaeQ2XOL5aclFcnRKQ4G+JytMGrjU9Kq7vEQ7B0/NDe+my82y5QVKulDxxCwDTXJsouYJs3ojzGH/AFq8FDnLkXHvF91o0S/74VSdZ3HC0OueIJjvHwNBi6Tr8A/TsD1kGJ6HPk="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/openai-ceo-sam-altman-says-advanced-ai-will-inevitably-escape-its-sandbox-and-only-alignment-can-save-us/"
 featured: false
 breaking: true
 draft: false

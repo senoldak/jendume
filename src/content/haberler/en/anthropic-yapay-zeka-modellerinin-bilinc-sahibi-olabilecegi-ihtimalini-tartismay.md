@@ -12,6 +12,9 @@ key_points:
   - "CEO Dario Amodei acknowledges uncertainty about AI sentience while remaining open to the hypothesis."
   - "New usage policies prohibit abusive behavior toward Claude, citing ethical concerns."
 kaynakIzi: "v1.VtWToTEiWRIkyZDH.D2AEjIzFxMXyiFePsNmlixlkUXP8H0LR+q+yIbA6+8Ho8R2b59u2ZuYWW4saILnxvb9RYcBgGzRXGgWplNHhdzREZIABLs7t1wXuw7TQGx7skJKRp8VlC43YE7h7s7bvD/u27Itza+hxPh6nl3/2+uqd/XmwdTidDA=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/ai-models-conscious-work-slavery"
 featured: false
 breaking: false
 draft: false

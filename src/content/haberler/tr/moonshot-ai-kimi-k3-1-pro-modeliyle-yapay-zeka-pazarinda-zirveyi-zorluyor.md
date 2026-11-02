@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Çıktı maliyeti"
     deger: "10 dolar"
 kaynakIzi: "v1.Xlv9tHqSSCfjX9+6.IV+kNIU/ZtOBtWUCTTRQ4u/qJv0N8rxptBVDZIO7h3VeGYofgXZEVSUFJvIZgcpLpjRdwQNVZiiaI2aSwUFeJEY5H/W1j2jnFB5A4QqbhuXRXxrx6N2iivi/2i9zBZo4mna0w4zwZ5cvFW5mQoslsPbmVbSKnrAOnYZijDt+K3BYcX59Dj4ii5ll0jvfqW4KwH8="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
 featured: false
 breaking: false
 draft: false

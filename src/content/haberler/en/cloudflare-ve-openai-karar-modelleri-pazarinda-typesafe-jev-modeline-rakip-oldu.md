@@ -12,6 +12,9 @@ key_points:
   - "Cloudflare and OpenAI introduced competing decision APIs with specialized features."
   - "Decision models focus on returning direct scores and labels rather than generating text."
 kaynakIzi: "v1.Gxzik0XjZx6fNEXO.lLFvdutXs5kPNMUa1KqRESOYOc4QEh3FXop8KXHnL3X6086SWYR0hFJQxSWNkXGq1sZ26iRTSAoQTk0ydDEIxg49dIY/DTFgXpjYVYAQ4OgdEwOothjHAzI5YUr9vpeB2zj8OyLPKJ3kRehpjH012un65ySvo/xFZJFFitCQm4zGqGivBKTWus4Op57s+i5/LzGi+0t7jv9sT5U="
+kaynakAdlari:
+  - ad: "MarkTechPost"
+    url: "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/"
 featured: false
 breaking: true
 draft: false

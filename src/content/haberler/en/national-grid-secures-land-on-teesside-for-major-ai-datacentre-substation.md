@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Capacity"
     deger: "3.2 gigawatts"
 kaynakIzi: "v1.r/AgptRLn676Mh4s.le+/ruiTXstpN0mJG4D9oHYL4JCGQHIwkpwbDlQGIRw2xlB2SE1UOJ3n7A5KWLcH2rqWEjj4xZtJAPNihe8BlYiy7d8rtuA71JUYjWsHaWtz7y/vImdZgWgKg2UXiwWDDLMd8zTkk703oF6tbBF+emXPOREl0/qTKqhHNoZyE08NpuJcFO1TsPnH2gw1pZzoXUa0+pYDygjsezniYcqvKeEla/JWILLFa9noW9oneOoo+zw="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre"
 featured: false
 breaking: false
 draft: false
