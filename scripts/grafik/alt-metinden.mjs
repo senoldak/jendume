@@ -338,7 +338,7 @@ function main() {
     const hedef = path.join(VERI, r.yazi, `${r.graf}.json`);
     const metin = jsonMetni(s.veri);
     if (kontrol) {
-      if (!existsSync(hedef) || readFileSync(hedef, 'utf8') !== metin) farkli++;
+      if (!existsSync(hedef) || readFileSync(hedef, 'utf8').replace(/\r\n/g, '\n') !== metin) farkli++;
       continue;
     }
     mkdirSync(path.dirname(hedef), { recursive: true });

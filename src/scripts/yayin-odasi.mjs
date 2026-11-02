@@ -197,7 +197,7 @@ const JOB = {
   hukuk: ["Yayından önce hukuki riske bakar.", "Looks at legal risk before publication."],
   kapak: ["Yazının kapağını çizer.", "Draws the cover for the piece."],
   yayin: ["Her şeyi toplar ve yazıyı yayına hazırlar.", "Pulls everything together and prepares the piece for publication."],
-  senol: ["Kendi yazılarını kendisi yazar. Yapay zekâ yalnızca çeviri ve dil düzeltmesi yapar.", "Writes his own pieces. AI only translates and edits language."],
+  senol: ["Kendi yazılarını kendisi yazar. Yapay zekâ yalnızca çeviri ve dil düzeltmesi yapar.", "Writes the pieces under this name. AI only translates and edits the language."],
   cem: ["Şenol Dak’ın yazılarını öteki dile çevirir. İçerik Şenol Dak’a aittir.", "Translates Şenol Dak’s pieces into the other language. The content is Şenol Dak’s."],
   mina: ["Şenol Dak’ın yazılarının dilini düzeltir. İçeriğe dokunmaz.", "Corrects the language of Şenol Dak’s pieces. Does not touch the content."],
   kerem: ["Sunucuları ve otomatik adımları çalışır tutar.", "Keeps the servers and automated steps running."],
@@ -205,7 +205,7 @@ const JOB = {
 };
 const REP = {
   ada: [["Akışlar taranıyor …", "Yeni bir haber!", "Üç yeni haber."], ["Scanning the feeds …", "A new story!", "Three new stories."]],
-  kaan: [["Puanlıyorum …", "Değeri düşük. Çöpe.", "Bunu yazmıştık."], ["Scoring it …", "Low value. Bin.", "We have this already."]],
+  kaan: [["Puanlıyorum …", "Değeri düşük. Çöpe.", "Bunu yazmıştık."], ["Scoring it …", "Low value. Bin.", "We already have this."]],
   elif: [["Giriş cümlesini yazıyorum …", "Başlık oturdu!"], ["Writing the lead …", "The headline works!"]],
   selin: [["Rakam kaynakla aynı.", "Tarihi kontrol ediyorum …"], ["The figure matches the source.", "Checking the date …"]],
   mert: [["Düzeltme turu başladı.", "Bir daha okuyorum …", "Zzz …"], ["Correction round started.", "Reading it once more …", "Zzz …"]],
@@ -369,7 +369,7 @@ async function lever(fra, til, tekst, svar) {
 const KJEDE = ['konu', 'arastirma', 'yazim', 'dogrulama', 'grafik', 'redaksiyon', 'dil', 'hukuk', 'kapak', 'yayin'];
 const REPLIKK = {
   konu: [t('Yeni bir konu var!', 'There is a new topic!'), t('Rakamları toplarım.', 'I will gather the figures.')],
-  arastirma: [t('Kaynaklar burada.', 'Here are the sources.'), t('Sağ ol!', 'Thanks!')],
+  arastirma: [t('Kaynaklar burada.', 'Here are the sources.'), t('Sağ olun!', 'Thanks!')],
   yazim: [t('Taslak hazır!', 'The draft is ready!'), t('Her rakamı kontrol ederim.', 'I will check every figure.')],
   dogrulama: [t('Rakamlar tutuyor.', 'The figures hold up.'), t('Grafiği çiziyorum.', 'Drawing the chart.')],
   grafik: [t('Grafik hazır.', 'The chart is ready.'), t('Metni sıkılaştırıyorum.', 'Tightening the text.')],
@@ -409,11 +409,11 @@ function ring() {
 async function forfatter() {
   while (true) {
     await vent(4000);
-    await lever(by.senol, by.cem, t('Yeni yazı. Çevir lütfen!', 'A new piece. Please translate!'), t('Çeviriyorum …', 'Translating …'));
+    await lever(by.senol, by.cem, t('Yeni yazı. Lütfen çevirin!', 'A new piece. Please translate!'), t('Çeviriyorum …', 'Translating …'));
     await vent(2500);
     await lever(by.cem, by.mina, t('Çevrildi.', 'Translated.'), t('Dile bakıyorum …', 'Checking the language …'));
     await vent(2500);
-    await lever(by.mina, by.senol, t('Bitti. İçerik senin.', 'Done. The content is yours.'), t('Sağ ol!', 'Thanks!'));
+    await lever(by.mina, by.senol, t('Bitti. İçerik sizin.', 'Done. The content is yours.'), t('Sağ olun!', 'Thanks!'));
     await vent(6000);
   }
 }
@@ -457,15 +457,15 @@ const bord = (a) => [a.x + 0.4, a.y + 0.5];
 // Elenme gerekçeleri: kodlar src/lib/yayin-odasi.mjs ELENME_METNI ile aynı. Ağırlık botun son 7 kayıtlı gününden; kayıt yoksa eşit olasılık (temsilî).
 const GRUNNER = {
   'dusuk-haber-degeri': { sat: t('Değeri düşük. Çöpe.', 'Low value. Bin.'), ev: 'kaan' },
-  'kapsam-disi': { sat: t('Konu dışı. Çöpe.', 'Off topic. Bin.'), ev: 'kaan' },
-  'daha-once-yazildi': { sat: t('Bunu yazmıştık.', 'We have this already.'), ev: 'kaan' },
+  'kapsam-disi': { sat: t('Yapay zekâyla ilgisi yok. Çöpe.', 'Not about AI. Bin.'), ev: 'kaan' },
+  'daha-once-yazildi': { sat: t('Bunu yazmıştık.', 'We already have this.'), ev: 'kaan' },
   'kaynak-yetersiz': { sat: t('Kaynak metni yetersiz.', 'Too little source text.'), ev: 'kaan' },
   bayat: { sat: t('Eskimiş haber.', 'Too old.'), ev: 'kaan' },
   'kaynak-cikarildi': { sat: t('Kaynak listeden çıktı.', 'Source left the list.'), ev: 'kaan' },
   'kisa-es-yok': { sat: t('Kısa, eşi yok.', 'Short, no companion.'), ev: 'kaan' },
   diger: { sat: t('Başka bir sebep.', 'Another reason.'), ev: 'kaan' },
   yazilamadi: { sat: t('Yazamadım. Olmadı.', 'Could not write it.'), ev: 'elif' },
-  'denetimde-durdu': { sat: t('Denetimde durdu. Dur!', 'Failed the check. Stop!'), ev: 'selin' },
+  'denetimde-durdu': { sat: t('Denetimden geçmedi. Durun!', 'Failed the check. Stop!'), ev: 'selin' },
   standart: { sat: t('Kurallara takıldı. Dışarı!', 'Broke the rules. Out!'), ev: 'selin' },
 };
 function trekkGrunn() {
@@ -577,7 +577,7 @@ async function serverbrann() {
 }
 async function strombrudd() {
   const mork = el('rect', { x: 0, y: 0, width: 1820, height: 1200, fill: INK, opacity: 0.6 }, effekt);
-  rop(5, t(['Elektrik kesildi!', 'Işığı kim kapattı?', 'Hiçbir şey görmüyorum!', 'Kaydettin mi?'], ['Power cut!', 'Who turned off the light?', 'I cannot see a thing!', 'Did you save?']));
+  rop(5, t(['Elektrik kesildi!', 'Işığı kim kapattı?', 'Hiçbir şey görmüyorum!', 'Kaydettiniz mi?'], ['Power cut!', 'Who turned off the light?', 'I cannot see a thing!', 'Did you save?']));
   await hent(by.aylin);
   const r = tilServer(by.aylin, [3.4, 4.25]);
   const f = await gaaRute(by.aylin, r, false, 0.5);
@@ -617,7 +617,7 @@ async function kaffekrise() {
   const f = await gaaRute(by.kerem, r, false, 0.6);
   snakk(by.kerem, t('Hallediyorum …', 'On it …'), 1300); await vent(1500);
   tom.remove(); snakk(by.kerem, t('Kahve yine var!', 'Coffee again!'), 1500);
-  folk.forEach((a, i) => setTimeout(() => snakk(a, t('Sağ ol!!', 'Thanks!!'), 1200), 300 + i * 250));
+  folk.forEach((a, i) => setTimeout(() => snakk(a, t('Sağ olun!!', 'Thanks!!'), 1200), 300 + i * 250));
   await vent(1600); f(); turer.forEach((t) => t());
   await Promise.all([...folk.map(async (a, i) => (await gaaRute(a, [...[...a.ut, [MOLA[0] + i * 0.5, HALL], [MOLA[0] + i * 0.5, MOLA[1] + (i % 2) * 0.9]]].reverse(), false))()), (async () => (await gaaRute(by.kerem, [...r].reverse(), false))())()]);
   fri(...folk, by.kerem);

@@ -28,10 +28,10 @@ test('adımlar: her ajan kayıtlı, sahip yazısında ilk adım insan', () => {
 });
 
 test('haber değeri yalnız kayıtlıysa söylenir', () => {
-  assert.match(adimlar(resmi)[1].metin.tr, /100 üzerinden 82/);
+  assert.match(adimlar(resmi)[1].metin.tr, /100 üzerinden 82 puan/);
   assert.doesNotMatch(adimlar(medya)[1].metin.tr, /\d+ olarak/);
   assert.deepEqual(olguSatiri(resmi, 'tr'), ['Resmî kaynaktan', 'Haber değeri 82/100']);
-  assert.deepEqual(olguSatiri(medya, 'en'), ['From news reports']);
+  assert.deepEqual(olguSatiri(medya, 'en'), ['From news outlets']);
   assert.match(adimlar(resmi)[0].metin.tr, /Avrupa Komisyonu/);
 });
 
@@ -41,7 +41,7 @@ test('kart metinleri: bot haberi insan okumadı, sahip yazısı okundu; ajanlar�
   assert.match(kartMetinleri(medya, 'tr').kisa, /^Yedi yapay zekâ ajanı/);
   assert.match(kartMetinleri(medya, 'tr').not, /insan değil/);
   assert.match(kartMetinleri(medya, 'en').not, /not people/);
-  assert.equal(kartMetinleri(sahip, 'tr').not, 'Cem ve Mina, otomatik adımların adıdır; insan değil.');
+  assert.equal(kartMetinleri(sahip, 'tr').not, 'Cem ve Mina otomatik adımların adıdır, insan değildir.');
 });
 
 test('kaynak adı olan haberde kart kaynağı adıyla ve sayısıyla söyler', () => {

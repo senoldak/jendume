@@ -48,7 +48,7 @@ const oteki = lang === 'en' ? 'tr' : 'en';
       </summary>
       <div class="icerik">
         <p class="olgu-acik">
-          {okunmadi && <span class="nei">{t('Yayından önce hiçbir insan okumadı', 'No human read it before publication')}</span>}
+          {okunmadi && <span class="nei">{t('Yayından önce hiçbir insan okumadı', 'No person read it before publication')}</span>}
           <span>{t('Yayımlandı', 'Published')} {zaman(yayin)}</span>
           <span>{guncelleme ? `${t('Güncellendi', 'Updated')} ${zaman(guncelleme)}` : t('Değişiklik yok', 'No changes')}</span>
         </p>
@@ -77,7 +77,7 @@ const oteki = lang === 'en' ? 'tr' : 'en';
         <a class="hn-odaya" href={yayinOdasiYolu(lang)}>
           <span>
             <b>{t('YAYIN ODASINA GİR', 'ENTER THE NEWSROOM')}</b>
-            <span>{t('Ada, Kaan ve ekibin geri kalanını iş başında gör.', 'See Ada, Kaan and the rest of the team at work.')}</span>
+            <span>{t('Ada, Kaan ve ekibin geri kalanını iş başında görün.', 'See Ada, Kaan and the rest of the team at work.')}</span>
           </span>
           <span class="pil" aria-hidden="true">→</span>
         </a>

@@ -1,4 +1,4 @@
-// Haber sayfası araçları: yazı boyu, dinle, paylaş, sözlük kartı ve "Bu haber işine yaradı mı?". tidsrost leseverktoy.ts'in eşi.
+// Haber sayfası araçları: yazı boyu, dinle, paylaş, sözlük kartı ve "Bu haber işinize yaradı mı?". tidsrost leseverktoy.ts'in eşi.
 // Tarayıcı deposu yalnız okurun kendi tercihi için (yazı boyu, verilmiş oy); erişilemezse sayfa yine çalışır.
 const oku = (k: string) => {
   try {
@@ -96,7 +96,7 @@ document.querySelectorAll<HTMLAnchorElement>('.prose a.term-link').forEach((a, i
   });
 });
 
-// "Bu haber işine yaradı mı?": tek oy; yalnız gün + haber + cevap sayılır.
+// "Bu haber işinize yaradı mı?": tek oy; yalnız gün + haber + cevap sayılır.
 const yarar = document.querySelector<HTMLElement>('[data-yarar-kimlik]');
 if (yarar) {
   const kimlik = yarar.dataset.yararKimlik ?? '';

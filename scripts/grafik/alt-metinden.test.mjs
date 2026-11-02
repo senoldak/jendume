@@ -74,7 +74,8 @@ test('her resim için src/data/grafik JSON var, alt metinden yeniden üretilince
     assert.ok(!s.hata, `${ad}: ${s.hata}`);
     const dosya = path.join(VERI, r.yazi, `${r.graf}.json`);
     assert.ok(existsSync(dosya), `${ad}: JSON yok (node scripts/grafik/alt-metinden.mjs)`);
-    assert.equal(readFileSync(dosya, 'utf8'), jsonMetni(s.veri), `${ad}: JSON alt metinle uyuşmuyor, betiği yeniden çalıştırın`);
+    // Windows'ta git satır sonlarını CRLF'e çevirebilir (core.autocrlf); içerik karşılaştırılır.
+    assert.equal(readFileSync(dosya, 'utf8').replace(/\r\n/g, '\n'), jsonMetni(s.veri), `${ad}: JSON alt metinle uyuşmuyor, betiği yeniden çalıştırın`);
     assert.deepEqual(validerGraf(s.veri), [], ad);
     assert.equal(s.veri.dil, r.dil, ad);
   }

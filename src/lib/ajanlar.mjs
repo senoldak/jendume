@@ -52,7 +52,7 @@ export function adimlar(veri) {
   if (tur === 'sahip') {
     return [
       adim('senol', 'Konuyu, veriyi ve bakış açısını seçti, yazıyı yazdı, bütün hesaplamaları yaptı.', 'Chose the topic, data and angle, wrote the piece and did all the calculations.'),
-      adim('cem', 'Öteki dildeki metni hazırladı.', 'Prepared the text in the other language.'),
+      adim('cem', 'Metni öteki dile çevirdi.', 'Translated the text into the other language.'),
       adim('mina', 'İmla ve dili düzeltti; içeriğe dokunmadı.', 'Corrected spelling and language without changing the content.'),
     ];
   }
@@ -74,20 +74,20 @@ export function adimlar(veri) {
     const resmi = tur === 'bot-resmi';
     const ilk = veri.kaynaklar?.[0]?.ad;
     const deger = degerVar(veri)
-      ? adim('kaan', `Haber değerini 100 üzerinden ${veri.haberDegeri} olarak puanladı. 70'in altındaki haberler yazılmaz.`, `Scored its news value at ${veri.haberDegeri} out of 100. Stories below 70 are not written.`)
-      : adim('kaan', 'Haberin yeterince önemli olup olmadığına baktı. 70/100 altındaki haberler yazılmaz.', 'Checked whether the story mattered enough. Stories below 70/100 are not written.');
+      ? adim('kaan', `Haber değerine 100 üzerinden ${veri.haberDegeri} puan verdi. 70'in altındaki haberler yazılmaz.`, `Gave it a news value of ${veri.haberDegeri} out of 100. Stories below 70 are not written.`)
+      : adim('kaan', 'Haberin yazılacak kadar önemli olup olmadığına baktı. 70/100\'ün altındaki haberler yazılmaz.', 'Checked whether the story mattered enough to write. Stories below 70/100 are not written.');
     return [
       resmi
-        ? adim('ada', ilk ? `Duyuruyu ${ilk} kaynağında buldu.` : 'Duyuruyu resmî bir kaynakta buldu.', ilk ? `Found the announcement at ${ilk}.` : 'Found the announcement at an official source.')
+        ? adim('ada', ilk ? `Duyuruyu ${ilk} sitesinde buldu.` : 'Duyuruyu resmî bir kaynakta buldu.', ilk ? `Found the announcement on the ${ilk} website.` : 'Found the announcement at an official source.')
         : medyaAdlari(veri).length === 1
           ? adim('ada', `Haberi ${medyaAdlari(veri)[0]} haberinde buldu.`, `Found the story in a report by ${medyaAdlari(veri)[0]}.`)
           : medyaAdlari(veri).length > 1
-            ? adim('ada', `Haberi ${medyaAdlari(veri).length} yayının haberlerinde buldu.`, `Found the story in reports by ${medyaAdlari(veri).length} outlets.`)
+            ? adim('ada', `Haberi ${medyaAdlari(veri).length} yayında buldu.`, `Found the story in reports by ${medyaAdlari(veri).length} outlets.`)
             : adim('ada', 'Haberi kaynak listesindeki yayınlarda buldu.', 'Found the story in the outlets on our source list.'),
       deger,
-      adim('elif', 'Türkçe ve İngilizce metni kaynaklardan yazdı.', 'Wrote the Turkish and English text from the sources.'),
+      adim('elif', 'Türkçe ve İngilizce metni kaynaklara dayanarak yazdı.', 'Wrote the Turkish and English text based on the sources.'),
       adim('mert', 'Metni okudu, düzeltme turlarını yürüttü.', 'Read the text and ran the correction rounds.'),
-      adim('selin', 'Rakamları, tarihleri ve adları kaynaklarla karşılaştırdı; metnin kaynaklara fazla benzemediğine baktı.', 'Checked figures, dates and names against the sources, and that the text does not copy them too closely.'),
+      adim('selin', 'Rakamları, tarihleri ve adları kaynaklarla karşılaştırdı; metnin kaynaklara fazla benzemediğine baktı.', 'Checked figures, dates and names against the sources, and made sure the text does not copy them too closely.'),
       adim('arda', 'Kapak görselini çizdi.', 'Drew the cover image.'),
       adim('lale', 'Haberi iki dilde yayımladı.', 'Published the story in both languages.'),
     ];
@@ -108,7 +108,7 @@ export function olguSatiri(veri, dil) {
         ? t('Resmî kaynaktan', 'From an official source')
         : n > 0
           ? t(`${n} kaynak`, n === 1 ? '1 source' : `${n} sources`)
-          : t('Yayın kaynaklı', 'From news reports'),
+          : t('Yayınlardan', 'From news outlets'),
     ];
     if (degerVar(veri)) ut.push(t(`Haber değeri ${veri.haberDegeri}/100`, `News value ${veri.haberDegeri}/100`));
     return ut;
@@ -141,23 +141,23 @@ export function kartMetinleri(veri, dil) {
       : {
         kisa: 'Şenol Dak yazdı. Yapay zekâ yalnız çeviri ve dil düzeltmesinde kullanıldı.',
         aciklama: 'Yazı Şenol Dak’ındır. Yapay zekâ içerik, bakış açısı ya da rakamlar için kullanılmadı ve hiçbir zaman kaynak olarak kullanılmaz. Bütün rakamlar resmî kaynaklardan alındı ve yayından önce kaynaklarla karşılaştırıldı.',
-        not: `${liste(adlar)}, otomatik adımların adıdır; insan değil.`,
+        not: `${liste(adlar)} otomatik adımların adıdır, insan değildir.`,
         sorumluluk: ', gazeteci, yayıncı ve editör, metni yayından önce okudu ve onayladı.',
       };
   }
   const ortakNot = dil === 'en'
     ? `The ${kac.toLowerCase()} names below are the automated steps of the JEN DUME newsroom, not people.`
-    : `Aşağıdaki ${kac.toLocaleLowerCase('tr')} ad, JEN DUME yayın odasındaki otomatik adımların adıdır; bunlar insan değil.`;
+    : `Aşağıdaki ${kac.toLocaleLowerCase('tr')} ad, JEN DUME yayın odasındaki otomatik adımların adıdır, insan değildir.`;
   if (tur === 'zincir') {
     return dil === 'en'
-      ? { kisa: `${kac} AI agents prepared it.`, aciklama: 'The piece was prepared by the automated editorial chain from official sources.', not: ortakNot, sorumluluk: ', journalist, publisher and editor, approved it before publication.' }
-      : { kisa: `${kac} yapay zekâ ajanı hazırladı.`, aciklama: 'Yazıyı, resmî kaynaklardan yola çıkan otomatik yazı işleri zinciri hazırladı.', not: ortakNot, sorumluluk: ', gazeteci, yayıncı ve editör, yayından önce onayladı.' };
+      ? { kisa: `${kac} AI agents prepared it.`, aciklama: 'The automated editorial chain prepared the piece from official sources.', not: ortakNot, sorumluluk: ', journalist, publisher and editor, approved it before publication.' }
+      : { kisa: `${kac} yapay zekâ ajanı hazırladı.`, aciklama: 'Yazıyı otomatik yazı işleri zinciri resmî kaynaklara dayanarak hazırladı.', not: ortakNot, sorumluluk: ', gazeteci, yayıncı ve editör, yayından önce onayladı.' };
   }
   const resmi = tur === 'bot-resmi';
   return dil === 'en'
     ? {
       kisa: `Written automatically by ${kac.toLowerCase()} AI agents.`,
-      aciklama: resmi ? 'The story was written automatically from an official announcement. No journalist read it before publication.' : 'The story was written automatically from the reports of the outlets on our source list. No journalist read it before publication.',
+      aciklama: resmi ? 'The story was written automatically from an official announcement. No journalist read it before publication.' : 'The story was written automatically from reports by outlets on our source list. No journalist read it before publication.',
       not: ortakNot,
       sorumluluk: ', journalist, publisher and editor, sets the rules for what may be published automatically.',
     }
@@ -165,7 +165,7 @@ export function kartMetinleri(veri, dil) {
       kisa: `${kac} yapay zekâ ajanı otomatik olarak yazdı.`,
       aciklama: resmi ? 'Haber, resmî bir duyurudan otomatik olarak yazıldı. Hiçbir gazeteci yayından önce okumadı.' : 'Haber, kaynak listesindeki yayınların haberlerinden otomatik olarak yazıldı. Hiçbir gazeteci yayından önce okumadı.',
       not: ortakNot,
-      sorumluluk: ', gazeteci, yayıncı ve editör, hangi haberin otomatik yayımlanabileceğinin kurallarını koyar.',
+      sorumluluk: ', gazeteci, yayıncı ve editör, hangi haberin otomatik yayımlanabileceğine dair kuralları koyar.',
     };
 }
 

@@ -1,5 +1,5 @@
 ---
-// "Bu haber işine yaradı mı?": anonim günlük sayaç (worker/index.js → D1 jendume-yarar). IP, çerez ya da okur bilgisi
+// "Bu haber işinize yaradı mı?": anonim günlük sayaç (worker/index.js → D1 jendume-yarar). IP, çerez ya da okur bilgisi
 // tutulmaz; yalnız gün + haber + evet/hayır sayısı. Betik: src/scripts/haber-araclari.ts.
 import type { Locale } from '../../lib/site';
 
@@ -16,10 +16,10 @@ const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
 {
   YARAR_ACIK && (
     <div class="hn-yarar" role="group" aria-labelledby="yarar-soru" data-yarar-kimlik={kimlik}>
-      <p id="yarar-soru">{t('Bu haber işine yaradı mı?', 'Was this story useful?')}</p>
+      <p id="yarar-soru">{t('Bu haber işinize yaradı mı?', 'Was this story useful?')}</p>
       <button type="button" data-yarar="evet">{t('Evet', 'Yes')}</button>
       <button type="button" data-yarar="hayir">{t('Hayır', 'No')}</button>
-      <output hidden>{t('Teşekkürler. Yalnız günlük toplam sayılıyor; seni tanıyan hiçbir şey kaydedilmiyor.', 'Thank you. Only a daily total is counted; nothing that identifies you is stored.')}</output>
+      <output hidden>{t('Teşekkürler. Yalnız günlük toplamı sayıyoruz; sizi tanıtan hiçbir bilgi kaydedilmiyor.', 'Thanks. We only count a daily total and store nothing that identifies you.')}</output>
     </div>
   )
 }

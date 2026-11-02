@@ -5,7 +5,7 @@
 // Ret kodu → okura giden metin. 'standart:<kural>' kodları tek başlıkta toplanır.
 export const ELENME_METNI = {
   'dusuk-haber-degeri': { tr: 'Düşük haber değeri', en: 'Low news value' },
-  'kapsam-disi': { tr: 'Konu dışı', en: 'Off topic' },
+  'kapsam-disi': { tr: 'Yapay zekâyla ilgisi yok', en: 'Not about AI' },
   'daha-once-yazildi': { tr: 'Daha önce yazıldı', en: 'Already covered' },
   'kaynak-yetersiz': { tr: 'Kaynak metni yetersiz', en: 'Too little source material' },
   bayat: { tr: 'Eskimiş haber', en: 'Too old' },
