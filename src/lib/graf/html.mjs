@@ -2,7 +2,7 @@
 // Başlık, derlemede çizilen SVG, renk açıklaması, "Grafik / Tablo" düğmesi, tablo, yazının kendi italik açıklaması
 // (kaynak satırı), "Veriyi indir (CSV)" ve etkileşim JSON'u. Okura giden metinler grafiğin diline göre (felles.mjs → T).
 import { esc, setDil, T } from './felles.mjs';
-import { tegnGraf } from './index.mjs';
+import { birimsiz, tegnGraf } from './index.mjs';
 
 const BOM = String.fromCharCode(0xfeff);
 const tirnak = (v) => (v === null || v === undefined ? '' : typeof v === 'number' ? String(v) : /[",\r\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
@@ -32,6 +32,7 @@ export function csvAv(d) {
  *   kartın kendi "Kaynak: …" satırı çıkar. dosya: CSV dosya adı. varliklar: karttan önce eklenecek stil/betik etiketleri.
  */
 export function grafHtml(d, o = {}) {
+  d = birimsiz(d);
   setDil(d.dil);
   const { id, bred = false, nivaa = 3, bildetekst, dosya = 'veri', varliklar = '' } = o;
   const t = tegnGraf(d, { id, bred });

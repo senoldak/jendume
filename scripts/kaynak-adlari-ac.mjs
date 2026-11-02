@@ -4,18 +4,22 @@
 //
 //   node scripts/kaynak-adlari-ac.mjs          kuru: kaç haber, kaç kaynak gösterilecek
 //   node scripts/kaynak-adlari-ac.mjs --yaz    dosyalara yazar (kaynakAdlari zaten olan haber atlanır)
+//   node scripts/kaynak-adlari-ac.mjs --temizle [--yaz]
+//        kaldırma isteği: şifreli listenin gosterilmez alanındaki yayınları yayımlanmış haberlerin kaynakAdlari
+//        alanından çıkarır (iki dilde; liste boşalırsa alan silinir, sayfada adsız kaynak satırı kalır)
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { anahtarVar, coz, gizliKaynaklar } from './bot/gizli.mjs';
 import { esKimligi } from '../src/lib/es-kimlik.mjs';
-import { gosterilecekKaynaklar } from '../src/lib/kaynak-adlari.mjs';
+import { gorunenAd, gosterilecekKaynaklar } from '../src/lib/kaynak-adlari.mjs';
 import { medyaKaynakli } from '../src/lib/kaynak-satiri.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const TR = path.join(ROT, 'src/content/haberler/tr');
 const EN = path.join(ROT, 'src/content/haberler/en');
 const YAZ = process.argv.includes('--yaz');
+const TEMIZLE = process.argv.includes('--temizle');
 
 const alan = (s, ad) => {
   const m = new RegExp(`^${ad}: (.*)$`, 'm').exec(s)?.[1];
@@ -35,7 +39,39 @@ export function onBilgiyeEkle(metin, kaynaklar) {
   return metin.replace(/^(kaynakIzi: .*)$/m, `$1\n${blok}`);
 }
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+/** kaynakAdlari bloğundan gösterilmez yayınları çıkarır; blok boşalırsa tümden siler. -> { metin, cikan } */
+export function gosterilmezleriCikar(metin, gosterilmez) {
+  const yasak = new Set(gosterilmez.map((a) => gorunenAd(a).toLocaleLowerCase('tr')));
+  const m = /^kaynakAdlari:\n((?:  - ad: .*\n    url: .*\n)+)/m.exec(metin);
+  if (!m || !yasak.size) return { metin, cikan: 0 };
+  const ogeler = [...m[1].matchAll(/  - ad: (.*)\n    url: (.*)\n/g)].map((x) => ({ ham: x[0], ad: JSON.parse(x[1]) }));
+  const kalan = ogeler.filter((o) => !yasak.has(gorunenAd(o.ad).toLocaleLowerCase('tr')));
+  if (kalan.length === ogeler.length) return { metin, cikan: 0 };
+  const blok = kalan.length ? `kaynakAdlari:\n${kalan.map((o) => o.ham).join('')}` : '';
+  return { metin: metin.replace(m[0], blok), cikan: ogeler.length - kalan.length };
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]) && TEMIZLE) {
+  if (!anahtarVar()) {
+    console.error('KAYNAK_ANAHTARI yok; çıkılıyor.');
+    process.exit(1);
+  }
+  const { gosterilmez } = gizliKaynaklar({ uyar: () => {} });
+  let dosya = 0, cikan = 0;
+  for (const kok of [TR, EN]) {
+    for (const f of readdirSync(kok)) {
+      const yol = path.join(kok, f);
+      const eski = readFileSync(yol, 'utf8');
+      const crlf = eski.includes('\r\n'); // Windows'ta git satır sonlarını CRLF'e çevirebilir
+      const r = gosterilmezleriCikar(crlf ? eski.replace(/\r\n/g, '\n') : eski, gosterilmez);
+      if (!r.cikan) continue;
+      dosya++;
+      cikan += r.cikan;
+      if (YAZ) writeFileSync(yol, crlf ? r.metin.replace(/\n/g, '\r\n') : r.metin, 'utf8');
+    }
+  }
+  console.log(`gösterilmez yayın: ${gosterilmez.length} | etkilenen dosya: ${dosya} | çıkan kaynak satırı: ${cikan}${YAZ ? '' : ' (kuru çalışma)'}`);
+} else if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
   if (!anahtarVar()) {
     console.error('KAYNAK_ANAHTARI yok; çıkılıyor.');
     process.exit(1);

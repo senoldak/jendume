@@ -1,5 +1,5 @@
 /* Haber sayfası (2 Kasım 2026): tek sütun, araç satırı, kısa özet, "nasıl hazırlandı" kartı, daha önce, değişiklik kaydı,
-   "işine yaradı mı?", sözlük kartı, yer haritası. Onaylı örnek: docs/superpowers/ornekler/haber-yeni.html (yerel). */
+   "işine yaradı mı?", sözlük kartı. Onaylı örnek: docs/superpowers/ornekler/haber-yeni.html (yerel). */
 
 .article.hn {
   max-width: 820px;
@@ -177,33 +177,6 @@
 .hn-terim a {
   color: var(--yesil-yazi);
   font-weight: 600;
-}
-
-/* Yer haritası */
-.hn-harita {
-  margin: 1.6rem 0 0;
-  border: 1px solid var(--hair);
-  background: var(--paper);
-}
-.hn-harita svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #eef0ea;
-}
-.hn-harita .ulke {
-  fill: #d9dcd4;
-  stroke: var(--ground);
-  stroke-width: 0.8;
-}
-.hn-harita .hedef {
-  fill: var(--yesil);
-  stroke: var(--ink);
-  stroke-width: 1.2;
-}
-.hn-harita figcaption {
-  padding: 0.5rem 0.8rem;
-  font-size: 0.9rem;
 }
 
 /* Bloklar */

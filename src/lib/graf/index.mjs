@@ -17,8 +17,16 @@ import * as soyle from './former/soyle.mjs';
 /** @type {Record<string, { tegn: (d: import('./sema.mjs').GrafData, o?: { id?: string, bred?: boolean }) => import('./sema.mjs').Tegning }>} */
 export const FORMER = { linje, soyle, rangering, smultring, helning, manual, smaa, nokkeltall, minitabell, rutenett, fossefall, bidrag, gruppert };
 
+/**
+ * Zincir birimsiz grafikte enhet alanına alt başlığı yazıyor (mecmua grafik/sete.mjs); alt başlık zaten kartta
+ * görünür, sayının yanına yinelenmesin diye o durumda birim boş sayılır.
+ * @param {import('./sema.mjs').GrafData} d
+ */
+export const birimsiz = (d) => (d?.under && d.enhet === d.under ? { ...d, enhet: '' } : d);
+
 /** @param {import('./sema.mjs').GrafData} d @param {{ id?: string, bred?: boolean }} [o] */
 export function tegnGraf(d, o = {}) {
+  d = birimsiz(d);
   const hatalar = validerGraf(d);
   if (hatalar.length) throw new Error(`Grafik "${d?.tittel ?? '?'}": ${hatalar.join('; ')}`);
   return FORMER[d.form].tegn(d, o);

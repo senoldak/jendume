@@ -11,7 +11,6 @@ import NasilHazirlandi from '../../components/haber/NasilHazirlandi.astro';
 import DahaOnce from '../../components/haber/DahaOnce.astro';
 import DegisiklikKaydi from '../../components/haber/DegisiklikKaydi.astro';
 import Yarar from '../../components/haber/Yarar.astro';
-import YerHaritasi from '../../components/haber/YerHaritasi.astro';
 import KaynakListesi from '../../components/haber/KaynakListesi.astro';
 import '../../styles/haber.css';
 import '../../styles/piksel-font.css';
@@ -26,7 +25,6 @@ import { dizinlenir } from '../../lib/kalite.mjs';
 import { medyaKaynakli } from '../../lib/kaynak-satiri.mjs';
 import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { adimlar } from '../../lib/ajanlar.mjs';
-import { haritaUlkesi } from '../../lib/harita.mjs';
 import { TERIMLER, terimGecisleri } from '../../lib/sozluk.mjs';
 import { yapayZekaNotu } from '../../lib/yapayzeka-notu.mjs';
 import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
@@ -91,7 +89,6 @@ const adres = abs(getPostUrl(lang, id));
 const not = yapayZekaNotu({ veri: post.data, dil: lang, baslik: post.data.title, adres });
 // "Bu haber nasıl hazırlandı" kartı olan yazıda eski yapay zekâ notu gösterilmez (kart aynı şeyi söyler).
 const kartVar = Boolean(adimlar(post.data));
-const ulke = haritaUlkesi(post.data, lang);
 // Sözlük kartı: metinde bağlanan terimlerin kısa tanımı (betik: src/scripts/haber-araclari.ts).
 const terimIdleri = new Set(terimGecisleri(post.body ?? '', lang, { yalnizBaglanan: true }).map((g: { id: string }) => g.id));
 const sozlukVeri = Object.fromEntries(
@@ -168,8 +165,6 @@ const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
         </figure>
       )
     }
-
-    {ulke && <YerHaritasi lang={lang} ulke={ulke} />}
 
     <div class="prose">
       <Content />

@@ -716,3 +716,10 @@ test('minitabell: seri başına prosent', () => {
   const h = grafHtml({ ...ZINCIR.minitabell, dil: 'tr' });
   assert.ok(h.includes('+%2,4') || h.includes('%2,4'));
 });
+
+test('birimsiz grafikte alt başlık sayının yanına yinelenmez', async () => {
+  const { grafHtml } = await import('./html.mjs');
+  const d = { dil: 'tr', form: 'soyle', tittel: 'Başlık', under: 'Milyon kişi, 2024', enhet: 'Milyon kişi, 2024', desimaler: 1, kilde: { navn: 'Kurum' }, serier: [{ navn: 'S', punkter: [{ x: 'a', y: 1.5 }, { x: 'b', y: 2.5 }] }] };
+  const html = grafHtml(d, { id: 'gtest' });
+  assert.equal((html.match(/Milyon kişi, 2024/g) ?? []).length, 1);
+});
