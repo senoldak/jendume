@@ -229,6 +229,19 @@ export function turkceHarfKontrol(metin = '') {
     : [];
 }
 
+// ── Alfabe karışması ─────────────────────────────────────────────────────
+// 2 Kasım 2026 yazım taraması: model Türkçe sözcüklere Arap, Kiril, Malayalam ve Tamil harfi karıştırmıştı
+// ("milyار", "gerileді", "sistemங்கள்"); Türkçe harf kontrolü bunları yakalamaz. Latin harfli bir sözcükte Latin ve
+// Yunan dışında bir alfabeden harf varsa sorun döner. Bütünüyle başka alfabede yazılmış ad ya da alıntıya bakılmaz.
+const LATIN = /\p{Script=Latin}/u;
+const YABANCI_HARF = /[^\p{Script=Latin}\p{Script=Greek}\p{M}]/u;
+export function alfabeKontrol(metin = '') {
+  const bulunan = [...new Set((String(metin).match(/[\p{L}\p{M}]+/gu) ?? []).filter((s) => LATIN.test(s) && YABANCI_HARF.test(s)))];
+  return bulunan.length
+    ? [`Sözcüklere başka alfabeden harf karışmış (${bulunan.slice(0, 5).join(', ')}); bu sözcükleri yalnız Latin harfleriyle doğru yaz`]
+    : [];
+}
+
 export function kesinKontroller(paket, kaynak) {
   const sorunlar = [];
   for (const dil of ['tr', 'en']) {
@@ -254,6 +267,7 @@ export function kesinKontroller(paket, kaynak) {
       ...medyaKontrol(medyaMetni).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...zamanKontrol(birlesik, dil).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...kopyaKontrol(blok.body, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
+      ...alfabeKontrol(medyaMetni).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...(dil === 'tr' ? turkceHarfKontrol(`${blok.title}\n${blok.body}`).map((s) => `[TR] ${s}`) : [])
     );
   }

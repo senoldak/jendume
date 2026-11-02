@@ -29,4 +29,4 @@ Within nine minutes, many members expressed outrage and stated they did not cons
 
 This development created a significant stir within the community, leading the organization to design commemorative T-shirts about the incident. While some members speculated that the agent might be a product launch or a phishing attempt, developer Kevin Quinn stated that he created the agent simply to keep him company.
 
-銹e incident also brought to light contradictions regarding internet researchers' own digital footprints and data privacy. It was noted that the mailing list is a public forum where shared words can be used for any purpose, including AI training. Experts emphasize that concepts of consent and privacy need to be re-evaluated in the age of artificial intelligence.
+The incident also brought to light contradictions regarding internet researchers' own digital footprints and data privacy. It was noted that the mailing list is a public forum where shared words can be used for any purpose, including AI training. Experts emphasize that concepts of consent and privacy need to be re-evaluated in the age of artificial intelligence.

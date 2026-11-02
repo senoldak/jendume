@@ -25,7 +25,7 @@ draft: false
 
 Nvidia'nın Berlin'de düzenlediği GTC konferansında şirketin CEO'su Jensen Huang'ın konuşması protestocular tarafından bölündü. Greenpeace logolu pankart taşıyan eylemciler, Rus dronlarında Nvidia çiplerinin bulunmasına tepki gösterdi. Konuşmanın yaklaşık 20. dakikasında yaşanan olay sırasında güvenlik görevlileri eylemcileri dışarı çıkardı. Huang, güvenlik görevlilerine eylemcilere nazik davranılmasını söylerken, önemli konular olduğunu ancak sunumuna devam etmek istediğini belirtti.
 
-Protestocular, Tom's Hardware ve DatacenterDynamics gibi kaynakların aktardığına göre, Huang'a Rus dronlarındaki teknolojiyi ve çevresel tahribatı sordu. Ukrayna tarafı daha önce Nvidia'nın Jetson Orin modüllerinin Rus silahlarında ve insansız hava araçlarında kullanıldığını bildirmişti. Savaşın ardından uygulanan yaptırımlar, bu tür donanımların Rusya'ya satışını kesin bir şekilde yasaklıyor.
+Protestocular, Huang'a Rus dronlarındaki teknolojiyi ve çevresel tahribatı sordu. Ukrayna tarafı daha önce Nvidia'nın Jetson Orin modüllerinin Rus silahlarında ve insansız hava araçlarında kullanıldığını bildirmişti. Savaşın ardından uygulanan yaptırımlar, bu tür donanımların Rusya'ya satışını kesin bir şekilde yasaklıyor.
 
 Nvidia ise daha önce yaptığı açıklamalarda Jetson Orin modüllerinin öğrencilere, geliştiricilere ve girişimlere satılan tüketici sınıfı ürünler olduğunu, Rusya'ya satış yapmadıklarını ve ikinci el yeniden satışları takip edemediklerini ifade etmişti. Şirket ayrıca askeri kullanım için çip tasarlamadıklarını vurguladı.
 
