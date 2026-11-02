@@ -471,6 +471,8 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           date: simdi.toISOString(),
           kaynakIzi: kaynakIzi(kullanilan),
           kaynaklar: resmiKaynakListesi(kullanilan),
+          // Haber değeri (puanKapisi): "Bu haber nasıl hazırlandı" kartında gösterilir; puan yoksa yazılmaz.
+          haberDegeri: puan.get(g),
           featured: false,
           draft: false,
         });

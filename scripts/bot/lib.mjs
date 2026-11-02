@@ -320,6 +320,7 @@ export async function ucDilliHaberYaz(rot, paket) {
       Array.isArray(paket.kaynaklar) && paket.kaynaklar.length
         ? `kaynaklar:\n${paket.kaynaklar.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
         : null,
+      Number.isInteger(paket.haberDegeri) && paket.haberDegeri > 0 && paket.haberDegeri <= 100 ? `haberDegeri: ${paket.haberDegeri}` : null,
       `featured: ${Boolean(paket.featured)}`,
       `breaking: ${Boolean(paket.breaking)}`,
       `draft: ${Boolean(paket.draft)}`,

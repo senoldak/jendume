@@ -337,3 +337,25 @@ test('ucDilliHaberYaz: EN başlık yoksa ya da slug aynıysa esId yazılmaz (esk
     await rm(tmpDir, { recursive: true, force: true });
   }
 });
+
+test('ucDilliHaberYaz haber değerini yalnız 1–100 tam sayıysa yazar', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const paket = (haberDegeri, ek) => ({
+      category: 'bilim',
+      date: '2026-11-02T10:00:00.000Z',
+      haberDegeri,
+      tr: { title: `Deneme haberi başlığı ${ek}`, description: 'Deneme açıklaması yeterince uzun.', body: 'Gövde.' },
+      en: { title: `Test story headline ${ek}`, description: 'Test description long enough.', body: 'Body.' },
+    });
+    const a = await ucDilliHaberYaz(tmpDir, paket(84, 'bir'));
+    assert.match(await haberOku(tmpDir, 'tr', a), /\nhaberDegeri: 84\n/);
+    assert.match(await haberOku(tmpDir, 'en', a), /\nhaberDegeri: 84\n/);
+    for (const [d, ek] of [[undefined, 'iki'], [0, 'uc'], [101, 'dort'], [72.5, 'bes']]) {
+      const s = await ucDilliHaberYaz(tmpDir, paket(d, ek));
+      assert.doesNotMatch(await haberOku(tmpDir, 'tr', s), /haberDegeri/);
+    }
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});

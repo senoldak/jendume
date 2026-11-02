@@ -44,6 +44,11 @@ const haberSchema = z.object({
   kaynakIzi: z.string().optional(),
   // Birincil (resmî) kaynaklar: yalnız bütün kaynakları birincil olan haberde dolu; sayfanın altında gösterilir.
   kaynaklar: z.array(z.object({ ad: z.string(), url: z.string().url() })).default([]),
+  // Botun haber değeri puanı (100 üzerinden; scripts/bot/uyarlayici.mjs). Yalnız 2 Kasım 2026'dan sonraki bot haberlerinde var.
+  haberDegeri: z.number().int().min(1).max(100).optional(),
+  // Yazı işleri zincirinin kaydı (mecmua onay/yerlestir.mjs kjedeKaydi; tidsrost ile aynı biçim): geri gönderme turları,
+  // kaynağa karşı denetlenen iddia ve yayından önce yeniden çekilen rakam sayısı. Yayın odası sayfası okur.
+  kjede: z.object({ runder: z.record(z.string(), z.number().int().min(0)), kontrollert: z.number().int().min(0), hentet: z.number().int().min(0) }).optional(),
   featured: z.boolean().default(false),
   breaking: z.boolean().default(false),
   draft: z.boolean().default(false),

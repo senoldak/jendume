@@ -14,6 +14,7 @@ import { havuzAc, havuzKapat } from './havuz.mjs';
 import { acilDurdurma } from './kapi.mjs';
 import { gorulmeyen, uyarlayiciKur, yerelTur } from './uyarlayici.mjs';
 import { turSec } from './motor-modu.mjs';
+import { gunlukYaz, sayan } from './gunluk-sayilar.mjs';
 
 const ROT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DURUM_DOSYASI = path.join(ROT, 'scripts/bot/gorulen.json');
@@ -84,11 +85,13 @@ if (!process.env.GEMINI_API_KEY) {
 
 // MOTOR_TUR=1: tur ortak motorla (MOTOR_DIZIN), aksi hâlde yerel tur. Motor modunda hata yerel tura düşmez; hatada da durum
 // aşağıda yazılır (yerel durum kaybolmasın) ve süreç sonunda hata koduyla çıkar.
+// Yayın odası sayfasının gerçek günlük sayıları (yalnız sayı ve kod; gunluk-sayilar.mjs).
+const sayac = sayan(uyarlayici);
 let turHatasi = null;
 try {
   await turSec({
     env: process.env,
-    uyarlayici,
+    uyarlayici: sayac.uyarlayici,
     durum,
     simdi,
     rot: ROT,
@@ -101,6 +104,11 @@ try {
   console.error(`Tur hatayla bitti: ${adresiSil(e?.message ?? e)}`);
 }
 const { ozet } = uyarlayici;
+try {
+  await gunlukYaz(path.join(ROT, 'src/data/yayin-odasi/gunluk.json'), sayac.sayilar(), simdi);
+} catch (e) {
+  console.warn(`Günlük sayılar yazılamadı: ${adresiSil(e?.message ?? e)}`);
+}
 
 // Yayın belleği 72 saat, puanlar yalnızca aday yaşı boyunca gerekir.
 for (const [k, v] of Object.entries(durum.yayinlanan)) if (simdi - new Date(v.zaman) > BELLEK_SAAT * 3_600_000) delete durum.yayinlanan[k];
