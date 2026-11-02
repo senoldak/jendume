@@ -1,0 +1,61 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "For every technology, the share of large enterprises using it is higher than that of small ones",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Text mining",
+   "punkter": [
+    {"x": "10–49 staff", "y": 9.9},
+    {"x": "250+ staff", "y": 35}
+   ]
+  },
+  {
+   "navn": "Speech recognition",
+   "punkter": [
+    {"x": "10–49 staff", "y": 5.9},
+    {"x": "250+ staff", "y": 26.1}
+   ]
+  },
+  {
+   "navn": "Text/code generation",
+   "punkter": [
+    {"x": "10–49 staff", "y": 7},
+    {"x": "250+ staff", "y": 31.7}
+   ]
+  },
+  {
+   "navn": "Image recognition",
+   "punkter": [
+    {"x": "10–49 staff", "y": 3},
+    {"x": "250+ staff", "y": 16.7}
+   ]
+  },
+  {
+   "navn": "Machine learning",
+   "punkter": [
+    {"x": "10–49 staff", "y": 3.8},
+    {"x": "250+ staff", "y": 25.1}
+   ]
+  },
+  {
+   "navn": "Workflow automation",
+   "punkter": [
+    {"x": "10–49 staff", "y": 4.1},
+    {"x": "250+ staff", "y": 24.4}
+   ]
+  },
+  {
+   "navn": "Image/audio generation",
+   "punkter": [
+    {"x": "10–49 staff", "y": 8.1},
+    {"x": "250+ staff", "y": 27.9}
+   ]
+  }
+ ]
+}

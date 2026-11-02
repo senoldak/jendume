@@ -1,0 +1,31 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "The number of mobile subscriptions per fixed telephone subscription rose worldwide",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Ratio",
+   "punkter": [
+    {"x": "2024", "y": 10.82}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Earlier years",
+   "punkter": [
+    {"x": "2005", "y": 1.77},
+    {"x": "2015", "y": 6.82}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 2
+  }
+ ]
+}

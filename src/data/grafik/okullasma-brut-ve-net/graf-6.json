@@ -1,0 +1,35 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "Among the countries shown, the primary-school gap between gross and net rates is largest in Rwanda",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Gross − net",
+   "punkter": [
+    {"x": "Rwanda", "y": 42.4},
+    {"x": "Nepal", "y": 39},
+    {"x": "Seychelles", "y": 40.2},
+    {"x": "Namibia", "y": 28.6},
+    {"x": "Sweden", "y": 23.7},
+    {"x": "OECD members", "y": 6.8},
+    {"x": "World", "y": 12.5},
+    {"x": "Türkiye", "y": 9.6}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD members",
+   "World"
+  ]
+ }
+}

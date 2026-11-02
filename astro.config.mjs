@@ -9,8 +9,25 @@ import { esKimligi } from './src/lib/es-kimlik.mjs';
 import { sozlukEklentisi } from './src/lib/sozluk.mjs';
 import { onyuzMaddesiYayinda } from './src/lib/yayinda.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
+import { fileURLToPath } from 'node:url';
+import { satteriGraf } from './src/lib/graf/kart.mjs';
+import { grafDenetle } from './src/lib/graf/etkilesim-denetim.mjs';
 
 const SITE = 'https://jendume.com';
+
+// Haber gövdesindeki grafikler etkileşimli karttır (src/lib/graf). Derleme sonunda hiçbir sayfada grafik resmi (/grafik/…/graf-N.svg)
+// kalmamalı ve grafiği olan her sayfa stil ve betiği yüklemeli; eksik varsa grafik sessizce statik kalır, o yüzden derleme durur.
+const grafDenetimi = () => ({
+  name: 'graf-denetimi',
+  hooks: {
+    'astro:build:done': async ({ dir, logger }) => {
+      if (process.env.GRAF_KART === '0') return; // kart kapalı derlemede resimler bilerek kalır
+      const { sayfa, grafik, hatalar } = await grafDenetle(fileURLToPath(dir));
+      if (hatalar.length) throw new Error(['Grafik denetimi başarısız (' + hatalar.length + '):', ...hatalar.slice(0, 20)].join('\n'));
+      logger.info(`${grafik} grafik ${sayfa} sayfada: hepsi etkileşimli kart, resim kalmadı.`);
+    },
+  },
+});
 
 // Gövdesi çok kısa haberler (src/lib/kalite.mjs) noindex alır; site haritasına girmesinler diye ayrıca toplanır.
 const kisaHaberler = new Set();
@@ -110,6 +127,7 @@ export default defineConfig({
   compressHTML: true,
   site: SITE,
   integrations: [
+    grafDenetimi(),
     sitemap({
       filter: (page) => !haritaDisi(page),
       serialize(item) {
@@ -152,7 +170,7 @@ export default defineConfig({
   },
   // Haber gövdesinde sözlük terimlerinin ilk geçişi sözlük sayfasına bağlanır (haber başına en fazla 3; src/lib/sozluk.mjs).
   markdown: {
-    processor: satteri({ mdastPlugins: [sozlukEklentisi()] }),
+    processor: satteri({ mdastPlugins: [sozlukEklentisi()], hastPlugins: [satteriGraf()] }),
   },
   build: {
     format: 'directory',

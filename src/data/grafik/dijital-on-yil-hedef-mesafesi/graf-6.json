@@ -1,0 +1,21 @@
+{
+ "dil": "en",
+ "form": "rutenett",
+ "tittel": "Part of those below the basic level are at least at the basic level in four of the five areas",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "EU",
+   "punkter": [
+    {"x": "Above basic", "y": 31.4},
+    {"x": "Basic", "y": 29},
+    {"x": "Low", "y": 17.4},
+    {"x": "Lower or not assessed", "y": 22.2}
+   ]
+  }
+ ]
+}

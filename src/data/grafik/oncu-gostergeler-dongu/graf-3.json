@@ -1,0 +1,55 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Seçilen on iki ekonominin onunda öncü gösterge bir yılda yükseldi, ikisinde geriledi",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Eylül 2026",
+   "punkter": [
+    {"x": "ABD", "y": 101},
+    {"x": "Japonya", "y": 100.35},
+    {"x": "Almanya", "y": 101.01},
+    {"x": "Fransa", "y": 100.66},
+    {"x": "İtalya", "y": 100.3},
+    {"x": "B. Krallık", "y": 101.38},
+    {"x": "Kanada", "y": 101.92},
+    {"x": "Türkiye", "y": 100.73},
+    {"x": "Çin", "y": 97.41},
+    {"x": "Hindistan", "y": 102},
+    {"x": "Brezilya", "y": 102.36},
+    {"x": "Kore", "y": 102.53}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Değişim",
+   "punkter": [
+    {"x": "ABD", "y": 1.39},
+    {"x": "Japonya", "y": 0.64},
+    {"x": "Almanya", "y": 0.53},
+    {"x": "Fransa", "y": 0.72},
+    {"x": "İtalya", "y": -0.21},
+    {"x": "B. Krallık", "y": 0.53},
+    {"x": "Kanada", "y": 2.13},
+    {"x": "Türkiye", "y": 1.14},
+    {"x": "Çin", "y": -2.89},
+    {"x": "Hindistan", "y": 2.01},
+    {"x": "Brezilya", "y": 2.27},
+    {"x": "Kore", "y": 2.87}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

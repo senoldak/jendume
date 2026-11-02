@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "Over the same window the world index rose far more than the household energy items",
+ "kilde": {
+  "navn": "International Monetary Fund, Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "World",
+   "punkter": [
+    {"x": "World energy index", "y": 217.6}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "EU household items",
+   "punkter": [
+    {"x": "Gas", "y": 81.4},
+    {"x": "Liquid and transport fuels", "y": 53.9},
+    {"x": "Electricity", "y": 46.1}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

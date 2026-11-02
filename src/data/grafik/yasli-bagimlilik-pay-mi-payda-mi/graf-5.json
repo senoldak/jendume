@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "The number of older people per hundred people of working age rose worldwide",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "World",
+   "punkter": [
+    {"x": "World, in 2023", "y": 15.4}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Comparison",
+   "punkter": [
+    {"x": "Türkiye", "y": 14.7},
+    {"x": "Japan", "y": 50.3},
+    {"x": "India", "y": 10.2}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

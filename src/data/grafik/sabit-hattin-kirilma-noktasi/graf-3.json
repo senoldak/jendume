@@ -1,0 +1,31 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Dünyada her sabit telefon aboneliğine düşen cep telefonu aboneliği sayısı arttı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Oran",
+   "punkter": [
+    {"x": "2024", "y": 10.82}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Önceki yıllar",
+   "punkter": [
+    {"x": "2005", "y": 1.77},
+    {"x": "2015", "y": 6.82}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 2
+  }
+ ]
+}

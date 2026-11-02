@@ -1,0 +1,41 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "The gap between the low and high scenarios widens as the century advances",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "billion kişi",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Low scenario",
+   "punkter": [
+    {"x": "2030", "y": 8.5},
+    {"x": "2040", "y": 8.8},
+    {"x": "2050", "y": 8.9},
+    {"x": "2060", "y": 8.9},
+    {"x": "2070", "y": 8.6},
+    {"x": "2080", "y": 8.2},
+    {"x": "2090", "y": 7.6},
+    {"x": "2100", "y": 7}
+   ]
+  },
+  {
+   "navn": "High scenario",
+   "punkter": [
+    {"x": "2030", "y": 8.7},
+    {"x": "2040", "y": 9.6},
+    {"x": "2050", "y": 10.4},
+    {"x": "2060", "y": 11.2},
+    {"x": "2070", "y": 12},
+    {"x": "2080", "y": 12.8},
+    {"x": "2090", "y": 13.6},
+    {"x": "2100", "y": 14.4}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

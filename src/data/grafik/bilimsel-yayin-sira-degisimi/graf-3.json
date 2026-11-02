@@ -1,0 +1,36 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "2023 yılında Çin'in makale sayısı listedeki diğer on iki ülkenin hepsinden yüksek",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Makale sayısı",
+   "punkter": [
+    {"x": "ABD", "y": 430843},
+    {"x": "Çin", "y": 932712},
+    {"x": "Hindistan", "y": 228174},
+    {"x": "Japonya", "y": 96543},
+    {"x": "Almanya", "y": 108782},
+    {"x": "Birleşik Krallık", "y": 97536},
+    {"x": "Güney Kore", "y": 71724},
+    {"x": "Türkiye", "y": 50180},
+    {"x": "Fransa", "y": 62180},
+    {"x": "İtalya", "y": 82771},
+    {"x": "Brezilya", "y": 58292},
+    {"x": "Kanada", "y": 63720},
+    {"x": "Avustralya", "y": 54589}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Gösterilen ülkeler arasında ilkokulda brüt ile net oran farkı en çok Ruanda'da",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Brüt − net",
+   "punkter": [
+    {"x": "Ruanda", "y": 42.4},
+    {"x": "Nepal", "y": 39},
+    {"x": "Seyşeller", "y": 40.2},
+    {"x": "Namibya", "y": 28.6},
+    {"x": "İsveç", "y": 23.7},
+    {"x": "OECD üyeleri", "y": 6.8},
+    {"x": "Dünya", "y": 12.5},
+    {"x": "Türkiye", "y": 9.6}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD üyeleri",
+   "Dünya"
+  ]
+ }
+}

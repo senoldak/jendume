@@ -1,0 +1,34 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "Cloud use rises with enterprise size",
+ "kilde": {
+  "navn": "Eurostat, European Union"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Cloud",
+   "punkter": [
+    {"x": "Small", "y": 49.3},
+    {"x": "Medium", "y": 66.8},
+    {"x": "Large", "y": 84.7},
+    {"x": "All", "y": 52.7}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "All"
+  ]
+ },
+ "merknader": [
+  {
+   "type": "mal",
+   "y": 75,
+   "tekst": "Threshold"
+  }
+ ]
+}

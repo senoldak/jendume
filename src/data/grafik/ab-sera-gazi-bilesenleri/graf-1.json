@@ -1,0 +1,36 @@
+{
+ "dil": "tr",
+ "form": "fossefall",
+ "tittel": "Sekiz ana kalemde emisyon değişimi: enerji endüstrilerinde azalış, ulaştırmada artış",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "milyon ton",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Kalemler",
+   "punkter": [
+    {"x": "Enerji endüstrileri", "y": -799},
+    {"x": "Sanayi", "y": -559},
+    {"x": "Diğer yakıt yakma", "y": -297},
+    {"x": "Tarım", "y": -128},
+    {"x": "Yakıt kaçakları", "y": -118},
+    {"x": "Atık", "y": -74},
+    {"x": "Dolaylı karbondioksit", "y": -4},
+    {"x": "Ulaştırma", "y": 130}
+   ]
+  },
+  {
+   "navn": "Toplam",
+   "punkter": [
+    {"x": "Toplam değişim", "y": -1850}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

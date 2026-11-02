@@ -1,0 +1,24 @@
+{
+ "dil": "tr",
+ "form": "smultring",
+ "tittel": "Dünyada çalışanların yarısından fazlası hizmetlerde",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Pay",
+   "punkter": [
+    {"x": "Tarım", "y": 25.8},
+    {"x": "Sanayi", "y": 23.7},
+    {"x": "Hizmetler", "y": 50.6}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 3,
+  "dogrudan": true
+ }
+}

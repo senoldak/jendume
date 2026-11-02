@@ -1,0 +1,40 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "İkinci dönemde işsizlik oranı çok daha hızlı geriledi",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Birinci dönem",
+   "punkter": [
+    {"x": "Zirve", "y": 8.7},
+    {"x": "Altı ay", "y": 8.5},
+    {"x": "Bir yıl", "y": 8.2},
+    {"x": "On sekiz ay", "y": 8.1},
+    {"x": "İki yıl", "y": 8},
+    {"x": "Otuz ay", "y": 8.1},
+    {"x": "Üç yıl", "y": 8.3},
+    {"x": "Dört yıl", "y": 7.7},
+    {"x": "Beş yıl", "y": 7.1}
+   ]
+  },
+  {
+   "navn": "İkinci dönem",
+   "punkter": [
+    {"x": "Zirve", "y": 8.9},
+    {"x": "Altı ay", "y": 7.1},
+    {"x": "Bir yıl", "y": 6.8},
+    {"x": "On sekiz ay", "y": 5.6},
+    {"x": "İki yıl", "y": 5},
+    {"x": "Otuz ay", "y": 5},
+    {"x": "Üç yıl", "y": 4.8},
+    {"x": "Dört yıl", "y": 4.9},
+    {"x": "Beş yıl", "y": 4.9}
+   ]
+  }
+ ]
+}

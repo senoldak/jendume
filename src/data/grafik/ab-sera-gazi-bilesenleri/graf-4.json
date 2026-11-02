@@ -1,0 +1,27 @@
+{
+ "dil": "tr",
+ "form": "smultring",
+ "tittel": "Ulaştırma emisyonun en büyük parçası",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Pay",
+   "punkter": [
+    {"x": "Enerji endüstrileri", "y": 21.3},
+    {"x": "Sanayi", "y": 20.3},
+    {"x": "Ulaştırma", "y": 26.7},
+    {"x": "Diğer yakıt yakma", "y": 14.5},
+    {"x": "Tarım", "y": 11.9},
+    {"x": "Atık ve diğer", "y": 5.4}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 6,
+  "dogrudan": true
+ }
+}

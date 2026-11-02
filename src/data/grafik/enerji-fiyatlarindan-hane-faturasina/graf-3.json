@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Aynı pencerede dünya endeksi hane enerji kalemlerinden çok daha fazla yükseldi",
+ "kilde": {
+  "navn": "International Monetary Fund, Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Dünya",
+   "punkter": [
+    {"x": "Dünya enerji endeksi", "y": 217.6}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "AB hane kalemleri",
+   "punkter": [
+    {"x": "Gaz", "y": 81.4},
+    {"x": "Sıvı ve ulaşım yakıtları", "y": 53.9},
+    {"x": "Elektrik", "y": 46.1}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "The fall in the agricultural share of employment was largest in the middle-income groups",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Fall",
+   "punkter": [
+    {"x": "Upper-middle-income countries", "y": 29.98},
+    {"x": "Lower-middle-income countries", "y": 18.89},
+    {"x": "High-income countries", "y": 5.3},
+    {"x": "Low-income countries", "y": 7.37},
+    {"x": "World", "y": 17.06}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "World"
+  ]
+ }
+}

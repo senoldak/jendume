@@ -1,0 +1,47 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Türkiye'nin öncü göstergesi iki gerileme döneminden sonra yükseldi, G20 toplamı dar bantta kaldı",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "Oca 2025", "y": 100.2},
+    {"x": "Mar 2025", "y": 99.8},
+    {"x": "May 2025", "y": 99.2},
+    {"x": "Tem 2025", "y": 99.2},
+    {"x": "Eyl 2025", "y": 99.6},
+    {"x": "Kas 2025", "y": 100.1},
+    {"x": "Oca 2026", "y": 100.4},
+    {"x": "Mar 2026", "y": 100.1},
+    {"x": "May 2026", "y": 99.9},
+    {"x": "Tem 2026", "y": 100.2},
+    {"x": "Eyl 2026", "y": 100.7}
+   ]
+  },
+  {
+   "navn": "G20",
+   "punkter": [
+    {"x": "Oca 2025", "y": 100.2},
+    {"x": "Mar 2025", "y": 100.1},
+    {"x": "May 2025", "y": 100.1},
+    {"x": "Tem 2025", "y": 100.1},
+    {"x": "Eyl 2025", "y": 100.1},
+    {"x": "Kas 2025", "y": 100.2},
+    {"x": "Oca 2026", "y": 100.3},
+    {"x": "Mar 2026", "y": 100.3},
+    {"x": "May 2026", "y": 100.2},
+    {"x": "Tem 2026", "y": 100.2},
+    {"x": "Eyl 2026", "y": 100.1}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "dil": "tr",
+ "form": "soyle",
+ "tittel": "Beş yaş altı ölüm oranı her seçilmiş yılda bir öncekinden düşük",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Beş yaş altı ölüm oranı",
+   "punkter": [
+    {"x": "2000", "y": 76.7},
+    {"x": "2005", "y": 62.3},
+    {"x": "2010", "y": 50.6},
+    {"x": "2015", "y": 42.9},
+    {"x": "2020", "y": 39.2},
+    {"x": "2023", "y": 38.3}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "2000",
+   "2005",
+   "2010",
+   "2015",
+   "2020",
+   "2023"
+  ]
+ }
+}

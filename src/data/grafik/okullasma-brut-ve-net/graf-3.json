@@ -1,0 +1,47 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Ortaöğretimde brüt ve net oran arasındaki fark ilkokula göre bazı ülkelerde çok daha geniş",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "Belçika", "y": 63.8},
+    {"x": "Finlandiya", "y": 57.5},
+    {"x": "Avustralya", "y": 61.3},
+    {"x": "Türkiye", "y": 25.8},
+    {"x": "OECD", "y": 17.4},
+    {"x": "Almanya", "y": 15.8},
+    {"x": "Dünya", "y": 8.7},
+    {"x": "ABD", "y": 6.5}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "İlkokula göre",
+   "punkter": [
+    {"x": "Belçika", "y": 59.8},
+    {"x": "Finlandiya", "y": 56.6},
+    {"x": "Avustralya", "y": 57.1},
+    {"x": "Türkiye", "y": 16.2},
+    {"x": "OECD", "y": 10.6},
+    {"x": "Almanya", "y": 4.2},
+    {"x": "Dünya", "y": -3.8},
+    {"x": "ABD", "y": -0.7}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

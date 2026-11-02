@@ -1,0 +1,33 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Kazanç en çok dağılımın alt ucunda oldu",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Kazanılan yıl",
+   "punkter": [
+    {"x": "Alt onda birin sınırı", "y": 12.3},
+    {"x": "Dörtte birin sınırı", "y": 6.7},
+    {"x": "Ortanca", "y": 4.1},
+    {"x": "Dörtte üçün sınırı", "y": 4.8},
+    {"x": "Üst onda birin sınırı", "y": 4.7},
+    {"x": "Türkiye", "y": 5.3},
+    {"x": "Dünya", "y": 5.6}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "Dünya"
+  ]
+ }
+}

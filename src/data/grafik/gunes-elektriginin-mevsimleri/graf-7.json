@@ -1,0 +1,49 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "The spread of output across months follows the same shape in both years",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "2019",
+   "punkter": [
+    {"x": "Jan", "y": 3.04},
+    {"x": "Feb", "y": 5.5},
+    {"x": "Mar", "y": 8.23},
+    {"x": "Apr", "y": 10.54},
+    {"x": "May", "y": 11.12},
+    {"x": "Jun", "y": 13.58},
+    {"x": "Jul", "y": 12.9},
+    {"x": "Aug", "y": 12.29},
+    {"x": "Sep", "y": 9.6},
+    {"x": "Oct", "y": 6.78},
+    {"x": "Nov", "y": 3.25},
+    {"x": "Dec", "y": 3.18}
+   ]
+  },
+  {
+   "navn": "2025",
+   "punkter": [
+    {"x": "Jan", "y": 3.03},
+    {"x": "Feb", "y": 4.77},
+    {"x": "Mar", "y": 8.21},
+    {"x": "Apr", "y": 10.41},
+    {"x": "May", "y": 12.04},
+    {"x": "Jun", "y": 13.3},
+    {"x": "Jul", "y": 12.89},
+    {"x": "Aug", "y": 12.47},
+    {"x": "Sep", "y": 9.41},
+    {"x": "Oct", "y": 6.39},
+    {"x": "Nov", "y": 4.15},
+    {"x": "Dec", "y": 2.95}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

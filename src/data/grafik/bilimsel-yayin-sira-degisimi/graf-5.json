@@ -1,0 +1,73 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "China's and India's shares of the world article total rose, while the US and Japan's fell",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "United States",
+   "punkter": [
+    {"x": "2000", "y": 28.62},
+    {"x": "2023", "y": 13.17}
+   ]
+  },
+  {
+   "navn": "China",
+   "punkter": [
+    {"x": "2000", "y": 4.98},
+    {"x": "2023", "y": 28.51}
+   ]
+  },
+  {
+   "navn": "India",
+   "punkter": [
+    {"x": "2000", "y": 2},
+    {"x": "2023", "y": 6.98}
+   ]
+  },
+  {
+   "navn": "Japan",
+   "punkter": [
+    {"x": "2000", "y": 9.02},
+    {"x": "2023", "y": 2.95}
+   ]
+  },
+  {
+   "navn": "Germany",
+   "punkter": [
+    {"x": "2000", "y": 6.51},
+    {"x": "2023", "y": 3.33}
+   ]
+  },
+  {
+   "navn": "United Kingdom",
+   "punkter": [
+    {"x": "2000", "y": 7.28},
+    {"x": "2023", "y": 2.98}
+   ]
+  },
+  {
+   "navn": "South Korea",
+   "punkter": [
+    {"x": "2000", "y": 1.48},
+    {"x": "2023", "y": 2.19}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "2000", "y": 0.64},
+    {"x": "2023", "y": 1.53}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

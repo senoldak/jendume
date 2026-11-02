@@ -1,0 +1,49 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "The R&D share rose in every selected country, by very different amounts",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Share",
+   "punkter": [
+    {"x": "South Korea", "y": 4.85},
+    {"x": "United States", "y": 3.49},
+    {"x": "Sweden", "y": 3.47},
+    {"x": "Japan", "y": 3.4},
+    {"x": "Germany", "y": 3.07},
+    {"x": "OECD members", "y": 2.94},
+    {"x": "China", "y": 2.49},
+    {"x": "Poland", "y": 1.44},
+    {"x": "Türkiye", "y": 1.32}
+   ],
+   "enhet": "%",
+   "desimaler": 2
+  },
+  {
+   "navn": "Change",
+   "punkter": [
+    {"x": "South Korea", "y": 27.97},
+    {"x": "United States", "y": 25.99},
+    {"x": "Sweden", "y": 7.1},
+    {"x": "Japan", "y": 4.94},
+    {"x": "Germany", "y": 6.6},
+    {"x": "OECD members", "y": 19.51},
+    {"x": "China", "y": 23.27},
+    {"x": "Poland", "y": 44},
+    {"x": "Türkiye", "y": 36.08}
+   ],
+   "enhet": "%",
+   "desimaler": 2
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Türkiye ile AB arasındaki fark basamağa göre işaret değiştiriyor",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "Hane interneti", "y": 1.42},
+    {"x": "İnternet kullanımı", "y": -4.02},
+    {"x": "Çevrimiçi alışveriş", "y": -20.07},
+    {"x": "Kamu kurumlarıyla etkileşim", "y": 13.69},
+    {"x": "Vergi beyanı", "y": -28.5}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false
+ }
+}

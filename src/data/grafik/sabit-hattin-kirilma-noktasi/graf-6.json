@@ -1,0 +1,48 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "Mobile and fixed broadband subscriptions rose while fixed telephone subscriptions fell",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Mobile",
+   "punkter": [
+    {"x": "2006", "y": 41.7},
+    {"x": "2009", "y": 68},
+    {"x": "2012", "y": 88.5},
+    {"x": "2015", "y": 96.1},
+    {"x": "2018", "y": 103.1},
+    {"x": "2021", "y": 106.7},
+    {"x": "2024", "y": 110.4}
+   ]
+  },
+  {
+   "navn": "Fixed broadband",
+   "punkter": [
+    {"x": "2006", "y": 4.3},
+    {"x": "2009", "y": 6.9},
+    {"x": "2012", "y": 9.2},
+    {"x": "2015", "y": 11.3},
+    {"x": "2018", "y": 14},
+    {"x": "2021", "y": 16.7},
+    {"x": "2024", "y": 19.3}
+   ]
+  },
+  {
+   "navn": "Fixed telephone",
+   "punkter": [
+    {"x": "2006", "y": 19.2},
+    {"x": "2009", "y": 18.4},
+    {"x": "2012", "y": 16.7},
+    {"x": "2015", "y": 14.1},
+    {"x": "2018", "y": 12.4},
+    {"x": "2021", "y": 11.2},
+    {"x": "2024", "y": 10.2}
+   ]
+  }
+ ]
+}

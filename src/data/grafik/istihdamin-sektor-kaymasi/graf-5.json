@@ -1,0 +1,24 @@
+{
+ "dil": "en",
+ "form": "smultring",
+ "tittel": "More than half of the world’s workers are in services",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Share",
+   "punkter": [
+    {"x": "Agriculture", "y": 25.8},
+    {"x": "Industry", "y": 23.7},
+    {"x": "Services", "y": 50.6}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 3,
+  "dogrudan": true
+ }
+}

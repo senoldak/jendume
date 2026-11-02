@@ -1,0 +1,37 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Temiz yakıtla yemek pişirenlerin payı, elektriğe erişenlerin payından daha hızlı yükseldi",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Elektriğe erişim",
+   "punkter": [
+    {"x": "2000", "y": 78.2},
+    {"x": "2005", "y": 80.7},
+    {"x": "2010", "y": 83.5},
+    {"x": "2015", "y": 86.9},
+    {"x": "2020", "y": 90.4},
+    {"x": "2023", "y": 91.6}
+   ]
+  },
+  {
+   "navn": "Temiz yakıtla yemek pişirme",
+   "punkter": [
+    {"x": "2000", "y": 47.8},
+    {"x": "2005", "y": 52.1},
+    {"x": "2010", "y": 56.7},
+    {"x": "2015", "y": 63.9},
+    {"x": "2020", "y": 71.3},
+    {"x": "2023", "y": 74.5}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

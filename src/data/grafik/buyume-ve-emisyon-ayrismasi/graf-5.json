@@ -1,0 +1,73 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "The economy grew; emissions fell in some countries and rose in others",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "United States",
+   "punkter": [
+    {"x": "GDP", "y": 65.7},
+    {"x": "Emissions", "y": -21.9}
+   ]
+  },
+  {
+   "navn": "Germany",
+   "punkter": [
+    {"x": "GDP", "y": 27.4},
+    {"x": "Emissions", "y": -33.5}
+   ]
+  },
+  {
+   "navn": "United Kingdom",
+   "punkter": [
+    {"x": "GDP", "y": 43.4},
+    {"x": "Emissions", "y": -47}
+   ]
+  },
+  {
+   "navn": "Poland",
+   "punkter": [
+    {"x": "GDP", "y": 132.4},
+    {"x": "Emissions", "y": -11.8}
+   ]
+  },
+  {
+   "navn": "Brazil",
+   "punkter": [
+    {"x": "GDP", "y": 70.9},
+    {"x": "Emissions", "y": 40.7}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "GDP", "y": 218.1},
+    {"x": "Emissions", "y": 102.6}
+   ]
+  },
+  {
+   "navn": "China",
+   "punkter": [
+    {"x": "GDP", "y": 554.3},
+    {"x": "Emissions", "y": 259.8}
+   ]
+  },
+  {
+   "navn": "India",
+   "punkter": [
+    {"x": "GDP", "y": 329},
+    {"x": "Emissions", "y": 216.4}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "Her teknolojide büyük işletmelerin kullanım payı küçüklerinkinden yüksek",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Metin analizi",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 9.9},
+    {"x": "250+ çalışan", "y": 35}
+   ]
+  },
+  {
+   "navn": "Konuşma tanıma",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 5.9},
+    {"x": "250+ çalışan", "y": 26.1}
+   ]
+  },
+  {
+   "navn": "Yazı ve kod üretimi",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 7},
+    {"x": "250+ çalışan", "y": 31.7}
+   ]
+  },
+  {
+   "navn": "Görüntü tanıma",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 3},
+    {"x": "250+ çalışan", "y": 16.7}
+   ]
+  },
+  {
+   "navn": "Makine öğrenmesi",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 3.8},
+    {"x": "250+ çalışan", "y": 25.1}
+   ]
+  },
+  {
+   "navn": "İş akışı otomasyonu",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 4.1},
+    {"x": "250+ çalışan", "y": 24.4}
+   ]
+  },
+  {
+   "navn": "Görsel, video, ses üretimi",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 8.1},
+    {"x": "250+ çalışan", "y": 27.9}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Listelenen ülkelerin hepsinde küçük işletmelerin payı iki yılda arttı, artışın büyüklüğü çok değişti",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Pay",
+   "punkter": [
+    {"x": "AB geneli", "y": 17},
+    {"x": "Danimarka", "y": 37.5},
+    {"x": "Finlandiya", "y": 33.5},
+    {"x": "Almanya", "y": 23.1},
+    {"x": "Türkiye", "y": 6.6},
+    {"x": "İtalya", "y": 14.2},
+    {"x": "Polonya", "y": 5.8},
+    {"x": "Romanya", "y": 4.1}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Değişim",
+   "punkter": [
+    {"x": "AB geneli", "y": 165.2},
+    {"x": "Danimarka", "y": 202.7},
+    {"x": "Finlandiya", "y": 191.9},
+    {"x": "Almanya", "y": 138.2},
+    {"x": "Türkiye", "y": 32.3},
+    {"x": "İtalya", "y": 226.4},
+    {"x": "Polonya", "y": 157.3},
+    {"x": "Romanya", "y": 286}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

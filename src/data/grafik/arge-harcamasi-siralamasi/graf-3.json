@@ -1,0 +1,49 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Ar-Ge payı seçilen ülkelerin hepsinde yükseldi, artışın büyüklüğü ülkeden ülkeye değişti",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Pay",
+   "punkter": [
+    {"x": "Güney Kore", "y": 4.85},
+    {"x": "ABD", "y": 3.49},
+    {"x": "İsveç", "y": 3.47},
+    {"x": "Japonya", "y": 3.4},
+    {"x": "Almanya", "y": 3.07},
+    {"x": "OECD üyeleri", "y": 2.94},
+    {"x": "Çin", "y": 2.49},
+    {"x": "Polonya", "y": 1.44},
+    {"x": "Türkiye", "y": 1.32}
+   ],
+   "enhet": "%",
+   "desimaler": 2
+  },
+  {
+   "navn": "Değişim",
+   "punkter": [
+    {"x": "Güney Kore", "y": 27.97},
+    {"x": "ABD", "y": 25.99},
+    {"x": "İsveç", "y": 7.1},
+    {"x": "Japonya", "y": 4.94},
+    {"x": "Almanya", "y": 6.6},
+    {"x": "OECD üyeleri", "y": 19.51},
+    {"x": "Çin", "y": 23.27},
+    {"x": "Polonya", "y": 44},
+    {"x": "Türkiye", "y": 36.08}
+   ],
+   "enhet": "%",
+   "desimaler": 2
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

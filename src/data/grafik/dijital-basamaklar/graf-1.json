@@ -1,0 +1,20 @@
+{
+ "dil": "tr",
+ "form": "rutenett",
+ "tittel": "AB'de bireylerin büyük çoğunluğu son üç ayda interneti kullanmış",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "AB",
+   "punkter": [
+    {"x": "Son üç ayda kullandı", "y": 93.79},
+    {"x": "Daha önce kullandı", "y": 1.77},
+    {"x": "Hiç kullanmadı", "y": 4.37}
+   ]
+  }
+ ]
+}

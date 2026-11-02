@@ -1,0 +1,31 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Doğumda yaşam beklentisi 2000–2023 arasında 5,68 yıl arttı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Artış",
+   "punkter": [
+    {"x": "Artış, 2000–2023", "y": 5.68}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Yıllar",
+   "punkter": [
+    {"x": "2000 yılı", "y": 67.65},
+    {"x": "2023 yılı", "y": 73.33}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 2
+  }
+ ]
+}

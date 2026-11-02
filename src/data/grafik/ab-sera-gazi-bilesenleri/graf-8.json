@@ -1,0 +1,27 @@
+{
+ "dil": "en",
+ "form": "smultring",
+ "tittel": "Transport is the largest part of emissions",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Share",
+   "punkter": [
+    {"x": "Energy industries", "y": 21.3},
+    {"x": "Industry", "y": 20.3},
+    {"x": "Transport", "y": 26.7},
+    {"x": "Other fuel combustion", "y": 14.5},
+    {"x": "Agriculture", "y": 11.9},
+    {"x": "Waste and other", "y": 5.4}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 6,
+  "dogrudan": true
+ }
+}

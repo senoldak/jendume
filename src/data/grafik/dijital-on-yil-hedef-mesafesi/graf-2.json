@@ -1,0 +1,21 @@
+{
+ "dil": "tr",
+ "form": "rutenett",
+ "tittel": "Temelin altındakilerin bir bölümü beş alanın dördünde en az temel düzeyde",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "AB",
+   "punkter": [
+    {"x": "Temelin üstü", "y": 31.4},
+    {"x": "Temel", "y": 29},
+    {"x": "Düşük düzey", "y": 17.4},
+    {"x": "Daha düşük ya da ölçülemedi", "y": 22.2}
+   ]
+  }
+ ]
+}

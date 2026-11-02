@@ -1,0 +1,73 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "In seven of eight economies the leading indicator rose from September 2025 to September 2026, and in one it fell",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "United States",
+   "punkter": [
+    {"x": "September 2025", "y": 99.6},
+    {"x": "September 2026", "y": 101}
+   ]
+  },
+  {
+   "navn": "Japan",
+   "punkter": [
+    {"x": "September 2025", "y": 99.7},
+    {"x": "September 2026", "y": 100.4}
+   ]
+  },
+  {
+   "navn": "Germany",
+   "punkter": [
+    {"x": "September 2025", "y": 100.5},
+    {"x": "September 2026", "y": 101}
+   ]
+  },
+  {
+   "navn": "China",
+   "punkter": [
+    {"x": "September 2025", "y": 100.3},
+    {"x": "September 2026", "y": 97.4}
+   ]
+  },
+  {
+   "navn": "India",
+   "punkter": [
+    {"x": "September 2025", "y": 100},
+    {"x": "September 2026", "y": 102}
+   ]
+  },
+  {
+   "navn": "Brazil",
+   "punkter": [
+    {"x": "September 2025", "y": 100.1},
+    {"x": "September 2026", "y": 102.4}
+   ]
+  },
+  {
+   "navn": "Korea",
+   "punkter": [
+    {"x": "September 2025", "y": 99.7},
+    {"x": "September 2026", "y": 102.5}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "September 2025", "y": 99.6},
+    {"x": "September 2026", "y": 100.7}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "BİT uzmanı istihdamı beş yılda arttı; hedef sayı ölçülen sayıdan yüksek",
+ "kilde": {
+  "navn": "Eurostat, European Union"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "Hedefe kalan", "y": 9549200}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Karşılaştırma",
+   "punkter": [
+    {"x": "2020", "y": 8442400},
+    {"x": "2025", "y": 10450800},
+    {"x": "Hedef", "y": 20000000}
+   ],
+   "rol": "sammenligning",
+   "enhet": "",
+   "desimaler": 1
+  }
+ ]
+}

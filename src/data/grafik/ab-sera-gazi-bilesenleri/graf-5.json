@@ -1,0 +1,36 @@
+{
+ "dil": "en",
+ "form": "fossefall",
+ "tittel": "Change in emissions in eight main items: a fall in energy industries, a rise in transport",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "million ton",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Items",
+   "punkter": [
+    {"x": "Energy industries", "y": -799},
+    {"x": "Industry", "y": -559},
+    {"x": "Other fuel combustion", "y": -297},
+    {"x": "Agriculture", "y": -128},
+    {"x": "Fugitive emissions", "y": -118},
+    {"x": "Waste", "y": -74},
+    {"x": "Indirect carbon dioxide", "y": -4},
+    {"x": "Transport", "y": 130}
+   ]
+  },
+  {
+   "navn": "Total",
+   "punkter": [
+    {"x": "Total change", "y": -1850}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "fossefall",
+ "tittel": "Energy supplied the largest share of euro area inflation in October 2022",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Contributions",
+   "punkter": [
+    {"x": "Energy", "y": 4.44},
+    {"x": "Food, alcohol, tobacco", "y": 2.74},
+    {"x": "Non-energy industrial goods", "y": 1.62},
+    {"x": "Services", "y": 1.82}
+   ]
+  },
+  {
+   "navn": "Total",
+   "punkter": [
+    {"x": "Annual inflation", "y": 10.62}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

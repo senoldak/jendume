@@ -1,0 +1,36 @@
+{
+ "dil": "en",
+ "form": "manual",
+ "tittel": "The old-age dependency ratio rose in all twelve selected countries",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "In 2000",
+   "punkter": [
+    {"x": "Japan", "y": 25.6, "y2": 50.3},
+    {"x": "Italy", "y": 27, "y2": 38.1},
+    {"x": "Germany", "y": 24.2, "y2": 36},
+    {"x": "France", "y": 24.6, "y2": 35.4},
+    {"x": "United Kingdom", "y": 24.4, "y2": 30.4},
+    {"x": "Canada", "y": 18.4, "y2": 29.6},
+    {"x": "United States", "y": 18.3, "y2": 26.8},
+    {"x": "South Korea", "y": 9.9, "y2": 25.9},
+    {"x": "China", "y": 10.3, "y2": 20.7},
+    {"x": "Brazil", "y": 7.9, "y2": 15.3},
+    {"x": "Türkiye", "y": 9.1, "y2": 14.7},
+    {"x": "India", "y": 7.3, "y2": 10.2}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2000",
+   "2023"
+  ],
+  "sorter": false
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Dünyada çalışma çağındaki her yüz kişiye düşen yaşlı sayısı arttı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Dünya",
+   "punkter": [
+    {"x": "Dünya, 2023 yılında", "y": 15.4}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Karşılaştırma",
+   "punkter": [
+    {"x": "Türkiye", "y": 14.7},
+    {"x": "Japonya", "y": 50.3},
+    {"x": "Hindistan", "y": 10.2}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

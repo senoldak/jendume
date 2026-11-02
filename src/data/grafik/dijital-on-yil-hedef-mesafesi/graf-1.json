@@ -1,0 +1,36 @@
+{
+ "dil": "tr",
+ "form": "manual",
+ "tittel": "Seçili on ülkenin hepsinde temel dijital beceri payı iki ölçüm arasında arttı",
+ "kilde": {
+  "navn": "Eurostat, European Union"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "2021 yılı",
+   "punkter": [
+    {"x": "AB", "y": 53.9, "y2": 60.4, "mal": 80},
+    {"x": "Hollanda", "y": 78.9, "y2": 83.6, "mal": 80},
+    {"x": "İrlanda", "y": 70.5, "y2": 82.8, "mal": 80},
+    {"x": "Danimarka", "y": 68.7, "y2": 81.5, "mal": 80},
+    {"x": "Finlandiya", "y": 79.2, "y2": 81, "mal": 80},
+    {"x": "Fransa", "y": 62, "y2": 65.7, "mal": 80},
+    {"x": "Almanya", "y": 48.9, "y2": 59.6, "mal": 80},
+    {"x": "İtalya", "y": 45.6, "y2": 54.3, "mal": 80},
+    {"x": "Polonya", "y": 42.9, "y2": 50.4, "mal": 80},
+    {"x": "Bulgaristan", "y": 31.2, "y2": 38.3, "mal": 80},
+    {"x": "Romanya", "y": 27.8, "y2": 31.8, "mal": 80}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2021",
+   "2025"
+  ],
+  "sorter": false,
+  "malnavn": "Hedef"
+ }
+}

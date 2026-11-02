@@ -1,0 +1,28 @@
+{
+ "dil": "tr",
+ "form": "manual",
+ "tittel": "Türkiye'de dört basamağın dördü de 2022 yılına göre 2025 yılında daha yüksek",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "2022 yılında",
+   "punkter": [
+    {"x": "Hane interneti", "y": 94.2, "y2": 96.2},
+    {"x": "İnternet kullanımı", "y": 83.4, "y2": 89.8},
+    {"x": "Çevrimiçi alışveriş", "y": 33.6, "y2": 42.3},
+    {"x": "Kamu etkileşimi", "y": 66.1, "y2": 71.3}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2022",
+   "2025"
+  ],
+  "sorter": false
+ }
+}

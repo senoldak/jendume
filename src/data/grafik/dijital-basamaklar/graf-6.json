@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "fossefall",
+ "tittel": "In Türkiye, the two largest groups of online shoppers bought one to five times in the last three months",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Frequency",
+   "punkter": [
+    {"x": "Once or twice", "y": 13.9},
+    {"x": "Three to five times", "y": 14.1},
+    {"x": "Six to ten times", "y": 5.7},
+    {"x": "More than ten times", "y": 8.6}
+   ]
+  },
+  {
+   "navn": "Total",
+   "punkter": [
+    {"x": "Online shoppers", "y": 42.3}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

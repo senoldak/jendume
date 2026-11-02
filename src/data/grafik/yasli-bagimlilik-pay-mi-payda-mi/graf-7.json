@@ -1,0 +1,30 @@
+{
+ "dil": "en",
+ "form": "fossefall",
+ "tittel": "The older population's contribution is positive and the working-age population's negative; the result depends on the order of the split",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Contributions",
+   "punkter": [
+    {"x": "Older population", "y": 9.9},
+    {"x": "Working-age population", "y": -5.4}
+   ]
+  },
+  {
+   "navn": "Total",
+   "punkter": [
+    {"x": "Change in the ratio", "y": 4.5}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

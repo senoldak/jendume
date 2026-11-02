@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "ICT specialist employment rose over five years; the target figure is higher than the measured one",
+ "kilde": {
+  "navn": "Eurostat, European Union"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Gap",
+   "punkter": [
+    {"x": "Remaining", "y": 9549200}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Comparison",
+   "punkter": [
+    {"x": "2020", "y": 8442400},
+    {"x": "2025", "y": 10450800},
+    {"x": "Target", "y": 20000000}
+   ],
+   "rol": "sammenligning",
+   "enhet": "",
+   "desimaler": 1
+  }
+ ]
+}

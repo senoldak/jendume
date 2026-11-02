@@ -1,0 +1,20 @@
+{
+ "dil": "en",
+ "form": "rutenett",
+ "tittel": "In the EU, most individuals used the internet in the last three months",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "EU",
+   "punkter": [
+    {"x": "Used it in the last three months", "y": 93.79},
+    {"x": "Used it earlier", "y": 1.77},
+    {"x": "Never used it", "y": 4.37}
+   ]
+  }
+ ]
+}

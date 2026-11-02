@@ -1,0 +1,31 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "Life expectancy at birth rose by 5.68 years over 2000–2023",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Rise",
+   "punkter": [
+    {"x": "Rise, 2000–2023", "y": 5.68}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Years",
+   "punkter": [
+    {"x": "Year 2000", "y": 67.65},
+    {"x": "Year 2023", "y": 73.33}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 2
+  }
+ ]
+}

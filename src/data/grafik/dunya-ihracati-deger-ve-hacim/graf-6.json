@@ -1,0 +1,37 @@
+{
+ "dil": "en",
+ "form": "soyle",
+ "tittel": "The volume of world exports fell once over 2018–2025, in 2020, and rose in every other year",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Volume change",
+   "punkter": [
+    {"x": "2018", "y": 4.13},
+    {"x": "2019", "y": 1.28},
+    {"x": "2020", "y": -8.51},
+    {"x": "2021", "y": 9.98},
+    {"x": "2022", "y": 7.04},
+    {"x": "2023", "y": 0.76},
+    {"x": "2024", "y": 2.87},
+    {"x": "2025", "y": 4.88}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025"
+  ]
+ }
+}

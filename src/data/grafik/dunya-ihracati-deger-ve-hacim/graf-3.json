@@ -1,0 +1,23 @@
+{
+ "dil": "tr",
+ "form": "smultring",
+ "tittel": "Dolar cinsinden artışın büyük kısmı 2015 fiyatlarıyla ölçülen hacim artışına denk geliyor, kalanı cari ve sabit fiyatlı serilerin farkından oluşuyor",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Paylar",
+   "punkter": [
+    {"x": "Hacim artışı", "y": 62.1},
+    {"x": "Kalan", "y": 37.9}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 2,
+  "dogrudan": true
+ }
+}

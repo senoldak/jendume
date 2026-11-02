@@ -1,0 +1,30 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "In the world total, emissions rose together with GDP",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Emissions",
+   "punkter": [
+    {"x": "Emissions", "y": 54.2}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Comparison",
+   "punkter": [
+    {"x": "GDP", "y": 99.4}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

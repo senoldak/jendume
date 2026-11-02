@@ -1,0 +1,45 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Düşüş dağılımın her noktasında oldu, ortada daha büyüktü",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Değer",
+   "punkter": [
+    {"x": "Alt onda bir", "y": 61.2},
+    {"x": "Dörtte bir", "y": 66.5},
+    {"x": "Ortanca", "y": 72.3},
+    {"x": "Dörtte üç", "y": 77.2},
+    {"x": "Üst onda bir", "y": 82.3},
+    {"x": "Türkiye", "y": 75.7},
+    {"x": "Dünya", "y": 71.2}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Değişim",
+   "punkter": [
+    {"x": "Alt onda bir", "y": -1},
+    {"x": "Dörtte bir", "y": -0.8},
+    {"x": "Ortanca", "y": -1.9},
+    {"x": "Dörtte üç", "y": -1.6},
+    {"x": "Üst onda bir", "y": -0.4},
+    {"x": "Türkiye", "y": -2},
+    {"x": "Dünya", "y": -1.7}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

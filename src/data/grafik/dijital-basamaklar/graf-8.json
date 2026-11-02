@@ -1,0 +1,28 @@
+{
+ "dil": "en",
+ "form": "manual",
+ "tittel": "In Türkiye, all four steps were higher in 2025 than in 2022",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "in 2022",
+   "punkter": [
+    {"x": "Household internet", "y": 94.2, "y2": 96.2},
+    {"x": "Internet use", "y": 83.4, "y2": 89.8},
+    {"x": "Online shopping", "y": 33.6, "y2": 42.3},
+    {"x": "Public authorities", "y": 66.1, "y2": 71.3}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2022",
+   "2025"
+  ],
+  "sorter": false
+ }
+}

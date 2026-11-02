@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Orta senaryoda dünya nüfusu 2100 yılında, düşük ve yüksek senaryonun arasında kalıyor",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "milyar kişi",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Orta senaryo",
+   "punkter": [
+    {"x": "Orta senaryo", "y": 10.2}
+   ],
+   "rol": "ana",
+   "enhet": "milyar kişi",
+   "desimaler": 1
+  },
+  {
+   "navn": "Karşılaştırma",
+   "punkter": [
+    {"x": "Orta senaryo", "y": 10.2},
+    {"x": "Düşük senaryo", "y": 7},
+    {"x": "Yüksek senaryo", "y": 14.4}
+   ],
+   "rol": "sammenligning",
+   "enhet": "milyar kişi",
+   "desimaler": 1
+  }
+ ]
+}

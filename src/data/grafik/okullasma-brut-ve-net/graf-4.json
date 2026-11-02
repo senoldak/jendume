@@ -1,0 +1,66 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "İlkokulda brüt ile net oran arasındaki fark 2000–2017 döneminde kimi gruplarda daraldı, kimilerinde genişledi",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Dünya",
+   "punkter": [
+    {"x": "2000", "y": 15.7},
+    {"x": "2017", "y": 12.5}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "2000", "y": 9.4},
+    {"x": "2017", "y": 9.6}
+   ]
+  },
+  {
+   "navn": "Avrupa Birliği",
+   "punkter": [
+    {"x": "2000", "y": 6.3},
+    {"x": "2017", "y": 4.6}
+   ]
+  },
+  {
+   "navn": "Kuzey Amerika",
+   "punkter": [
+    {"x": "2000", "y": 5.2},
+    {"x": "2017", "y": 6.4}
+   ]
+  },
+  {
+   "navn": "Latin Amerika ve Karayipler",
+   "punkter": [
+    {"x": "2000", "y": 21.5},
+    {"x": "2017", "y": 13.4}
+   ]
+  },
+  {
+   "navn": "En az gelişmiş ülkeler",
+   "punkter": [
+    {"x": "2000", "y": 16.4},
+    {"x": "2017", "y": 20}
+   ]
+  },
+  {
+   "navn": "Güney Asya",
+   "punkter": [
+    {"x": "2000", "y": 23.2},
+    {"x": "2017", "y": 29.4}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

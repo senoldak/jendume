@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Ulaştırma dışındaki ana kalemlerde emisyon azaldı",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Değişim",
+   "punkter": [
+    {"x": "Ulaştırma", "y": 19.3},
+    {"x": "Tarım", "y": -26.3},
+    {"x": "Diğer yakıt yakma", "y": -39.5},
+    {"x": "Atık", "y": -39.9},
+    {"x": "Sanayi süreçleri ve ürün kullanımı", "y": -42.2},
+    {"x": "İmalat yakıtı", "y": -51.2},
+    {"x": "Enerji endüstrileri", "y": -55.4},
+    {"x": "Yakıt kaçakları", "y": -71.7},
+    {"x": "Toplam", "y": -38}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "Toplam"
+  ]
+ }
+}

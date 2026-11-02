@@ -1,0 +1,47 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "At secondary level the gap between gross and net rates is much wider than in primary school in some countries",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Gap",
+   "punkter": [
+    {"x": "Belgium", "y": 63.8},
+    {"x": "Finland", "y": 57.5},
+    {"x": "Australia", "y": 61.3},
+    {"x": "Türkiye", "y": 25.8},
+    {"x": "OECD", "y": 17.4},
+    {"x": "Germany", "y": 15.8},
+    {"x": "World", "y": 8.7},
+    {"x": "US", "y": 6.5}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Vs primary",
+   "punkter": [
+    {"x": "Belgium", "y": 59.8},
+    {"x": "Finland", "y": 56.6},
+    {"x": "Australia", "y": 57.1},
+    {"x": "Türkiye", "y": 16.2},
+    {"x": "OECD", "y": 10.6},
+    {"x": "Germany", "y": 4.2},
+    {"x": "World", "y": -3.8},
+    {"x": "US", "y": -0.7}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

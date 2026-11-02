@@ -1,0 +1,73 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "The number of researchers rose in all eight selected countries, fastest in Türkiye",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "South Korea",
+   "punkter": [
+    {"x": "2015", "y": 7020},
+    {"x": "2022", "y": 9435}
+   ]
+  },
+  {
+   "navn": "Denmark",
+   "punkter": [
+    {"x": "2015", "y": 7566},
+    {"x": "2022", "y": 9037}
+   ]
+  },
+  {
+   "navn": "Sweden",
+   "punkter": [
+    {"x": "2015", "y": 6846},
+    {"x": "2022", "y": 8639}
+   ]
+  },
+  {
+   "navn": "Finland",
+   "punkter": [
+    {"x": "2015", "y": 6856},
+    {"x": "2022", "y": 8073}
+   ]
+  },
+  {
+   "navn": "Germany",
+   "punkter": [
+    {"x": "2015", "y": 4755},
+    {"x": "2022", "y": 5802}
+   ]
+  },
+  {
+   "navn": "Japan",
+   "punkter": [
+    {"x": "2015", "y": 5198},
+    {"x": "2022", "y": 5630}
+   ]
+  },
+  {
+   "navn": "United States",
+   "punkter": [
+    {"x": "2015", "y": 3950},
+    {"x": "2022", "y": 4937}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "2015", "y": 1136},
+    {"x": "2022", "y": 2479}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

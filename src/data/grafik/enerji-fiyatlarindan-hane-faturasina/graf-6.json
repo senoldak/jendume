@@ -1,0 +1,54 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "The world energy index fluctuated far more sharply than household energy prices",
+ "kilde": {
+  "navn": "Eurostat, International Monetary Fund"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "EU household energy prices",
+   "punkter": [
+    {"x": "Mar 2021", "y": 107},
+    {"x": "Jun 2021", "y": 110},
+    {"x": "Sep 2021", "y": 115},
+    {"x": "Dec 2021", "y": 125},
+    {"x": "Mar 2022", "y": 150},
+    {"x": "Jun 2022", "y": 155},
+    {"x": "Sep 2022", "y": 160},
+    {"x": "Dec 2022", "y": 156},
+    {"x": "Mar 2023", "y": 154},
+    {"x": "Jun 2023", "y": 149},
+    {"x": "Sep 2023", "y": 154},
+    {"x": "Dec 2023", "y": 148},
+    {"x": "Mar 2024", "y": 152},
+    {"x": "Jun 2024", "y": 149},
+    {"x": "Sep 2024", "y": 147},
+    {"x": "Dec 2024", "y": 149}
+   ]
+  },
+  {
+   "navn": "World energy index",
+   "punkter": [
+    {"x": "Mar 2021", "y": 120},
+    {"x": "Jun 2021", "y": 144},
+    {"x": "Sep 2021", "y": 180},
+    {"x": "Dec 2021", "y": 203},
+    {"x": "Mar 2022", "y": 280},
+    {"x": "Jun 2022", "y": 277},
+    {"x": "Sep 2022", "y": 279},
+    {"x": "Dec 2022", "y": 218},
+    {"x": "Mar 2023", "y": 157},
+    {"x": "Jun 2023", "y": 140},
+    {"x": "Sep 2023", "y": 173},
+    {"x": "Dec 2023", "y": 148},
+    {"x": "Mar 2024", "y": 152},
+    {"x": "Jun 2024", "y": 157},
+    {"x": "Sep 2024", "y": 144},
+    {"x": "Dec 2024", "y": 150}
+   ]
+  }
+ ]
+}

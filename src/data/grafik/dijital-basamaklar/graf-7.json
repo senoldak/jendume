@@ -1,0 +1,25 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "The gap between Türkiye and the EU changes sign from step to step",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Gap",
+   "punkter": [
+    {"x": "Household internet", "y": 1.42},
+    {"x": "Internet use", "y": -4.02},
+    {"x": "Online shopping", "y": -20.07},
+    {"x": "Contact with public authorities", "y": 13.69},
+    {"x": "Tax declaration", "y": -28.5}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false
+ }
+}

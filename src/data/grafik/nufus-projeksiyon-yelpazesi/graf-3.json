@@ -1,0 +1,37 @@
+{
+ "dil": "tr",
+ "form": "soyle",
+ "tittel": "Gösterilen ülkeler arasında senaryo farkının orta senaryoya oranı en çok Çin'de, en az ABD'de",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark / orta senaryo",
+   "punkter": [
+    {"x": "Çin", "y": 86.6},
+    {"x": "Güney Kore", "y": 84.5},
+    {"x": "Türkiye", "y": 81.2},
+    {"x": "Hindistan", "y": 80.1},
+    {"x": "Dünya", "y": 72.8},
+    {"x": "Nijerya", "y": 68.1},
+    {"x": "Fransa", "y": 64.8},
+    {"x": "ABD", "y": 61.5}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Çin",
+   "Güney Kore",
+   "Türkiye",
+   "Hindistan",
+   "Dünya",
+   "Nijerya",
+   "Fransa",
+   "ABD"
+  ]
+ }
+}

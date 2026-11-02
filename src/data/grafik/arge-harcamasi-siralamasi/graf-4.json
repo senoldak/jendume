@@ -1,0 +1,73 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "Araştırmacı sayısı seçilen sekiz ülkenin hepsinde arttı; en hızlı artış Türkiye’de",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Güney Kore",
+   "punkter": [
+    {"x": "2015", "y": 7020},
+    {"x": "2022", "y": 9435}
+   ]
+  },
+  {
+   "navn": "Danimarka",
+   "punkter": [
+    {"x": "2015", "y": 7566},
+    {"x": "2022", "y": 9037}
+   ]
+  },
+  {
+   "navn": "İsveç",
+   "punkter": [
+    {"x": "2015", "y": 6846},
+    {"x": "2022", "y": 8639}
+   ]
+  },
+  {
+   "navn": "Finlandiya",
+   "punkter": [
+    {"x": "2015", "y": 6856},
+    {"x": "2022", "y": 8073}
+   ]
+  },
+  {
+   "navn": "Almanya",
+   "punkter": [
+    {"x": "2015", "y": 4755},
+    {"x": "2022", "y": 5802}
+   ]
+  },
+  {
+   "navn": "Japonya",
+   "punkter": [
+    {"x": "2015", "y": 5198},
+    {"x": "2022", "y": 5630}
+   ]
+  },
+  {
+   "navn": "ABD",
+   "punkter": [
+    {"x": "2015", "y": 3950},
+    {"x": "2022", "y": 4937}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "2015", "y": 1136},
+    {"x": "2022", "y": 2479}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

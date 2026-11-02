@@ -1,0 +1,40 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "The share of GDP spent on research and development varies widely across countries",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "R&D spending",
+   "punkter": [
+    {"x": "South Korea", "y": 4.85},
+    {"x": "United States", "y": 3.49},
+    {"x": "Sweden", "y": 3.47},
+    {"x": "Japan", "y": 3.4},
+    {"x": "Belgium", "y": 3.2},
+    {"x": "Austria", "y": 3.18},
+    {"x": "Germany", "y": 3.07},
+    {"x": "Finland", "y": 2.98},
+    {"x": "Denmark", "y": 2.87},
+    {"x": "United Kingdom", "y": 2.75},
+    {"x": "Iceland", "y": 2.6},
+    {"x": "China", "y": 2.49},
+    {"x": "Türkiye", "y": 1.32},
+    {"x": "OECD members", "y": 2.94}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD members"
+  ]
+ }
+}

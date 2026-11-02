@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "Emissions fell in the main items other than transport",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Change",
+   "punkter": [
+    {"x": "Transport", "y": 19.3},
+    {"x": "Agriculture", "y": -26.3},
+    {"x": "Other fuel combustion", "y": -39.5},
+    {"x": "Waste", "y": -39.9},
+    {"x": "Industrial processes and product use", "y": -42.2},
+    {"x": "Manufacturing fuel", "y": -51.2},
+    {"x": "Energy industries", "y": -55.4},
+    {"x": "Fugitive emissions", "y": -71.7},
+    {"x": "Total", "y": -38}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "Total"
+  ]
+ }
+}

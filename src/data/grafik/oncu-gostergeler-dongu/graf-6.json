@@ -1,0 +1,47 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "Türkiye's leading indicator rose after two falling periods while the G20 total stayed in a narrow band",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "Jan 2025", "y": 100.2},
+    {"x": "Mar 2025", "y": 99.8},
+    {"x": "May 2025", "y": 99.2},
+    {"x": "Jul 2025", "y": 99.2},
+    {"x": "Sep 2025", "y": 99.6},
+    {"x": "Nov 2025", "y": 100.1},
+    {"x": "Jan 2026", "y": 100.4},
+    {"x": "Mar 2026", "y": 100.1},
+    {"x": "May 2026", "y": 99.9},
+    {"x": "Jul 2026", "y": 100.2},
+    {"x": "Sep 2026", "y": 100.7}
+   ]
+  },
+  {
+   "navn": "G20",
+   "punkter": [
+    {"x": "Jan 2025", "y": 100.2},
+    {"x": "Mar 2025", "y": 100.1},
+    {"x": "May 2025", "y": 100.1},
+    {"x": "Jul 2025", "y": 100.1},
+    {"x": "Sep 2025", "y": 100.1},
+    {"x": "Nov 2025", "y": 100.2},
+    {"x": "Jan 2026", "y": 100.3},
+    {"x": "Mar 2026", "y": 100.3},
+    {"x": "May 2026", "y": 100.2},
+    {"x": "Jul 2026", "y": 100.2},
+    {"x": "Sep 2026", "y": 100.1}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

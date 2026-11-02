@@ -1,0 +1,27 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "The share of enterprises using AI rises with enterprise size",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Enterprises using AI",
+   "punkter": [
+    {"x": "10–49 employees", "y": 17},
+    {"x": "50–249 employees", "y": 30.4},
+    {"x": "250+ employees", "y": 55},
+    {"x": "All enterprises (10+ employees)", "y": 20}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "All enterprises (10+ employees)"
+  ]
+ }
+}

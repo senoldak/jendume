@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "fossefall",
+ "tittel": "Türkiye'de alışveriş yapanların en büyük iki grubu son üç ayda bir ile beş kez alışveriş etmiş",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Sıklık",
+   "punkter": [
+    {"x": "Bir ya da iki kez", "y": 13.9},
+    {"x": "Üç ile beş kez", "y": 14.1},
+    {"x": "Altı ile on kez", "y": 5.7},
+    {"x": "On kezden fazla", "y": 8.6}
+   ]
+  },
+  {
+   "navn": "Toplam",
+   "punkter": [
+    {"x": "Alışveriş yapanlar", "y": 42.3}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

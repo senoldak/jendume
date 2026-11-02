@@ -1,0 +1,34 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Ağustos 2026'da bazı ülkeler Şubat 2020 düzeyinin üstünde, bazıları altında",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "OECD toplamı", "y": -0.3},
+    {"x": "ABD", "y": 0.6},
+    {"x": "Kanada", "y": 0.6},
+    {"x": "Japonya", "y": 0.1},
+    {"x": "Fransa", "y": 0.3},
+    {"x": "Kore", "y": -0.7},
+    {"x": "Avustralya", "y": -0.4},
+    {"x": "Türkiye", "y": -4.8}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD toplamı"
+  ]
+ }
+}

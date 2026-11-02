@@ -1,0 +1,47 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "In the six countries shown, the ratio between the peak and the lowest month grows from south to north",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Peak / low",
+   "punkter": [
+    {"x": "Greece", "y": 2.61},
+    {"x": "Spain", "y": 2.79},
+    {"x": "Italy", "y": 3.72},
+    {"x": "EU", "y": 4.51},
+    {"x": "Germany", "y": 6.3},
+    {"x": "Sweden", "y": 23.82},
+    {"x": "Finland", "y": 63},
+    {"x": "Türkiye", "y": 2.74}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Season gap",
+   "punkter": [
+    {"x": "Greece", "y": 18.68},
+    {"x": "Spain", "y": 20.64},
+    {"x": "Italy", "y": 24.8},
+    {"x": "EU", "y": 27.9},
+    {"x": "Germany", "y": 31.18},
+    {"x": "Sweden", "y": 37.53},
+    {"x": "Finland", "y": 47.55},
+    {"x": "Türkiye", "y": 21.45}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

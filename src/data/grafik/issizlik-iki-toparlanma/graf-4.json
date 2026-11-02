@@ -1,0 +1,39 @@
+{
+ "dil": "tr",
+ "form": "soyle",
+ "tittel": "Birinci dönemde oran, zirveden beş yıl sonra bile başlangıç düzeyinin üstündeydi",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "Zirve", "y": 2.9},
+    {"x": "Altı ay", "y": 2.7},
+    {"x": "Bir yıl", "y": 2.4},
+    {"x": "On sekiz ay", "y": 2.3},
+    {"x": "İki yıl", "y": 2.2},
+    {"x": "Otuz ay", "y": 2.3},
+    {"x": "Üç yıl", "y": 2.5},
+    {"x": "Dört yıl", "y": 1.9},
+    {"x": "Beş yıl", "y": 1.3}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Zirve",
+   "Altı ay",
+   "Bir yıl",
+   "On sekiz ay",
+   "İki yıl",
+   "Otuz ay",
+   "Üç yıl",
+   "Dört yıl",
+   "Beş yıl"
+  ]
+ }
+}

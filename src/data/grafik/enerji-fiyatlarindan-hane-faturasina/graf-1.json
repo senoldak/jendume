@@ -1,0 +1,61 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "Enerji kalemlerinde fiyat artışı bir yılda hızlandı; en büyük sıçrama gazda",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Tüm kalemler",
+   "punkter": [
+    {"x": "2021", "y": 2.9},
+    {"x": "2022", "y": 9.2}
+   ]
+  },
+  {
+   "navn": "Gıda, alkol, tütün",
+   "punkter": [
+    {"x": "2021", "y": 1.9},
+    {"x": "2022", "y": 10.2}
+   ]
+  },
+  {
+   "navn": "Hizmetler",
+   "punkter": [
+    {"x": "2021", "y": 1.9},
+    {"x": "2022", "y": 4.4}
+   ]
+  },
+  {
+   "navn": "Enerji",
+   "punkter": [
+    {"x": "2021", "y": 12.6},
+    {"x": "2022", "y": 35.2}
+   ]
+  },
+  {
+   "navn": "Elektrik",
+   "punkter": [
+    {"x": "2021", "y": 9.4},
+    {"x": "2022", "y": 31.8}
+   ]
+  },
+  {
+   "navn": "Gaz",
+   "punkter": [
+    {"x": "2021", "y": 10.6},
+    {"x": "2022", "y": 55.2}
+   ]
+  },
+  {
+   "navn": "Sıvı ve ulaşım yakıtları",
+   "punkter": [
+    {"x": "2021", "y": 17.9},
+    {"x": "2022", "y": 29.5}
+   ]
+  }
+ ]
+}

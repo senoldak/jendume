@@ -1,0 +1,37 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Yaşlı nüfus çalışma çağı nüfusundan daha hızlı büyüdü",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Yaşlı nüfus",
+   "punkter": [
+    {"x": "2000", "y": 100},
+    {"x": "2005", "y": 113},
+    {"x": "2010", "y": 126},
+    {"x": "2015", "y": 146},
+    {"x": "2020", "y": 174},
+    {"x": "2023", "y": 191}
+   ]
+  },
+  {
+   "navn": "Çalışma çağı nüfusu",
+   "punkter": [
+    {"x": "2000", "y": 100},
+    {"x": "2005", "y": 109},
+    {"x": "2010", "y": 118},
+    {"x": "2015", "y": 125},
+    {"x": "2020", "y": 132},
+    {"x": "2023", "y": 135}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

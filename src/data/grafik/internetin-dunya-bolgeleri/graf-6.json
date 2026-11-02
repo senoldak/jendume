@@ -1,0 +1,61 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "The regions’ values rose over 2005–2025, and the two ends of the order stayed the same",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "East Asia & Pacific",
+   "punkter": [
+    {"x": "2005", "y": 14.7},
+    {"x": "2025", "y": 88.4}
+   ]
+  },
+  {
+   "navn": "Europe & Central Asia",
+   "punkter": [
+    {"x": "2005", "y": 34.7},
+    {"x": "2025", "y": 92.4}
+   ]
+  },
+  {
+   "navn": "Latin America & Caribbean",
+   "punkter": [
+    {"x": "2005", "y": 16.6},
+    {"x": "2025", "y": 83.7}
+   ]
+  },
+  {
+   "navn": "North America",
+   "punkter": [
+    {"x": "2005", "y": 68.3},
+    {"x": "2025", "y": 95.6}
+   ]
+  },
+  {
+   "navn": "South Asia",
+   "punkter": [
+    {"x": "2005", "y": 2.1},
+    {"x": "2025", "y": 67.8}
+   ]
+  },
+  {
+   "navn": "Sub-Saharan Africa",
+   "punkter": [
+    {"x": "2005", "y": 2},
+    {"x": "2025", "y": 35.7}
+   ]
+  },
+  {
+   "navn": "World",
+   "punkter": [
+    {"x": "2005", "y": 15.6},
+    {"x": "2025", "y": 73.6}
+   ]
+  }
+ ]
+}

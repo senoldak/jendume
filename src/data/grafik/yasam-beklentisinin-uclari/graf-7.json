@@ -1,0 +1,39 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "The gap between the ends narrowed faster than the middle band",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Gap between the ends",
+   "punkter": [
+    {"x": "2000", "y": 26.9},
+    {"x": "2005", "y": 26},
+    {"x": "2010", "y": 23.9},
+    {"x": "2015", "y": 21.9},
+    {"x": "2019", "y": 20.5},
+    {"x": "2021", "y": 21.1},
+    {"x": "2023", "y": 19.3}
+   ]
+  },
+  {
+   "navn": "Middle band",
+   "punkter": [
+    {"x": "2000", "y": 13},
+    {"x": "2005", "y": 12},
+    {"x": "2010", "y": 12.6},
+    {"x": "2015", "y": 12.3},
+    {"x": "2019", "y": 11.5},
+    {"x": "2021", "y": 10.7},
+    {"x": "2023", "y": 11.1}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

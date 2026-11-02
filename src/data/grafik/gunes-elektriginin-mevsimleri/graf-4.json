@@ -1,0 +1,47 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Gösterdiğimiz altı ülkede tepe ay ile dip ay arasındaki oran güneyden kuzeye doğru büyüyor",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Tepe / dip",
+   "punkter": [
+    {"x": "Yunanistan", "y": 2.61},
+    {"x": "İspanya", "y": 2.79},
+    {"x": "İtalya", "y": 3.72},
+    {"x": "AB", "y": 4.51},
+    {"x": "Almanya", "y": 6.3},
+    {"x": "İsveç", "y": 23.82},
+    {"x": "Finlandiya", "y": 63},
+    {"x": "Türkiye", "y": 2.74}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  },
+  {
+   "navn": "Yaz–kış farkı",
+   "punkter": [
+    {"x": "Yunanistan", "y": 18.68},
+    {"x": "İspanya", "y": 20.64},
+    {"x": "İtalya", "y": 24.8},
+    {"x": "AB", "y": 27.9},
+    {"x": "Almanya", "y": 31.18},
+    {"x": "İsveç", "y": 37.53},
+    {"x": "Finlandiya", "y": 47.55},
+    {"x": "Türkiye", "y": 21.45}
+   ],
+   "enhet": "",
+   "desimaler": 2
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Ar-Ge harcamasının GSYH içindeki payı ülkeler arasında geniş bir aralığa yayılıyor",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Ar-Ge harcaması",
+   "punkter": [
+    {"x": "Güney Kore", "y": 4.85},
+    {"x": "ABD", "y": 3.49},
+    {"x": "İsveç", "y": 3.47},
+    {"x": "Japonya", "y": 3.4},
+    {"x": "Belçika", "y": 3.2},
+    {"x": "Avusturya", "y": 3.18},
+    {"x": "Almanya", "y": 3.07},
+    {"x": "Finlandiya", "y": 2.98},
+    {"x": "Danimarka", "y": 2.87},
+    {"x": "Birleşik Krallık", "y": 2.75},
+    {"x": "İzlanda", "y": 2.6},
+    {"x": "Çin", "y": 2.49},
+    {"x": "Türkiye", "y": 1.32},
+    {"x": "OECD üyeleri", "y": 2.94}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD üyeleri"
+  ]
+ }
+}

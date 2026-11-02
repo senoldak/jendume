@@ -1,0 +1,32 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "World population in 2100: the medium scenario lies between the low and the high scenario",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "billion kişi",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Medium scenario",
+   "punkter": [
+    {"x": "Medium scenario", "y": 10.2}
+   ],
+   "rol": "ana",
+   "enhet": "billion kişi",
+   "desimaler": 1
+  },
+  {
+   "navn": "Comparison",
+   "punkter": [
+    {"x": "Medium scenario", "y": 10.2},
+    {"x": "Low scenario", "y": 7},
+    {"x": "High scenario", "y": 14.4}
+   ],
+   "rol": "sammenligning",
+   "enhet": "billion kişi",
+   "desimaler": 1
+  }
+ ]
+}

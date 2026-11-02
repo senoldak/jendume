@@ -1,0 +1,39 @@
+{
+ "dil": "en",
+ "form": "soyle",
+ "tittel": "In the first episode the rate was above its starting level even five years after the peak",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Difference",
+   "punkter": [
+    {"x": "Peak", "y": 2.9},
+    {"x": "Six months", "y": 2.7},
+    {"x": "One year", "y": 2.4},
+    {"x": "Eighteen months", "y": 2.3},
+    {"x": "Two years", "y": 2.2},
+    {"x": "Thirty months", "y": 2.3},
+    {"x": "Three years", "y": 2.5},
+    {"x": "Four years", "y": 1.9},
+    {"x": "Five years", "y": 1.3}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Peak",
+   "Six months",
+   "One year",
+   "Eighteen months",
+   "Two years",
+   "Thirty months",
+   "Three years",
+   "Four years",
+   "Five years"
+  ]
+ }
+}

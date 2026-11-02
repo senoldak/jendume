@@ -1,0 +1,73 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "Ekonomi büyüdü; emisyon bazı ülkelerde azaldı, bazılarında arttı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "ABD",
+   "punkter": [
+    {"x": "GSYH", "y": 65.7},
+    {"x": "Emisyon", "y": -21.9}
+   ]
+  },
+  {
+   "navn": "Almanya",
+   "punkter": [
+    {"x": "GSYH", "y": 27.4},
+    {"x": "Emisyon", "y": -33.5}
+   ]
+  },
+  {
+   "navn": "Birleşik Krallık",
+   "punkter": [
+    {"x": "GSYH", "y": 43.4},
+    {"x": "Emisyon", "y": -47}
+   ]
+  },
+  {
+   "navn": "Polonya",
+   "punkter": [
+    {"x": "GSYH", "y": 132.4},
+    {"x": "Emisyon", "y": -11.8}
+   ]
+  },
+  {
+   "navn": "Brezilya",
+   "punkter": [
+    {"x": "GSYH", "y": 70.9},
+    {"x": "Emisyon", "y": 40.7}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "GSYH", "y": 218.1},
+    {"x": "Emisyon", "y": 102.6}
+   ]
+  },
+  {
+   "navn": "Çin",
+   "punkter": [
+    {"x": "GSYH", "y": 554.3},
+    {"x": "Emisyon", "y": 259.8}
+   ]
+  },
+  {
+   "navn": "Hindistan",
+   "punkter": [
+    {"x": "GSYH", "y": 329},
+    {"x": "Emisyon", "y": 216.4}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Kuzey Amerika ile Sahra Altı Afrika arasındaki puan farkı 2005–2025 arasında yalnızca bir miktar daraldı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Fark",
+   "punkter": [
+    {"x": "2005", "y": 66.3},
+    {"x": "2007", "y": 71.7},
+    {"x": "2009", "y": 67.6},
+    {"x": "2011", "y": 63.5},
+    {"x": "2013", "y": 61.6},
+    {"x": "2015", "y": 59.9},
+    {"x": "2017", "y": 67.8},
+    {"x": "2019", "y": 65.3},
+    {"x": "2021", "y": 62.5},
+    {"x": "2023", "y": 61},
+    {"x": "2025", "y": 59.9}
+   ]
+  }
+ ]
+}

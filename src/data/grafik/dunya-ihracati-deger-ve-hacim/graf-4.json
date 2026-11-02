@@ -1,0 +1,47 @@
+{
+ "dil": "tr",
+ "form": "minitabell",
+ "tittel": "Seçtiğimiz yedi ülkenin beşinde cari dolar artışı hacim artışından büyük; ikisinde tersi",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Cari dolar",
+   "punkter": [
+    {"x": "Dünya", "y": 308},
+    {"x": "Türkiye", "y": 582},
+    {"x": "Almanya", "y": 232},
+    {"x": "Hindistan", "y": 1261},
+    {"x": "Güney Kore", "y": 324},
+    {"x": "Brezilya", "y": 485},
+    {"x": "ABD", "y": 193},
+    {"x": "Japonya", "y": 77}
+   ],
+   "enhet": "%",
+   "desimaler": 0
+  },
+  {
+   "navn": "Hacim",
+   "punkter": [
+    {"x": "Dünya", "y": 133},
+    {"x": "Türkiye", "y": 285},
+    {"x": "Almanya", "y": 115},
+    {"x": "Hindistan", "y": 702},
+    {"x": "Güney Kore", "y": 347},
+    {"x": "Brezilya", "y": 169},
+    {"x": "ABD", "y": 99},
+    {"x": "Japonya", "y": 116}
+   ],
+   "enhet": "%",
+   "desimaler": 0
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

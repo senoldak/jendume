@@ -1,0 +1,30 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "Dünya toplamında emisyon, GSYH ile birlikte arttı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Emisyon",
+   "punkter": [
+    {"x": "Emisyon", "y": 54.2}
+   ],
+   "rol": "ana",
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Karşılaştırma",
+   "punkter": [
+    {"x": "GSYH", "y": 99.4}
+   ],
+   "rol": "sammenligning",
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

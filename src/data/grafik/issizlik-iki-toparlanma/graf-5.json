@@ -1,0 +1,40 @@
+{
+ "dil": "en",
+ "form": "linje",
+ "tittel": "Unemployment fell much faster in the second episode",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "First episode",
+   "punkter": [
+    {"x": "Peak", "y": 8.7},
+    {"x": "Six months", "y": 8.5},
+    {"x": "One year", "y": 8.2},
+    {"x": "Eighteen months", "y": 8.1},
+    {"x": "Two years", "y": 8},
+    {"x": "Thirty months", "y": 8.1},
+    {"x": "Three years", "y": 8.3},
+    {"x": "Four years", "y": 7.7},
+    {"x": "Five years", "y": 7.1}
+   ]
+  },
+  {
+   "navn": "Second episode",
+   "punkter": [
+    {"x": "Peak", "y": 8.9},
+    {"x": "Six months", "y": 7.1},
+    {"x": "One year", "y": 6.8},
+    {"x": "Eighteen months", "y": 5.6},
+    {"x": "Two years", "y": 5},
+    {"x": "Thirty months", "y": 5},
+    {"x": "Three years", "y": 4.8},
+    {"x": "Four years", "y": 4.9},
+    {"x": "Five years", "y": 4.9}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Almanya'da GSYH endeksi yükselirken emisyon endeksi geriledi",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "GSYH",
+   "punkter": [
+    {"x": "2000", "y": 100},
+    {"x": "2004", "y": 102},
+    {"x": "2008", "y": 111},
+    {"x": "2012", "y": 113.8},
+    {"x": "2016", "y": 121.3},
+    {"x": "2020", "y": 122.1},
+    {"x": "2024", "y": 127.4}
+   ]
+  },
+  {
+   "navn": "Emisyon",
+   "punkter": [
+    {"x": "2000", "y": 100},
+    {"x": "2004", "y": 99.1},
+    {"x": "2008", "y": 95.2},
+    {"x": "2012", "y": 91.8},
+    {"x": "2016", "y": 90.6},
+    {"x": "2020", "y": 73.7},
+    {"x": "2024", "y": 66.5}
+   ]
+  }
+ ],
+ "valg": {
+  "noktalar": true
+ }
+}

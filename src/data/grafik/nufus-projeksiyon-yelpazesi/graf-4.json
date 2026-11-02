@@ -1,0 +1,51 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Türkiye için üç senaryo 2100 yılına doğru birbirinden uzaklaşıyor",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "milyon kişi",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Düşük senaryo",
+   "punkter": [
+    {"x": "2030", "y": 87.9},
+    {"x": "2040", "y": 87.1},
+    {"x": "2050", "y": 84.5},
+    {"x": "2060", "y": 79.1},
+    {"x": "2070", "y": 71.2},
+    {"x": "2080", "y": 62},
+    {"x": "2090", "y": 52.3},
+    {"x": "2100", "y": 42.5}
+   ]
+  },
+  {
+   "navn": "Orta senaryo",
+   "punkter": [
+    {"x": "2030", "y": 89},
+    {"x": "2040", "y": 91},
+    {"x": "2050", "y": 91.3},
+    {"x": "2060", "y": 88.9},
+    {"x": "2070", "y": 84.4},
+    {"x": "2080", "y": 78.6},
+    {"x": "2090", "y": 72},
+    {"x": "2100", "y": 65.3}
+   ]
+  },
+  {
+   "navn": "Yüksek senaryo",
+   "punkter": [
+    {"x": "2030", "y": 90.2},
+    {"x": "2040", "y": 94.9},
+    {"x": "2050", "y": 98},
+    {"x": "2060", "y": 99},
+    {"x": "2070", "y": 99},
+    {"x": "2080", "y": 98},
+    {"x": "2090", "y": 96.5},
+    {"x": "2100", "y": 95.6}
+   ]
+  }
+ ]
+}

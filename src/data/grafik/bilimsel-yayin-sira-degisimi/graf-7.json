@@ -1,0 +1,36 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "In 2023, China's article count is higher than that of each of the other twelve countries in the list",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Article count",
+   "punkter": [
+    {"x": "United States", "y": 430843},
+    {"x": "China", "y": 932712},
+    {"x": "India", "y": 228174},
+    {"x": "Japan", "y": 96543},
+    {"x": "Germany", "y": 108782},
+    {"x": "United Kingdom", "y": 97536},
+    {"x": "South Korea", "y": 71724},
+    {"x": "Türkiye", "y": 50180},
+    {"x": "France", "y": 62180},
+    {"x": "Italy", "y": 82771},
+    {"x": "Brazil", "y": 58292},
+    {"x": "Canada", "y": 63720},
+    {"x": "Australia", "y": 54589}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

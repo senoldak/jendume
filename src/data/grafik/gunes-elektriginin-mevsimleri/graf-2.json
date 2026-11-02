@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "AB'de fotovoltaik elektrik yazın en yüksek, kışın en düşük düzeye geliyor",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "AB",
+   "punkter": [
+    {"x": "Oca", "y": 10409},
+    {"x": "Şub", "y": 16375},
+    {"x": "Mar", "y": 28158},
+    {"x": "Nis", "y": 35710},
+    {"x": "May", "y": 41298},
+    {"x": "Haz", "y": 45625},
+    {"x": "Tem", "y": 44215},
+    {"x": "Ağu", "y": 42780},
+    {"x": "Eyl", "y": 32275},
+    {"x": "Eki", "y": 21943},
+    {"x": "Kas", "y": 14236},
+    {"x": "Ara", "y": 10113}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false
+ }
+}

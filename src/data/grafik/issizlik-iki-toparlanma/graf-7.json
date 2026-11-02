@@ -1,0 +1,34 @@
+{
+ "dil": "en",
+ "form": "rangering",
+ "tittel": "Some countries stand above their level of February 2020 in August 2026, and some below",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Difference",
+   "punkter": [
+    {"x": "OECD-wide", "y": -0.3},
+    {"x": "United States", "y": 0.6},
+    {"x": "Canada", "y": 0.6},
+    {"x": "Japan", "y": 0.1},
+    {"x": "France", "y": 0.3},
+    {"x": "Korea", "y": -0.7},
+    {"x": "Australia", "y": -0.4},
+    {"x": "Türkiye", "y": -4.8}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "fremhev": [
+   "Türkiye"
+  ],
+  "toplam": [
+   "OECD-wide"
+  ]
+ }
+}

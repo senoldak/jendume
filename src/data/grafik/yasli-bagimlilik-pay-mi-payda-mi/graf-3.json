@@ -1,0 +1,30 @@
+{
+ "dil": "tr",
+ "form": "fossefall",
+ "tittel": "Yaşlı sayısının katkısı artı, çalışma çağı nüfusunun katkısı eksi; sonuç ayrıştırma sırasına bağlı",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Katkılar",
+   "punkter": [
+    {"x": "Yaşlı sayısı", "y": 9.9},
+    {"x": "Çalışma çağı nüfusu", "y": -5.4}
+   ]
+  },
+  {
+   "navn": "Toplam",
+   "punkter": [
+    {"x": "Oranın değişimi", "y": 4.5}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

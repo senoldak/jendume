@@ -1,0 +1,47 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "The share among small enterprises rose in every listed country in two years, by very different amounts",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Share",
+   "punkter": [
+    {"x": "EU overall", "y": 17},
+    {"x": "Denmark", "y": 37.5},
+    {"x": "Finland", "y": 33.5},
+    {"x": "Germany", "y": 23.1},
+    {"x": "Türkiye", "y": 6.6},
+    {"x": "Italy", "y": 14.2},
+    {"x": "Poland", "y": 5.8},
+    {"x": "Romania", "y": 4.1}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Change",
+   "punkter": [
+    {"x": "EU overall", "y": 165.2},
+    {"x": "Denmark", "y": 202.7},
+    {"x": "Finland", "y": 191.9},
+    {"x": "Germany", "y": 138.2},
+    {"x": "Türkiye", "y": 32.3},
+    {"x": "Italy", "y": 226.4},
+    {"x": "Poland", "y": 157.3},
+    {"x": "Romania", "y": 286}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

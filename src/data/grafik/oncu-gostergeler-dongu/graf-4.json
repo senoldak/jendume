@@ -1,0 +1,73 @@
+{
+ "dil": "tr",
+ "form": "helning",
+ "tittel": "Sekiz ekonominin yedisinde öncü gösterge Eylül 2025'ten Eylül 2026'ya yükseldi, birinde geriledi",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "ABD",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 99.6},
+    {"x": "Eylül 2026", "y": 101}
+   ]
+  },
+  {
+   "navn": "Japonya",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 99.7},
+    {"x": "Eylül 2026", "y": 100.4}
+   ]
+  },
+  {
+   "navn": "Almanya",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 100.5},
+    {"x": "Eylül 2026", "y": 101}
+   ]
+  },
+  {
+   "navn": "Çin",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 100.3},
+    {"x": "Eylül 2026", "y": 97.4}
+   ]
+  },
+  {
+   "navn": "Hindistan",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 100},
+    {"x": "Eylül 2026", "y": 102}
+   ]
+  },
+  {
+   "navn": "Brezilya",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 100.1},
+    {"x": "Eylül 2026", "y": 102.4}
+   ]
+  },
+  {
+   "navn": "Kore",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 99.7},
+    {"x": "Eylül 2026", "y": 102.5}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "Eylül 2025", "y": 99.6},
+    {"x": "Eylül 2026", "y": 100.7}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

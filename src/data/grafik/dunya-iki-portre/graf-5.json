@@ -1,0 +1,38 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "All six shares have risen since 2000, the relative rise being largest for sanitation",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Share",
+   "punkter": [
+    {"x": "Access to electricity", "y": 91.6},
+    {"x": "Clean fuels for cooking", "y": 74.5},
+    {"x": "Safely managed drinking water", "y": 72},
+    {"x": "Safely managed sanitation", "y": 57.8},
+    {"x": "Urban population", "y": 57.3},
+    {"x": "Secondary gross enrolment", "y": 77.2}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  },
+  {
+   "navn": "Change",
+   "punkter": [
+    {"x": "Access to electricity", "y": 17.1},
+    {"x": "Clean fuels for cooking", "y": 56},
+    {"x": "Safely managed drinking water", "y": 17.5},
+    {"x": "Safely managed sanitation", "y": 84.7},
+    {"x": "Urban population", "y": 22.4},
+    {"x": "Secondary gross enrolment", "y": 29.9}
+   ],
+   "enhet": "%",
+   "desimaler": 1
+  }
+ ]
+}

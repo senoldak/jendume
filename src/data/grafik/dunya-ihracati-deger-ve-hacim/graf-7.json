@@ -1,0 +1,23 @@
+{
+ "dil": "en",
+ "form": "smultring",
+ "tittel": "Most of the rise in dollar terms corresponds to the rise in volume at 2015 prices, and the rest is the difference between the current and constant-price series",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Shares",
+   "punkter": [
+    {"x": "Volume rise", "y": 62.1},
+    {"x": "Remainder", "y": 37.9}
+   ]
+  }
+ ],
+ "valg": {
+  "maks": 2,
+  "dogrudan": true
+ }
+}

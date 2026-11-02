@@ -1,0 +1,27 @@
+{
+ "dil": "en",
+ "form": "manual",
+ "tittel": "In two years the share of enterprises using AI rose in all three size classes",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "in 2023",
+   "punkter": [
+    {"x": "10–49 employees", "y": 6.4, "y2": 17},
+    {"x": "50–249 employees", "y": 13.1, "y2": 30.4},
+    {"x": "250+ employees", "y": 30.5, "y2": 55}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2023",
+   "2025"
+  ],
+  "sorter": false
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "The primary-school gap between gross and net rates narrowed in some groups and widened in others in 2000–2017",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "World",
+   "punkter": [
+    {"x": "2000", "y": 15.7},
+    {"x": "2017", "y": 12.5}
+   ]
+  },
+  {
+   "navn": "Türkiye",
+   "punkter": [
+    {"x": "2000", "y": 9.4},
+    {"x": "2017", "y": 9.6}
+   ]
+  },
+  {
+   "navn": "European Union",
+   "punkter": [
+    {"x": "2000", "y": 6.3},
+    {"x": "2017", "y": 4.6}
+   ]
+  },
+  {
+   "navn": "North America",
+   "punkter": [
+    {"x": "2000", "y": 5.2},
+    {"x": "2017", "y": 6.4}
+   ]
+  },
+  {
+   "navn": "Latin America and Caribbean",
+   "punkter": [
+    {"x": "2000", "y": 21.5},
+    {"x": "2017", "y": 13.4}
+   ]
+  },
+  {
+   "navn": "Least developed countries",
+   "punkter": [
+    {"x": "2000", "y": 16.4},
+    {"x": "2017", "y": 20}
+   ]
+  },
+  {
+   "navn": "South Asia",
+   "punkter": [
+    {"x": "2000", "y": 23.2},
+    {"x": "2017", "y": 29.4}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

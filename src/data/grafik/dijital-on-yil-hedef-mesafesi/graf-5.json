@@ -1,0 +1,36 @@
+{
+ "dil": "en",
+ "form": "manual",
+ "tittel": "The basic digital skills share rose between the two measurements in all ten selected countries",
+ "kilde": {
+  "navn": "Eurostat, European Union"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Year 2021",
+   "punkter": [
+    {"x": "EU", "y": 53.9, "y2": 60.4, "mal": 80},
+    {"x": "Netherlands", "y": 78.9, "y2": 83.6, "mal": 80},
+    {"x": "Ireland", "y": 70.5, "y2": 82.8, "mal": 80},
+    {"x": "Denmark", "y": 68.7, "y2": 81.5, "mal": 80},
+    {"x": "Finland", "y": 79.2, "y2": 81, "mal": 80},
+    {"x": "France", "y": 62, "y2": 65.7, "mal": 80},
+    {"x": "Germany", "y": 48.9, "y2": 59.6, "mal": 80},
+    {"x": "Italy", "y": 45.6, "y2": 54.3, "mal": 80},
+    {"x": "Poland", "y": 42.9, "y2": 50.4, "mal": 80},
+    {"x": "Bulgaria", "y": 31.2, "y2": 38.3, "mal": 80},
+    {"x": "Romania", "y": 27.8, "y2": 31.8, "mal": 80}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2021",
+   "2025"
+  ],
+  "sorter": false,
+  "malnavn": "Target"
+ }
+}

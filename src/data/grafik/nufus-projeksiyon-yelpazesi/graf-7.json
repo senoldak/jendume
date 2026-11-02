@@ -1,0 +1,37 @@
+{
+ "dil": "en",
+ "form": "soyle",
+ "tittel": "Among the countries shown, the scenario gap relative to the medium scenario is largest in China and smallest in the United States",
+ "kilde": {
+  "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Gap / medium",
+   "punkter": [
+    {"x": "China", "y": 86.6},
+    {"x": "South Korea", "y": 84.5},
+    {"x": "Türkiye", "y": 81.2},
+    {"x": "India", "y": 80.1},
+    {"x": "World", "y": 72.8},
+    {"x": "Nigeria", "y": 68.1},
+    {"x": "France", "y": 64.8},
+    {"x": "United States", "y": 61.5}
+   ]
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "China",
+   "South Korea",
+   "Türkiye",
+   "India",
+   "World",
+   "Nigeria",
+   "France",
+   "United States"
+  ]
+ }
+}

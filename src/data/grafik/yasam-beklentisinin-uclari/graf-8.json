@@ -1,0 +1,45 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "The fall was present across the distribution, larger in the middle",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Value",
+   "punkter": [
+    {"x": "Lower tenth", "y": 61.2},
+    {"x": "Quarter", "y": 66.5},
+    {"x": "Median", "y": 72.3},
+    {"x": "Three quarters", "y": 77.2},
+    {"x": "Upper tenth", "y": 82.3},
+    {"x": "Türkiye", "y": 75.7},
+    {"x": "World", "y": 71.2}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Change",
+   "punkter": [
+    {"x": "Lower tenth", "y": -1},
+    {"x": "Quarter", "y": -0.8},
+    {"x": "Median", "y": -1.9},
+    {"x": "Three quarters", "y": -1.6},
+    {"x": "Upper tenth", "y": -0.4},
+    {"x": "Türkiye", "y": -2},
+    {"x": "World", "y": -1.7}
+   ],
+   "enhet": "",
+   "desimaler": 1
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

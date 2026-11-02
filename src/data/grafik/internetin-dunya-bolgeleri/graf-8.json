@@ -1,0 +1,31 @@
+{
+ "dil": "en",
+ "form": "nokkeltall",
+ "tittel": "The ratio between the highest and the lowest region fell steeply over 2005–2025",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Ratio",
+   "punkter": [
+    {"x": "2025", "y": 2.7}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Earlier years",
+   "punkter": [
+    {"x": "2005", "y": 34.2},
+    {"x": "2015", "y": 4.7}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 1
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Yapay zekâ kullanan işletmelerin payı işletme büyüdükçe artıyor",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Yapay zekâ kullanan işletmeler",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 17},
+    {"x": "50–249 çalışan", "y": 30.4},
+    {"x": "250+ çalışan", "y": 55},
+    {"x": "Tüm işletmeler (10+ çalışan)", "y": 20}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "Tüm işletmeler (10+ çalışan)"
+  ]
+ }
+}

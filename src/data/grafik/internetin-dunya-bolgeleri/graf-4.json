@@ -1,0 +1,31 @@
+{
+ "dil": "tr",
+ "form": "nokkeltall",
+ "tittel": "En yüksek ve en düşük bölge arasındaki oran 2005–2025 arasında hızla küçüldü",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Oran",
+   "punkter": [
+    {"x": "2025", "y": 2.7}
+   ],
+   "rol": "ana",
+   "enhet": "",
+   "desimaler": 1
+  },
+  {
+   "navn": "Önceki yıllar",
+   "punkter": [
+    {"x": "2005", "y": 34.2},
+    {"x": "2015", "y": 4.7}
+   ],
+   "rol": "kunye",
+   "enhet": "",
+   "desimaler": 1
+  }
+ ]
+}

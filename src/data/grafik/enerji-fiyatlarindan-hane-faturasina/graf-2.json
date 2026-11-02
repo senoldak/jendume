@@ -1,0 +1,54 @@
+{
+ "dil": "tr",
+ "form": "linje",
+ "tittel": "Dünya enerji endeksi hane enerji fiyatlarından çok daha sert dalgalandı",
+ "kilde": {
+  "navn": "Eurostat, International Monetary Fund"
+ },
+ "enhet": "",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "AB hane enerji fiyatları",
+   "punkter": [
+    {"x": "Mar 2021", "y": 107},
+    {"x": "Haz 2021", "y": 110},
+    {"x": "Eyl 2021", "y": 115},
+    {"x": "Ara 2021", "y": 125},
+    {"x": "Mar 2022", "y": 150},
+    {"x": "Haz 2022", "y": 155},
+    {"x": "Eyl 2022", "y": 160},
+    {"x": "Ara 2022", "y": 156},
+    {"x": "Mar 2023", "y": 154},
+    {"x": "Haz 2023", "y": 149},
+    {"x": "Eyl 2023", "y": 154},
+    {"x": "Ara 2023", "y": 148},
+    {"x": "Mar 2024", "y": 152},
+    {"x": "Haz 2024", "y": 149},
+    {"x": "Eyl 2024", "y": 147},
+    {"x": "Ara 2024", "y": 149}
+   ]
+  },
+  {
+   "navn": "Dünya enerji endeksi",
+   "punkter": [
+    {"x": "Mar 2021", "y": 120},
+    {"x": "Haz 2021", "y": 144},
+    {"x": "Eyl 2021", "y": 180},
+    {"x": "Ara 2021", "y": 203},
+    {"x": "Mar 2022", "y": 280},
+    {"x": "Haz 2022", "y": 277},
+    {"x": "Eyl 2022", "y": 279},
+    {"x": "Ara 2022", "y": 218},
+    {"x": "Mar 2023", "y": 157},
+    {"x": "Haz 2023", "y": 140},
+    {"x": "Eyl 2023", "y": 173},
+    {"x": "Ara 2023", "y": 148},
+    {"x": "Mar 2024", "y": 152},
+    {"x": "Haz 2024", "y": 157},
+    {"x": "Eyl 2024", "y": 144},
+    {"x": "Ara 2024", "y": 150}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "dil": "en",
+ "form": "minitabell",
+ "tittel": "In five of the seven countries we selected the rise in current dollars is larger than the rise in volume; in two it is the reverse",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "%",
+ "desimaler": 0,
+ "serier": [
+  {
+   "navn": "Current dollars",
+   "punkter": [
+    {"x": "World", "y": 308},
+    {"x": "Türkiye", "y": 582},
+    {"x": "Germany", "y": 232},
+    {"x": "India", "y": 1261},
+    {"x": "South Korea", "y": 324},
+    {"x": "Brazil", "y": 485},
+    {"x": "United States", "y": 193},
+    {"x": "Japan", "y": 77}
+   ],
+   "enhet": "%",
+   "desimaler": 0
+  },
+  {
+   "navn": "Volume",
+   "punkter": [
+    {"x": "World", "y": 133},
+    {"x": "Türkiye", "y": 285},
+    {"x": "Germany", "y": 115},
+    {"x": "India", "y": 702},
+    {"x": "South Korea", "y": 347},
+    {"x": "Brazil", "y": 169},
+    {"x": "United States", "y": 99},
+    {"x": "Japan", "y": 116}
+   ],
+   "enhet": "%",
+   "desimaler": 0
+  }
+ ],
+ "valg": {
+  "fremhev": [
+   "Türkiye"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "fossefall",
+ "tittel": "Euro alanında Ekim 2022 enflasyonunun en büyük payı enerjiden geldi",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Katkılar",
+   "punkter": [
+    {"x": "Enerji", "y": 4.44},
+    {"x": "Gıda, alkol, tütün", "y": 2.74},
+    {"x": "Enerji dışı sanayi malları", "y": 1.62},
+    {"x": "Hizmetler", "y": 1.82}
+   ]
+  },
+  {
+   "navn": "Toplam",
+   "punkter": [
+    {"x": "Yıllık enflasyon", "y": 10.62}
+   ],
+   "rol": "toplam"
+  }
+ ],
+ "valg": {
+  "fark": true,
+  "sum": true
+ }
+}

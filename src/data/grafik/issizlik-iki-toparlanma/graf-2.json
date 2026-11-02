@@ -1,0 +1,32 @@
+{
+ "dil": "tr",
+ "form": "manual",
+ "tittel": "ABD ve Kanada'da ikinci dönemin artışı çok daha büyüktü",
+ "kilde": {
+  "navn": "OECD"
+ },
+ "enhet": "",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "Birinci dönem",
+   "punkter": [
+    {"x": "OECD toplamı", "y": 2.9, "y2": 3.6},
+    {"x": "ABD", "y": 5, "y2": 11.3},
+    {"x": "Kanada", "y": 2.6, "y2": 8.4},
+    {"x": "Japonya", "y": 1.6, "y2": 0.7},
+    {"x": "Fransa", "y": 2.3, "y2": 1.2},
+    {"x": "Türkiye", "y": 4.8, "y2": 1.5},
+    {"x": "Kore", "y": 1.6, "y2": 1.2},
+    {"x": "Avustralya", "y": 1.6, "y2": 2.3}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "Birinci dönem",
+   "İkinci dönem"
+  ],
+  "sorter": false
+ }
+}

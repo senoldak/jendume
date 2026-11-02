@@ -1,0 +1,61 @@
+{
+ "dil": "en",
+ "form": "helning",
+ "tittel": "Price rises in the energy items accelerated within a year; gas rose the most",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "All items",
+   "punkter": [
+    {"x": "2021", "y": 2.9},
+    {"x": "2022", "y": 9.2}
+   ]
+  },
+  {
+   "navn": "Food, alcohol, tobacco",
+   "punkter": [
+    {"x": "2021", "y": 1.9},
+    {"x": "2022", "y": 10.2}
+   ]
+  },
+  {
+   "navn": "Services",
+   "punkter": [
+    {"x": "2021", "y": 1.9},
+    {"x": "2022", "y": 4.4}
+   ]
+  },
+  {
+   "navn": "Energy",
+   "punkter": [
+    {"x": "2021", "y": 12.6},
+    {"x": "2022", "y": 35.2}
+   ]
+  },
+  {
+   "navn": "Electricity",
+   "punkter": [
+    {"x": "2021", "y": 9.4},
+    {"x": "2022", "y": 31.8}
+   ]
+  },
+  {
+   "navn": "Gas",
+   "punkter": [
+    {"x": "2021", "y": 10.6},
+    {"x": "2022", "y": 55.2}
+   ]
+  },
+  {
+   "navn": "Liquid and transport fuels",
+   "punkter": [
+    {"x": "2021", "y": 17.9},
+    {"x": "2022", "y": 29.5}
+   ]
+  }
+ ]
+}

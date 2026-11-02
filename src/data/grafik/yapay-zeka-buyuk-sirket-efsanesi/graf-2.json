@@ -1,0 +1,27 @@
+{
+ "dil": "tr",
+ "form": "manual",
+ "tittel": "İki yılda üç büyüklük sınıfında da yapay zekâ kullanan işletme payı yükseldi",
+ "kilde": {
+  "navn": "Eurostat"
+ },
+ "enhet": "%",
+ "desimaler": 1,
+ "serier": [
+  {
+   "navn": "2023 yılında",
+   "punkter": [
+    {"x": "10–49 çalışan", "y": 6.4, "y2": 17},
+    {"x": "50–249 çalışan", "y": 13.1, "y2": 30.4},
+    {"x": "250+ çalışan", "y": 30.5, "y2": 55}
+   ]
+  }
+ ],
+ "valg": {
+  "gruppenavn": [
+   "2023",
+   "2025"
+  ],
+  "sorter": false
+ }
+}

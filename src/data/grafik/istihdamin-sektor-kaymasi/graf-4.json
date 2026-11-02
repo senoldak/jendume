@@ -1,0 +1,28 @@
+{
+ "dil": "tr",
+ "form": "rangering",
+ "tittel": "Tarımın istihdam payındaki düşüş orta gelirli ülke gruplarında en büyük oldu",
+ "kilde": {
+  "navn": "World Bank"
+ },
+ "enhet": "",
+ "desimaler": 2,
+ "serier": [
+  {
+   "navn": "Düşüş",
+   "punkter": [
+    {"x": "Üst orta gelirli ülkeler", "y": 29.98},
+    {"x": "Alt orta gelirli ülkeler", "y": 18.89},
+    {"x": "Yüksek gelirli ülkeler", "y": 5.3},
+    {"x": "Düşük gelirli ülkeler", "y": 7.37},
+    {"x": "Dünya", "y": 17.06}
+   ]
+  }
+ ],
+ "valg": {
+  "sorter": false,
+  "toplam": [
+   "Dünya"
+  ]
+ }
+}
