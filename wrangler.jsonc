@@ -1,6 +1,7 @@
 {
-  // Cloudflare ayarı: site yalnız statik dosyalar olarak yayınlanır (Worker kodu yok).
+  // Cloudflare ayarı: statik site (dist/) + küçük Worker (yalnız POST /api/yarar, "Bu haber işine yaradı mı?" sayacı).
   "name": "jendume",
+  "main": "worker/index.js",
   "compatibility_date": "2026-10-01",
   // workers.dev adresi kapalı: site yalnız jendume.com'dan sunulur (ikinci adres gereksizdi).
   "workers_dev": false,
@@ -14,6 +15,13 @@
   },
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    // Yalnız /api/* Worker'dan geçer; sayfalar eskisi gibi doğrudan statik sunulur.
+    "run_worker_first": ["/api/*"],
     "not_found_handling": "404-page"
-  }
+  },
+  // Anonim günlük sayaç: gün + haber + evet/hayır (worker/sema.sql). IP ya da okur bilgisi saklanmaz.
+  "d1_databases": [
+    { "binding": "DB", "database_name": "jendume-yarar", "database_id": "6a0d52f8-2e56-453e-b661-304365ef611d" }
+  ]
 }

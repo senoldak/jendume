@@ -8,16 +8,18 @@ interface Props {
   kimlik: string;
 }
 const { lang, kimlik } = Astro.props;
-// Cloudflare'de D1 veritabanı (jendume-yarar) kurulup wrangler.jsonc'a bağlanana kadar kapalı: sayılmayan oya "teşekkürler" denmez.
-const YARAR_ACIK = false;
+// D1 veritabanı jendume-yarar (wrangler.jsonc) bağlı; kapatmak gerekirse false yapılır: sayılmayan oya "teşekkürler" denmez.
+const YARAR_ACIK = true;
 const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
 ---
 
- {YARAR_ACIK && (
-<div class="hn-yarar" role="group" aria-labelledby="yarar-soru" data-yarar-kimlik={kimlik}>
-  <p id="yarar-soru">{t('Bu haber işine yaradı mı?', 'Was this story useful?')}</p>
-  <button type="button" data-yarar="evet">{t('Evet', 'Yes')}</button>
-  <button type="button" data-yarar="hayir">{t('Hayır', 'No')}</button>
-  <output hidden>{t('Teşekkürler. Yalnız günlük toplam sayılıyor; seni tanıyan hiçbir şey kaydedilmiyor.', 'Thank you. Only a daily total is counted; nothing that identifies you is stored.')}</output>
-</div>
-)}
+{
+  YARAR_ACIK && (
+    <div class="hn-yarar" role="group" aria-labelledby="yarar-soru" data-yarar-kimlik={kimlik}>
+      <p id="yarar-soru">{t('Bu haber işine yaradı mı?', 'Was this story useful?')}</p>
+      <button type="button" data-yarar="evet">{t('Evet', 'Yes')}</button>
+      <button type="button" data-yarar="hayir">{t('Hayır', 'No')}</button>
+      <output hidden>{t('Teşekkürler. Yalnız günlük toplam sayılıyor; seni tanıyan hiçbir şey kaydedilmiyor.', 'Thank you. Only a daily total is counted; nothing that identifies you is stored.')}</output>
+    </div>
+  )
+}
