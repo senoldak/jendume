@@ -61,7 +61,7 @@
   font: 700 0.66rem/1 var(--font-sign);
   letter-spacing: 0.06em;
   color: #fff;
-  background: var(--yesil);
+  background: var(--yesil-yazi);
   padding: 0.2rem 0.32rem;
   vertical-align: 1px;
 }

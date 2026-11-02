@@ -179,7 +179,8 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
 
     <header class="overhead">
       <div class="container overhead-inner">
-        <a href={homeHref} class="wordmark" aria-label={`${SITE.displayName} — ${ui.home}`}>
+        <a href={homeHref} class="wordmark">
+          <span class="gorunmez">{SITE.displayName}</span>
           <Logo class="wordmark-logo" />
           <span class="wordmark-motto">
             <span>{SITE.tagline[lang]}</span>
