@@ -215,6 +215,20 @@ export function duzeltmeAyrintisi(paket, kaynak) {
   return satirlar.join('\n');
 }
 
+// ── Türkçe harf ──────────────────────────────────────────────────────────
+// 28 Ekim 2026 (kifobu, Deetken Impact): model bütün haberi ç/ğ/ı/ö/ş/ü olmadan yazdı ve hiçbir kontrol yakalamadı.
+// Arşivde bu harflerin harflere oranı en düşük %2,6 (İngilizce adı bol yazılar); eşik %1,5. Kısa metne bakılmaz.
+const TR_HARF = /[çğıöşüÇĞİÖŞÜ]/g;
+export function turkceHarfKontrol(metin = '') {
+  const s = String(metin);
+  const harf = (s.match(/\p{L}/gu) ?? []).length;
+  if (harf < 300) return [];
+  const tr = (s.match(TR_HARF) ?? []).length;
+  return tr / harf < 0.015
+    ? ['Metin Türkçe harfler olmadan yazılmış (ç, ğ, ı, ö, ş, ü neredeyse hiç yok); aynı metni Türkçe harflerle yeniden yaz, içeriği değiştirme']
+    : [];
+}
+
 export function kesinKontroller(paket, kaynak) {
   const sorunlar = [];
   for (const dil of ['tr', 'en']) {
@@ -239,7 +253,8 @@ export function kesinKontroller(paket, kaynak) {
       ...olcekKontrol(birlesik, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...medyaKontrol(medyaMetni).map((s) => `[${dil.toUpperCase()}] ${s}`),
       ...zamanKontrol(birlesik, dil).map((s) => `[${dil.toUpperCase()}] ${s}`),
-      ...kopyaKontrol(blok.body, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`)
+      ...kopyaKontrol(blok.body, kaynak).map((s) => `[${dil.toUpperCase()}] ${s}`),
+      ...(dil === 'tr' ? turkceHarfKontrol(`${blok.title}\n${blok.body}`).map((s) => `[TR] ${s}`) : [])
     );
   }
   return sorunlar;

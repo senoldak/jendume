@@ -20,7 +20,7 @@ const GUN = 86_400_000;
 const tarihte = (gunOnce) => new Date(SIMDI.getTime() - gunOnce * GUN).toUTCString();
 
 // Yalnız harflerden oluşan uydurma sözcükler: rakam, zaman ya da kaynak kopyası denetimine takılmaz.
-const uydur = (n, tohum, hece = ['mar', 'vel', 'tor', 'kin', 'sul', 'ber', 'dan', 'fil', 'gor', 'hap']) => {
+const uydur = (n, tohum, hece = ['mar', 'vel', 'tör', 'kın', 'şul', 'ber', 'dan', 'fil', 'gör', 'hap']) => {
   return Array.from({ length: n }, (_, i) => `${hece[(i * 7 + tohum) % 10]}${hece[(i * 3 + tohum * 2) % 10]}${hece[(i + tohum) % 10]}`).join(' ');
 };
 const blok = (baslik, n, tohum) => ({
