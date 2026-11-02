@@ -5537,7 +5537,19 @@
     "kd4ca61:39e63332bd1ceb28": "2026-11-02T03:51:00.046Z",
     "kb7f905:2a62b5b9e7b91580": "2026-11-02T03:51:00.046Z",
     "kd9a613:48bc8240270485c9": "2026-11-02T03:51:00.046Z",
-    "k2e841d:e6473aef2aa85ce8": "2026-11-02T03:51:00.046Z"
+    "k2e841d:e6473aef2aa85ce8": "2026-11-02T03:51:00.046Z",
+    "kea595f:3685dd7a2ddcda8f": "2026-11-02T05:51:01.881Z",
+    "kea595f:b112424ecfd7458b": "2026-11-02T05:51:01.881Z",
+    "k12b4a6:16e608fc9b30b613": "2026-11-02T05:51:01.881Z",
+    "kea595f:a33c6c376e8a8d08": "2026-11-02T05:51:01.881Z",
+    "kea595f:97804f94580e8045": "2026-11-02T05:51:01.881Z",
+    "ke6dccd:80518ad42fb91070": "2026-11-02T05:51:01.881Z",
+    "k2d427e:9569ae3c111a0299": "2026-11-02T05:51:01.881Z",
+    "kea595f:a458890b3725ecf6": "2026-11-02T05:51:01.881Z",
+    "k2d427e:599165b53d95d11e": "2026-11-02T05:51:01.881Z",
+    "k4f0fb7:ce84683fcdbd7203": "2026-11-02T05:51:01.881Z",
+    "k4f0fb7:22cc0afb71af6d93": "2026-11-02T05:51:01.881Z",
+    "ke6dccd:231d2b38a0c0c56a": "2026-11-02T05:51:01.881Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -13021,7 +13033,10 @@
     "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|kb7f905:2a62b5b9e7b91580": "2026-11-02T03:51:00.046Z",
     "haber:anthropic-openai-cloudflare-ve-google-guvenlik-taramasi-icin-yapay-zeka-ajanlari|kb7f905:2a62b5b9e7b91580": "2026-11-02T03:51:00.046Z",
     "kb7f905:2a62b5b9e7b91580|kd4ca61:39e63332bd1ceb28": "2026-11-02T03:51:00.046Z",
-    "k2e841d:23864c38c125d16a|k2e841d:84155b1e03451dab": "2026-11-02T03:51:00.046Z"
+    "k2e841d:23864c38c125d16a|k2e841d:84155b1e03451dab": "2026-11-02T03:51:00.046Z",
+    "haber:agentic-ai-foundation-bunyesine-dort-yeni-proje-ekleyerek-buyudu|k2d427e:599165b53d95d11e": "2026-11-02T05:51:01.881Z",
+    "haber:bayer-crop-science-tarimsal-karar-surecleri-icin-yapay-zeka-tabanli-ajan-sistemi|k2d427e:599165b53d95d11e": "2026-11-02T05:51:01.881Z",
+    "haber:figma-yapay-zeka-entegrasyonu-icin-yirmi-yeni-ortak-duyurdu|k4f0fb7:22cc0afb71af6d93": "2026-11-02T05:51:01.881Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -20717,29 +20732,49 @@
       "puan": 80,
       "olcek": 100,
       "zaman": "2026-11-02T03:51:00.046Z"
+    },
+    "kea595f:97804f94580e8045": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "k2d427e:599165b53d95d11e": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "ke6dccd:80518ad42fb91070": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "k2d427e:9569ae3c111a0299": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "k4f0fb7:22cc0afb71af6d93": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "ke6dccd:231d2b38a0c0c56a": {
+      "puan": 70,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "kea595f:a458890b3725ecf6": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
+    },
+    "k4f0fb7:ce84683fcdbd7203": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-02T05:51:01.881Z"
     }
   },
   "yayinlanan": {
-    "microsoft-yapay-zeka-altyapisi-icin-25-milyar-dolar-borclanacak": {
-      "zaman": "2026-10-30T03:51:42.208Z",
-      "basliklarSifreli": "v1.6Y7Jn600+Gmb2sLv.DG8mpkyjeKYFmIOnlTL0ZhzGG76TtqfBJ0NfGmlKYtn1dqbnUL5KEGvvz6Sff5FDCe5IBjYxycpLODv9XXcDeykvs2tRqqQR4pz9zorDbnwGvpWAqhWtDKVK"
-    },
-    "anglia-ruskin-universitesi-arastirmacilari-yapay-zeka-yonetisimi-icin-yeni-bir-c": {
-      "zaman": "2026-10-30T03:51:42.208Z",
-      "basliklarSifreli": "v1.A8fcgNK0jS+kYLSE.xviv9dJF105xEHCuLh6KJCXdt8sYODUq3gGM0NyZBjJJOWN1sL44uzevyIiO7IU8KA27nEB4DQn6MGpHnLvyIDbmqS0="
-    },
-    "amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak": {
-      "zaman": "2026-10-30T03:51:42.208Z",
-      "basliklarSifreli": "v1.rbvjyPFfvLlcuTRz.CyceGA8rzx1zuuS2JjHkmVR0dMVJNs7qGMGEbcIxKM0hQREOwLoIXF9rcc5sM6ZsYKnYOsdZv+etFrYRUvt/yyApp95SJXIUWI8Qbj0sdy+bsRVfs8EgnjQ="
-    },
-    "victoria-hukuk-sektorunde-yapay-zeka-kullanimi-artti-ancak-ucretler-dusmedi": {
-      "zaman": "2026-10-30T03:51:42.208Z",
-      "basliklarSifreli": "v1.nsctqym+F+eOFryI.iXjDCVdlZsN2gOJUoHTHMkeogEqPOaMJloFStN57c8L+31mCaWHJUaSlnZ2xCNH7Z2koa5sF9mYXQtit/etxu9ldUeilgL2YVn3fbs9c6ojZbXulk+C1winUiwstBaWGtWdw/lBxHrCoBoOzUnfnxfUUssAISA=="
-    },
-    "vera-platforms-bulut-altyapisi-yonetimi-icin-yapay-zeka-ajanlarini-guvenli-kiliy": {
-      "zaman": "2026-10-30T03:51:42.208Z",
-      "basliklarSifreli": "v1.V7a+gaz/3uyMYFKR.eYui+KI1/K0rP2yiwB50PQ8ZJGR64CxTDcSS/0TB3LB7ifINgPzf809d5RmCtLhrHMKe0WsU0KonB/IumFibu1QUHxaBUd1R7BLAFbO1MuauVulsL/F/I1rCpDA="
-    },
     "foxconn-yapay-zeka-sunucusu-pazar-payini-artirmayi-hedefliyor": {
       "zaman": "2026-10-30T07:51:38.387Z",
       "basliklarSifreli": "v1.PF9ex0v5OQg/eKOb.NjDSKVNDyKJ6ot8L5oykobeQfB4YPykpzgpQbgtRNPsASO4tDoRVn9H0D5NN36XmFIHlDWaVeJnv7W3FPv3ZZi0LHGw8Po0Uqw3+vC4dglBtsTELmXl+tz3a5hx9J+QEcg=="
@@ -21119,6 +21154,10 @@
     "akilli-gozlukler-gunluk-receteli-gozluklerin-yerini-alabilir-mi": {
       "zaman": "2026-11-02T03:51:00.046Z",
       "basliklarSifreli": "v1.tHdJ422Oj02yxhb6.4HtU0Av8c7RwOh00NsELuzv1Za7Vw+yT/jyPWezXVLoV/X59mADm2Zf6yk0YUb+E8WPt/pfGOUQ/HSdAAT3MMl/Ia00ilV2GuOZtv1wsbzxk7wr2L1M="
+    },
+    "aramco-yapay-zeka-sirketi-humain-in-yuzde-49-luk-hissesini-devraldi": {
+      "zaman": "2026-11-02T05:51:01.881Z",
+      "basliklarSifreli": "v1.Y0S4gas0PX8gsEXf.BjlkVTsf3ywqGGzL6WahbCJsz3N+nZeK4Qezv7tzgJsnyM1iPGOMypA3ndOwruywiyMM3Cf7LgnGOe0RE7NpK0gCRwVOXrXY0ivG/VlgVz4r"
     }
   },
   "havuz": [],
@@ -26718,6 +26757,18 @@
     "k2e841d:c4ec5163dcd48d42": "2026-11-01T23:30:00.000Z",
     "k2e841d:24b9ee1e047e8d6b": "2026-11-01T23:00:00.000Z",
     "k2e841d:84155b1e03451dab": "2026-11-01T22:00:00.000Z",
-    "kd4ca61:39e63332bd1ceb28": "2026-11-02T02:58:53.000Z"
+    "kd4ca61:39e63332bd1ceb28": "2026-11-02T02:58:53.000Z",
+    "k4f0fb7:22cc0afb71af6d93": "2026-11-02T05:14:45.000Z",
+    "k4f0fb7:ce84683fcdbd7203": "2026-11-02T04:35:04.000Z",
+    "kea595f:97804f94580e8045": "2026-11-02T05:44:41.000Z",
+    "kea595f:3685dd7a2ddcda8f": "2026-11-02T05:14:24.000Z",
+    "kea595f:a458890b3725ecf6": "2026-11-02T04:59:16.000Z",
+    "kea595f:b112424ecfd7458b": "2026-11-02T04:13:51.000Z",
+    "kea595f:a33c6c376e8a8d08": "2026-11-02T03:59:13.000Z",
+    "k12b4a6:16e608fc9b30b613": "2026-11-02T04:10:00.000Z",
+    "k2d427e:599165b53d95d11e": "2026-11-02T05:35:05.000Z",
+    "k2d427e:9569ae3c111a0299": "2026-11-02T05:18:01.000Z",
+    "ke6dccd:80518ad42fb91070": "2026-11-02T05:30:00.000Z",
+    "ke6dccd:231d2b38a0c0c56a": "2026-11-02T05:14:00.000Z"
   }
 }
