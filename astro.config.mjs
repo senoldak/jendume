@@ -132,6 +132,14 @@ export default defineConfig({
         }
         return item;
       },
+      // Site haritası dile ve türe göre bölünür (sitemap-<tür>-0.xml; geri kalan sitemap-pages-0.xml). Search
+      // Console'da her harita ayrı gönderilir; "Sayfa dizine ekleme" raporu her parçanın dizin oranını ayrı gösterir.
+      // Eklenti parçaları birbirinden ayırmaz, koşullar örtüşmemeli.
+      chunks: {
+        'haber-tr': (item) => (new URL(item.url).pathname.startsWith('/tr/haber/') ? item : undefined),
+        'news-en': (item) => (new URL(item.url).pathname.startsWith('/en/news/') ? item : undefined),
+        sozluk: (item) => (/^\/(tr\/sozluk|en\/glossary)\//.test(new URL(item.url).pathname) ? item : undefined),
+      },
     }),
   ],
   i18n: {
