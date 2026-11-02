@@ -30,3 +30,17 @@ test('Worker: geçerli oy sayılır (gün, kimlik, cevap), geçersiz ve GET redd
   assert.equal((await worker.fetch(istek('/api/yarar'), env)).status, 405);
   assert.equal(kayit.length, 1);
 });
+
+test('Worker: yayımlanmış sayfası olmayan kimlik sayılmaz (404), doğru sayfa adresi sorulur', async () => {
+  const kayit = [];
+  const sorulan = [];
+  const env = {
+    ASSETS: { fetch: async (r) => (sorulan.push(new URL(r.url).pathname), new Response('', { status: new URL(r.url).pathname === '/en/news/var/' ? 200 : 404 })) },
+    DB: { prepare: (sql) => ({ bind: (...a) => ({ run: async () => kayit.push({ sql, a }) }) }) },
+  };
+  const post = (govde) => istek('/api/yarar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: govde });
+  assert.equal((await worker.fetch(post('{"kimlik":"tr/uydurma","cevap":"evet"}'), env)).status, 404);
+  assert.equal((await worker.fetch(post('{"kimlik":"en/var","cevap":"hayir"}'), env)).status, 204);
+  assert.deepEqual(sorulan, ['/tr/haber/uydurma/', '/en/news/var/']);
+  assert.equal(kayit.length, 1);
+});
