@@ -25,6 +25,10 @@
 /tr/haber/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor/ /tr/haber/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm/ 301
 /kapak/tr/sohbet-gecmisini-temizlemek-yapay-zeka-ajanlarinin-yolunu-aciyor.png /kapak/tr/yapay-zeka-ajanlari-neden-ayni-fikre-saplanip-kaliyor-arastirmacilar-sohbet-gecm.png 301
 
+# Grafik kataloğu kapatıldı (2 Kasım 2026): rakamlar resmî kaynaklı değildi. Kod: src/pages/{en/_charts,tr/_grafikler}.astro.
+/en/charts/ /en/analysis/ 301
+/tr/grafikler/ /tr/analiz/ 301
+
 # İngilizce sayfalar İngilizce yollara taşındı (Ekim 2026; bkz. src/lib/yollar.mjs). Haber kimlikleri (slug) değişmedi.
 # Statik kurallar dinamiklerden ÖNCE gelmeli: Cloudflare jokerden/yer tutucudan sonraki her kuralı dinamik sayar
 # (dinamik sınır 100, statik sınır 2.000). Joker ve yer tutuculu kurallar bu dosyanın EN SONUNDA durur.
