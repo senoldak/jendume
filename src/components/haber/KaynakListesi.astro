@@ -1,0 +1,34 @@
+---
+// "Kaynak": haberin dayandığı yayınların adı ve o habere bağlantı (src/lib/kaynak-adlari.mjs). Yalın atıf: yorum ya da
+// övgü yok, bağlantı nofollow. Liste boşsa bölüm çıkmaz; sayfa adsız kaynak satırını gösterir.
+import type { Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  kaynaklar: { ad: string; url: string }[];
+}
+const { lang, kaynaklar } = Astro.props;
+const oteki = lang === 'en' ? 'tr' : 'en';
+const sayi = lang === 'en' ? (kaynaklar.length === 1 ? '1 report' : `${kaynaklar.length} reports`) : `${kaynaklar.length} haber`;
+---
+
+{
+  kaynaklar.length > 0 && (
+    <section class="hn-blok hn-kaynak" id="kaynak" aria-labelledby="kaynak-baslik">
+      <h2 id="kaynak-baslik">
+        {lang === 'en' ? 'Source' : 'Kaynak'}
+        <span lang={oteki}>{lang === 'en' ? 'Kaynak' : 'Source'}</span>
+        <span>· {sayi}</span>
+      </h2>
+      <ul>
+        {kaynaklar.map((k) => (
+          <li>
+            <a href={k.url} rel="nofollow noopener">
+              {k.ad} <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

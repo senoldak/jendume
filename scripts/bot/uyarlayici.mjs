@@ -343,7 +343,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
         for (const u of secilen.slice(0, 3)) {
           const metin = await B.tamMetin(u);
           if (metin.length >= 200) {
-            kullanilan.push({ ad: u.kaynak.ad, url: u.link, resmi: u.kaynak.resmi === true });
+            kullanilan.push({ ad: u.kaynak.ad, url: u.link, baslik: u.baslik, resmi: u.kaynak.resmi === true });
             kaynaklar.push({
               baslik: u.baslik,
               metin,
@@ -471,6 +471,8 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           date: simdi.toISOString(),
           kaynakIzi: kaynakIzi(kullanilan),
           kaynaklar: resmiKaynakListesi(kullanilan),
+          // Gösterilebilecek medya kaynakları (konu uyumu + gösterilmez listesi) lib.mjs'te süzülür.
+          kaynakListesi: kullanilan,
           // Haber değeri (puanKapisi): "Bu haber nasıl hazırlandı" kartında gösterilir; puan yoksa yazılmaz.
           haberDegeri: puan.get(g),
           featured: false,
@@ -573,6 +575,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
             date: simdi.toISOString(),
             kaynakIzi: kaynakIzi(grup.flatMap((o) => o.kullanilan ?? [])),
             kaynaklar: resmiKaynakListesi(grup.flatMap((o) => o.kullanilan ?? [])),
+            kaynakListesi: grup.flatMap((o) => o.kullanilan ?? []),
             featured: false,
             draft: false,
           });

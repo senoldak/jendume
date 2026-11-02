@@ -43,6 +43,8 @@ export function uretimTuru(veri) {
 }
 
 const degerVar = (veri) => Number.isInteger(veri?.haberDegeri);
+// Sayfada adıyla gösterilen medya kaynakları (src/lib/kaynak-adlari.mjs; ön bilgide kaynakAdlari).
+const medyaAdlari = (veri) => (Array.isArray(veri?.kaynakAdlari) ? veri.kaynakAdlari.map((k) => k.ad).filter(Boolean) : []);
 
 /** Kartın adımları (sırayla) ya da kart gösterilmeyecekse null. */
 export function adimlar(veri) {
@@ -77,7 +79,11 @@ export function adimlar(veri) {
     return [
       resmi
         ? adim('ada', ilk ? `Duyuruyu ${ilk} kaynağında buldu.` : 'Duyuruyu resmî bir kaynakta buldu.', ilk ? `Found the announcement at ${ilk}.` : 'Found the announcement at an official source.')
-        : adim('ada', 'Haberi kaynak listesindeki yayınlarda buldu.', 'Found the story in the outlets on our source list.'),
+        : medyaAdlari(veri).length === 1
+          ? adim('ada', `Haberi ${medyaAdlari(veri)[0]} haberinde buldu.`, `Found the story in a report by ${medyaAdlari(veri)[0]}.`)
+          : medyaAdlari(veri).length > 1
+            ? adim('ada', `Haberi ${medyaAdlari(veri).length} yayının haberlerinde buldu.`, `Found the story in reports by ${medyaAdlari(veri).length} outlets.`)
+            : adim('ada', 'Haberi kaynak listesindeki yayınlarda buldu.', 'Found the story in the outlets on our source list.'),
       deger,
       adim('elif', 'Türkçe ve İngilizce metni kaynaklardan yazdı.', 'Wrote the Turkish and English text from the sources.'),
       adim('mert', 'Metni okudu, düzeltme turlarını yürüttü.', 'Read the text and ran the correction rounds.'),
@@ -96,7 +102,14 @@ export function olguSatiri(veri, dil) {
   if (tur === 'sahip') return [t('Yazan: Şenol Dak', 'By Şenol Dak'), t('Rakamlar resmî kaynaklardan', 'Figures from official sources')];
   if (tur === 'zincir') return [t('Rakamlar resmî kaynaklardan', 'Figures from official sources')];
   if (tur === 'bot-resmi' || tur === 'bot-medya') {
-    const ut = [tur === 'bot-resmi' ? t('Resmî kaynaktan', 'From an official source') : t('Yayın kaynaklı', 'From news reports')];
+    const n = medyaAdlari(veri).length;
+    const ut = [
+      tur === 'bot-resmi'
+        ? t('Resmî kaynaktan', 'From an official source')
+        : n > 0
+          ? t(`${n} kaynak`, n === 1 ? '1 source' : `${n} sources`)
+          : t('Yayın kaynaklı', 'From news reports'),
+    ];
     if (degerVar(veri)) ut.push(t(`Haber değeri ${veri.haberDegeri}/100`, `News value ${veri.haberDegeri}/100`));
     return ut;
   }

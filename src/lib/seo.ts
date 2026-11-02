@@ -147,9 +147,10 @@ export function articleGraph(post: NewsEntry, lang: Locale, image: string) {
   if (matched.length > 0) {
     articleNode.about = matched;
   }
-  // Resmî kaynaklar (sayfanın altında adıyla gösterilenler). Medya kaynakları adlandırılmaz, burada da yok.
-  if (post.data.kaynaklar.length > 0) {
-    articleNode.isBasedOn = post.data.kaynaklar.map((k) => ({ '@type': 'CreativeWork', name: k.ad, url: k.url }));
+  // Sayfanın altında adıyla gösterilen kaynaklar: resmî kaynaklar ve gösterilebilen medya kaynakları (kaynakAdlari).
+  const dayanak = [...post.data.kaynaklar, ...post.data.kaynakAdlari];
+  if (dayanak.length > 0) {
+    articleNode.isBasedOn = dayanak.map((k) => ({ '@type': 'CreativeWork', name: k.ad, url: k.url }));
   }
   // Yer haritası çizilen haberde yer (src/lib/harita.mjs).
   const ulke = haritaUlkesi(post.data, lang);

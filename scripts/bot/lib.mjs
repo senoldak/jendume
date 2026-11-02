@@ -3,6 +3,8 @@
 import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
+import { gizliKaynaklar } from './gizli.mjs';
+import { gosterilecekKaynaklar } from '../../src/lib/kaynak-adlari.mjs';
 
 export const USER_AGENT = 'jendume-bot/1.0 (+https://github.com/senoldak/jendume)';
 
@@ -283,6 +285,14 @@ export async function ucDilliHaberYaz(rot, paket) {
       ? await enSlugUret(slug, paket.en.title, (ad) => access(path.join(enDir, `${ad}.md`)).then(() => true, () => false))
       : slug;
   const dosyaAdi = { tr: slug, en: enAd };
+  // Haberin altında adıyla gösterilecek medya kaynakları (src/lib/kaynak-adlari.mjs); iki dilde aynı liste.
+  const kaynakAdlari = Array.isArray(paket.kaynakListesi) && paket.kaynakListesi.length
+    ? gosterilecekKaynaklar(
+      paket.kaynakListesi,
+      DILLER.flatMap((d) => [paket[d]?.title ?? '', paket[d]?.description ?? '']),
+      { gosterilmez: gizliKaynaklar({ uyar: () => {} }).gosterilmez },
+    )
+    : [];
   const esId = { tr: enAd !== slug ? enAd : undefined, en: enAd !== slug ? slug : undefined };
 
   for (const dil of DILLER) {
@@ -319,6 +329,9 @@ export async function ucDilliHaberYaz(rot, paket) {
       // Yalnız birincil kaynaklı haberde (resmi-kaynak.mjs): sayfanın altında ad ve bağlantı gösterilir.
       Array.isArray(paket.kaynaklar) && paket.kaynaklar.length
         ? `kaynaklar:\n${paket.kaynaklar.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
+        : null,
+      kaynakAdlari.length
+        ? `kaynakAdlari:\n${kaynakAdlari.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
         : null,
       Number.isInteger(paket.haberDegeri) && paket.haberDegeri > 0 && paket.haberDegeri <= 100 ? `haberDegeri: ${paket.haberDegeri}` : null,
       `featured: ${Boolean(paket.featured)}`,

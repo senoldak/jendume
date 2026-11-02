@@ -12,6 +12,7 @@ import DahaOnce from '../../components/haber/DahaOnce.astro';
 import DegisiklikKaydi from '../../components/haber/DegisiklikKaydi.astro';
 import Yarar from '../../components/haber/Yarar.astro';
 import YerHaritasi from '../../components/haber/YerHaritasi.astro';
+import KaynakListesi from '../../components/haber/KaynakListesi.astro';
 import '../../styles/haber.css';
 import '../../styles/piksel-font.css';
 import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
@@ -191,8 +192,9 @@ const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
       )
     }
 
+    <KaynakListesi lang={lang} kaynaklar={post.data.kaynakAdlari} />
     {
-      medyaKaynakli(post.data) && (
+      medyaKaynakli(post.data) && post.data.kaynakAdlari.length === 0 && (
         <p class="ai-note official-source">{ui.mediaSource}</p>
       )
     }

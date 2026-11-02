@@ -359,3 +359,27 @@ test('ucDilliHaberYaz haber değerini yalnız 1–100 tam sayıysa yazar', async
     await rm(tmpDir, { recursive: true, force: true });
   }
 });
+
+test('ucDilliHaberYaz yalnız konusu tutan medya kaynağını kaynakAdlari olarak iki dile yazar', async () => {
+  const tmpDir = await mkdtemp(path.join(os.tmpdir(), 'jendume-test-'));
+  try {
+    const slug = await ucDilliHaberYaz(tmpDir, {
+      category: 'bilim',
+      date: '2026-11-02T10:00:00.000Z',
+      kaynakListesi: [
+        { ad: 'Örnek Haber (Teknoloji)', url: 'https://ornek.example/curtin-chatbot-mental-health-study', baslik: 'Curtin study on chatbots' },
+        { ad: 'İlgisiz Yayın', url: 'https://ilgisiz.example/new-phone-launch-event-today', baslik: 'New phone launch' },
+        { ad: 'Resmî Kurum', url: 'https://kurum.example/curtin-chatbot-mental-health', resmi: true },
+      ],
+      tr: { title: 'Curtin araştırması sohbet botlarının ruh sağlığı risklerine dikkat çekti', description: 'Araştırma uyarıyor.', body: 'Gövde.' },
+      en: { title: 'Curtin study warns of chatbot mental health risks', description: 'Study warns.', body: 'Body.' },
+    });
+    for (const dil of ['tr', 'en']) {
+      const md = await haberOku(tmpDir, dil, slug);
+      assert.match(md, /\nkaynakAdlari:\n  - ad: "Örnek Haber"\n    url: "https:\/\/ornek\.example\/curtin-chatbot-mental-health-study"\n/);
+      assert.doesNotMatch(md, /İlgisiz Yayın|Resmî Kurum/);
+    }
+  } finally {
+    await rm(tmpDir, { recursive: true, force: true });
+  }
+});

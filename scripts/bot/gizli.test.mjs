@@ -59,10 +59,11 @@ test('gizliKaynaklar: dosyadan okur, anahtar yoksa boş döner; medya adları ek
       { ad: 'Bülten (Örnek Vakfı)', kisa: 'bulten', akis: 'https://bulten.example.com/feed', filtre: true },
     ],
     medya: ['Ek Yayın'],
+    gosterilmez: ['Kapalı Yayın'],
   };
   writeFileSync(dosya, sifrele(icerik, A));
   assert.deepEqual(gizliKaynaklar({ dosya, a: A }), icerik);
-  assert.deepEqual(gizliKaynaklar({ dosya, a: null, uyar: () => {} }), { kaynaklar: [], medya: [] });
+  assert.deepEqual(gizliKaynaklar({ dosya, a: null, uyar: () => {} }), { kaynaklar: [], medya: [], gosterilmez: [] });
   assert.deepEqual(gizliMedyaAdlari(icerik), ['Örnek Haber', 'Deneme Dergisi', 'Bülten', 'Ek Yayın']);
 });
 

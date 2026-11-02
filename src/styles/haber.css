@@ -454,3 +454,28 @@ a.hn-odaya:focus-visible {
     gap: 0.1rem;
   }
 }
+
+/* Kaynak (yayın adı ve habere bağlantı) */
+.hn-kaynak ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.hn-kaynak a {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--hair);
+  background: var(--paper);
+  color: var(--ink);
+  font: 600 0.92rem var(--font-sign);
+  text-decoration: none;
+}
+.hn-kaynak a:hover {
+  background: var(--signal);
+}

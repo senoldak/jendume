@@ -84,11 +84,13 @@ export function kaynakIzi(liste) {
 // Hata mesajındaki adresleri siler: açık Actions loglarına kaynak adresi düşmesin.
 export const adresiSil = (mesaj) => String(mesaj).replace(/https?:\/\/\S+/gi, '[adres]');
 
-// { kaynaklar: [{ ad, kisa, akis, yerli?, filtre? }], medya: [ad] }
+// { kaynaklar: [{ ad, kisa, akis, yerli?, filtre? }], medya: [ad], gosterilmez: [ad] }
+// gosterilmez: haberin altında adı ve bağlantısı gösterilmeyecek yayınlar (KHK, erişim engeli, örgüt bağlantısı ya da
+// kaldırma isteği; istek gelince buraya eklenir, tarihli kaydı aynı şifreli dosyada tutulur).
 // filtre: true ise kaynaklar.mjs'deki yapay zekâ süzgeci uygulanır.
 // medya: metinde anılmaması gereken ek yayın adları (denetci.mjs genel listesine eklenir).
 export function gizliKaynaklar({ dosya = SIFRELI_DOSYA, a = anahtar(), uyar = console.warn } = {}) {
-  const bos = { kaynaklar: [], medya: [] };
+  const bos = { kaynaklar: [], medya: [], gosterilmez: [] };
   if (!a) {
     uyar('UYARI: KAYNAK_ANAHTARI yok; şifreli kaynaklar okunmadı, yalnızca resmi kaynaklar kullanılacak.');
     return bos;
@@ -99,7 +101,7 @@ export function gizliKaynaklar({ dosya = SIFRELI_DOSYA, a = anahtar(), uyar = co
     return bos;
   }
   const v = coz(readFileSync(dosya, 'utf8'), a);
-  return { kaynaklar: v.kaynaklar ?? [], medya: v.medya ?? [] };
+  return { kaynaklar: v.kaynaklar ?? [], medya: v.medya ?? [], gosterilmez: v.gosterilmez ?? [] };
 }
 
 // Kaynakların yayın adları ("… AI", "… Yapay Zekâ", parantez içi açıklama atılmış) ve ek medya adları.

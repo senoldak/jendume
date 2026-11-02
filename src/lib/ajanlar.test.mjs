@@ -43,3 +43,12 @@ test('kart metinleri: bot haberi insan okumadı, sahip yazısı okundu; ajanlar�
   assert.match(kartMetinleri(medya, 'en').not, /not people/);
   assert.equal(kartMetinleri(sahip, 'tr').not, 'Cem ve Mina, otomatik adımların adıdır; insan değil.');
 });
+
+test('kaynak adı olan haberde kart kaynağı adıyla ve sayısıyla söyler', () => {
+  const bir = { ...medya, kaynakAdlari: [{ ad: 'Örnek Yayın', url: 'https://ornek.example/a' }] };
+  assert.match(adimlar(bir)[0].metin.tr, /^Haberi Örnek Yayın haberinde buldu\.$/);
+  assert.deepEqual(olguSatiri(bir, 'tr'), ['1 kaynak']);
+  const iki = { ...medya, kaynakAdlari: [{ ad: 'A', url: 'https://a.example/x' }, { ad: 'B', url: 'https://b.example/y' }] };
+  assert.match(adimlar(iki)[0].metin.en, /reports by 2 outlets/);
+  assert.deepEqual(olguSatiri(iki, 'en'), ['2 sources']);
+});
