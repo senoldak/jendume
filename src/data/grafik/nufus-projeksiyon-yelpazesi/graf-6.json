@@ -5,7 +5,7 @@
  "kilde": {
   "navn": "United Nations, Department of Economic and Social Affairs, Population Division"
  },
- "enhet": "billion kişi",
+ "enhet": "billion people",
  "desimaler": 1,
  "serier": [
   {
@@ -14,7 +14,7 @@
     {"x": "Medium scenario", "y": 10.2}
    ],
    "rol": "ana",
-   "enhet": "billion kişi",
+   "enhet": "billion people",
    "desimaler": 1
   },
   {
@@ -25,7 +25,7 @@
     {"x": "High scenario", "y": 14.4}
    ],
    "rol": "sammenligning",
-   "enhet": "billion kişi",
+   "enhet": "billion people",
    "desimaler": 1
   }
  ]
