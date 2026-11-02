@@ -35,4 +35,4 @@ Sürümle birlikte duyurulan Exa Lite seçeneği, geliştiriciler için maliyetl
 
 Exa tarafından paylaşılan test sonuçlarına göre Exa 3.0 Auto, kendi yürüttüğü sekiz farklı kıyaslama testinde rakiplerini geride bıraktı. Şirket, bu başarıyı daha büyük bir gömme modeli ve milyarlarca yeni belgeden oluşan genişletilmiş bir indeksle elde ettiğini belirtiyor.
 
-Genişletilen veri tabanı e-ticaret listelemeleri, yerel işletmeler, haberler ve araştırma makaleleri gibi pek çok farklı alanı kapsıyor. Uzmanlar, bu tür altyapı geliştirmelerinin yapay zekâ uygulamalarının veri doğrulğunu artırdığını ifade ediyor.
+Genişletilen veri tabanı e-ticaret listelemeleri, yerel işletmeler, haberler ve araştırma makaleleri gibi pek çok farklı alanı kapsıyor. Uzmanlar, bu tür altyapı geliştirmelerinin yapay zekâ uygulamalarının veri doğruluğunu artırdığını ifade ediyor.

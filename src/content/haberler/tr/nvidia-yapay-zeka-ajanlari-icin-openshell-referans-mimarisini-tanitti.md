@@ -25,7 +25,7 @@ breaking: true
 draft: false
 ---
 
-Nvidia, yapay zekâ ajanlarının belirli sınırçlar içinde güvenle çalışmasını sağlayan yeni referans mimarisini duyurdu. Berlin'de düzenlenen GTC konferansında tanıtılan OpenShell Referans Mimarisi, kurumsal altyapılardan uç cihazlara kadar geniş bir yelpazede görev yapabiliyor. Sistem, yapay zekâ ajanlarının sınırlarını belirleyen açık kaynaklı OpenShell yazılımını temel alıyor ve Apache 2.0 lisansıyla sunuluyor.
+Nvidia, yapay zekâ ajanlarının belirli sınırlar içinde güvenle çalışmasını sağlayan yeni referans mimarisini duyurdu. Berlin'de düzenlenen GTC konferansında tanıtılan OpenShell Referans Mimarisi, kurumsal altyapılardan uç cihazlara kadar geniş bir yelpazede görev yapabiliyor. Sistem, yapay zekâ ajanlarının sınırlarını belirleyen açık kaynaklı OpenShell yazılımını temel alıyor ve Apache 2.0 lisansıyla sunuluyor.
 
 Yeni mimari, yapay zekâ ajanlarının güvenliğini artırmak amacıyla donanım ve yazılımı bir araya getiriyor. Modeller Nvidia Vera Rubin sistemlerinde çalışırken, ajanları yöneten yazılımlar Vera CPU'lar üzerinde koşuyor. BlueField-4 veri işleme birimleri ise ajan davranışlarını izleyen Nvidia Sentry yazılımını çalıştırarak olası güvenlik açıklarına anında müdahale ediyor.
 

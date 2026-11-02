@@ -28,7 +28,7 @@ draft: false
 
 Google, yapay zekâ model ailesinin yeni üyesi Gemini Omni'yi genel kullanıma sundu. İlk olarak Mayıs 2026'da duyurulan model, metin, görsel, ses ve video girdilerini ayrı ayrı işlemek yerine doğrudan tek bir yapıda birleştiriyor. Bu yerleşik çok modluluk, üretilen içeriklerin daha tutarlı olmasını sağlıyor ve farklı araçlar arasında geçiş yapma ihtiyacını ortadan kaldırıyor.
 
-Sistemin en dikkat çekici özelliği, sohbet tabanlı düzenleme imkânı tanemesi. Kullanıcılar, oluşturulan bir video üzerinde renk değişimi veya nesne ekleme gibi değişiklikleri yeni bir komut yazmak yerine doğal bir sohbet akışı içinde yapabiliyor. Model, karakterleri, fiziği ve sahne devamlılığını oturum boyunca koruyarak her seferinde sıfırdan başlama zorunluluğunu bitiriyor.
+Sistemin en dikkat çekici özelliği, sohbet tabanlı düzenleme imkânı tanıması. Kullanıcılar, oluşturulan bir video üzerinde renk değişimi veya nesne ekleme gibi değişiklikleri yeni bir komut yazmak yerine doğal bir sohbet akışı içinde yapabiliyor. Model, karakterleri, fiziği ve sahne devamlılığını oturum boyunca koruyarak her seferinde sıfırdan başlama zorunluluğunu bitiriyor.
 
 Google DeepMind ekibinden Koray Kavukcuoglu tarafından duyurulan model; metinden video üretimi, fotoğrafları hareketlendirme ve ilk-son kare arası animasyon gibi yetenekler barındırıyor. Ağustos ayındaki genel erişim güncellemesiyle birlikte, sahnelerin onar saniyelik artışlarla toplam kırk saniyeye kadar uzatılması ve daha hızlı denemeler için üç yüz altmış piksel taslak modunun kullanılması mümkün hâle geldi.
 

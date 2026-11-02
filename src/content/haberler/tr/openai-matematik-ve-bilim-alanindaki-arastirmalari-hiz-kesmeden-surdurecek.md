@@ -28,7 +28,7 @@ draft: false
 
 OpenAI, yapay zekâ modellerini kullanarak matematik ve bilim alanındaki en eski problemleri çözme taahhüdünü sürdürüyor. Şirketin yöneticisi Sam Altman, katıldığı bir podcast yayınında insanlığın temel bilgilere erişmeyi hak ettiğini belirterek yeni bilimsel keşiflerin paylaşılmaya devam edeceğini duyurdu. Altman, şirketin kasasında henüz yayımlanmamış yeni bulguların da bulunduğunu doğruladı.
 
-Ancak bu durum akademik dünyada hem heyecan hem de endişeyle karşılanıyor. OpenAI'ın GitHub üzerinde 400 farklı problem için 722 makaleyi bir anda paylaşması, bilim insanlarının devasa bir veri yığınıyla baş başa kalmasına neden oldu. Kopenhag Bilişim Üniversitesi'nden Thore Husfeldt, yapay zekânın yıll süren araştırma projelerini bir anda boşa çıkarmasının birçok insan için psikolojik olarak yıpratıcı olduğunu ifade etti.
+Ancak bu durum akademik dünyada hem heyecan hem de endişeyle karşılanıyor. OpenAI'ın GitHub üzerinde 400 farklı problem için 722 makaleyi bir anda paylaşması, bilim insanlarının devasa bir veri yığınıyla baş başa kalmasına neden oldu. Kopenhag Bilişim Üniversitesi'nden Thore Husfeldt, yapay zekânın yıllar süren araştırma projelerini bir anda boşa çıkarmasının birçok insan için psikolojik olarak yıpratıcı olduğunu ifade etti.
 
 Öte yandan yapay zekâ modellerinin problem çözme yetenekleri bazı köklü teorileri de sarstı. Örneğin, bir problemin çözümünün karmaşıklığıyla arttığını savunan üstel zaman hipotezinin (ETH) çürütülmesi, pek çok uzmanın teorilerini yeniden gözden geçirmesine yol açtı. Linköping Üniversitesi'nden Peter Jonsson, bu durumun araştırmacılar için sinir bozucu olabileceğini ancak bilimin özünün de zaten öğrenmek olduğunu vurguladı.
 

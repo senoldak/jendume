@@ -20,7 +20,7 @@ breaking: false
 draft: false
 ---
 
-Tesla markası, otonom sürüş yetenekleriyle donatılmış Cybercab modelinin satışlarına takvim yılının sonuna kadar başlamayı amaçlıyor. Geliştirilen yeni nesil otonom araç, geleneksel sürüş unsurları olan direksiyon simidi veya pedalları barındırmıyor. Tamamen otonom bir ulaşım deneyimi vad eden altın renkli iki kişilik araç, bireysel mülkiyetten ziyade bir ulaşım hizmeti olarak konumlandırılıyor.
+Tesla markası, otonom sürüş yetenekleriyle donatılmış Cybercab modelinin satışlarına takvim yılının sonuna kadar başlamayı amaçlıyor. Geliştirilen yeni nesil otonom araç, geleneksel sürüş unsurları olan direksiyon simidi veya pedalları barındırmıyor. Tamamen otonom bir ulaşım deneyimi vaat eden altın renkli iki kişilik araç, bireysel mülkiyetten ziyade bir ulaşım hizmeti olarak konumlandırılıyor.
 
 Şirketin mühendislik bölümünü yöneten Lars Moravy, halihazırda üretilen Cybercab araçlarının ilk aşamada markanın kendi robotaksi filosuna katılacağını açıkladı. Filo genişledikçe, tamamen otonom tasarıma sahip bu vasıtaların müşterilere teslim edilmeye başlanması öngörülüyor. Şirket yöneticisi Elon Musk ise modelin kişisel bir taşıttan ziyade hizmet odaklı bir ulaşım anlayışıyla değerlendirileceğini vurguladı.
 

@@ -10,7 +10,7 @@ why_matters: "Yapay zekâ veri merkezlerinde veri iletim hızını artıran opti
 key_points:
   - "Photon Bridge, veri merkezi lazerleri için 10 milyon euro yatırım aldı."
   - "Şirket, ilk örnek ürünleri 2027'de, seri üretimi ise 2028'de planlıyor."
-  - "Tasarım, dalga boyu başına 40 miligwatta kadar güç hedefliyor."
+  - "Tasarım, dalga boyu başına 40 milivata kadar güç hedefliyor."
 rakamlar:
   - etiket: "Yatırım tutarı"
     deger: "10 milyon euro"
@@ -33,6 +33,6 @@ Alınan bu taze finansman, şirketin ürün geliştirme süreçlerini hızlandı
 
 Yapay zekâ veri merkezleri, çipler arasındaki veri trafiğini hızlandırmak için geleneksel bakır kablolar yerine optik bağlantılara yöneliyor. Bu optik sistemlerin çalışabilmesi için ise yoğun miktarda lazer ışık kaynağına ihtiyaç duyuluyor. Telekomünikasyon sektörü için kurulan mevcut tedarik zinciri ise yapay zekânın talep ettiği milyonlarca lazeri karşılamakta yetersiz kalabiliyor.
 
-Photon Bridge, tek bir güçlü lazer üretmek yerine farklı dalga boylarındaki zayıf lazerlerin ışığını tek bir fiberde birleştiren bir teknoloji geliştiriyor. Şirkete göre zayıf lazerlerin üretimde arızalanma riski daha düşük olduğu için testlerden geçme oranları da artıyor. Tasarım, dalga boyu başına 40 miligwatta kadar güç hedefliyor ve üretim için kendi fabrikasını kurmak yerine dış çip üreticileriyle iş birliği yapıyor.
+Photon Bridge, tek bir güçlü lazer üretmek yerine farklı dalga boylarındaki zayıf lazerlerin ışığını tek bir fiberde birleştiren bir teknoloji geliştiriyor. Şirkete göre zayıf lazerlerin üretimde arızalanma riski daha düşük olduğu için testlerden geçme oranları da artıyor. Tasarım, dalga boyu başına 40 milivata kadar güç hedefliyor ve üretim için kendi fabrikasını kurmak yerine dış çip üreticileriyle iş birliği yapıyor.
 
 Yapay zekâ altyapısındaki optik bağlantılara yönelik küresel yatırım dalgası hız kesmeden devam ediyor. Sektördeki diğer oyuncular da benzer yatırımlar alırken, donanım üreticileri veri merkezlerindeki olası lazer arızalarının sistemleri yavaşlatmasını önlemek için milyarlarca dolarlık fonlar ve kaynaklar ayırıyor.

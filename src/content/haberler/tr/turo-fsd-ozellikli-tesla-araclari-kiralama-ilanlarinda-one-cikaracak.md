@@ -26,7 +26,7 @@ breaking: false
 draft: false
 ---
 
-Araç kiralama platformu Turo, FSD (Full Self-Driving) özellikli Tesla araçların kullanıcılar tarafından daha kolay bulunabilmesi için yeni bir düzenleme hayata geçiriyor. Yapılan çalışmayla birlikte, araçta FSD özelliğinin etkin olup olmadığı Tesla'nın API bağlantısı aracılığıyla doğrulanacak ve kiralama ilanlarında net bir şekilde gösterilecek. Bu sayede kireticiler, aradıkları teknolojik donanıma sahip araçlara doğrudan ulaşabilecek.
+Araç kiralama platformu Turo, FSD (Full Self-Driving) özellikli Tesla araçların kullanıcılar tarafından daha kolay bulunabilmesi için yeni bir düzenleme hayata geçiriyor. Yapılan çalışmayla birlikte, araçta FSD özelliğinin etkin olup olmadığı Tesla'nın API bağlantısı aracılığıyla doğrulanacak ve kiralama ilanlarında net bir şekilde gösterilecek. Bu sayede kiracılar, aradıkları teknolojik donanıma sahip araçlara doğrudan ulaşabilecek.
 
 Yeni düzenleme kapsamında uygun araç sahiplerine bir aylık ücretsiz FSD deneme süresi de sunulacak. Böylece yazılımı daha önce etkinleştirmemiş bazı araçlar da deneme süresinde bu gelişmiş sürüş yardımını deneyimleme fırsatı bulacak. Turo, ilanlardaki bilgilerin doğrulğunu artırmak amacıyla sahibin beyanına dayanmak yerine doğrudan Tesla sistem bağlantısını kullanmayı tercih ediyor.
 

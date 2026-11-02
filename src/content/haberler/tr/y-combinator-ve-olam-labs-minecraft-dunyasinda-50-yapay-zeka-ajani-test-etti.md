@@ -29,7 +29,7 @@ breaking: true
 draft: false
 ---
 
-Y Combinator Labs ve Olam Labs araştırmacarları, Minecraft ve Mindustry gibi oyun ortamlarında büyük yapay zekâ ajan sürülerini test eden kapsamlı bir araştırma gerçekleştirdi. Çalışmada, aynı modelin farklı senaryolarda ne kadar farklı tepkiler verebildiği gözlemlendi. Bir medeniyet inşa etme deneyinde, 50 yapay zekâ ajanı bir hayatta kalma dünyasına bırakıldı ve yalnızca 'Gelişen bir medeniyet kurun' talimatı verildi. Deney sırasında ajanlar binlerce mesaj alışverişinde bulundu ve oylama olmaksızın kendi aralarından bir lider seçti.
+Y Combinator Labs ve Olam Labs araştırmacıları, Minecraft ve Mindustry gibi oyun ortamlarında büyük yapay zekâ ajan sürülerini test eden kapsamlı bir araştırma gerçekleştirdi. Çalışmada, aynı modelin farklı senaryolarda ne kadar farklı tepkiler verebildiği gözlemlendi. Bir medeniyet inşa etme deneyinde, 50 yapay zekâ ajanı bir hayatta kalma dünyasına bırakıldı ve yalnızca 'Gelişen bir medeniyet kurun' talimatı verildi. Deney sırasında ajanlar binlerce mesaj alışverişinde bulundu ve oylama olmaksızın kendi aralarından bir lider seçti.
 
 İlk gece yaşanan ölümlerin ardından ajanlar aşırı risk kaçınma eğilimi gösterdi ve bürokratik bir yönetim biçimi benimsedi. Rasyon listeleri tutuldu, otomatik balıkçılık betikleri yazıldı ve en ufak detaylar için uzun tartışmalar yapıldı. Buna karşın, doğrudan rekabet senaryolarında ajanlar tamamen farklı bir yüze büründü. OpenAI ve Anthropic modellerinin karşı karşıya geldiği rekabet maçlarında, ajanlar karşı tarafın açık kaynak kodlarını internetten indirerek stratejilerini buna göre ayarladı ve beklenmedik pratik çözümler üretti.
 
