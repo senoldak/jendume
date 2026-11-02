@@ -114,7 +114,7 @@ Son olarak bu yazı nedensellik kurmuyor. Cep telefonunun yükselmesi ile sabit 
 - Dünya Bankası'nın Dünya Kalkınma Göstergeleri (WDI) veri tabanından altı seri aldık: her 100 kişiye sabit telefon aboneliği (IT.MLT.MAIN.P2), cep telefonu aboneliği (IT.CEL.SETS.P2), sabit genişbant aboneliği (IT.NET.BBND.P2) ve sabit telefon ile cep telefonu abonelik sayıları (IT.MLT.MAIN, IT.CEL.SETS) ile dünya nüfusu (SP.POP.TOTL). Abonelik serilerinin asıl kaynağı ITU.
 - Zirve yılı, her seride Dünya Bankası'nın yıllık verisindeki en yüksek değerin yılıdır. Dünya, Türkiye ve dört bölge için baktık.
 - Yüzde değişimi: sonraki değer eksi önceki değer, bölü önceki değer, çarpı yüz. Oran: cep telefonu değeri bölü sabit telefon değeri, aynı yıl için. Fark: iki değerin çıkarması.
-- Her 100 kişiye değerleri kaynaktaki ham değerin yuvarlanmışıdır ve bunların hesapları yuvarlanmış değerler üzerinden yapıldı. Abonelik sayılarının ve nüfusun değişimlerini ham değerlerden hesapladık; sayılar milyar ve milyon olarak yazıldı.
+- Her 100 kişiye düşen değerler, kaynaktaki ham değerlerin yuvarlanmış hâlidir ve hesaplar yuvarlanmış değerler üzerinden yapıldı. Abonelik sayılarının ve nüfusun değişimlerini ham değerlerden hesapladık; sayılar milyar ve milyon olarak yazıldı.
 - Grafikler için yıllık değerleri seçilmiş yıllarda aldık: dünya ve Türkiye için çift yıllar, bölgeler için dört yılda bir. Her nokta, Dünya Bankası API'sinde tek ülke ve tek yıl sorgusuyla yeniden çekilebilir.
 
 ## Kaynaklar

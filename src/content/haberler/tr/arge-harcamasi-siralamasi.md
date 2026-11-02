@@ -103,7 +103,7 @@ Son olarak, bu yazıdaki hiçbir sıralama bir ülkenin araştırmasının nitel
 - Dünya Bankası'nın Dünya Kalkınma Göstergeleri (WDI) veri tabanından iki seri aldık: GSYH'ye oranla Ar-Ge harcaması (kod GB.XPD.RSDV.GD.ZS) ve milyon kişi başına araştırmacı sayısı (kod SP.POP.SCIE.RD.P6). İki serinin de asıl kaynağı UNESCO İstatistik Enstitüsü.
 - Sıralamaları 2022 yılı için kurduk. Bölge toplamlarını, yani ülke olmayan kayıtları saymadık. Ülkeleri değerine göre büyükten küçüğe dizdik; sıra numaraları bizim sıralamamız ve tam listeleri dosya olarak sakladık.
 - Yüzde artışları iki yılın değerinden hesapladık: son yılın değeri eksi ilk yılın değeri, bölü ilk yılın değeri, çarpı yüz. Pay farklarını, iki değerin farkı olarak puanla yazdık. Oranlar iki değerin bölümü.
-- Karşılaştırma değeri olarak Dünya Bankası'nın OECD üyeleri toplamını kullandık. Değerler kaynaktaki ham değerin yuvarlanmışıdır; hesaplar yuvarlanmış değerler üzerinden yapıldı.
+- Karşılaştırma değeri olarak Dünya Bankası'nın OECD üyeleri toplamını kullandık. Değerler, kaynaktaki ham değerlerin yuvarlanmış hâlidir; hesaplar yuvarlanmış değerler üzerinden yapıldı.
 
 ## Kaynaklar
 
