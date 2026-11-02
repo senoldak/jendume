@@ -31,7 +31,7 @@ test('haber değeri yalnız kayıtlıysa söylenir', () => {
   assert.match(adimlar(resmi)[1].metin.tr, /100 üzerinden 82/);
   assert.doesNotMatch(adimlar(medya)[1].metin.tr, /\d+ olarak/);
   assert.deepEqual(olguSatiri(resmi, 'tr'), ['Resmî kaynaktan', 'Haber değeri 82/100']);
-  assert.deepEqual(olguSatiri(medya, 'en'), ['Several sources']);
+  assert.deepEqual(olguSatiri(medya, 'en'), ['From news reports']);
   assert.match(adimlar(resmi)[0].metin.tr, /Avrupa Komisyonu/);
 });
 

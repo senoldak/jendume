@@ -77,7 +77,7 @@ export function adimlar(veri) {
     return [
       resmi
         ? adim('ada', ilk ? `Duyuruyu ${ilk} kaynağında buldu.` : 'Duyuruyu resmî bir kaynakta buldu.', ilk ? `Found the announcement at ${ilk}.` : 'Found the announcement at an official source.')
-        : adim('ada', 'Haberi birden fazla bağımsız yayında buldu.', 'Found the story in more than one independent outlet.'),
+        : adim('ada', 'Haberi kaynak listesindeki yayınlarda buldu.', 'Found the story in the outlets on our source list.'),
       deger,
       adim('elif', 'Türkçe ve İngilizce metni kaynaklardan yazdı.', 'Wrote the Turkish and English text from the sources.'),
       adim('mert', 'Metni okudu, düzeltme turlarını yürüttü.', 'Read the text and ran the correction rounds.'),
@@ -96,7 +96,7 @@ export function olguSatiri(veri, dil) {
   if (tur === 'sahip') return [t('Yazan: Şenol Dak', 'By Şenol Dak'), t('Rakamlar resmî kaynaklardan', 'Figures from official sources')];
   if (tur === 'zincir') return [t('Rakamlar resmî kaynaklardan', 'Figures from official sources')];
   if (tur === 'bot-resmi' || tur === 'bot-medya') {
-    const ut = [tur === 'bot-resmi' ? t('Resmî kaynaktan', 'From an official source') : t('Birden fazla kaynak', 'Several sources')];
+    const ut = [tur === 'bot-resmi' ? t('Resmî kaynaktan', 'From an official source') : t('Yayın kaynaklı', 'From news reports')];
     if (degerVar(veri)) ut.push(t(`Haber değeri ${veri.haberDegeri}/100`, `News value ${veri.haberDegeri}/100`));
     return ut;
   }
