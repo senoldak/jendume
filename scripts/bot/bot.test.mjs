@@ -398,3 +398,15 @@ test('alfabeKontrol: Latin sözcüğe karışan yabancı alfabe harfi takılır,
   assert.equal(alfabeKontrol('Petrol fiyatları gerileді ve 13,4 milyار dolar oldu.').length, 1);
   assert.deepEqual(alfabeKontrol('Petrol fiyatları geriledi; α-sinüklein çalışması ve Москва adı geçti.'), []);
 });
+
+test('guvenli: iç içe etiket silinince yeniden oluşan etiket kalmaz', () => {
+  for (const girdi of [
+    '<<b>meta http-equiv="refresh" content="0;url=https://haber.example.com">',
+    "<<b>a href='https://haber.example.com/'>x<</b>/a>",
+    '<!DOCTYPE x> <?php ?>',
+  ]) {
+    assert.doesNotMatch(guvenli(girdi), /<[a-z0-9_/!?-]/i, girdi);
+  }
+  assert.equal(guvenli('3 < 5'), '3 < 5');
+  assert.equal(guvenli('[a [b](javascript:x)](javascript:y)'), 'a b');
+});

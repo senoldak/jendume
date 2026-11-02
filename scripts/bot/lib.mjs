@@ -183,8 +183,19 @@ export function gemini({ prompt, schema, dusunme = 'low', denetim = false, _mode
 
 const yamlStr = (s) => JSON.stringify(String(s ?? '').trim());
 
+// Tek geçiş yetmez: "<<b>meta …>" içindeki <b> silinince dıştaki etiket yeniden oluşur. Metin değişmeyene kadar
+// tekrarlanır; sonra kalan her etiket başına ("<!x", "<?x" gibi) boşluk eklenir: "< x" etiket sayılmaz, düz metin kalır.
 export function guvenli(metin = '') {
-  return String(metin)
+  let ut = String(metin);
+  for (let onceki; onceki !== ut; ) {
+    onceki = ut;
+    ut = guvenliAdim(ut);
+  }
+  return ut.replace(/<(?=[a-z0-9_/!?-])/gi, '< ');
+}
+
+function guvenliAdim(s) {
+  return s
     .replace(/<!--[\s\S]*?(?:-->|$)/g, '')
     .replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, '')
     .replace(/<\/?(?:[a-z0-9_-]+|\/)[^>]*>/gi, '')
