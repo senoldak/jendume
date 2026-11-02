@@ -7,6 +7,7 @@ import { KAPAK_G, KAPAK_Y, LOGO_G, LOGO_Y } from '../kapak/ciz';
 import { konuDiziniYolu, konuYolu, sozlukYolu, terimYolu, yazarYolu } from './yollar.mjs';
 import type { Terim } from '../data/sozluk/tip';
 import type { Konu } from './konular';
+import { haritaUlkesi } from './harita.mjs';
 
 export const abs = (path: string) => new URL(path, SITE.url).href;
 
@@ -146,6 +147,13 @@ export function articleGraph(post: NewsEntry, lang: Locale, image: string) {
   if (matched.length > 0) {
     articleNode.about = matched;
   }
+  // Resmî kaynaklar (sayfanın altında adıyla gösterilenler). Medya kaynakları adlandırılmaz, burada da yok.
+  if (post.data.kaynaklar.length > 0) {
+    articleNode.isBasedOn = post.data.kaynaklar.map((k) => ({ '@type': 'CreativeWork', name: k.ad, url: k.url }));
+  }
+  // Yer haritası çizilen haberde yer (src/lib/harita.mjs).
+  const ulke = haritaUlkesi(post.data, lang);
+  if (ulke) articleNode.contentLocation = { '@type': 'Country', name: ulke.ad };
 
   return [articleNode, crumbs(articleCrumbs(post, lang))];
 }

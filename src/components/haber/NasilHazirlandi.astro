@@ -1,0 +1,87 @@
+---
+// "Bu haber nasıl hazırlandı": kapalı <details> kartı; olgu satırı ve küçük portreler. Açınca adımlar (src/lib/ajanlar.mjs),
+// her otomatik adım bir satır, en sonda sahibin satırı ve yayın odasına giriş şeridi. Ajan adları otomatik adımların
+// adıdır, insan değildir. Sahibin imzalı yazısı (analiz, açıklayıcı) sahibin yazısıdır: Şenol yazar, YZ çevirir ve dili düzeltir.
+// Bülten ve üretimi bilinmeyen yazı kart almaz. tidsrost SlikBleSakenLaget.astro'nun jendume eşi.
+import { AJANLAR, adimlar, insanOkumadi, kartMetinleri, olguSatiri, uretimTuru } from '../../lib/ajanlar.mjs';
+import { portre } from '../../lib/portre.mjs';
+import { yayinOdasiYolu } from '../../lib/yollar.mjs';
+import { SITE, type Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  veri: Record<string, any>;
+  yayin: Date;
+  guncelleme?: Date;
+  mailto: string;
+}
+const { lang, veri, yayin, guncelleme, mailto } = Astro.props;
+const adim = adimlar(veri) ?? [];
+const metin = kartMetinleri(veri, lang);
+const olgu = olguSatiri(veri, lang);
+const okunmadi = insanOkumadi(veri);
+const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
+const zaman = (d: Date) =>
+  new Intl.DateTimeFormat(SITE.localeTag[lang], { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(d);
+const baslik = uretimTuru(veri) === 'bot-resmi' || uretimTuru(veri) === 'bot-medya' ? t('Bu haber nasıl hazırlandı', 'How this story was made') : t('Bu yazı nasıl hazırlandı', 'How this piece was made');
+const baslikOteki = uretimTuru(veri) === 'bot-resmi' || uretimTuru(veri) === 'bot-medya' ? t('How this story was made', 'Bu haber nasıl hazırlandı') : t('How this piece was made', 'Bu yazı nasıl hazırlandı');
+const oteki = lang === 'en' ? 'tr' : 'en';
+---
+
+{
+  adim.length > 0 && (
+    <details class="hn-nasil" id="nasil">
+      <summary>
+        <span class="h">
+          {baslik}
+          <span lang={oteki}>{baslikOteki}</span>
+        </span>
+        <span class="stabel" aria-hidden="true">
+          {adim.map((a) => <span class="mini" set:html={portre(AJANLAR[a.id].u, AJANLAR[a.id].yz)} />)}
+        </span>
+        <span class="kisa">{metin.kisa}</span>
+        <span class="vis">
+          <span class="k">{t('Göster', 'Show')} ▾</span>
+          <span class="a">{t('Gizle', 'Hide')} ▴</span>
+        </span>
+        {olgu.length > 0 && <span class="olgu">{olgu.map((o) => <span>{o}</span>)}</span>}
+      </summary>
+      <div class="icerik">
+        <p class="olgu-acik">
+          {okunmadi && <span class="nei">{t('Yayından önce hiçbir insan okumadı', 'No human read it before publication')}</span>}
+          <span>{t('Yayımlandı', 'Published')} {zaman(yayin)}</span>
+          <span>{guncelleme ? `${t('Güncellendi', 'Updated')} ${zaman(guncelleme)}` : t('Değişiklik yok', 'No changes')}</span>
+        </p>
+        <p>{metin.aciklama}</p>
+        <p><span class="yz">{t('YZ', 'AI')}</span> {metin.not}</p>
+        <ol>
+          {adim.map((a) => {
+            const ajan = AJANLAR[a.id];
+            return (
+              <li>
+                <span class:list={['ava', !ajan.yz && 'insan']} set:html={portre(ajan.u, ajan.yz)} />
+                <span>
+                  <span class="kim"><b>{ajan.ad}</b> <span class="rol">{ajan.rol[lang]}</span></span>
+                  <span class="yapti">{a.metin[lang]}</span>
+                </span>
+              </li>
+            );
+          })}
+        </ol>
+        <div class="sorumlu">
+          <span class="ava insan" set:html={portre(AJANLAR.senol.u, false)} />
+          <p>
+            <b>{SITE.author.name}</b>{metin.sorumluluk} <a href={mailto}>{t('Hata bildir', 'Report an error')} →</a>
+          </p>
+        </div>
+        <a class="hn-odaya" href={yayinOdasiYolu(lang)}>
+          <span>
+            <b>{t('YAYIN ODASINA GİR', 'ENTER THE NEWSROOM')}</b>
+            <span>{t('Ada, Kaan ve ekibin geri kalanını iş başında gör.', 'See Ada, Kaan and the rest of the team at work.')}</span>
+          </span>
+          <span class="pil" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </details>
+  )
+}

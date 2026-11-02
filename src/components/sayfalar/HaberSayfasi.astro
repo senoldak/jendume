@@ -2,28 +2,37 @@
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import StoryCard from '../../components/StoryCard.astro';
-import SignLine from '../../components/SignLine.astro';
 import SignHeading from '../../components/SignHeading.astro';
-import SentezBlok from '../../components/SentezBlok.astro';
-import RakamSeridi from '../../components/RakamSeridi.astro';
-import Arrow from '../../components/Arrow.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import ShareLinks from '../../components/ShareLinks.astro';
 import YapayZekaNotu from '../../components/YapayZekaNotu.astro';
+import AracSatiri from '../../components/haber/AracSatiri.astro';
+import KisaOzet from '../../components/haber/KisaOzet.astro';
+import NasilHazirlandi from '../../components/haber/NasilHazirlandi.astro';
+import DahaOnce from '../../components/haber/DahaOnce.astro';
+import DegisiklikKaydi from '../../components/haber/DegisiklikKaydi.astro';
+import Yarar from '../../components/haber/Yarar.astro';
+import YerHaritasi from '../../components/haber/YerHaritasi.astro';
+import '../../styles/haber.css';
+import '../../styles/piksel-font.css';
 import { kapakAlt, KAPAK_G, KAPAK_Y } from '../../kapak/ciz';
-import { SITE, getCategory, otherLocale, type Locale } from '../../lib/site';
+import { SITE, formatDate, getCategory, otherLocale, readingMinutes, type Locale } from '../../lib/site';
 import { abs, articleCrumbs, articleGraph } from '../../lib/seo';
-import { ilgiliHaberler } from '../../lib/ilgili';
+import { dahaOnceHaberler, ilgiliHaberler } from '../../lib/ilgili';
 import { haberKonulari, konuBul } from '../../lib/konular';
 import { konuVerisi } from '../../lib/rotalar';
-import { konuYolu, yazarYolu } from '../../lib/yollar.mjs';
+import { analizYolu, konuYolu, terimYolu, yazarYolu } from '../../lib/yollar.mjs';
 import { dizinlenir } from '../../lib/kalite.mjs';
 import { medyaKaynakli } from '../../lib/kaynak-satiri.mjs';
 import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
+import { adimlar } from '../../lib/ajanlar.mjs';
+import { haritaUlkesi } from '../../lib/harita.mjs';
+import { TERIMLER, terimGecisleri } from '../../lib/sozluk.mjs';
+import { yapayZekaNotu } from '../../lib/yapayzeka-notu.mjs';
 import { duzeltmeNotu } from '../../lib/duzeltme.mjs';
 import {
   getPublishedPosts,
   getAvailableTranslations,
+  getCategoryUrl,
   getPostUrl,
   kapakBilgisi,
   type NewsEntry,
@@ -65,13 +74,32 @@ if (translations.tr && translations.en && indexable && otherIndexable) {
 const cover = await kapakBilgisi(post, lang);
 const catTitle = getCategory(post.data.category, lang).title;
 
-// İlgili haberler: ortak varlık > aynı bölüm > en yeni; bülten, kısa (noindex) haber ve kendisi hariç.
-const related = ilgiliHaberler(post, await getPublishedPosts(lang));
+// Daha önce bu konuda: önceki ve gerçekten ilişkili haberler. İlgili haberler: ortak varlık > aynı bölüm > en yeni;
+// bülten, kısa (noindex) haber, kendisi ve "daha önce" listesindekiler hariç.
+const hepsi = await getPublishedPosts(lang);
+const onceki = dahaOnceHaberler(post, hepsi);
+const related = ilgiliHaberler(post, hepsi.filter((p) => !onceki.includes(p)));
 const crumbs = articleCrumbs(post, lang);
 
 // Haberin konuları: yalnız bu dilde sayfası olan (en az 3 haberli) konular bağlanır.
 const sayfaliKonular = await konuVerisi(lang);
 const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s) => konuBul(s)!);
+
+const cat = getCategory(post.data.category, lang);
+const adres = abs(getPostUrl(lang, id));
+const not = yapayZekaNotu({ veri: post.data, dil: lang, baslik: post.data.title, adres });
+// "Bu haber nasıl hazırlandı" kartı olan yazıda eski yapay zekâ notu gösterilmez (kart aynı şeyi söyler).
+const kartVar = Boolean(adimlar(post.data));
+const ulke = haritaUlkesi(post.data, lang);
+// Sözlük kartı: metinde bağlanan terimlerin kısa tanımı (betik: src/scripts/haber-araclari.ts).
+const terimIdleri = new Set(terimGecisleri(post.body ?? '', lang, { yalnizBaglanan: true }).map((g: { id: string }) => g.id));
+const sozlukVeri = Object.fromEntries(
+  TERIMLER.filter((t) => terimIdleri.has(t.id)).map((t) => [
+    terimYolu(lang, t.id),
+    { ad: t[lang].ad, ozet: t[lang].ozet, adres: terimYolu(lang, t.id), devam: lang === 'en' ? 'More in the glossary' : 'Sözlükte devamı' },
+  ]),
+);
+const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
 ---
 
 <Base
@@ -95,45 +123,42 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
   schema={articleGraph(post, lang, cover.url)}
 >
   <Breadcrumb lang={lang} items={crumbs} />
-  <article class="article">
+  <article class="article hn">
     <header class="article-header">
-      <h1 class="article-title">{post.data.title}</h1>
-      <SignLine post={post} lang={lang} minutes fullTitle />
-      <p class="byline">
-        {ui.byline} {kisiYazariMi(post.data) ? (
-          <><a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a>, {SITE.author.title[lang]}</>
-        ) : (
-          <strong>{SITE.displayName}</strong>
-        )}
+      <p class="hn-kicker">
+        <a href={getCategoryUrl(lang, cat.slug)}>{cat.title}</a>
+        <span class="oteki" lang={other}>{getCategory(post.data.category, other).title}</span>
+        {post.data.breaking && <span class="etiket">{ui.breakingBadge}</span>}
+        {analizMi(post.data) && <a href={analizYolu(lang)}>{lang === 'tr' ? 'Analiz' : 'Analysis'}</a>}
       </p>
+      <h1 class="article-title">{post.data.title}</h1>
       <p class="article-deck">{post.data.description}</p>
-      <SentezBlok
+      <div class="hn-meta">
+        <span>
+          {ui.byline}{' '}
+          {kisiYazariMi(post.data) ? (
+            <><a href={yazarYolu(lang)} rel="author">{SITE.author.name}</a>, {SITE.author.title[lang]}</>
+          ) : (
+            <><b>{SITE.displayName}</b> {kartVar && <span class="yz">{lang === 'en' ? 'AI' : 'YZ'}</span>}</>
+          )}
+        </span>
+        <span><time datetime={post.data.date.toISOString()}>{formatDate(post.data.date, lang)}</time></span>
+        <span>{readingMinutes(post.body ?? post.data.description)} {ui.minRead}</span>
+        {post.data.bolge && <span>{post.data.bolge}</span>}
+      </div>
+      <AracSatiri
         lang={lang}
-        whyMatters={post.data.why_matters || post.data.perspektif}
-        keyPoints={post.data.key_points}
+        baslik={post.data.title}
+        adres={adres}
+        otekiAdres={translations[other] ? getPostUrl(other, esIds[other]) : undefined}
       />
-      <RakamSeridi lang={lang} rakamlar={post.data.rakamlar} />
-      {
-        translations[other] && (
-          <a class="bridge" href={getPostUrl(other, esIds[other])} lang={other} hreflang={other}>
-            <span class="lang-code">{other.toUpperCase()}</span>
-            {SITE.ui[other].readIn}
-            <Arrow />
-          </a>
-        )
-      }
+      <KisaOzet
+        lang={lang}
+        neden={post.data.why_matters || post.data.perspektif}
+        maddeler={post.data.key_points}
+        rakamlar={post.data.rakamlar}
+      />
     </header>
-
-    {
-      duzeltme && (
-        <aside class="duzeltme">
-          <p>
-            <strong>{duzeltme.etiket}</strong> {duzeltme.metin}{' '}
-            <a href={duzeltme.baglanti}>{lang === 'en' ? 'Our corrections policy' : 'Düzeltme ilkemiz'}</a>
-          </p>
-        </aside>
-      )
-    }
 
     {
       cover.ozel && (
@@ -143,9 +168,12 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       )
     }
 
+    {ulke && <YerHaritasi lang={lang} ulke={ulke} />}
+
     <div class="prose">
       <Content />
     </div>
+    {Object.keys(sozlukVeri).length > 0 && <script type="application/json" id="sozluk-veri" set:html={sozlukJson} />}
 
     {
       post.data.kaynaklar.length > 0 && (
@@ -175,9 +203,17 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       )
     }
 
-    <YapayZekaNotu lang={lang} veri={post.data} baslik={post.data.title} adres={abs(getPostUrl(lang, id))} />
+    {kartVar ? (
+      <NasilHazirlandi lang={lang} veri={post.data} yayin={post.data.date} guncelleme={post.data.updated} mailto={not.mailto} />
+    ) : (
+      <YapayZekaNotu lang={lang} veri={post.data} baslik={post.data.title} adres={adres} />
+    )}
 
-    <ShareLinks lang={lang} url={abs(getPostUrl(lang, id))} title={post.data.title} />
+    <DahaOnce lang={lang} haberler={onceki} />
+
+    <DegisiklikKaydi lang={lang} yayin={post.data.date} guncelleme={post.data.updated} duzeltme={duzeltme} />
+
+    <Yarar lang={lang} kimlik={`${lang}/${id}`} />
 
     {
       konular.length > 0 && (
@@ -194,6 +230,9 @@ const konular = haberKonulari(post).filter((s) => sayfaliKonular.has(s)).map((s)
       )
     }
   </article>
+  <script>
+    import '../../scripts/haber-araclari.ts';
+  </script>
 
   {
     related.length > 0 && (

@@ -1,0 +1,280 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../Breadcrumb.astro';
+import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { abs, type Crumb } from '../../lib/seo';
+import { getPostUrl, getPublishedPosts } from '../../lib/news';
+import { yayinOdasiYolu } from '../../lib/yollar.mjs';
+import { ELENME_METNI, yayinOdasiVerisi } from '../../lib/yayin-odasi.mjs';
+import '../../styles/piksel-font.css';
+import '../../styles/yayin-odasi.css';
+
+// Yayın odası: piksel sahne. Yollar: src/pages/tr/yayin-odasi.astro, src/pages/en/newsroom.astro.
+// Sayılar ve başlıklar gerçek kayıtlardan (src/lib/yayin-odasi.mjs): botun günlük sayıları (src/data/yayin-odasi/gunluk.json)
+// ve yayımlanmış haberler. Sahne betiği src/scripts/yayin-odasi.mjs; veri ona #yayin-odasi-veri JSON'uyla geçer (CSP: satır içi betik yok).
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const other = otherLocale(lang);
+const path = yayinOdasiYolu(lang);
+
+// Dosya ilk bot turundan önce yoktur: glob boş döner, sayılar "—" kalır.
+const gunlukDosyalari = import.meta.glob('../../data/yayin-odasi/gunluk.json', { eager: true, import: 'default' });
+const gunluk = Object.values(gunlukDosyalari)[0] as { guncellendi?: string; gunler?: Record<string, object> } | undefined;
+
+const haberler = (await getPublishedPosts(lang)).map((p) => ({
+  baslik: p.data.title,
+  url: getPostUrl(lang, p.id),
+  tarih: p.data.date,
+  uretim: p.data.uretim,
+}));
+const R = yayinOdasiVerisi({ haberler, gunluk, dil: lang });
+
+const METIN = {
+  tr: {
+    baslik: 'Yayın odası',
+    en: 'Newsroom',
+    aciklama: 'Haberleri üç ekip hazırlar: haber masası, yazı işleri ve yazar odası. Günün sayıları botun kaydından, başlıklar yayımlanmış haberlerden gelir.',
+    giris1: 'Haberleri üç ekip hazırlar. Haber masası kısa haberleri, yazı işleri uzun analizleri çıkarır. Yazar odasında Şenol Dak’ın kendi yazıları çevrilir ve dil düzeltmesinden geçer.',
+    giris2: 'Ajanlar otomatik adımlardır, insan değildir.',
+    giris3: 'Bu odadaki tek insan Şenol Dak. Bir figüre tıklayınca ne yaptığını görürsünüz. Sayılar ve başlıklar gerçektir; figürler çalışmanın çizimidir.',
+    serit: 'SON HABERLER',
+    seritEtiket: 'Son haberler',
+    sahneEtiket: 'Yayın odasının yukarıdan çizimi',
+    kaos: 'Kaos:',
+    tema: 'Tema:',
+    kartBaslik: 'Bir figür seçin',
+    kartMetin: 'Her figür işin bir parçasını yapar: haber bulunur, yazılır, denetlenir, yayımlanır.',
+    gunBaslik: 'Günün sayıları',
+    gunAlt: 'Daily numbers',
+    bulunan: 'Bulunan',
+    degerlendirilen: 'Değerlendirilen',
+    elenen: 'Elenen',
+    yazilan: 'Yazılan',
+    gunBugun: 'Bugün',
+    gunSon: 'Son kayıtlı gün',
+    kayitYok: 'Sayılar 2 Kasım 2026’dan itibaren toplanıyor.',
+    kayitNot: 'Sayılar botun kendi kaydından gelir. Bir haber birkaç kaynak öğesinden yazılabilir; bulunan, değerlendirilen ve elenen sayıları kaynak öğesi sayar.',
+    haftaBaslik: 'Son 7 günde yayımlanan haber',
+    haftaAlt: 'Stories published in the last 7 days',
+    haftaNot: 'İstanbul günü. Taslak olmayan ve tarihi gelmiş haberler.',
+    bugunEk: ' (bugün)',
+    elenmeBaslik: 'Elenme gerekçeleri',
+    elenmeAlt: 'Reasons for rejection',
+    elenmeKayit: (n: number) => `Son ${n} kayıtlı gün.`,
+    elenmeYok: 'Gerekçelerin sayısı kayıt başladığında görünecek.',
+    zincirBaslik: 'Son uzun yazı',
+    zincirAlt: 'Latest long read',
+    zincirYok: 'Henüz uzun yazı yok.',
+    zincirNot: 'Zincirin tur kaydı henüz tutulmuyor.',
+    yayim: 'Yayımlanma',
+    dil: 'tr-TR',
+  },
+  en: {
+    baslik: 'Newsroom',
+    en: 'Yayın odası',
+    aciklama: 'Three teams make the stories: the news desk, the long-read chain and the writers’ room. Daily numbers come from the bot’s own log, headlines from published stories.',
+    giris1: 'Three teams make the stories. The news desk produces the short stories, the long-read chain the long analyses. In the writers’ room, Şenol Dak’s own pieces are translated and language-edited.',
+    giris2: 'Agents are automated steps, not people.',
+    giris3: 'The only person in this room is Şenol Dak. Click a figure to see what it does. The numbers and headlines are real; the figures are a drawing of the work.',
+    serit: 'LATEST',
+    seritEtiket: 'Latest stories',
+    sahneEtiket: 'Top-down drawing of the newsroom',
+    kaos: 'Chaos:',
+    tema: 'Theme:',
+    kartBaslik: 'Pick a figure',
+    kartMetin: 'Each figure does one part of the job: a story is found, written, checked and published.',
+    gunBaslik: 'Daily numbers',
+    gunAlt: 'Günün sayıları',
+    bulunan: 'Found',
+    degerlendirilen: 'Assessed',
+    elenen: 'Rejected',
+    yazilan: 'Written',
+    gunBugun: 'Today',
+    gunSon: 'Last recorded day',
+    kayitYok: 'Numbers have been collected since 2 November 2026.',
+    kayitNot: 'The numbers come from the bot’s own log. One story can be written from several source items; found, assessed and rejected count source items.',
+    haftaBaslik: 'Stories published in the last 7 days',
+    haftaAlt: 'Son 7 günde yayımlanan haber',
+    haftaNot: 'Istanbul day. Published stories whose date has arrived, no drafts.',
+    bugunEk: ' (today)',
+    elenmeBaslik: 'Reasons for rejection',
+    elenmeAlt: 'Elenme gerekçeleri',
+    elenmeKayit: (n: number) => `Last ${n} recorded ${n === 1 ? 'day' : 'days'}.`,
+    elenmeYok: 'The counts will appear once recording starts.',
+    zincirBaslik: 'Latest long read',
+    zincirAlt: 'Son uzun yazı',
+    zincirYok: 'No long read yet.',
+    zincirNot: 'The chain does not keep a record of its correction rounds yet.',
+    yayim: 'Published',
+    dil: 'en-GB',
+  },
+}[lang];
+
+const KAOS = lang === 'tr'
+  ? [['serverbrann', 'Sunucu yangını'], ['strombrudd', 'Elektrik kesintisi'], ['ekstra', 'Son dakika!'], ['kaffekrise', 'Kahve krizi'], ['kaptein', 'Kaptan J']]
+  : [['serverbrann', 'Server fire'], ['strombrudd', 'Power cut'], ['ekstra', 'Breaking!'], ['kaffekrise', 'Coffee crisis'], ['kaptein', 'Captain J']];
+const TEMA = lang === 'tr'
+  ? [['ingen', 'Normal'], ['halloween', 'Cadılar Bayramı'], ['jul', 'Yılbaşı'], ['bayram', 'Bayram'], ['esperanto', 'Esperanto Günü']]
+  : [['ingen', 'Normal'], ['halloween', 'Halloween'], ['jul', 'New Year'], ['bayram', 'Eid'], ['esperanto', 'Esperanto Day']];
+
+const tall = (n: number) => new Intl.NumberFormat(METIN.dil).format(n);
+const gunTekst = (g: string) => new Intl.DateTimeFormat(METIN.dil, { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(`${g}T12:00:00Z`));
+const tarihTekst = (iso: string) => new Intl.DateTimeFormat(METIN.dil, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Istanbul' }).format(new Date(iso));
+const enCok = Math.max(1, ...R.hafta.map((g) => g.yayimlanan));
+const kayit = R.gun;
+const elenmeListesi = R.kayitHafta?.elenenListe ?? [];
+const sayiDeger = (n: number | undefined) => (kayit ? tall(n ?? 0) : '—');
+
+const crumbs: Crumb[] = [
+  { name: SITE.displayName, path: `/${lang}/` },
+  { name: METIN.baslik, path },
+];
+const schema = [
+  {
+    '@type': 'WebPage',
+    '@id': `${abs(path)}#page`,
+    url: abs(path),
+    name: METIN.baslik,
+    description: METIN.aciklama,
+    inLanguage: lang,
+    isPartOf: { '@id': abs('/#website') },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
+  },
+];
+
+// Sahne betiğine giden veri: yalnız gerçek alanlar.
+const veri = {
+  dil: lang,
+  sonHaberler: R.sonHaberler,
+  haftaToplam: R.haftaToplam,
+  elenme: elenmeListesi.map((e) => ({ kod: e.kod, sayi: e.sayi })),
+  elenenToplam: R.kayitHafta?.elenenToplam ?? 0,
+  degerlendirilen: R.kayitHafta?.degerlendirilen ?? 0,
+  sonZincir: R.sonZincir ? { baslik: R.sonZincir.baslik, url: R.sonZincir.url } : null,
+};
+---
+
+<Base
+  lang={lang}
+  title={METIN.baslik}
+  description={METIN.aciklama}
+  canonicalPath={path}
+  langUrls={{ tr: yayinOdasiYolu('tr'), en: yayinOdasiYolu('en') }}
+  alternates={{ tr: yayinOdasiYolu('tr'), en: yayinOdasiYolu('en'), 'x-default': yayinOdasiYolu('en') }}
+  schema={schema}
+>
+  <Breadcrumb lang={lang} items={crumbs} />
+  <div class="yo">
+    <div class="hode">
+      <h1>{METIN.baslik}</h1>
+      <p class="en" lang={other}>{METIN.en}</p>
+      <p>{METIN.giris1}</p>
+      <p><strong>{METIN.giris2}</strong> {METIN.giris3}</p>
+    </div>
+
+    {
+      R.sonHaberler.length > 0 && (
+        <nav class="serit" aria-label={METIN.seritEtiket}>
+          <div>
+            <span class="ek">{METIN.serit}</span>
+            <div class="vindu">
+              <div class="rull">
+                {R.sonHaberler.map((s) => <a href={s.url}>{s.baslik}</a>)}
+                {R.sonHaberler.map((s) => <a href={s.url} aria-hidden="true" tabindex="-1">{s.baslik}</a>)}
+              </div>
+            </div>
+          </div>
+        </nav>
+      )
+    }
+
+    <div class="scene">
+      <svg id="rom" viewBox="0 0 1820 1200" shape-rendering="crispEdges" role="img" aria-label={METIN.sahneEtiket}></svg>
+    </div>
+    <div class="knapper">
+      <span>{METIN.kaos}</span>
+      {KAOS.map(([k, n]) => <button type="button" data-yo-kaos={k}>{n}</button>)}
+      <span>{METIN.tema}</span>
+      {TEMA.map(([k, n]) => <button type="button" data-yo-tema={k}>{n}</button>)}
+    </div>
+
+    <section class="kort" aria-live="polite">
+      <div id="kort">
+        <h2>{METIN.kartBaslik}</h2>
+        <p>{METIN.kartMetin}</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="tavle">
+        <h2>{METIN.gunBaslik}</h2>
+        <p class="alt" lang={other}>{METIN.gunAlt}</p>
+        {
+          kayit ? (
+            <p class="dato">{kayit.bugun ? METIN.gunBugun : METIN.gunSon}: {gunTekst(kayit.gun)}</p>
+          ) : (
+            <p class="dato">{METIN.kayitYok}</p>
+          )
+        }
+        <dl>
+          <div><dt>{METIN.bulunan}</dt><dd>{sayiDeger(kayit?.bulunan)}</dd></div>
+          <div><dt>{METIN.degerlendirilen}</dt><dd>{sayiDeger(kayit?.degerlendirilen)}</dd></div>
+          <div><dt>{METIN.elenen}</dt><dd>{sayiDeger(kayit?.elenenToplam)}</dd></div>
+          <div><dt>{METIN.yazilan}</dt><dd>{sayiDeger(kayit?.yazilan)}</dd></div>
+        </dl>
+        <p class="liten">{METIN.kayitNot}</p>
+
+        <h3>{METIN.haftaBaslik}<span class="en" lang={other}>{METIN.haftaAlt}</span></h3>
+        <ul>
+          {
+            R.hafta.map((g, i) => (
+              <li class="cubuklu">
+                <span>{gunTekst(g.gun)}{i === R.hafta.length - 1 ? METIN.bugunEk : ''}</span>
+                <i style={`width:${(g.yayimlanan / enCok) * 100}%`} />
+                <b>{tall(g.yayimlanan)}</b>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="liten">{METIN.haftaNot}</p>
+
+        <h3>{METIN.elenmeBaslik}<span class="en" lang={other}>{METIN.elenmeAlt}</span></h3>
+        <ul>
+          {
+            elenmeListesi.length > 0
+              ? elenmeListesi.map((e) => <li><span>{e.metin}</span><b>{tall(e.sayi)}</b></li>)
+              : Object.values(ELENME_METNI).map((m) => <li><span>{m[lang]}</span><b>—</b></li>)
+          }
+        </ul>
+        <p class="liten">{R.kayitHafta ? METIN.elenmeKayit(R.kayitHafta.dahil) : METIN.elenmeYok}</p>
+      </div>
+
+      <div class="tavle">
+        <h2>{METIN.zincirBaslik}</h2>
+        <p class="alt" lang={other}>{METIN.zincirAlt}</p>
+        {
+          R.sonZincir ? (
+            <>
+              <p><a href={R.sonZincir.url}>{R.sonZincir.baslik}</a></p>
+              <p class="dato">{METIN.yayim}: {tarihTekst(R.sonZincir.tarih)}</p>
+              <p class="liten">{METIN.zincirNot}</p>
+            </>
+          ) : (
+            <p>{METIN.zincirYok}</p>
+          )
+        }
+      </div>
+    </section>
+  </div>
+
+  <script type="application/json" id="yayin-odasi-veri" set:html={JSON.stringify(veri).replace(/</g, '\\u003c')} />
+  <script>
+    import '../../scripts/yayin-odasi.mjs';
+  </script>
+</Base>

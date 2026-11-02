@@ -75,3 +75,23 @@ export function ilgiliHaberler<T extends IlgiliAday>(post: T, adaylar: T[], adet
   }
   return secilen;
 }
+
+/**
+ * "Daha önce bu konuda": haberden önce yayımlanmış, gerçekten ilişkili (ortak varlık ya da anlam puanı) haberler, yeniden
+ * eskiye. Aynı bölüm tek başına yetmez: ilişki yoksa liste boş kalır.
+ */
+export function dahaOnceHaberler<T extends IlgiliAday>(post: T, adaylar: T[], adet = 3, anlam: Anlam = varsayilanAnlam): T[] {
+  const benim = varliklar(post);
+  return adaylar
+    .filter((p) => p.id !== post.id && p.data.date < post.data.date && uygun(p))
+    .map((p) => {
+      let ortak = 0;
+      if (benim.size > 0) for (const v of varliklar(p)) if (benim.has(v)) ortak++;
+      return { p, puan: ortak + anlamPuani(anlam(post, p)) };
+    })
+    .filter((x) => x.puan >= 1)
+    .sort((a, b) => b.puan - a.puan || b.p.data.date.getTime() - a.p.data.date.getTime())
+    .slice(0, adet)
+    .map((x) => x.p)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+}

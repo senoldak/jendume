@@ -1,0 +1,31 @@
+---
+// "Kısa özet": "Neden önemli?", ana maddeler ve rakam şeridi tek kutuda, başlığın altında. Boşsa kutu çıkmaz.
+import type { Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  neden?: string;
+  maddeler?: string[];
+  rakamlar?: { etiket: string; deger: string }[];
+}
+const { lang, neden, maddeler = [], rakamlar = [] } = Astro.props;
+const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
+const oteki = lang === 'en' ? 'tr' : 'en';
+---
+
+{
+  (neden || maddeler.length > 0 || rakamlar.length > 0) && (
+    <section class="hn-ozet" aria-labelledby="ozet-baslik">
+      <h2 class="hn-etiket" id="ozet-baslik">{t('Kısa özet', 'In brief')}<span lang={oteki}>{t('In brief', 'Kısa özet')}</span></h2>
+      {neden && <p><b>{t('Neden önemli?', 'Why it matters')}</b> {neden}</p>}
+      {maddeler.length > 0 && <ul>{maddeler.map((m) => <li>{m}</li>)}</ul>}
+      {rakamlar.length > 0 && (
+        <dl class="hn-rakam" aria-label={t('Rakamlarla', 'In numbers')}>
+          {rakamlar.map((r) => (
+            <div><dt>{r.etiket}</dt><dd>{r.deger}</dd></div>
+          ))}
+        </dl>
+      )}
+    </section>
+  )
+}

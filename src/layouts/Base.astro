@@ -6,7 +6,7 @@ import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } fro
 import { OG_LOCALE, siteGraph } from '../lib/seo';
 import { getCategoryUrl, getPublishedPosts } from '../lib/news';
 import { analizMi } from '../lib/yazi-turu.mjs';
-import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu } from '../lib/yollar.mjs';
+import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu, yayinOdasiYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
 
 type Hreflang = Locale | 'x-default';
@@ -90,6 +90,8 @@ const aiUseHref = yapayZekaYolu(lang);
 const correctionsHref = duzeltmelerYolu(lang);
 const complaintsHref = sikayetYolu(lang);
 const standardsReportHref = standartlarRaporuYolu(lang);
+const newsroomHref = yayinOdasiYolu(lang);
+const newsroomLabel = { tr: 'Yayın odası', en: 'Newsroom' };
 const robots = noindex
   ? 'noindex, follow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -292,6 +294,7 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
           <li><a href={correctionsHref}><span>{ui.corrections}<span class="link-other" lang={other}>{SITE.ui[other].corrections}</span></span></a></li>
           <li><a href={complaintsHref}><span>{ui.complaints}<span class="link-other" lang={other}>{SITE.ui[other].complaints}</span></span></a></li>
           <li><a href={standardsReportHref}><span>{ui.standardsReport}<span class="link-other" lang={other}>{SITE.ui[other].standardsReport}</span></span></a></li>
+          <li><a href={newsroomHref}><span>{newsroomLabel[lang]}<span class="link-other" lang={other}>{newsroomLabel[other]}</span></span></a></li>
           <li><a href={contactHref}><span>{ui.contact}<span class="link-other" lang={other}>{SITE.ui[other].contact}</span></span></a></li>
           <li><a href={SITE.social.telegram} rel="me noopener" target="_blank"><span>Telegram</span></a></li>
           <li><a href={SITE.social.linkedin} rel="me noopener" target="_blank"><span>LinkedIn</span></a></li>

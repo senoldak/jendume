@@ -1,0 +1,26 @@
+---
+// Başlığın altındaki araç satırı: yazı boyu, dinle (tarayıcının kendi sesi), paylaş (paylaşım menüsü ya da bağlantıyı
+// kopyalama) ve öteki dildeki sürüm. Betik: src/scripts/haber-araclari.ts.
+import type { Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  baslik: string;
+  adres: string;
+  otekiAdres?: string;
+}
+const { lang, baslik, adres, otekiAdres } = Astro.props;
+const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
+const oteki = lang === 'en' ? 'tr' : 'en';
+---
+
+<div class="hn-arac" role="toolbar" aria-label={t('Okuma araçları', 'Reading tools')}>
+  <button type="button" data-boy aria-pressed="false" title={t('Yazıyı büyüt', 'Larger text')}>Aa <span>{t('Yazı boyu', 'Text size')}</span></button>
+  <button type="button" data-dinle aria-pressed="false" data-dil={lang === 'en' ? 'en-US' : 'tr-TR'} data-dinle-metni={t('▶ Dinle', '▶ Listen')} data-durdur-metni={t('■ Durdur', '■ Stop')} hidden>{t('▶ Dinle', '▶ Listen')}</button>
+  <button type="button" data-paylas data-baslik={baslik} data-adres={adres} data-kopyalandi={t('✓ Bağlantı kopyalandı', '✓ Link copied')}>↗ {t('Paylaş', 'Share')}</button>
+  {otekiAdres && (
+    <a class="dil" href={otekiAdres} lang={oteki} hreflang={oteki}>
+      {oteki.toUpperCase()} · {lang === 'en' ? 'Türkçe oku' : 'Read in English'}
+    </a>
+  )}
+</div>

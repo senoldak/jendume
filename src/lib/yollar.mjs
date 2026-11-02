@@ -10,8 +10,8 @@ import { TERIMLER } from '../data/sozluk/index.mjs';
 /** @typedef {'tr' | 'en'} Dil */
 
 export const YOL = {
-  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri', yasal: 'yasal', duzeltmePolitikasi: 'duzeltme-politikasi', duzeltmeler: 'duzeltmeler', yapayZeka: 'yapay-zeka-kullanimi', sikayet: 'sikayet', standartlarRaporu: 'standartlar-raporu', yazar: 'yazar', analiz: 'analiz', grafikler: 'grafikler' },
-  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards', yasal: 'legal', duzeltmePolitikasi: 'corrections-policy', duzeltmeler: 'corrections', yapayZeka: 'ai-use', sikayet: 'complaints', standartlarRaporu: 'standards-report', yazar: 'author', analiz: 'analysis', grafikler: 'charts' },
+  tr: { haber: 'haber', kategori: 'kategori', hakkimizda: 'hakkimizda', konu: 'konu', sozluk: 'sozluk', gizlilik: 'gizlilik', seffaflik: 'seffaflik', arama: 'arama', yayinIlkeleri: 'yayin-ilkeleri', yasal: 'yasal', duzeltmePolitikasi: 'duzeltme-politikasi', duzeltmeler: 'duzeltmeler', yapayZeka: 'yapay-zeka-kullanimi', sikayet: 'sikayet', standartlarRaporu: 'standartlar-raporu', yazar: 'yazar', analiz: 'analiz', grafikler: 'grafikler', yayinOdasi: 'yayin-odasi' },
+  en: { haber: 'news', kategori: 'category', hakkimizda: 'about', konu: 'topic', sozluk: 'glossary', gizlilik: 'privacy', seffaflik: 'transparency', arama: 'search', yayinIlkeleri: 'editorial-standards', yasal: 'legal', duzeltmePolitikasi: 'corrections-policy', duzeltmeler: 'corrections', yapayZeka: 'ai-use', sikayet: 'complaints', standartlarRaporu: 'standards-report', yazar: 'author', analiz: 'analysis', grafikler: 'charts', yayinOdasi: 'newsroom' },
 };
 
 /** Bölüm kimliği (içerikteki `category`) → İngilizce yol parçası. Türkçe yolda kimliğin kendisi kullanılır. */
@@ -50,6 +50,7 @@ export const seffaflikYolu = (dil) => `/${dil}/${YOL[dil].seffaflik}/`;
 export const hakkimizdaYolu = (dil) => `/${dil}/${YOL[dil].hakkimizda}/`;
 /** @param {Dil} dil */
 export const grafiklerYolu = (dil) => `/${dil}/${YOL[dil].grafikler}/`;
+export const yayinOdasiYolu = (dil) => `/${dil}/${YOL[dil].yayinOdasi}/`;
 
 /**
  * Bir dildeki yolun öteki dildeki karşılığı (sayfanın var olup olmadığına bakmaz).

@@ -1,0 +1,26 @@
+---
+// Değişiklik kaydı: yayın ve güncelleme zamanı. Düzeltme notları 1 Aralık 2026'ya kadar kapalı (content.config.ts
+// DUZELTME_ACILIS); not açıldığında burada da görünür.
+import { SITE, type Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  yayin: Date;
+  guncelleme?: Date;
+  duzeltme?: { etiket: string; metin: string; baglanti: string } | null;
+}
+const { lang, yayin, guncelleme, duzeltme } = Astro.props;
+const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
+const oteki = lang === 'en' ? 'tr' : 'en';
+const zaman = (d: Date) =>
+  new Intl.DateTimeFormat(SITE.localeTag[lang], { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(d);
+---
+
+<section class="hn-blok hn-kayit" aria-labelledby="kayit-baslik">
+  <h2 id="kayit-baslik">{t('Değişiklik kaydı', 'Changes')}<span lang={oteki}>{t('Changes', 'Değişiklik kaydı')}</span></h2>
+  <ul>
+    {guncelleme && guncelleme > yayin && <li><time datetime={guncelleme.toISOString()}>{zaman(guncelleme)}</time> · {t('Güncellendi', 'Updated')}</li>}
+    {duzeltme && <li>{duzeltme.etiket} {duzeltme.metin} <a href={duzeltme.baglanti}>{t('Düzeltme ilkemiz', 'Our corrections policy')}</a></li>}
+    <li><time datetime={yayin.toISOString()}>{zaman(yayin)}</time> · {t('Yayımlandı', 'Published')}</li>
+  </ul>
+</section>

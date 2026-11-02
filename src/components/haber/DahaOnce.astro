@@ -1,0 +1,30 @@
+---
+// "Daha önce bu konuda": haberden önce yayımlanmış ilişkili haberler (src/lib/ilgili.ts dahaOnceHaberler). Boşsa çıkmaz.
+import { getPostUrl, type NewsEntry } from '../../lib/news';
+import { SITE, type Locale } from '../../lib/site';
+
+interface Props {
+  lang: Locale;
+  haberler: NewsEntry[];
+}
+const { lang, haberler } = Astro.props;
+const t = (tr: string, en: string) => (lang === 'en' ? en : tr);
+const oteki = lang === 'en' ? 'tr' : 'en';
+const gun = (d: Date) => new Intl.DateTimeFormat(SITE.localeTag[lang], { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' }).format(d);
+---
+
+{
+  haberler.length > 0 && (
+    <section class="hn-blok hn-once" aria-labelledby="once-baslik">
+      <h2 id="once-baslik">{t('Daha önce bu konuda', 'Earlier on this topic')}<span lang={oteki}>{t('Earlier on this topic', 'Daha önce bu konuda')}</span></h2>
+      <ol>
+        {haberler.map((h) => (
+          <li>
+            <time datetime={h.data.date.toISOString()}>{gun(h.data.date)}</time>
+            <a href={getPostUrl(lang, h.id)}>{h.data.title}</a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
