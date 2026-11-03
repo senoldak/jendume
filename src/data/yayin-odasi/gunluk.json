@@ -1,5 +1,5 @@
 {
- "guncellendi": "2026-11-03T17:51:01.548Z",
+ "guncellendi": "2026-11-03T19:50:55.983Z",
  "gunler": {
   "2026-11-02": {
    "tur": 6,
@@ -19,25 +19,25 @@
    "havuza": 2
   },
   "2026-11-03": {
-   "tur": 9,
-   "bulunan": 4572,
-   "degerlendirilen": 303,
+   "tur": 10,
+   "bulunan": 5100,
+   "degerlendirilen": 354,
    "elenen": {
-    "dusuk-haber-degeri": 55,
-    "kapsam-disi": 92,
-    "kaynak-yetersiz": 34,
-    "standart:kaynak-benzerligi": 13,
-    "daha-once-yazildi": 45,
+    "dusuk-haber-degeri": 65,
+    "kapsam-disi": 104,
+    "kaynak-yetersiz": 39,
+    "standart:kaynak-benzerligi": 16,
+    "daha-once-yazildi": 54,
     "yazilamadi": 1,
     "denetimde-durdu": 10,
     "standart:suc": 2,
     "standart:kurum-degerlendirme": 2,
-    "standart:ozel-haber": 6,
+    "standart:ozel-haber": 10,
     "standart:turkiye-devlet": 1,
     "kisa-es-yok": 3,
-    "diger": 1
+    "diger": 2
    },
-   "yazilan": 34,
+   "yazilan": 40,
    "havuza": 4
   }
  }
