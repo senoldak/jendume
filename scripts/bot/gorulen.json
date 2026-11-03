@@ -5863,7 +5863,23 @@
     "k2d427e:5a642b26daa06a44": "2026-11-03T05:50:59.870Z",
     "k4f0fb7:da7b973d5c4d9f28": "2026-11-03T05:50:59.870Z",
     "k2d427e:fdaed230e00f6b57": "2026-11-03T05:50:59.870Z",
-    "k4f0fb7:b31ca1b278a6dec9": "2026-11-03T05:50:59.870Z"
+    "k4f0fb7:b31ca1b278a6dec9": "2026-11-03T05:50:59.870Z",
+    "k2d427e:e8183fa52bb6b244": "2026-11-03T07:51:00.640Z",
+    "kb7f905:4f19c6f7905badac": "2026-11-03T07:51:00.640Z",
+    "k2d427e:a5cf6a5e13af4d5a": "2026-11-03T07:51:00.640Z",
+    "nvidia-blog:https://blogs.nvidia.com/?p=99615": "2026-11-03T07:51:00.640Z",
+    "k621881:fccadc7a3072c124": "2026-11-03T07:51:00.640Z",
+    "k12b4a6:e1d03c74b8123cfe": "2026-11-03T07:51:00.640Z",
+    "hf-blog:https://huggingface.co/blog/transformers-mic": "2026-11-03T07:51:00.640Z",
+    "k12b4a6:3fe4b5472ed61653": "2026-11-03T07:51:00.640Z",
+    "k12b4a6:607ecf6fa00b5dbf": "2026-11-03T07:51:00.640Z",
+    "k12b4a6:22d32abf491235ac": "2026-11-03T07:51:00.640Z",
+    "k2d427e:7e06c600a174337a": "2026-11-03T07:51:00.640Z",
+    "kd9a613:1561f4f7f93609bf": "2026-11-03T07:51:00.640Z",
+    "k4f0fb7:ba9da5a3d742978e": "2026-11-03T07:51:00.640Z",
+    "kd4ca61:3718a989c52c74e8": "2026-11-03T07:51:00.640Z",
+    "k2d427e:ab170e47e4e69caf": "2026-11-03T07:51:00.640Z",
+    "kaec085:392f52bf1fc6b215": "2026-11-03T07:51:00.640Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -13762,7 +13778,22 @@
     "haber:anthropic-acik-kaynakli-projeler-icin-ucretsiz-guvenlik-tarayicisi-sundu|k2d427e:5a642b26daa06a44": "2026-11-03T05:50:59.870Z",
     "haber:anthropic-acik-kaynakli-sandbox-runtime-araci-ile-yapay-zeka-ajanlarini-guvene-a|k2d427e:5a642b26daa06a44": "2026-11-03T05:50:59.870Z",
     "haber:donald-trump-veri-merkezi-sirketlerinin-yerel-topluluklara-temettu-odemesini-one|k107ce4:f269b8c479cd1b57": "2026-11-03T05:50:59.870Z",
-    "k2d427e:25c796748ae12430|k2d427e:5a642b26daa06a44": "2026-11-03T05:50:59.870Z"
+    "k2d427e:25c796748ae12430|k2d427e:5a642b26daa06a44": "2026-11-03T05:50:59.870Z",
+    "haber:openai-modeli-milyonlarca-web-sunucusunu-etkileyen-iki-kritik-php-acigini-ortaya|k2d427e:7e06c600a174337a": "2026-11-03T07:51:00.640Z",
+    "haber:alphabet-amazon-meta-ve-microsoft-altyapi-harcamalarini-artiriyor|k12b4a6:3fe4b5472ed61653": "2026-11-03T07:51:00.640Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k12b4a6:3fe4b5472ed61653": "2026-11-03T07:51:00.640Z",
+    "haber:buyuk-bankalar-ve-meta-yapay-zeka-harcamalari-ile-ajanlariyla-gundemde-22-ekim-k|k12b4a6:3fe4b5472ed61653": "2026-11-03T07:51:00.640Z",
+    "haber:abd-hazine-bakanligi-yapay-zeka-yatirimlarina-kisitlama-getirmeye-hazirlaniyor|k4f0fb7:ba9da5a3d742978e": "2026-11-03T07:51:00.640Z",
+    "haber:blackstone-yoneticisi-jas-khaira-yapay-zeka-altyapi-borclanmalarina-yonelik-endi|kd4ca61:3718a989c52c74e8": "2026-11-03T07:51:00.640Z",
+    "haber:elon-musk-grok-bot-maliyetlerinin-gelirlerine-gore-cok-yuksek-oldugunu-acikladi|k12b4a6:22d32abf491235ac": "2026-11-03T07:51:00.640Z",
+    "haber:microsoft-ve-spacex-yapay-zeka-terimini-terk-edip-super-zeka-ifadesine-gecti|k12b4a6:22d32abf491235ac": "2026-11-03T07:51:00.640Z",
+    "haber:sabit-hattin-kirilma-noktasi|k12b4a6:22d32abf491235ac": "2026-11-03T07:51:00.640Z",
+    "haber:anima-yapay-zeka-modelleriyle-klinik-telefon-beklemelerini-yuzde-75-azaltti|k2d427e:7e06c600a174337a": "2026-11-03T07:51:00.640Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|k2d427e:7e06c600a174337a": "2026-11-03T07:51:00.640Z",
+    "haber:anima-yapay-zeka-modelleriyle-klinik-telefon-beklemelerini-yuzde-75-azaltti|kaec085:392f52bf1fc6b215": "2026-11-03T07:51:00.640Z",
+    "haber:anthropic-claude-duet-adli-yeni-yapay-zeka-asistanini-tanitti|kaec085:392f52bf1fc6b215": "2026-11-03T07:51:00.640Z",
+    "haber:anthropic-openai-cloudflare-ve-google-guvenlik-taramasi-icin-yapay-zeka-ajanlari|kaec085:392f52bf1fc6b215": "2026-11-03T07:51:00.640Z",
+    "k2d427e:7e06c600a174337a|kaec085:392f52bf1fc6b215": "2026-11-03T07:51:00.640Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -14056,91 +14087,6 @@
     "haber:donald-trump-resmi-belgelerde-yapay-zeka-yerine-super-zeka-terimini-istiyor|k107ce4:f269b8c479cd1b57": "2026-11-03T05:50:59.870Z"
   },
   "puan": {
-    "k4f0fb7:f5f0873265700641": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:3c1bd33cfafb9b2f": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "kd9a613:3e1968d343d5ff38": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "kfdedb4:e5461a15888d44ba": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k2d427e:d0785b6460531186": {
-      "puan": 78,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:c29b6e42fd1fb1e8": {
-      "puan": 82,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:cf3c255a993c740b": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:35bb2d2e8c611f71": {
-      "puan": 88,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:530e2a937f05d626": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:aa0ccbeb1cb312f4": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:99b64052070fed40": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k38ef42:b92cf0936e8f6ec2": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k12b4a6:0d8f091896fdb638": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "mit-news-ai:https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k2e841d:ee6ccb2a71c25463": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k2e841d:b628de5c9e23b0a2": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
-    "k2e841d:7622f13d2ce62097": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-28T05:51:31.027Z"
-    },
     "k38ef42:2e4d405b66f49f3d": {
       "puan": 0,
       "olcek": 100,
@@ -21100,13 +21046,54 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-11-03T05:50:59.870Z"
+    },
+    "k12b4a6:3fe4b5472ed61653": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "k2d427e:ab170e47e4e69caf": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "k12b4a6:607ecf6fa00b5dbf": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "k4f0fb7:ba9da5a3d742978e": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "kd4ca61:3718a989c52c74e8": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "k12b4a6:22d32abf491235ac": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "k2d427e:7e06c600a174337a": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "kd9a613:1561f4f7f93609bf": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
+    },
+    "kaec085:392f52bf1fc6b215": {
+      "puan": 72,
+      "olcek": 100,
+      "zaman": "2026-11-03T07:51:00.640Z"
     }
   },
   "yayinlanan": {
-    "amerika-birlesik-devletleri-veri-merkezleri-elektrik-faturalarini-artiriyor": {
-      "zaman": "2026-10-31T05:52:04.607Z",
-      "basliklarSifreli": "v1.LR8xVcjyqS7uE8nZ.k96lFkIHNKDicsNPZYk4ye0wwE9BDtyWftMG/L4WaP8AtkOsW4JHJ/txeVxZtpX5JeVxgKaD3ZG43PzyEYbCVbfqCh+oLJAWkzaGzabUp+rOAdHwgK+v/2P3OS/rfhQ/39NIzkOOMc+F08vmZGGA/J6nzQ=="
-    },
     "google-pagebreak-yapay-zeka-guvenlik-ajani-500-den-fazla-acik-buldu": {
       "zaman": "2026-10-31T07:51:56.336Z",
       "basliklarSifreli": "v1.yw8xzZIsXJ851w18.SM5/fFwE2ZKILAVDmYHNFmYcvSsGXYX98on9xJ9MtTYqxl+EMx0e9hDR813OsXQhJ+Mz/10kd9XQC/H48UVbSd+/Xlf5Bf5g5Ua1z9riMRcrQD+1Chk56Ag="
@@ -21406,6 +21393,10 @@
     "zyphra-gelistiricileri-yapay-zeka-modellerinde-islem-hizini-artiran-yeni-bir-yon": {
       "zaman": "2026-11-03T03:50:56.971Z",
       "basliklarSifreli": "v1.hRqqScPeAnEHMSTk.bhCF5tnmq6yiAtQ34p6ddMzAGUCQCBs2XZa0OMa/WnuYDApVf2AFX2k3m0WFt3cSk+IykjzFkx1TRTviZMMygVGzuJKMKzBXchBn+/5ceCvfeP1rewGphAeBG90NEhtk41uMYMQPJYIgVqSo1YIobw6Q7w=="
+    },
+    "openai-yazilim-gelistirme-sureclerini-hizlandiran-pando-sunucusunu-tanitti": {
+      "zaman": "2026-11-03T07:51:00.640Z",
+      "basliklarSifreli": "v1.GJjzBLmn8REbJk+C.NxSA8jyjdvA6IXhUplxrvfZAPUe0ggtdY5GlA+mW9CHw6V+/cW8qEufUsrKPKZfVVwqMMjBAh7uXIycV6EH+SctMsD4VxOmivH4664UBH/FQ9vPbt1isQcHc9v1d"
     }
   },
   "havuz": [
@@ -27338,6 +27329,22 @@
     "k2d427e:25c796748ae12430": "2026-11-03T05:32:03.000Z",
     "k2d427e:fdaed230e00f6b57": "2026-11-03T05:17:02.000Z",
     "k2d427e:5a642b26daa06a44": "2026-11-03T04:44:05.000Z",
-    "k2d427e:7cdea1bd530ae819": "2026-11-03T03:46:01.000Z"
+    "k2d427e:7cdea1bd530ae819": "2026-11-03T03:46:01.000Z",
+    "k621881:fccadc7a3072c124": "2026-11-03T07:00:00.000Z",
+    "k4f0fb7:ba9da5a3d742978e": "2026-11-03T07:00:21.000Z",
+    "kb7f905:4f19c6f7905badac": "2026-11-03T07:20:00.000Z",
+    "kd9a613:1561f4f7f93609bf": "2026-11-03T06:00:40.000Z",
+    "kaec085:392f52bf1fc6b215": "2026-11-03T05:51:06.000Z",
+    "k12b4a6:3fe4b5472ed61653": "2026-11-03T07:33:00.000Z",
+    "k12b4a6:607ecf6fa00b5dbf": "2026-11-03T07:02:00.000Z",
+    "k12b4a6:e1d03c74b8123cfe": "2026-11-03T06:35:00.000Z",
+    "k12b4a6:22d32abf491235ac": "2026-11-03T06:21:00.000Z",
+    "k2d427e:e8183fa52bb6b244": "2026-11-03T07:38:05.000Z",
+    "k2d427e:a5cf6a5e13af4d5a": "2026-11-03T07:29:04.000Z",
+    "k2d427e:ab170e47e4e69caf": "2026-11-03T07:16:02.000Z",
+    "k2d427e:7e06c600a174337a": "2026-11-03T06:02:04.000Z",
+    "kd4ca61:3718a989c52c74e8": "2026-11-03T06:46:36.000Z",
+    "hf-blog:https://huggingface.co/blog/transformers-mic": "2026-11-03T00:00:00.000Z",
+    "nvidia-blog:https://blogs.nvidia.com/?p=99615": "2026-11-03T07:00:12.000Z"
   }
 }
