@@ -6202,7 +6202,17 @@
     "kaec085:4cc83f4dc5eb818b": "2026-11-04T03:50:57.540Z",
     "k2d427e:0ead4d3c22dcabc6": "2026-11-04T03:50:57.540Z",
     "k2d427e:add09f69b164dcfb": "2026-11-04T03:50:57.540Z",
-    "kd9a613:5a60aaf94a36e4ac": "2026-11-04T03:50:57.540Z"
+    "kd9a613:5a60aaf94a36e4ac": "2026-11-04T03:50:57.540Z",
+    "kfdedb4:2010e7839917cade": "2026-11-04T05:50:51.859Z",
+    "kea595f:67cbfcd1b49be456": "2026-11-04T05:50:51.859Z",
+    "kea595f:49c9fff81f143430": "2026-11-04T05:50:51.859Z",
+    "k12b4a6:5ad64a69dba2c51d": "2026-11-04T05:50:51.859Z",
+    "k2d427e:b2ee629e05cda39e": "2026-11-04T05:50:51.859Z",
+    "ke6dccd:4048509034ad99f8": "2026-11-04T05:50:51.859Z",
+    "k12b4a6:2c7f5d9bdc265953": "2026-11-04T05:50:51.859Z",
+    "k621881:5e5b0107b41e36b7": "2026-11-04T05:50:51.859Z",
+    "k4f0fb7:9b9d4f604f3131c4": "2026-11-04T05:50:51.859Z",
+    "k4f0fb7:d0ab4cbaa9750c1c": "2026-11-04T05:50:51.859Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -14495,7 +14505,8 @@
     "k2e841d:249d313c88b262bb|k2e841d:61601eac62526528": "2026-11-04T03:50:57.540Z",
     "k2e841d:29ca314d6a30dafd|k2e841d:98a07c34fc06d6fd": "2026-11-04T03:50:57.540Z",
     "k2e841d:d7dd0939b6eb97b0|kaec085:348094f5490b388e": "2026-11-04T03:50:57.540Z",
-    "k2d427e:aca085097b9ab95a|k2d427e:b43f36a7b9c90f5d": "2026-11-04T03:50:57.540Z"
+    "k2d427e:aca085097b9ab95a|k2d427e:b43f36a7b9c90f5d": "2026-11-04T03:50:57.540Z",
+    "haber:crowdstrike-kontrolden-cikan-yapay-zeka-ajanlarini-durduran-dugmeyi-tanitti|k4f0fb7:9b9d4f604f3131c4": "2026-11-04T05:50:51.859Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -14819,71 +14830,6 @@
     "kad5125:f002356e24359051|kfdedb4:7d9002c310d797b6": "2026-11-04T03:50:57.540Z"
   },
   "puan": {
-    "k4f0fb7:7f7c4d2c355d5df1": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "k38ef42:4a54fc60fcca7bd0": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "k38ef42:93b5adee174fe1b7": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kd4ca61:ca6477890a5dd50c": {
-      "puan": 35,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "k4f0fb7:ae28723d87852a5a+kb7f905:f2f4647bd87d653e": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kd4ca61:e36d61edd518793d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kad5125:b7b39bf34265997c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kd4ca61:697f454f93ba1bdf": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kad5125:ae5ce7301e4288f3+kd4ca61:7960d440c5a8406f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "k2e841d:b374b8541e804841": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "k59b8ca:8a9ac04d1f246676": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kd4ca61:9624f862cafa358d": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
-    "kd4ca61:2396e645fccbdfa8": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-10-29T03:51:57.158Z"
-    },
     "k38ef42:e54607d01b82db6f": {
       "puan": 85,
       "olcek": 100,
@@ -21703,17 +21649,44 @@
       "puan": 76,
       "olcek": 100,
       "zaman": "2026-11-04T03:50:57.540Z"
+    },
+    "k4f0fb7:d0ab4cbaa9750c1c": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "k12b4a6:5ad64a69dba2c51d": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "k621881:5e5b0107b41e36b7": {
+      "puan": 90,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "k4f0fb7:9b9d4f604f3131c4": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "k2d427e:b2ee629e05cda39e": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "ke6dccd:4048509034ad99f8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
+    },
+    "k12b4a6:2c7f5d9bdc265953": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-04T05:50:51.859Z"
     }
   },
   "yayinlanan": {
-    "anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled": {
-      "zaman": "2026-11-01T03:50:58.761Z",
-      "basliklarSifreli": "v1.WdyGNixNR3S5Lf01.Ll4trkoS5+buS4oVXzxh+fuG1BKhVbvbuxdEQkxkqDcFWozuXZBxf5Doiz1tNwzieL38zXfuCof8UrZ6ANGk3XQrDMjvJcJDBW4qmGJHnD5Jb4YiRF7p/qEWgw=="
-    },
-    "openai-guvenlik-arastirmacilarinin-isten-cikarilmasi-nedeniyle-milletvekillerini": {
-      "zaman": "2026-11-01T03:50:58.761Z",
-      "basliklarSifreli": "v1.R9PCs0bV/CzIdM9y.hFNuXRWlaClwSK1GIRzxMpTc4whxvcuSjsaMUb1Oc1RnQ0RnLA2F6JExN2BBswsflWZxmj9G6pqM6W+6WBbODvdyavSb/egLAgszsG8VhZcROyJj7IYpCbGlCVDJ4RRmz8Yp6w9Hri4JbG4eXAYDC8Y9blQ1TerdjlusZ38x/17p9AnyoRre0rgqt5WyALPiTWJo9UL2g/gX3tdNLIxG4+tfWqujRpZ57gFwetjjrTdWF9jyh2oZN4E/X/U="
-    },
     "sirketler-yapay-zeka-yatirimlarindan-somut-finansal-getiri-elde-etmeye-basladi": {
       "zaman": "2026-11-01T07:51:00.954Z",
       "basliklarSifreli": "v1.WaYzVejoEQ7XGgej.byRCUY8km6aCs1ofmslbhHr0MD8rlwz+khYwrIMett0CkIHF4bUxSYVZmFLI+z3dRopiarFQLJ/u/ZmutOp5mIU5XPeJ6jWXtP2qMBr+hpSUZtdEbYyanoH1/mjdeg=="
@@ -22101,6 +22074,14 @@
     "veri-merkezleri-enerji-krizi-nedeniyle-eski-ucak-motorlarini-kullanmaya-basladi": {
       "zaman": "2026-11-04T03:50:57.540Z",
       "basliklarSifreli": "v1.P/jvHoP0TUOMMuPl.H2ldav9ocXtuVCKy2VYwQuAtyZnvGa5KGT6qzukalKJFejmVt3WDQ6GJtlBhv1cPe+RDjZjCLzoIQI6K1Ij8/NRciF/DpyB3ia8aS1S8zGx3bqT5upE8IlyXjg=="
+    },
+    "crowdstrike-yapay-zeka-ajanlari-guvenligi-icin-fiddler-ve-dreadnode-u-satin-aliy": {
+      "zaman": "2026-11-04T05:50:51.859Z",
+      "basliklarSifreli": "v1.7kYmQiMPI4xzewnd.YlTl/9JbqgO7VAcAS++4D5SIGvnGmTxtXnGwfvgU69mr1tFJPf5XtPdbt13kUMCrUWSKWU8RkNSP3yD49jOP4KMYMkoxLu5s601pIV6sk7snj9usPf5b9VYSj/gs258+Gr/4ww=="
+    },
+    "traversal-1-milyar-dolar-degerlemeyle-120-milyon-dolar-yatirim-aldi": {
+      "zaman": "2026-11-04T05:50:51.859Z",
+      "basliklarSifreli": "v1.OmxzoCqcLiTv5oiP.LIcqIiJzKrsr3R6jm839Z54oDTfmri1lvV5DIMy+B7DS0+WWExHRPrECjRcDXHvJR8GVOoDwfnkN46PGvpHe71ycByloUlKH37CkjDyrQxYgmm5agMTIlwG1Ms/gJdTICD789tb3T5ukzyGv37QT1z6RUlMcVdUAajY9NC8="
     }
   },
   "havuz": [],
@@ -28365,6 +28346,16 @@
     "kd4ca61:02e7c3ceed889335": "2026-11-04T01:07:01.000Z",
     "kd4ca61:8d0f4475128883b0": "2026-11-03T23:58:09.000Z",
     "kd4ca61:c62682d2bde02b3e": "2026-11-03T23:37:07.000Z",
-    "k8601e1:27b1b1098c94da65": "2026-11-03T21:53:01.000Z"
+    "k8601e1:27b1b1098c94da65": "2026-11-03T21:53:01.000Z",
+    "k621881:5e5b0107b41e36b7": "2026-11-04T05:20:39.000Z",
+    "k4f0fb7:d0ab4cbaa9750c1c": "2026-11-04T05:30:51.000Z",
+    "k4f0fb7:9b9d4f604f3131c4": "2026-11-04T04:30:52.000Z",
+    "kea595f:67cbfcd1b49be456": "2026-11-04T04:20:00.000Z",
+    "kea595f:49c9fff81f143430": "2026-11-04T04:00:00.000Z",
+    "k12b4a6:5ad64a69dba2c51d": "2026-11-04T05:30:00.000Z",
+    "k12b4a6:2c7f5d9bdc265953": "2026-11-04T04:05:00.000Z",
+    "k2d427e:b2ee629e05cda39e": "2026-11-04T04:18:05.000Z",
+    "kfdedb4:2010e7839917cade": "2026-11-04T05:30:00.000Z",
+    "ke6dccd:4048509034ad99f8": "2026-11-04T04:11:44.000Z"
   }
 }
