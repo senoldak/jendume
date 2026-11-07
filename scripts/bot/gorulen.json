@@ -7579,7 +7579,22 @@
     "k8601e1:057838f9a4429ca5": "2026-11-07T19:50:49.232Z",
     "k2e841d:34ebb4f0e114220a": "2026-11-07T19:50:49.232Z",
     "kd4ca61:06e80ef0df69a755": "2026-11-07T19:50:49.232Z",
-    "k38ef42:ab0a9d22238ad337": "2026-11-07T19:50:49.232Z"
+    "k38ef42:ab0a9d22238ad337": "2026-11-07T19:50:49.232Z",
+    "k2e841d:220b050ba8c21441": "2026-11-07T21:50:51.442Z",
+    "kb7f905:119774dbf221745e": "2026-11-07T21:50:51.442Z",
+    "k2e841d:668a15577f2926e8": "2026-11-07T21:50:51.442Z",
+    "k2e841d:e0b267872d2c7f12": "2026-11-07T21:50:51.442Z",
+    "k38ef42:51f439f3e4b5bdc2": "2026-11-07T21:50:51.442Z",
+    "kad5125:05b892841008c8db": "2026-11-07T21:50:51.442Z",
+    "k38ef42:cd91fafbcb2ec1f8": "2026-11-07T21:50:51.442Z",
+    "k2e841d:db87627ec602941b": "2026-11-07T21:50:51.442Z",
+    "k38ef42:d0f18393a8605332": "2026-11-07T21:50:51.442Z",
+    "k2e841d:4827ac89b494d118": "2026-11-07T21:50:51.442Z",
+    "k38ef42:32c6889a25406d98": "2026-11-07T21:50:51.442Z",
+    "kd9a613:317b45eb078f1dc8": "2026-11-07T21:50:51.442Z",
+    "k2e841d:b99406871e33910e": "2026-11-07T21:50:51.442Z",
+    "k38ef42:34bb50db4297fef8": "2026-11-07T21:50:51.442Z",
+    "k2e841d:209ce985821fafa2": "2026-11-07T21:50:51.442Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -17633,7 +17648,27 @@
     "k2e841d:a880a598aa8f17be|k38ef42:a89e13674b20ddb4": "2026-11-07T19:50:49.232Z",
     "k2e841d:f98086ab6fa8a4a6|k38ef42:6da64ed5c57e65f7": "2026-11-07T19:50:49.232Z",
     "k2e841d:34ebb4f0e114220a|k38ef42:6da64ed5c57e65f7": "2026-11-07T19:50:49.232Z",
-    "k2e841d:34ebb4f0e114220a|k2e841d:f98086ab6fa8a4a6": "2026-11-07T19:50:49.232Z"
+    "k2e841d:34ebb4f0e114220a|k2e841d:f98086ab6fa8a4a6": "2026-11-07T19:50:49.232Z",
+    "haber:neuralink-beyin-sinyalleriyle-uretilen-konusmayi-telefon-aramalarina-tasidi|k2e841d:220b050ba8c21441": "2026-11-07T21:50:51.442Z",
+    "haber:box-icerik-arama-sistemini-nvidia-nin-nemotron-modeliyle-guclendiriyor|kb7f905:119774dbf221745e": "2026-11-07T21:50:51.442Z",
+    "haber:nvidia-ceo-su-jensen-huang-a-abd-kongresi-nden-casusluk-baglantisi-sorgusu|kb7f905:119774dbf221745e": "2026-11-07T21:50:51.442Z",
+    "haber:nvidia-hisseleri-veri-merkezi-endiseleriyle-sert-dustu|kb7f905:119774dbf221745e": "2026-11-07T21:50:51.442Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k38ef42:51f439f3e4b5bdc2": "2026-11-07T21:50:51.442Z",
+    "haber:apple-homeview-ultra-robotunun-cikisi-2028-yilina-ertelendi|k38ef42:51f439f3e4b5bdc2": "2026-11-07T21:50:51.442Z",
+    "haber:apple-intelligence-cin-de-4-kasim-da-gelistirici-testine-aciliyor|k38ef42:51f439f3e4b5bdc2": "2026-11-07T21:50:51.442Z",
+    "haber:amazon-sagemaker-nvidia-gpu-bolumlendirme-destegiyle-verimliligi-artiriyor|k2e841d:209ce985821fafa2": "2026-11-07T21:50:51.442Z",
+    "haber:google-yapay-zeka-islemleri-icin-ml-drift-adli-acik-kaynakli-motoru-duyurdu|k2e841d:209ce985821fafa2": "2026-11-07T21:50:51.442Z",
+    "haber:qwengpu-qwen3-5-2b-modeline-derlenmis-gpu-katmanlari-ekleyerek-cuda-calistiriyor|k2e841d:209ce985821fafa2": "2026-11-07T21:50:51.442Z",
+    "haber:stanford-universitesi-arastirmasi-buyuk-dil-modelleri-hakkindaki-iddialarin-hizl|kad5125:05b892841008c8db": "2026-11-07T21:50:51.442Z",
+    "haber:nvidia-ve-amd-meta-nin-yapay-zeka-altyapisi-icin-4-milyar-dolar-yatirim-yapacak|k2e841d:4827ac89b494d118": "2026-11-07T21:50:51.442Z",
+    "haber:nvidia-vera-islemcisi-yapay-zeka-ajanlari-icin-hiz-ve-verimlilik-standartlarini|k2e841d:4827ac89b494d118": "2026-11-07T21:50:51.442Z",
+    "haber:deepgreen-deniz-alti-veri-merkezi-projeleriyle-balinalari-tehlikeye-atiyor|kd9a613:317b45eb078f1dc8": "2026-11-07T21:50:51.442Z",
+    "haber:digitomy-yapay-zeka-destekli-akilli-sinek-kapani-ile-sivrisinekleri-tespit-ediyo|kd9a613:317b45eb078f1dc8": "2026-11-07T21:50:51.442Z",
+    "haber:apple-creator-studio-yeni-yapay-zeka-asistanlariyla-genisliyor|k2e841d:b99406871e33910e": "2026-11-07T21:50:51.442Z",
+    "haber:apple-homeview-ultra-robotunun-cikisi-2028-yilina-ertelendi|k2e841d:b99406871e33910e": "2026-11-07T21:50:51.442Z",
+    "haber:apple-intelligence-cin-de-4-kasim-da-gelistirici-testine-aciliyor|k2e841d:b99406871e33910e": "2026-11-07T21:50:51.442Z",
+    "k2e841d:668a15577f2926e8|k2e841d:e0b267872d2c7f12": "2026-11-07T21:50:51.442Z",
+    "k2e841d:b99406871e33910e|k38ef42:51f439f3e4b5bdc2": "2026-11-07T21:50:51.442Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -18035,56 +18070,6 @@
     "k2e841d:55b2e89d4627eb57|k38ef42:96d6f37b2e81748c": "2026-11-07T17:50:51.988Z"
   },
   "puan": {
-    "k2e841d:141b605c91a5e42f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:27dffeeec27a3234": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "kad5125:1cb7ef58d6f47aab": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:193668c8ff6da48a": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2d427e:f0be2b41b554661e": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:004a41e87091a01e": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:9377941b8ab85a7a": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k8601e1:3bab6c85cdb01995": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:997012a777a765b9": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
-    "k2e841d:66584ab8311d9cbf": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-01T19:51:02.737Z"
-    },
     "k2e841d:76416a258b98cb9c": {
       "puan": 0,
       "olcek": 100,
@@ -25914,33 +25899,84 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-11-07T19:50:49.232Z"
+    },
+    "k2e841d:220b050ba8c21441": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "kb7f905:119774dbf221745e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:668a15577f2926e8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:e0b267872d2c7f12": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k38ef42:51f439f3e4b5bdc2": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:209ce985821fafa2": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "kad5125:05b892841008c8db": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k38ef42:cd91fafbcb2ec1f8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:db87627ec602941b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k38ef42:d0f18393a8605332": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:4827ac89b494d118": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k38ef42:32c6889a25406d98": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "kd9a613:317b45eb078f1dc8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k2e841d:b99406871e33910e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
+    },
+    "k38ef42:34bb50db4297fef8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-07T21:50:51.442Z"
     }
   },
   "yayinlanan": {
-    "omen-ai-sogutma-teknolojisi-gelistiren-aquatic-labs-i-satin-aldi": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.nSZIkcg7ny63hGTi.G9gJpotrmlFihWd+vmm+vZAkvQAWQAKwVMpO3Fkc/D++8RM8r2RzcJ5SX1i8Bs+kO2fUK3vMfzPWbRkjrp0Z8FZp8YAwicHtIF5Axx6Wg/lQ5oww5dTc"
-    },
-    "northwood-ve-tutor-yatirimlariyla-fonlar-fiziksel-altyapiya-yoneldi": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.H1NMuKzSpWLK+3fT.3b0r0NlDD0E2PERX5mn08xgfWpRS+M3Wb3mJ10C8+kf7QUrXTWIx6TjBtAyRYK9eGquMQqCJyB6YMXJBXVwdrwsIYs4HBULGCTVGn8CWnfdzBp+SseYhvj0pWGwPy3OIXxuLteqSlG8="
-    },
-    "phaze-yapay-zeka-ajanlarina-uzaktan-masaustu-saglamak-icin-yatirim-aldi": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.JEnx5LrH/BzVyrs7.daUZfTARwwnXCUGFQ734UQs8EZj8DD95t/eBQ5ov9Zhn7rf6B7Qk2p3PmuCVy0Xb3IbTylLYVqufp3XbH6R9tLUcD46qsAhYkSjoNEhMSy8l50q1/TUgguAo"
-    },
-    "turkiye-ve-guney-kore-arasinda-yapay-zeka-ve-robotik-isbirligi": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.oKVIQiu/o5TnetsM.D8g61jnH2MmaBAfXVgzuKi1bG/BKspQ9pORcDhY2a2x5KMIR7zzov5r5rXy91l7PPhFRJhpIBkjo8YY3wJro9+Z0IVAXXKaKZt74v2UggEjuy8fe7HkkXKOmZEYKjH2lImpisewvzba7"
-    },
-    "pliant-b2b-odeme-altyapisini-yapay-zeka-ajanlarina-acmak-icin-80-milyon-dolar-ya": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.+nfmWGOqZcjoIMi4.iMsiXWEcaz2juYyQktUW+8V9UDyDB+vf0LQaaTVA9KPK7JPPS3UO0pnO8kjlgNPT8co/O0aDGCN0AInxIoa6h6OhZ1PeGjsmRo/o6SHYdDQGtKA8Kg=="
-    },
-    "kidemli-yapay-zeka-muhendisleri-yillik-1-45-milyon-dolara-varan-maaslar-aliyor": {
-      "zaman": "2026-11-04T19:50:54.161Z",
-      "basliklarSifreli": "v1.+hhwyqhxKZGf6KoB.fy+4LxptkId4Hrb+ixrxZOMjxPy+q7cI1U/9tXedTefV5tmlNpEURATM01mXs6+CL/PeCc5MEfZRsS1BmAuifKUBgTy9TcoXrk0SbU7sTA+MgPPTxLDpifFfZi9wrHiH9a82O8Kj8gxRSaxYewOuKw=="
-    },
     "oracle-yeni-autonomous-ai-lakehouse-platformunu-duyurdu": {
       "zaman": "2026-11-04T21:50:51.597Z",
       "basliklarSifreli": "v1.wqET9HzMmQ897Q9f.3hGUJHwFPnvEm/090lu+RJIccT6nbNnnkElfU3OQ4CJwjVDn1CxUTcMBLbNor/8/BKrBSfNUhaDqpHntLPG9/1Q="
@@ -26372,6 +26408,10 @@
     "is-yerlerinde-yapay-zeka-kullanimi-calisanlara-olan-guveni-zedeliyor": {
       "zaman": "2026-11-07T17:50:51.988Z",
       "basliklarSifreli": "v1.B51+pCn9ycJ4pqjl.i9kkC0yioBLUD0PhOy+SJCBHwlghAQj2XQFkFEDgBTY01r0X8Eop0372PHczyeO+se/7G2+E4CkaqUmoPIpPQZrSI6JijFP+H7Ao6fsKCvqIzSsXnK0h4IWVXwIRj+sNbEPjuDyRtboCW2NzZQZvqeV9n/sreopZ9Ak3j6WCHQ=="
+    },
+    "gpu-tedarik-krizi-bellek-kitligi-ve-cipflasyon-ile-derinlesiyor": {
+      "zaman": "2026-11-07T21:50:51.442Z",
+      "basliklarSifreli": "v1.V1qNEfi7ZnEFCO4P.pX7M4GmvMi6JuX30UkS/31dgpMcky2kpi7bxEcVND8H0DM+ENOzr2zDTqpeHvcZ3Uh8AV1qBMC9Kcba5AJam+KXAE36hbVg="
     }
   },
   "havuz": [],
@@ -34013,6 +34053,21 @@
     "kd4ca61:06e80ef0df69a755": "2026-11-07T17:51:16.000Z",
     "k8601e1:3209c52471b001b3": "2026-11-07T19:50:00.000Z",
     "k8601e1:9421f2db64a3fccf": "2026-11-07T18:49:00.000Z",
-    "k8601e1:057838f9a4429ca5": "2026-11-07T17:52:00.000Z"
+    "k8601e1:057838f9a4429ca5": "2026-11-07T17:52:00.000Z",
+    "kb7f905:119774dbf221745e": "2026-11-07T21:17:08.000Z",
+    "kd9a613:317b45eb078f1dc8": "2026-11-07T20:03:23.000Z",
+    "k38ef42:51f439f3e4b5bdc2": "2026-11-07T20:50:00.000Z",
+    "k38ef42:cd91fafbcb2ec1f8": "2026-11-07T20:35:00.000Z",
+    "k38ef42:d0f18393a8605332": "2026-11-07T20:20:00.000Z",
+    "k38ef42:32c6889a25406d98": "2026-11-07T20:10:00.000Z",
+    "k38ef42:34bb50db4297fef8": "2026-11-07T19:53:00.000Z",
+    "kad5125:05b892841008c8db": "2026-11-07T20:42:44.000Z",
+    "k2e841d:220b050ba8c21441": "2026-11-07T21:30:00.000Z",
+    "k2e841d:668a15577f2926e8": "2026-11-07T21:15:00.000Z",
+    "k2e841d:e0b267872d2c7f12": "2026-11-07T21:00:00.000Z",
+    "k2e841d:209ce985821fafa2": "2026-11-07T20:45:00.000Z",
+    "k2e841d:db87627ec602941b": "2026-11-07T20:30:00.000Z",
+    "k2e841d:4827ac89b494d118": "2026-11-07T20:15:00.000Z",
+    "k2e841d:b99406871e33910e": "2026-11-07T20:00:00.000Z"
   }
 }
