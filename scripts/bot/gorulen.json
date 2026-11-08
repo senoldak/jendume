@@ -7610,7 +7610,14 @@
     "k2e841d:08fddc75959097c5": "2026-11-08T03:50:53.836Z",
     "k2e841d:0c68c99f4db959c7": "2026-11-08T03:50:53.836Z",
     "k2e841d:bcfa747bd840e3f8": "2026-11-08T03:50:53.836Z",
-    "k2e841d:7bd1c01152764867": "2026-11-08T03:50:53.836Z"
+    "k2e841d:7bd1c01152764867": "2026-11-08T03:50:53.836Z",
+    "k4f0fb7:da51cc4eab57dfb9": "2026-11-08T05:50:50.766Z",
+    "kaec085:b35dd9f7393f511f": "2026-11-08T05:50:50.766Z",
+    "k38ef42:46ed26745abf40c9": "2026-11-08T05:50:50.766Z",
+    "ke6dccd:da22c92c336dcd0b": "2026-11-08T05:50:50.766Z",
+    "k38ef42:52c178a94b393188": "2026-11-08T05:50:50.766Z",
+    "k38ef42:ac064cb24c816322": "2026-11-08T05:50:50.766Z",
+    "k4f0fb7:9a1282499be68021": "2026-11-08T05:50:50.766Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -17700,7 +17707,13 @@
     "k2e841d:7bd1c01152764867|k2e841d:af1579a8141f554c": "2026-11-08T03:50:53.836Z",
     "k2e841d:829bdd39b552ddac|k2e841d:db2c0a1128a843ca": "2026-11-08T03:50:53.836Z",
     "k2e841d:5624ded542f48214|k2e841d:db2c0a1128a843ca": "2026-11-08T03:50:53.836Z",
-    "k2e841d:0c68c99f4db959c7|k2e841d:5624ded542f48214": "2026-11-08T03:50:53.836Z"
+    "k2e841d:0c68c99f4db959c7|k2e841d:5624ded542f48214": "2026-11-08T03:50:53.836Z",
+    "haber:instagram-edits-video-duzenleme-uygulamasi-mac-icin-yayimlandi|ke6dccd:da22c92c336dcd0b": "2026-11-08T05:50:50.766Z",
+    "haber:local-code-mac-uzerinde-yerel-calisan-yapay-zeka-araclarini-kullanima-sundu|ke6dccd:da22c92c336dcd0b": "2026-11-08T05:50:50.766Z",
+    "haber:neuralink-beyin-sinyalleriyle-uretilen-konusmayi-telefon-aramalarina-tasidi|ke6dccd:da22c92c336dcd0b": "2026-11-08T05:50:50.766Z",
+    "haber:baidu-280-milyar-parametreli-yeni-yapay-zeka-modeli-ernie-5-5-flash-base-i-tanit|k4f0fb7:9a1282499be68021": "2026-11-08T05:50:50.766Z",
+    "haber:gemini-omni-1-2-flash-15-saniyelik-video-uretimi-ve-fiyat-indirimiyle-geldi|k4f0fb7:9a1282499be68021": "2026-11-08T05:50:50.766Z",
+    "haber:prime-intellect-mixture-of-experts-modelleri-icin-yeni-cekirdek-yazilimini-duyur|k4f0fb7:9a1282499be68021": "2026-11-08T05:50:50.766Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -18100,84 +18113,10 @@
     "haber:abd-ara-secimleri-sonrasinda-veri-merkezleri-ve-yapay-zeka-sektoru-yeni-duzenlem|k8601e1:5af578aabda9072c": "2026-11-07T15:50:48.226Z",
     "haber:demokratlarin-secim-zaferleri-yapay-zeka-veri-merkezlerini-riske-atiyor|k8601e1:5af578aabda9072c": "2026-11-07T15:50:48.226Z",
     "k2e841d:55b2e89d4627eb57|k38ef42:96d6f37b2e81748c": "2026-11-07T17:50:51.988Z",
-    "haber:elon-musk-uzaydaki-veri-merkezleri-fikrini-cazip-buluyor|kb7f905:1a6d08c1a7316dee": "2026-11-08T03:50:53.836Z"
+    "haber:elon-musk-uzaydaki-veri-merkezleri-fikrini-cazip-buluyor|kb7f905:1a6d08c1a7316dee": "2026-11-08T03:50:53.836Z",
+    "haber:nous-research-yeni-modeliyle-cin-propagandasini-temizledi|kaec085:b35dd9f7393f511f": "2026-11-08T05:50:50.766Z"
   },
   "puan": {
-    "kad5125:b8092c5def595258": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "kd4ca61:39e63332bd1ceb28": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "kd9a613:48bc8240270485c9": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:542611dd3af24733": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:23864c38c125d16a": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:b95bef2eebb5a884": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "kad5125:a0fd5fc466844f2c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:97d74ad88f84917d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:e6473aef2aa85ce8": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:2d2ff22c95cac407": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:c4ec5163dcd48d42": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:24b9ee1e047e8d6b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2d427e:995d325ae3ffe761": {
-      "puan": 90,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "k2e841d:84155b1e03451dab": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
-    "kb7f905:2a62b5b9e7b91580": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-11-02T03:51:00.046Z"
-    },
     "kea595f:97804f94580e8045": {
       "puan": 0,
       "olcek": 100,
@@ -26062,6 +26001,31 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-11-08T03:50:53.836Z"
+    },
+    "k38ef42:46ed26745abf40c9": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-08T05:50:50.766Z"
+    },
+    "ke6dccd:da22c92c336dcd0b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-08T05:50:50.766Z"
+    },
+    "k38ef42:52c178a94b393188": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-08T05:50:50.766Z"
+    },
+    "k4f0fb7:9a1282499be68021": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-08T05:50:50.766Z"
+    },
+    "k38ef42:ac064cb24c816322": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-08T05:50:50.766Z"
     }
   },
   "yayinlanan": {
@@ -26440,6 +26404,10 @@
     "gpu-tedarik-krizi-bellek-kitligi-ve-cipflasyon-ile-derinlesiyor": {
       "zaman": "2026-11-07T21:50:51.442Z",
       "basliklarSifreli": "v1.V1qNEfi7ZnEFCO4P.pX7M4GmvMi6JuX30UkS/31dgpMcky2kpi7bxEcVND8H0DM+ENOzr2zDTqpeHvcZ3Uh8AV1qBMC9Kcba5AJam+KXAE36hbVg="
+    },
+    "deepseek-v4-1-flash-siber-guvenlik-testinde-hedeflerin-yuzde-72-8-ini-tamamladi": {
+      "zaman": "2026-11-08T05:50:50.766Z",
+      "basliklarSifreli": "v1.Pd2P4pwXvKqs3A9x./Og89YOZenSvyiL5Ed9R52k/I9CN4stsPJmUT2kWXU6BTMbqupXvtON5NWNK3EV4SdyHQjYwh9hi8srfyw3ngA=="
     }
   },
   "havuz": [],
@@ -34112,6 +34080,13 @@
     "k2e841d:c1f0b6841a6ffbcb": "2026-11-07T22:30:00.000Z",
     "k2e841d:08fddc75959097c5": "2026-11-07T22:15:00.000Z",
     "k2e841d:0c68c99f4db959c7": "2026-11-07T22:00:00.000Z",
-    "k2e841d:bcfa747bd840e3f8": "2026-11-07T21:45:00.000Z"
+    "k2e841d:bcfa747bd840e3f8": "2026-11-07T21:45:00.000Z",
+    "k4f0fb7:9a1282499be68021": "2026-11-08T04:35:18.000Z",
+    "k4f0fb7:da51cc4eab57dfb9": "2026-11-08T04:22:42.000Z",
+    "kaec085:b35dd9f7393f511f": "2026-11-08T04:45:59.000Z",
+    "k38ef42:46ed26745abf40c9": "2026-11-08T05:23:00.000Z",
+    "k38ef42:52c178a94b393188": "2026-11-08T04:37:36.000Z",
+    "k38ef42:ac064cb24c816322": "2026-11-08T04:34:57.000Z",
+    "ke6dccd:da22c92c336dcd0b": "2026-11-08T05:10:00.000Z"
   }
 }
