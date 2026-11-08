@@ -1,19 +1,11 @@
+import { safeStorage } from '../lib/safe-storage.ts';
+
 // Haber sayfası araçları: yazı boyu, dinle, paylaş, sözlük kartı ve "Bu haber işinize yaradı mı?". tidsrost leseverktoy.ts'in eşi.
 // Tarayıcı deposu yalnız okurun kendi tercihi için (yazı boyu, verilmiş oy); erişilemezse sayfa yine çalışır.
-const oku = (k: string) => {
-  try {
-    return localStorage.getItem(k);
-  } catch {
-    return null;
-  }
-};
+const oku = (k: string) => safeStorage.getItem(k);
 const yaz = (k: string, v: string | null) => {
-  try {
-    if (v === null) localStorage.removeItem(k);
-    else localStorage.setItem(k, v);
-  } catch {
-    /* depo kapalı: tercih bu sayfada kalır */
-  }
+  if (v === null) safeStorage.removeItem(k);
+  else safeStorage.setItem(k, v);
 };
 
 // Yazı boyu
