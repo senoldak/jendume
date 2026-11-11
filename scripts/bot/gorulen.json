@@ -9096,7 +9096,34 @@
     "k09feb3:65730e2ee457b3ae": "2026-11-11T19:50:55.149Z",
     "k2d427e:22cedf926ed5078f": "2026-11-11T19:50:55.149Z",
     "k2d427e:03875d5e59b7f999": "2026-11-11T19:50:55.149Z",
-    "k74f74a:c8cf5b400b694417": "2026-11-11T19:50:55.149Z"
+    "k74f74a:c8cf5b400b694417": "2026-11-11T19:50:55.149Z",
+    "kaec085:3cd775ff97d9abf3": "2026-11-11T21:50:56.696Z",
+    "k09feb3:a971bc88bbc1f124": "2026-11-11T21:50:56.696Z",
+    "k38ef42:99876ff4ee7196d1": "2026-11-11T21:50:56.696Z",
+    "kaec085:c899893ef4bea14f": "2026-11-11T21:50:56.696Z",
+    "k2d427e:7fcfec9bdabeed0d": "2026-11-11T21:50:56.696Z",
+    "k8601e1:52de5d78db4b0740": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4": "2026-11-11T21:50:56.696Z",
+    "k2d427e:2cfc72c3331ddb89": "2026-11-11T21:50:56.696Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff": "2026-11-11T21:50:56.696Z",
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f": "2026-11-11T21:50:56.696Z",
+    "k2d427e:e18894bb1c8ea2fa": "2026-11-11T21:50:56.696Z",
+    "kb7f905:c0529027be6ab1dc": "2026-11-11T21:50:56.696Z",
+    "ka5e8e4:306786a238d8b8fe": "2026-11-11T21:50:56.696Z",
+    "k38ef42:b25db2fecde2c1fb": "2026-11-11T21:50:56.696Z",
+    "kb7f905:f5de33d5217f295d": "2026-11-11T21:50:56.696Z",
+    "k12b4a6:b3d4c03e79e19ea1": "2026-11-11T21:50:56.696Z",
+    "k38ef42:8a25ef2815c45524": "2026-11-11T21:50:56.696Z",
+    "k3595c8:0e8271bc1224fc23": "2026-11-11T21:50:56.696Z",
+    "k2e841d:e869b8da348b41c3": "2026-11-11T21:50:56.696Z",
+    "k8601e1:dcffb87a819e9687": "2026-11-11T21:50:56.696Z",
+    "k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z",
+    "k2e841d:4db03a91019f0b27": "2026-11-11T21:50:56.696Z",
+    "k2d427e:3366a936a08a7d70": "2026-11-11T21:50:56.696Z",
+    "kb7f905:15115c006efaea5c": "2026-11-11T21:50:56.696Z",
+    "google-research:https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/": "2026-11-11T21:50:56.696Z",
+    "kb7f905:d533020ed14dd2c9": "2026-11-11T21:50:56.696Z",
+    "k74f74a:65df036473a7f4b5": "2026-11-11T21:50:56.696Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -20967,7 +20994,44 @@
     "k2e841d:1ae39c7bec23a32d|k78637d:05d32e185e6a3540": "2026-11-11T19:50:55.149Z",
     "k2d427e:a7f20bff8acc76bd|k38ef42:f0e99796fa9c8013": "2026-11-11T19:50:55.149Z",
     "k2d427e:a7f20bff8acc76bd|k74f74a:c8cf5b400b694417": "2026-11-11T19:50:55.149Z",
-    "k38ef42:f0e99796fa9c8013|k74f74a:c8cf5b400b694417": "2026-11-11T19:50:55.149Z"
+    "k38ef42:f0e99796fa9c8013|k74f74a:c8cf5b400b694417": "2026-11-11T19:50:55.149Z",
+    "haber:nvidia-ceo-su-jensen-huang-a-abd-kongresi-nden-casusluk-baglantisi-sorgusu|k8601e1:52de5d78db4b0740": "2026-11-11T21:50:56.696Z",
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f|haber:amazon-bedrock-agentcore-oturum-uc-noktalari-ile-canli-web-onizlemesi-sunuyor": "2026-11-11T21:50:56.696Z",
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f|haber:amazon-bedrock-otonom-ajanlarin-is-basarisini-olcmek-icin-kapsamli-degerlendirme": "2026-11-11T21:50:56.696Z",
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f|haber:moengage-agentcore-gateway-ile-400-dahili-api-yi-yapay-zeka-aracina-donusturdu": "2026-11-11T21:50:56.696Z",
+    "haber:gemini-notebook-ogrencilere-yuzlerce-ders-kitabi-erisimi-sunuyor|k2e841d:e869b8da348b41c3": "2026-11-11T21:50:56.696Z",
+    "haber:gemini-omni-1-2-flash-15-saniyelik-video-uretimi-ve-fiyat-indirimiyle-geldi|k2e841d:e869b8da348b41c3": "2026-11-11T21:50:56.696Z",
+    "haber:google-chrome-otomatik-doldurma-ozelligi-gemini-ile-guncelleniyor|k2e841d:e869b8da348b41c3": "2026-11-11T21:50:56.696Z",
+    "haber:applied-compute-yeni-yatirim-turunda-3-25-milyar-dolar-degerlemeye-ulasti|k2d427e:3366a936a08a7d70": "2026-11-11T21:50:56.696Z",
+    "haber:applied-compute-yeni-yatirimla-degerlemesini-3-25-milyar-dolara-cikardi|k2d427e:3366a936a08a7d70": "2026-11-11T21:50:56.696Z",
+    "haber:tedarik-zincirindeki-guvenlik-aciklari-sirketleri-tehdit-ediyor|k8601e1:52de5d78db4b0740": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4|haber:amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4|haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4|haber:aws-bulut-kapasitesi-2027-sonuna-kadar-buyuk-olcude-tukendi": "2026-11-11T21:50:56.696Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff|haber:amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak": "2026-11-11T21:50:56.696Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff|haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor": "2026-11-11T21:50:56.696Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff|haber:aws-bulut-kapasitesi-2027-sonuna-kadar-buyuk-olcude-tukendi": "2026-11-11T21:50:56.696Z",
+    "haber:amazon-ceo-su-andy-jassy-ye-gore-aws-trilyon-dolarlik-dev-bir-sirket-olacak|k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z",
+    "haber:amazon-yapay-zeka-yatirimlarini-artirirken-aws-buyumesini-hizlandiriyor|k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z",
+    "haber:aws-bulut-kapasitesi-2027-sonuna-kadar-buyuk-olcude-tukendi|k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z",
+    "haber:alex-stamos-yapay-zeka-ajanlarina-finansal-sifreleri-vermenin-tehlikelerine-dikk|k2d427e:e18894bb1c8ea2fa": "2026-11-11T21:50:56.696Z",
+    "haber:alphabet-amazon-meta-ve-microsoft-altyapi-harcamalarini-artiriyor|k2d427e:e18894bb1c8ea2fa": "2026-11-11T21:50:56.696Z",
+    "haber:faiss-1-16-0-e-means-algoritmasiyla-kumeleme-islemlerini-hizlandiriyor|k2d427e:e18894bb1c8ea2fa": "2026-11-11T21:50:56.696Z",
+    "haber:xiaomi-insansi-robotlari-otomobil-fabrikasinda-sekiz-saatlik-vardiyayi-tamamladi|k38ef42:b25db2fecde2c1fb": "2026-11-11T21:50:56.696Z",
+    "haber:alex-stamos-yapay-zeka-ajanlarina-finansal-sifreleri-vermenin-tehlikelerine-dikk|kb7f905:c0529027be6ab1dc": "2026-11-11T21:50:56.696Z",
+    "haber:alphabet-amazon-meta-ve-microsoft-altyapi-harcamalarini-artiriyor|kb7f905:c0529027be6ab1dc": "2026-11-11T21:50:56.696Z",
+    "haber:faiss-1-16-0-e-means-algoritmasiyla-kumeleme-islemlerini-hizlandiriyor|kb7f905:c0529027be6ab1dc": "2026-11-11T21:50:56.696Z",
+    "haber:abd-ve-cin-super-zeka-risklerini-yonetmek-icin-yeni-diyalog-mekanizmasi-kurdu|k2e841d:4db03a91019f0b27": "2026-11-11T21:50:56.696Z",
+    "haber:abd-veri-merkezleri-iklim-hedeflerini-geriye-goturuyor|k2e841d:4db03a91019f0b27": "2026-11-11T21:50:56.696Z",
+    "haber:amerika-birlesik-devletleri-veri-merkezleri-elektrik-faturalarini-artiriyor|k2e841d:4db03a91019f0b27": "2026-11-11T21:50:56.696Z",
+    "haber:coreweave-borc-yuku-ve-yapay-zeka-altyapi-harcamalariyla-mercek-altinda|kb7f905:15115c006efaea5c": "2026-11-11T21:50:56.696Z",
+    "haber:coreweave-gelirini-artirdi-ve-yapay-zeka-altyapi-talebinin-guclu-kaldigini-acikl|kb7f905:15115c006efaea5c": "2026-11-11T21:50:56.696Z",
+    "haber:coreweave-ve-nebius-hisseleri-microsoft-harcamalarinin-gerisinde-kalmasiyla-dust|kb7f905:15115c006efaea5c": "2026-11-11T21:50:56.696Z",
+    "k3595c8:0e8271bc1224fc23|k8601e1:52de5d78db4b0740": "2026-11-11T21:50:56.696Z",
+    "k8601e1:52de5d78db4b0740|k8601e1:dcffb87a819e9687": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4|aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff": "2026-11-11T21:50:56.696Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4|k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff|k2d427e:7cf9b978eaef17f1": "2026-11-11T21:50:56.696Z"
   },
   "ayni": {
     "haber:sohbet-degil-karar-ureten-yapay-zeka-girisimi-typesafe-ai-870-milyon-dolar-yatir|ke82007:d455c3e884c276c0": "2026-10-13T10:50:39.807Z",
@@ -21495,114 +21559,10 @@
     "haber:nvidia-ceo-su-jensen-huang-a-abd-kongresi-nden-casusluk-baglantisi-sorgusu|kb7f905:107ee561f617fa08": "2026-11-11T19:50:55.149Z",
     "haber:helsing-askeri-hedef-belirleme-sureclerini-otomatize-eden-yeni-yapay-zeka-platfo|k74f74a:2e52749e4b6391ff": "2026-11-11T19:50:55.149Z",
     "google-ai:https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/|k2d427e:a7f20bff8acc76bd": "2026-11-11T19:50:55.149Z",
-    "k74f74a:616b9afab2f98529|kb7f905:72c0cb8ce7e2d39c": "2026-11-11T19:50:55.149Z"
+    "k74f74a:616b9afab2f98529|kb7f905:72c0cb8ce7e2d39c": "2026-11-11T19:50:55.149Z",
+    "k2d427e:e18894bb1c8ea2fa|kb7f905:c0529027be6ab1dc": "2026-11-11T21:50:56.696Z"
   },
   "puan": {
-    "k2d427e:caf1417d4f70eb5f": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k9f3ec7:4e658067f2bcb3cc": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k3595c8:58aaf3facf208a27": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:bfd3f0b21b7d7330": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k78637d:0c57d804ed7f9475": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:1ba7ef584853f832": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2e841d:f2281e1d7c4e9e69": {
-      "puan": 45,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k74f74a:77d5f63ed546b267": {
-      "puan": 30,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "kad5125:a762d97d376a185e": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "kea595f:af671a8cd325f50f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k8601e1:799870d9041406bc": {
-      "puan": 40,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:d3812708f952b979": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:f4eb39e4d6318441": {
-      "puan": 78,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k78637d:ab1e31771b2b1ff3": {
-      "puan": 82,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2e841d:90ac306244fd69c6": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "ke6dccd:38d9e47d816c8347": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:cfc5ebda57d89590+nvidia-blog:https://blogs.nvidia.com/?p=99689": {
-      "puan": 92,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:3b93488aa9ea4bb2": {
-      "puan": 68,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2e841d:6c9e7d4dc9bdeb68": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2e841d:10b973da0bd0b732": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
-    "k2d427e:514dfbd5b8141617": {
-      "puan": 95,
-      "olcek": 100,
-      "zaman": "2026-11-05T21:50:50.749Z"
-    },
     "k38ef42:e822ef9a4edbc7f9": {
       "puan": 0,
       "olcek": 100,
@@ -29562,17 +29522,114 @@
       "puan": 65,
       "olcek": 100,
       "zaman": "2026-11-11T19:50:55.149Z"
+    },
+    "k2d427e:3366a936a08a7d70": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k74f74a:65df036473a7f4b5": {
+      "puan": 72,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k8601e1:52de5d78db4b0740": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4": {
+      "puan": 20,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k2d427e:2cfc72c3331ddb89": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k2d427e:7cf9b978eaef17f1": {
+      "puan": 92,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k2d427e:e18894bb1c8ea2fa+kb7f905:c0529027be6ab1dc": {
+      "puan": 55,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "ka5e8e4:306786a238d8b8fe": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k38ef42:b25db2fecde2c1fb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "kb7f905:f5de33d5217f295d": {
+      "puan": 68,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k12b4a6:b3d4c03e79e19ea1": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k2e841d:4db03a91019f0b27": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "kb7f905:d533020ed14dd2c9": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k38ef42:8a25ef2815c45524": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k3595c8:0e8271bc1224fc23": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k2e841d:e869b8da348b41c3": {
+      "puan": 62,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "kb7f905:15115c006efaea5c": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "google-research:https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
+    },
+    "k8601e1:dcffb87a819e9687": {
+      "puan": 30,
+      "olcek": 100,
+      "zaman": "2026-11-11T21:50:56.696Z"
     }
   },
   "yayinlanan": {
-    "apple-macos-guncellemesi-ile-yapay-zeka-uygulamalarinin-disk-erisimini-kisitlama": {
-      "zaman": "2026-11-08T21:50:49.935Z",
-      "basliklarSifreli": "v1.nvTq2mkma9J0fUhQ.KgGtIRIZaSEeyUcQCCScGPZ1x9kasop9WswL4xgtcHkLIN6iei0XmG2cR6rbd++zdRu4Sl8wPCbX23djNp9N+h0c+z8qjiecHHr7BP+xeTB0W3Qip1PBcUQrlVMBFzY2LQ=="
-    },
-    "ford-ve-robert-half-verileri-yapay-zekanin-insan-denetimine-ihtiyaci-oldugunu-go": {
-      "zaman": "2026-11-08T21:50:49.935Z",
-      "basliklarSifreli": "v1.cr+qFOkiN9kd3nzb.hkE1Ihdw3+0Qr72McVQR8mACPFk7T8XrF7362moaGxl1wUH+gVLQ4QhxzolPiiYDLWkp5i4LxNG8jhx0dFUhyGnBgWN2HiJyZBl3rzVFXh0DB+t+Ms/vWw=="
-    },
     "mit-ve-ubc-liderligindeki-arastirmacilar-evrensel-simulasyon-modeli-worldparticl": {
       "zaman": "2026-11-09T05:50:51.673Z",
       "basliklarSifreli": "v1.LloV7kWIAgD99LQX.peIVBwC6yUP+zdWSIn2ig1eCbXSSG4r8D4WAa/oLoyVEgq2JROmIcZt/D35jsXAAQm3cJcKFVCDmFJ+B7qI8qFosA9NwxU67QHIQWrUykB/Te8Ng6dDI/mr/hLkWV0KY+oPTRmnj3lPJrJcPu0+BYV0wnwuKsA=="
@@ -30084,6 +30141,18 @@
     "google-tabletop-gruplar-icin-yapay-zeka-destekli-planlama-araclari-olusturuyor": {
       "zaman": "2026-11-11T19:50:55.149Z",
       "basliklarSifreli": "v1.xoaQyVIQciHuzFad.a+7q+apF+M8/450wj0MgSKBRxsNXs3p9/R2f8TjZUKwsPK4fVH1mLlXkeyhkp0hFK6mM6DJOtNrCu9jbmBK9zldH0tEU76RJKHJ/1nWH3dngApd1"
+    },
+    "united-airlines-yapay-zeka-ajanlarinin-ucus-rezervasyonu-yapmasini-kisitliyor": {
+      "zaman": "2026-11-11T21:50:56.696Z",
+      "basliklarSifreli": "v1.FSkNXbxl5HwnFvZv.WrbMQX1DS+rFUWrxcCzImSdQeLKRDvG1802Aj3R7EkidsI2VF7EkoOGPzxxiYvRDCBcTpcC3pctD9xdLiD0m1q0+IiVflJ/P"
+    },
+    "coreweave-yapay-zeka-altyapisi-buyumesini-finanse-etmek-icin-on-odemelere-yoneli": {
+      "zaman": "2026-11-11T21:50:56.696Z",
+      "basliklarSifreli": "v1.clBYmqo5SvqsI1Oj.gogcpm0BCerNzmqnqzg6/W/ho1Z6RXx7fIWAbi44duaMHWbPn2FliPCf7EzCzqSHUIzOqMdQEhRT/Jj30iNfLX2Z4da/Qs3equIw0HpqtMyxFxoNMKAuLMlkJNsFFOe2"
+    },
+    "google-research-giyilebilir-cihaz-verileriyle-kalp-ve-metabolizma-riskini-ongore": {
+      "zaman": "2026-11-11T21:50:56.696Z",
+      "basliklarSifreli": "v1.az4oBKy4KuQPyy5U.2NtRxaa5Sn7847qepxN7eux0EWMmr2o3tvvoSJTZUlMfCysmHoRci6+KnyACAfoTtkkFM2uTr0J5+RiU0YdUrNbqj0q472xOiR+Sl21RNVb9VmpQZktoVEQjb0gh/FFI+MwrwrFvpRViXJhZ+Tu5Utx7SPSWgqMan9vtow=="
     }
   },
   "havuz": [],
@@ -39242,6 +39311,33 @@
     "k8601e1:fde0d01882156f3a": "2026-11-11T17:54:57.000Z",
     "openai:https://openai.com/index/jiostar-vijay-seshadri": "2026-11-11T00:00:00.000Z",
     "google-ai:https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/": "2026-11-11T18:00:00.000Z",
-    "aws-ml:942893d15c6ed4a3b822a98a54e996da0a60453b": "2026-11-11T19:19:21.000Z"
+    "aws-ml:942893d15c6ed4a3b822a98a54e996da0a60453b": "2026-11-11T19:19:21.000Z",
+    "kb7f905:f5de33d5217f295d": "2026-11-11T20:15:15.000Z",
+    "kb7f905:c0529027be6ab1dc": "2026-11-11T20:12:01.000Z",
+    "kb7f905:d533020ed14dd2c9": "2026-11-11T20:02:14.000Z",
+    "kb7f905:15115c006efaea5c": "2026-11-11T19:54:00.000Z",
+    "k3595c8:0e8271bc1224fc23": "2026-11-11T19:55:54.000Z",
+    "k09feb3:a971bc88bbc1f124": "2026-11-11T20:12:46.000Z",
+    "kaec085:3cd775ff97d9abf3": "2026-11-11T21:21:42.000Z",
+    "kaec085:c899893ef4bea14f": "2026-11-11T20:51:56.000Z",
+    "ka5e8e4:306786a238d8b8fe": "2026-11-11T20:30:00.000Z",
+    "k12b4a6:b3d4c03e79e19ea1": "2026-11-11T20:10:00.000Z",
+    "k38ef42:99876ff4ee7196d1": "2026-11-11T20:55:00.000Z",
+    "k38ef42:b25db2fecde2c1fb": "2026-11-11T20:28:00.000Z",
+    "k38ef42:8a25ef2815c45524": "2026-11-11T20:02:00.000Z",
+    "k2d427e:3366a936a08a7d70": "2026-11-11T21:36:03.000Z",
+    "k2d427e:2cfc72c3331ddb89": "2026-11-11T20:57:03.000Z",
+    "k2d427e:7fcfec9bdabeed0d": "2026-11-11T20:51:03.000Z",
+    "k2d427e:7cf9b978eaef17f1": "2026-11-11T20:45:03.000Z",
+    "k2d427e:e18894bb1c8ea2fa": "2026-11-11T20:30:04.000Z",
+    "k74f74a:65df036473a7f4b5": "2026-11-11T21:22:04.000Z",
+    "k2e841d:4db03a91019f0b27": "2026-11-11T20:09:44.000Z",
+    "k2e841d:e869b8da348b41c3": "2026-11-11T19:54:55.000Z",
+    "k8601e1:52de5d78db4b0740": "2026-11-11T21:08:02.000Z",
+    "k8601e1:dcffb87a819e9687": "2026-11-11T19:51:44.000Z",
+    "aws-ml:b338f8a43166a0bd154498911d8a00e6632a53b4": "2026-11-11T21:05:59.000Z",
+    "aws-ml:eee5d43fead189e55bac9d295c979e1d24fbb7ff": "2026-11-11T20:52:48.000Z",
+    "aws-ml:0e166aea5fc5e99de63f67eb0887a9fb579fb51f": "2026-11-11T20:45:45.000Z",
+    "google-research:https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/": "2026-11-11T19:54:00.000Z"
   }
 }
