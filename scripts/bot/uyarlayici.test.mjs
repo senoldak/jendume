@@ -84,6 +84,7 @@ function kur({ durum = bosDurum(), bag = {}, ayar = {} } = {}) {
       },
       geminiPayiBitti: () => false,
       motorYaz: async () => true,
+      dilKall: async () => null, // dil redaksiyonu: ağ yok, cevap yok → taslak aynen kalır
       ...bag,
     },
   });
@@ -463,4 +464,45 @@ test('kapı, derleme: gec yazar, kayıt gerekçesi kapının gerekçesi', async 
   assert.equal(kayitlar.length, 1);
   assert.equal(kayitlar[0].gerekce, 'kapi:temiz @m#1');
   assert.equal(kayitlar[0].durum, 'yazildi');
+});
+
+// --- Dil redaksiyonu + dil kapısı ---
+const KAYNAK_34 = (u) => `${uydur(150, u.id.length + 5, ['pek', 'lum', 'zan', 'rok', 'tis', 'yem', 'cuz', 'oluf', 'nab', 'esk'])} 34 milyon dolar`;
+const yazili = () => {
+  const t = taslak();
+  t.tr.body = `${uydur(280, 1)} otuz dört milyon dolar ${uydur(10, 2)}.`;
+  return t;
+};
+
+test('dil: redaksiyon kabul edilir, TR düzelmiş yazılır, EN aynen kalır', async () => {
+  const t0 = yazili();
+  const enOnce = structuredClone(t0.en);
+  const duzgun = { title: t0.tr.title, description: t0.tr.description, body: t0.tr.body.replace('otuz dört milyon dolar', '34 milyon dolar') };
+  const { u, yazilan } = kur({ bag: { tamMetin: async (x) => KAYNAK_34(x), taslakYaz: async () => structuredClone(t0), dilKall: async () => duzgun } });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const sonuclar = await u.isle([aday(a)]);
+  assert.equal(sonucu(sonuclar, a).durum, 'yazildi');
+  assert.ok(yazilan[0].tr.body.includes('34 milyon dolar'));
+  assert.equal(yazilan[0].en.body, enOnce.body);
+  assert.equal(yazilan[0].en.title, enOnce.title);
+});
+
+test('dil: kapı kesin sorunu (yazıyla sayı) gideremezse haber yazılmaz, gerekçe dil: ile başlar', async () => {
+  const { u, yazilan } = kur({ bag: { taslakYaz: async () => yazili(), dilKall: async () => null } });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const sonuclar = await u.isle([aday(a)]);
+  assert.equal(yazilan.length, 0);
+  const s = sonucu(sonuclar, a);
+  assert.equal(s.durum, 'elendi');
+  assert.ok(s.gerekce.startsWith('dil:'), s.gerekce);
+});
+
+test('dil: EN alanlarındaki yazıyla sayı dil-tr kapısına takılmaz', async () => {
+  const t0 = taslak();
+  t0.en.body = `${uydur(280, 4)} otuz dört milyon dolar ${uydur(10, 5)}.`;
+  const { u, yazilan } = kur({ bag: { taslakYaz: async () => t0 } });
+  const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
+  const sonuclar = await u.isle([aday(a)]);
+  assert.equal(sonucu(sonuclar, a).durum, 'yazildi');
+  assert.equal(yazilan[0].en.body, t0.en.body);
 });

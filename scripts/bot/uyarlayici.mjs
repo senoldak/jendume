@@ -14,7 +14,8 @@ import path from 'node:path';
 
 import { baslikKontrol, baslikUzunlukKontrol, duzeltmeAyrintisi, gunlukSatiri, kesinKontroller, rakamSeritleriniSuz, uzunlukKontrol, yerelDuzelt } from './denetci.mjs';
 import { BELLEK_SAAT, bellekKur, grupAdayi, mukerrerBul } from './mukerrer.mjs';
-import { hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
+import { gemini, hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.mjs';
+import { dilRedakte } from './dil-redaksiyon.mjs';
 import { geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi } from './gizli.mjs';
 import { resmiKaynakListesi } from './resmi-kaynak.mjs';
@@ -86,7 +87,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
   const A = { enFazla: 6, teyit: 1, yasGun: 5, sureMs: 18 * 60_000, baslangic: Date.now(), ...ayar };
   const B = {
     KAYNAKLAR, hentTekst, rssOku, tamMetin, taslakYaz, duzelt, derlemeYaz, derlemeUzat, onbellekliPuanla, onbellekliEsle, gommeliEsle, ayniOlayMi,
-    ucDilliHaberYaz, sonHaberler, geminiPayiBitti,
+    ucDilliHaberYaz, sonHaberler, geminiPayiBitti, dilKall: gemini,
     motorYaz: (kayit) => motorKaydet({ url: process.env.MOTOR_URL, anahtar: process.env.MOTOR_ANAHTARI, kayit }),
     ...bag,
   };
@@ -432,6 +433,16 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
             log('  havuza alındı: dilim sonunda derlemeye girecek');
             g.uyeler.forEach((u) => koy({ kimlik: kim(u), durum: 'bekliyor', gerekce: 'havuzda', havuzda: true }));
           } else elendi(g, sorunlar.join('; '));
+          continue;
+        }
+
+        // TR dil redaksiyonu + dil kapısı (dil-redaksiyon.mjs): denetim geçti, yayından önce Türkçe alanlar dil masasından geçer.
+        // EN alanları aynen kalır. Kesin dil sorunu kalırsa haber yayımlanmaz (gerekçe "dil:" ile başlar).
+        const dil = await dilRedakte(t, kaynakBirlesik, { kall: B.dilKall, log });
+        t = dil.t;
+        if (dil.elendi) {
+          ozet.elenen.push(`${t.tr?.title || ad} — ${dil.elendi}`);
+          elendi(g, dil.elendi);
           continue;
         }
 
