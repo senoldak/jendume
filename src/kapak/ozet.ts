@@ -35,15 +35,19 @@ export function ozetKapakSvg({ tarih, basliklar, toplam }: { tarih: string; basl
 
   const mb = 29;
   const satirAdim = mb * 1.2;
-  const ara = 14;
+  // Maddeler arasında ince çizgi (kifobu kartı gibi): her maddenin üstünde ve altında ara/2 boşluk.
+  const ara = 26;
   const ayar: MetinAyar = { wght: 500, boyut: mb, renk: KIMLIK.murekkep };
   const dahaAyar: MetinAyar = { wght: 500, boyut: 24, renk: KIMLIK.gri };
-  const ilk = baslikTaban + 46 + mb * 0.72; // ilk maddenin taban çizgisi
+  const ustCizgi = baslikTaban + 40; // listenin üst çizgisi
+  const ilk = ustCizgi + ara / 2 + mb * 0.72; // ilk maddenin taban çizgisi
   const altUst = Y - 62 - 56; // logo satırının üstü
-  // Listenin en alt noktası (çizimle aynı hesap): son satırın inişi ya da "+N haber daha" satırının inişi.
+  const sonraki = (y: number, n: number) => y + (n - 1) * satirAdim + mb + ara; // bir sonraki maddenin taban çizgisi
+  const altCizgi = (y: number) => y - mb * 0.72 - ara / 2; // y: listeden sonraki (çizilmeyen) maddenin taban çizgisi
+  // Listenin en alt noktası (çizimle aynı hesap): alt çizgi ya da "+N haber daha" satırının inişi.
   const listeAlti = (satirSayilari: number[], kalanVar: boolean) => {
-    const y = satirSayilari.reduce((t, n) => t + (n - 1) * satirAdim + mb + ara, ilk);
-    return kalanVar ? y - ara + 14 + 24 : y - ara - mb + mb * 0.28;
+    const c = altCizgi(satirSayilari.reduce(sonraki, ilk));
+    return kalanVar ? c + 14 + 24 : c;
   };
   const { ogeler, kalan } = listeSigdir({
     basliklar,
@@ -51,17 +55,20 @@ export function ozetKapakSvg({ tarih, basliklar, toplam }: { tarih: string; basl
     satirla: (b: string) => satirla(b, LISTE_G - IMLEC, ayar),
     sigar: (o: { satirlar: string[] }[]) => listeAlti(o.map((x) => x.satirlar.length), toplam > o.length) + 30 <= altUst,
   });
+  const cizgi = (cy: number) => `<rect x="${KENAR}" y="${cy.toFixed(1)}" width="${LISTE_G}" height="1.5" fill="${KIMLIK.cizgi}"/>`;
   let y = ilk;
+  if (ogeler.length) svg += cizgi(ustCizgi);
   for (const og of ogeler) {
     svg += `<circle cx="${KENAR + 5.5}" cy="${(y - mb * 0.36).toFixed(1)}" r="5.5" fill="${KIMLIK.yesil}"/>`;
     og.satirlar.forEach((s: string, i: number) => {
       svg += metin(s, KENAR + IMLEC, y + i * satirAdim, ayar);
     });
-    y += (og.satirlar.length - 1) * satirAdim + mb + ara;
+    y = sonraki(y, og.satirlar.length);
+    svg += cizgi(altCizgi(y));
   }
-  let maddeAlt = y - ara - mb + mb * 0.28;
+  let maddeAlt = altCizgi(y);
   if (kalan > 0) {
-    const taban = y - ara + 14 + 24 * 0.72;
+    const taban = maddeAlt + 14 + 24 * 0.72;
     svg += metin(`+${kalan} haber daha`, KENAR + IMLEC, taban, dahaAyar);
     maddeAlt = taban + 24 * 0.28;
   }
