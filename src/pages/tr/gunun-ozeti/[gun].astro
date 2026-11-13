@@ -1,0 +1,91 @@
+---
+// Telegram Günün Özeti'nin Türkçe gün sayfası (/tr/gunun-ozeti/YYYY-AA-GG/): 20:45 işinin yazdığı paragraf, o günün
+// bültenleri ve haberleri. Yalnız paragrafı yazılmış günler için üretilir; RSS'e, haber haritasına ve ana sayfa
+// akışına girmez; İngilizce karşılığı yok (hreflang verilmez). gunun-ozeti ve gunun-ozeti-paragraf meta
+// etiketlerini mecmua-saat kuyruğu okur (paragraf og:description'da kısalır).
+import Base from '../../../layouts/Base.astro';
+import StoryCard from '../../../components/StoryCard.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { getPublishedPosts, type NewsEntry } from '../../../lib/news';
+import { ozetGunu, ozetKapakYolu, ozetKayitlari, ozetYolu, type OzetKaydi } from '../../../lib/gunun-ozeti';
+import { KAPAK_G, KAPAK_Y } from '../../../kapak/ciz';
+
+export async function getStaticPaths() {
+  const kayitlar = ozetKayitlari(import.meta.glob('/src/data/gunun-ozeti/*.json', { eager: true, import: 'default' }));
+  const posts = await getPublishedPosts('tr');
+  return kayitlar.map((kayit, i) => ({
+    params: { gun: kayit.tarih },
+    props: { kayit, posts, yeni: kayitlar[i - 1]?.tarih, eski: kayitlar[i + 1]?.tarih },
+  }));
+}
+
+interface Props {
+  kayit: OzetKaydi;
+  posts: NewsEntry[];
+  yeni?: string;
+  eski?: string;
+}
+
+const { kayit, posts, yeni, eski } = Astro.props;
+const g = ozetGunu(posts, kayit);
+const yol = ozetYolu(kayit.tarih);
+const kisa = (t: string) => ozetGunu([], { ...kayit, tarih: t }).tarihAd;
+---
+
+<Base
+  lang="tr"
+  title={g.baslik}
+  description={kayit.paragraf}
+  canonicalPath={yol}
+  langUrls={{ tr: yol, en: '/en/' }}
+  alternates={{}}
+  image={ozetKapakYolu(kayit.tarih)}
+  imageAlt={`${g.baslik}: günün öne çıkan yapay zekâ haberleri`}
+  imageWidth={KAPAK_G}
+  imageHeight={KAPAK_Y}
+  noindex={g.toplam < 3}
+  ekMeta={[
+    { name: 'gunun-ozeti', content: kayit.tarih },
+    { name: 'gunun-ozeti-paragraf', content: kayit.paragraf },
+  ]}
+>
+  <Breadcrumb lang="tr" items={[{ name: 'Ana sayfa', path: '/tr/' }, { name: g.baslik, path: yol }]} />
+  <header class="section-sign">
+    <h1>Günün Özeti</h1>
+    <p class="section-desc">{g.tarihAd}</p>
+  </header>
+
+  <p class="section-desc">{kayit.paragraf}</p>
+  {kayit.yazan === 'gemini' && <p class="empty-state">Bu paragraf o günün haberlerinden yapay zekâ ile yazıldı.</p>}
+
+  {
+    g.bultenler.length > 0 && (
+      <section aria-labelledby="ozet-bultenler">
+        <h2 id="ozet-bultenler">Bültenler</h2>
+        <div class="story-grid">
+          {g.bultenler.map((post) => (
+            <StoryCard post={post} lang="tr" />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    g.haberler.length > 0 && (
+      <section aria-labelledby="ozet-haberler">
+        <h2 id="ozet-haberler">{g.tarihAd} haberleri</h2>
+        <div class="story-grid">
+          {g.haberler.map((post) => (
+            <StoryCard post={post} lang="tr" />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <nav class="sayfalama" aria-label="Özet günleri">
+    {yeni ? <a href={ozetYolu(yeni)} rel="prev">← {kisa(yeni)}</a> : <span />}
+    {eski ? <a href={ozetYolu(eski)} rel="next">{kisa(eski)} →</a> : <span />}
+  </nav>
+</Base>
