@@ -9643,7 +9643,10 @@
     "kb7f905:0af8061b7ec75586": "2026-11-14T03:50:52.888Z",
     "ke82007:80d9a19ad9f408a0": "2026-11-14T03:50:52.888Z",
     "aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1": "2026-11-14T03:50:52.888Z",
-    "openai:https://openai.com/business/customer-stories/shield": "2026-11-14T03:50:52.888Z"
+    "openai:https://openai.com/business/customer-stories/shield": "2026-11-14T03:50:52.888Z",
+    "k12b4a6:1f0dbb3342343cc9": "2026-11-14T05:50:53.133Z",
+    "kfdedb4:6253ae94212dbf48": "2026-11-14T05:50:53.133Z",
+    "k4f0fb7:40050359edf0805b": "2026-11-14T05:50:53.133Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -22536,7 +22539,12 @@
     "aws-ml:760cbc8b70c56b832a6d83eb6dfab47ce2fe8a3b|aws-ml:f4831ed5c33ec5088dfe090f067c6a3a1c207b47": "2026-11-14T03:50:52.888Z",
     "aws-ml:31a4c32eac66b0c9392f69ee418d5e09aecaf4e5|aws-ml:760cbc8b70c56b832a6d83eb6dfab47ce2fe8a3b": "2026-11-14T03:50:52.888Z",
     "aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1|aws-ml:f4831ed5c33ec5088dfe090f067c6a3a1c207b47": "2026-11-14T03:50:52.888Z",
-    "aws-ml:31a4c32eac66b0c9392f69ee418d5e09aecaf4e5|aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1": "2026-11-14T03:50:52.888Z"
+    "aws-ml:31a4c32eac66b0c9392f69ee418d5e09aecaf4e5|aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1": "2026-11-14T03:50:52.888Z",
+    "haber:chatgpt-wallet-yapay-zeka-ajanlarinin-internetten-alisveris-yapmasini-sagliyor|k4f0fb7:40050359edf0805b": "2026-11-14T05:50:53.133Z",
+    "haber:chatgpt-enterprise-artik-aws-marketplace-uzerinden-satin-alinabiliyor|k4f0fb7:40050359edf0805b": "2026-11-14T05:50:53.133Z",
+    "haber:openai-chatgpt-arayuzunde-chat-ve-work-sekmelerini-birlestiriyor|k4f0fb7:40050359edf0805b": "2026-11-14T05:50:53.133Z",
+    "haber:hollywood-yonetmenleri-storyboard-sureclerinde-yapay-zekaya-geciyor|k12b4a6:1f0dbb3342343cc9": "2026-11-14T05:50:53.133Z",
+    "haber:mansa-yapay-zeka-destekli-mikro-dizi-projesiyle-elestirilerin-hedefi-oldu|k12b4a6:1f0dbb3342343cc9": "2026-11-14T05:50:53.133Z"
   },
   "ayni": {
     "k59b8ca:ab5a2e787ad8336f|kb7f905:8a37a3b7429e48e2": "2026-10-15T12:50:59.336Z",
@@ -23103,101 +23111,6 @@
     "k8601e1:05b3c6fabd267af1|kad5125:9489bbacdedb5ebd": "2026-11-14T03:50:52.888Z"
   },
   "puan": {
-    "k2e841d:829bdd39b552ddac": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:5624ded542f48214": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "kad5125:7916d7281daf32c0": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:1d9a74e70fa4baac": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:db2c0a1128a843ca": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:2ea9e6d7315eb642": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:b21b15e1ce7309b2": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:af1579a8141f554c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:8dc01d9c97cf9dbb": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:c1f0b6841a6ffbcb": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:08fddc75959097c5": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:0c68c99f4db959c7": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:bcfa747bd840e3f8": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k2e841d:7bd1c01152764867": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T03:50:53.836Z"
-    },
-    "k38ef42:46ed26745abf40c9": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T05:50:50.766Z"
-    },
-    "ke6dccd:da22c92c336dcd0b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T05:50:50.766Z"
-    },
-    "k38ef42:52c178a94b393188": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T05:50:50.766Z"
-    },
-    "k4f0fb7:9a1282499be68021": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-08T05:50:50.766Z"
-    },
-    "k38ef42:ac064cb24c816322": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-08T05:50:50.766Z"
-    },
     "kad5125:52c4e203258d945c": {
       "puan": 0,
       "olcek": 100,
@@ -31867,6 +31780,21 @@
       "puan": 70,
       "olcek": 100,
       "zaman": "2026-11-14T03:50:52.888Z"
+    },
+    "k4f0fb7:40050359edf0805b": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-14T05:50:53.133Z"
+    },
+    "k12b4a6:1f0dbb3342343cc9": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-14T05:50:53.133Z"
+    },
+    "kfdedb4:6253ae94212dbf48": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-14T05:50:53.133Z"
     }
   },
   "yayinlanan": {
@@ -32277,6 +32205,10 @@
     "shield-bt-hizmetlerinde-gpt-6-astra-tabanli-otonom-ajanlari-kullanima-sundu": {
       "zaman": "2026-11-14T03:50:52.888Z",
       "basliklarSifreli": "v1.O9bxCWBvhp9LJAS9.6agsmnIkTePGUOwkxxj9PtYRj/bNXHlj9Sjn1FkF76tjj3yvHe0jKHUMYvY0HyTzsUqS1E7lsIrerDdC7e4sye3W5A6kq/pcUpPI2wlndEgV/S9+"
+    },
+    "chatgpt-wallet-yapay-zeka-ajanlarinin-odeme-yapmasini-sagladi": {
+      "zaman": "2026-11-14T05:50:53.133Z",
+      "basliklarSifreli": "v1.EohNqVeeJ7PWOuzc.A1xt5FqtB1Y+VqGBC6PMavXtRoFYFrqHG1R8H2ON8dnzms1i7wUOQ9WF9sJ4YdPauceogxwiSD3AGmvAMTlTFA=="
     }
   },
   "havuz": [
@@ -41989,6 +41921,9 @@
     "aws-ml:760cbc8b70c56b832a6d83eb6dfab47ce2fe8a3b": "2026-11-13T23:22:09.000Z",
     "aws-ml:f4831ed5c33ec5088dfe090f067c6a3a1c207b47": "2026-11-13T22:30:12.000Z",
     "aws-ml:31a4c32eac66b0c9392f69ee418d5e09aecaf4e5": "2026-11-13T22:02:39.000Z",
-    "aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1": "2026-11-13T21:53:40.000Z"
+    "aws-ml:4dea8ce77a40d45986adf65199b169c60e84bcc1": "2026-11-13T21:53:40.000Z",
+    "k4f0fb7:40050359edf0805b": "2026-11-14T05:18:50.000Z",
+    "k12b4a6:1f0dbb3342343cc9": "2026-11-14T05:11:00.000Z",
+    "kfdedb4:6253ae94212dbf48": "2026-11-14T05:00:00.000Z"
   }
 }
