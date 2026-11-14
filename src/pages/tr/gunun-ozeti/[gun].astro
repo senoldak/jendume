@@ -47,6 +47,8 @@ const kisa = (t: string) => ozetGunu([], { ...kayit, tarih: t }).tarihAd;
   ekMeta={[
     { name: 'gunun-ozeti', content: kayit.tarih },
     { name: 'gunun-ozeti-paragraf', content: kayit.paragraf },
+    // LinkedIn dikey kartı (1080×1350); Telegram og:image'daki yatay kapağı kullanır.
+    { name: 'linkedin-gorsel', content: new URL(`/kapak/dikey/tr/gunun-ozeti/${kayit.tarih}.png`, Astro.site).href },
   ]}
 >
   <Breadcrumb lang="tr" items={[{ name: 'Ana sayfa', path: '/tr/' }, { name: g.baslik, path: yol }]} />

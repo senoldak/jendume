@@ -45,6 +45,8 @@ interface Props {
 
 const { lang, post } = Astro.props;
 const id = post.id;
+// Türkçe bültenin LinkedIn dikey kartı (src/pages/kapak/dikey/tr/[id].png.ts).
+const dikeyKapak = lang === 'tr' && post.data.category === 'gunluk-bulten' ? new URL(`/kapak/dikey/tr/${id}.png`, Astro.site).href : null;
 const { Content } = await render(post);
 
 const other = otherLocale(lang);
@@ -114,6 +116,7 @@ const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
   imageWidth={KAPAK_G}
   imageHeight={KAPAK_Y}
   noindex={!indexable}
+  ekMeta={dikeyKapak ? [{ name: 'linkedin-gorsel', content: dikeyKapak }] : []}
   author={kisiYazariMi(post.data) ? SITE.author.name : SITE.displayName}
   published={post.data.date}
   modified={post.data.updated ?? post.data.date}

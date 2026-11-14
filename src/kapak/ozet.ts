@@ -4,12 +4,15 @@
 // Başlık en çok iki satır olur; sığmayan başlık kesilmez ("…" yok), kapağa girmez, "+N haber daha"ya eklenir.
 import { KIMLIK, genislik, logo, metin, type MetinAyar } from '../lib/kimlik.ts';
 import { listeSigdir } from '../../scripts/bot/gunun-ozeti.mjs';
-import { KAPAK_G as G, KAPAK_Y as Y } from './ciz.ts';
+import { KAPAK_G, KAPAK_Y } from './ciz.ts';
 
 const KENAR = 80;
-const DAIRE = { cx: 1130, cy: 40, r: 230 };
-const LISTE_G = 760;
 const IMLEC = 26;
+// kapak 1200×675 (site, Telegram); dikey 1080×1350 (LinkedIn akışı): liste tam genişlik, daha büyük yazı, daha çok başlık.
+const BICIMLER = {
+  kapak: { G: KAPAK_G, Y: KAPAK_Y, daire: { cx: 1130, cy: 40, r: 230 }, listeG: 760, bb: 80, mb: 29, azamiOge: 4, ust: 88, ara: 26, azamiSatir: 2, kucuk: 24, tarihB: 22 },
+  dikey: { G: 1080, Y: 1350, daire: { cx: 1060, cy: -30, r: 200 }, listeG: 1080 - 2 * KENAR, bb: 100, mb: 40, azamiOge: 7, ust: 150, ara: 40, azamiSatir: 3, kucuk: 30, tarihB: 28 },
+};
 
 /** Sözcük sınırında satırlara böler; hiçbir zaman kısaltmaz. */
 function satirla(s: string, maks: number, ayar: MetinAyar) {
@@ -28,17 +31,16 @@ function satirla(s: string, maks: number, ayar: MetinAyar) {
 
 const ozAttr = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
-export function ozetKapakSvg({ tarih, basliklar, toplam }: { tarih: string; basliklar: string[]; toplam: number }) {
-  const bb = 80;
-  const baslikTaban = 88 + bb * 0.72;
-  let svg = metin('Günün Özeti', KENAR - 2, baslikTaban, { wght: 700, boyut: bb, renk: KIMLIK.murekkep, aralik: -0.02 });
+// baslik: kartın tek başlığı; bülten dikey kartında "Sabah Bülteni" gibi (LinkedIn), varsayılan Günün Özeti.
+export function ozetKapakSvg({ tarih, basliklar, toplam, bicim = 'kapak', baslik = 'Günün Özeti' }: { tarih: string; basliklar: string[]; toplam: number; bicim?: 'kapak' | 'dikey'; baslik?: string }) {
+  const { G, Y, daire: DAIRE, listeG: LISTE_G, bb, mb, azamiOge, ust, ara, azamiSatir, kucuk, tarihB } = BICIMLER[bicim];
+  const baslikTaban = ust + bb * 0.72;
+  let svg = metin(baslik, KENAR - 2, baslikTaban, { wght: 700, boyut: bb, renk: KIMLIK.murekkep, aralik: -0.02 });
 
-  const mb = 29;
   const satirAdim = mb * 1.2;
   // Maddeler arasında ince çizgi (kifobu kartı gibi): her maddenin üstünde ve altında ara/2 boşluk.
-  const ara = 26;
   const ayar: MetinAyar = { wght: 500, boyut: mb, renk: KIMLIK.murekkep };
-  const dahaAyar: MetinAyar = { wght: 500, boyut: 24, renk: KIMLIK.gri };
+  const dahaAyar: MetinAyar = { wght: 500, boyut: kucuk, renk: KIMLIK.gri };
   const ustCizgi = baslikTaban + 40; // listenin üst çizgisi
   const ilk = ustCizgi + ara / 2 + mb * 0.72; // ilk maddenin taban çizgisi
   const altUst = Y - 62 - 56; // logo satırının üstü
@@ -47,13 +49,15 @@ export function ozetKapakSvg({ tarih, basliklar, toplam }: { tarih: string; basl
   // Listenin en alt noktası (çizimle aynı hesap): alt çizgi ya da "+N haber daha" satırının inişi.
   const listeAlti = (satirSayilari: number[], kalanVar: boolean) => {
     const c = altCizgi(satirSayilari.reduce(sonraki, ilk));
-    return kalanVar ? c + 14 + 24 : c;
+    return kalanVar ? c + 14 + kucuk : c;
   };
   const { ogeler, kalan } = listeSigdir({
     basliklar,
     toplam,
     satirla: (b: string) => satirla(b, LISTE_G - IMLEC, ayar),
     sigar: (o: { satirlar: string[] }[]) => listeAlti(o.map((x) => x.satirlar.length), toplam > o.length) + 30 <= altUst,
+    azamiOge,
+    azamiSatir,
   });
   const cizgi = (cy: number) => `<rect x="${KENAR}" y="${cy.toFixed(1)}" width="${LISTE_G}" height="1.5" fill="${KIMLIK.cizgi}"/>`;
   let y = ilk;
@@ -68,12 +72,12 @@ export function ozetKapakSvg({ tarih, basliklar, toplam }: { tarih: string; basl
   }
   let maddeAlt = altCizgi(y);
   if (kalan > 0) {
-    const taban = maddeAlt + 14 + 24 * 0.72;
+    const taban = maddeAlt + 14 + kucuk * 0.72;
     svg += metin(`+${kalan} haber daha`, KENAR + IMLEC, taban, dahaAyar);
-    maddeAlt = taban + 24 * 0.28;
+    maddeAlt = taban + kucuk * 0.28;
   }
 
-  const tarihAyar: MetinAyar = { wght: 700, boyut: 22, renk: KIMLIK.murekkep, aralik: 0.06 };
+  const tarihAyar: MetinAyar = { wght: 700, boyut: tarihB, renk: KIMLIK.murekkep, aralik: 0.06 };
   const tarihYazi = tarih.toLocaleUpperCase('tr-TR');
   const tg = genislik(tarihYazi, tarihAyar);
   const tTaban = Y - 62 - 20;
