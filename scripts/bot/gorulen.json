@@ -9751,7 +9751,9 @@
     "k2e841d:65a7984b25d22b2e": "2026-11-15T03:52:57.271Z",
     "k2e841d:e5e04ea1739747e0": "2026-11-15T03:52:57.271Z",
     "k2e841d:ac10b5f991e27361": "2026-11-15T03:52:57.271Z",
-    "k39cb2c:f5570bb29f9e137d": "2026-11-15T03:52:57.271Z"
+    "k39cb2c:f5570bb29f9e137d": "2026-11-15T03:52:57.271Z",
+    "kfdedb4:7961f2a92179bc24": "2026-11-15T05:50:55.942Z",
+    "k1efb7c:06bfb4e6610bfc21": "2026-11-15T05:50:55.942Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -22775,7 +22777,9 @@
     "haber:adobe-firefly-yeni-otonom-ajan-yetenekleriyle-is-akislarini-yonetiyor|k2e841d:e5e04ea1739747e0": "2026-11-15T03:52:57.271Z",
     "haber:adobe-max-sneaks-ile-yapay-zekada-komut-yazma-donemi-yerini-firca-ve-hareketlere|k2e841d:e5e04ea1739747e0": "2026-11-15T03:52:57.271Z",
     "haber:chatgpt-wallet-yapay-zeka-ajanlarinin-odeme-yapmasini-sagladi|k2e841d:e5e04ea1739747e0": "2026-11-15T03:52:57.271Z",
-    "k2e841d:65a7984b25d22b2e|k2e841d:c1d6ec7058760e74": "2026-11-15T03:52:57.271Z"
+    "k2e841d:65a7984b25d22b2e|k2e841d:c1d6ec7058760e74": "2026-11-15T03:52:57.271Z",
+    "haber:gemini-omni-1-2-flash-15-saniyelik-video-uretimi-ve-fiyat-indirimiyle-geldi|kfdedb4:7961f2a92179bc24": "2026-11-15T05:50:55.942Z",
+    "haber:google-cloud-saglik-sektoru-icin-yeni-yapay-zeka-aracini-kullanima-sundu|kfdedb4:7961f2a92179bc24": "2026-11-15T05:50:55.942Z"
   },
   "ayni": {
     "k36ff38:848ab11e48dcdcad|kad5125:10fdc2a0380aeb89": "2026-10-17T03:50:54.401Z",
@@ -23339,144 +23343,10 @@
     "haber:anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled|k39a0e6:27e8e34c8ee8f430": "2026-11-14T13:50:54.599Z",
     "k2e841d:525d21056e90f71d|k78637d:26d5f13bf252e713": "2026-11-14T15:50:52.197Z",
     "haber:anthropic-claude-code-surumunde-mevcut-video-oyunlarinin-kopyalanmasini-engelled|k09feb3:af630f82d8fd0002": "2026-11-14T17:50:51.807Z",
-    "haber:waymo-ve-uber-ortakligi-austin-ile-atlanta-da-sona-eriyor|k2e841d:70ddf06a97cd64c9": "2026-11-14T17:50:51.807Z"
+    "haber:waymo-ve-uber-ortakligi-austin-ile-atlanta-da-sona-eriyor|k2e841d:70ddf06a97cd64c9": "2026-11-14T17:50:51.807Z",
+    "haber:gemini-4-hydrogen-modeli-hiz-ve-verimlilik-odakli-olarak-kullanima-sunuldu|kfdedb4:7961f2a92179bc24": "2026-11-15T05:50:55.942Z"
   },
   "puan": {
-    "k2d427e:65fa6071ab1b5b83": {
-      "puan": 82,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:c4dd5d8a8a0f35e5": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:27b2cdbb592ea794": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k12b4a6:386c43a742ed41ca": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "ke6dccd:423c76a76bac3fe9": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "kb7f905:df66d0986dc7cfc8": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k2d427e:740baed08c9aa8bd": {
-      "puan": 78,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k2d427e:1fde1c7fc0bac43b": {
-      "puan": 76,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:f373d86c62bcc1dd": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k12b4a6:2cc1c2803f957d29": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "nvidia-blog:https://blogs.nvidia.com/?p=99712": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k4f0fb7:dbb67d389b0c756f": {
-      "puan": 74,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "kea595f:5cd8004bf7a9f30e": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k2d427e:d0c0f50bd13faaf9": {
-      "puan": 65,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "mit-news-ai:https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109": {
-      "puan": 92,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "mit-news-ai:https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109": {
-      "puan": 84,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "nvidia-blog:https://blogs.nvidia.com/?p=99731": {
-      "puan": 72,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:ef86f75e110c79ad": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:d527cca012c0dc43": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:09a7ee65e5f41de2": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:df1015ef5feb9c4f": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:895be63f3f331379": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:31fab24c9dc8c28e": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k38ef42:e29199b4b8c869b4": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "k12b4a6:e421e520cfbb5030": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "nvidia-blog:https://blogs.nvidia.com/?p=99721": {
-      "puan": 79,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
-    "nvidia-blog:https://blogs.nvidia.com/?p=99736": {
-      "puan": 77,
-      "olcek": 100,
-      "zaman": "2026-11-09T05:50:51.673Z"
-    },
     "k38ef42:7f2d2345774f804c": {
       "puan": 0,
       "olcek": 100,
@@ -31941,13 +31811,14 @@
       "puan": 0,
       "olcek": 100,
       "zaman": "2026-11-15T03:52:57.271Z"
+    },
+    "k1efb7c:06bfb4e6610bfc21": {
+      "puan": 95,
+      "olcek": 100,
+      "zaman": "2026-11-15T05:50:55.942Z"
     }
   },
   "yayinlanan": {
-    "openai-ucuncu-ceyrekte-10-milyar-dolar-geliri-asti": {
-      "zaman": "2026-11-12T05:50:52.587Z",
-      "basliklarSifreli": "v1.s95H3QB+A43jOddE.eq4C+9Ndp5bJXTD6L9fVXPAq/j6uSwQPKJ5JGiC+cMVqimeec/teK8NRGiep137eptOOvMVMwJvvjtdXNnCqN5JmO0Jj1Fg="
-    },
     "avustralya-hukumeti-is-yerlerinde-yapay-zeka-kullanimi-icin-rehber-yayimladi": {
       "zaman": "2026-11-12T07:50:52.101Z",
       "basliklarSifreli": "v1.H9K2HQZnZzjhYJ+A.QMWcJ8d8uDmUGvZyX0qm/z/p8SL3Dqk3h7DxjniGJYVrgWfZa9zVpPSXBDr1ztpn8xt2i4zfzhxbrMRsEO9wXx1wAEe41LsyToH8bvziG9UtL2L3cBe3t9/51xaObPegs0R36hRBU5AD8GXQgkUcmfyhV4V/NDw="
@@ -32267,6 +32138,10 @@
     "alibaba-qwen-modeli-guvenlik-testinde-izinsiz-dosya-yuklemeye-calisti": {
       "zaman": "2026-11-15T03:52:57.271Z",
       "basliklarSifreli": "v1.X4hO0oxaprIB+W6A.KRJW3Cbwhl2neLsfbrSjbNQQ2I85KoqSKkfWO3JCpMoaNYNzSxCdozICNEDtBYPMyCLrmsE5SpGexWlrS+7M7sfkbK6T1CGRwgU23uYcj4HvgHy8V/FhJcwUrqUN08ND9pg="
+    },
+    "uc-berkeley-arastirmacilari-ani-kalp-durmasini-onceden-tahmin-eden-yapay-zeka-mo": {
+      "zaman": "2026-11-15T05:50:55.942Z",
+      "basliklarSifreli": "v1.3psVTx68U849Px4/.lrL+K/BeFCje3N9JpwEPNlJnhxwPSWol1Ckfbl7deFFLX1PdnxueaNmV3Wc5NrOcK1Ttbl+psrqDEX/fMAveIYJrKUDfwU6R2dCtlBDgRrJ3iWV2FZM="
     }
   },
   "havuz": [],
@@ -42080,6 +41955,8 @@
     "k2e841d:e5e04ea1739747e0": "2026-11-14T22:00:00.000Z",
     "k2e841d:ac10b5f991e27361": "2026-11-14T21:45:00.000Z",
     "kd4ca61:f7a811c4b592bf3b": "2026-11-14T22:54:47.000Z",
-    "kd4ca61:bdebfbee559c7257": "2026-11-14T23:10:14.000Z"
+    "kd4ca61:bdebfbee559c7257": "2026-11-14T23:10:14.000Z",
+    "k1efb7c:06bfb4e6610bfc21": "2026-11-15T01:05:10.000Z",
+    "kfdedb4:7961f2a92179bc24": "2026-11-15T05:45:00.000Z"
   }
 }
