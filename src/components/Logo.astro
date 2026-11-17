@@ -4,10 +4,11 @@ import { logo } from '../lib/kimlik';
 
 interface Props {
   class?: string;
+  renk?: string;
 }
-const { class: sinif } = Astro.props;
+const { class: sinif, renk } = Astro.props;
 const L = 100;
-const l = logo(0, L, L);
+const l = renk ? logo(0, L, L, renk) : logo(0, L, L);
 const G = Math.ceil(l.genislik) + 4;
 ---
 

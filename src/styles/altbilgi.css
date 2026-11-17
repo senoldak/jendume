@@ -1,0 +1,402 @@
+/* Altbilgi ve dar ekran menüsü (17.11.2026). Koyu Esperanto yeşili zemin, altta Henry Winkles'ın Neuwerk Adası
+   feneri çelik baskısı (yaklaşık 1840, kamu malı), gökyüzü çıkarılmış ve ters çevrilmiş: çizgiler krem, zemin yeşil.
+   Maske; renk CSS'ten gelir. Eski .site-footer kuralları global.css'te. */
+
+.jd-fot {
+  --fot-bg: #0c3f27;
+  --fot-yazi: #f4f5f2;
+  --fot-soluk: rgb(244 245 242 / 0.72);
+  --fot-cizgi: rgb(244 245 242 / 0.22);
+  --fot-kara: #f4f5f2;
+  --fot-vurgu: #7fdcaa;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--fot-bg);
+  color: var(--fot-soluk);
+  border-top: 5px solid var(--yesil);
+  padding: 80px 0 0;
+  font-family: var(--font-sign);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.jd-fot .fot-korn {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.jd-fot a {
+  color: var(--fot-yazi);
+  text-decoration: none;
+}
+
+.jd-fot a:hover {
+  color: var(--fot-vurgu);
+}
+
+.jd-fot .link-other {
+  display: block;
+  font-size: 0.82em;
+  font-weight: 400;
+  color: var(--fot-soluk);
+}
+
+.jd-fot .fot-bas {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: end;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--fot-cizgi);
+}
+
+.jd-fot .fot-logo-svg {
+  display: block;
+  height: clamp(56px, 7vw, 92px);
+  width: auto;
+}
+
+.jd-fot .fot-slogan {
+  display: grid;
+  gap: 4px;
+  margin: 20px 0 0;
+  font-size: clamp(1.4rem, 2.4vw, 2.1rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--fot-yazi);
+}
+
+.jd-fot .fot-slogan-diger {
+  font-weight: 400;
+  color: var(--fot-soluk);
+}
+
+.jd-fot .fot-kunye {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+
+.jd-fot .fot-kunye dt {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fot-soluk);
+}
+
+.jd-fot .fot-kunye dd {
+  margin: 6px 0 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.jd-fot .fot-diller {
+  display: flex;
+  gap: 20px;
+}
+
+.jd-fot .fot-sosyal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.jd-fot .fot-sosyal a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--fot-cizgi);
+  border-radius: 50%;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.jd-fot .fot-sosyal a:hover {
+  background: var(--fot-yazi);
+  border-color: var(--fot-yazi);
+  color: var(--fot-bg);
+}
+
+.jd-fot .fot-lenkler {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  padding: 48px 0;
+}
+
+.jd-fot .fot-lenkler h2 {
+  position: relative;
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fot-yazi);
+}
+
+.jd-fot .fot-lenkler h2 span {
+  display: block;
+  font-weight: 400;
+  color: var(--fot-soluk);
+}
+
+.jd-fot .fot-lenkler h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--fot-vurgu);
+}
+
+.jd-fot .fot-lenkler ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jd-fot .fot-lenkler li a {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.jd-fot .fot-alt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 18px 0;
+  border-top: 1px solid var(--fot-cizgi);
+  font-size: 0.875rem;
+}
+
+.jd-fot .fot-alt a {
+  text-decoration: underline;
+  text-decoration-color: var(--fot-cizgi);
+  text-underline-offset: 0.2em;
+}
+
+.jd-fot .fot-alt nav {
+  display: flex;
+}
+
+.jd-fot .fot-alt nav a {
+  text-decoration: none;
+}
+
+.jd-fot .fot-alt nav a + a::before {
+  content: '|';
+  margin: 0 0.9em;
+  color: var(--fot-cizgi);
+}
+
+.jd-fot .fot-landskap {
+  position: relative;
+  z-index: 1;
+  margin-top: 24px;
+  aspect-ratio: 2400 / 1219;
+  background: var(--fot-kara);
+  -webkit-mask: url('/gravur/neuwerk-v1.png') center bottom / 100% 100% no-repeat;
+  mask: url('/gravur/neuwerk-v1.png') center bottom / 100% 100% no-repeat;
+}
+
+.jd-fot .fot-kaynak {
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 0.75rem;
+  text-align: right;
+  color: var(--fot-soluk);
+}
+
+/* ——— Bölüm şeridi: masaüstünde tek satır; tablet ve telefonda (≤ 1080 px) hamburger ——— */
+.nav-meny {
+  display: none;
+}
+
+.nav-meny summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-family: var(--font-sign);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.nav-meny summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-meny .ikon-kapat,
+.nav-meny[open] .ikon-ac {
+  display: none;
+}
+
+.nav-meny[open] .ikon-kapat {
+  display: block;
+}
+
+.nav-meny-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 30;
+  max-height: calc(100dvh - 120px);
+  overflow-y: auto;
+  background: var(--paper);
+  border-top: 1px solid var(--hair);
+  border-bottom: 3px solid var(--yesil);
+  box-shadow: 0 16px 28px rgb(0 0 0 / 0.1);
+}
+
+.overhead .nav-meny-sutunlar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.nav-meny-sutunlar h2 {
+  position: relative;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  font-family: var(--font-sign);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nav-meny-sutunlar h2 span {
+  display: block;
+  font-weight: 400;
+}
+
+.nav-meny-sutunlar h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--yesil);
+}
+
+.nav-meny-sutunlar ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-meny-sutunlar a {
+  display: block;
+  padding: 6px 0;
+  font-family: var(--font-sign);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-meny-sutunlar a:hover,
+.nav-meny-sutunlar a[aria-current='page'] {
+  color: var(--yesil-yazi);
+}
+
+.nav-meny-sutunlar .link-other {
+  color: var(--muted);
+}
+
+@media (max-width: 1080px) {
+  .overhead {
+    position: relative;
+  }
+
+  .gates {
+    display: none;
+  }
+
+  .nav-meny {
+    display: block;
+  }
+
+  .jd-fot .fot-lenkler {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .jd-fot {
+    padding-top: 56px;
+  }
+
+  .jd-fot .fot-bas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  .jd-fot .fot-lenkler {
+    gap: 32px 24px;
+    padding: 32px 0;
+  }
+
+  .jd-fot .fot-alt {
+    flex-direction: column;
+  }
+
+  .jd-fot .fot-landskap {
+    -webkit-mask-image: url('/gravur/neuwerk-v1-1200.png');
+    mask-image: url('/gravur/neuwerk-v1-1200.png');
+  }
+
+  .jd-fot .fot-kaynak {
+    text-align: left;
+  }
+
+  .overhead .nav-meny-sutunlar {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .nav-meny-metin {
+    display: none;
+  }
+}
+
+@media print {
+  .jd-fot {
+    display: none !important;
+  }
+}
