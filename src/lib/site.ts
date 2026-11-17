@@ -171,16 +171,16 @@ export const SITE = {
     // yazar sayfasının meta açıklaması olarak da kullanılır.
     bio: {
       tr: [
-        "Şenol Dak gazeteci ve yayıncıdır. kifobu, finfolis, jenDume ve tidsrøst haber sitelerini kurdu; tidsrøst'ün yayın yönetmenidir. Gazetecilik çalışmaları 2022'de kifobu'nun ilk bülteniyle başladı.",
+        "Şenol Dak gazeteci ve yayıncıdır. kifobu, finfolis, jenDume ve tidsrøst haber sitelerini kurdu ve dördünün de yayın yönetmenidir. Gazetecilik çalışmaları 2022'de kifobu'nun ilk bülteniyle başladı.",
         'Girişimcilik ve kitle fonlaması, finans piyasaları ve ekonomi, yapay zekâ, bilim ve teknoloji ile Norveç ve dünyadan güncel konular üzerine yazıyor. Çalışmaları haberlerden, analizlerden ve bir gelişmenin arka planını ve sonuçlarını anlatan açıklayıcı yazılardan oluşuyor. Kaynağa dayalı araştırmaya, veri analizine ve karmaşık konuları anlaşılır kılmaya önem veriyor.',
         'Gazeteciliğin yanında Türkçe ve yapay zekâ öğretmenliği yapıyor, yazılım sektöründe üretken yapay zekâ sistemleri üzerinde çalışıyor. Bu teknik birikimi veri araştırmasında ve dijital gazetecilikte de kullanıyor.',
-        "Üretken yapay zekânın gazetecilikte nasıl kullanılabileceği ve teknolojinin haber araştırmasını, üretimini ve yayıncılığı nasıl değiştirdiği özellikle ilgisini çekiyor. tidsrøst'te yapay zekâyla otomatik bir haber üretimi kurdu. Hangi tür haberlerin otomatik yayımlanacağına ve yayından önce kaynakların ve olguların nasıl denetleneceğine o karar veriyor.",
+        "Üretken yapay zekânın gazetecilikte nasıl kullanılabileceği ve teknolojinin haber araştırmasını, üretimini ve yayıncılığı nasıl değiştirdiği özellikle ilgisini çekiyor. Dört sitede de yapay zekâyla çalışan bir haber üretimi kurdu; hangi haberlerin otomatik yayımlanacağına ve yayından önce hangi denetimlerden geçeceğine kendisi karar veriyor.",
       ],
       en: [
-        'Şenol Dak is a journalist and publisher. He founded four news sites, kifobu, finfolis, jenDume and tidsrøst, and is the editor-in-chief of tidsrøst. His journalism began in 2022, when he sent out the first kifobu newsletter.',
+        'Şenol Dak is a journalist and publisher. He founded four news sites, kifobu, finfolis, jenDume and tidsrøst, and is editor-in-chief of all four. His journalism began in 2022, when he sent out the first kifobu newsletter.',
         'He writes about startups and crowdfunding, financial markets and the economy, artificial intelligence, science and technology, and current affairs from Norway and the rest of the world. His work consists of news, analysis and explanatory pieces that set out the background to a development and what it leads to. He puts weight on source-based research and data analysis, and on making complex subjects easy to follow.',
         'Alongside journalism he teaches Turkish and artificial intelligence, and works with generative AI systems in the software industry. He also uses that technical background in data research and digital journalism.',
-        'He is particularly interested in how generative AI can be used in journalism, and in how the technology is changing news research, production and publishing. At tidsrøst he has built an automated news production system with AI. He decides which kinds of stories can be published automatically, and which source and fact checks must happen before publication.',
+        'He is particularly interested in how generative AI can be used in journalism, and in how the technology is changing news research, production and publishing. He has built AI-driven news production on all four sites, and he decides which stories are published automatically and which checks they must pass before publication.',
       ],
     } satisfies Record<Locale, string[]>,
   },
