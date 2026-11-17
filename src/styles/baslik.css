@@ -1,0 +1,230 @@
+/* Başlık (18.11.2026): altbilginin dili. Büyük plaka logosu + iki dilli slogan; sağda dil levhası ve yuvarlak arama;
+   arkada kapaklardaki imza: sağ üst köşeden taşan Esperanto yeşili daire (soluk). Altta iki dilli tek satır menü.
+   Tablet ve telefonda (≤ 1080 px) menü hamburgerde. */
+
+.jdb {
+  position: relative;
+  border-top: 5px solid var(--yesil);
+  border-bottom: 1px solid var(--hair);
+}
+
+.jdb-zemin {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.jdb-daire {
+  position: absolute;
+  top: clamp(-260px, -16vw, -120px);
+  right: clamp(-200px, -9vw, -80px);
+  width: clamp(240px, 28vw, 440px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--yesil);
+  opacity: 0.1;
+}
+
+.jdb-bas {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 28px 22px;
+}
+
+.jdb-marka {
+  display: grid;
+  gap: 12px;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.jdb .jdb-logo {
+  display: block;
+  height: clamp(44px, 4.6vw, 64px);
+  width: auto;
+}
+
+.jdb-motto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  font-family: var(--font-sign);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--yesil-yazi);
+}
+
+.jdb-motto-diger {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.jdb-motto-diger::before {
+  content: '·';
+  margin-right: 10px;
+}
+
+.jdb-sag {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.jdb .lang-switch {
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.jdb .lang-plate {
+  padding: 8px 14px;
+}
+
+.jdb .lang-plate.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.jdb-ara {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--hair);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.jdb-ara:hover,
+.jdb-ara[aria-current='page'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+/* Menü satırı: iki dilli bölüm adları, kenardan kenara üst çizgi */
+.jdb-menu {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--ground);
+  box-shadow: 0 0 0 100vmax var(--ground), 0 -1px 0 100vmax var(--hair);
+  clip-path: inset(-1px -100vmax 0 -100vmax);
+}
+
+.jdb-menu-sol,
+.jdb-menu-sag {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(18px, 2vw, 32px);
+}
+
+.jdb-menu a {
+  display: grid;
+  align-content: center;
+  padding: 11px 0 10px;
+  font-family: var(--font-sign);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-weight: 600;
+  line-height: 1.15;
+  white-space: nowrap;
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 transparent;
+  transition: box-shadow 0.15s;
+}
+
+.jdb-menu a .link-other {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.jdb-menu a:hover {
+  box-shadow: inset 0 -3px 0 var(--hair);
+}
+
+.jdb-menu a[aria-current='page'] {
+  box-shadow: inset 0 -3px 0 var(--yesil);
+}
+
+.jdb-menu-sag {
+  padding-left: 24px;
+  border-left: 1px solid var(--hair);
+}
+
+/* Hamburger (≤ 1080 px): panel ilk satırın altında açılır */
+.jdb .nav-meny summary {
+  min-height: 42px;
+}
+
+@media (max-width: 1080px) {
+  .jdb-menu {
+    display: none;
+  }
+
+  .jdb-bas {
+    align-items: center;
+  }
+
+  .jdb-sag {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .jdb-daire {
+    width: 200px;
+    top: -110px;
+    right: -90px;
+  }
+
+  .jdb-bas {
+    padding-block: 18px 16px;
+    gap: 12px;
+  }
+
+  .jdb-marka {
+    gap: 8px;
+  }
+
+  .jdb .jdb-logo {
+    height: 38px;
+  }
+
+  .jdb-motto {
+    font-size: 0.875rem;
+  }
+
+  .jdb-motto-diger {
+    display: none;
+  }
+
+  .jdb .lang-plate {
+    padding: 6px 10px;
+  }
+
+  .jdb .lang-name {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .jdb .jdb-logo {
+    height: 32px;
+  }
+
+  .jdb-sag {
+    gap: 8px;
+  }
+}

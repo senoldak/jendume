@@ -1,6 +1,5 @@
 ---
 import { jsonLdMetni } from '../lib/json-ld.mjs';
-import Arrow from '../components/Arrow.astro';
 import Logo from '../components/Logo.astro';
 import { SITE, CATEGORIES, LOCALES, editorialUrl, otherLocale, type Locale } from '../lib/site';
 import { OG_LOCALE, siteGraph } from '../lib/seo';
@@ -9,6 +8,7 @@ import { analizMi } from '../lib/yazi-turu.mjs';
 import { duzeltmePolitikasiYolu, duzeltmelerYolu, sikayetYolu, standartlarRaporuYolu, gizlilikYolu, hakkimizdaYolu, karsiYol, konuDiziniYolu, seffaflikYolu, sozlukYolu, aramaYolu, analizYolu, yapayZekaYolu, yasalYolu, yayinOdasiYolu } from '../lib/yollar.mjs';
 import '../styles/global.css';
 import '../styles/altbilgi.css';
+import '../styles/baslik.css';
 
 type Hreflang = Locale | 'x-default';
 
@@ -190,18 +190,78 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
     <script src="/meny.js" defer></script>
     <a class="skip-link" href="#main-content">{ui.skipToContent}</a>
 
-    <header class="overhead">
-      <div class="container overhead-inner">
-        <a href={homeHref} class="wordmark">
+    <header class="overhead jdb">
+      <span class="jdb-zemin" aria-hidden="true"><span class="jdb-daire"></span></span>
+      <div class="container jdb-bas">
+        <a href={homeHref} class="jdb-marka">
           <span class="gorunmez">{SITE.displayName}</span>
-          <Logo class="wordmark-logo" />
-          <span class="wordmark-motto">
+          <Logo class="jdb-logo" />
+          <span class="jdb-motto">
             <span>{SITE.tagline[lang]}</span>
-            <span class="wordmark-motto-other" lang={other}>{SITE.tagline[other]}</span>
+            <span class="jdb-motto-diger" lang={other}>{SITE.tagline[other]}</span>
           </span>
         </a>
-
-        <nav class="overhead-links" aria-label="Primary">
+        <div class="jdb-sag">
+          <nav class="lang-switch" aria-label={ui.availableLangs}>
+            {
+              LOCALES.map((loc) => (
+                <a
+                  href={resolveLangUrl(loc)}
+                  lang={loc}
+                  hreflang={loc}
+                  class:list={['lang-plate', { 'is-active': loc === lang }]}
+                  aria-current={loc === lang ? 'true' : undefined}
+                >
+                  <span class="lang-code">{loc.toUpperCase()}</span>
+                  <span class="lang-name">{SITE.ui[loc].langName}</span>
+                </a>
+              ))
+            }
+          </nav>
+          <a href={searchHref} class="jdb-ara" aria-label={ui.search} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2" /><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+          </a>
+          {/* Tablet ve telefon (≤ 1080 px): bölüm şeridi yerine hamburger menü; masaüstünde yok. */}
+          <details class="nav-meny">
+            <summary aria-label={fotMetin[lang].menu}>
+              <svg class="ikon-ac" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+              <svg class="ikon-kapat" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+              <span class="nav-meny-metin">{fotMetin[lang].menu}</span>
+            </summary>
+            <div class="nav-meny-panel">
+              <div class="container nav-meny-sutunlar">
+                <section aria-labelledby="menu-bolum">
+                  <h2 id="menu-bolum">{fotMetin[lang].bolumler}<span lang={other}>{fotMetin[other].bolumler}</span></h2>
+                  <ul>
+                    {CATEGORIES.map((cat) => <li><a href={getCategoryUrl(lang, cat.slug)} aria-current={activeCategory === cat.slug ? 'page' : undefined}>{cat.shortTitle[lang]}<span class="link-other" lang={other}>{cat.shortTitle[other]}</span></a></li>)}
+                  </ul>
+                </section>
+                <section aria-labelledby="menu-kesfet">
+                  <h2 id="menu-kesfet">{fotMetin[lang].kesfet}<span lang={other}>{fotMetin[other].kesfet}</span></h2>
+                  <ul>
+                    <li><a href={homeHref}>{ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span></a></li>
+                    <li><a href={topicsHref}>{ui.topics}<span class="link-other" lang={other}>{SITE.ui[other].topics}</span></a></li>
+                    <li><a href={glossaryHref}>{ui.glossary}<span class="link-other" lang={other}>{SITE.ui[other].glossary}</span></a></li>
+                    <li><a href={aboutHref}>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+      <nav class="container jdb-menu" aria-label={ui.allCategories}>
+        <div class="jdb-menu-sol">
+          {
+            CATEGORIES.map((cat) => (
+              <a href={getCategoryUrl(lang, cat.slug)} aria-current={activeCategory === cat.slug ? 'page' : undefined}>
+                {cat.shortTitle[lang]}
+                <span class="link-other" lang={other}>{cat.shortTitle[other]}</span>
+              </a>
+            ))
+          }
+        </div>
+        <div class="jdb-menu-sag">
           {
             analizVar && (
               <a href={analizYolu(lang)} aria-current={path.startsWith(analizYolu(lang)) ? 'page' : undefined}>
@@ -209,85 +269,12 @@ const hreflangs = (Object.entries(hreflangMap) as [Hreflang, string][]).map(([ke
               </a>
             )
           }
-          <a href={searchHref} aria-current={path.startsWith(searchHref) ? 'page' : undefined}>
-            {ui.search}<span class="link-other" lang={other}>{SITE.ui[other].search}</span>
-          </a>
           <a href={contactHref}>
             {ui.contact}<span class="link-other" lang={other}>{SITE.ui[other].contact}</span>
           </a>
-        </nav>
-
-        <nav class="lang-switch" aria-label={ui.availableLangs}>
-          {
-            LOCALES.map((loc) => (
-              <a
-                href={resolveLangUrl(loc)}
-                lang={loc}
-                hreflang={loc}
-                class:list={['lang-plate', { 'is-active': loc === lang }]}
-                aria-current={loc === lang ? 'true' : undefined}
-              >
-                <span class="lang-code">{loc.toUpperCase()}</span>
-                <span class="lang-name">{SITE.ui[loc].langName}</span>
-              </a>
-            ))
-          }
-        </nav>
-        {/* Tablet ve telefon (≤ 1080 px): bölüm şeridi yerine hamburger menü; masaüstünde yok. */}
-        <details class="nav-meny">
-          <summary aria-label={fotMetin[lang].menu}>
-            <svg class="ikon-ac" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
-            <svg class="ikon-kapat" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
-            <span class="nav-meny-metin">{fotMetin[lang].menu}</span>
-          </summary>
-          <div class="nav-meny-panel">
-            <div class="container nav-meny-sutunlar">
-              <section aria-labelledby="menu-bolum">
-                <h2 id="menu-bolum">{fotMetin[lang].bolumler}<span lang={other}>{fotMetin[other].bolumler}</span></h2>
-                <ul>
-                  {CATEGORIES.map((cat) => <li><a href={getCategoryUrl(lang, cat.slug)} aria-current={activeCategory === cat.slug ? 'page' : undefined}>{cat.shortTitle[lang]}<span class="link-other" lang={other}>{cat.shortTitle[other]}</span></a></li>)}
-                </ul>
-              </section>
-              <section aria-labelledby="menu-kesfet">
-                <h2 id="menu-kesfet">{fotMetin[lang].kesfet}<span lang={other}>{fotMetin[other].kesfet}</span></h2>
-                <ul>
-                  <li><a href={homeHref}>{ui.home}<span class="link-other" lang={other}>{SITE.ui[other].home}</span></a></li>
-                  <li><a href={topicsHref}>{ui.topics}<span class="link-other" lang={other}>{SITE.ui[other].topics}</span></a></li>
-                  <li><a href={glossaryHref}>{ui.glossary}<span class="link-other" lang={other}>{SITE.ui[other].glossary}</span></a></li>
-                  <li><a href={aboutHref}>{ui.about}<span class="link-other" lang={other}>{SITE.ui[other].about}</span></a></li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </details>
-      </div>
+        </div>
+      </nav>
     </header>
-
-    <nav class="gates" aria-label={ui.allCategories}>
-      <ul class="container gates-row">
-        {
-          CATEGORIES.map((cat, i) => {
-            const active = activeCategory === cat.slug;
-            return (
-              <li>
-                <a
-                  href={getCategoryUrl(lang, cat.slug)}
-                  class:list={['gate', { 'is-active': active }]}
-                  aria-current={active ? 'page' : undefined}
-                >
-                  <span class="code" aria-hidden="true">{i + 1}</span>
-                  <span class="gate-names">
-                    <span class="gate-primary">{cat.shortTitle[lang]}</span>
-                    <span class="gate-secondary" lang={other}>{cat.shortTitle[other]}</span>
-                  </span>
-                  <Arrow dir={active ? 'down' : 'right'} class="gate-arrow" />
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </nav>
 
     <main id="main-content" class="main-content">
       <div class="container">
