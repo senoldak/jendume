@@ -22,3 +22,9 @@ test('satirParcalari: parça bağlanır; parça yoksa tek düz metin', () => {
   ]);
   assert.deepEqual(satirParcalari('düz', undefined), [{ metin: 'düz' }]);
 });
+
+test('kunyeParcalari: jenDume yazımı da jendume.com adresine bağlanır', () => {
+  const p = kunyeParcalari('kifobu, finfolis, jenDume ve tidsrøst');
+  assert.equal(p.find((x) => x.metin === 'jenDume')?.adres, 'https://jendume.com/');
+  assert.equal(p.map((x) => x.metin).join(''), 'kifobu, finfolis, jenDume ve tidsrøst');
+});

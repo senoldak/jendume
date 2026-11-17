@@ -1,31 +1,112 @@
 ---
 import Base from '../../layouts/Base.astro';
-import StoryCard from '../../components/StoryCard.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import { SITE, otherLocale, type Locale } from '../../lib/site';
+import { SITE, otherLocale, formatDate, type Locale } from '../../lib/site';
 import { abs, authorId, authorNode, type Crumb } from '../../lib/seo';
 import { getPostUrl, getPublishedPosts } from '../../lib/news';
 import { analizMi, kisiYazariMi } from '../../lib/yazi-turu.mjs';
 import { yazarYolu } from '../../lib/yollar.mjs';
 import { kunyeParcalari } from '../../lib/kunye.mjs';
+import { aarsRutenett } from '../../lib/aktivitet.mjs';
+import yazarAktivite from '../../data/yazar-aktivite.json';
 
-// Yazar sayfası; yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
+// Yazar sayfası (17.11.2026, "portre bandı"; tidsrøst'teki sayfayla aynı yapı): fotoğraflı künye bandı, yıl düğmeli
+// dört siteli gün ızgarası, ay ay iki sütunlu yazı dizini. Yollar: src/pages/tr/yazar/senol-dak.astro, src/pages/en/author/senol-dak.astro.
 // Analiz ve açıklayıcı yazıların görünen yazarı tek sabittir (SITE.author); künye sahibinin onayladığı metindir (SITE.author.bio).
 interface Props {
   lang: Locale;
 }
 
 const { lang } = Astro.props;
+const tr = lang === 'tr';
 const ui = SITE.ui[lang];
-const other = otherLocale(lang);
 const a = SITE.author;
 const path = yazarYolu(lang);
 const url = abs(path);
 const title = `${a.name} — ${a.title[lang]}`;
 const description = a.bio[lang][0];
+const foto = '/yazar-foto/senol-dak.jpg';
+const T = {
+  gridTitle: tr ? 'Dört sitede yayımlanan yazılar' : 'Published on four sites',
+  chooseYear: tr ? 'Yıl seçin' : 'Choose year',
+  gridLabel: tr ? 'tidsrøst, jenDume, finfolis ve kifobu yazıları, Ağustos 2022’den bugüne.' : 'Pieces on tidsrøst, jenDume, finfolis and kifobu since August 2022.',
+  mail: tr ? "Şenol'a e-posta gönder" : 'Email Şenol',
+  listLabel: tr ? `${a.name} yazıları` : `Pieces by ${a.name}`,
+  explainer: tr ? 'Açıklayıcı' : 'Explainer',
+  analysis: tr ? 'Analiz' : 'Analysis',
+};
 
+// Bu sitenin imzalı yazıları, sayfanın dilinde (dizin) ve İngilizce dosyalardan (ızgara; her yazı bir kez).
 const posts = (await getPublishedPosts(lang)).filter((p) => kisiYazariMi(p.data));
-const shown = posts.slice(0, 30);
+const postsEn = (await getPublishedPosts('en')).filter((p) => kisiYazariMi(p.data));
+const turAdi = (p: (typeof posts)[number]) => (analizMi(p.data) ? T.analysis : T.explainer);
+
+const tag = SITE.localeTag[lang];
+const maanedFmt = new Intl.DateTimeFormat(tag, { month: 'long', year: 'numeric', timeZone: 'Europe/Istanbul' });
+const mndKort = new Intl.DateTimeFormat(tag, { month: 'short', timeZone: 'UTC' });
+const dagLang = new Intl.DateTimeFormat(tag, { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' });
+const stor = (s: string) => s.charAt(0).toLocaleUpperCase(tag) + s.slice(1);
+const utc = (key: string) => new Date(`${key}T12:00:00Z`);
+
+const perMaaned: [string, typeof posts][] = [];
+for (const p of posts) {
+  const k = stor(maanedFmt.format(p.data.date));
+  const siste = perMaaned.at(-1);
+  if (siste && siste[0] === k) siste[1].push(p);
+  else perMaaned.push([k, [p]]);
+}
+
+// Dört sitenin imzalı yazıları. Her site kendi renginde; kare dörde bölünür.
+const SIDER = [
+  { id: 'tidsrost', navn: 'tidsrøst' },
+  { id: 'jendume', navn: 'jenDume' },
+  { id: 'finfolis', navn: 'finfolis' },
+  { id: 'kifobu', navn: 'kifobu' },
+];
+// Bu sitenin yazıları içerikten; diğer üç site derlemede çekilen listeden (scripts/yazar-aktivite.mjs, prebuild).
+const egne = postsEn.map((p) => ({ site: 'jendume', date: p.data.date.toISOString() }));
+const andre = Object.entries((yazarAktivite as { sider: Record<string, string[]> }).sider ?? {})
+  .filter(([site]) => site !== 'jendume')
+  .flatMap(([site, datoer]) => datoer.map((date) => ({ site, date })))
+  .filter((x) => new Date(x.date) <= new Date());
+const poster = [...egne, ...andre];
+// 10.08.2022 (ilk kifobu bülteni) – 13.10.2026: gün gün kayıt yok. Sahibinin kendi anlatımı (17.11.2026): bu dönemde
+// kifobu, finfolis ve jenDume'de her gün yazı. Bu günler aynı kutularla, açık tonda gösterilir; sahibinin kararıyla sayfada not yok.
+// Kayıtlı günler (14.10.2026'dan beri) tam renkte.
+const EGEN = { fra: '2022-08-10', til: '2026-10-13', sider: ['jendume', 'finfolis', 'kifobu'] };
+const aarRader = aarsRutenett(poster, EGEN);
+// Kendi anlatımı günlerinde her gün aynı üç site dolu; yalnız parçaların yeri tarihe bağlı karışır (dama deseni olmasın).
+// Hangi sitenin dolu olduğu değişmez; derleme her seferinde aynı sonucu verir.
+function blandet(key: string): (string | null)[] {
+  let t = 2166136261;
+  for (const ch of key) t = Math.imul(t ^ ch.charCodeAt(0), 16777619);
+  const ruter: (string | null)[] = [...EGEN.sider, null];
+  for (let i = ruter.length - 1; i > 0; i--) {
+    t = Math.imul(t ^ (t >>> 15), 2246822507) >>> 0;
+    const j = t % (i + 1);
+    [ruter[i], ruter[j]] = [ruter[j], ruter[i]];
+  }
+  return ruter;
+}
+// Yıl iki yarıya bölünür (ocak–haziran, temmuz–aralık): geniş ekranda yan yana tek satır, telefonda alt alta.
+type Rad = ReturnType<typeof aarsRutenett>[number];
+function halvdeler(r: Rad) {
+  const i = r.uker.findIndex((u) => (u.find(Boolean)?.key.slice(5, 7) ?? '00') >= '07');
+  const kutt = i <= 0 ? (i === 0 ? 0 : r.uker.length) : i;
+  return [
+    { uker: r.uker.slice(0, kutt), maaneder: r.maaneder.filter((m) => m.kol < kutt) },
+    { uker: r.uker.slice(kutt), maaneder: r.maaneder.filter((m) => m.kol >= kutt).map((m) => ({ ...m, kol: m.kol - kutt })) },
+  ].filter((h) => h.uker.length > 0);
+}
+const mndNavn = (mnd: string) => stor(mndKort.format(utc(`${mnd}-15`))).replace('.', '');
+// Ay etiketi: her hafta sütununa bir hücre, ayın ilk haftasında ad (satır içi grid-column yok, CSP).
+const mndVed = (h: { maaneder: { kol: number; mnd: string }[] }, kol: number) => {
+  const m = h.maaneder.find((x) => x.kol === kol);
+  return m ? mndNavn(m.mnd) : '';
+};
+const cellTittel = (c: { key: string; siter: string[] }) =>
+  `${stor(dagLang.format(utc(c.key)))} ${c.key.slice(0, 4)}${c.siter.length ? `: ${SIDER.filter((x) => c.siter.includes(x.id)).map((x) => x.navn).join(', ')}` : ''}`;
+
 const crumbs: Crumb[] = [
   { name: SITE.displayName, path: `/${lang}/` },
   { name: a.name, path },
@@ -40,7 +121,7 @@ const schema = [
     description,
     inLanguage: lang,
     isPartOf: { '@id': abs('/#website') },
-    mainEntity: { ...authorNode(lang), description, email: a.email, image: abs('/yazar-foto/senol-dak.jpg') },
+    mainEntity: { ...authorNode(lang), description, email: a.email, image: abs(foto) },
     hasPart: posts.slice(0, 50).map((p) => ({
       '@type': analizMi(p.data) ? 'AnalysisNewsArticle' : 'NewsArticle',
       url: abs(getPostUrl(lang, p.id)),
@@ -64,16 +145,536 @@ const schema = [
   schema={schema}
 >
   <Breadcrumb lang={lang} items={crumbs} />
-  <section class="author-card" itemscope itemtype="https://schema.org/Person" itemid={authorId(lang)}>
-    <img class="yazar-foto" src="/yazar-foto/senol-dak.jpg" width="96" height="96" alt="Şenol Dak" itemprop="image" />
-    <h1 itemprop="name">{a.name}</h1>
-    <p class="author-title" itemprop="jobTitle">{a.title[lang]}</p>
-    <div itemprop="description">{a.bio[lang].map((p) => <p>{kunyeParcalari(p).map((x) => (x.adres ? <a href={x.adres}>{x.metin}</a> : x.metin))}</p>)}</div>
-    <p>{ui.authorContact}: <a href={`mailto:${a.email}`} itemprop="email">{a.email}</a></p>
+
+  <section class="fp-band" itemscope itemtype="https://schema.org/Person" itemid={authorId(lang)} aria-labelledby="fp-navn">
+    <div class="fp-in">
+      <img class="fp-foto" src={foto} width="480" height="480" alt={a.name} itemprop="image" />
+      <div class="fp-tekst">
+        <h1 class="fp-navn" id="fp-navn" itemprop="name">{a.name}</h1>
+        <p class="fp-rolle">{a.role[lang]}<meta itemprop="jobTitle" content={a.title[lang]} /></p>
+        <div class="fp-bio" itemprop="description">
+          {a.bio[lang].map((p, i) => (
+            <p class={i === 0 ? 'fp-ingress' : undefined}>{kunyeParcalari(p).map((x) => (x.adres ? <a href={x.adres}>{x.metin}</a> : x.metin))}</p>
+          ))}
+        </div>
+        <a class="fp-epost" href={`mailto:${a.email}`} itemprop="email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.61 9.17a.25.25 0 0 1 .39.21v9.37a.25.25 0 0 1-.25.25H3.25a.25.25 0 0 1-.25-.25V9.38a.25.25 0 0 1 .39-.21l8.47 5.49a.25.25 0 0 0 .28 0l8.47-5.49Z" />
+            <path d="M20.75 5a.25.25 0 0 1 .25.25v.78a.25.25 0 0 1-.11.21l-8.75 5.67a.25.25 0 0 1-.28 0L3.11 6.24A.25.25 0 0 1 3 6.03v-.78A.25.25 0 0 1 3.25 5h17.5Z" />
+          </svg>
+          {T.mail}
+        </a>
+      </div>
+    </div>
   </section>
 
-  <h2 class="term-related-heading">{ui.authorLatest}</h2>
-  <div class="story-grid">
-    {shown.map((post) => <StoryCard post={post} lang={lang} />)}
-  </div>
+  {
+    aarRader.length > 0 && (
+      <section class="fp-akt" aria-labelledby="fp-akt-tittel">
+        <h2 class="fp-band-hode" id="fp-akt-tittel">{T.gridTitle}</h2>
+        {/* Yıl seçimi: düğmeye basınca o yıl açılır, varsayılan en yeni yıl. JS yok; radyo + :has. */}
+        <fieldset class="fp-aar-valg">
+          <legend class="gorunmez">{T.chooseYear}</legend>
+          {[...aarRader].reverse().map((r) => (
+            <label>
+              <input type="radio" name="fp-aar" value={String(r.aar)} checked={r.aar === aarRader[0].aar} />
+              <span>{r.aar}</span>
+            </label>
+          ))}
+        </fieldset>
+        {/* CSP style-src 'self': satır içi stil yok. Yıl satırları düğmelerle aynı sırada; eşleşme nth-of-type ile (CSS'te). */}
+        <div class="fp-aarene" role="img" aria-label={T.gridLabel}>
+          {[...aarRader].reverse().map((r) => (
+            <div class="fp-aar" data-aar={r.aar} aria-hidden="true">
+              <span class="fp-aar-tall">{r.aar}</span>
+              <div class="fp-aar-ramme">
+                {halvdeler(r).map((h) => (
+                  <div class="fp-halv">
+                    <div class="fp-mnd-linje">
+                      {h.uker.map((_, kol) => <span>{mndVed(h, kol)}</span>)}
+                    </div>
+                    <div class="fp-dager">
+                      {h.uker.map((uke) =>
+                        uke.map((c) =>
+                          !c ? (
+                            <span class="d x" />
+                          ) : c.fremtid ? (
+                            <span class="d f" />
+                          ) : c.egen ? (
+                            <span class="d h e">{blandet(c.key).map((id) => <i class={id ? `s-${id}` : undefined} />)}</span>
+                          ) : c.siter.length ? (
+                            <span class="d h" title={cellTittel(c)}>
+                              {SIDER.map((x) => <i class={c.siter.includes(x.id) ? `s-${x.id}` : undefined} />)}
+                            </span>
+                          ) : (
+                            <span class="d" title={cellTittel(c)} />
+                          ),
+                        ),
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <ul class="fp-sider">
+          {SIDER.map((x, i) => (
+            <li>
+              <span class="fp-mini" aria-hidden="true">{SIDER.map((y, j) => <i class={j === i ? `s-${y.id}` : undefined} />)}</span>
+              {x.navn}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="fp-liste" aria-label={T.listLabel}>
+    {
+      perMaaned.map(([mnd, liste]) => (
+        <section class="fp-mnd">
+          <h2 class="fp-band-hode fp-mnd-hode">{mnd}</h2>
+          <div class="fp-grid">
+            {liste.map((p) => (
+              <article class="fp-sak">
+                <h3>
+                  <a href={getPostUrl(lang, p.id)}>{p.data.title}</a>
+                </h3>
+                <p class="fp-sak-desc">{p.data.description}</p>
+                <p class="fp-sak-meta">
+                  <span class="fp-sj">{turAdi(p)}</span>
+                  <time datetime={p.data.date.toISOString()}>{formatDate(p.data.date, lang)}</time>
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </section>
 </Base>
+
+<style>
+  /* Portre bandı: beyaz levha, üstte marka yeşili şerit (Neden önemli? kutusu gibi), köşeler keskin. */
+  .fp-band {
+    margin-top: calc(var(--gutter) * 0.5);
+    background: var(--paper);
+    border: 1px solid var(--hair);
+    border-top: 3px solid var(--yesil);
+  }
+  .fp-in {
+    display: grid;
+    grid-template-columns: minmax(200px, 360px) minmax(0, 1fr);
+    gap: clamp(24px, 4vw, 64px);
+    padding: 0 clamp(20px, 3.5vw, 48px);
+  }
+  /* Fotoğraf kendi kare oranında, kaynağından büyük çizilmez (480 px); bandın yüksekliğine gerilmez. */
+  .fp-foto {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 0;
+    align-self: start;
+    margin: clamp(28px, 4vw, 48px) 0;
+    border: 1px solid var(--hair);
+  }
+  .fp-tekst {
+    align-self: center;
+    padding: clamp(28px, 4vw, 48px) 0;
+  }
+  .fp-navn {
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5.2vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 14px;
+  }
+  .fp-rolle {
+    font-family: var(--font-sign);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--yesil-yazi);
+    margin: 0 0 24px;
+  }
+  .fp-bio p {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin: 0 0 16px;
+    max-width: 62ch;
+  }
+  .fp-bio .fp-ingress {
+    font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .fp-bio a {
+    color: var(--yesil-yazi);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  .fp-epost {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 48px;
+    margin-top: 8px;
+    padding: 0 22px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-sign);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 160ms var(--ease-out);
+  }
+  .fp-epost:hover {
+    background: var(--yesil-yazi);
+    color: var(--paper);
+  }
+
+  /* Bölüm başlıkları: mürekkep alt çizgi. */
+  .fp-band-hode {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--ink);
+  }
+  .fp-mnd-hode {
+    font-size: 1.125rem;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--ink);
+    margin-bottom: 0;
+  }
+
+  /* Yıl yıl gün ızgarası. Site renkleri: tidsrøst sol üst, jenDume sağ üst, finfolis sol alt, kifobu sağ alt. */
+  .fp-akt {
+    --c-tidsrost: #1f5f99;
+    --c-jendume: #00924a;
+    --c-finfolis: #c2502b;
+    --c-kifobu: #e8b40c;
+    --rute: 16px;
+    --rom: 3px;
+    --tom: color-mix(in srgb, var(--ink) 8%, var(--ground));
+    margin-top: clamp(40px, 5vw, 64px);
+  }
+  .fp-aar-valg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 0 24px;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+  }
+  .fp-aar-valg label {
+    position: relative;
+    cursor: pointer;
+  }
+  .fp-aar-valg input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .fp-aar-valg span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px;
+    font-family: var(--font-sign);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    font-variant-numeric: lining-nums tabular-nums;
+    color: var(--ink-2);
+    box-shadow: inset 0 -1px 0 var(--hair);
+    transition: color 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
+  }
+  .fp-aar-valg label:hover span {
+    color: var(--ink);
+    box-shadow: inset 0 -3px 0 var(--hair);
+  }
+  .fp-aar-valg input:checked + span {
+    color: var(--yesil-yazi);
+    box-shadow: inset 0 -3px 0 var(--yesil);
+  }
+  .fp-aar-valg input:focus-visible + span {
+    outline: 3px solid var(--ink);
+    outline-offset: -3px;
+  }
+  /* Yıl seçimi: düğme k seçiliyse k. yıl satırı görünür (en fazla 12 yıl; satır içi stil yok, CSP). */
+  @supports selector(:has(*)) {
+    .fp-aarene .fp-aar {
+      display: none;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(1) input:checked) .fp-aar:nth-of-type(1) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(2) input:checked) .fp-aar:nth-of-type(2) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(3) input:checked) .fp-aar:nth-of-type(3) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(4) input:checked) .fp-aar:nth-of-type(4) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(5) input:checked) .fp-aar:nth-of-type(5) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(6) input:checked) .fp-aar:nth-of-type(6) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(7) input:checked) .fp-aar:nth-of-type(7) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(8) input:checked) .fp-aar:nth-of-type(8) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(9) input:checked) .fp-aar:nth-of-type(9) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(10) input:checked) .fp-aar:nth-of-type(10) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(11) input:checked) .fp-aar:nth-of-type(11) {
+      display: grid;
+    }
+    .fp-akt:has(.fp-aar-valg label:nth-of-type(12) input:checked) .fp-aar:nth-of-type(12) {
+      display: grid;
+    }
+    .fp-aar-tall {
+      display: none;
+    }
+    .fp-aar {
+      grid-template-columns: minmax(0, 1fr) !important;
+    }
+  }
+  @supports not selector(:has(*)) {
+    .fp-aar-valg {
+      display: none;
+    }
+  }
+  .fp-aarene {
+    display: grid;
+    gap: 32px;
+  }
+  .fp-aar {
+    display: grid;
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+  }
+  .fp-aar-tall {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-variant-numeric: lining-nums;
+    padding-top: 18px;
+  }
+  /* İki yarı: geniş ekranda yan yana (tek satır gibi), dar ekranda alt alta. Yatay kaydırma yok. */
+  .fp-aar-ramme {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--rom);
+    row-gap: 24px;
+  }
+  .fp-halv {
+    width: max-content;
+  }
+  .fp-mnd-linje {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--rute);
+    column-gap: var(--rom);
+    height: 16px;
+  }
+  .fp-mnd-linje span {
+    overflow: visible;
+    font-family: var(--font-sign);
+    font-weight: 600;
+    font-size: 0.6875rem;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .fp-dager {
+    display: grid;
+    grid-template-rows: repeat(7, var(--rute));
+    grid-auto-flow: column;
+    grid-auto-columns: var(--rute);
+    gap: var(--rom);
+  }
+  .d {
+    display: block;
+    width: var(--rute);
+    height: var(--rute);
+    background: var(--tom);
+  }
+  .d.x {
+    background: none;
+  }
+  /* Bugünden sonraki günler: boş kutu, biraz daha soluk. */
+  .d.f {
+    opacity: 0.55;
+  }
+  .d.h {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    background: var(--tom);
+  }
+  .d.h i,
+  .fp-mini i {
+    display: block;
+  }
+  .s-tidsrost {
+    background: var(--c-tidsrost);
+  }
+  .s-jendume {
+    background: var(--c-jendume);
+  }
+  .s-finfolis {
+    background: var(--c-finfolis);
+  }
+  .s-kifobu {
+    background: var(--c-kifobu);
+  }
+  /* Kendi anlatımı dönemi: üç site her gün dolu, açık tonda; parçaların yeri günden güne karışık. */
+  .d.e .s-jendume {
+    background: color-mix(in srgb, var(--c-jendume) 52%, var(--paper));
+  }
+  .d.e .s-finfolis {
+    background: color-mix(in srgb, var(--c-finfolis) 52%, var(--paper));
+  }
+  .d.e .s-kifobu {
+    background: color-mix(in srgb, var(--c-kifobu) 52%, var(--paper));
+  }
+  .fp-mini {
+    display: grid;
+    grid-template-columns: 7px 7px;
+    grid-template-rows: 7px 7px;
+    gap: 1px;
+    background: var(--tom);
+  }
+  .fp-sider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin: 24px 0 0;
+    padding: 0;
+  }
+  .fp-sider li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-sign);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1;
+  }
+
+  /* Yazılar: ay ay, iki sütunlu dizin. */
+  .fp-liste {
+    margin-top: clamp(40px, 5vw, 64px);
+  }
+  .fp-mnd {
+    margin-bottom: 40px;
+  }
+  .fp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(24px, 4vw, 56px);
+  }
+  .fp-sak {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--hair);
+  }
+  .fp-sak h3 {
+    font-weight: 600;
+    font-size: 1.1875rem;
+    line-height: 1.28;
+    margin: 0 0 6px;
+  }
+  .fp-sak h3 a {
+    color: var(--ink);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  .fp-sak h3 a:hover {
+    color: var(--yesil-yazi);
+  }
+  .fp-sak-desc {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--ink-2);
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .fp-sak-meta {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: 0;
+    font-family: var(--font-sign);
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+  .fp-sj {
+    font-weight: 600;
+    color: var(--yesil-yazi);
+  }
+
+  @media (max-width: 760px) {
+    /* Telefonda fotoğraf ile ad arası dar boşluk: sütun boşluğu ve fotoğrafın alt payı sıfır. */
+    .fp-in {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: 0;
+    }
+    .fp-foto {
+      width: min(100%, 280px);
+      height: auto;
+      margin: 24px 0 0;
+    }
+    .fp-tekst {
+      padding-top: 20px;
+    }
+    .fp-akt {
+      /* Yarım yıl (27 hafta) ekrana sığar: kutu boyu ekran genişliğinden. */
+      --rom: 2px;
+      --rute: clamp(7px, calc((100vw - 2 * var(--gutter) - 26 * var(--rom)) / 27), 12px);
+    }
+    .fp-aar {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 4px;
+    }
+    .fp-aar-tall {
+      padding-top: 0;
+    }
+    .fp-aar-valg span {
+      padding: 0 11px;
+    }
+    .fp-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

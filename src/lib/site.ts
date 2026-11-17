@@ -162,15 +162,25 @@ export const SITE = {
     name: 'Şenol Dak',
     title: { tr: 'Gazeteci', en: 'Journalist' } satisfies Record<Locale, string>,
     email: 'contact@jendume.com',
-    // Künye (sahibinin onayladığı metin; dört sitede aynı kişi, aynı dört yayın).
+    // Rol satırı (yazar sayfası, portre bandı).
+    role: {
+      tr: 'Gazeteci · öğretmen · üretken yapay zekâ sistemleri · veri analizi ve araştırma',
+      en: 'Journalist · teacher · generative AI systems · data analysis and research',
+    } satisfies Record<Locale, string>,
+    // Künye (sahibinin onayladığı metin; dört sitede aynı kişi, aynı dört yayın). İlk paragraf kısa tutulur:
+    // yazar sayfasının meta açıklaması olarak da kullanılır.
     bio: {
       tr: [
-        'Türkçe ve yapay zekâ öğretmeniyim; yazılım sektöründe üretken yapay zekâ sistemleri üzerinde çalışıyorum. 10 Ağustos 2022’de kifobu’nun ilk bültenini yayımladım ve o günden beri gazetecilik yapıyorum.',
-        'kifobu, finfolis, JEN DUME ve tidsrøst aracılığıyla girişimlerden ve kitle fonlamasından finans piyasalarına, yapay zekâdan bilime, Norveç’ten dünya gündemine uzanan konuları ele alıyorum. Farklı alanlarda çalışsam da merakım aynı: Bilginin ötesine geçmek, bağlantıları görmek ve olup bitenin neden önemli olduğunu anlamak.',
+        "Şenol Dak gazeteci ve yayıncıdır. kifobu, finfolis, jenDume ve tidsrøst haber sitelerini kurdu; tidsrøst'ün yayın yönetmenidir. Gazetecilik çalışmaları 2022'de kifobu'nun ilk bülteniyle başladı.",
+        'Girişimcilik ve kitle fonlaması, finans piyasaları ve ekonomi, yapay zekâ, bilim ve teknoloji ile Norveç ve dünyadan güncel konular üzerine yazıyor. Çalışmaları haberlerden, analizlerden ve bir gelişmenin arka planını ve sonuçlarını anlatan açıklayıcı yazılardan oluşuyor. Kaynağa dayalı araştırmaya, veri analizine ve karmaşık konuları anlaşılır kılmaya önem veriyor.',
+        'Gazeteciliğin yanında Türkçe ve yapay zekâ öğretmenliği yapıyor, yazılım sektöründe üretken yapay zekâ sistemleri üzerinde çalışıyor. Bu teknik birikimi veri araştırmasında ve dijital gazetecilikte de kullanıyor.',
+        "Üretken yapay zekânın gazetecilikte nasıl kullanılabileceği ve teknolojinin haber araştırmasını, üretimini ve yayıncılığı nasıl değiştirdiği özellikle ilgisini çekiyor. tidsrøst'te yapay zekâyla otomatik bir haber üretimi kurdu. Hangi tür haberlerin otomatik yayımlanacağına ve yayından önce kaynakların ve olguların nasıl denetleneceğine o karar veriyor.",
       ],
       en: [
-        'I am a Turkish language and AI teacher working with generative AI systems in the software industry. I published the first kifobu newsletter on 10 August 2022 and have been involved in journalism ever since.',
-        'Through kifobu, finfolis, JEN DUME and tidsrøst, I explore subjects ranging from startups and crowdfunding to financial markets, artificial intelligence, science, and current affairs in Norway and around the world. Across these different fields, my interest remains the same: looking beyond the information itself to understand the connections and why they matter.',
+        'Şenol Dak is a journalist and publisher. He founded four news sites, kifobu, finfolis, jenDume and tidsrøst, and is the editor-in-chief of tidsrøst. His journalism began in 2022, when he sent out the first kifobu newsletter.',
+        'He writes about startups and crowdfunding, financial markets and the economy, artificial intelligence, science and technology, and current affairs from Norway and the rest of the world. His work consists of news, analysis and explanatory pieces that set out the background to a development and what it leads to. He puts weight on source-based research and data analysis, and on making complex subjects easy to follow.',
+        'Alongside journalism he teaches Turkish and artificial intelligence, and works with generative AI systems in the software industry. He also uses that technical background in data research and digital journalism.',
+        'He is particularly interested in how generative AI can be used in journalism, and in how the technology is changing news research, production and publishing. At tidsrøst he has built an automated news production system with AI. He decides which kinds of stories can be published automatically, and which source and fact checks must happen before publication.',
       ],
     } satisfies Record<Locale, string[]>,
   },
