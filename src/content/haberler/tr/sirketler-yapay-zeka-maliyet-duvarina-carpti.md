@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Şirketler Yapay Zekâ Maliyet Duvarına Çarptı"
+title: "Şirketler yapay zekâ maliyet duvarına çarptı"
 description: "Yapay zekâ projelerinde bulut bilişim harcamalarının hızla tükenmesi, şirketleri yerel altyapılara ve açık kaynaklı modellere yönlendiriyor."
 category: ekonomi
 date: 2026-10-13T06:50:27.543Z

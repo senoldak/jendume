@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Google Deepmind'ın Yapay Zekâsı Onlarca Çözülmemiş Matematik Problemini Çözdü"
+title: "Google Deepmind'ın yapay zekâsı onlarca çözülmemiş matematik problemini çözdü"
 description: "Google Deepmind'ın geliştirdiği AlphaProof Nexus sistemi, Science dergisinde yayımlanan yeni bir araştırmaya göre onlarca çözülmemiş matematik problemini kendi başına çözerek hakemli bir süreçten geçmeyi başardı."
 category: bilim
 date: 2026-10-13T10:50:39.807Z

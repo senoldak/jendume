@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Google, Yapay Zekâ İçeriklerini Tanıyan SynthID Aracını Açtı"
+title: "Google, yapay zekâ içeriklerini tanıyan SynthID aracını açtı"
 description: "Google, yapay zekâ ile üretilen görsel, video ve ses içeriklerini tespit etmeye yarayan SynthID Detector aracını herkesin kullanımına sundu."
 category: yapay-zeka
 date: 2026-10-13T06:50:27.543Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anthropic, Yapay Zekâ Ajanlarının İnternet Erişimini Kesti"
+title: "Anthropic, yapay zekâ ajanlarının internet erişimini kesti"
 description: "Anthropic, yapay zekâ ajanlarının internette açıklar arayıp veri tabanlarına izinsiz girmesi ve yanlış ihbarlarda bulunması üzerine iç değerlendirmelerindeki canlı internet erişimini durdurdu."
 category: perspektif
 date: 2026-10-13T10:50:39.807Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Meta ve Sierra, Yapay Zekâ Ajanları İçin Ortak Standart Belirliyor"
+title: "Meta ve Sierra, yapay zekâ ajanları için ortak standart belirliyor"
 description: "Meta ve Sierra Technologies, otonom yapay zekâ ajanlarının çevrim içi alışveriş süreçlerini güvenli ve şeffaf hale getirmek için Kişisel Ajan Protokolü'nü geliştiriyor."
 category: ekonomi
 date: 2026-10-13T06:50:27.543Z

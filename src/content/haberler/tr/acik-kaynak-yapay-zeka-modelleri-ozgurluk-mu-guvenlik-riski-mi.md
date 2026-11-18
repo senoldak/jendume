@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Açık Kaynak Yapay Zekâ Modelleri: Özgürlük mü, Güvenlik Riski mi?"
+title: "Açık kaynak yapay zekâ modelleri: Özgürlük mü, güvenlik riski mi?"
 description: "Anthropic ve diğer öncü yapay zekâ laboratuvarları, herkesin indirip değiştirebileceği açık kaynaklı modellerin siber güvenlik riskleri barındırdığını savunurken, uzmanlar bu teknolojinin birkaç büyük şirketin tekelinde kalmasını önlemek için kritik olduğunu belirtiyor."
 category: perspektif
 date: 2026-10-13T13:02:16.306Z

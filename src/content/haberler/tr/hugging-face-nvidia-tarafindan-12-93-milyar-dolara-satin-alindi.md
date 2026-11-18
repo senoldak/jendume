@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Hugging Face, Nvidia Tarafından 12,93 Milyar Dolara Satın Alındı"
+title: "Hugging Face, Nvidia tarafından 12,93 milyar dolara satın alındı"
 description: "Açık kaynaklı yapay zekâ platformu Hugging Face, eylül ayında Nvidia tarafından 12,93 milyar dolara satın alındı. Şirket CEO'su Clément Delangue, açık kaynaklı modellerin yapay zekâ güvenliği ve bağımsızlığı için kritik olduğunu söylüyor."
 category: ekonomi
 date: 2026-11-17T11:51:04.290Z

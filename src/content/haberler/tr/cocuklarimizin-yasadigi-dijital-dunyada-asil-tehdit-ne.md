@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Çocuklarımızın Yaşadığı Dijital Dünyada Asıl Tehdit Ne?"
+title: "Çocuklarımızın yaşadığı dijital dünyada asıl tehdit ne?"
 description: "Bir çocuk doktorunun gözünden, ekranlar ve yapay zekâ çağında ebeveynler ile çocuklar arasındaki bağın nasıl korunabileceğine dair derinlemesine bir bakış."
 category: perspektif
 date: 2026-10-13T13:02:16.306Z

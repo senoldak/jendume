@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Kod Yazma Dönemi Kapanıyor: Yazılım Dünyası Yapay Zekaya Emanet"
+title: "Kod yazma dönemi kapanıyor: Yazılım dünyası yapay zekaya emanet"
 description: "Yazılım dünyasında Cursor gibi yapay zekâ kodlama ajanları, geleneksel kod yazma pratiğinin yerini alarak geliştiricilerin rolünü birer mimara dönüştürüyor."
 category: teknoloji
 date: 2026-10-13T06:50:27.543Z

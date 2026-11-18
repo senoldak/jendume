@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Z.ai'dan Hukuk Odaklı Yapay Zekâ Modeli: GLM-Legal Tanıtıldı"
+title: "Z.ai'dan hukuk odaklı yapay zekâ modeli: GLM-Legal tanıtıldı"
 description: "Z.ai, sözleşme incelemesi ve mevzuat uyum araştırmaları için geliştirdiği yeni hukuk odaklı yapay zekâ modeli GLM-Legal'ı duyurdu."
 category: yapay-zeka
 date: 2026-10-13T13:02:16.306Z

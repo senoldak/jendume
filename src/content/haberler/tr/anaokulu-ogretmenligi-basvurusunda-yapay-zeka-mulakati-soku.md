@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anaokulu Öğretmenliği Başvurusunda Yapay Zekâ Mülakatı Şoku"
+title: "Anaokulu öğretmenliği başvurusunda yapay zekâ mülakatı şoku"
 description: "Bir eğitimci adayı, anaokulu pozisyonu için başvurduğu kurumda insan yerine yapay zekâ asistanıyla mülakat yapınca yaşadığı insanlık dışı deneyimi paylaştı."
 category: perspektif
 date: 2026-10-13T13:02:16.306Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "GitHub, Yapay Zekâ Asistanları İçin Altyapısını Değiştiriyor"
+title: "GitHub, yapay zekâ asistanları için altyapısını değiştiriyor"
 description: "Yazılım platformu GitHub, yapay zekâ asistanlarının yarattığı yoğun trafikle başa çıkmak amacıyla depolama altyapısını yeniliyor."
 category: teknoloji
 date: 2026-10-13T00:50:25.537Z

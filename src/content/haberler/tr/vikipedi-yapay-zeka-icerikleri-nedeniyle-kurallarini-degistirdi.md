@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Vikipedi, Yapay Zekâ İçerikleri Nedeniyle Kurallarını Değiştirdi"
+title: "Vikipedi, yapay zekâ içerikleri nedeniyle kurallarını değiştirdi"
 description: "Vikipedi topluluğu, yapay zekâ ile üretilen içeriklerin platformun temel ilkelerini ihlal etmesi nedeniyle büyükdil modelleriyle metin yazımını tamamen yasakladı."
 category: perspektif
 date: 2026-10-13T13:02:16.306Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Daron Acemoğlu’ndan Çağrı: “Yapay Zekânın Yönünü Sadece Piyasanın Belirlemesine İzin Vermeyin”"
+title: "Daron Acemoğlu’ndan çağrı: “Yapay zekânın yönünü sadece piyasanın belirlemesine izin vermeyin”"
 description: "2024 Nobel İktisat Ödülü sahibi Prof. Dr. Daron Acemoğlu, yapay zekânın insan emeğini dışlayan değil, çalışanları ve demokratik kurumları güçlendiren bir yönde geliştirilmesi gerektiğini vurguladı."
 category: ekonomi
 date: 2026-10-10T11:00:00Z

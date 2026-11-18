@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anthropic'ten Hızlı ve Ucuz Yapay Zekâ Modeli: Claude Haiku 5.5"
+title: "Anthropic'ten hızlı ve ucuz yapay zekâ modeli: Claude Haiku 5.5"
 description: "Anthropic, yüksek hızlı ve maliyeti düşüren yeni yapay zekâ modeli Claude Haiku 5.5'i kullanıma sundu."
 category: teknoloji
 date: 2026-10-13T00:50:25.537Z

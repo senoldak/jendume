@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Phasis, Otonom Yapay Zekâ Ajanları İçin Gerçek Dünya API'sini Duyurdu"
+title: "Phasis, otonom yapay zekâ ajanları için gerçek dünya API'sini duyurdu"
 description: "Phasis şirketi, yapay zekâ ajanlarının karmaşık ve hızla değişen dünyayı anlamasını sağlayan yeni bir yönelim platformu geliştirdi."
 category: teknoloji
 date: 2026-10-13T08:50:26.774Z

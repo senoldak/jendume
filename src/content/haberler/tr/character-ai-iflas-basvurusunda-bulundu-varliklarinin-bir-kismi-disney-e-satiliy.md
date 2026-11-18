@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Character.AI İflas Başvurusunda Bulundu: Varlıklarının Bir Kısmı Disney'e Satılıyor"
+title: "Character.AI iflas başvurusunda bulundu: Varlıklarının bir kısmı Disney'e satılıyor"
 description: "Yapay zekâ sohbet platformu Character.AI, hukuki ve mali baskılar nedeniyle ABD'de iflas korumasına başvururken varlıklarının satışı için Disney ile 20 milyon dolarlık bir anlaşma yaptı."
 category: ekonomi
 date: 2026-10-13T13:02:16.306Z

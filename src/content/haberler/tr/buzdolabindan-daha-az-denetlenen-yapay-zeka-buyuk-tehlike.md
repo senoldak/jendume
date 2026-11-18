@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Buzdolabından Daha Az Denetlenen Yapay Zekâ Büyük Tehlike"
+title: "Buzdolabından daha az denetlenen yapay zekâ büyük tehlike"
 description: "Yapay zekâ teknolojilerinin denetimsiz ilerlemesi insanlık için benzeri görülmemiş varoluşsal riskler barındırıyor."
 category: perspektif
 date: 2026-10-13T08:50:26.774Z

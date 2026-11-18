@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "OpenAI'ın Gelir Rakamları ve Muhasebe Yöntemleri Üzerine"
+title: "OpenAI'ın gelir rakamları ve muhasebe yöntemleri üzerine"
 description: "OpenAI'ın yıllık gelirinin 50 milyar dolar civarında olduğu, daha önce konuşulan 70 milyar dolarlık rakamın ise farklı bir muhasebe hesaplamasından kaynaklandığı ortaya çıktı."
 category: ekonomi
 date: 2026-10-13T00:50:25.537Z

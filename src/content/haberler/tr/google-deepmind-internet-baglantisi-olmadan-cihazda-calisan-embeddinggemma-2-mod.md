@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Google DeepMind, İnternet Bağlantısı Olmadan Cihazda Çalışan EmbeddingGemma 2 Modelini Açık Kaynak Yayımladı"
+title: "Google DeepMind, internet bağlantısı olmadan cihazda çalışan EmbeddingGemma 2 modelini açık kaynak yayımladı"
 description: "Metin, görüntü, ses ve videoyu tek bir anlam alanında buluşturan 740 milyon parametreli model, kişisel verileri buluta göndermeden arama yapmayı sağlıyor."
 category: teknoloji
 date: 2026-10-11T16:00:00Z

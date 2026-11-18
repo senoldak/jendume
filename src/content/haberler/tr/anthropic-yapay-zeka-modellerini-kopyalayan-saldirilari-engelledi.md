@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anthropic, Yapay Zekâ Modellerini Kopyalayan Saldırıları Engelledi"
+title: "Anthropic, yapay zekâ modellerini kopyalayan saldırıları engelledi"
 description: "Anthropic, Claude modellerinin akıl yürütme adımlarını hedef alan büyük ölçekli model kopyalama saldırılarına karşı savunmasını güçlendirdi."
 category: yapay-zeka
 date: 2026-10-13T13:02:16.306Z

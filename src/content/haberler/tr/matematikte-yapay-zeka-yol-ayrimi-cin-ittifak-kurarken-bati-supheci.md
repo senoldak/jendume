@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Matematikte Yapay Zekâ Yol Ayrımı: Çin İttifak Kurarken Batı Şüpheci"
+title: "Matematikte yapay zekâ yol ayrımı: Çin ittifak kurarken Batı şüpheci"
 description: "Fields Madalyalı matematikçilerin önderliğinde Çin'de yapay zekâyı araştırmalara entegre etmek için büyük bir ittifak kurulurken, Batı'daki akademisyenler otomasyonun temel anlayışı zedelemesinden endişe ediyor."
 category: bilim
 date: 2026-10-13T14:55:16.237Z

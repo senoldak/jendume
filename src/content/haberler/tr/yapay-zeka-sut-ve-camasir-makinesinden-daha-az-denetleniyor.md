@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "“Marketten Aldığınız Süt Bile Yapay Zekâdan Daha Fazla Denetleniyor”: Küresel Güvenlik Kuralları Tartışması"
+title: "“Marketten aldığınız süt bile yapay zekâdan daha fazla denetleniyor”: Küresel güvenlik kuralları tartışması"
 description: "Microsoft Başkanı Brad Smith ve İngiltere Yapay Zekâ Bakanı Kanishka Narayan, kontrolden çıkabilecek otonom yapay zekâ sistemlerine karşı küresel güvenlik standartları çağrısı yaptı."
 category: yapay-zeka
 date: 2026-10-12T16:30:00Z

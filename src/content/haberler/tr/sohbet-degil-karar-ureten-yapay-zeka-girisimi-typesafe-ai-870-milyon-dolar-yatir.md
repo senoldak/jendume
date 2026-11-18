@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Sohbet Değil Karar Üreten Yapay Zekâ Girişimi TypeSafe AI, 870 Milyon Dolar Yatırım Aldı"
+title: "Sohbet değil karar üreten yapay zekâ girişimi TypeSafe AI, 870 milyon dolar yatırım aldı"
 description: "Metin üretmek yerine olasılık hesaplayarak kalibre edilmiş kararlar sunan Jev modelinin geliştiricisi TypeSafe AI, 7,5 milyar dolar değerlemeye ulaştı."
 category: ekonomi
 date: 2026-10-12T13:50:00Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Alibaba'dan Yapay Zekâ Ajanları İçin Yeni Eğitim Sistemi: QwenGyre"
+title: "Alibaba'dan yapay zekâ ajanları için yeni eğitim sistemi: QwenGyre"
 description: "Alibaba Qwen ekibi, saatlerce süren karmaşık görevleri yerine getiren yapay zekâ ajanlarının eğitimini hızlandıran yeni bir esnek pekiştirmeli öğrenme çerçevesi olan QwenGyre'ı tanıttı."
 category: yapay-zeka
 date: 2026-10-13T06:50:27.543Z

@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Epic Games ve Disney Projesinde Yapay Zekâ Dönemine Geçiş"
+title: "Epic Games ve Disney projesinde yapay zekâ dönemine geçiş"
 description: "Epic Games, Disney ortaklığıyla geliştirilen yeni nişancı oyunu için tamamen yapay zekâ odaklı bir üretim modeline geçiyor."
 category: yapay-zeka
 date: 2026-10-13T08:50:26.774Z

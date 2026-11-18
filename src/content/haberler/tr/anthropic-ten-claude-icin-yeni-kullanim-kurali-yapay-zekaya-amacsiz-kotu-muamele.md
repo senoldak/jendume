@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anthropic’ten Claude İçin Yeni Kullanım Kuralı: Yapay Zekâya Amaçsız Kötü Muamele Yasaklandı"
+title: "Anthropic’ten Claude için yeni kullanım kuralı: Yapay zekâya amaçsız kötü muamele yasaklandı"
 description: "Anthropic, seçim müdahalesi ve gözetim kısıtlamalarını genişletirken, sohbet botuna yönelik sürekli ve nedensiz saldırgan davranışları da kullanım politikasına ekledi."
 category: yapay-zeka
 date: 2026-10-10T18:00:00Z

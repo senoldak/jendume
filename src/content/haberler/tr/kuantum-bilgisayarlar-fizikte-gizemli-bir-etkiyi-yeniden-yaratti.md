@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Kuantum Bilgisayarlar, Fizikte Gizemli Bir Etkiyi Yeniden Yarattı"
+title: "Kuantum bilgisayarlar, fizikte gizemli bir etkiyi yeniden yarattı"
 description: "Oxford Üniversitesi'nden araştırmacılar, hibrit bir kuantum bilgisayar kullanarak görünmez bir manyetik etkinin simüle edilmiş bir parçacığı nasıl durdurabildiğini gösterdi."
 category: bilim
 date: 2026-10-13T13:02:16.306Z

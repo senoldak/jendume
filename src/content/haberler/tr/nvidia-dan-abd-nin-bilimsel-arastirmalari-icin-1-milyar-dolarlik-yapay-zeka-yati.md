@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Nvidia’dan ABD’nin Bilimsel Araştırmaları İçin 1 Milyar Dolarlık Yapay Zekâ Yatırımı"
+title: "Nvidia’dan ABD’nin bilimsel araştırmaları için 1 milyar dolarlık yapay zekâ yatırımı"
 description: "Nvidia, ABD’deki ulusal laboratuvarlarda yapay zekâ destekli süper bilgisayar altyapısını güçlendirmek ve bilimsel keşifleri hızlandırmak amacıyla önümüzdeki beş yıl içinde 1 milyar dolar yatıracak."
 category: bilim
 date: 2026-10-13T00:50:25.537Z

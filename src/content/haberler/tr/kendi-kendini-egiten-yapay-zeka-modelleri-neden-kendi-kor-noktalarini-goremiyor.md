@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Kendi Kendini Eğiten Yapay Zekâ Modelleri Neden Kendi Kör Noktalarını Göremiyor?"
+title: "Kendi kendini eğiten yapay zekâ modelleri neden kendi kör noktalarını göremiyor?"
 description: "Sakana AI ve UC Berkeley araştırmacıları, öğretmen modele ihtiyaç duymadan kendini geliştiren sistemlerin başarılarını ve kendi hatalarını onaylama riskini inceledi."
 category: bilim
 date: 2026-10-12T10:15:00Z

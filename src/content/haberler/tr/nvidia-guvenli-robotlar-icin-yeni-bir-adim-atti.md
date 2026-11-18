@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Nvidia Güvenli Robotlar İçin Yeni Bir Adım Attı"
+title: "Nvidia güvenli robotlar için yeni bir adım attı"
 description: "Nvidia, otonom araçlar ve insansı robotlar için geliştirdiği güvenlik mimarisi Halos sistemini tanıttı."
 category: teknoloji
 date: 2026-10-13T10:50:39.807Z

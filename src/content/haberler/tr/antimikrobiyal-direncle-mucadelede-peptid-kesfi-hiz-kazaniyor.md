@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Antimikrobiyal Dirençle Mücadelede Peptid Keşfi Hız Kazanıyor"
+title: "Antimikrobiyal dirençle mücadelede peptid keşfi hız kazanıyor"
 description: "Yeni geliştirilen ajan tabanlı bilim çalışma masası, antimikrobiyal dirençle mücadelede kritik öneme sahip yeni peptidlerin keşfini hızlandırıyor."
 category: bilim
 date: 2026-10-15T16:51:04.644Z

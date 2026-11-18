@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Google'dan Gemini İçin Ücret Duvarı"
+title: "Google'dan Gemini için ücret duvarı"
 description: "Google, en güçlü Gemini yapay zeka modellerini yalnızca ücretli abonelere sunarak erişim politikasında stratejik bir değişikliğe gitti."
 category: ekonomi
 date: 2026-10-13T00:50:25.537Z

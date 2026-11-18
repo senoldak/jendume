@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Yerli Yapay Zekâ Güvenlik Platformu ShadowX ile Kurumsal Veriler Korunuyor"
+title: "Yerli yapay zekâ güvenlik platformu ShadowX ile kurumsal veriler korunuyor"
 description: "Şirketlerin yapay zekâ araçlarını güvenle kullanmasını sağlayan yerli girişim ShadowX, hassas verileri koruma altına alıyor."
 category: teknoloji
 date: 2026-10-13T00:50:25.537Z

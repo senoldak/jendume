@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Amazon'un Milyonluk Robot Ordusu İnsan Emeğini Nasıl Değiştiriyor?"
+title: "Amazon'un milyonluk robot ordusu insan emeğini nasıl değiştiriyor?"
 description: "Amazon'un depolarında görev yapan robot sayısı bir milyonu aşarken, yapay zekâ destekli otomasyonun insan çalışanlar üzerindeki etkileri tartışılıyor."
 category: teknoloji
 date: 2026-10-13T10:50:39.807Z

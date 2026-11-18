@@ -1,5 +1,6 @@
 // JEN DUME — kelimelerin ötesinde
 // İki dilli (TR, EN) haber botu ortak yardımcıları.
+import { cumleDuzeni } from './baslik-duzeni.mjs';
 import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
@@ -309,9 +310,12 @@ export async function ucDilliHaberYaz(rot, paket) {
   for (const dil of DILLER) {
     const icerik = paket[dil];
     if (!icerik) continue;
-    const title = tipografi(guvenli(icerik.title), { baslik: true });
     const description = tipografi(guvenli(icerik.description)).replace(/\s+/g, ' ');
     const body = tipografi(guvenli(icerik.body));
+    // Türkçe başlıkta "Her Kelimesi Büyük" alışkanlığı cümle düzenine iner; özel adlar metinden okunur.
+    const hamBaslik = tipografi(guvenli(icerik.title), { baslik: true });
+    const title = dil === 'tr' ? cumleDuzeni(hamBaslik, `${description}
+${body}`) : hamBaslik;
     const bolge = icerik.bolge || paket.bolge;
     const perspektif = icerik.perspektif || paket.perspektif;
     const why_matters = icerik.why_matters || paket.why_matters;

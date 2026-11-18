@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Anthropic, Yapay Zekâ Güvenlik Programını Yeniden Yapılandırıyor"
+title: "Anthropic, yapay zekâ güvenlik programını yeniden yapılandırıyor"
 description: "Anthropic, güvenlik inisiyatiflerini tek çatı altında toplayarak üç katmanlı yeni bir siber güvenlik doğrulama programı başlattı."
 category: perspektif
 date: 2026-10-13T06:50:27.543Z

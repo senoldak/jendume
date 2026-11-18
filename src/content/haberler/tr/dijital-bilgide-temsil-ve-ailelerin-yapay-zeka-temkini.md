@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Dijital Hafızada Kimler Var? Wikipedia’daki Temsil Uçurumu ve Yapay Zekâ Çağında Bilginin Geleceği"
+title: "Dijital hafızada kimler var? Wikipedia’daki temsil uçurumu ve yapay zekâ çağında bilginin geleceği"
 description: "300’den fazla dilde 65 milyon makale barındıran Wikipedia’da maddelerin yalnızca yüzde 19’unun kadınlara ayrılması, yapay zekâ modellerinin beslendiği insanlık hafızasının ne kadar dengeli olduğu sorusunu gündeme taşıyor."
 category: perspektif
 date: 2026-10-12T12:00:00Z

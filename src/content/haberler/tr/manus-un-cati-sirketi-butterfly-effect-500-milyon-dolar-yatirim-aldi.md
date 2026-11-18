@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Manus'un Çatı Şirketi Butterfly Effect 500 Milyon Dolar Yatırım Aldı"
+title: "Manus'un çatı şirketi Butterfly Effect 500 milyon dolar yatırım aldı"
 description: "Yapay zekâ ajanları ve araçları geliştiren Manus'un çatı şirketi Butterfly Effect, Boyu Capital ve IDG Capital liderliğinde 500 milyon dolardan fazla yatırım aldı."
 category: ekonomi
 date: 2026-10-13T00:50:25.537Z

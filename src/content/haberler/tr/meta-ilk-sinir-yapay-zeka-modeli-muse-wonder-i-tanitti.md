@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Meta İlk Sınır Yapay Zekâ Modeli Muse Wonder’ı Tanıttı"
+title: "Meta ilk sınır yapay zekâ modeli Muse Wonder’ı tanıttı"
 description: "Meta’nın Süperzekâ Laboratuvarı, karmaşık kodlama ve kişisel ajan görevleri için geliştirdiği Muse Wonder ve Muse Wonder Full modellerini kullanıma sundu."
 category: yapay-zeka
 date: 2026-10-12T18:10:00Z

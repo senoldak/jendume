@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Beyaz Saray Geri Adım Attı: İngiltere Yapay Zekâ Güvenlik Enstitüsü Sınır Modelleri Yeniden Test Edecek"
+title: "Beyaz Saray geri adım attı: İngiltere Yapay Zekâ Güvenlik Enstitüsü sınır modelleri yeniden test edecek"
 description: "ABD yönetimi, İngiltere Yapay Zekâ Güvenlik Enstitüsü’nün yeni nesil yapay zekâ modellerini piyasaya çıkmadan önce güvenlik testinden geçirmesine yönelik engeli kaldırdı."
 category: dunya
 date: 2026-10-12T15:40:00Z

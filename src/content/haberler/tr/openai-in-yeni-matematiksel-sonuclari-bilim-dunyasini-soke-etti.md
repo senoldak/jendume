@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "OpenAI'ın Yeni Matematiksel Sonuçları Bilim Dünyasını Şoke Etti"
+title: "OpenAI'ın yeni matematiksel sonuçları bilim dünyasını şoke etti"
 description: "OpenAI tarafından ani bir şekilde paylaşılan devasa matematiksel sonuçlar, matematikçiler arasında hem büyük bir heyecan hem de derin bir endişe yarattı."
 category: yapay-zeka
 date: 2026-10-13T10:50:39.807Z

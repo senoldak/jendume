@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "İş Yerinde Yapay Zekâ Gözetimi ve Çalışan Hakları"
+title: "İş yerinde yapay zekâ gözetimi ve çalışan hakları"
 description: "Dünya genelinde çalışanlar, yapay zekâ tabanlı sistemler tarafından adım adım izleniyor ve performans değerlendirmelerine tabi tutuluyor."
 category: perspektif
 date: 2026-10-13T14:55:16.237Z

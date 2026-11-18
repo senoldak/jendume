@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Ses Tabanlı Yapay Zekâ Kişisel Bilgisayarlara Geliyor"
+title: "Ses tabanlı yapay zekâ kişisel bilgisayarlara geliyor"
 description: "Deepgram, ses odaklı yapay zekâ modellerini internet bağlantısına ihtiyaç duymadan doğrudan dizüstü bilgisayarlarda çalıştırmayı hedefliyor."
 category: teknoloji
 date: 2026-10-13T08:50:26.774Z

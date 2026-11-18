@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Siber Savunmada Yapay Zekâ Yarışı: Otonom Ajanlar Tehdit İnceleme Süresini Yüzde 96 Kısaltıyor"
+title: "Siber savunmada yapay zekâ yarışı: Otonom ajanlar tehdit inceleme süresini yüzde 96 kısaltıyor"
 description: "Dünya genelinde 625 binden fazla kurumu koruyan siber güvenlik ekipleri, saldırganların hızına yetişebilmek için yapay zekâ ajanlarını insan muhakemesiyle birleştiriyor."
 category: dunya
 date: 2026-10-11T12:20:00Z

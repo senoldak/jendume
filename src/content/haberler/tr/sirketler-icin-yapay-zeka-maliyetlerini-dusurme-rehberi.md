@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Şirketler İçin Yapay Zekâ Maliyetlerini Düşürme Rehberi"
+title: "Şirketler için yapay zekâ maliyetlerini düşürme rehberi"
 description: "Kurumsal yapay zekâ projelerinde hızla yükselen token harcamalarını kontrol altına almak için akıllı model seçimi ve önbellekleme öne çıkıyor."
 category: ekonomi
 date: 2026-10-13T06:50:27.543Z

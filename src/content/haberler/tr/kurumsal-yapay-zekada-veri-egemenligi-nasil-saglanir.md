@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Kurumsal Yapay Zekada Veri Egemenliği Nasıl Sağlanır?"
+title: "Kurumsal yapay zekada veri egemenliği nasıl sağlanır?"
 description: "Şirketler, sürekli değişen yapay zeka modellerine bağımlı kalmamak ve veri güvenliğini korumak amacıyla model bağımsız altyapılar kuruyor."
 category: ekonomi
 date: 2026-10-13T00:50:25.537Z

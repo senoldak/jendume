@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "ChatGPT Görselleşiyor: OpenAI'dan Yeni 'Intelligent UI' Arayüzü"
+title: "ChatGPT görselleşiyor: OpenAI'dan yeni 'Intelligent UI' arayüzü"
 description: "OpenAI, GPT-6 ile birlikte ChatGPT'nin yanıtlarını grafikler, haritalar ve etkileşimli bileşenlerle zenginleştiren Intelligent UI özelliğini duyurdu."
 category: yapay-zeka
 date: 2026-10-13T06:50:27.543Z

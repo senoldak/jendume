@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Silikon Vadisi'nde Yapay Zekâ Altyapısı Dönüşüyor"
+title: "Silikon Vadisi'nde yapay zekâ altyapısı dönüşüyor"
 description: "Dell, yapay zekâ projelerini deneme aşamasından üretime taşıyan şirketlerin kendi sistemlerini kurma eğilimine uyum sağlıyor."
 category: ekonomi
 date: 2026-10-13T08:50:26.774Z

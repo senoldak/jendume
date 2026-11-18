@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Satya Nadella’dan Yapay Zekâ Modelleri İçin “Acil Durum Freni” Çağrısı: Güveni Modele Değil Sisteme Kurmak"
+title: "Satya Nadella’dan yapay zekâ modelleri için “Acil Durum Freni” çağrısı: Güveni modele değil sisteme kurmak"
 description: "Microsoft Üst Yöneticisi Satya Nadella, tüm gelişmiş yapay zekâ modellerinin hata yapabileceği veya ele geçirilebileceği varsayımıyla dıştan denetlenen bir güvenlik mimarisi önerdi."
 category: perspektif
 date: 2026-10-12T14:30:00Z

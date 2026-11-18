@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "American Express'ten Yapay Zekâ Asistanları İçin Güvenlik Hamlesi"
+title: "American Express'ten yapay zekâ asistanları için güvenlik hamlesi"
 description: "American Express, kullanıcılar adına işlem yapan yapay zekâ asistanlarının yetkisiz alışveriş yapmasını önlemek amacıyla yeni bir çerçeve duyurdu."
 category: teknoloji
 date: 2026-10-13T14:55:16.237Z

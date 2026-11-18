@@ -1,6 +1,6 @@
 ---
 lang: tr
-title: "Microsoft Kendi Ürettiği Maia Yapay Zekâ Çiplerini 2027’de Gigavat Ölçeğine Taşıyor"
+title: "Microsoft kendi ürettiği Maia yapay zekâ çiplerini 2027’de gigavat ölçeğine taşıyor"
 description: "Microsoft, dışa bağımlılığı azaltmak ve enerji verimliliğini artırmak amacıyla geliştirdiği yeni nesil Maia 300 yapay zekâ çiplerini 2027 yılında devreye alıyor."
 category: teknoloji
 date: 2026-10-12T17:20:00Z
