@@ -5,9 +5,8 @@ import SignLine from './SignLine.astro';
 import SignHeading from './SignHeading.astro';
 import WhyItMatters from './WhyItMatters.astro';
 import Arrow from './Arrow.astro';
-import { KAPAK_G, KAPAK_Y } from '../kapak/ciz';
 import { SITE, CATEGORIES, getCategory, formatDate, otherLocale, type Locale } from '../lib/site';
-import { getPublishedPosts, getPostUrl, getCategoryUrl, kapakBilgisi } from '../lib/news';
+import { getPublishedPosts, getPostUrl, getCategoryUrl } from '../lib/news';
 import { anaSayfaEskileri } from '../lib/ana-sayfa.mjs';
 import { KONULAR } from '../lib/konular';
 import { konuVerisi } from '../lib/rotalar';
@@ -28,10 +27,14 @@ const konuSayfali = await konuVerisi(lang);
 const FEATURED_MS = 48 * 60 * 60 * 1000;
 const leadPost =
   posts.find((p) => p.data.featured && Date.now() - p.data.date.getTime() < FEATURED_MS) ?? posts[0];
-const leadCover = leadPost ? await kapakBilgisi(leadPost, lang) : undefined;
 const rest = posts.filter((p) => p.id !== leadPost?.id);
-const latest = rest.slice(0, 4);
-const older = anaSayfaEskileri(rest);
+// Bültenler haber ızgarasına karışmaz; ızgaranın altında kendi küçük satırında durur (18.11.2026).
+const bultenMi = (p: (typeof posts)[number]) => p.data.category === 'gunluk-bulten';
+const haberler = rest.filter((p) => !bultenMi(p));
+const bultenler = rest.filter(bultenMi).slice(0, 3);
+const latest = haberler.slice(0, 4);
+const older = anaSayfaEskileri(haberler);
+const bultenEtiket = { tr: 'Günlük bülten', en: 'Daily bulletin' };
 
 // Konu ve sözlük rehberi: sayfası olan konular ve temel terimler.
 const konular = KONULAR.filter((k) => konuSayfali.has(k.slug));
@@ -49,13 +52,7 @@ const board = CATEGORIES.map((cat, i) => {
   leadPost ? (
     <section class="front" aria-labelledby="lead-title">
       <article class="lead">
-        {
-          leadCover?.ozel && (
-            <a class="lead-cover" href={getPostUrl(lang, leadPost.id)} tabindex="-1" aria-hidden="true">
-              <img src={leadCover.url} alt="" width={KAPAK_G} height={KAPAK_Y} loading="eager" fetchpriority="high" decoding="async" />
-            </a>
-          )
-        }
+        {/* Haber kapağı başlığı zaten içerdiği için manşette gösterilmez (başlık iki kez görünüyordu); kapaklar paylaşım içindir. */}
         <h1 class="lead-title" id="lead-title">
           <a href={getPostUrl(lang, leadPost.id)}>{leadPost.data.title}</a>
         </h1>
@@ -111,6 +108,23 @@ const board = CATEGORIES.map((cat, i) => {
       <p class="front-all">
         <a class="read-plate" href="#sections-heading">{ui.allStoriesBySection}<Arrow dir="down" /></a>
       </p>
+    </section>
+  )
+}
+
+{
+  bultenler.length > 0 && (
+    <section class="block bulten-satiri" aria-labelledby="bulten-heading">
+      <h2 id="bulten-heading" class="bulten-satiri-baslik">
+        {bultenEtiket[lang]}<span lang={other}>{bultenEtiket[other]}</span>
+      </h2>
+      <ul>
+        {bultenler.map((b) => (
+          <li>
+            <a href={getPostUrl(lang, b.id)}>{b.data.title}</a>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

@@ -228,3 +228,52 @@
     gap: 8px;
   }
 }
+
+/* Ana sayfa: günlük bültenler haber ızgarasının altında tek, küçük bir satır (18.11.2026). */
+.bulten-satiri {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hair);
+}
+
+.bulten-satiri-baslik {
+  margin: 0;
+  font-family: var(--font-sign);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--yesil-yazi);
+}
+
+.bulten-satiri-baslik span {
+  margin-left: 8px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.bulten-satiri ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bulten-satiri a {
+  font-family: var(--font-sign);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--hair);
+  text-underline-offset: 0.2em;
+}
+
+.bulten-satiri a:hover {
+  text-decoration-color: var(--yesil);
+}
