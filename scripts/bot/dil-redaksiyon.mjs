@@ -202,9 +202,6 @@ function enIstem(en, kaynak, sorunMetni, ek = '') {
   return `Correct the language of the English news fields below. Do not change the facts; do not shorten the text.
 The body has ${n} words; your body must have between ${Math.ceil(n * 0.95)} and ${Math.floor(n * 1.1)} words. Do not delete sentences: edit them in place.
 ${ek ? `\n${ek}\n` : ''}
-SOURCE TEXT (for fact checking only; add no new information from it):
-${kaynak}
-
 ISSUES FOUND BY CODE:
 ${sorunMetni || '(none found by code; still review the text against the rules)'}
 
