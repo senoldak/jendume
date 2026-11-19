@@ -73,7 +73,10 @@ function istem(tr, kaynak, sorunMetni, ek = '') {
     alanlar[k] = v;
   }
   const tekrar = sadelestir(tr.why_matters) && sadelestir(tr.why_matters) === sadelestir(tr.perspektif);
+  // Kelime aralığı açıkça verilir (19 Kasım 2026): "metni kısaltma" tek başına yetmiyordu, redaksiyon gövdeyi %20 kısaltıp atılıyordu.
+  const n = kelimeSayisi(tr.body);
   return `Aşağıdaki Türkçe haber alanlarının dilini düzelt. Olguları değiştirme; metni kısaltma.
+Gövde ${n} kelime; senin gövden ${Math.ceil(n * 0.95)} ile ${Math.floor(n * 1.1)} kelime arasında olmalı. Cümle silme: cümleleri yerinde düzelt.
 ${tekrar ? "\nUYARI: why_matters perspektif ile aynı. why_matters'ı farklı bir açıdan, yalnızca KAYNAK METİN'deki olgularla yeniden yaz.\n" : ''}${ek ? `\n${ek}\n` : ''}
 KAYNAK METİN (olgu doğrulaması için; kaynaktan yeni bilgi ekleme):
 ${kaynak}
