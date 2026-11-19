@@ -178,8 +178,13 @@ export const DENETIM_YEDEK_MODEL = 'gemma-4-26b-a4b-it';
 // Gemini'ye istek atar, JSON şemasına uygun yanıt döner; anahtar yoksa null. Model zinciri, yeniden deneme, bütçe ve
 // gölge ortak çekirdekte (istemci.mjs, yönlendirici Faz 1); burada yalnız bu sitenin imzası ve ayarı.
 // denetim: evet/hayır denetim çağrısı; zincirin son halkası Gemma.
+// Çıkış tavanı (19 Kasım 2026): tavansız çağrıda kendini tekrar eden yanıt 250 bin karaktere uzuyor, dil redaksiyonunu
+// düşürüp turun maliyetini 2–4 katına çıkarıyordu (finfolis'te aynı ders: lib.mjs GEMINI_MAKS_CIKIS). En uzun meşru yanıt
+// (iki dilli taslak) ~6K token; 16K hem onu sığdırır hem kaçak yanıtı keser. Tavana çarpan yanıt bir kez yeniden denenir.
+const GEMINI_MAKS_CIKIS = Number(process.env.GEMINI_MAKS_CIKIS || 16384);
+
 export function gemini({ prompt, schema, dusunme = 'low', denetim = false, sistem = undefined, sicaklik = 0.25, _model = null, _amac = null }) {
-  return geminiCagir({ sistem, istem: prompt, sema: schema, dusunme, denetim, _model, _amac }, { sicaklik, ayarAlani: 'ayar' });
+  return geminiCagir({ sistem, istem: prompt, sema: schema, dusunme, denetim, _model, _amac }, { sicaklik, maksCikis: GEMINI_MAKS_CIKIS, ayarAlani: 'ayar' });
 }
 
 const yamlStr = (s) => JSON.stringify(String(s ?? '').trim());
