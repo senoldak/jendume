@@ -1,5 +1,5 @@
 {
- "guncellendi": "2026-11-20T11:50:51.570Z",
+ "guncellendi": "2026-11-20T13:50:56.879Z",
  "gunler": {
   "2026-11-02": {
    "tur": 6,
@@ -344,21 +344,21 @@
    "havuza": 5
   },
   "2026-11-20": {
-   "tur": 6,
-   "bulunan": 3786,
-   "degerlendirilen": 257,
+   "tur": 7,
+   "bulunan": 4415,
+   "degerlendirilen": 294,
    "elenen": {
-    "daha-once-yazildi": 51,
-    "dusuk-haber-degeri": 40,
-    "kapsam-disi": 52,
-    "standart:kaynak-benzerligi": 9,
-    "kaynak-yetersiz": 46,
+    "daha-once-yazildi": 58,
+    "dusuk-haber-degeri": 45,
+    "kapsam-disi": 66,
+    "standart:kaynak-benzerligi": 11,
+    "kaynak-yetersiz": 49,
     "denetimde-durdu": 10,
     "standart:ozel-haber": 1,
     "diger": 2,
     "kisa-es-yok": 1
    },
-   "yazilan": 36,
+   "yazilan": 41,
    "havuza": 6
   }
  }

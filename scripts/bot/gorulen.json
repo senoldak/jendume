@@ -1,65 +1,5 @@
 {
   "gorulen": {
-    "mistral:https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/": "2026-10-21T11:50:54.930Z",
-    "k2d427e:e7915604e811bdca": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99195": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99204": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99217": "2026-10-21T11:50:54.930Z",
-    "k39cb2c:3fb2c743394c7e86": "2026-10-21T11:50:54.930Z",
-    "k2d427e:960e981c422093b0": "2026-10-21T11:50:54.930Z",
-    "k2d427e:f2dad81455da5464": "2026-10-21T11:50:54.930Z",
-    "k2e841d:33394988604c0181": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99214": "2026-10-21T11:50:54.930Z",
-    "k36ff38:adebac1c1a2a63e6": "2026-10-21T11:50:54.930Z",
-    "kad5125:49534960474b0811": "2026-10-21T11:50:54.930Z",
-    "k39cb2c:061be47fc22d738b": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:c1ab0af116b9aaaa": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:e9b311e4c0ed96cb": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:978f0062724c7101": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:b5719ed2e2f4143b": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:5106301191fd8b2d": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:6b47071f18fd8e29": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:33c383f6a1b2f851": "2026-10-21T11:50:54.930Z",
-    "kad5125:0b91122627f6cfef": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99208": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:feebda99fa3f93ad": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:3b7489eff8cf9d11": "2026-10-21T11:50:54.930Z",
-    "k38ef42:81b0ac5eb5e3e5f6": "2026-10-21T11:50:54.930Z",
-    "k74f74a:8d42d78eda8789b9": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:ed579a528dcbcfe5": "2026-10-21T11:50:54.930Z",
-    "k2e841d:94d46e0a2864eb4c": "2026-10-21T11:50:54.930Z",
-    "kad5125:b9a425bfd7ae7f76": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:5ddba906b7f535b5": "2026-10-21T11:50:54.930Z",
-    "k38ef42:675e574f304a8a08": "2026-10-21T11:50:54.930Z",
-    "k74f74a:e12dcc599ba4125d": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:75492d165f15d9ae": "2026-10-21T11:50:54.930Z",
-    "k74f74a:f0aa03c56d365d0f": "2026-10-21T11:50:54.930Z",
-    "k74f74a:1d362dc841caedca": "2026-10-21T11:50:54.930Z",
-    "kad5125:0d73a8c0ca453912": "2026-10-21T11:50:54.930Z",
-    "kad5125:85a5dd6130429760": "2026-10-21T11:50:54.930Z",
-    "kad5125:4eb2fca33ef84bff": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99227": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308": "2026-10-21T11:50:54.930Z",
-    "kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "k74f74a:389b9bd37f313554": "2026-10-21T11:50:54.930Z",
-    "k74f74a:e1b4f8a71d282651": "2026-10-21T11:50:54.930Z",
-    "k3595c8:9bee7e182d02f9d4": "2026-10-21T11:50:54.930Z",
-    "k2d427e:e51dfa56e132c63a": "2026-10-21T11:50:54.930Z",
-    "k39a0e6:6c4aac98a2a1d473": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c": "2026-10-21T11:50:54.930Z",
-    "k74f74a:832c3cbc00aa7c70": "2026-10-21T11:50:54.930Z",
-    "ke6dccd:dd309aeba67f5449": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k74f74a:4f45c3e153b7c56c": "2026-10-21T11:50:54.930Z",
-    "hf-blog:https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99244": "2026-10-21T11:50:54.930Z",
-    "k38ef42:9d500e24f649bbf5": "2026-10-21T11:50:54.930Z",
-    "k74f74a:742cd78af87bad38": "2026-10-21T11:50:54.930Z",
     "k09feb3:4cc5fb3e95197653": "2026-10-21T13:50:57.835Z",
     "k2d427e:5381676d43d7d7e3": "2026-10-21T13:50:57.835Z",
     "kd9a613:ff134ff30a56a821": "2026-10-21T13:50:57.835Z",
@@ -10284,7 +10224,44 @@
     "k2d427e:3178a9779e955184": "2026-11-20T11:50:51.570Z",
     "kd9a613:46908e971d7e15e1": "2026-11-20T11:50:51.570Z",
     "k2d427e:fe55ed1427f52153": "2026-11-20T11:50:51.570Z",
-    "k2d427e:ed32197b5fdbc679": "2026-11-20T11:50:51.570Z"
+    "k2d427e:ed32197b5fdbc679": "2026-11-20T11:50:51.570Z",
+    "k8601e1:a6c19fe5be79c300": "2026-11-20T13:50:56.879Z",
+    "k4f0fb7:e3f2abbb15b6f5f9": "2026-11-20T13:50:56.879Z",
+    "k2e841d:9b47455ac7ff7d99": "2026-11-20T13:50:56.879Z",
+    "k78637d:027a0ca648dd832d": "2026-11-20T13:50:56.879Z",
+    "k621881:4f39d73b8f757b9c": "2026-11-20T13:50:56.879Z",
+    "k78637d:540ad70dcf6c53a8": "2026-11-20T13:50:56.879Z",
+    "k38ef42:2b934682c395d743": "2026-11-20T13:50:56.879Z",
+    "k2d427e:4c409a14a833ed27": "2026-11-20T13:50:56.879Z",
+    "k74f74a:1c721de8b9d8f7cf": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:b288482089711013": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:ce460c63cd511887": "2026-11-20T13:50:56.879Z",
+    "k38ef42:3668434a3acde154": "2026-11-20T13:50:56.879Z",
+    "k38ef42:26b814ae2bc8ec8e": "2026-11-20T13:50:56.879Z",
+    "ke6dccd:fc1ca3faa29db7ae": "2026-11-20T13:50:56.879Z",
+    "k36ff38:9e7bc9f1d8714927": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:f450f7753650cc8b": "2026-11-20T13:50:56.879Z",
+    "kad5125:cffbba9a905b187e": "2026-11-20T13:50:56.879Z",
+    "kb6d2b7:c66b34c4cee09a32": "2026-11-20T13:50:56.879Z",
+    "k38ef42:4c34b89032841858": "2026-11-20T13:50:56.879Z",
+    "k2d427e:c8f930bff95ad0c6": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:ee95dc6c672c93d1": "2026-11-20T13:50:56.879Z",
+    "ke6dccd:22e6f7fa0d8e86c7": "2026-11-20T13:50:56.879Z",
+    "k3595c8:6bf77e299b459364": "2026-11-20T13:50:56.879Z",
+    "k38ef42:49abeee33941c9bb": "2026-11-20T13:50:56.879Z",
+    "hf-blog:https://huggingface.co/blog/harness-adapters-at-scale": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:baca18197cdb20a9": "2026-11-20T13:50:56.879Z",
+    "k74f74a:582c36d9566c5adc": "2026-11-20T13:50:56.879Z",
+    "kd4ca61:3cc5364609e17678": "2026-11-20T13:50:56.879Z",
+    "k09feb3:0608aef5bd4da62a": "2026-11-20T13:50:56.879Z",
+    "kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "kad5125:dca05b25d26382db": "2026-11-20T13:50:56.879Z",
+    "k39a0e6:b6bbf22a9028ad65": "2026-11-20T13:50:56.879Z",
+    "k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:50:56.879Z",
+    "k59b8ca:328867e6e0ff838e": "2026-11-20T13:50:56.879Z",
+    "k39cb2c:d027dd9ec581e22b": "2026-11-20T13:50:56.879Z",
+    "k621881:7c9da90df131ba41": "2026-11-20T13:50:56.879Z",
+    "k38ef42:7b4ab566bc45c96c": "2026-11-20T13:50:56.879Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -10334,101 +10311,6 @@
     }
   },
   "ayrik": {
-    "haber:modal-nvidia-vera-islemcisiyle-yapay-zeka-testlerinde-iki-kat-hiz-elde-etti|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-yapay-zeka-guvenligi-icin-abd-ve-cin-arasinda-diyalog-cagrisi-yapti|k74f74a:742cd78af87bad38": "2026-10-21T11:50:54.930Z",
-    "haber:arda-industries-uretim-sureclerini-hizlandiran-yapay-zeka-yazilimi-icin-232-mily|k74f74a:e1b4f8a71d282651": "2026-10-21T11:50:54.930Z",
-    "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|k74f74a:e1b4f8a71d282651": "2026-10-21T11:50:54.930Z",
-    "haber:block-yapay-zeka-destekli-guvenlik-sistemiyle-aciklari-dakikalar-icinde-kapatiyo|k74f74a:e1b4f8a71d282651": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-berlin-deki-gtc-konferansinda-avrupa-yatirimlarini-duyurdu|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-dlss-5-neural-rendering-modeli-oyunlarda-yuzde-kirk-performans-artisi-sag|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "haber:doubleai-nvidia-ve-dell-in-katildigi-turda-200-milyon-dolar-yatirim-aldi|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "haber:meta-ohio-veri-merkezindeki-prometheus-projesini-1-milyon-gpu-ya-tasiyor|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "haber:andrew-ng-yapay-zeka-kiyamet-senaryolarinin-rekabeti-engellemek-icin-uyduruldugu|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "haber:doubleai-nvidia-ve-dell-in-katildigi-turda-200-milyon-dolar-yatirim-aldi|k74f74a:389b9bd37f313554": "2026-10-21T11:50:54.930Z",
-    "haber:meta-ohio-veri-merkezindeki-prometheus-projesini-1-milyon-gpu-ya-tasiyor|k74f74a:389b9bd37f313554": "2026-10-21T11:50:54.930Z",
-    "haber:modal-nvidia-vera-islemcisiyle-yapay-zeka-testlerinde-iki-kat-hiz-elde-etti|k74f74a:389b9bd37f313554": "2026-10-21T11:50:54.930Z",
-    "haber:doubleai-nvidia-ve-dell-in-katildigi-turda-200-milyon-dolar-yatirim-aldi|k74f74a:742cd78af87bad38": "2026-10-21T11:50:54.930Z",
-    "haber:meta-ohio-veri-merkezindeki-prometheus-projesini-1-milyon-gpu-ya-tasiyor|k74f74a:742cd78af87bad38": "2026-10-21T11:50:54.930Z",
-    "haber:meksika-da-kayip-cocuklarin-aranmasi-icin-yapay-zeka-araclari-gelistiriliyor|k2e841d:94d46e0a2864eb4c": "2026-10-21T11:50:54.930Z",
-    "haber:satis-ekiplerinin-veri-toplama-yukunu-otonom-yapay-zeka-ajanlari-ustleniyor|kad5125:b9a425bfd7ae7f76": "2026-10-21T11:50:54.930Z",
-    "haber:character-ai-iflas-basvurusunda-bulundu-varliklarinin-bir-kismi-disney-e-satiliy|hf-blog:https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories": "2026-10-21T11:50:54.930Z",
-    "haber:grok-voice-3-0-sesli-yapay-zeka-testlerinde-zirveye-yerlesti|k74f74a:832c3cbc00aa7c70": "2026-10-21T11:50:54.930Z",
-    "haber:spacex-super-intelligence-grok-ve-cursor-u-tek-pakette-birlestirdi|k74f74a:832c3cbc00aa7c70": "2026-10-21T11:50:54.930Z",
-    "haber:spacex-yetkilisi-new-york-city-konseyi-oturumunda-grok-guvenligi-icin-sorgulandi|k74f74a:832c3cbc00aa7c70": "2026-10-21T11:50:54.930Z",
-    "haber:acik-kaynakli-yeni-model-yazilim-gelistirme-ve-otonom-gorevlerde-iddiasini-artir|nvidia-blog:https://blogs.nvidia.com/?p=99244": "2026-10-21T11:50:54.930Z",
-    "haber:amazon-un-milyonluk-robot-ordusu-insan-emegini-nasil-degistiriyor|nvidia-blog:https://blogs.nvidia.com/?p=99244": "2026-10-21T11:50:54.930Z",
-    "haber:fabrika-robotlari-artik-haftalar-yerine-dakikalar-icinde-yeni-isler-ogrenebiliyo|nvidia-blog:https://blogs.nvidia.com/?p=99244": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "haber:antimikrobiyal-direncle-mucadelede-peptid-kesfi-hiz-kazaniyor|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "haber:awear-ai-akilli-gozlukler-arasinda-kisisel-yapay-zeka-hafizasinin-tasinmasini-sa|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k2d427e:09f13ce6aed3b308": "2026-10-21T11:50:54.930Z",
-    "haber:figma-yapay-zeka-ajanlarinin-marka-kurallarina-uymasini-saglayacak-araclar-duyur|k2d427e:09f13ce6aed3b308": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-berlin-deki-gtc-konferansinda-avrupa-yatirimlarini-duyurdu|k2d427e:09f13ce6aed3b308": "2026-10-21T11:50:54.930Z",
-    "haber:spacex-super-intelligence-grok-ve-cursor-u-tek-pakette-birlestirdi|k12b4a6:5ddba906b7f535b5": "2026-10-21T11:50:54.930Z",
-    "haber:super-intelligence-force-ve-federal-ticaret-komisyonu-yapay-zeka-sirketlerini-de|k12b4a6:5ddba906b7f535b5": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "haber:bagimsiz-yapay-zeka-ajanlari-engelleri-asarak-arastirmacilarla-iletisim-kurdu|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "haber:coreweave-yapay-zeka-cikarim-darbogazlarini-asmak-icin-yeni-sistemler-duyurdu|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "haber:andrew-ng-yapay-zeka-kiyamet-senaryolarinin-rekabeti-engellemek-icin-uyduruldugu|k3595c8:9bee7e182d02f9d4": "2026-10-21T11:50:54.930Z",
-    "haber:arda-industries-uretim-sureclerini-hizlandiran-yapay-zeka-yazilimi-icin-232-mily|k3595c8:9bee7e182d02f9d4": "2026-10-21T11:50:54.930Z",
-    "haber:avrupa-isletmelerinde-otonom-yapay-zeka-donemi-hiz-kazaniyor|k3595c8:9bee7e182d02f9d4": "2026-10-21T11:50:54.930Z",
-    "haber:openai-cocuklarin-guvenligini-tehlikeye-atmakla-suclaniyor|k74f74a:e12dcc599ba4125d": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k2d427e:0cb1a4526f3a762c": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-berlin-deki-gtc-konferansinda-avrupa-yatirimlarini-duyurdu|k2d427e:0cb1a4526f3a762c": "2026-10-21T11:50:54.930Z",
-    "haber:nvidia-dlss-5-neural-rendering-modeli-oyunlarda-yuzde-kirk-performans-artisi-sag|k2d427e:0cb1a4526f3a762c": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "haber:hpe-kurumsal-yapay-zeka-altyapilarinda-maliyet-optimizasyonunu-duyurdu|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "haber:kurumsal-bilgi-islem-surecleri-yapay-zeka-ile-otonomlasiyor|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "haber:arastirmacilar-yalan-haberi-tespit-eden-yeni-yapay-zeka-sistemi-gelistirdi|k39a0e6:6c4aac98a2a1d473": "2026-10-21T11:50:54.930Z",
-    "haber:bagimsiz-yapay-zeka-ajanlari-engelleri-asarak-arastirmacilarla-iletisim-kurdu|k39a0e6:6c4aac98a2a1d473": "2026-10-21T11:50:54.930Z",
-    "haber:cairn-platformunu-kullanan-yapay-zeka-ajanlari-yuzlerce-siteye-sizdi|k39a0e6:6c4aac98a2a1d473": "2026-10-21T11:50:54.930Z",
-    "haber:almanya-ve-nvidia-endustriyel-yapay-zeka-entegrasyonu-icin-guclerini-birlestiriy|k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "haber:anthropic-yapay-zeka-ajanlarinin-internet-erisimini-kesti|k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "haber:anthropic-yapay-zeka-modellerini-kopyalayan-saldirilari-engelledi|k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "haber:cloudflare-coklu-ortam-verilerini-tek-hamlede-isleyen-yeni-modelini-duyurdu|k74f74a:1d362dc841caedca": "2026-10-21T11:50:54.930Z",
-    "haber:cloudflare-metin-ve-gorsellerden-veri-cikaran-clairic-modelini-tanitti|k74f74a:1d362dc841caedca": "2026-10-21T11:50:54.930Z",
-    "haber:cloudflare-ve-openai-karar-modelleri-pazarinda-typesafe-jev-modeline-rakip-oldu|k74f74a:1d362dc841caedca": "2026-10-21T11:50:54.930Z",
-    "haber:google-yapay-zeka-iceriklerini-taniyan-synthid-aracini-acti|kad5125:0d73a8c0ca453912": "2026-10-21T11:50:54.930Z",
-    "haber:dijital-bilgide-temsil-ve-ailelerin-yapay-zeka-temkini|kad5125:4eb2fca33ef84bff": "2026-10-21T11:50:54.930Z",
-    "k2d427e:e51dfa56e132c63a|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d3902192ea63a308|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d3902192ea63a308|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d1ffb32bf58d037c|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|k2d427e:0cb1a4526f3a762c": "2026-10-21T11:50:54.930Z",
-    "k3595c8:9bee7e182d02f9d4|k74f74a:e1b4f8a71d282651": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d3902192ea63a308|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d1ffb32bf58d037c|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "k38ef42:7c0ca22357b2fc52|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
-    "k38ef42:7c0ca22357b2fc52|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:feebda99fa3f93ad|kad5125:b9a425bfd7ae7f76": "2026-10-21T11:50:54.930Z",
-    "k74f74a:389b9bd37f313554|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "k74f74a:742cd78af87bad38|kd4ca61:b30fdba2b553abfe": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d1ffb32bf58d037c|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d3902192ea63a308|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6|k2d427e:d3902192ea63a308": "2026-10-21T11:50:54.930Z",
-    "k74f74a:389b9bd37f313554|k74f74a:742cd78af87bad38": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|k74f74a:389b9bd37f313554": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "k2d427e:d1ffb32bf58d037c|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6|k2d427e:d1ffb32bf58d037c": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k2d427e:09f13ce6aed3b308|k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "nvidia-blog:https://blogs.nvidia.com/?p=99221|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6|nvidia-blog:https://blogs.nvidia.com/?p=99232": "2026-10-21T11:50:54.930Z",
-    "k12b4a6:75492d165f15d9ae|k38ef42:675e574f304a8a08": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
-    "k2d427e:0cb1a4526f3a762c|k2d427e:2581902f4a20e0d6": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6|nvidia-blog:https://blogs.nvidia.com/?p=99221": "2026-10-21T11:50:54.930Z",
     "haber:android-auto-icin-gemini-kisisel-zeka-ozelligi-sunuluyor|k36ff38:2ef282a57d413817": "2026-10-21T13:50:57.835Z",
     "haber:elon-musk-in-kredi-karti-bilgilerini-paylasmasiyla-yapay-zeka-asistani-grok-un-g|k8601e1:a0bc57ab635d63bd": "2026-10-21T13:50:57.835Z",
     "haber:microsoft-kendi-urettigi-maia-yapay-zeka-ciplerini-2027-de-gigavat-olcegine-tasi|k2d427e:f8b950fe9c2ed5b4": "2026-10-21T13:50:57.835Z",
@@ -24610,11 +24492,74 @@
     "k2d427e:73c559278ca3b163|k2d427e:75b9860808297d21": "2026-11-20T11:50:51.570Z",
     "k2d427e:75b9860808297d21|k2d427e:ed32197b5fdbc679": "2026-11-20T11:50:51.570Z",
     "k12b4a6:e83a9e7f0a345ec8|k12b4a6:ee2a58f983199154": "2026-11-20T11:50:51.570Z",
-    "k2d427e:4d475410b82fe235|k2d427e:85d995d7d6e9be46": "2026-11-20T11:50:51.570Z"
+    "k2d427e:4d475410b82fe235|k2d427e:85d995d7d6e9be46": "2026-11-20T11:50:51.570Z",
+    "haber:spacex-yapay-zeka-super-bilgisayari-icin-24-milyar-dolarlik-tesis-kuruyor|ke6dccd:fc1ca3faa29db7ae": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-halka-arz-surecinde-1-4-trilyon-dolarlik-degerleme-hedefliyor|kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-nasdaq-borsasindaki-ilk-islem-gununde-2-trilyon-dolarlik-degere-ulasti|kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "haber:google-gemini-nin-mac-uygulamasina-bilgisayar-kullanim-ozellikleri-ekledi|k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:50:56.879Z",
+    "haber:oppo-find-x10-serisine-manus-destekli-ajan-modu-ekledi|kad5125:dca05b25d26382db": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|k39cb2c:d027dd9ec581e22b": "2026-11-20T13:50:56.879Z",
+    "haber:chatgpt-wallet-yapay-zeka-ajanlarinin-odeme-yapmasini-sagladi|k38ef42:2b934682c395d743": "2026-11-20T13:50:56.879Z",
+    "haber:moonshot-ai-in-kimi-k3-1-pro-highspeed-modeli-amazon-bedrock-a-eklendi|k38ef42:2b934682c395d743": "2026-11-20T13:50:56.879Z",
+    "haber:oppo-find-x10-serisine-manus-destekli-ajan-modu-ekledi|k38ef42:2b934682c395d743": "2026-11-20T13:50:56.879Z",
+    "haber:cohere-aisle-satin-almasini-tamamlayarak-cohere-cyber-i-kurdu|k2d427e:4c409a14a833ed27": "2026-11-20T13:50:56.879Z",
+    "haber:langchain-yeni-yatirimlarla-degerlemesini-3-milyar-dolara-cikardi|k2d427e:4c409a14a833ed27": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|k09feb3:0608aef5bd4da62a": "2026-11-20T13:50:56.879Z",
+    "haber:alphagenome-2-genetik-hastaliklarin-anlasilmasinda-yeni-bir-donem-baslatiyor|k09feb3:0608aef5bd4da62a": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-halka-arz-oncesi-amazon-ve-google-ortaklik-oranlarini-acikladi|k09feb3:0608aef5bd4da62a": "2026-11-20T13:50:56.879Z",
+    "haber:mistral-skiplabs-ekibini-kod-dogrulama-teknolojileri-icin-satin-aldi|k74f74a:6c13c2c6313411ad": "2026-11-20T13:50:56.879Z",
+    "haber:apple-intelligence-artik-cin-deki-ipad-ve-mac-cihazlarina-geliyor|k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:50:56.879Z",
+    "haber:apple-siri-asistanini-2027-yilinda-otonom-yapay-zeka-ajanina-donusturmeyi-hedefl|k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:50:56.879Z",
+    "haber:gina-hinojosa-yapay-zeka-veri-merkezlerine-karsi-yeni-yasalar-cikaracak|ke6dccd:fc1ca3faa29db7ae": "2026-11-20T13:50:56.879Z",
+    "haber:tesla-cybercab-araclari-austin-de-ilk-2-ayinda-8-kazaya-karisti|ke6dccd:fc1ca3faa29db7ae": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|k74f74a:582c36d9566c5adc": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-83-dolar-hisse-fiyatiyla-halka-arz-surecini-baslatiyor|k74f74a:582c36d9566c5adc": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-arastirmacisi-yapay-zekanin-insanlari-issiz-birakacagini-ongoruyor|k74f74a:582c36d9566c5adc": "2026-11-20T13:50:56.879Z",
+    "haber:coderabbit-yazilim-gelistirme-sureclerini-yapay-zeka-ajanlariyla-20-kat-hizlandi|k36ff38:9e7bc9f1d8714927": "2026-11-20T13:50:56.879Z",
+    "haber:resolve-ai-uretim-arizalarini-cozen-sre-1-modelini-ve-yapay-zeka-nobet-servisini|k36ff38:9e7bc9f1d8714927": "2026-11-20T13:50:56.879Z",
+    "haber:amd-hisseleri-cin-e-yonelik-ihracat-kisitlamalari-iddialariyla-deger-kaybetti|k12b4a6:f450f7753650cc8b": "2026-11-20T13:50:56.879Z",
+    "haber:google-arastirmacisinin-yapay-zeka-ajaniyla-antik-maya-kenti-kesfi-iddiasi-asils|k12b4a6:f450f7753650cc8b": "2026-11-20T13:50:56.879Z",
+    "haber:matt-smith-yapay-zeka-asistaninin-sebepsiz-yere-72-yumurta-siparis-ettigini-acik|k12b4a6:f450f7753650cc8b": "2026-11-20T13:50:56.879Z",
+    "haber:google-gemini-decisions-api-ile-karar-modeli-pazarina-girdi|kb6d2b7:c66b34c4cee09a32": "2026-11-20T13:50:56.879Z",
+    "haber:google-metin-uretmeyen-yeni-karar-modeli-gemini-decision-1-i-tanitti|kb6d2b7:c66b34c4cee09a32": "2026-11-20T13:50:56.879Z",
+    "haber:envision-cin-de-800-mw-kapasiteli-dev-yapay-zeka-veri-merkezi-insa-ediyor|k38ef42:4c34b89032841858": "2026-11-20T13:50:56.879Z",
+    "haber:cerebras-microsoft-ile-bulut-ortakligi-kurdugunu-ve-gelir-beklentisini-artirdigi|k2d427e:7850f3d3e67b797f": "2026-11-20T13:50:56.879Z",
+    "haber:claude-code-yazilim-dunyasinda-ide-donemini-geride-birakiyor|k2d427e:7850f3d3e67b797f": "2026-11-20T13:50:56.879Z",
+    "haber:dell-kurumsal-yapay-zeka-ajanlari-icin-veri-gecidi-gelistirdi|k2d427e:7850f3d3e67b797f": "2026-11-20T13:50:56.879Z",
+    "haber:dell-kurumsal-yapay-zeka-ajanlari-icin-veri-gecidi-gelistirdi|k2d427e:c8f930bff95ad0c6": "2026-11-20T13:50:56.879Z",
+    "haber:human-kelimesi-2026-yilinin-kelimesi-secildi|k2d427e:c8f930bff95ad0c6": "2026-11-20T13:50:56.879Z",
+    "haber:apple-siri-asistanini-2027-yilinda-otonom-yapay-zeka-ajanina-donusturmeyi-hedefl|k59b8ca:328867e6e0ff838e": "2026-11-20T13:50:56.879Z",
+    "haber:apple-yonetimi-yapay-zeka-stratejisini-hizlandirmak-icin-baskiyi-artiriyor|k59b8ca:328867e6e0ff838e": "2026-11-20T13:50:56.879Z",
+    "haber:chatgpt-gemini-ve-perplexity-kullanicilarina-sahte-alisveris-siteleri-oneriyor|k59b8ca:328867e6e0ff838e": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|k38ef42:7b4ab566bc45c96c": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-islem-gucu-harcamalarini-yillik-dort-katina-cikariyor|k38ef42:7b4ab566bc45c96c": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-ve-openai-halka-arz-yarisinda-karsi-karsiya|k38ef42:7b4ab566bc45c96c": "2026-11-20T13:50:56.879Z",
+    "haber:internetin-dunya-bolgeleri|k12b4a6:ee95dc6c672c93d1": "2026-11-20T13:50:56.879Z",
+    "haber:microsoft-auto-sr-teknolojisi-el-konsollari-ve-bilgisayarlar-icin-yayimlandi|ke6dccd:22e6f7fa0d8e86c7": "2026-11-20T13:50:56.879Z",
+    "haber:akilli-gozlukler-kullanim-kolayligi-ve-gizlilik-endiselerini-beraberinde-getiriy|kad5125:dca05b25d26382db": "2026-11-20T13:50:56.879Z",
+    "haber:akilli-gozlukler-mahkemelerden-okullara-kadar-kamusal-alanlarda-yasaklaniyor|kad5125:dca05b25d26382db": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "haber:meta-nin-muse-uygulamasi-kullanici-verilerini-karistiriyor|k3595c8:6bf77e299b459364": "2026-11-20T13:50:56.879Z",
+    "haber:alphagenome-2-genetik-hastaliklarin-anlasilmasinda-yeni-bir-donem-baslatiyor|k39cb2c:d027dd9ec581e22b": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-halka-arz-oncesi-amazon-ve-google-ortaklik-oranlarini-acikladi|k39cb2c:d027dd9ec581e22b": "2026-11-20T13:50:56.879Z",
+    "haber:amd-hisseleri-cin-e-yonelik-ihracat-kisitlamalari-iddialariyla-deger-kaybetti|k38ef42:49abeee33941c9bb": "2026-11-20T13:50:56.879Z",
+    "haber:google-arastirmacisinin-yapay-zeka-ajaniyla-antik-maya-kenti-kesfi-iddiasi-asils|k38ef42:49abeee33941c9bb": "2026-11-20T13:50:56.879Z",
+    "haber:matt-smith-yapay-zeka-asistaninin-sebepsiz-yere-72-yumurta-siparis-ettigini-acik|k38ef42:49abeee33941c9bb": "2026-11-20T13:50:56.879Z",
+    "haber:alliance-for-secure-ai-ve-sivil-toplum-kuruluslari-bes-teknoloji-devine-dava-act|kd4ca61:3cc5364609e17678": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-83-dolar-hisse-fiyatiyla-halka-arz-surecini-baslatiyor|kd4ca61:3cc5364609e17678": "2026-11-20T13:50:56.879Z",
+    "haber:anthropic-arastirmacisi-yapay-zekanin-insanlari-issiz-birakacagini-ongoruyor|kd4ca61:3cc5364609e17678": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:f450f7753650cc8b|k38ef42:49abeee33941c9bb": "2026-11-20T13:50:56.879Z",
+    "kd4ca61:3cc5364609e17678|kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "k09feb3:0608aef5bd4da62a|k39cb2c:d027dd9ec581e22b": "2026-11-20T13:50:56.879Z",
+    "k36ff38:9e7bc9f1d8714927|k38ef42:26b814ae2bc8ec8e": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:ee95dc6c672c93d1|k38ef42:26b814ae2bc8ec8e": "2026-11-20T13:50:56.879Z",
+    "k74f74a:582c36d9566c5adc|kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T13:50:56.879Z",
+    "k74f74a:582c36d9566c5adc|kd4ca61:3cc5364609e17678": "2026-11-20T13:50:56.879Z",
+    "k36ff38:9e7bc9f1d8714927|kad5125:cffbba9a905b187e": "2026-11-20T13:50:56.879Z",
+    "k12b4a6:ee95dc6c672c93d1|k36ff38:9e7bc9f1d8714927": "2026-11-20T13:50:56.879Z",
+    "k2d427e:7850f3d3e67b797f|k2d427e:c8f930bff95ad0c6": "2026-11-20T13:50:56.879Z"
   },
   "ayni": {
-    "k2d427e:d3902192ea63a308|nvidia-blog:https://blogs.nvidia.com/?p=99227": "2026-10-21T11:50:54.930Z",
-    "k2d427e:2581902f4a20e0d6|k38ef42:7c0ca22357b2fc52": "2026-10-21T11:50:54.930Z",
     "haber:dijital-bilgide-temsil-ve-ailelerin-yapay-zeka-temkini|k2d427e:26b4195261ca2148": "2026-10-21T13:50:57.835Z",
     "haber:dijital-bilgide-temsil-ve-ailelerin-yapay-zeka-temkini|kf581c4:99e5d6665e40a7df": "2026-10-21T13:50:57.835Z",
     "hf-blog:https://huggingface.co/blog/nvidia/kumo-forecast|k2d427e:51e993e3ca2e120a": "2026-10-21T13:50:57.835Z",
@@ -25310,104 +25255,11 @@
     "k2e841d:74c1885ce9618298|k59b8ca:3ee6514b79680c60": "2026-11-20T05:50:51.530Z",
     "k38ef42:737f76ea0a98286c|k59b8ca:3ee6514b79680c60": "2026-11-20T05:50:51.530Z",
     "k2e841d:7a17d560375cefc2|k38ef42:ea5cea0af72906eb": "2026-11-20T07:51:02.465Z",
-    "k12b4a6:ae7e3ae3a2129e38|kad5125:254633a295855c46": "2026-11-20T11:50:51.570Z"
+    "k12b4a6:ae7e3ae3a2129e38|kad5125:254633a295855c46": "2026-11-20T11:50:51.570Z",
+    "k2d427e:bfa092fd6c4ee7d8|kd4ca61:2e02cf1b8588da83": "2026-11-20T13:50:56.879Z",
+    "k59b8ca:328867e6e0ff838e|k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:50:56.879Z"
   },
   "puan": {
-    "k39a0e6:f27593ba56aa4d4b": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k2e841d:c70ad7e3648c34f2": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:8a5e9f5b1d596358": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k2e841d:8b98baae6415b567": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k2e841d:3f6416276b8f9169": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:f44b023b8d6f167c": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k8601e1:f7b0fbb25b7c3bde": {
-      "puan": 75,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k3595c8:4b9f456b3ae5d3d1": {
-      "puan": 80,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k78637d:6662e2c1c76589fb": {
-      "puan": 70,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k2d427e:043fa8c2b04b723d": {
-      "puan": 60,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:b520bd527d0b17d4": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k12b4a6:cf1ca06bfa6285cb": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k74f74a:7a54895f51c506a1": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:1818a8a70c96ee23": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k74f74a:a08d0203933fd65b": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:e0a37088e51a9692": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "kd4ca61:2bbe13bed401d6d1": {
-      "puan": 55,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "k38ef42:f265a5437ca1ea8d": {
-      "puan": 0,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
-    "kaec085:252155d2ae465183": {
-      "puan": 85,
-      "olcek": 100,
-      "zaman": "2026-11-14T13:50:54.599Z"
-    },
     "k38ef42:a7107afe9d481c29": {
       "puan": 0,
       "olcek": 100,
@@ -33927,25 +33779,174 @@
       "puan": 82,
       "olcek": 100,
       "zaman": "2026-11-20T11:50:51.570Z"
+    },
+    "k38ef42:2b934682c395d743": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k2d427e:bfa092fd6c4ee7d8+kd4ca61:2e02cf1b8588da83": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k2d427e:4c409a14a833ed27": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k74f74a:1c721de8b9d8f7cf": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k12b4a6:b288482089711013": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k12b4a6:ce460c63cd511887": {
+      "puan": 40,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k38ef42:3668434a3acde154": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k09feb3:0608aef5bd4da62a": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k74f74a:6c13c2c6313411ad": {
+      "puan": 72,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k59b8ca:328867e6e0ff838e+k74f74a:98bfe9cd6006e0b4": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k38ef42:26b814ae2bc8ec8e": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "ke6dccd:fc1ca3faa29db7ae": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k74f74a:582c36d9566c5adc": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k36ff38:9e7bc9f1d8714927": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k12b4a6:f450f7753650cc8b": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "kad5125:cffbba9a905b187e": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k39a0e6:b6bbf22a9028ad65": {
+      "puan": 80,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k621881:7c9da90df131ba41": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "kb6d2b7:c66b34c4cee09a32": {
+      "puan": 15,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k38ef42:4c34b89032841858": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k2d427e:7850f3d3e67b797f": {
+      "puan": 74,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k2d427e:c8f930bff95ad0c6": {
+      "puan": 65,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k12b4a6:baca18197cdb20a9": {
+      "puan": 90,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k38ef42:7b4ab566bc45c96c": {
+      "puan": 75,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k12b4a6:ee95dc6c672c93d1": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "ke6dccd:22e6f7fa0d8e86c7": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "kad5125:dca05b25d26382db": {
+      "puan": 82,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "kd4ca61:ba07e1ceaaaadd9d": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k3595c8:6bf77e299b459364": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k39cb2c:d027dd9ec581e22b": {
+      "puan": 78,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "k38ef42:49abeee33941c9bb": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "kd4ca61:3cc5364609e17678": {
+      "puan": 88,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
+    },
+    "hf-blog:https://huggingface.co/blog/harness-adapters-at-scale": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-20T13:50:56.879Z"
     }
   },
   "yayinlanan": {
-    "hugging-face-nvidia-tarafindan-12-93-milyar-dolara-satin-alindi": {
-      "zaman": "2026-11-17T11:51:04.290Z",
-      "basliklarSifreli": "v1.J6uaq5zau053nseh.X7OSIGAVpFvRm4SDwFJ18W8l7GL3K3clAbbkfUaZKL4pu5z2EfMuNasTO+dMpuXWl35RnmWmrp9/Q9blqYKNcpPes4SLQAGPHazhG85eZuZPifdyJBh5GdBHBtmTqD0S6PbcBAY="
-    },
-    "gemini-notebook-notlari-etkilesimli-web-sitelerine-donusturuyor": {
-      "zaman": "2026-11-17T11:51:04.290Z",
-      "basliklarSifreli": "v1.rj65My0QVP2rLjV3.zfJeA9nCcrGt6RzDsJUvQnQmUSZDYSigvBDPmRONDG0DFi2mlD38QJuLIo7OdkjAZSyaQ2NCg4OvX2W4fRbyajzMcFJTbubT5ZdrjLmGM4fK/fPK/1zoxEHm9468aqmfHNxTXELRbCI="
-    },
-    "is-dunyasinda-yapay-zeka-kullanimi-calisanlarin-beceri-gelisimini-tehdit-ediyor": {
-      "zaman": "2026-11-17T11:51:04.290Z",
-      "basliklarSifreli": "v1.Mv9UQPN6x0dZERGz.kxZEMyo7Y+hb6iyYEsknvBMy1Qz/cwBaaru5/Y0zrXTx6RQINXkf2hl5up318ywEV7IVwDtKno7ZVnElWp0klHUvZHxLbIhKsdIgIB4pZCXyEkrExsUrj8HBTCeQEX/HviKPq6iC+P2C1ZP4CO5aQlWZZpT5cArUnsQw/ehPZV1ttG9eK7t6dBRSuOxKmNSb0ml8qALYnSSZTnA="
-    },
-    "sarvam-ai-hindistan-merkezli-acik-agirlikli-modeller-icin-token-factory-yi-kulla": {
-      "zaman": "2026-11-17T11:51:04.290Z",
-      "basliklarSifreli": "v1.9mr+Ct8GsPAhnvUC.c8P4p+VSoTNK9a5MoWoc5tdaXTKoTFzwgYRqweg1H5Q0Nmf8OZek4tMy4SmrIMSnEQ3WgC5PBCNK0njUH9jCVBxhFdC05ld/nhpdn5QjTJaS6TZnA3K1DMFxJWNGaYAXv/gqyc2cf7wxcMNJVJ/maRNHsW8Pn8pVFJcrRLRx/co6n1puaiaT6pWPk8I40C1dm2n6AghicaOYOnkOA9nsNq7jpix/UbSibsyt"
-    },
     "isomorphic-labs-5-milyar-dolar-yatirimla-ilac-kesif-calismalarini-buyutuyor": {
       "zaman": "2026-11-17T13:50:57.134Z",
       "basliklarSifreli": "v1.0WNgoySNPDG2mBk2.t+AqyDJm7FqwgkgmmsoY9k7WuVzt7LXS3jBpf74DpYZrQ674rpFvayHC3Ljiy0ExedmJHm1c79cAk0WA4h1pTDE+ovk7yEK8wswXqawe0K1yXFaTrFXqPcHGv+O9ha+hizCGbv3SJL4uvLP1v1K7"
@@ -34577,6 +34578,26 @@
     "sirketler-yapay-zeka-yatirimlarinda-verimlilik-yerine-somut-tasarruf-ariyor": {
       "zaman": "2026-11-20T11:50:51.570Z",
       "basliklarSifreli": "v1.+8uGAq/cNoa1BJ+7./eIWtH59gcBvUTnv+HyHRb3i/dyXxjs0wvRX0E2Xzda/R2LNRzkMPqWdQVhqXPKi986iKHi9KOU4IHtNTEybLD/gBRGbGWOOznSVUHD9vK7CXn6fOdmjKIPfr2+ak48Ii2jufMZhK+TZUBwb56Rnli7+DVlR"
+    },
+    "anthropic-hisseleri-halka-arz-sonrasi-piyasa-dalgalanmalariyla-deger-kaybetti": {
+      "zaman": "2026-11-20T13:50:56.879Z",
+      "basliklarSifreli": "v1.ND1cFOrNAkMlAlmR.1SDNKxNH0afk0AHYKu43Vwxto/iQwRJFWuJfPaIpYSukYzDsW2Bvg89Qlec49EW0x2tDkTfV6AB5PSPpiDR2aR7oBj1bfM9+tTcbCfAXS/uwHOr242t3feh/VHPx"
+    },
+    "oppo-akilli-telefonlara-otonom-yapay-zeka-ajanlarini-getiriyor": {
+      "zaman": "2026-11-20T13:50:56.879Z",
+      "basliklarSifreli": "v1.zAorjM3GOy0dU/F1.lTM6BbqU/JJeyDcj/g1Gb2ql9DA4D4h3iuqD32rP9iUn29K5CJ3Uo7muaEFx9XdpZZZapS59gXbWdrxzG1tr+KXBqae0C+05+n7VrjToN7SN1kGXNytnczgGwDKnj1NSRNIefSwdcx0="
+    },
+    "signal-sohbetleri-yapay-zeka-taramalarindan-korumak-icin-siri-ai-ve-gemini-i-eng": {
+      "zaman": "2026-11-20T13:50:56.879Z",
+      "basliklarSifreli": "v1.OPHU9FXP8XnhgFyZ.pGsd01ZLiG20ahcIzWnqgZ3GVTdxJKNbgGEOL7lzIghNouI7iRviVg2xTsPHcA/45jb1dOl1INrxUFObwvHtDDkqijGwc+0bdf0SzohoCQRmy0LrbFBxk67yuR3hiCkupQ6YOYLY/63qucxu0ceYRZ/xYvA9jy5NaOWG71+ooQYB6ne4oss99Uk1jtO4zt4trwGFMBVPXHNQUG4h"
+    },
+    "everful-yapay-zeka-destekli-tedarik-platformu-icin-48-5-milyon-dolar-yatirim-ald": {
+      "zaman": "2026-11-20T13:50:56.879Z",
+      "basliklarSifreli": "v1.zuu9spom58H3GuC7.UaejA9coTBWxc9KzQPXFOmBKB37TFzrsDvwevzY1fK3ghJC2zhwfJwxmdR3wPWU5C+b5rUwtWJl8ObM0FbjvmvF/Z0Q9Hb9SIOPRihqEo+Elhg5Pd+I3ZfO3DnwNCEL3DD/xkhgzaGM="
+    },
+    "openai-akilli-telefonu-icin-foxconn-ile-masaya-oturdu": {
+      "zaman": "2026-11-20T13:50:56.879Z",
+      "basliklarSifreli": "v1.66casc9biBEfOWeg.hXhF7WaF5vQ/E2Rc3Tjj92q8mvOdZEqORfQjf8QZ5FbLSkJwjoHYFrCLt4jtesqeKpzRtJc1j4XfRVSey+JCVLljDTL9oDl5FOuqR0hddyZcRYn/hWy1uHwoWyX5kw=="
     }
   },
   "havuz": [
@@ -34588,65 +34609,6 @@
     }
   ],
   "taranan": {
-    "mistral:https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/": "2026-10-21T11:50:54.930Z",
-    "kd9a613:ff134ff30a56a821": "2026-10-21T13:22:51.000Z",
-    "k3595c8:8967811f4e2dcd09": "2026-10-21T12:35:00.000Z",
-    "kf581c4:99e5d6665e40a7df": "2026-10-21T13:00:02.000Z",
-    "kf581c4:32c55dd6c2a51669": "2026-10-21T12:00:02.000Z",
-    "k09feb3:4cc5fb3e95197653": "2026-10-21T13:42:05.000Z",
-    "k09feb3:d1270375ff648774": "2026-10-21T13:04:19.000Z",
-    "k09feb3:870cb710a8a77599": "2026-10-21T12:34:57.000Z",
-    "kb6d2b7:03ea26f699a04d91": "2026-10-21T12:00:00.000Z",
-    "k36ff38:b0ef97bdb65f218d": "2026-10-21T12:30:36.000Z",
-    "k36ff38:2ef282a57d413817": "2026-10-21T12:20:44.000Z",
-    "k36ff38:1e1fb999fff3a5cf": "2026-10-21T12:20:29.000Z",
-    "kea595f:a7923a94d6ca5f9f": "2026-10-21T13:16:38.000Z",
-    "kea595f:4828d9385d73f4cb": "2026-10-21T11:51:37.000Z",
-    "k12b4a6:c7c655609538ca8a": "2026-10-21T13:34:00.000Z",
-    "k12b4a6:bc1a138cac4efffd": "2026-10-21T13:30:00.000Z",
-    "k12b4a6:a4a2abaaacde09ba": "2026-10-21T13:08:00.000Z",
-    "k12b4a6:879ff1f903df1dec": "2026-10-21T12:32:00.000Z",
-    "k12b4a6:04078673076e791c": "2026-10-21T12:07:00.000Z",
-    "k38ef42:e3189fe525d0e2ad": "2026-10-21T13:13:31.000Z",
-    "k38ef42:4fbd7d4829baef8f": "2026-10-21T13:00:00.000Z",
-    "k38ef42:ac78bdf50141e547": "2026-10-21T12:53:34.000Z",
-    "k38ef42:8924f4b65a1334bf": "2026-10-21T12:42:59.000Z",
-    "k38ef42:99ce34280b3fcffd": "2026-10-21T12:40:00.000Z",
-    "k38ef42:0f6742580be7eff1": "2026-10-21T12:30:00.000Z",
-    "k38ef42:88cf6789cf572f98": "2026-10-21T12:09:10.000Z",
-    "k38ef42:83d9c4468b6ccaab": "2026-10-21T12:00:00.000Z",
-    "k38ef42:6f471401bfff42b5": "2026-10-21T11:57:16.000Z",
-    "k39a0e6:96135d129026889d": "2026-10-21T13:40:05.000Z",
-    "k39a0e6:a79ac4c60b7e07eb": "2026-10-21T13:00:18.000Z",
-    "k2d427e:f5204f694c6a522e": "2026-10-21T13:32:10.000Z",
-    "k2d427e:5381676d43d7d7e3": "2026-10-21T13:26:09.000Z",
-    "k2d427e:51e993e3ca2e120a": "2026-10-21T13:13:09.000Z",
-    "k2d427e:648615922debad21": "2026-10-21T13:05:29.000Z",
-    "k2d427e:26b4195261ca2148": "2026-10-21T13:00:47.000Z",
-    "k2d427e:31c986c73c6ce47b": "2026-10-21T13:00:09.000Z",
-    "k2d427e:b05d0b1db9fce5b4": "2026-10-21T12:58:06.000Z",
-    "k2d427e:f8f66e7c22bdffb8": "2026-10-21T12:53:01.000Z",
-    "k2d427e:58d20ef983b30ad2": "2026-10-21T12:45:09.000Z",
-    "k2d427e:e3749b29196fc149": "2026-10-21T12:35:11.000Z",
-    "k2d427e:f8b950fe9c2ed5b4": "2026-10-21T12:29:10.000Z",
-    "k2d427e:a04b1364422be7ee": "2026-10-21T12:10:08.000Z",
-    "k2d427e:522de7da8a8bf471": "2026-10-21T12:07:10.000Z",
-    "k2d427e:f5024a615cada0b8": "2026-10-21T12:00:00.000Z",
-    "k2d427e:ea6586761273de01": "2026-10-21T11:52:12.000Z",
-    "k74f74a:0f28425afc9bb1c4": "2026-10-21T13:30:43.000Z",
-    "k74f74a:b250f94b7bc8ce91": "2026-10-21T12:16:45.000Z",
-    "k74f74a:6e0b46cd570b31f3": "2026-10-21T11:53:51.000Z",
-    "k2e841d:f1da5ef5bd3fae9b": "2026-10-21T13:00:00.000Z",
-    "k2e841d:600aaf43c823b8bb": "2026-10-21T12:19:58.000Z",
-    "k2e841d:68856e54396cc7c1": "2026-10-21T12:00:00.000Z",
-    "kd4ca61:cd0a73c6f483a961": "2026-10-21T12:44:19.000Z",
-    "kd4ca61:2217703a2f55f766": "2026-10-21T12:33:34.000Z",
-    "kd4ca61:7f2c4f77f8db4796": "2026-10-21T13:44:12.000Z",
-    "kd4ca61:ba36749586a175ee": "2026-10-21T12:20:13.000Z",
-    "k8601e1:e27b5bbdf6bed53f": "2026-10-21T13:28:56.000Z",
-    "k8601e1:a0bc57ab635d63bd": "2026-10-21T12:58:27.000Z",
-    "openai:https://openai.com/index/openai-models-google-cloud": "2026-10-21T12:00:00.000Z",
-    "hf-blog:https://huggingface.co/blog/nvidia/kumo-forecast": "2026-10-21T12:51:24.000Z",
     "k4f0fb7:b5e499940d2830a4": "2026-10-21T14:15:44.000Z",
     "kb7f905:d2b5be8ed815c407": "2026-10-21T14:00:00.000Z",
     "k59b8ca:e6600aa161422526": "2026-10-21T15:00:00.000Z",
@@ -34661,7 +34623,6 @@
     "ke82007:c5fe2cfdc891eb9e": "2026-10-21T15:25:52.000Z",
     "ka5e8e4:9edcb87da39a56a5": "2026-10-21T14:01:31.000Z",
     "kb6d2b7:62e130a4441a80ad": "2026-10-21T14:00:00.000Z",
-    "k36ff38:a21e7d37cdaa3f61": "2026-10-21T13:50:10.000Z",
     "kea595f:0c99e0c854fe6d6f": "2026-10-21T14:30:30.000Z",
     "kea595f:3d8e660d98c2b172": "2026-10-21T14:15:29.000Z",
     "kea595f:25d8557782f3e4df": "2026-10-21T14:00:59.000Z",
@@ -34701,7 +34662,6 @@
     "kd4ca61:f0c09e0bbe3eb694": "2026-10-21T15:00:01.000Z",
     "k8601e1:04030f51447d3ae7": "2026-10-21T15:03:26.000Z",
     "k8601e1:01ac3a2ec0bda646": "2026-10-21T14:02:38.000Z",
-    "openai:https://openai.com/index/chatgpt-ads-expands-26-new-countries": "2026-10-21T13:00:00.000Z",
     "hf-blog:https://huggingface.co/blog/ibm-granite/granite-speech-5": "2026-10-21T14:58:18.000Z",
     "kd9a613:b6521e6cb9811eb6": "2026-10-21T16:33:12.000Z",
     "k3595c8:fb739ab6f405eb7d": "2026-10-21T16:00:00.000Z",
@@ -34717,8 +34677,6 @@
     "k12b4a6:3fcb24229617f5ea": "2026-10-21T16:03:00.000Z",
     "kad5125:ee0a4da85b64830e": "2026-10-21T15:00:25.000Z",
     "kad5125:cf4d041c1315823a": "2026-10-21T14:00:33.000Z",
-    "kad5125:1324919c422065be": "2026-10-21T13:00:43.000Z",
-    "kad5125:29f75227fceb6dbe": "2026-10-21T12:00:32.000Z",
     "k39a0e6:44a742ecc767a77e": "2026-10-21T17:00:08.000Z",
     "k2d427e:2020d5f28affcbde": "2026-10-21T16:30:31.000Z",
     "k2d427e:ee2caaa412a6b7b8": "2026-10-21T16:13:55.000Z",
@@ -44863,6 +44821,47 @@
     "kd4ca61:c12d9534ed047750": "2026-11-20T11:00:01.000Z",
     "ke6dccd:27bc17c747e5af77": "2026-11-20T11:32:00.000Z",
     "ke6dccd:e6176296b1475187": "2026-11-20T10:09:00.000Z",
-    "ke6dccd:a8daa71e4ae9bb6c": "2026-11-20T10:00:00.000Z"
+    "ke6dccd:a8daa71e4ae9bb6c": "2026-11-20T10:00:00.000Z",
+    "k621881:7c9da90df131ba41": "2026-11-20T13:00:00.000Z",
+    "k621881:4f39d73b8f757b9c": "2026-11-20T12:00:00.000Z",
+    "k4f0fb7:e3f2abbb15b6f5f9": "2026-11-20T12:59:39.000Z",
+    "k59b8ca:328867e6e0ff838e": "2026-11-20T12:30:47.000Z",
+    "k3595c8:6bf77e299b459364": "2026-11-20T12:00:00.000Z",
+    "k09feb3:0608aef5bd4da62a": "2026-11-20T13:19:31.000Z",
+    "k39cb2c:d027dd9ec581e22b": "2026-11-20T12:00:00.000Z",
+    "kb6d2b7:c66b34c4cee09a32": "2026-11-20T13:00:00.000Z",
+    "k36ff38:9e7bc9f1d8714927": "2026-11-20T13:04:19.000Z",
+    "k78637d:027a0ca648dd832d": "2026-11-20T12:21:00.000Z",
+    "k78637d:540ad70dcf6c53a8": "2026-11-20T12:00:00.000Z",
+    "k12b4a6:b288482089711013": "2026-11-20T13:32:00.000Z",
+    "k12b4a6:ce460c63cd511887": "2026-11-20T13:30:00.000Z",
+    "k12b4a6:f450f7753650cc8b": "2026-11-20T13:04:00.000Z",
+    "k12b4a6:baca18197cdb20a9": "2026-11-20T12:34:00.000Z",
+    "k12b4a6:ee95dc6c672c93d1": "2026-11-20T12:05:00.000Z",
+    "k38ef42:2b934682c395d743": "2026-11-20T13:45:00.000Z",
+    "k38ef42:3668434a3acde154": "2026-11-20T13:30:00.000Z",
+    "k38ef42:26b814ae2bc8ec8e": "2026-11-20T13:15:00.000Z",
+    "k38ef42:4c34b89032841858": "2026-11-20T13:00:00.000Z",
+    "k38ef42:7b4ab566bc45c96c": "2026-11-20T12:30:00.000Z",
+    "k38ef42:49abeee33941c9bb": "2026-11-20T12:00:00.000Z",
+    "kad5125:cffbba9a905b187e": "2026-11-20T13:00:28.000Z",
+    "kad5125:dca05b25d26382db": "2026-11-20T12:00:50.000Z",
+    "k39a0e6:b6bbf22a9028ad65": "2026-11-20T13:00:08.000Z",
+    "k2d427e:bfa092fd6c4ee7d8": "2026-11-20T13:42:04.000Z",
+    "k2d427e:4c409a14a833ed27": "2026-11-20T13:41:03.000Z",
+    "k2d427e:7850f3d3e67b797f": "2026-11-20T12:50:03.000Z",
+    "k2d427e:c8f930bff95ad0c6": "2026-11-20T12:47:01.000Z",
+    "k74f74a:1c721de8b9d8f7cf": "2026-11-20T13:38:18.000Z",
+    "k74f74a:6c13c2c6313411ad": "2026-11-20T13:16:39.000Z",
+    "k74f74a:98bfe9cd6006e0b4": "2026-11-20T13:15:23.000Z",
+    "k74f74a:582c36d9566c5adc": "2026-11-20T13:06:35.000Z",
+    "k2e841d:9b47455ac7ff7d99": "2026-11-20T12:36:11.000Z",
+    "kd4ca61:2e02cf1b8588da83": "2026-11-20T12:52:15.000Z",
+    "kd4ca61:ba07e1ceaaaadd9d": "2026-11-20T12:00:02.000Z",
+    "kd4ca61:3cc5364609e17678": "2026-11-20T11:26:37.000Z",
+    "ke6dccd:fc1ca3faa29db7ae": "2026-11-20T13:14:33.000Z",
+    "ke6dccd:22e6f7fa0d8e86c7": "2026-11-20T12:02:00.000Z",
+    "k8601e1:a6c19fe5be79c300": "2026-11-20T13:28:34.000Z",
+    "hf-blog:https://huggingface.co/blog/harness-adapters-at-scale": "2026-11-20T00:00:00.000Z"
   }
 }
