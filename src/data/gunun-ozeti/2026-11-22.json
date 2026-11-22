@@ -1,0 +1,12 @@
+{
+  "tarih": "2026-11-22",
+  "paragraf": "Stuttgart Yüksek Başarımlı Bilişim Merkezi, Avrupa'daki KOBİ'ler ve girişimler için süper bilgisayar gücünde yapay zekâ altyapısı sunuyor. Tesla, tam otonom sürüş destek sistemi FSD'nin V15 sürümünü kademeli olarak kullanıcılarla buluşturmaya başladı. AWS, sunucusuz bilgi işlem platformuna GPU desteği ekleyerek yapay zekâ modellerinin devreye alınmasını kolaylaştırdı. Avrupa'da çalışanların %25'i yapay zekâ araçlarını kullanırken bu oran Amerika Birleşik Devletleri'nde %43'e ulaşıyor.",
+  "kimlikler": [
+    "hammerhai-yapay-zeka-fabrikasi-kobi-ler-ve-girisimler-icin-kapilarini-aciyor",
+    "tesla-otonom-surus-yazilimi-fsd-v15-surumunu-kullanima-sundu",
+    "aws-lambda-artik-gpu-destegiyle-yapay-zeka-modellerini-calistiriyor",
+    "avrupa-is-gucunde-yapay-zeka-kullanim-orani-25-te-kaldi"
+  ],
+  "yazan": "gemini",
+  "olusturma": "2026-11-22T19:00:51.415Z"
+}
