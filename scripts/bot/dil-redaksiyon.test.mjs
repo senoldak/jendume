@@ -35,7 +35,7 @@ test('redaksiyon kabul: TR düzelir, EN aynen kalır, sistem istemi ve ayarlar i
   assert.equal(cagrilar.filter((c) => c.sistem === SISTEM_TR).length, 1);
   assert.equal(cagrilar[0].sistem, SISTEM_TR);
   assert.equal(cagrilar[0].dusunme, 'medium');
-  assert.equal(cagrilar[0].sicaklik, 0.2);
+  assert.equal(cagrilar[0].sicaklik, null); // Gemini 3 varsayılanı (24 Kasım 2026)
   assert.ok(cagrilar[0].prompt.includes('otuz dört milyon dolar') || cagrilar[0].prompt.includes('Sayılar yazıyla'));
   assert.ok(!cagrilar[0].prompt.includes('Keep EN'), 'EN alanları istemde yok');
   assert.ok(r.t.tr.body.includes('34 milyon dolar'));

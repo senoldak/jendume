@@ -114,7 +114,7 @@ export function kabulSorunlari(onceki, yeni, kaynak) {
 async function tur(t, kaynak, sorunMetni, ek, kall) {
   let r;
   try {
-    r = await kall({ sistem: SISTEM_TR, prompt: istem(t.tr, kaynak, sorunMetni, ek), schema: REDAKSIYON_SEMASI, dusunme: 'medium', sicaklik: 0.2 });
+    r = await kall({ sistem: SISTEM_TR, prompt: istem(t.tr, kaynak, sorunMetni, ek), schema: REDAKSIYON_SEMASI, dusunme: 'medium', sicaklik: null });
   } catch (e) {
     if (e?.ayar || e?.kota) throw e;
     return { neden: `çağrı başarısız (${e?.message ?? e})` };
@@ -272,7 +272,7 @@ async function enTur(t, kaynak, sorunMetni, ek, kall) {
   let r;
   try {
     // Düşünme 'low': 'medium' denemede çağrı başına ~12K düşünme token'ı harcadı (16K çıkış tavanına yakın).
-    r = await kall({ sistem: SISTEM_EN, prompt: enIstem(t.en, kaynak, sorunMetni, ek), schema: REDAKSIYON_SEMASI, dusunme: 'low', sicaklik: 0.2 });
+    r = await kall({ sistem: SISTEM_EN, prompt: enIstem(t.en, kaynak, sorunMetni, ek), schema: REDAKSIYON_SEMASI, dusunme: 'low', sicaklik: null });
   } catch (e) {
     if (e?.ayar || e?.kota) throw e;
     return { neden: `çağrı başarısız (${e?.message ?? e})` };
