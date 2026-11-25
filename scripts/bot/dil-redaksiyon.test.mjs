@@ -122,12 +122,12 @@ test('EN redaksiyonu: tire ve şişirme kalıbı istemde sorun olarak geçer, d�
   assert.equal(r.en.body, duz);
 });
 
-test('EN redaksiyonu: rakam değişirse iki deneme de reddedilir, EN olduğu gibi kalır', async () => {
+test('EN redaksiyonu: rakamı değiştiren düzeltme atlanır, EN olduğu gibi kalır', async () => {
   const govde = `${ingilizce(240)} — the first such deal. The deal is worth 34 million dollars.`;
-  const loglar = [];
-  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: 'The deal is worth 34 million dollars.', yeni: 'The deal is worth 99 million dollars.' }] }), log: (m) => loglar.push(m) });
+  let n = 0;
+  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => (n++, { duzeltmeler: [{ alan: 'body', eski: 'The deal is worth 34 million dollars.', yeni: 'The deal is worth 99 million dollars.' }] }) });
   assert.equal(r, null);
-  assert.ok(loglar.some((l) => l.includes('EN redaksiyonu atıldı')));
+  assert.equal(n, 1, 'uygulanacak düzeltme kalmayınca yeniden deneme yok');
 });
 
 test('EN redaksiyonu: Türkçeleşen cümle reddedilir; kısaltan düzeltme uygulanmaz (EN değişmez)', async () => {
@@ -145,7 +145,7 @@ test('turkceGibi ve enSorunlari: Türkiye gibi tek tük ad Türkçe sayılmaz; t
   assert.match(enSorunlari({ body: 'It is not only cheap but also fast.' }), /False contrast/);
 });
 
-test('EN redaksiyonu: kod kalıp bulmazsa çağrı yapılmaz; olgu sözcüğü (first) silinirse reddedilir', async () => {
+test('EN redaksiyonu: kod kalıp bulmazsa çağrı yapılmaz; olgu sözcüğünü (first) silen düzeltme atlanır, ötekiler uygulanır', async () => {
   let n = 0;
   const temiz = await enRedakte(enTaslak(`${ingilizce(240)}. The deal is worth 34 million dollars.`), EN_KAYNAK, { kall: async () => (n++, null) });
   assert.equal(temiz, null);
@@ -153,4 +153,10 @@ test('EN redaksiyonu: kod kalıp bulmazsa çağrı yapılmaz; olgu sözcüğü (
   const govde = `${ingilizce(240)} — the first such deal. The deal is worth 34 million dollars.`;
   const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: ' — the first such deal.', yeni: ', a big deal.' }] }) });
   assert.equal(r, null);
+  const iki = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [
+    { alan: 'body', eski: ' — the first such deal.', yeni: ', a big deal.' },
+    { alan: 'body', eski: 'The deal is worth 34 million dollars.', yeni: 'The agreement is worth 34 million dollars.' },
+  ] }) });
+  assert.ok(iki.en.body.includes('the first such deal'));
+  assert.ok(iki.en.body.includes('The agreement is worth 34 million dollars.'));
 });

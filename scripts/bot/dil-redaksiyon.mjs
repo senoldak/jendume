@@ -285,7 +285,13 @@ async function enTur(t, kaynak, sorunMetni, ek, kall) {
   const turkceCumle = (s) => (String(s).match(/[ğışĞŞ]/g) ?? []).length >= 2
     || (String(s).match(/(?<![\p{L}])(ve|bir|için|ile|olarak|olan|gibi|daha)(?![\p{L}])/giu) ?? []).length >= 2;
   if (r.duzeltmeler.some((d) => turkceCumle(d?.yeni) && !turkceCumle(d?.eski))) return { neden: 'EN correction is not in English: write the corrected sentence in English' };
-  const u = duzeltmeleriUygula(Object.fromEntries(EN_ALANLAR.filter((k) => t.en[k] != null).map((k) => [k, t.en[k]])), r.duzeltmeler, { sinirlar: { body: govdeSiniri(t.en.body, EN_AZ_KELIME.en) } });
+  // Olgu sözcüğü, rakam ya da alıntı kaybettiren düzeltme tek başına atlanır (26 Kasım: tek böyle yama bütün EN
+  // redaksiyonunu attırıyordu). Kabul denetimi aşağıda yine bütün metne bakar.
+  const guvenli = r.duzeltmeler.filter((d) => {
+    const e = String(d?.eski ?? ''), y = String(d?.yeni ?? '');
+    return olguSayisi(y) >= olguSayisi(e) && rakamlar(e).join(' ') === rakamlar(y).join(' ') && enAlintilari(e).every((q) => y.includes(q));
+  });
+  const u = duzeltmeleriUygula(Object.fromEntries(EN_ALANLAR.filter((k) => t.en[k] != null).map((k) => [k, t.en[k]])), guvenli, { sinirlar: { body: govdeSiniri(t.en.body, EN_AZ_KELIME.en) } });
   const yeni = yerelDuzelt(enBirlestir(t, u.alanlar));
   // Uygulanabilir düzeltme yoksa EN değişmez: yeniden deneme yok.
   if (!u.uygulanan) return { yok: true };
