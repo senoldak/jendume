@@ -18,6 +18,10 @@ rakamlar:
   - etiket: "Speed increase"
     deger: "2-3 times"
 kaynakIzi: "v1.svXxjqwS8TWx0MX/.u8yW8yJ+V+pt/wyP4+xl/m6Vp2ZWN56bTRBt06bTffJaPCoDtxGMv5MTzJtgxcL21O2CS4y0LDCRLqZuK3t7PMZqup04LuiQoOVndB82vuaelmOnKkOS46PghsfzmrzzHs36/BQPl2Or18Ge8W/0+0cjH0fr8c1D8fT+fatQvJjgFZFyB/mpuOwNFOJLGEZDaMf0CCIk8rpht34K28HBkR8kn7q+6vILkvK438tFtAKwE2ca3AArhosJ6RROWKrKIXo7V8XClPhSRhlNvFwBOJ6SmGtC32vHdccxyIoRhpjCXRgGnMX9NNUXNKYl204M0tvdvnAw/TiJ59NmJ8mwePDBGbxt"
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/aws-makes-kimi-k3-1-pro-highspeed-available-on-amazon-bedrock/"

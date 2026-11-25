@@ -12,6 +12,9 @@ key_points:
   - "IARA platformu 90 milyondan fazla belgeyi yönetiyor ve ayda 2 milyondan fazla görevi otomatize ediyor."
   - "Banka, yaklaşık 70 milyon müşterisinin finansal bağlamını anlamak için yapay zekâ modellerinden yararlanıyor."
 kaynakIzi: "v1.zPzMuHQLUPB/rAee.5iD/sHEfg0anBIyvjUfHDz7pv3wWtj0NH4ULDg/qfaCStFXeVUbGXoL1V9l04QPKqsgLipTqSZgbePw6lXREBEtzatSnqvsbJFegavpnlz6R1W1Aib9T/pey"
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/itau-generative-ai"
 featured: false
 breaking: false
 draft: false

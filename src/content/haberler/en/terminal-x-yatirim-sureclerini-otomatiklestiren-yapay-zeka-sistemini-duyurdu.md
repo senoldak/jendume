@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Custom workflows"
     deger: "1 million"
 kaynakIzi: "v1.PGnFiWStkEeSui0C.y1xsCaJEU/RhQKjWu+YP7UkQM8nhfNKbqDescZDDbMzd8IsTOPxWGUJR7jvHWffi1pIwh4h71YTGwhmJCLaydVxqsFvDf4pCX4t6MRxj1AJwIA=="
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/terminal-x"
 featured: false
 breaking: false
 draft: false

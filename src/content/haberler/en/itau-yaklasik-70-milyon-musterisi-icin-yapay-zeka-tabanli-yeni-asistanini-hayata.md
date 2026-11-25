@@ -12,6 +12,9 @@ key_points:
   - "The IARA governance platform operates on a repository of over 90 million documents."
   - "The bank utilizes AI models to support financial context for approximately 70 million customers."
 kaynakIzi: "v1.zPzMuHQLUPB/rAee.5iD/sHEfg0anBIyvjUfHDz7pv3wWtj0NH4ULDg/qfaCStFXeVUbGXoL1V9l04QPKqsgLipTqSZgbePw6lXREBEtzatSnqvsbJFegavpnlz6R1W1Aib9T/pey"
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/itau-generative-ai"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Solid material share"
     deger: "90 percent"
 kaynakIzi: "v1.+yPSi5A+Y91Lq8Ed.+ukpHIlqL15pp+v5W2rVo1Hg2U9h9pwHNGhMcr3LkYBnRzWtxA8AohIzWsM1NAU35dbFiF6bPAgDyArvAg+2NGHwhgayq1GPA4aQyr97ACUyTwT6X9BzkgmqXSfB2fBx5QlmuXnm0FxdT/9impnLUy/PaaPgtEeTxOpzcQI="
+kaynaklar:
+  - ad: "MIT News AI"
+    url: "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
 featured: false
 breaking: false
 draft: false

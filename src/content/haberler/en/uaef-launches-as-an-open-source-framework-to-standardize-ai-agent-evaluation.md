@@ -22,6 +22,10 @@ rakamlar:
   - etiket: "Organizations using it"
     deger: "12"
 kaynakIzi: "v1.+12SlTivaQCyJVOn.g1FChuwVREGmiCo7nGsbeFkizM0YLHzqmoWAis6nKvo0bEh0enH7pz7twUwVR+L1N6cKK4hFwpQOd5Pazddid8fIg7/6CaVfgsVsmLgvnniZuTBHOHFJfYNerOGEKWmY2DyXWNxnOKxaQ51dFfuYE9tUzZqERW50ir3HEAArxHG6ghyM8Yzy9AsGwG/+AG5QthVMmz6XToTPjxG4vTrTZe80UVOwglbxsERlu3RZi61d7jbQg+2Ba5Ryhd0mh5s+oKqqEJdQGTOCW50KTg1ftNrupEvR0WYwjZvpIaKOxmwusJ+iZmCt2COABNSPyEhsyBLIqrWl3tn6ywm7X8StX8Q8+Ifoh6dpe+s+OnGlBgq9tpRsxe7Rld9GUw02QZXzNdgU/XZOwCtjDWpSsNcrh/7HtmPTxe7gHJCNHSmpdH5BLX4rn6hlkqWkI1QZRZUcH/5HDWzHGGvs1w2s0LoGlb9jlvUAEPuYibIS473lqsn+xF8cLu6CKaB9kxOFJcX4"
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/uaef-a-framework-agnostic-system-for-closed-loop-evaluation-of-ai-agents/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "The Next Web"
     url: "https://thenextweb.com/news/aws-uaef-open-source-ai-agent-evaluation"

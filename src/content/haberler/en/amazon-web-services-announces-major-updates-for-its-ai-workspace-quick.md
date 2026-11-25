@@ -16,6 +16,10 @@ rakamlar:
   - etiket: "Time saved"
     deger: "80 hours"
 kaynakIzi: "v1.J1sTjDJDUkw6Mnot.Tnf4yZibnLYjNWSHTU0n7dg75mwCUuCrsqVyNea0n76nAhIlnryPP2sDnye7bMznrAS85FUeQRWus3qXwWLl9ZSD8Svy3BZpYlZPgTe6fAcY+eD14z5UESlbB8/tDGSblsbtvzP7YdnlVl7hh0Me5evrv095BKLEhBY6GMOTi5WE2vIKQrxF973TByYl9hizRukN6ebA6GzzuaNet1ugFCGGOtf8Tu0n6MBuvRVfclfy0uXZURn/57cYgMU0w3UEUNZsQg2BSqixaGto+hJMzm184Pl4llHLfRaHgELBGHJxSPkZbBDxVxfsa1S0ZU7CpU/5rTJ05bFLEcVP1awgtGlSAnen8J3B8irM3h4AG3GXXG9ZjXT0E004vIPtByo77/UNFsWXDoheX7qkiLs7glNSmqjn"
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/aws-quick-adds-chat-built-flows-and-multi-agent-orchestration/"

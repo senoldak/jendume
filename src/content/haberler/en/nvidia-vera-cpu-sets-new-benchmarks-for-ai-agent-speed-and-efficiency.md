@@ -22,6 +22,10 @@ rakamlar:
   - etiket: "Daytona job completion"
     deger: "12.7 jobs/second"
 kaynakIzi: "v1.ewlNIE4ssRqZDeYw.rLB1Cv/gX6yFOWYyYlz8teAeDk4QhAMTnFIYn7sqlm/nANv7GsIDa/nIZanVCQJLupkCI9Y7VtuX5XAATEgRAnOi5RWwyJmEUH1aYFpSZ+GPRhe8q7htTeWDe78ZCEyGvU3cze3xLJLSOw3ineVM0iEQEtYfYHDkY6d9oMjNUz6pXytQ8nRjUVvrEtftgiztokF67j3EvUuc49GIIKDMUkZdLGICBxI2LsAdbduIjJn0j/9ehh4WCd4+Yr9TmtJoLtOa7GA5PTuywkCFfFemM6FMDpyqB24p0srvzsKHG6gv7j2zr6jmLgptNA=="
+kaynaklar:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/nvidia-pits-vera-cpu-against-x86-on-agent-speed-and-power-capacity/"

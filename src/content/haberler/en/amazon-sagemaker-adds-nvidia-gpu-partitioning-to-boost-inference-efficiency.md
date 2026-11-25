@@ -16,6 +16,10 @@ rakamlar:
   - etiket: "Maximum partitions"
     deger: "7"
 kaynakIzi: "v1.VR2XyiCL3dWYVSyj.XLgVB7dYmPw57/QKHyrR/cijsrnW76H5EdDZetizK53Quwl73YY9nWNoziDMUkMAoUuvMNbi6JRlGzeoPaQuxsMvq1Q5CGMVmz25PGAzXGju4mKr6khkZlpOXkNMt14PFoJl+5KsOPQvhl0TfZPkUd+BI9Rt+ywDXcKJEkVO6DTjKvOFWIWsMO9OLJYiQjFFz+XxmVe5PYkoztQ+63ltwMLmvWr6LP0iu8x3ZiIZiRP+jIa40azTlwQCsey8VGbNb23Vg4gnf4LVZTgkwSWSxWD2peARb4vY0KBsusM/WBjwNjNWHAHSXcgQO/eVaRubh2I5bmrNWdn5XRWuzYu0f0K93O803GcLTgLXsdLIPbW/HYg08/4JYf6uQitaiXvwOnx/G5b5BeNBOYixeDfrt3EPDgL//wWAHo/D9JdXQnrF"
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/aws-adds-nvidia-gpu-partitioning-to-sagemaker-inference-endpoints/"

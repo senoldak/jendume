@@ -18,6 +18,10 @@ rakamlar:
   - etiket: "Tissues covered"
     deger: "68"
 kaynakIzi: "v1.jhnR2FReRcbBJd5w.+8Nh996UDDqrpVofMJhdb7KgyF0CiX7w53jgDEU2eUrV8G3oBP5d6SfmqFB8/OS239ziGPCYmAj4hjVWmeMd1GO3dysqOuHa8yCvr2x0VY0WrOyrIW1lz2nrsVyBUNGBxaJRwbxNtewpepzZhBe52CWEeMK5Cwq1xp7lpI/irrNHHokMxpUJUNfKbEkAS0RCJQyzwvT0FIEPUHCOiwK0n0DeZ3/e5hhLejS0AhEd/aEBPjPnjUzc3IXFBINejMkNtCo/Hm2StjKKgh++W2VT1ui82PadWrweVQzQ8B9ldeI3xsl2vsiCcQAW5uJPz8K+hH1rPktDak2cNfiZVXQ22u6E/NwvCIa+7o8F89k="
+kaynaklar:
+  - ad: "Google DeepMind"
+    url: "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/google-deepminds-alphagenome-2-predicts-cell-state-variant-effects/"

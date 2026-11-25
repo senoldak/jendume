@@ -100,6 +100,9 @@ const sozlukVeri = Object.fromEntries(
   ]),
 );
 const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
+// Medya kaynak listesi: resmî satırda zaten olan adres yeniden yazılmaz (eski haberlerde bir birincil kaynak iki listede de olabilir).
+const resmiAdresler = new Set(post.data.kaynaklar.map((k) => k.url));
+const medyaKaynaklari = post.data.kaynakAdlari.filter((k) => !resmiAdresler.has(k.url));
 ---
 
 <Base
@@ -190,9 +193,9 @@ const sozlukJson = JSON.stringify(sozlukVeri).replace(/</g, '\\u003c');
       )
     }
 
-    <KaynakListesi lang={lang} kaynaklar={post.data.kaynakAdlari} />
+    <KaynakListesi lang={lang} kaynaklar={medyaKaynaklari} />
     {
-      medyaKaynakli(post.data) && post.data.kaynakAdlari.length === 0 && (
+      medyaKaynakli(post.data) && medyaKaynaklari.length === 0 && (
         <p class="ai-note official-source">{ui.mediaSource}</p>
       )
     }

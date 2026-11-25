@@ -18,7 +18,7 @@ import { gemini, hentTekst, rssOku, sonHaberler, ucDilliHaberYaz } from './lib.m
 import { dilRedakte } from './dil-redaksiyon.mjs';
 import { geminiPayiBitti } from './butce.mjs';
 import { adresiSil, kaynakIzi } from './gizli.mjs';
-import { resmiKaynakListesi } from './resmi-kaynak.mjs';
+import { karmaKaynakMi, resmiKaynakListesi } from './resmi-kaynak.mjs';
 import { havuzOlayi, havuzuIsle, derlemeAraligi, derlemeEnAz, derlemeKaynagi, dilimBasligiEkle } from './havuz.mjs';
 import { standartOzeti } from './standart.mjs';
 import { derlemeStandardi, gerekceBirlestir, haberStandardi, kapiMetinleri, puanKapisi } from './kapi.mjs';
@@ -484,6 +484,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
           date: simdi.toISOString(),
           kaynakIzi: kaynakIzi(kullanilan),
           kaynaklar: resmiKaynakListesi(kullanilan),
+          karmaKaynak: karmaKaynakMi(kullanilan),
           // Gösterilebilecek medya kaynakları (konu uyumu + gösterilmez listesi) lib.mjs'te süzülür.
           kaynakListesi: kullanilan,
           // Haber değeri (puanKapisi): "Bu haber nasıl hazırlandı" kartında gösterilir; puan yoksa yazılmaz.
@@ -588,6 +589,7 @@ export function uyarlayiciKur({ rot, durum, simdi, ayar = {}, bag = {} }) {
             date: simdi.toISOString(),
             kaynakIzi: kaynakIzi(grup.flatMap((o) => o.kullanilan ?? [])),
             kaynaklar: resmiKaynakListesi(grup.flatMap((o) => o.kullanilan ?? [])),
+            karmaKaynak: karmaKaynakMi(grup.flatMap((o) => o.kullanilan ?? [])),
             kaynakListesi: grup.flatMap((o) => o.kullanilan ?? []),
             featured: false,
             draft: false,

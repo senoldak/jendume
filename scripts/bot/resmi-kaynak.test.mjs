@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { resmiKaynakListesi } from './resmi-kaynak.mjs';
+import { karmaKaynakMi, resmiKaynakListesi } from './resmi-kaynak.mjs';
 
 const resmi = { ad: 'OpenAI News', url: 'https://openai.com/index/ornek/', resmi: true };
 
@@ -20,4 +20,12 @@ test('boş liste, https olmayan ya da adsız kaynak: yazılmaz', () => {
   assert.deepEqual(resmiKaynakListesi(undefined), []);
   assert.deepEqual(resmiKaynakListesi([{ ...resmi, url: 'http://openai.com/x' }]), []);
   assert.deepEqual(resmiKaynakListesi([{ ...resmi, ad: '' }]), []);
+});
+
+test('karmaKaynakMi: birincil + medya kaynağı birlikteyse', () => {
+  const medya = { ad: 'Örnek', url: 'https://haber.example.com/x' };
+  assert.equal(karmaKaynakMi([resmi, medya]), true);
+  assert.equal(karmaKaynakMi([resmi]), false);
+  assert.equal(karmaKaynakMi([medya]), false);
+  assert.equal(karmaKaynakMi(undefined), false);
 });

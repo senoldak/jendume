@@ -18,6 +18,10 @@ rakamlar:
   - etiket: "Project history"
     deger: "3.5 years"
 kaynakIzi: "v1.w/sHKPfrKBioj9A1.15YDes3NYPYkWqJHup/1UEVtDC2GwCMTrMwIAcYxMzEANcMzCFQKXsvYxG1w4erIcMmOguPfdP2JanX42RRoFdrtqPdQ0x52NnrKi5fIOMksZDDJGMAvZ5nuhJ18UESfQDtULxnbkRJN4gk4ceeabWvsGxvr2ngoUBIonSpD0hHx6SM/ewe3PjtFb8KiPwkz3y4veGIjgnCtlSHjOrbTdiuVSwA0sqZCuS1j/unk7ZdUXFXUpwkyA+1PxWClnfpTzvHPAlvfwBRJjST6ntqoNwzlVg=="
+kaynaklar:
+  - ad: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/llama-cpp-v1-0-0-sets-api-stability-rules-for-local-ai-tools/"

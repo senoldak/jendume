@@ -10,3 +10,8 @@ test('medyaKaynakli: yalnız kaynak izi dolu, resmî kaynağı olmayan bot haber
   assert.equal(medyaKaynakli({ kaynakIzi: 'x', kaynaklar: [], yaziTuru: 'aciklayici' }), false);
   assert.equal(medyaKaynakli({ kaynakIzi: 'x', kaynaklar: [], uretim: 'yazi-isleri' }), false);
 });
+
+test('medyaKaynakli: karma haberde resmî kaynak olsa da adsız medya satırı kalır', () => {
+  assert.equal(medyaKaynakli({ kaynakIzi: 'x', kaynaklar: [{ ad: 'a', url: 'https://a.gov' }], karmaKaynak: true }), true);
+  assert.equal(medyaKaynakli({ kaynaklar: [{ ad: 'a', url: 'https://a.gov' }], karmaKaynak: true }), false);
+});

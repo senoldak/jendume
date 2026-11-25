@@ -16,6 +16,10 @@ rakamlar:
   - etiket: "Haftalık kullanıcı sayısı"
     deger: "1,2 milyar"
 kaynakIzi: "v1.gmBLkUkQ5b/fbtFs.iv/7aqM/nEY3f3xcnaTsa2fVPpqSdFretSudxP/89CpcOpKF/Gz35m7oZSLboYYbsGf+c08wrvac8Gg6GX/6Pxy32y+KrHzFbfudvxbvy7XKXJ41AacU6MWHf+Q5d1ocws5XsWnlh07RD16PedIvmuRWsAu6ceaCH7u3SXChqOP3vnmRWL1ISf5+KsF+QE3kF9cLhwKmALWP5Lc0PSk7mpLUb2ka1FuHqlqzPMXnmRpBk0TRD1osTpkPPkr93tZgZeub2tYXMYXkZJw3S7WZjKu+3z2S+r7c/VBO"
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/openai-starts-selling-chatgpt-enterprise-through-aws-marketplace/"

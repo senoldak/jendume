@@ -12,6 +12,9 @@ key_points:
   - "Nordik AI bulut altyapılarının 2027 sonuna kadar 1 gigavat kapasiteye ulaşması öngörülüyor."
   - "İsveç startup ekosistemi 2026 yılının ilk yarısında 2,8 milyar dolar fon topladı."
 kaynakIzi: "v1.U9WDF2/IGwOmIVYd.BahDq3HWZxWPXzeMw17p76RL7PsvIE94T7/Gsddae0+Tg7aOVfaaol92Xg8LSa9++GS8aSua9iu9hINgVbvFykoDJdDjs6HfqHVdid0DfgaxYerpsNZ1EKtpeQZJKLKmxEbEGg28EcnJew=="
+kaynaklar:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/"
 featured: false
 breaking: false
 draft: false

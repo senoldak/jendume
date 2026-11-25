@@ -16,6 +16,10 @@ rakamlar:
   - etiket: "Bölge sayısı"
     deger: "13"
 kaynakIzi: "v1.w09nnA1GGlkf8qau.TZpW13YR/+g1Mf8/SY+kxcWNjTOXbUHDePF95WmcuCn0LZuMhroDPPTv1j4lwfZOZBWQhl42zQqnVYJvMvu0ZJU6wYwKZCc+FNckmvfhF1Pk7v0zJmwT7vD4lNfPcq4F7hv/vKDLAxyYNdKasbYQU70GvznS1AP1ZhW+Pcw/yNvMnbWzi9hNdz4bkFwzgDtC22fyYBrFRsODfH5jZ2pOTzmISeEszYMhulXajmYNomNnS4sbjXXWlc1KNCdWP1d7U6AWWmorudQxgzMzrkn8p7v2Z+8Kcs1whs7KGO8S4k19C+BvjEueANsPgpDf/7v2QhP0rn/4RdLIipMjR9MnqR9pJ1+v+NuJr4AN53wxmWTysmMN2bmV0EhYcb4M0qMAi3tjuzcibnJaHnHin3PiEIz8Kc/w2zsaK2tPkIdQRTs1JA=="
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/aws-routes-hyperpod-inference-across-regions-from-one-endpoint/"

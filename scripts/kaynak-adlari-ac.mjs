@@ -84,6 +84,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
     const veri = {
       kaynakIzi: alan(tr, 'kaynakIzi'),
       kaynaklar: /^kaynaklar:/m.test(tr) ? [1] : [],
+      karmaKaynak: alan(tr, 'karmaKaynak') === true,
       category: alan(tr, 'category'),
       uretim: alan(tr, 'uretim'),
       yaziTuru: alan(tr, 'yaziTuru'),

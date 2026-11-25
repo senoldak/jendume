@@ -42,8 +42,11 @@ const haberSchema = z.object({
   rakamlar: z.array(z.object({ etiket: z.string(), deger: z.string() })).max(4).default([]),
   // Kaynakların şifreli kaydı; sitede gösterilmez (bkz. scripts/bot/gizli.mjs).
   kaynakIzi: z.string().optional(),
-  // Birincil (resmî) kaynaklar: yalnız bütün kaynakları birincil olan haberde dolu; sayfanın altında gösterilir.
+  // Birincil (resmî) kaynaklar: haberde kullanılan birincil kaynaklar (25 Kasım 2026'dan önce yalnız bütün kaynakları
+  // birincil olan haberde doluydu); sayfanın altında gösterilir.
   kaynaklar: z.array(z.object({ ad: z.string(), url: z.string().url() })).default([]),
+  // Birincil kaynağın yanında medya kaynağı da kullanıldı: adsız medya satırı resmî satırla birlikte kalır.
+  karmaKaynak: z.boolean().optional(),
   // Medya kaynaklarından gösterilebilenler (src/lib/kaynak-adlari.mjs: konu uyumu + gösterilmez listesi): sayfanın altında
   // "Kaynak" bölümünde ad ve bağlantı. Boşsa adsız kaynak satırı kalır.
   kaynakAdlari: z.array(z.object({ ad: z.string(), url: z.string().url() })).default([]),

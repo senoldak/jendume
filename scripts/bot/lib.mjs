@@ -350,6 +350,8 @@ ${body}`) : hamBaslik;
       Array.isArray(paket.kaynaklar) && paket.kaynaklar.length
         ? `kaynaklar:\n${paket.kaynaklar.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
         : null,
+      // Karma haber (birincil + medya kaynağı): adsız medya satırı resmî satırın yanında da kalır (src/lib/kaynak-satiri.mjs).
+      paket.karmaKaynak && Array.isArray(paket.kaynaklar) && paket.kaynaklar.length ? 'karmaKaynak: true' : null,
       kaynakAdlari.length
         ? `kaynakAdlari:\n${kaynakAdlari.map((k) => `  - ad: ${yamlStr(guvenli(k.ad))}\n    url: ${yamlStr(k.url)}`).join('\n')}`
         : null,

@@ -20,6 +20,10 @@ rakamlar:
   - etiket: "Assessed assets"
     deger: "20,112"
 kaynakIzi: "v1.iSEP/LNwSXxEeqWS.44dgi9C+hQ5WX0ocUwgdmMLz67tlPzBKrLTJUj7GE/AHdFvowgnJg1ruzXL0m4NtodSl2JeAao/8o7KThEbn2Obi0FdvHMMs0aHZbxqyQsfM1RuOwSCwyxp/vY0R9yH9S69porGJc/BanMxfixHZ2cOuRpc7/T2gH6rPiNgzRql31n3U7hAmFXacRvhDMMzYK2+ObqmqoKPD9LlKr9Q1vjMNPcyAw3lrg3H49Ll/nMY3gx5rMxh5HzdlIy4TzK5fKYYU"
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/heimstaden"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/heimstaden-uses-openai-to-rework-letting-and-property-operations/"

@@ -22,6 +22,10 @@ rakamlar:
   - etiket: "Protein-ligand atom count"
     deger: "12,635"
 kaynakIzi: "v1.s23KGeumwV3vpWXV.olX2OL6S7NLBp1UHSQeFcMbZ6O2qyqwbDF2iUIKmJsrynrxq/HTMhARd19mBT4140nI7AjwUmlAIPUIfo8ZvcJoMIcjmJjXfD0tKQIj4gOdn692mb8Zpxea+D82fe4B9vvwcUpqwSJG7//mlUavHJHeizlujreWkSCzKJ8jSdvzK70vu6za5DEIoyev2AVhb1+dtE5ydGeZ8ry+bNP19Kllj+FT6tc7fNfHkaka9xuQJ8NIC5dzvXNyI1Ot9PtDWXog8Z06Ea2ddAp1y7DUKfugPK+3D5sAvjZmCbYa2ewWZMQ=="
+kaynaklar:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/ian-buck-sc26/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "SiliconANGLE"
     url: "https://siliconangle.com/2026/11/17/nvidia-at-sc26-agents-are-the-new-scientists-and-they-need-a-lab/"

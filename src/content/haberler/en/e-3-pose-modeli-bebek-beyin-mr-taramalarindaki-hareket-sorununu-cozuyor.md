@@ -12,6 +12,9 @@ key_points:
   - "The model embeds left-right symmetry and physics principles directly into its architecture."
   - "The research was presented at the European Conference on Computer Vision."
 kaynakIzi: "v1.Kd+csckHWtPIDB9R.R6gac6N3pg7nAzv/rDc/uTM1YlA8ExLXm3JebmWXBOZf6UPawWbRsT/MKByQYWov+udWG/qNFvaPtQYwNjiRpmiU7a/IFNZqJynqQK8ndR2o4y3IuI1ASSoiC/Ja2gOZz5Onb/FIeJ/Tj9o3QfXRrg8kymYuDqY3WYksQZ9nQy8A1eXp2hYWvmPbTPSniNSFEog6yw=="
+kaynaklar:
+  - ad: "MIT News AI"
+    url: "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
 featured: false
 breaking: false
 draft: false

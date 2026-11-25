@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Çıkarım hızı artışı"
     deger: "2x"
 kaynakIzi: "v1.fjPeiAiMAN4ZPkqS.9gdvUiTnWfgfglJPQZXuAqZozjeF1YHkarCgZXIcE2bmGmOIHRMvxFN52OBMQtKLsPVWZNhn/zIPsvtBhKSGJfdIeB2Mf1EXuEchbEYB4tgtJspWgqp95EgKvMKKhCBrXHP6ccOCO9NEHmbD1e9CeldfoZjZx7OpoUNAbw=="
+kaynaklar:
+  - ad: "NVIDIA Blog"
+    url: "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/"
 kaynakAdlari:
   - ad: "NVIDIA Blog"
     url: "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/"

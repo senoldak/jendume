@@ -13,6 +13,10 @@ key_points:
   - "Expanded model access granted via Daybreak Red"
   - "Focus on testing third-party service connections"
 kaynakIzi: "v1.aD1G1MfPxsDEMUve.qAWMDmB0TZrrQX/8fFnv4TTH2yKXII+zATzMviUHM9xBlUiWrBLic9l0d6GWoxqYGCInlsJ20D6SQkz4szQ19Mm/zk7lJ9mOBnUJotbPEW58o/0W2y4mFoT0x2QbWfbhWeKkKFc1PzKs5jv8Y9mWyeqxGT/MxG039AphBtLxxoS2ELzC7OLM6Lpy1LGZe4YupQO2sZoYHNwgRqaTQdBdBboPMkk5X1ztt4X5uZG+RSYVwFGYY1p1JikmLI48EMaIkTS73ZfBBPiLVISSGIHI02aifgw1ig=="
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/partnering-with-hacktron"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/openai-partners-with-hacktron-to-test-third-party-service-connections/"

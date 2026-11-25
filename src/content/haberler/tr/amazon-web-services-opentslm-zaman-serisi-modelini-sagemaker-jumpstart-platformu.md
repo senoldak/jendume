@@ -18,6 +18,10 @@ rakamlar:
   - etiket: "Ağırlık boyutu"
     deger: "10,5 GB"
 kaynakIzi: "v1.AyiKic8E2Hxl1yYW.mmMDcySQ4C/YApSKRz/TNR0hBW9edOKi2Dj5fzdMbAfwm0G/K2caTTAljUxCLl9NQSWgJiOTNrwuqwRD/l9EQGVrMEhfGCnOnNUOWYcgnBVjDVJ8jXEMrpUz+ZexWpiJUtflli0VfNkwEdSvZn9plVfnmjX6FYOipOStarHtfFnvoQxVDU3NgRxtAcjjm4fTojCuaz3G3XToeOlZuZWuZ0Wwi5SezRRTW7PyLaFOkZOANcCUdBhDVzZyOr7WJ6whVNbZTb1m0sPdFaWDcHqCBcpsPCbYmIOb4q1Frq9ZVbHaHYk1mv/AE1S8QundT9ri/tLwAX4ZhUEXOme1rFZdTp8+xZeenhS4seue25lj181go/q4aapaI5+zEB0jybRiGhrCRwk="
+kaynaklar:
+  - ad: "AWS Machine Learning Blog"
+    url: "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/aws-brings-opentslm-time-series-reasoning-to-sagemaker-jumpstart/"

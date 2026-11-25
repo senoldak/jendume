@@ -20,6 +20,10 @@ rakamlar:
   - etiket: "Program duration"
     deger: "18 months"
 kaynakIzi: "v1.x3RiO2LhrqYbkzW1.7nCstC1K5/rJN7GuxZS0Ow8BEgZbLXz3AM1h9VfLaDBcq2RKeKX+xzgJu9anoWhohsWN0h3d0xGbs84S4HaI4QOVlAQzgT5xUEGR4sqRA2sUed6ghriq0h46MMkMsyFq0CUDr07bmtj9rmEXS/1W9crE7P1QSYjmPaIyXuV2ATtq2a4ds3lEyocNzJ1Xl/G0MemQNgJECJH+8Vk42zYMR0ZwZmdVgfppO+Qj+6g0YT5BaD5WDLH10zWvcO2fDTTQn8BcqhTsBPkS7jk8kDlzCY1yVA=="
+kaynaklar:
+  - ad: "OpenAI News"
+    url: "https://openai.com/index/the-kings-trust-and-openai"
+karmaKaynak: true
 kaynakAdlari:
   - ad: "Unite.AI"
     url: "https://www.unite.ai/openai-backs-ai-training-for-up-to-25-000-young-people-in-the-uk/"
