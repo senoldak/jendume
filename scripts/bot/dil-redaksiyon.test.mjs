@@ -1,6 +1,7 @@
 import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import { dilRedakte, enRedakte, enSorunlari, turkceGibi, SISTEM_TR, SISTEM_EN } from './dil-redaksiyon.mjs';
+import { DUZELTME_SEMASI } from './duzeltme.mjs';
 import { kesinSorunlar } from './dil-tr.mjs';
 import { medyaAdlariniKur } from './denetci.mjs';
 
@@ -26,14 +27,17 @@ test('redaksiyon kabul: TR düzelir, EN aynen kalır, sistem istemi ve ayarlar i
   const cagrilar = [];
   const kall = async (a) => {
     cagrilar.push(a);
-    return { title: 'Orionlab yeni çipini tanıttı', description: `${uydur(12, 7)}.`, body: iyiGovde };
+    // Cümle düzeltmeli çıktı (25 Kasım 2026): yalnız değişen parça döner; EN adımına boş liste.
+    return { duzeltmeler: a.sistem === SISTEM_TR ? [{ alan: 'body', eski: 'otuz dört milyon dolar', yeni: '34 milyon dolar' }] : [] };
   };
   const enOnce = structuredClone(en);
   const r = await dilRedakte(taslak(), KAYNAK, { kall });
   assert.equal(r.elendi, undefined);
-  // Bir TR çağrısı; EN adımı da çağrılır ama sahte model Türkçe döndürdüğü için EN kabul edilmez (EN aynen kalır).
   assert.equal(cagrilar.filter((c) => c.sistem === SISTEM_TR).length, 1);
   assert.equal(cagrilar[0].sistem, SISTEM_TR);
+  assert.equal(cagrilar[0].schema, DUZELTME_SEMASI);
+  assert.match(cagrilar[0].prompt, /ÇIKTI BİÇİMİ: Metni yeniden yazma/);
+  assert.equal(r.t.tr.body, iyiGovde);
   assert.equal(cagrilar[0].dusunme, 'medium');
   assert.equal(cagrilar[0].sicaklik, null); // Gemini 3 varsayılanı (24 Kasım 2026)
   assert.ok(cagrilar[0].prompt.includes('otuz dört milyon dolar') || cagrilar[0].prompt.includes('Sayılar yazıyla'));
@@ -47,7 +51,7 @@ test('redaksiyon reddedilir (rakam uydurdu) → yeniden deneme red nedenini taş
   const istemler = [];
   const kall = async (a) => {
     istemler.push(a.prompt);
-    return { title: 'Orionlab yeni çipini tanıttı', description: `${uydur(12, 7)}.`, body: `${uydur(120, 1)} 99 milyon dolar ${uydur(60, 2)}.` };
+    return { duzeltmeler: [{ alan: 'body', eski: 'otuz dört milyon dolar', yeni: '99 milyon dolar' }] };
   };
   const r = await dilRedakte(taslak(), KAYNAK, { kall, log: (m) => loglar.push(m) });
   // İlk tur + yeniden deneme; kapı ikinci turu da (2 çağrı) dener: toplam 4.
@@ -59,22 +63,22 @@ test('redaksiyon reddedilir (rakam uydurdu) → yeniden deneme red nedenini taş
   assert.ok(r.t.tr.body.includes('otuz dört milyon dolar'));
 });
 
-test('uzunluk %90–115 dışına çıkan redaksiyon reddedilir, bir sonraki deneme kabul edilir', async () => {
+test('metni kısaltan düzeltme uygulanmaz; kesin sorun kalınca kapının ikinci turu düzeltir', async () => {
   let n = 0;
-  const kisa = `${uydur(40, 1)} 34 milyon dolar.`;
+  const parca = kotuGovde.split(' ').slice(0, 40).join(' ');
   const kall = async (a) => {
     if (a.sistem !== SISTEM_TR) return null;
     n++;
-    return { title: 'Orionlab yeni çipini tanıttı', description: `${uydur(12, 7)}.`, body: n === 1 ? kisa : iyiGovde };
+    return { duzeltmeler: n === 1 ? [{ alan: 'body', eski: parca, yeni: 'kısa.' }] : [{ alan: 'body', eski: 'otuz dört milyon dolar', yeni: '34 milyon dolar' }] };
   };
   const r = await dilRedakte(taslak(), KAYNAK, { kall });
   assert.equal(n, 2);
   assert.equal(r.elendi, undefined);
-  assert.ok(kelime(r.t.tr.body) >= kelime(kotuGovde) * 0.9);
+  assert.equal(r.t.tr.body, iyiGovde);
 });
 
 test('kapı: redaksiyon sorunu gideremezse (hep eski gövde döner) kesin sorunla yayın durur; EN dokunulmamış', async () => {
-  const kall = async () => ({ title: 'Orionlab yeni çipini tanıttı', description: `${uydur(12, 7)}.`, body: kotuGovde });
+  const kall = async () => ({ duzeltmeler: [] });
   const r = await dilRedakte(taslak(), KAYNAK, { kall });
   assert.ok(r.elendi.startsWith('dil:'));
   assert.ok(kesinSorunlar([{ kesin: true }]).length === 1);
@@ -111,7 +115,7 @@ test('EN redaksiyonu: tire ve şişirme kalıbı istemde sorun olarak geçer, d�
   const govde = `${ingilizce(240)} — a pivotal step. The deal is worth 34 million dollars.`;
   const duz = `${ingilizce(240)}, a step. The deal is worth 34 million dollars.`;
   const istemler = [];
-  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async (a) => (istemler.push(a), { title: 'Orionlab unveils its new chip design', description: 'The firm said the chip uses less power.', body: duz }) });
+  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async (a) => (istemler.push(a), { duzeltmeler: [{ alan: 'body', eski: ' — a pivotal step.', yeni: ', a step.' }] }) });
   assert.equal(istemler[0].sistem, SISTEM_EN);
   assert.match(istemler[0].prompt, /Dash used to join clauses/);
   assert.match(istemler[0].prompt, /Inflated or overused wording/);
@@ -121,16 +125,16 @@ test('EN redaksiyonu: tire ve şişirme kalıbı istemde sorun olarak geçer, d�
 test('EN redaksiyonu: rakam değişirse iki deneme de reddedilir, EN olduğu gibi kalır', async () => {
   const govde = `${ingilizce(240)} — the first such deal. The deal is worth 34 million dollars.`;
   const loglar = [];
-  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ title: 'Orionlab unveils its new chip design', description: 'The firm said the chip uses less power.', body: govde.replace('34 million', '99 million') }), log: (m) => loglar.push(m) });
+  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: 'The deal is worth 34 million dollars.', yeni: 'The deal is worth 99 million dollars.' }] }), log: (m) => loglar.push(m) });
   assert.equal(r, null);
   assert.ok(loglar.some((l) => l.includes('EN redaksiyonu atıldı')));
 });
 
-test('EN redaksiyonu: Türkçe dönen gövde ve uzunluğu %90–115 dışına çıkan gövde reddedilir', async () => {
+test('EN redaksiyonu: Türkçeleşen cümle reddedilir; kısaltan düzeltme uygulanmaz (EN değişmez)', async () => {
   const govde = `${ingilizce(240)} — the first such deal. The deal is worth 34 million dollars.`;
-  const tr = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ title: 'Orionlab unveils its new chip design', description: 'd.', body: `${'şirket ve bir ürün için ile '.repeat(50)} 34 million dollars.` }) });
+  const tr = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: 'The deal is worth 34 million dollars.', yeni: 'Anlaşma bir şirket için ve ile 34 million dollars.' }] }) });
   assert.equal(tr, null);
-  const kisa = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ title: 'Orionlab unveils its new chip design', description: 'd.', body: `${ingilizce(60)}. The deal is worth 34 million dollars.` }) });
+  const kisa = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: ingilizce(40), yeni: 'the company.' }] }) });
   assert.equal(kisa, null);
 });
 
@@ -147,6 +151,6 @@ test('EN redaksiyonu: kod kalıp bulmazsa çağrı yapılmaz; olgu sözcüğü (
   assert.equal(temiz, null);
   assert.equal(n, 0);
   const govde = `${ingilizce(240)} — the first such deal. The deal is worth 34 million dollars.`;
-  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ title: 'Orionlab unveils its new chip design', description: 'The firm said the chip uses less power.', body: govde.replace(' — the first such deal', ', a deal') }) });
+  const r = await enRedakte(enTaslak(govde), EN_KAYNAK, { kall: async () => ({ duzeltmeler: [{ alan: 'body', eski: ' — the first such deal.', yeni: ', a big deal.' }] }) });
   assert.equal(r, null);
 });

@@ -477,7 +477,8 @@ const yazili = () => {
 test('dil: redaksiyon kabul edilir, TR düzelmiş yazılır, EN aynen kalır', async () => {
   const t0 = yazili();
   const enOnce = structuredClone(t0.en);
-  const duzgun = { title: t0.tr.title, description: t0.tr.description, body: t0.tr.body.replace('otuz dört milyon dolar', '34 milyon dolar') };
+  // Cümle düzeltmeli çıktı (25 Kasım 2026).
+  const duzgun = { duzeltmeler: [{ alan: 'body', eski: 'otuz dört milyon dolar', yeni: '34 milyon dolar' }] };
   const { u, yazilan } = kur({ bag: { tamMetin: async (x) => KAYNAK_34(x), taslakYaz: async () => structuredClone(t0), dilKall: async () => duzgun } });
   const a = oge(K1, 'a1', 'Orionlab yeni kuantum cipini tanitti');
   const sonuclar = await u.isle([aday(a)]);
