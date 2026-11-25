@@ -1,11 +1,14 @@
-// Haberin altındaki "Resmî kaynak" satırının verisi. Yalnız metni kullanılan kaynakların hepsi birincil (kaynaklar.mjs
-// RESMI_KAYNAKLAR: kurumların ve şirketlerin kendi duyuru akışları) ise ad ve bağlantı yazılır; içlerinde bir tane bile
-// gizli (medya) kaynak varsa ya da bayrak bilinmiyorsa hiçbiri yazılmaz. Medya kaynağının adı ve adresi yalnız şifreli
-// kaynakIzi'nde durur.
+// Haberin altındaki "Resmî kaynak" satırının verisi: metni kullanılan kaynaklardan birincil olanlar (kaynaklar.mjs
+// RESMI_KAYNAKLAR: kurumların ve şirketlerin kendi duyuru akışları), adı ve bağlantısıyla. Medya kaynakları burada
+// yazılmaz: adları yalnız şifreli kaynakIzi'nde durur ve kaynakAdlari'na hukuki koşullarla girer (src/lib/kaynak-adlari.mjs).
+// 25 Kasım 2026'ya kadar karma haberde (içinde bir medya kaynağı da olan) resmî satır hiç yazılmıyordu; resmî kaynak her
+// haberde anılabilir olduğundan artık karma haberde de birincil kaynaklar yazılır.
 export function resmiKaynakListesi(kullanilan) {
   const liste = Array.isArray(kullanilan) ? kullanilan : [];
-  if (!liste.length || !liste.every((k) => k?.resmi === true && /^https:\/\//.test(k?.url ?? '') && k?.ad)) return [];
   const tekil = [];
-  for (const k of liste) if (!tekil.some((x) => x.url === k.url)) tekil.push({ ad: String(k.ad), url: k.url });
+  for (const k of liste) {
+    if (k?.resmi !== true || !k?.ad || !/^https:\/\//.test(k?.url ?? '')) continue;
+    if (!tekil.some((x) => x.url === k.url)) tekil.push({ ad: String(k.ad), url: k.url });
+  }
   return tekil;
 }

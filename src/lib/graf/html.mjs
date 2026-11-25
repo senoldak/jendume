@@ -2,6 +2,7 @@
 // Başlık, derlemede çizilen SVG, renk açıklaması, "Grafik / Tablo" düğmesi, tablo, yazının kendi italik açıklaması
 // (kaynak satırı), "Veriyi indir (CSV)" ve etkileşim JSON'u. Okura giden metinler grafiğin diline göre (felles.mjs → T).
 import { esc, setDil, T } from './felles.mjs';
+import { kaynakHtml } from '../kaynak-bagla.mjs';
 import { birimsiz, tegnGraf } from './index.mjs';
 
 const BOM = String.fromCharCode(0xfeff);
@@ -42,8 +43,8 @@ export function grafHtml(d, o = {}) {
   const tabloAd = T('Tablo', 'Table');
   const csv = `data:text/csv;charset=utf-8,${encodeURIComponent(csvAv(d))}`;
   const kaynak = bildetekst
-    ? `<p class="g-bildetekst"><em>${esc(bildetekst)}</em></p>`
-    : `<p class="g-kilde">${T('Kaynak', 'Source')}: ${d.kilde.url ? `<a href="${esc(d.kilde.url)}">${esc(d.kilde.navn)}</a>` : esc(d.kilde.navn)}</p>`;
+    ? `<p class="g-bildetekst"><em>${kaynakHtml(bildetekst, esc)}</em></p>`
+    : `<p class="g-kilde">${T('Kaynak', 'Source')}: ${d.kilde.url ? `<a href="${esc(d.kilde.url)}">${esc(d.kilde.navn)}</a>` : kaynakHtml(d.kilde.navn, esc)}</p>`;
   return [
     varliklar,
     `<figure class="g-kort${bred ? ' g-bred' : ''}" data-graf tabindex="0">`,

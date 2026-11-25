@@ -94,7 +94,7 @@ test('eklenti: JSON varsa kart, italik satır aynen altta; ilk kart stil ve beti
   const h = grafForParagraf(par('/grafik/arge-harcamasi-siralamasi/graf-1.svg'), durum);
   assert.ok(h.startsWith(VARLIKLAR));
   assert.match(h, /<figure class="g-kort" data-graf/);
-  assert.match(h, /<p class="g-bildetekst"><em>Kapsam\. Kaynak: World Bank\.<\/em><\/p>/);
+  assert.match(h, /<p class="g-bildetekst"><em>Kapsam\. Kaynak: <a href="https:\/\/data\.worldbank\.org\/" rel="noopener">World Bank<\/a>\.<\/em><\/p>/);
   const h2 = grafForParagraf(par('/grafik/arge-harcamasi-siralamasi/graf-2.svg'), durum);
   assert.ok(!h2.includes('graf.css'));
 });
