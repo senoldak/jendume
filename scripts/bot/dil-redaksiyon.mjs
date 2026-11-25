@@ -4,9 +4,9 @@
 //   dilRedakte(t, kaynak, { kall, log }) → { t, elendi?: 'dil: ...' }
 // kall: ({ sistem, prompt, schema, dusunme, sicaklik }) → JSON | null (test için enjekte edilir; varsayılan lib.mjs gemini).
 import { gemini } from './lib.mjs';
-import { baslikKontrol, kelimeSayisi, kesinKontroller, uzunlukKontrol, yerelDuzelt, ilgiliKisim } from './denetci.mjs';
+import { baslikKontrol, kelimeSayisi, kesinKontroller, uzunlukKontrol, yerelDuzelt, ilgiliKisim, EN_AZ_KELIME } from './denetci.mjs';
 import { dilDuzeltTr, dilSorunlariTr, kesinSorunlar, sorunListesi, REDAKSIYON_KURALLARI_TR } from './dil-tr.mjs';
-import { DUZELTME_SEMASI, duzeltmeBicimi, duzeltmeleriUygula } from './duzeltme.mjs';
+import { DUZELTME_SEMASI, duzeltmeBicimi, duzeltmeleriUygula, govdeSiniri } from './duzeltme.mjs';
 
 // Redaksiyondan geçen TR alanlar (olanlar).
 export const TR_ALANLAR = ['title', 'description', 'body', 'perspektif', 'why_matters', 'key_points'];
@@ -122,7 +122,7 @@ async function tur(t, kaynak, sorunMetni, ek, kall) {
     return { neden: `çağrı başarısız (${e?.message ?? e})` };
   }
   if (!r || typeof r !== 'object' || !Array.isArray(r.duzeltmeler)) return { neden: 'cevap yok' };
-  const u = duzeltmeleriUygula(Object.fromEntries(TR_ALANLAR.filter((k) => t.tr[k] != null).map((k) => [k, t.tr[k]])), r.duzeltmeler);
+  const u = duzeltmeleriUygula(Object.fromEntries(TR_ALANLAR.filter((k) => t.tr[k] != null).map((k) => [k, t.tr[k]])), r.duzeltmeler, { sinirlar: { body: govdeSiniri(t.tr.body, EN_AZ_KELIME.tr) } });
   const yeni = trDuzelt(yerelDuzelt(birlestir(t, u.alanlar)));
   const nedenler = kabulSorunlari(t, yeni, kaynak);
   return nedenler.length ? { neden: nedenler.join(' | ') } : { t: yeni };
@@ -285,7 +285,7 @@ async function enTur(t, kaynak, sorunMetni, ek, kall) {
   const turkceCumle = (s) => (String(s).match(/[ğışĞŞ]/g) ?? []).length >= 2
     || (String(s).match(/(?<![\p{L}])(ve|bir|için|ile|olarak|olan|gibi|daha)(?![\p{L}])/giu) ?? []).length >= 2;
   if (r.duzeltmeler.some((d) => turkceCumle(d?.yeni) && !turkceCumle(d?.eski))) return { neden: 'EN correction is not in English: write the corrected sentence in English' };
-  const u = duzeltmeleriUygula(Object.fromEntries(EN_ALANLAR.filter((k) => t.en[k] != null).map((k) => [k, t.en[k]])), r.duzeltmeler);
+  const u = duzeltmeleriUygula(Object.fromEntries(EN_ALANLAR.filter((k) => t.en[k] != null).map((k) => [k, t.en[k]])), r.duzeltmeler, { sinirlar: { body: govdeSiniri(t.en.body, EN_AZ_KELIME.en) } });
   const yeni = yerelDuzelt(enBirlestir(t, u.alanlar));
   // Uygulanabilir düzeltme yoksa EN değişmez: yeniden deneme yok.
   if (!u.uygulanan) return { yok: true };
