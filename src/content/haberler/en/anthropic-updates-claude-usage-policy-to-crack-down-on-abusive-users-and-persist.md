@@ -25,6 +25,8 @@ kaynakIzi: "v1.siSW2Dggp47G2Z5F.Tg2u86/0E8+tNqvMMhcq6hZk7Iu28NOsivK/8YPUSvYFcMEH
 kaynakAdlari:
   - ad: "Tom's Guide"
     url: "https://www.tomsguide.com/ai/claude-is-cracking-down-on-abusive-users-and-1-in-3-americans-could-be-in-for-a-surprise"
+  - ad: "Searchable"
+    url: "https://www.searchable.com/data/how-mean-are-americans-to-ai-chatbots"
 haberDegeri: 75
 featured: false
 breaking: false

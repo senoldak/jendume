@@ -22,13 +22,11 @@ rakamlar:
   - etiket: "Çözülen hakaretli şikayet"
     deger: "%24"
 kaynakIzi: "v1.siSW2Dggp47G2Z5F.Tg2u86/0E8+tNqvMMhcq6hZk7Iu28NOsivK/8YPUSvYFcMEHmZVNLd/+OIy3EU2bF0mLoUujSaHFbYIY8CQUzaG7FWY3hae/zDp0PuDL5BnWizaYHuPgaac9IL8DST45bg+Q8E2Lp13NIDvNWJNyoHHGaTYLObkGAGvkQDLToNgveloM6Oi3BsnBRYZNdIDn43S2q8GgmGt8gfGBe1D3azF2t3ExbuA="
-kaynaklar:
-  - ad: "Searchable"
-    url: "https://www.searchable.com/data/how-mean-are-americans-to-ai-chatbots"
-karmaKaynak: true
 kaynakAdlari:
   - ad: "Tom's Guide"
     url: "https://www.tomsguide.com/ai/claude-is-cracking-down-on-abusive-users-and-1-in-3-americans-could-be-in-for-a-surprise"
+  - ad: "Searchable"
+    url: "https://www.searchable.com/data/how-mean-are-americans-to-ai-chatbots"
 haberDegeri: 75
 featured: false
 breaking: false
