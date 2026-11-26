@@ -13,6 +13,9 @@ key_points:
   - "Requires a Creator Studio subscription"
   - "Currently supports only U.S. English"
 kaynakIzi: "v1.9CKE/Vj2t0GUiCu1.Y/fQ/StK1xb1audaK92XaLP8j5PxtPGmwvgfdkIx8RKY74lcAkUM1PGTvrJvLzpnu7u9SqpLHXkD5uLjVKTZedZ4NHh3qPuYdF61e8SA+g/EjD1r8lSV4Utx7g/bE8eQNHItCcUHqrIHwRdGUhMt2g3cNAyDYA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/apple-uretkenlik-uygulamalarina-asistan-ekledi/"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "Real arrest footage was altered to include non-consensual deepfake scenarios."
   - "The flagged content was removed following the report."
 kaynakIzi: "v1.Gw3w7ei9VL09En+D.znccWFCXLmLqcE+48/iRK5DVWBZ5xkofUAESWSKm9WqZ6J8sS4h+rrhDTLve0ptsYqnnemzDAr5UnChT4p64sh10l4Q5nRDHyj9gD+rNyvefl99HNlo1NXKdQIx+3RmcQCmi2UV182A+aYl0cVjqGyKMOxH3v60PwHeU0+NI1Q=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/tiktok-ai-deepfakes-cops-groping-women"
 featured: false
 breaking: false
 draft: false

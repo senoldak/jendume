@@ -12,6 +12,9 @@ key_points:
   - "Only 14 percent have real-time visibility over their AI expenditures."
   - "74 percent of executives expect skills shortages to worsen over time."
 kaynakIzi: "v1.j9YIQl02oNGYP4M/.uSg8Z4fQQZzLjznj72TWBEgsFQ/DonYddsBHX5nAG11GDjBfKtYNaGQYfJyKaOxrmIafahgnmRWhDKPvJMHExqY58f6I7Zj8wwJmqDeZSuBgmBjDz8Y16Vgbzw3emLK89DN/ms/jHufUc23FOykmZ/riEt1/lSz0a7wSBJcKpSH91Hy+1R5BdXIfj20S6Ssd1C1+p5SHKQw3xLLrd5hbpY1uifcuCAVZ7FumDvb4Z9sdYmXrjys="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/ceos-say-ai-is-helping-their-businesses-be-more-productive-even-if-theyre-not-always-sure-whats-going-on"
 featured: false
 breaking: false
 draft: false

@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Doğruluk oranı"
     deger: "%98'in üzerinde"
 kaynakIzi: "v1.tHRlKhHFJrd0DCaS.vuwWJqbIU+xVsaEMDid3xmWcq1Jk1jtlAjl586dh/ABn2I0l9nlgeDe/vRXqA7CXl9klpvzHI4ZMHU8oWyP/Um+AnLYziSJpbnBmlPjIdlFBZ+jnIsyOWA2qRU/p6az1SJ9rIFwv"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-fake-news.html"
 featured: false
 breaking: false
 draft: false

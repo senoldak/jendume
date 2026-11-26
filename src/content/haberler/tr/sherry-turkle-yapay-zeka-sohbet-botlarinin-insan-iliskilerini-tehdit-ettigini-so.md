@@ -12,6 +12,9 @@ key_points:
   - "Botların birinci şahıs zamirleri kullanmasının ve insan taklidi yapmasının tehlikeli olduğu savunuluyor."
   - "Yalnızlık krizinin yapay zekâ ile değil, insanların birbirine zaman ayırmasıyla çözülebileceği vurgulanıyor."
 kaynakIzi: "v1.beYRYAJykd6bM1nl.dcN8EBVw0ipxaWl0V5stnMnXbAYgHh3oq5BW5hRRYC7lfbwkrwuGJWUh9wmDZAg9gsaI1q6G9I/wHpU/ZbJlvhTkKUD8O746zwLoK5gCrUk2Op0w4kHfI4cxC0qfNibmghPCzO/nfsVerRo8LKwkGfvj2A=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/maybe-chatbots-shouldnt-get-to-say-i-or-me/"
 featured: false
 breaking: false
 draft: false

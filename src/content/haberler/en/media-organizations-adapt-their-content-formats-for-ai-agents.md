@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Article length"
     deger: "8,000 words"
 kaynakIzi: "v1.hgci3fRjrql+6aR0.4DwQsvSxJcfdJB1MR3BOvoMtdyhy/wpNKPhfTNntCXQYqHhHXpyl+7SdZHTZSgLwaR1RCQvB+D3dOjdvVwjAaS26meUKzlx+i/cGvBEc6mvjCAPihV9LOsSpmVOoXgE8s50dgLq0m4gAPbwCZ3fcnquLdg=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/ai-agents-are-medias-new-favorite-audience/"
 featured: false
 breaking: false
 draft: false

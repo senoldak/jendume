@@ -13,6 +13,9 @@ key_points:
   - "Foundational tasks for junior staff are increasingly automated by AI."
   - "Firms are pivoting toward new roles focused on data and technology strategy."
 kaynakIzi: "v1.+It3sUNaSY8nBrmg.6lrOScOXIq/ajo9KK9bALTV3V1Amf0A14buceDhOW/O219pYaprJTrArSfTbd9ERztKBZDaAZ8OPFbjVt1dfl2mZ5BKI7JlNQZajxhT6mXATZJpcZlGj/JWGUBZUYSqxzf6oh+MJTRFCZkLpBE1SMu5wNBfU9NjOYssUTj2tj9FMrYbsog=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html"
 haberDegeri: 76
 featured: false
 breaking: false

@@ -13,6 +13,9 @@ key_points:
   - "This trend potentially signals a return to the open-source ideals of the early internet."
   - "AI-generated code presents new challenges regarding software bugs and file compatibility."
 kaynakIzi: "v1.4a9ey3KvaLGm7OWJ.emlFIkja+MjVEnIDWwFX9Pcl9fQw2P1bT4H8UTwzToK/oEgNuSfHoCkYWUbloZbtA1lA9U0kVWMqU1NyBVFQd1X2WXL+jcJ7kYY6E1g0fVMxcy0eEJ7ikiZPVo740Vod9pt2EGQVTPzfW3Qugab11qWP"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-people-ai-expensive-free.html"
 featured: false
 breaking: false
 draft: false

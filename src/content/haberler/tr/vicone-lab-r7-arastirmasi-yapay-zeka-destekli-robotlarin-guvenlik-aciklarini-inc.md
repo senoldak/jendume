@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Standart"
     deger: "GB/T 45502-2025"
 kaynakIzi: "v1.2cr3+EXG5srKxX9N.+Q+QAUvOV/UP5lFCpTxb9+8CbeaY8fbtoZYaKyYk2UuMO+VGJ09csCtl90LlquHLVMfE485/Nwcd9ORvUCRcpw28pItLKzYuEIdL0DF2SYb7TBhg9FKvFimWFH9qqaMoHTf6vNAk1BvT/61/DRJlwzQe"
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
 featured: false
 breaking: false
 draft: false

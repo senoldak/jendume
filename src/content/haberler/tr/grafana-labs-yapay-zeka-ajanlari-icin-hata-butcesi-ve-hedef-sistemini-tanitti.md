@@ -12,6 +12,9 @@ key_points:
   - "Oturumların yüzde doksan beşinin başarıyla tamamlanması gibi hedefler konulabiliyor."
   - "Kalan yüzde beşlik dilim hata bütçesi olarak kullanılıyor."
 kaynakIzi: "v1.Y5tmU3u4kujScMav.YttwPmHmB1+LzJkNOEkMnwYURDz3sJDg6uKm6OlbfC9yoJuGKRW1MXpyycbFUHTjpnMTQyodEyIBpF+kP+y/iLYK3PC5Zs6B6LO3q6RZfa3a/U3QacndHXUYXH2mz9wh1ZvgRioE8Ls93M4Ixh4wnuuz1IOI0fxkr5LOQiWmZvM5CB5tngsS+1gIwC8gyg9TOOCCd9rTNdd+zg6WrMHXy3e00Vruw/u52OGLbFCVSxSijh9eSr3Rid6+Foewn8EkfBe8xHHDxg=="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

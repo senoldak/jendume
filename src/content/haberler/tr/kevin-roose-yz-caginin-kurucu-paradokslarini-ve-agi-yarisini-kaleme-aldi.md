@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Dönem eşiği"
     deger: "2025"
 kaynakIzi: "v1.diSQtTvMgs0T1T3k.kglKDlSaKfKgVuae2gn/hZfqARWhq40wyJ49jFSaDAdq5U6AMY3/fHBotgL/0VHhjoTp/jbEFrDXxs8WQLwCguskHYkXcXWJJN61ElXOeZXEWzbVJ9W9GduagdcGvw7WjU+UzC9goF6dgcogzPFfPeLoKWmfT5P8a5K7LvlPgqasQ/my5QY0oZyjW/a/ynbc+n4Tg7ArBQ5IB4Mp5QeJhY80jcB+qtWAZglZZeJCLK0U1BQd2ICtBSzpwM6s10v4UrBMz9vOhvd6Pez3YMAUuUz+elyvvSD7T0NnYhCEvbUoVQg="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91635131/agi-jagged-era-5-takeaways?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 90
 featured: false
 breaking: false

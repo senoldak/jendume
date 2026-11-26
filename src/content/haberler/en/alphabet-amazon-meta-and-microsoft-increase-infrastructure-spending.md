@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Combined debt"
     deger: "$326 billion"
 kaynakIzi: "v1.obojmRFiVr7byRxO.L0UJNMq6UYX53Iv7nSeBnvcZ+0ot693pi15rbi4r51ugHhP2MizowB82MApUbqfACVHvRvqPDIuHQlirP1Dqh9hT5arfdWnwNVIoSTuCnjFnt3FxdUgXncY/cxsagOwfkVCMrIc3b0UJPAPVXBIKxjS4VN6+WoREAwCqd1Qqqg=="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
 featured: false
 breaking: true
 draft: false

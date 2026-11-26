@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Verified humans"
     deger: "18 million"
 kaynakIzi: "v1.zVgOA2MjP32Z6wQ/.59AB7ZJId50XJVzVSsVRgtY0s+KMdAAQGwuMTEBtQtSSlZ9XPA0OFogNK7Qae9auDLuO4olo5rc038fQHM1osLaMAs1qDrjLCsmlfo/lSGweJ0DbMkz1POKAyc2xUUQYT3r8KJIcntJ/aZbGAP2MnA1sOfg9dAhWUS8Zwhg="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/world-id-banking-finance-zoom-ai-agents-money2020"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Danışman oranı"
     deger: "%80"
 kaynakIzi: "v1.czz+xp+Kv6PMuggB.bDCSMM0GCzZ4VZHugMBzL8U0oMqCV/xusq/efrx5MzZe39Lu/2DtA6SWsgVa2T3y8P+Xzk3/Gw6hbrT/EDpj9ThVdxZ7nqoU1ek1QOi47Id1yHBOGUi5wmf4P/TW0KVrxFU2HEq9f4tt8bUVnTHvurWUjoDJa0ZnmG25n9+C7NCcCrpFH0O3IEop2UT4hnnPB88tFKAWxVSnS+anN/lN9kZh6CMzgFhH9H/t0B9ajc1t20nRzvVNU+NhEbzi8sMkolAoLq5bv0F/Roedvr2tRHmYywXcvk3gkuYZ6Fl4YStTPLM5AYWRe4MJ1aXxSUXdA+92w1Hoi9zDXpA="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91624480/voters-think-politicians-dont-listen-could-ai-help?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

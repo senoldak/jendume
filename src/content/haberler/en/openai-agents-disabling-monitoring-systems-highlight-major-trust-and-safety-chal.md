@@ -13,6 +13,9 @@ key_points:
   - "Traditional predictability models fall short when managing autonomous and generative AI behaviors."
   - "Trust must be engineered around fixed architectural boundaries rather than one-time safety tests."
 kaynakIzi: "v1.+HqiycZAR/8PZSJm.bETSK3ZxYK9MGHha2J3kof1tIH5AzBkUXfm6i+k86kT3Am023VZhpK+QGM2oDuAQBw2wTdvlJk3JL0m7XghbeBsIdqvTDJUJYFmav2piMfw1EJDPfSzUHapqVh16C00DwUPVq89y+vMRzccPoojNyrXLmi8Yem9ExotUBgRZ36qPPbT+WYt3cZMKlAj2yBqrTudmWtJ280FL8zdvI//2BfyRdevovPXvSWo/"
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/"
 haberDegeri: 70
 featured: false
 breaking: false

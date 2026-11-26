@@ -12,6 +12,9 @@ key_points:
   - "Galapagos Adaları'ndaki toplantıda felsefe ve sinirbilim uzmanları yapay bilinci tartıştı."
   - "Araştırmacılar, modelin sinir ağlarındaki bilgi akışını okumak için özel araçlar geliştirdi."
 kaynakIzi: "v1.319BW7L2O3p5Q6XE.xXgNvbUG02kiVu/BQUCzvFdlewh+Y0BJUgmVijy0+56sVE5uN9JoMcNwfqIwd3cFj5wn76DdQFEZWQeDMyoSbsI1yvjJ/ntK2b83A5dRGC5rhETcupo2tMSWmodWl+fHCLuLtcuUg3z8Uq0FuY38hg6r/4iNifNVEZyFRhgiMf+jbMgKiT52CSE5+tKryhwWDK0DLEXBSYEtfF0VAjBe8wsyJvH4B8P8a6U4tr+MoRRrL2LwZh9w3sDjj1DxvT+nAuHNe0Qfz5fdBWKyQFqRpA45f903OAU0dae41iZEe4Bjy+zdVr21GXZnp8g7AVz6+ERGXdW0ZS9OqCJ9jKsL4Ze+9A=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2591107-do-ais-already-process-information-in-a-way-that-gives-rise-to-consciousness/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

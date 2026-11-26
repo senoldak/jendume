@@ -12,6 +12,9 @@ key_points:
   - "Güvenli çalışma zamanı, model çıktılarının otomatik olarak yetkilendirilmiş kod olarak çalıştırılmasını engeller."
   - "Araçlar okuma, yazma ve yüksek riskli finansal işlemler olmak üzere güvenlik katmanlarına ayrılır."
 kaynakIzi: "v1.IFyCko1LmWa4sTnE.yswqpU2msHsCcDqj9QdJKdgV6uBbuKYy28DfUcOxZoxpWhYSb0A4Xtt6ILClXJnVi6/vlwYGabwV4QvJwsZRBS6MQwyfoshOIOuVAdo8NWSjpMHZHpz0NMo="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/what-is-ai-tool-calling/"
 featured: false
 breaking: false
 draft: false

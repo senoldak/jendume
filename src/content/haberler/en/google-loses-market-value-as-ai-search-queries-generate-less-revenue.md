@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Full-year forecast"
     deger: "$195 billion to $205 billion"
 kaynakIzi: "v1.zwZ3Td5XVFqazE9u.wN4CxvZEvf9IoscGSEisYnYmpeUXuf2uCznldHRJtk6UDorf97A1YsKt7t3MC4HLOWFpCCZjHecBQTw9Rxd81rvW9dwf8Hf4HHXH6TRRXwAAFqU5B/F9SYTgtPjNXnOQQyEbuVBsP3TcrIN66jFIF+88djGmfI9x6XuMU/kojdjPNgsbfxXqD6bXoSnYfxYrvIbvgID9iI6YsgNPgqETTA=="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/"
 featured: false
 breaking: false
 draft: false

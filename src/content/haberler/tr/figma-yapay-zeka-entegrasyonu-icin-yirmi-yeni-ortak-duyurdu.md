@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Yeni ortak"
     deger: "20"
 kaynakIzi: "v1.eORxaiuQNLWD6L0t.EX6SUtChWHfcGv0GXXoGM7QDcBqkX774/ca33puZghX8APe4qoeecr7N4bdqfCJZG2rxfyuwdDSwZiKIbUDyr/JUJUDo3mNq9x0feJL/VhfShYcJLxNN0h7qbnTyGcmB9rP6OBPaqA=="
+kaynakAdlari:
+  - ad: "Teknoblog"
+    url: "https://www.teknoblog.com/figma-mcp-ortaklarini-artiriyor/"
 featured: false
 breaking: false
 draft: false

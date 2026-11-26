@@ -12,6 +12,9 @@ key_points:
   - "Secure application runtimes act as a boundary to validate and authorize all model-requested actions."
   - "Tools are categorized by risk levels to separate low-impact retrievals from sensitive or destructive operations."
 kaynakIzi: "v1.IFyCko1LmWa4sTnE.yswqpU2msHsCcDqj9QdJKdgV6uBbuKYy28DfUcOxZoxpWhYSb0A4Xtt6ILClXJnVi6/vlwYGabwV4QvJwsZRBS6MQwyfoshOIOuVAdo8NWSjpMHZHpz0NMo="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/what-is-ai-tool-calling/"
 featured: false
 breaking: false
 draft: false

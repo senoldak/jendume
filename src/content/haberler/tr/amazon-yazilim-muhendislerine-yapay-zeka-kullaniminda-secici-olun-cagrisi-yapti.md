@@ -13,6 +13,9 @@ key_points:
   - "Şirket çalışanları aşırı token kullanımından kaçınmaya çağırdı"
   - "Token kullanımı ve kod değişiklikleri gibi metriklerin kusurlu olduğu belirtildi"
 kaynakIzi: "v1.tRapOofwMye4ARKb.bTcTPYTKTyetHN+u7kSAjvi46nhyFeIGe6nwGEeXf862m/XjEGA9zOWixKi7THHwEzFVV9kH2KxNvVMA79rqznyKjcxeuq1kQZZjpRCT0ZhxvyzIlbo4GhIdnUHlVEUublu+OI15ohVJm96ZEkPY4xvuTVijPA=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html"
 featured: false
 breaking: false
 draft: false

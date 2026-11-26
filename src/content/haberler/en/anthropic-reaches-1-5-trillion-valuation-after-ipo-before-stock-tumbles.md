@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Nasdaq drop"
     deger: "3.7%"
 kaynakIzi: "v1.RoxvkM4Z59mIrHAj.2BQSTB3FZ3GmaxnNHvBgKEGISklbrXFNm86O3Ky7OdlxJ1Mizx6/2qsr8wCK5f8xJYmKCsRRMzgoumT/5u0+jiQlvuPhG8mKunxkkYb52bBP3/3ZReZSLsLatkd6eI7ExLYkiV3u9tbKIbN/wIeAlkreWe4R"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/economists-hyperventilating-ai-bubble"
 haberDegeri: 75
 featured: false
 breaking: true

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Frame sampling"
     deger: "1 out of 100"
 kaynakIzi: "v1.tyxAbAwjNLbdXige.cH+VZpuuasP/4FiH4DjXMm23ebxtXxSpXZ1OmJegTb3PkKvp1bKUTkP+riom5vvf5VOb/55aYxl9hczh/6kaMqPVKdlubxDAhemO7XXoL7H/XMWUlep682NR3sdHl/j9TklM5AJPBD7rLhmcr9S65jdKvSCPBrFJmHy0"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-ai-deepfakes-realistic-scientists.html"
 featured: false
 breaking: false
 draft: false

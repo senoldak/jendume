@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Karar alma değişimi"
     deger: "%23"
 kaynakIzi: "v1.IUC3QO67zpkoxjK+.jdxkK7vT8cZmC1F26VsiErVsXDW1zUzJS/1YLGH5959N76CSh6R0DQPiXnt2XcGgNTne5aPCUprtOIUq45GU919lYDuzdIvGMP8hcu/xK1zc9inN8O73/Ilsvev4p7I6p7LTJWsjDpb+60zmWAagCC+cnGeVFHAYCvsTB2yfetwhATZ26S8e9illM+lVXjQ3QJVS3no7sqDlZM7I9jvxFUo="
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/"
 featured: false
 breaking: false
 draft: false

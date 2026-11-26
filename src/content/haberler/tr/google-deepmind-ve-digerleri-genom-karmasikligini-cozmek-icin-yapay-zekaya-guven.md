@@ -12,6 +12,9 @@ key_points:
   - "AlphaGenome, Evo 2 ve Genos gibi genomik temel modeller devasa DNA verileriyle eğitiliyor."
   - "Gen düzenlemesi basit bir aç-kapa mantığından ziyade çok sayıda sinyalin bir arada çalıştığı karmaşık bir yapı içeriyor."
 kaynakIzi: "v1.zlVUkVCDdc8FQrPX.uClx+ZtTVkMkhmhi8he/aGlcU1E8xDqtnbHdpncXC9h1PE3Rl0/U59R7Pehk8phRdMEO8UfXgTanmGZAXcqWQ+3eCGzP0RoUwGYRwHF4mvNwPQN8VuEfDY5mr6v+9cukokSwb8kqaM9IP3s+m0/8jm9JyfuL57CXYwBu"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/"
 featured: false
 breaking: false
 draft: false

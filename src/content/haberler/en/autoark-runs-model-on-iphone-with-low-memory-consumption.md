@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "RAM consumption"
     deger: "2.5 GB"
 kaynakIzi: "v1.DeWOqkc/K2XROAhM.q8EtsZcgbhiTYuswxZMypQkwivCGRV45aNBSoU+Dab7jziJTqK1Knt4o4W8VqHEM+mMHWf8p8brYMGt4maXxuu1jDHKecHfvvDNpFmBUk7p74Z+Keg/tfOUg7oGIyndaLDz0XVjpQ1vo+kWp"
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/ai-engineer-sanghay-cin-agi-korkusu"
 haberDegeri: 72
 featured: false
 breaking: false

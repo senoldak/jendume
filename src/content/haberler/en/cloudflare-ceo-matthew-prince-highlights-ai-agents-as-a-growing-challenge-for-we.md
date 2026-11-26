@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Share price increase"
     deger: "15%"
 kaynakIzi: "v1.tdj9EebqG8mQCLkX.JkwAqdiFyhLD7oXUBgrYWUCfT7bB4Nkrom9vPy1Jdc6rkmyq0Z/V72zD6k2sG3bLdCGfKNK49GCZBmWk3VNs7XWLe25wajHSSX91QfLmBbFt2XHDfbvlS4iRzMTwdvEtBQVZdvogg4QC7hih5sZV6mE4hg=="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/cloudflare-ai-ajanlari-site-sahipleri-dert"
 haberDegeri: 85
 featured: false
 breaking: false

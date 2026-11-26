@@ -12,6 +12,9 @@ key_points:
   - "Cihazlar ses verisini saklamasa bile sürekli dinleme süreci yasal tartışmalara yol açıyor."
   - "Çevredeki kişilerin rızasının alınmaması gizlilik ve hukuki sorumluluk riskleri doğuruyor."
 kaynakIzi: "v1.W7BSYn69VYtzp7By.ZJaWz+LiXuD+pFuPCidHUXCYM89z6tiJw2/VgdJcBTTx3uOSjWuJhbK/NLLu/UY10pu9PUAqc+IjLJl5lEWrAW3wIa/oyr1vZBJ5Pl8hpIKrKbHcC/NRXyxKSGDvRsNkfeL1IpiH6wTvssudnXNzpaFQHUIEM0ov8fI="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html"
 featured: false
 breaking: false
 draft: false

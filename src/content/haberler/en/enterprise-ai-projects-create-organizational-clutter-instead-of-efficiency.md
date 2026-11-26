@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Priority issues"
     deger: "25"
 kaynakIzi: "v1.ktLTEh8AbwoTkoNi.2BL5gfjSiGksVu68pRo3t//MV5iD4aMdp7hbRm1jnmzpgm584tY1i2VBtSSjpW2Hu2aRBBF9Ko4BSrUHGz44ByL+i+C2hjSSQV9CIH8R0ZYdWaM3qBEbWCmRRWHaEsJCk548bSG/rkGfqTyKbgWwliQS+NLpSZe5MFzcxa8="
+kaynakAdlari:
+  - ad: "Unite.AI"
+    url: "https://www.unite.ai/andus-labs-ground-truth-index-ai-pilot-sprawl-workflow-gaps/"
 haberDegeri: 70
 featured: false
 breaking: false

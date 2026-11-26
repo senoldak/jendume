@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Mellanox Acquisition"
     deger: "6.9 billion dollars"
 kaynakIzi: "v1.WUcNolMudGO2xVwo.uR2yPdrF/3tOVoFq2E61/IikzqXyiMhF81Oh7LlLk71cMrR60EoazZSaBLZVPomwHHoVgVq5Jb3iqdGyQRgdQ6+fl0tA31hmLSEbMo84J05aKGFF6wTR2lKDcvC01OUZJ7Md5NM4WC4QRG0d8umdbs/xsBYO8tmsEOY/5r7qs+i+rBQ4ADnTCWd4+P1SRA=="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/nvidia-ag-teknolojilerinde-ciscoyu-gecerek-liderlik-koltuguna-oturdu/"
 featured: false
 breaking: true
 draft: false

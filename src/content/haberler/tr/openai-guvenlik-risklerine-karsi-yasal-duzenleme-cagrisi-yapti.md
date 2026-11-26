@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Sorumlu yapay zekâ oranı"
     deger: "%1"
 kaynakIzi: "v1.mTjdqDd0lC58vopH.tLgbjx3GWc9MxQ+a7k6A9HFpQ2SvH3EegJMclYvOlWwE2lfiTBZXEazq1s5TBjNgWw7LZzUq+FVXk6P7DC02SjTrm5yxTB/iOFYJjBGmdFkClF5/JGgARqZZp2JMVIGYmfiC3QnJhOqmssh1F8jFlQbE1gsmSWd1JLkx"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/the-biggest-ai-security-risk-is-doing-nothing"
 featured: false
 breaking: false
 draft: false

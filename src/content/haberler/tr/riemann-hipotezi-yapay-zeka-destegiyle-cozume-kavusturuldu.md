@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Tahmin edilen çözüm yılı"
     deger: "2050"
 kaynakIzi: "v1.nXc/rSyrOvEjGlap.Z/odtGUsxJKclfNZ3wRZgiCngP0XICk93LmV0IAITf6SbjHd2ixH1dTPo7tEIH/b8BAsLRRI4QLGz0G6N9PnCw1wHnvh7JDRhcfuh8V4HgGjfwQ1H6jIM4jYbVDfSZwZe1dOe6RCsjYkreeqEUMkZGlvvav8bQnmtbLdyaLMZrpulEZ1gKQB7qL6fTff6zoRPE8zvh0iNgMTNvD7qEqpm1Ild2wo22te0HyJ3JqqMzptTKwcuuDtAvfVF2DGbpbngQuQNdU2K3d5n7aZsAGf714C+akCLhrJc9MLxQFzQrVkv2mdxjOLdGtKWgJ4ZkZyR2Cd99C/bA=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2600491-ais-stunning-progress-in-maths-shows-how-little-we-understand-it/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 haberDegeri: 85
 featured: false
 breaking: true

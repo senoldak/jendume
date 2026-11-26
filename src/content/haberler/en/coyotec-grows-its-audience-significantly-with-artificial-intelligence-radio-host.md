@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Listenership growth"
     deger: "84.9%"
 kaynakIzi: "v1.pMeoK0fr4wYjMERe.9DZfFAvDs9W6pM9QyFQcbFlOqSuhA9EgxHrmdTq+XwTbWnddAKbz+Emzam9ldCHLTLWifc19qr+/r5HIr4x0+79oPJswzHN6DKD6J5AYg0uNczP/QRlUr0ySGMeZsxmbBH/PxhV0bF8LBxtGDG01CiCcp/HV22upezbVlQJMihJRVsyCQRwEV0qN61PJXbXkBX3ZRt4ciCbK06A="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/"
 featured: false
 breaking: false
 draft: false

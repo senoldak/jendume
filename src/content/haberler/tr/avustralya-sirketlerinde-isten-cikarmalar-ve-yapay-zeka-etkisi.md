@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "İşten çıkarma"
     deger: "850 iş"
 kaynakIzi: "v1.pn67RyFJyJ8p+8ve.LQ5nrWxj6JG1y1JxDvTFzavUnbpE9XDqIWJle+vQmd9EM3bp7tOiTkNUNOwHg3AMsiTUin11stOtO69uOKRLrKoOve+klNR4KINr4dKHmmuYOVyNWmgcU1KUxHzEnO9/ZMzvDpeehusEvfqF0VpbTizdRsOMWMzdfYe9LLdFc483ovWh7+Il/WJpvT/KprH9Hq9sLJZ472Taw6Lbok5ks5bK5Tt5w5SeN7Qo9nqo"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/nov/16/is-the-ai-job-apocalypse-finally-here-the-evidence-suggests-otherwise"
 haberDegeri: 85
 featured: false
 breaking: false

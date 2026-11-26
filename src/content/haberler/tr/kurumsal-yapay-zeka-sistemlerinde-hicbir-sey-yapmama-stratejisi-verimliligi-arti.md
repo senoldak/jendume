@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Yazılımcı sayısı"
     deger: "535"
 kaynakIzi: "v1.EbBLjBEdy5lr/e09.V5OXmIU6Y+vU9IeVXujRWmaLZ3Zag+SGoMuuxZhnLNQcKbBcc6ucoWshsWXUhG7TFTreMg8lu0ryrgxmb91/5VLND9ey6G8MQ1V23H1nOQiqrMQu0GFE7FS3C/bjMjG0OZV5eOWyKV9TOtOtHrbcklhbLVzTSLFL9Z93cI/7sAmiziCxXqSQm5G55j7ekBzoniiBPGjGyQyiBp197ugwkGtx2IcZfNzrV3aYpeXqV+JjCB2AW2sXev1JDQKlKLmQa4CVpJLpPBWR8bowMH1ZPzbRE3SUZlK7YGJ2wSzh7N0yBfLZRBy0VSn35VPIERYdEZ+O/B8DRFGlsjTPH9c="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91640411/the-smartest-ai-might-be-the-one-that-leaves-us-alone?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 70
 featured: false
 breaking: false

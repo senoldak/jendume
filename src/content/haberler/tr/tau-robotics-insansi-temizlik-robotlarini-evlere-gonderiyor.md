@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Tek seferlik ücret"
     deger: "100 dolar"
 kaynakIzi: "v1.La29d6wzFKtk+Vln.0z8DgtLD6SFL5z1FNqxPkMDihrOmNtTOFojU8rKBZ2trqSoFvBKlnGi4D5WO3oZ6wuJwa60HNlIJ3z3W75JoItsyLwf20BZmqB/mnO+OM0hg0/WIGVlE2Jv9LEwV4suG+gofO5ctImUbglutQWA0JFU5UGMZm2I/mj7cwS3sOb0XxDuaTNbu+rGHu5GaDLkRiivshWHTaKnIJXKTtW0FxTwia1klNKWRIFEUVzgKvXPmRYeZgcHMmT8B96ZP4Qgf4A=="
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/"
 haberDegeri: 75
 featured: false
 breaking: false

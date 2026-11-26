@@ -12,6 +12,9 @@ key_points:
   - "The app utilizes on-device small language models to cut cloud costs and privacy risks."
   - "The project's initial soft launch will take place in San Francisco."
 kaynakIzi: "v1.4pboQQgi7CrdYN9k.SbT7F9b8AfGzkvAY3bADR916zF4sCr0Y44AKH9lq2pIuDeVm7OIfTEC3hAOUqaCwlFI1RNhVl5CwUWHgrxIqDei+EeoVTqPbMcuv6i4ghiLynvmpAvruSE6mcShJulSYVH7sRdd7zeMEQZ4hO+wfAeemmL7+jGvOzRx+s/h97jwOjnI8sUOGH1b4mfBepjJ3v2iJzA6/QVg4y/ovtqcXKbE7fm3+Jt31UDM7QDeECbkRUxAlaHqNatkkYH/AcQ=="
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/podcasts/future-web-apps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

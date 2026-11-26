@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Hipotez yaşı"
     deger: "25 yıl"
 kaynakIzi: "v1.0gCVC1Rx/bgKoViD./j0gfNbuylC5nrwWZcYbW37oTke5FUU9MXKj+b3/Y2yOOZ3tPC7VuqvL/kLWv6uaEcnzy7o/eFAUvpMQcJgQ8ghCnXl8KL4o+E71Zbq2VjjhzLm9PqMk9IRErWiyOkDz48XqfcFCnQgxjifoOSeRa3jN9RL/nCwp2nRh35uJXHTA"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-vindication-scientists-react-ai-roiling.html"
 featured: false
 breaking: true
 draft: false

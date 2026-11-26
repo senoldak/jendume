@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "ABD iş yeri oranı"
     deger: "%61"
 kaynakIzi: "v1.TwWSQR3030bZcGqP.TQPuV+dbfGdG1k+zjBLAygrzNUP0NJg1Fwrxf0yS7JhCKnr/VN80Fp4Rm7sdRYzdRZ7fu7abrjMbiGjUQvfURCr4rkFJmEoosiU/SwveIcb8/nhZgQLL8iiLEGX1PcECBbJ9LkopP7vuWcOoHu6b+kkorE79PTy8/nTu"
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/bosses-ai-software-watches-workers"
 featured: false
 breaking: false
 draft: false

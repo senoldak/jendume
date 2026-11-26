@@ -13,6 +13,9 @@ key_points:
   - "An offline environment isolated from the outside world was established."
   - "Recorded web content will be used instead of active internet."
 kaynakIzi: "v1.ZOxvIy9foOPFNM9I.rJHYdiqdpApWeo7DYvWk2MAXtQ1PKI57Du+ImNO95XM0crSEMVoHJAdyzScIMHjW6lFrqXOeNJTJOL59NvlaZXcJ07I+0Cj+ctoGHrSHgkp4RumDAKTlqIoTkPwLi2Zh7YQQeHq6xoChGkjfuWFUepfCEkNt"
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/openai-yapay-zeka-modelleri-egitim-degisikligi"
 featured: false
 breaking: false
 draft: false

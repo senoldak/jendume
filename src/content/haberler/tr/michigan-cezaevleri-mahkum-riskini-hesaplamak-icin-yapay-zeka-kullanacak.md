@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Risk tahmini artışı"
     deger: "yüzde 30"
 kaynakIzi: "v1.0F7SBehC1CsWK0vC.DRcOhqmXYnsnya24G9jDIc1wedxBWmH1XOv3W3XyRwwRxCRgaEQpgzOR8xJvn1kjEeUHdIFnLYdqlRu+kLZk3F+vqrmSMc/RhZxxLlDBPAYs9XowzGAwvpQF+Eekd7c91Ffc1dufP3Q6CyVwXcpuTMCnZUkZuxpRcvO6xRglBSrdy02Azkc="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/prisons-ai-prediction-incarceration-algorithm"
 featured: false
 breaking: false
 draft: false

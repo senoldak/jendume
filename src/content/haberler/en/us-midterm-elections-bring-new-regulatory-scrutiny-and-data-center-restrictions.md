@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Data center measures"
     deger: "41"
 kaynakIzi: "v1.9jEFzNXZZ07rOgzp.+eKJfV6XBBVZ/zjALkZhBVZciS5Q73yOBDmYhoMp19dJ3xQ3LzWL8O1zU1oWAFg+KM34i6WDjb3PVjdqAAC8AiGLVGgh37DORCuYHp5Nlf0O/ogKOykb7R7y6+rWLERK3to5zJn29bxFlkf1DhXikrvb9c/BFBOed5eWebte7EMmwaTdJCbQpuY4UEFj"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/"
 haberDegeri: 70
 featured: false
 breaking: false

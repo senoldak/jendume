@@ -13,6 +13,9 @@ key_points:
   - "Excessive AI use can lead to cognitive offloading and reduced problem-solving skills."
   - "Experts recommend introducing deliberate mental friction and limiting phone-based AI usage."
 kaynakIzi: "v1.x1gCDHAZB4kqFyi4.chskWJcvriDntITrgo6vGDJ0o1bFzm3ia1cORnTYCvpFJPUPdRitY4cdAtXLV308KSr+a8FmaVb1guPELWoJD0eDInLd9my5voS+L/YvUWotOq5F5lat46J0NmU5kQS00w5rBoUGAV04aOalZ2WI6PO7JPsazQCTZqPU2lxm1vC27W4P97j748diA5f2bhJGnDUbbDg="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/31/ai-rely-brain-new-tech-product-lives-boredom"
 featured: false
 breaking: false
 draft: false

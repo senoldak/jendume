@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Grok citation rate"
     deger: "30 percent"
 kaynakIzi: "v1.OB6Q2lGVtfYn70mL.aAS7IxsEVU48H0BeYL1Mi5kwPEalDEVRlXC+8NN1Zygh2T8pmYS6G3iLJNucSuUQM6+441vSAM7Gmj30fcnJQqLCYKftaQrqUcgkET0yTf18lfis5DUtMOx5WaBmLcQmvrOW6qvBfUYjfKQfnIs="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/heres-why-you-shouldnt-use-ai-to-vote/"
 haberDegeri: 75
 featured: false
 breaking: false

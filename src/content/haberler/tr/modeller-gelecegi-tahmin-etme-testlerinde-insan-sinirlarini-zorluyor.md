@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Süre"
     deger: "57 gün"
 kaynakIzi: "v1.Tbgkxtit7MCZIICl.4ksb4mw5T1jmxJuVQw4O8DlCoPbRNeX/8k5b3ep0XXBD/chHpRU3BO2ELlSS3d1EZngeJcOKCCma89agfzqbQtoNzaEiNF7jOQX7GeDkWp00mgN3iBfEIIs48XknI+SjMRopMZFC5NZESz3QLj23AZBRRpU="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/"
 featured: false
 breaking: false
 draft: false

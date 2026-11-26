@@ -13,6 +13,9 @@ key_points:
   - "Özel aracı yazılımlar kullanıldığında yapay zekâ test puanları önemli ölçüde artmaktadır."
   - "Araştırmacılar yapay zekânın kendi aracı yazılımını geliştirebileceği ihtimalini inceliyor."
 kaynakIzi: "v1.AWfFDdw3XezP5QYN.iDGEirFn4akpNXzQafllGXXy3LJx2xJjPFwhHzklS4SwDAvyAGtH8irAwdBENvfxfnZt/NaU4S3KCJJtlKQUjR1g9Cx11eW0ibL/1E4S/SJiLs7L+dYGuBmRWUR5TY42PksYd6cQAvvayeEGteBtjDnfDSP8pjafLKfkSd+tviWhoasLp5Zh8/BZ8T8252+iTYotD5GXaXCmr30p2l2Hh5b0aEVY9qm+jN7PvT9DVggEM4o/axYtPOyI4NGw+ZQdccirXWjq+n1lTKLUz1Cw7AiEhh+4n8lUvtWRF8/lgE19uMBT7epgl9ayIPNR3Q=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2596083-the-most-important-part-of-ai-chatbots-is-being-ignored/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 featured: false
 breaking: false
 draft: false

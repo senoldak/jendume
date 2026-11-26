@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Kullanım oranı"
     deger: "%15"
 kaynakIzi: "v1.QLbNiCpQGO3/BupK.yRsqc2lochParg1bbHptslH/C8mTiJsarNs/GgYyFOsvLiNo8EtfY54V7Pbeov5tN2VipT3SEWyqDsIfC883m4m1M1G/t8/j+y9otOQEnP1BRzLpkBne6N0lh3aERoBz2uNAEHMiCDPcgQJlEMmhbS/kpMSns8b5ABIusrUNBv59D9ojxVYinDPkx2wb/fQJKGU3NAwjp6zX9zEYShNQVI7hpQ/5LRyZmeeWv0891U3QqsrEg6dY9b9bTMe6vg5Bk+ciQPdYLnUqholI3dNlaXHqYU3qP13mmdlsDw5FPZK/ZaCdn+l90QbPClU7HF8="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91625997/what-ai-leaves-out-answer-still-counts?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

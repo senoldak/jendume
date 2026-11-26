@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Anthropic Revenue"
     deger: "$16.3 billion"
 kaynakIzi: "v1.1kKt73oT4DuEwM40.fyY06uRqkQ9QdoS08d5Y7yvSZtZLXJv6sJG9ucSrzL1lD74rPinYKU5qNt+2YTg+5QBHxdBbOcAHSswJ2iAKJ6lAhujY39j5fDt8gFEe/F7wn5hNQJJQz1AKataFRDOWERoTtFlkx83M4T0qip4NGZ2L+sd7kbFmAg2VFPy0940gAAlX2tyeJ82KzfVRTVoxgg70AA4Lx5gn3bO6vhBaED4ASss1y8/P5nJGwhf12JtIAAtPzhYMnZVUTbJU0CQJBnzVhuqDwKGb3+VFwxdtQQg="
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/sam-altman-says-your-laptop-ram-is-a-terrible-allocation-of-scarce-resources-why-i-think-the-ai-bubble-is-about-to-prove-him-wrong"
 featured: false
 breaking: true
 draft: false

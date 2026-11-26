@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Monthly transactions"
     deger: "Over 1 million"
 kaynakIzi: "v1.0xm9MwwrjgjFBi4R.4rcrIRnW8TRjQiCdIepAx0WbPs9PGiZx+jH+BmsiAdmejKKpCJXpvhhCE124V2ip0V526ngSLvCJg61Un7x7SoxLNIj3W6rILn38tSle2JAL1NUu3aQXxDwe3hUhNclAh5lIncgijILr+8b8v2Bm7HFwaeDGLzs="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/att-agentic-ai-is-surecleri-yeniden-tasarliyor"
 haberDegeri: 75
 featured: false
 breaking: false

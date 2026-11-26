@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Araç memnuniyetsizliği"
     deger: "%82"
 kaynakIzi: "v1.9ZhrajvVK3VGLQes.Ebw5fPv7rFXLXZRnrOzvoT+8R08/A+fQQFekDw6dTi9OcucTX0RMTwcjw/EYF9pdADha2XVyepAeIXsPXLv6lgS9GDTkybrL7hvndlYy+yYmA7PX/m1y80X3ZKJm51Wy8yWQJUoMs1dynm/zI9+dGm78JhSF3gRgOmwOlsDVMg4yTXlyE+6fwizHICgxgfTYCa2QiefSQJanKlFJ"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/europes-biggest-ai-challenge-isnt-the-technology-its-organizational-psychology"
 haberDegeri: 78
 featured: false
 breaking: false

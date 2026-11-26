@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Net kâr"
     deger: "283 milyon dolar"
 kaynakIzi: "v1.zJCHP+K4+cHj3DUz.xuEvRvzbwKsskB10KShSyN2y9O1PoZUQVo9WkhPwTRKd4bqlrF6figvK89bPKZrX0GVpLqqbR3IX3dzg93yhW6s8hOeTsH84rf9cn/LX2CSn7HMn+a0Bk05hTrdpvHgo8jP0n1u072r94pl1xECrayESVhQlDNqff6t/65AA"
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/googlein-yapay-zekasi-redditi-cokuse-440282"
 featured: false
 breaking: false
 draft: false

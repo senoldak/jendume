@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Beklenen iş gücü kaybı"
     deger: "%10-15"
 kaynakIzi: "v1.Cmjefnmtfyj52Skv.7H8WEZ/86SZR4sNku6OxweDz/eL1MfXmPRHsLogqAqbG75eBv59s4ngAtFfwdlWMsKdb7pQmcbruOVFIJwx/eQJpArnsl/hqhy+a1XnyNArsnxxyOX3mGiwM6/LtDLstjtxb57zEFLK/i2O/XSixE1N4TSd7SoM="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/29/ai-agent-coworker"
 featured: false
 breaking: false
 draft: false

@@ -32,3 +32,13 @@ test('gosterilecekKaynaklar: tutmayan, resmî, gösterilmez ve yinelenen kaynak 
     { ad: 'Örnek Yayın', url: 'https://ornek.example/curtin-chatbot-mental-health-study' },
   ]);
 });
+
+test('gosterilecekKaynaklar: tek medya kaynağı konu denetimine girmez; resmî kaynak sayılmaz', () => {
+  const tek = [{ ad: 'Örnek Yayın', url: 'https://ornek.example/p/91634248' }];
+  assert.deepEqual(gosterilecekKaynaklar(tek, metinler), [{ ad: 'Örnek Yayın', url: 'https://ornek.example/p/91634248' }]);
+  const resmiyle = [...tek, { ad: 'Resmî Kurum', url: 'https://kurum.example/x', resmi: true }];
+  assert.equal(gosterilecekKaynaklar(resmiyle, metinler).length, 1);
+  assert.deepEqual(gosterilecekKaynaklar(tek, metinler, { gosterilmez: ['Örnek Yayın'] }), []);
+  const iki = [...tek, { ad: 'İkinci', url: 'https://iki.example/q/1' }];
+  assert.deepEqual(gosterilecekKaynaklar(iki, metinler), []);
+});

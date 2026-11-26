@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Ebola tespit oranı (cins)"
     deger: "%22"
 kaynakIzi: "v1.RY3T4arx8JOcQXlE.V0UR9Evuj/0cp/lhG17/EsRUrL5q6JOISFrPwyXEWy5AEFIhazYBInJZvefVQZiKzDd58Oz7AEzKKHHsNVsC+SCN6OQSgQ/AqxoMGy5+bgOc+UPvPGr2s/OVYYI7EJx1SzgY3O0wHpp/bR7vNg=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/"
 haberDegeri: 80
 featured: false
 breaking: true

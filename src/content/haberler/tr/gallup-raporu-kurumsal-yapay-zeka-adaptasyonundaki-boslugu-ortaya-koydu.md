@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Rapor yılı"
     deger: "2026"
 kaynakIzi: "v1.ZcCVHLWlkdSAGvx1.K3SqwE4k/0RJAS6iT1DIEfWE5LZ6ELgjbG8yPEa4v2NgQFTH3MuoF1GcR5IMbcaQO2dYoMc6e01ULEL1MIB6oM+ZtvqNfCS71w/xN3njvV0ZKziYU2iLryqtzFzajUe4rwDToGDlxWhfIugw+xyTlClILJo41ZgirFxegLpqPsP5zLzX"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/enterprise-ai-outcomes-depend-on-the-art-of-unlearning"
 featured: false
 breaking: false
 draft: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Integrated apps"
     deger: "50+"
 kaynakIzi: "v1.ia0B3MnbPMDImQPn.bWrHJFRMdNRZiA3tauHM8ex8m47+nsTEuart3CPoD1DmvQ6kWPsq/nxwnELLoitPKXs79fvcKktdEhc+v8XE8DNU/If3+BGuZ2rMSuFNAqPXHw7Z2jfJU++i280rU/48Df3OgA=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/google-immersive-explorations"
 featured: false
 breaking: false
 draft: false

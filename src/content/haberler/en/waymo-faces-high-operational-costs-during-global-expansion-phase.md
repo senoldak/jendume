@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Autonomous miles"
     deger: "300 million"
 kaynakIzi: "v1.CBKa2Axq8+VQxJNB.D2AdKW+6gmcKem+WSTMVSS/ocNZvj2zRb+1GPm8DbK+Ye7jsWB66k3uV5+OCQNZe2v5hzwq7lzkWxmAKDK6JsX8du3epoj0O8zXxsRqCjb8ArPSvFzJCapCVn2W6r8et4IQd89+PBwOXlnh0iXE/aDMN37XbTSqkOlB4W/Dp/KEy2hxqylI5ajYHVeiIbgk63LjSzzVTYsj3ZxM="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/28/as-waymo-expands-overseas-it-remains-a-niche-cash-burning-business.html"
 featured: false
 breaking: false
 draft: false

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Nasdaq change"
     deger: "0.7%"
 kaynakIzi: "v1.cZSP66jiND2CgFS6.ptQNVeMblC9Zm/z+BGx1ip3XaEx1XwbCsKUXsswA+z/Rs+m2BnfLKe1O3EJ17XEvfkFpwQ74C9iBVQG+zBFXD9YulgSaecd6iRzsA1NC2M68Q4D2WUlbckdiJCjNVQrIC4RR8qL5Rl5JUGQebjRvIbYWepadMmOSVGZBiO4IfxSnDkZSyvNR/4wGnzmeUWMk2MzX8oJok8HlN4aPFXZuREib2Jb1xz2QQ3isNeK2c1oM"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/investingclub/2026/10/24/ai-funding-fears-rattle-wall-street-heres-how-were-adjusting-our-portfolio.html"
 featured: false
 breaking: false
 draft: false

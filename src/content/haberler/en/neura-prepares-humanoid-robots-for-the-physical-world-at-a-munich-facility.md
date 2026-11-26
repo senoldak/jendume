@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Chinese centers"
     deger: "more than 90"
 kaynakIzi: "v1.Iuqx/M5/gwAq43P4.gVO8fZaW71FewBLkv7PIgTVUefk17D1AebTJoA+c9YZo2bFWvtjcGSpY1yjipNYVYTp1MihQ5wUvPn2C5nOoU06gIt5daOJB/+el7jusGukvQuzpBicR+vxVxdxykCA3si4KQju0j0p1RQ=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/robots-and-machines/ai-robots-hitting-gym"
 featured: false
 breaking: false
 draft: false

@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Fast adoption rate"
     deger: "81%"
 kaynakIzi: "v1.3kJpeCrIDxVA8U6M.M9TuWwKaYWyrmy3dKeZ7ks6AYRI9Zwy7q89tk4UHv1wF3wFxvmKfSzfCpikgxwAydbWA0Y7MdT7mjyqPg/xYyzJtdlpTE8pH9lS+udbgyG6KKDREXvtWx5yPPdYAEzuh9tOEWabPFaJk2BhYkXD4VQ7dPkCmXT217lC4aMavFDXVCeQXBYPRZj2Y7b+ix24mf6J1L9hkoSAjrrfDwzSqh5zZ9ALEDWUUmkCblPMSrg=="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/companies-are-bringing-in-more-ai-than-ever-but-employees-are-increasingly-just-working-around-it"
 featured: false
 breaking: false
 draft: false

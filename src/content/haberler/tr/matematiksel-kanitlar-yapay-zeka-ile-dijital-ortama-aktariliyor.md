@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Stacks kod satırı"
     deger: "16 milyon"
 kaynakIzi: "v1.1d30yBJMHu7jqHJG.dtpskGMldro/1BxkUyeVaGsgsDWoKI4S+ka2uGjLrPinTql59rF86QG0IC8+3W/FjcQb6lxkqd8cA1q++TpMOSEkfBpFvxsGvpQqGQwEq3vwOt3c2MgP+XzPIaUTJL6F+w=="
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/enormous-theorem-ai"
 haberDegeri: 82
 featured: false
 breaking: true

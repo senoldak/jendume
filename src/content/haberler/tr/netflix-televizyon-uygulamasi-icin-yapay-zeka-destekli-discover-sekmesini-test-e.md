@@ -13,6 +13,9 @@ key_points:
   - "Özellik ilk olarak ABD'de İngilizce dilinde kullanıma sunuluyor"
   - "Çocuk profillerinde bu sekme yer almayacak"
 kaynakIzi: "v1.EqxX52wVT+N8EjnH.TteCE6AbL+nW34FJew1jwYnVGWi8YwpT1doXG9W+VifhTdTp7HpgYYNjuMoHZ30baNrXajQZY3jYR/vo65NIRb4FbC/mKZeTvJ2Wcl1h2PAOjvEz7i9OPwDUxHpV6CHJ5JBHpv1BKtyXdr9KXJXck6YcxEfOAW7ZA94PwqqrkZ7hGxsO+UaA9Mi1ASFksFkNkKVJH68kbmq7yCSmRdk="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2305778/netflix-thinks-ai-might-save-you-from-scrolling-aimlessly-for-something-to-watch/"
 haberDegeri: 70
 featured: false
 breaking: false

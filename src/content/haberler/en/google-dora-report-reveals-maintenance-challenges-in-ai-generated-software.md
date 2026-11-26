@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Incident Coordination"
     deger: "43%"
 kaynakIzi: "v1.J4GSEnVhXfjFJa65.i9q7cjatBkYTwlIS7vwrLdEM00jK87GAS5KItmYYEPf+JiMkKrVrPdoibARKTJCHDKwX1WCYP1G6LwQG9Bts6Ws/N/j5PnNiUNaGm6zteL9Qp2fqwSCI0y1rLOEru2nPlwYasswtL/F6rlDv32EOUePLPb+0qVsv5wkb2kWGaEm551HfNKhzdUmTHFt/X30OdE3GumOyRv+swXhlSvUIWlL2NpZJ7MBQ1cpYgS3jbgxsC0+O0Jx9+5buu226e9nyrFeOQEHDDR8srY7nG8cx13x09qZLKn/0bpxvPfhL03SFji5nRlZhA4hhw8FnyeFRI4v2n/Z7vM9foImsoZGUltQSEnnAYNvIuAaZwZgEWaUH1g=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91642024/ai-is-making-software-easier-to-build-keeping-it-running-is-another-story?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 75
 featured: false
 breaking: false

@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Hisse kaybı"
     deger: "%25"
 kaynakIzi: "v1.js5BZDA+d4Lu8FwO.10+ldATyfuwKl9BCj2S9XG/pNVQicEDcTM4/QE4SMFziw94wJG7zEJDHbD5c0o6po+BONhZgv2MQ+21HdBT2K59tuWw/Yt1tpirrHCiyq6ck31n5x6oi4hMuFuStb8Dg4ki9Lo5fPMDbUF+2kcyvovSLVUEVEqd6HRKspgjzsQ0="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/openai-ve-anthropicin-trilyon-dolarlik-439671"
 featured: false
 breaking: true
 draft: false

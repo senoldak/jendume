@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "ClockBench en iyi model"
     deger: "%13,3"
 kaynakIzi: "v1.NVIWeM2dc988JlJU.fpEbH47z/cuMG8xvEIOv7R1tjlGkDawW2vMjcHMYX2QeCGkZdZQpHFJyHLTAQGmbYAWzy7YxMwSjiqNGu7WDAkzbvO4pbeGsXmZCYp2PEqpeyT+Yz0u7oa2ibo8R77jO8rurqe0Sg7WkBLDNHtJhD2sVCQu1JcLNlCiRqr3yeCEmQxXdgCJrp7QeaK8B29g="
+kaynakAdlari:
+  - ad: "KDnuggets"
+    url: "https://www.kdnuggets.com/jagged-intelligence-why-ai-is-brilliant-one-minute-and-clueless-the-next"
 haberDegeri: 75
 featured: false
 breaking: false

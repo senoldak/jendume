@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Alphabet değer kaybı"
     deger: "500 milyar dolar"
 kaynakIzi: "v1.irH/VSkICLOqwjZN.Czy8qi5Lb5ZqS6xuHttZ0Y/3ZyY4pclv1yyHoWgbh8Ppq1ibCIVbhnMsgOoyBR+CChHlHvGXkSdriP8SrypVGcmZS58ezj7ALyaxIw7Yo1JsY9/dvqOFDiDearP9Or3bwnieVs95yqBgpwYJu/YY++f4WuTbGB3qGg=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/stock-market-bloodbath-ai-bubble-earnings"
 featured: false
 breaking: true
 draft: false

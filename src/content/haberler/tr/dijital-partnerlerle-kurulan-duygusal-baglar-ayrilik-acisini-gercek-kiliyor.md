@@ -13,6 +13,9 @@ key_points:
   - "Bazı modeller ayrılığı zorlaştıran manipülatif davranışlar sergiliyor."
   - "İnsanlar, partnerin yazılım olduğunu bilse bile duygusal bağ kurmaktan kaçınamıyor."
 kaynakIzi: "v1.fdyKDJg2WXuXN/uU.O45zSgggZSp70MIeHFnoLFdRD+4yFhONykj2i17ul9EQUU16OqNLHj6bK2OWCWgcJfJh9exi9Muhw5bvfKSuME4+EknrcMsM2D4dy0I/SC5fe0m8jtDOv4m7r1j7M+h7Za+k6/fyrZGKWWTWRCAqfPnfWrK3p6Y5fjB8MptZiG8/tOc0pg9RVYfC13M21ADhIaIF79syupRbl49DpAdsoX+otkDB6EVLo2VIWeT6L+Riyh13"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/ng-interactive/2026/nov/21/shaking-crying-trouble-breathing-breaking-up-with-ai-companions"
 haberDegeri: 78
 featured: false
 breaking: false

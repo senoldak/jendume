@@ -12,6 +12,9 @@ key_points:
   - "The system processes text, images, audio, and video data."
   - "Developers can download the model from Hugging Face."
 kaynakIzi: "v1.YeoRblxkwD3QyN9E.gSZSzuLTmyFmDUdBCifGXKLJ5XNyF5R/CUk0/stpxrH3qNB76IJ96ESK64jW+xTcmTpuxFT0XbtE4fex/l8uIyYavgRueUCiwzqhmXWC8iq4/BDeqPMypy9bbEPY/Oqjxfq4D8uoWc7jQdGnGcRAd3sVyi2yNbnMvqopNb3aIJDRN1f7FZpl3T/DAG7rR5LQFAX7ES7VSYTt"
+kaynakAdlari:
+  - ad: "Chip Online"
+    url: "https://www.chip.com.tr/guncel/kod-duzeltiyor-video-kirpiyor-metanin-macte-calisan-yeni-modeli_184688.html"
 featured: false
 breaking: false
 draft: false

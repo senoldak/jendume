@@ -13,6 +13,9 @@ key_points:
   - "Robotik bedenlere sahip yapay zekâlar fiziksel dünyayla etkileşime giriyor."
   - "İnsan hücrelerinden üretilen hibrit yaşam formları geliştiriliyor."
 kaynakIzi: "v1./qauiGki80j5oPxJ.3H6GfrxdxyTzQ8+fKWkjmYfWwLjCE3ut0N9/dUK40WdoO5JasBJmr6oBADV9jxAiPAeZEQsCXv++6ye72T+Y+HmqzdDrR8l7DeYCdfVjsBKBQfnh7moOm02BaHbh2OKklM2BSo2UJ45oxIgqBFfwrN3V06pPDH6XeKrHA4PqB8EsxGlEDGuaC3w5elvSvb4nnYihZ0uVgkvS+heMMz3FXH9zEGWLMeUJBe5Ej2/Noa312xzjg3Sh2qjNqgPfRTe1CCzc+glVKdbUW1WvPnBKWFADIWlLfgy7JZie67d9FMLh/5DlHSOW23HPUY5kEKZ16sVY1sWnkbU8rZv+CZQFyA=="
+kaynakAdlari:
+  - ad: "New Scientist"
+    url: "https://www.newscientist.com/article/2600589-ai-is-forcing-researchers-to-confront-the-possibility-of-artificial-minds/?utm_campaign=RSS|NSNS&utm_content=technology&utm_medium=RSS&utm_source=NSNS"
 haberDegeri: 85
 featured: false
 breaking: false

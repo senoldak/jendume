@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Altyapı taahhüdü"
     deger: "900 milyar dolar"
 kaynakIzi: "v1.7+b9ueUJZJE3wEyj.x7MBz4Kdu35oavP/sB5gyS9TT91o5oMahXq2076gxahDt2MfMqb5L/rLC+Rx6Z5RmIEPgjcaieIgi/bAg39PRX6PHQO5eg9+1FGSruhpiGXZQIVbI3R/TDl1W6RR4gCxqFPDbHkTuG2AyOTsJ3EVp8Of6bVwRVd5kuwLaM4osbN9+mu1YJRGhBiJfQhA+5WFEvVxLQ+xulIAW+spdN8wQX+K5AXb0PunzeuWWOfeNsVSZAGKeA=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/nils-pratley-on-finance/2026/nov/19/anthropic-keeps-ai-party-swinging-but-atmosphere-bubbly"
 haberDegeri: 75
 featured: false
 breaking: true

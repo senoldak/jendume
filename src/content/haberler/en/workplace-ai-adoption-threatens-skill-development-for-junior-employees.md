@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Policy adoption rate"
     deger: "38%"
 kaynakIzi: "v1.nsWmOWQlrc/GU+r/.U/5s4dYBX5/WZ4vZH5gGEgJb2YCMKR/OrBfBM6K4PbxbwakQ7j4Nlx/TiRhV6bv3sqgrzH9xcAhl56TneT5GwpWvjbxKKLed+nwge2b1AP78aPNvImUNh6FXYBe55/KU2rRi5IKdH4wkv8Cy2P5Zi0kWHlDJXN5dIXutWXraQDFsLcaSL+HCDqb3/bJXYncFDEaikN65dtSyvjwn7Pyee5iMqpuxJHCHyLvx6rUpgKgrDgrJ2lFrLylX/O3/CbUcTeQC5joa4MCN0w=="
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/the-sentiment-seems-to-be-adopt-ai-or-die-new-research-claims-the-uks-job-pocalypse-is-being-hit-hard-by-a-lack-of-ai-skills"
 haberDegeri: 75
 featured: false
 breaking: false

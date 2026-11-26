@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Revenue growth"
     deger: "165%"
 kaynakIzi: "v1.ND7uaExoQSsNhHhs.asEEb6S32SKDwzKsr7y0kLXLUqSC9ltTq9OVzh1OTBKbTI62ja8yIZui+8+ZBCZ+rQmOh5Ov5k6bCofxN9B1sjsN4faf8aEPX5jQh5P7AghlEpjqVi4h9uq47CUXWm+skcvOkUMsleu5gm4X0/c="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/cohere-series-e-c7bn-canada-nvidia"
 featured: false
 breaking: true
 draft: false

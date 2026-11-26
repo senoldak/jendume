@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Tax breaks"
     deger: "$2.5 billion"
 kaynakIzi: "v1.OT4j2X6yNzi23d28.b6ToTyALnTUWc/UYAEyS3NbvvEtEznC5s5YrIvl+7k3pDmgpOI8rrV0QramzXUWeJ1HM+syDuns16VpjBndKEhA6IaIyLDuTqA2e2Fa9tGecb1XZyiV2PT0vcnVWe3zwOJSu+VsPEZ57lSfrFraBAsh9gZ9ltM6g9HMoBmAJjc/2wboM9sINGWYB/pgemMU="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2298214/anthropics-political-problem-will-get-worse-before-it-gets-better/"
 featured: false
 breaking: false
 draft: false

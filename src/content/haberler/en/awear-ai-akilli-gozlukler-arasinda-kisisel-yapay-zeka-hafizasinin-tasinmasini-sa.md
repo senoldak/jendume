@@ -12,6 +12,9 @@ key_points:
   - "The platform lets users move their accumulated AI memory across different eyewear brands."
   - "An encrypted memory vault ensures user control over personal data and encryption keys."
 kaynakIzi: "v1.2DCZotcp9S+jAGTk.Y3Y/trcYKUjsIyOtGjtFBbTVdqlDY79S7oQ3dW+NCwjpUP7rrlVtocZpBZhDU5ap+vIqvjI2NiG6IiCWg6bsCXVMMySV3dmF2fP151sXa8aj3AhLpCrIGpdjMIvMbVKQPvEoLGjzVX6FYz0h7KRTWuLvsVrzIWlIv5vNI+bRNpC2/CUoaEe5i+wVhBXADrHVRWrmqcxw3UEit/t7qsj/KDV8kFRXkmP9qQh+vB8iltx3S9F1QMl4Nn5YhUiIB6NZziPsuCEr1HYFuCeuclm9m52o3uUE1pXdK45vLOsDBA=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91623703/ash-saulsbury-awear-ai?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

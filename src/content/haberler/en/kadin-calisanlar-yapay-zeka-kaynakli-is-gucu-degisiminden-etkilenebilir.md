@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Employed women growth"
     deger: "25 million"
 kaynakIzi: "v1.e09CZNjjpJEUE49P.3kvw1EEDCmAzPqQfxx9Q9QR14EjifjpWe6XPSjoSlNYW+H0FJz8tJA3SjmbPicuHzyZ/j9+iiOgXY7TYBvVbkBoA527DEec/uSLJrY7AIMnyXJiVgxo8dwLKNy+jEipoT5/0s6qQ90FlnTc+Qnrgj4hSM1Mmra0ZU6rDzg=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html"
 featured: false
 breaking: false
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Initial test cost"
     deger: "$350"
 kaynakIzi: "v1.AHnMXQuT0sUdJ1pr.5Cb0MKnKeud65keIKdt4akleYKgc80F4NcBA4kZXk8spGTjP/w2Q2GvSyicLHWNEQyFpNBNs0+A1hMyh8T0/t3pZO1+TPeTE8592pQxswNGcKS5WIua6fEZeSTgZJTBHT3BUEDDsdAUVKSNlsWCm+j1eE/1EUWHB+K+La2R7EyY="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/ai-finds-zero-day-security-flaws-for-cheap-hackers/"
 haberDegeri: 85
 featured: false
 breaking: true

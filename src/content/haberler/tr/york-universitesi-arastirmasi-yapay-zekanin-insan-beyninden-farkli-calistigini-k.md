@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Ek görsel stili"
     deger: "300 adet"
 kaynakIzi: "v1.UoSxHVf4O416snmN.tjzzhnKe0tYLGaR0pjF0CczWAOrHwLXrwOjRfTRTcQNk9Av3lX2StT5yYUcJQ9S7+gIGIFA91npOSkPiv9xJRWzRwWgNZizeL9H0x+dGkNL/dIYt5VDgbYM7Olj56dWPqQmpDOju4r/rkx9bF9fK5EI="
+kaynakAdlari:
+  - ad: "ScienceDaily"
+    url: "https://www.sciencedaily.com/releases/2026/11/261120075701.htm"
 haberDegeri: 85
 featured: false
 breaking: false

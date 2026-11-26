@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Publisher coalition size"
     deger: "Over 80 publishers"
 kaynakIzi: "v1.+V3/ZVGXdlYbRSC3.bh7VpBf5iKg41OY/gCbPb5uc+A10xxjMAplp/ChxpE0+goSXVMyp8KpbEXsd0n5iU0jes8zGOtg+CaQaDF906ZiBbtQmfkrbQuGS3OLM2R/L2zpJWkC0ezGgcgglPZ/0Vj0WkvenILpG/EX3XWYR7N1YJdYbnfhyVl74C7Qfull0jEBJO46xvFTvDLyyjjC1QZ03OwkUcD49knVmMmhaafen80/88QWWfIz6EiqURFpnq/bywykwk2LNup5dtfuUv2MOyc5K4oqyQ1i/LhK/N7h7o18MZRaNm2Zs2qsp/nSrbIjOHwVj7qJgrytpwewXS5aqfMbz"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91629388/ai-agents-have-no-rules-so-meta-wrote-its-own?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

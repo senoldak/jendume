@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Test speed"
     deger: "44 km/h"
 kaynakIzi: "v1.8qSKS+q7wAu5+l6t.11WjhzkhQUmucgqO1KXkpcvJ9eFkU9ZMfp8fjQ8Kw5uVigrub5HrB5ArA5txjaOobHUkq5YYrRossfaz/8B0M//r255iFHnZH0WHuAshxF40MLHHjuSxRZiMr/29faSXHGU="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/future-society/tesla-fsd-cyclists"
 haberDegeri: 85
 featured: false
 breaking: false

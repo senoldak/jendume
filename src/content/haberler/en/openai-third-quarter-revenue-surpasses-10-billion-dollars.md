@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Anthropic revenue"
     deger: "17 billion dollars"
 kaynakIzi: "v1.9sbwmov0DLJpTMsX.PxjXDj0+fOm+qLL06HKEzO+2bCwrLToIPTs1h7wH98OYyPHI57UzqjDLb6yxcSEc18Nt3P9NtlBFktrEFJm8OjMTRpE/tWCg9+eujavyEP3rc3Ldrmq0q0b45yIE0kkt/h5pBJV7V1V0sGCAi91TwTvsFvewmV+8iDtD9yQdsrE="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/openai-kasayi-dolduruyor-gelirde-rekor-440866"
 haberDegeri: 90
 featured: false
 breaking: true

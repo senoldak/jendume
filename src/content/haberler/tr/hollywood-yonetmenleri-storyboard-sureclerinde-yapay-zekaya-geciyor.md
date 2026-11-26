@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Disney Yatırımı"
     deger: "1 milyar dolar"
 kaynakIzi: "v1.e3Y/JO4AAue5ne9Z.GvlM7DWySc7Wo06UGAmHlFsz4SysMeUeMI0uvvYc/5DGDSzrEADlzBZstV7iLfCPLc9XnVfA5UttlFPPLlFDjhiNQ5fv6lPTfK/ilN9jrO8opIeQXyc4fm2vw7U40+nus75pGUf+5XnLgNqbBznCoxeD0gRV"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/film/2026/nov/10/storyboard-artists-ai"
 haberDegeri: 74
 featured: false
 breaking: false

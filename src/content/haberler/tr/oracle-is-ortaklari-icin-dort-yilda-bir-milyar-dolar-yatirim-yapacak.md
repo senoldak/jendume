@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "İşten çıkarma bütçesi"
     deger: "700 milyon dolar"
 kaynakIzi: "v1.+7WfK5Wmsp/QjDOP.tCF/eEDD9AUDCgr6HoX4DO/qSsAoKxgLI03qG0AAqkIw//od4Pm+thsauNbvAMcu2faSv0ks0dbDycptM0g5akUbH7h6/pihR1Rep7hirDSix26BO+02TUKpm1OELP9rbBYqI5OSQKaATNNEmGolmA=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/oracle-1b-partner-ecosystem-ai-world"
 featured: false
 breaking: false
 draft: false

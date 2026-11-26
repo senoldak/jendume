@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "İş kaybı"
     deger: "120.000"
 kaynakIzi: "v1.0kNxYtatvleCU95M.l5L6LSHfgu/1UKyOLxxibfjcP91E7GF0l1zit/dXoBQ+n++NCQIOKy92oOIk4+1e8nG0TXRQgJdMc32F6jn06IgQKeH2NMR6q8NHcx0bcqDloVYWB3PEElIf61HlThIof4wabh9fTObSJGdo2wsXcHHWurFp1zOxOFEdFp5Pxj3BYMu7NTGOOFPSsH+jIWb3PRvx4+y/Xdi9VHyW7e9if+HPMdsvl0Hham5H5L73yBAlF47TU9CTVA=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/nov/06/the-guardian-view-on-the-ai-backlash-american-voters-want-a-say-in-their-future"
 haberDegeri: 75
 featured: false
 breaking: true

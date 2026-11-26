@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Nakit akışı açığı"
     deger: "9,9 milyar dolar"
 kaynakIzi: "v1.FFsPTS3zwSgvTRhc.P7VACCY67zjny+KegW+hl5T4tWelXiVpt7sxJ0NjDHoLuxx/a0FDhG3pGLdYCV/On8DSSS2hamR5AZR7oQHZGDcTDLlrAwF34cjmNq593kQ7Xu5u2hTa4Fs1CYzL0AikZQ8OUsQ5e1ZjNrRh86/Lymvhz3qpbKqPi/EcgQ=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html"
 featured: false
 breaking: false
 draft: false

@@ -12,6 +12,9 @@ key_points:
   - "The system monitors both internal business records and external public data in real time."
   - "The company focuses on business-to-business markets rather than tracking individual consumers."
 kaynakIzi: "v1.YLksXNKwCAXqdRFD.GSp0oTB03C8kc9M2lsFyuWhbZCUX7rzVGqhvp8yUQ61KUaf9tIyS1qLKsHEjc723d3wqKkAGe0K6Aj5+qmIEPk24fB06zWgYPUw8q5mjmqKEof13j8Z85+6UICKGQf0lDHMyNvR9SsEEFea3E1IFb70xjMTVfz+/S3kMOuYuowuhsA=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/y-combinator-outlit-customer-surveillance"
 featured: false
 breaking: false
 draft: false

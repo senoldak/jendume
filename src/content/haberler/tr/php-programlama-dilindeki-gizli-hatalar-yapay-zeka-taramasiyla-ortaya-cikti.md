@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Carl Sagan gözlemi"
     deger: "1995"
 kaynakIzi: "v1.vf3ml/B6hy/XwfxX.Tg29P9dktgyuZ+PN3isjA8nW1sLM25VDg5QSaK3CGEaVbf4SkuhCpKMCJtFJbgEYEzOOiM301At7F62Oe5e9fddFRYnwHi2rciA6a+REwaaQYkexZEYyUyRyt2BKhJuM0G++6S3aMsmhdLf/UtAFtAaXFoEGYmiWP5UQwLpLj2RuadVABJ2IAVZUWr/XYEr7Lv1sLdMA87CxvQNDcPF9piGDRPFmPZrzRnz9HtH4OTklTm5ASZmwJg=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/30/credit-where-its-due-to-ai-for-uncovering-the-php-flaw-and-discredit-to-the-leaker"
 featured: false
 breaking: false
 draft: false

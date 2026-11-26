@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Market expectation"
     deger: "$1 trillion"
 kaynakIzi: "v1.frEeA/m/YxNgYmhs./rC4xPMMlLC2zOhdA5KQeK4118BPkVdIqIVgkzcrb7s7RQf5I6udMuCtqN/1lUCmYeTDWCOxp9lv50+mk+3S+P7gDNcw22tVM+8cvoO1k6cED7wh/6tlk/wk3CfOph8vi4SnBPxrVIEzY4xF+UHMNWWM2WlxbD3mlxHj2pthYWmKqn20"
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/10/22/southeasaisa-singapore-bain-temasek-google-.html"
 featured: false
 breaking: false
 draft: false

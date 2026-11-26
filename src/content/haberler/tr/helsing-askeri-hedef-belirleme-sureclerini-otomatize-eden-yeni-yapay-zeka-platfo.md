@@ -13,6 +13,9 @@ key_points:
   - "Sistem, NATO standartlarıyla uyumlu olup tamamen Avrupa altyapısı üzerinde çalışacak şekilde tasarlanmıştır."
   - "Askeri operasyonlarda yapay zekâ kullanımı, hatalı hedef belirleme ve aşırı otomasyon riskleri nedeniyle etik tartışmaları beraberinde getirmektedir."
 kaynakIzi: "v1.DzeWe2E6n98ML8xA.DYvF6eh2S6xIsNzeK8hWYohaTD1/iPnVoBcFX6BfM4S/BV+7UOBPlc2PE2D3juiUsossmYhw/OXkk0ekW9NI+y1Qy6DtcmMPfHms7alN8x9ho1o3VXs0CN4IRhzmxIepzksxmP7w1ci6LwisdHearr5DlXIEExKCuNw0WcIhV5spI2rY6t+Ie/lUTf/Q7a4hrPmdKDWVYCL0nKSdWq/mFXFjH5Eq1YpoGqbFyrYG5tJF4ZElXe/4QBAHsDk="
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/helsing-built-an-ai-system-that-prepares-targets-for-weapons-systems-and-says-every-decision-will-carry-a-human-name/"
 haberDegeri: 85
 featured: false
 breaking: true

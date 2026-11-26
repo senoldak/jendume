@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "2025 operating loss"
     deger: "8.06 billion dollars"
 kaynakIzi: "v1.euhKc5BekIJiR/6K.VnuQoqv+rKivig7sfiJnOjT5CmjK6NyGjl4aiGgQ1GA61rMdQVK3UEqSQdEjfA6swQ6Cj+LmSsTYjFBY2A3QYf4+7Q3uCsOQTZqxUfe8V0gbysv1o/iU8vBhsfU6qxuvqE19WHGiGQqot8Rs8KYmHsOg7iWU8FraoU2etJuUMiq7wR+4bLQucGNP4HhrptGsBxnTRWJUJCro9Nx47noOsmako+mFltmjJ0zPP49NifjNhsjE2OkdKMKtPSoi1MNAC0lQiycavvtQNCrKbfs+2BSVik18cQThe9UjwlSQsx1NRC33K4cA50a4qX5uQCDriXZ0h1KE6CuD"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91626257/the-one-metric-thats-making-ai-investors-nervous?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: true
 draft: false

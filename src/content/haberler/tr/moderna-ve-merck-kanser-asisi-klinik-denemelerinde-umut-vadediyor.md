@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Risk azalması"
     deger: "%42"
 kaynakIzi: "v1.PvbIzjPzWcWSj/3d./08PquvRgRItuLk5B827jqDp50KU4fILzhhQ0het5oDYPg5xL4i1X08PylkLESHcr77sZmKQqwKVGcKA+c9QhlRNjau7J2ETioOViTpuCgWpoEaB6AkZXAAK0p15wFdJjkkr3a3ELWkveA9DZPq7f/vZ95Si7Q7zTFJkrwxw3vWnA+6An+x77JqFc6n9PkvIIKy/jkGu7zMl1yksTafpgVUn"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/ai-is-changing-cancer-treatment-and-a-new-breakthrough-shows-just-how-far-weve-come"
 haberDegeri: 92
 featured: false
 breaking: false

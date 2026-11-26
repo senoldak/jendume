@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Değer yaratmayan uygulama"
     deger: "%19"
 kaynakIzi: "v1.q6/ZH8ac/gpa1uan.isdnBbK9MxFmwVXk1tIsBkMWaetSUe1hnSeKW3T0viNWelU5d4/0zSKm2srCqhvbsjmgGWNexjltQRrQHyyJp5dVdvJTXlu/RLZt+qEZ1HPvHLueqtZpoKz6b8aFkuacDtCix/hkudDpepMEymu42KwDEj/iqMIwD+xs8eH5hjbLauRaiLlN3RuQQ4QFVlasNn+wBv8c5vAu1IeuR1MHx5cNO1+AOrs3ZBzNUuaD"
+kaynakAdlari:
+  - ad: "The Decoder"
+    url: "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/"
 haberDegeri: 80
 featured: false
 breaking: false

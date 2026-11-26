@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Organization adoption"
     deger: "7%"
 kaynakIzi: "v1.UlgkCHYxyp057Q+D.iapQjb6xAucyYS667REkCKLThIRue+xBdUcBtUC7ocxPUDG/D0BO7S9fBfz/RRhMzgcbxmeLPqZXJlak9j7ZiwziiadMnFGFdGbPi8rncWy9yBS0ZPm9HW9lQxoWH5PCDC4CHnEqB+8ags7Dv09aoJqHls3cpxyti9dLqL25bxlckVlAyGy4KQJ5CcIpTT2O9ykyhanOjEy7zx/SHKjjfKbzoQc="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/26/cybersecurity-ai-resilience-recovery-thecube-aicybersecurityresiliencesummit/"
 featured: false
 breaking: false
 draft: false

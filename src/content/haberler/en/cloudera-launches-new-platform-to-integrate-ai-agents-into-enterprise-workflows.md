@@ -13,6 +13,9 @@ key_points:
   - "New platform for hybrid cloud and on-premises environments"
   - "Strategic partnerships with Mistral AI, Nvidia, and Vast Data"
 kaynakIzi: "v1.ctzaK7jH3QWw21GL.eX1BgmVYlLBgUL6IgLL3+VCD7dgNMal/mqGX4lxhcD9jmpffCEE/CeQ3MONWqttUs1wOz13sYQTnZEj3dWey4q/QL0B710MEWgrSw130J54dm39KV7uzWsz2Trh96fG0Qen7w69f5MST/baHz3/YtzF30hwSt/A9dmYJ8NTUgZcrXwRXDNShdaI3Q8m7JVH8x4eKpSKmaL4="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/role-based-access-control-decides-ai-agents-can-trusted-evolve26/"
 featured: false
 breaking: false
 draft: false

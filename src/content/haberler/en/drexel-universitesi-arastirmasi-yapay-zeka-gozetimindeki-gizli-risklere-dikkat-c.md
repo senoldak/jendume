@@ -12,6 +12,9 @@ key_points:
   - "Companies are introducing simulation training to maintain crucial human oversight capabilities."
   - "A mismatch between responsibility and actual human capability creates a latent organizational risk."
 kaynakIzi: "v1.Qfpx3pL/xy/zKt5d.54VFGhdONxlFJlJ6B4LTxrMLgSBwIfZhX3MtH+XEb8UPSMtUyG3XaVxsL5rEeMq5ODqYqNTb7OaJ6ptD19sDWzOkwZLITQrqZ/CQ42o2jvxGX0jvZQ2aD/p7Mhaca2VlXK2hr2JGvgBHFRiJFRa7DFL+NRdjmaLpt7xORC2oP/dsv9iaH5elKmSsFfGDIygqx1Yyfq9cgCbZyR+UE8aXXLtgvKa+89b5O4CrTFE7WdFnsjKmQYmbS161934v/JfNRne6FtOnyLYKSVQcuqtTEepNgpqrPDUKHrh+hA=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91625215/cleaning-up-ai-mess?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

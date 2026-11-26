@@ -13,6 +13,9 @@ key_points:
   - "The mechanism focuses on testing advanced models and sharing best practices."
   - "Leaders are expected to meet on the sidelines of the summit."
 kaynakIzi: "v1.4wBMRKLWVrlnSdvr.GxLtWJZm0AyNWxS81J4yFXe0xVqkdv3qOpxvIin/qNMSxqLcWlsL4+mCy3DWgGtyZ4nrDlS2AqINc/WJg1lU2ULBMQPcXCBlYhQi7JWzjZXTXX4+cLL+KOFrWc2oTmtL2Q6KuuJ0txreW69cbFlPNvyvZw=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/11/trump-xi-summit-ai-nvidia-.html"
 haberDegeri: 85
 featured: false
 breaking: false

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Model's offer"
     deger: "$400"
 kaynakIzi: "v1.lTSz2HrAxXWM+qRe.ioSjJvPsoPeV82IQmuR3Qxu1e6lqSXRvVuyJC78I/CeobSEQ9tUjOgrUayvq5kTVo3qObcxXw8Lci4wfPMDHIEs1xXwI07NE0H46hrK0lPsteVgdcCTIXtPTqiVkjMN88cf8uhdNHxRpUHi7D5wIxyhd+KM="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/wired-world-fair-2026-evan-ratliff-and-husk/"
 haberDegeri: 75
 featured: false
 breaking: false

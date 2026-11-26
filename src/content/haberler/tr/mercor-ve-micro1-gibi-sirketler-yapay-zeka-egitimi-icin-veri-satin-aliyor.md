@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Micro1 teklifi"
     deger: "2,5 milyon dolar"
 kaynakIzi: "v1.mU5yPLsjN7KFhk6E.O91w4MFbDS5kD68UcxK4uRf7ImvMUclc8aWTh6WEoK67/okk1M9LcFBLwUq2Gvdc3wuZO/0O5TP8VTGx7SmlpsW4DsPcWlJXF401ynHF7Gl0fD03Z1UJL+0EP1c6YSSSg526bRrGN9i0lrOfPL+eLdgBVbPEl2EDDSD9fvTP3HBYD70N8Z3lL6zy"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/"
 haberDegeri: 82
 featured: false
 breaking: false

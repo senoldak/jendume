@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "İzahname sayfası"
     deger: "94 sayfa"
 kaynakIzi: "v1.JrRVgDukjSpOQwj4.AkBpY3Ao56iUFj67Ww6GJwZW+HhcfoErHJlyuVofZQ1tVAfRo6P2PEH8ANSp1zaR+YRstsT4HrGAzbhZ/Ky65+082U9vUd7OIONN5AHku0IaEzCVIQc65hProiXgJaYRQhP3TLfBl/ICBB/TKb3OMAC5mIw="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/the-anthropic-ipo-is-also-a-doomsday-primer/"
 featured: false
 breaking: false
 draft: false

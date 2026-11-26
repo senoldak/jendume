@@ -49,12 +49,17 @@ export function konuTutar({ url, baslik }, metinler) {
 export function gosterilecekKaynaklar(liste, metinler, { gosterilmez = [] } = {}) {
   const yasak = new Set(gosterilmez.map((a) => gorunenAd(a).toLocaleLowerCase('tr')));
   const out = [];
+  // Tek medya kaynaklı haberde kaynak, haberin yazıldığı tek yayındır: konu denetimi yapılmaz (finfolis ve kifobu ile
+  // aynı kural). 26 Kasım 2026'ya kadar tek kaynak da iki ortak sözcük şartına giriyordu; kısa ya da sözcüksüz adresli
+  // gerçek kaynaklar düşüyordu (146 haber adsız kalmıştı).
+  const medya = new Set((liste ?? []).filter((k) => k?.url && /^https?:\/\//i.test(k.url) && !k.resmi).map((k) => k.url));
+  const tek = medya.size === 1;
   for (const k of liste ?? []) {
     if (!k?.url || !/^https?:\/\//i.test(k.url) || k.resmi) continue;
     const ad = gorunenAd(k.ad);
     if (!ad || yasak.has(ad.toLocaleLowerCase('tr'))) continue;
     if (out.some((x) => x.url === k.url)) continue;
-    if (!konuTutar(k, metinler)) continue;
+    if (!tek && !konuTutar(k, metinler)) continue;
     out.push({ ad, url: k.url });
   }
   return out;

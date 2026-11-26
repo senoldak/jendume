@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "2026 vulnerabilities"
     deger: "84,000"
 kaynakIzi: "v1.DloJX321qOOCokUl.RXpKcTXQkeZ5YqWth0RVmqJSXlX5CgeVGhCU+scQV9p1k5uptiapPGVtrQTNERvHsaWERko/iXZyETvhsr1gTSI7duTEZX1+hR4k8Ayy0QJXZzLcc6Blp+4SM5kWgg6lVPKv+58W7yrFKrebSSosrzcJua1bmeZN+E8ruCGeI+XwfBKDxImWIg09P489dj4x6s0z77GhPg=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/oct/22/website-shutdowns-ai-human-inaction-developers"
 featured: false
 breaking: false
 draft: false

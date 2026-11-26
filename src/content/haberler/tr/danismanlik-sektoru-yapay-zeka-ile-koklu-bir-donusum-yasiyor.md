@@ -13,6 +13,9 @@ key_points:
   - "Genç çalışanların yaptığı temel analiz görevleri yapay zekâ ile otomatikleşiyor."
   - "Firmalar, veri ve teknoloji odaklı yeni uzmanlık rollerine geçiş yapıyor."
 kaynakIzi: "v1.+It3sUNaSY8nBrmg.6lrOScOXIq/ajo9KK9bALTV3V1Amf0A14buceDhOW/O219pYaprJTrArSfTbd9ERztKBZDaAZ8OPFbjVt1dfl2mZ5BKI7JlNQZajxhT6mXATZJpcZlGj/JWGUBZUYSqxzf6oh+MJTRFCZkLpBE1SMu5wNBfU9NjOYssUTj2tj9FMrYbsog=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html"
 haberDegeri: 76
 featured: false
 breaking: false

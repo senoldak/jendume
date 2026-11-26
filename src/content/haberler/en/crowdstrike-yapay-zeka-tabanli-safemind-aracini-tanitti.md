@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Global cybercrime cost"
     deger: "$10.5 trillion"
 kaynakIzi: "v1.sB59QFZgbQeB8UZF.kGDRGpcPIhwmoSLmZFeUqAKsrOv1O5z0wdrUhfkpCpIEsNykOgGl104duDTH/0wKsuO56/L6RSucbRuCW+d6fraCZdVUecfrNmuvbBjzkn0xbvN2SgH2U45KpqUjg+dKjbnwWk30Mzv2IHl7hZuwNmFM+LOtpMs7QjwDFH72MoOLcW67DPPTLSA1JEMUuO0CuffdYEL92U60n4mSqDmARmoDNDNrsuhvRR8zXDGDbrWoL/62Ad3WMZht93AuWVb/IBjlraQt38moY44xS8IamY1O4+T97O6rlIuWVOXlhJ+elgrRpbEq9u9UUSobpHvdSu+IQm0RK72nBFA="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91626237/ai-could-make-cybersecurity-a-never-ending-process?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

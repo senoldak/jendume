@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "AI position increase"
     deger: "88%"
 kaynakIzi: "v1.FXDXEXdYHHuvmmOE.OFKcg+yRY5U+WEBp95SWjKqLZ9qbk0AQOgI4HzkU8R+ZPPnyktCfK4I7zpQB85EP0OFhPb3LdBbMN5PZZzlq2He/33TMcU+wevRhOnMMYM9xYerjoVTTzyCttBOcnebxdfU2IuGwH4G7bneVR9vFVgt7fbTpq4xjBTHw9fFXYxyh2PTt5tj/nJa4pw=="
+kaynakAdlari:
+  - ad: "TechInside"
+    url: "https://www.techinside.com/it-sektorunde-ai-etigi-ve-risk-yonetimi-yetkinlikleri-one-cikiyor/"
 featured: false
 breaking: false
 draft: false

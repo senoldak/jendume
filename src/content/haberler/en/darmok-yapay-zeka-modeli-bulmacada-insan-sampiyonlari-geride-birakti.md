@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Age"
     deger: "29"
 kaynakIzi: "v1.MnOPLD4nj+g4uT4j.jf1kErK5Q1Sd+gCUx0ZGmeHaC5IThGDf2nzIZYVqiD7HF5CiZ1vF+Ed5TQ4I30UG4D+aR5cp0oQSUI/OT08vv0n/G3baO1mOoKrycW+uwwZ4+F8k2A1XXe0SgifJoirR3ay4V8LN+gt3q+slmsaXfcoxEjM5U9aiakGWjhn0tNIwXVvf/tZlDDZIxfdUSyCkBEqXVGd78ExmkwI6t2mm9e8ru50dbjovdWFTjw=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/puzzles/crossword-blog/2026/oct/20/could-this-be-a-deep-blue-moment-for-the-cryptic-crossword"
 featured: false
 breaking: false
 draft: false

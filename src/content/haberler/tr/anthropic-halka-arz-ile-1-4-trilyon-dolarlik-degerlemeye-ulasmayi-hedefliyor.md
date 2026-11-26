@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Yıllıklandırılmış Gelir"
     deger: "81 milyar dolar"
 kaynakIzi: "v1.5WUwXdQC0p9xZTD7.VMDmi4ZXqf8GRHsJNfOUSeTDulYXTqFqAQmfDfNPRUXehNS+FBrCpvyWrayfB80AZeh/Bll9L+X+5uLjnVLgycYsZ6jGNsi9qYidgoMv+qanWU58s8a1/UKHBivtfv05i3LuLevOje5TOcziIjbLTf8fHq6QZGS+JkDKlw=="
+kaynakAdlari:
+  - ad: "CNBC"
+    url: "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html"
 haberDegeri: 70
 featured: false
 breaking: true

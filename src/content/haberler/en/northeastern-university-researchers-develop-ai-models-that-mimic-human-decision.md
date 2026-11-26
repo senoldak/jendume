@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Test sessions"
     deger: "231"
 kaynakIzi: "v1.+OPyqYOLC20Sgs0P.6Qi0iHLekferOP9eLEQ9q3187nBX/J3qFo4HxPTQnXopy3Uz2FL9djI9RnWRCxY+kmcfWvLUKUu5KL4Lgh8WYwxlYrPdJyPt25de+itryg58fZi08Kw4AxxI+kKNYWJCGVN1UAR5iPAH2reJs7PU8x5sRJoQ8fNk"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-11-teams-ai-agents-recreate-chain.html"
 haberDegeri: 85
 featured: false
 breaking: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Wristband price"
     deger: "$75"
 kaynakIzi: "v1.XBUg+d6kdY5fcuu8.na8v5EhhGekWy/yLexDRhrzMpYJ44DUhmYGjLykI8Hhj1eZKZJ2d27BI4A8mKVbduWKiBEHd8N6qyFVpFcuhD2FKVT4bfu5926qFs3SLmsOufNYUYs/6X3Kq7Bjw59rzY+oaGBc9BPyk0LdBMhJg3a5WI8w6rQhvhsV4tuGhkCsmRHjpON9cl1DsR3yaAw5bHq65dHqlxcx7ZImW3UlzZbh2/rMYI6Y/9g0pqy8nqI4dzRrfvz7uFbTn3lLKbIjzyRXC8GrJBF9WeeGYVq8YzYsT0+JiWf224IBSMvkTjyM0R/OctIqikjnU57tKPk1XWz194HeDMFuTwctn9yA5TWSHADytekuP/whmSMSxmUMW9w=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91634248/ai-wearables-want-to-remember-everything-what-happens-when-we-cant-forget?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 82
 featured: false
 breaking: false

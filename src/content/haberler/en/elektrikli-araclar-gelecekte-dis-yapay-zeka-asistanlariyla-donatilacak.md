@@ -12,6 +12,9 @@ key_points:
   - "Safety-critical systems like braking and steering will remain strictly under human control."
   - "The system routes user queries between local edge models and cloud models based on complexity."
 kaynakIzi: "v1.HSCAQRjpyYhx97Rb.9NFphuuFcXNLTXXgtln5cI2qZLFEbM0NpJZ+PYIXSw0+ISghSZ3y+dgp0o+cIgV3mkIozG995gWuzRMXVBlfy5aKn8OshN4d1p/vyaurUAACjpNqhHmLZSEstlXzzTtdarWarJmeLcsRyugZGx+q0EdAHxwR7TCS"
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/"
 featured: false
 breaking: false
 draft: false

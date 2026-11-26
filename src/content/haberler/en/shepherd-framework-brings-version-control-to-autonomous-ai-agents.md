@@ -13,6 +13,9 @@ key_points:
   - "Meta-agent oversight to intercept buggy actions"
   - "Open-source framework for agent governance"
 kaynakIzi: "v1.QycPfLWe50wrHBLe.7AkXOchD1YBTBqMvs20/DEBugqkFBeQvrvotsTojbV378UmmTTJmP5Z33vKByvsVjDcthJbPIcqDn4s1C5KlWSnFrSqaj01hae2K7G0OAqIudiF0mS0m/pb1Xd0HPw=="
+kaynakAdlari:
+  - ad: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/ai-agent-manager"
 haberDegeri: 85
 featured: false
 breaking: false

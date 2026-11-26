@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Token tasarrufu"
     deger: "%71'e varan"
 kaynakIzi: "v1.eRO8jS1knq8MHM7V.TytmOvUvTgBU8tI7XzfRdRaYyfpH/Iy96gncOzIL6YlkRr/WliQAzkBIEhuA5B5/vV8MCDxuXRhblFk2dS+gUwjc9XCR3gxMH30+pa8myOx87cFJSBPGI5ttmJM9oSb4Avcqq+SsclKscHbgRvYxxHE1bv5yHA=="
+kaynakAdlari:
+  - ad: "ZDNet"
+    url: "https://www.zdnet.com/innovation/enitre-github-competitor-trail-git-forge/"
 featured: false
 breaking: false
 draft: false

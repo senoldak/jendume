@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "DRAM share"
     deger: "40 percent"
 kaynakIzi: "v1.S2UvFESef21LkUIz.J6WghC4+afD3oYHCyt5GmfydP6KtiKswyq3bs2ACS9e6kkE8UwOo7BE/1LfXR5rkOQt3Eww8MWlgsppWig0GFxIHqsSuEIa1vH1XXKcKVD9EnLfr6/taGD9j8OtD2q4="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/ram-krizi-10-yil-surecek"
 featured: false
 breaking: true
 draft: false

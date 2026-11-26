@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Survey participants"
     deger: "1,300"
 kaynakIzi: "v1.1wh5s7Wb76csZy/H.HfCPHlMCXXXWbTLu/r5KpYyJKvDAn7Rs4JqKH2rlTVkMKroSERsDo3ywByx+oEwT1w1bs6UujTgvojS+JVBJ/v7TERHJGMcbi2epYxNXiIQYasHZsR4Y2HE9b9U8h2gG26sW99AVGsHwyZ75qxz3FpQIzITHahoGt+YQzx1ENqbckMaUbAUc+cbVNDR+Uxdwnid8kqHe7xY="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/30/enterprise-data-platforms-must-get-ai-pilots-production-evolve26/"
 featured: false
 breaking: false
 draft: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Kuruluş yılı"
     deger: "1933"
 kaynakIzi: "v1.DrAVPb4eH1GNU6da.Yf7Bk8S3qI+4UbMvDpiyglqQ6E/R3vC0TzPAjP1tt/WqMSAF06cqvUk8B2zZobJpFrNGcXmE+E8l83dWuorfwDy07rmvTPlXWgh6BCbCI6b6INgxIjEmQig1JxMCreiFbofo1xGkMyD/T19eXtLqDiaZvBI0a4v/RNPPq34e7cbr/SwdGfVCHa9Krl584duhkhOEEPqZb+4QRbX/aWdW5QOKvt4BHVvQAuZk2VQnvH3AbLpG/fK/k1pTvawhlw1VlHEqAzKkkKAMKS6fi13hhkJbiqSWPH0SE600VtvYjLP/H7CdRejsDN6UTS0C6yz0CwDNaA=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91637688/newsguild-jon-schleuss-ai-human-journalists?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 75
 featured: false
 breaking: false

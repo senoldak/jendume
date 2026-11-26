@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "DeepSeek attack cost"
     deger: "$2 to $3"
 kaynakIzi: "v1.93+gMwAnkGl1sQka.71xjCRsd0GvIqCf0+2YgKcKjXZlx6HnH1Fy/vGbghVgQg4dpsbevQOgz+qmsIRmhj67bY6OYkf93hiA4rL3aAd0n9FjdHbPg6Nzo6SIck4w2gSrHFBcDoBHUX+VmZfsLsSPjSgrdoKD18ts2nwGpbxVfiwdusWg8rzuDhI6uCel/"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/"
 haberDegeri: 85
 featured: false
 breaking: true

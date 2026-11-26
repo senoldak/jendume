@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Alışveriş oranı"
     deger: "%25"
 kaynakIzi: "v1.1T1MGA3xBoZWVbEU.sHS/Hq5pMr84ooW7FCjp2OvUBSucrkZvRIKXMRrgU/iXqyLncmF3HbQGO7XgQ9qYlrby8CbZuM6a6Z4G9gJQjv6/q8x0U99PwAAt+fmUx8BeqeE5mXkJc/A005xmNC3kO0c20gEnNRWCxw1pAfEz9PESNofK6EAbpH3Qy/k9gKv8wXed"
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/"
 featured: false
 breaking: false
 draft: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Answer conversion rate"
     deger: "2.21%"
 kaynakIzi: "v1.q/a+xB1tVZaRH2U3.5IWcLAp8PvJWnsF1UUnvZVEirlct6QmHBjA6XVNysV60M8JoXsR6x+rhKNRb+CGnwDjd5ogEzTryZNwLaDM3MI0BdILzkZr6hiV2xzQGkZfSlPgxPrGXS5C55qAknhqjucUgw1prYCds8q2mh3HaDHo2GkobDsR+wwZKGx9JkyNDYsLUBL7RWwR9pPsR22SFL+CnVEM44zBzzjTGGDcgsRzzuFRY/qS7pzmY3BTG0MpvJn9KzzMHOYzUiMp0M22LFqtKsmIODIbNG3wyO4N4oNQoPynivFMFeNVyWAQ2eUP/Ipgy0OIPEHcVKu7Ep0AtE35gLGIAhML/i7Ht+2ZbgdKwJdw8SmagVwA="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91640206/forget-sponsored-tags-in-ai-answers-agent-loyalty-is-what-matters?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 72
 featured: false
 breaking: false

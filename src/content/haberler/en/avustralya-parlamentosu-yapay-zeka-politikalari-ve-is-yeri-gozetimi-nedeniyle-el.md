@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Community belief"
     deger: "30%"
 kaynakIzi: "v1.ApTh9iNYodr99Q8E.CvvSYg1PWRA4q6zi2wNWMqXb6yRVxffzmCd4PQY+7vXnVbiN/VO8qN0Z8FMPMaO5hyOH66fy+pPxVRW6e4CtiVdzl0hlkGED+3qpsmydLB+MCXqWRg5cxmgqiZE9BeG3kC9Vao3ovPOywh3zmecpPSJJlFyieTgVe20u188mOAlsCBeVTg/Kx7hxQiEnNNhv4Ee6VCNvO0d0AkI5HmGZKME+1NRJRPqnpYhk/2KAwyqJzPMBttRigqdYFbE5Px8="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/commentisfree/2026/oct/21/labor-coalition-poised-to-take-reckless-gamble-on-ai-joint-select-committee"
 featured: false
 breaking: false
 draft: false

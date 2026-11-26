@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "İnceleme süresi artışı"
     deger: "%49"
 kaynakIzi: "v1.HIHMzRB26g40VLVJ.u8+ibrMYfB7yv+WscJFYkLHApchCM6jE+Q91rJNb9ogcNQG+Q74KWzK89ju7Dk8UKo+h5Z5VtoAYnpxHoCvp9pob1O97xZsd2hrBOxfwCYIQ7wYXJnvLM/7hoIHGJCYYmGzL2G7+JPhN8ExgggW5YAzMcCv+b3qQpiEh9DfdqvfGaqHSkPGF++XTgiiBfHc2BfsSRHfeiT1Mlxo0QfiiUBUPdhDH83/h2MwR3Pa5MOcMh0k6Jz7jV6JTD6V3hG89+kzK9fn6csdEI804"
+kaynakAdlari:
+  - ad: "InfoQ"
+    url: "https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering"
 featured: false
 breaking: false
 draft: false

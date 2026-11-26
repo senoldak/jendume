@@ -13,6 +13,9 @@ key_points:
   - "Hükümet, inovasyon ve telif hakları arasında denge kurmaya çalışıyor"
   - "Kültürel mutabakat ve insan emeğinin korunması talepleri öne çıkıyor"
 kaynakIzi: "v1.0qZ6yhmrZpDE81Lw.AmOpZ8lRAqJhvQ28s48RQ6KTBPu4xtYcXK8TvRTVDVcDSAY1G9QvXjjJBp/Bxzso4oP58pHa4w/m10iC2kSrsk4Lh3Mr8GmSymHz8uiYp2EgQgpjUFd3B4qcbgG9PgA2vLFKsC+HkN2LWbNHSrqh+ldzWehK9kIzynHnNwSlcohqlYtAcGjpVfEftLUmsBo3NbT2dKXYbbZH/hbPiOhEEeLBxxKLM+CkxdNUqCyAlR72y5o6uE+bSybBoUQVzpM="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/nov/11/albaneses-love-affair-with-music-is-on-the-rocks-over-ai-can-he-write-a-different-tune"
 haberDegeri: 70
 featured: false
 breaking: false

@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Talimat başarısı"
     deger: "%78,1"
 kaynakIzi: "v1.1wjtL3pbG32dxRLF.gmtCn9msaL5Kxt/NvMnbp3n+65JZUD1rRtV/DWPiitiZgv8iZE4W44uEr/4RRzZ5S8uS9EUBQrh840TaWKYqvChECeyXmHTKdSjgbf7PLn2FRm5hDxp+79fgcCxxTSvxkAipDztdCsCAl8pIJWRBZICD9bgLU9shcPE4Y1HIyqz02hiIXQodt8p1TlNM9TP8JZZ2lkDYXsC7"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/chatgpt/chatgpt-just-got-a-major-gpt-6-2-upgrade-5-things-to-try-right-now"
 haberDegeri: 85
 featured: false
 breaking: false

@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Aylık plan"
     deger: "50 dolar"
 kaynakIzi: "v1.cMTGsBjsXFS7FQqM.l7INmYSZCcP2ZO5iNT+H0/FHQXp54bI12wuLd0rF+j7gcVeHvrzqREDQfS8PgI2oarfwitl2dwCnLZJ/Sd7QlSSyBlclixs4/e2EZ9UrkclwsA3q3IiC8ZxIxX2AaDvgoZGLdrLZpsj6GHF8I+0bK5WsxpvdoLGOylbM5ANi8siLdJUXPNBDNUuJqMGDGGRHpEK3I/l2cENjR48e+gmwwP29SazSjK8pLqf1LMQGIUsnR41K62bkwE1SEEU6i4Bup/1sqTYU6cqK3urjnHETGLYmDfYWs3eEFSODF+xBLW9Sy+KUrbXa8+7CFdGRd4RVPj1Egq4g9Uy9Hdj06EKfF6QNmwSiXmZHxeft0R/wU/LB9Dcl"
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91629462/town-ceo-jean-denis-greze-on-why-most-people-still-dont-know-what-to-ask-ai?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "DOI"
     deger: "10.1007/s43681-026-01449-w"
 kaynakIzi: "v1.QbmxBhBSgLVPZwWN.4xUquBd3FvfYEkbedfcgZ4L8j/0YwZD0ZI1a4fgTRmvc1r6HuNYf6GfsYEvJWNzE92hU/9fnQICEATZzPtxZHb++6Bxw+gi6gW8QjRyoI8uSO//TIRosgSKiHhFJBhuxaooEtkz3"
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-framework-ai.html"
 featured: false
 breaking: false
 draft: false

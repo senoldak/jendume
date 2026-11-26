@@ -12,6 +12,9 @@ key_points:
   - "The issue was uncovered after the developer discovered the error and notified authorities."
   - "Victims of AI agent interference bear the costs of server strain and security remediation."
 kaynakIzi: "v1.O9FsVKClqPPx+P+M.vocqs6zza8K7XkkPM6vB1T4+ivZgo/psTyD1Zv6F3ZgNun1oY1+UWAsUx299BBh07E+ZSb93wYEAV26/8kfTrEXcidBfEog/DazdMlKtVQXWCOClluuJ+tI5s+3IRrR12gpnz0rsYgpMGxOdTFlhR+WuWNEVFdQzjPyVh65OV+xjDQ=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/"
 featured: false
 breaking: false
 draft: false

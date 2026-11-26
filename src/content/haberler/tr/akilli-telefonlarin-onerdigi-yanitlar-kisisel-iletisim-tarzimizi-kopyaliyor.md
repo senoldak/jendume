@@ -13,6 +13,9 @@ key_points:
   - "İnsanlar, yapay zekâ tarafından yazılan mesajları ayırt edemiyor."
   - "Kişiselleştirilmiş AI, özel iletişim tarzlarını veri setine dönüştürüyor."
 kaynakIzi: "v1.B6z/8dAh5AeZ5TR+.oIv34rpqIdwXaXcKdnk/DlSCTq5k320e/R5QPGa6XDUlXPVigjEpIavu/zJVuhW7d6Bb4gFQmAxl5Pk4n9V36H0UQNol0PPrjOOOyAvOyOqo/0G3p/cOOZIJTZdOWdRM3+U5N1FIE+cqDK/0aL8SC1a76nNB38MeVqLOshfyS8ys4sMtJeygAD87l29ELKeNZpIGrfrW7LU="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/nov/22/stopped-talking-to-husband-let-ai-do-it-instead"
 haberDegeri: 85
 featured: false
 breaking: false

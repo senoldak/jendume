@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Photo archive"
     deger: "13 years"
 kaynakIzi: "v1.6Jd6PQfajFn5sHYe.IP+FVlUtE1SPNpoWi8kDcWAzvfrxfk9BX51t8K1owmGz0KurMTXcbjR9N2PtLX3ZwucJAHFf3D/2kubvHdKCDhFRG5v9xE3Y8Mtr6wkj1TWblTuAwWt5/yB2b1E3CjJHWiuuclB+LeNCV8nDcHEyfmxOFWIeYXTvTfhMLduZbDgn9PYc6My2pMKUbB0RoTvVvktfatYx"
+kaynakAdlari:
+  - ad: "Tom's Guide"
+    url: "https://www.tomsguide.com/ai/chatgpt-is-giving-people-bizarre-advice-i-put-it-to-the-test-to-see-why"
 featured: false
 breaking: false
 draft: false

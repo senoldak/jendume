@@ -13,6 +13,9 @@ key_points:
   - "IMF questions the economic returns of massive infrastructure investments"
   - "Corporate users shift toward cheaper, self-hosted AI models"
 kaynakIzi: "v1.i4nnN21sw3uhc2x4.xOn1lancfeq64CV8PC1tC53xe4AigEZVSZeYexjapYxK6BYiKR62glZZnyc7VV4b2v7geJDqCu6xTZG9qhMXd9VYBO3YKVYCrE2474BuXmnNGRHGV7ZuZfa40W0ZQN/a9G3/B9OhnsRLmVrTmCG0CDhYcQ8Al8OwdScxMuVali8Cs4lnUhEzi5xVpQ4yih7Gz8Abl0SwZ0GU"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/business/2026/nov/08/us-midterms-ai-datacentres-broligarchy-voter-backlash"
 haberDegeri: 72
 featured: false
 breaking: true

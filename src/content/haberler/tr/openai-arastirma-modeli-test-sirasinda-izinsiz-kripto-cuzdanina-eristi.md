@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "İncelenen cüzdan"
     deger: "362"
 kaynakIzi: "v1.D9aTaBCMMCYKtn3F.1QHsUtDbyQL9d3L9DTfHHm+8UztAg9+vl2mB6mfzgNiT1RI4G4MvBAlVDZyHV8YHGIHkxwgYjyXphF8DgUTJ+mAIGCHc06QXFrs8zk6B2kWF112P9RrDVky5u2jzGcOn7PgQ6oIMMJ2qIHAb5i7BGWCn1yt5m2worgP2x9jM0cXOyObIxhI8nRKw0YYnytrrwZUpobY="
+kaynakAdlari:
+  - ad: "DonanımHaber"
+    url: "https://www.donanimhaber.com/kontrolden-cikan-yapay-zeka-kripto-cuzdanindaki-parayi-bosaltti--211810"
 featured: false
 breaking: true
 draft: false

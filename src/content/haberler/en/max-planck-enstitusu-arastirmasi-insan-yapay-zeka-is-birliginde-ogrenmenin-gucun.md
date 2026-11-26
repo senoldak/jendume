@@ -12,6 +12,9 @@ key_points:
   - "Only 10 out of the 74 studies provided participants with any form of feedback."
   - "Combining AI explanations with outcome feedback enabled human-AI teams to outperform individuals working alone."
 kaynakIzi: "v1.8BVfV1MGi5NtK+0p.Kny/7w/pkP6wkEJOBAug91iPtXbqZ8woncFQb5OOoF3kXjLjV4x1knR0FyJkINkx6FbaCqFe/L6eH81WuiksWG6Nms8Ehn2u8onyE9O+T3hVyS1w9ChLlznQ7Pj06+Q6DD9HObHiq7IqeAJIFkKVSUhSeq/E0oUZsUNhxo5L8yWwuQrO8w=="
+kaynakAdlari:
+  - ad: "TechXplore"
+    url: "https://techxplore.com/news/2026-10-human-underestimated-factor-success-humanai.html"
 featured: false
 breaking: false
 draft: false

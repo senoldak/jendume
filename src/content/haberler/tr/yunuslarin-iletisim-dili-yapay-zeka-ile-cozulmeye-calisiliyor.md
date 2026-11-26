@@ -18,6 +18,9 @@ rakamlar:
   - etiket: "Bekleyiş süresi"
     deger: "40 yıl"
 kaynakIzi: "v1.A/fQLYYSBBLd6u+Q.bCbV7CcvTnnOMr1XA6khCvPnfas/kCYLmJ30fX10VeC+JzlRtwVaJ8+18AXmtTDWrQOKiS+P12J3t34Y7pvCjyNeKeC1XrWio+0xohjkNyDpusvmFqlrMnf6qwrpZ9C4eX8Vu1yyAQ9Cz8VMOVUe2zcC3TrMLHYfdxA="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/wired-world-fair-2026-denise-herzing-wild-dolphin/"
 haberDegeri: 70
 featured: false
 breaking: false

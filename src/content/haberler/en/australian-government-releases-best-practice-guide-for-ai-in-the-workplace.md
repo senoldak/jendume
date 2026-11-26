@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "Qantas job cuts"
     deger: "850"
 kaynakIzi: "v1.xtithYg3JJN/mOZ2.DiLhebxFJNFb6oeETFCIoiy/OIIZ3NqmkUoT5mK33xVGAMxTXq8Z4Hxhw8VyzQfqAPOpBRN2SbcNVXeTzrcyvQsZ+fSnGfKN20WZIdIMFDRHb8Rg+DHDZ0HTgBuTfAqPOMtH9BPjYscj2Ftf4FFfNzm3kZBtWDsRw8VjwDomN7sDKHRCy/9lBqfa28M63EHkSOOSHg4LZZdKJ2aO1/wrhiKo1Pzxa9at+sUYj28lgbGoUjAnR0wk2bGOgRMft0AjT/3N1w=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/nov/12/fewer-hours-and-higher-wages-or-more-burnout-and-surveillance-employers-told-to-prepare-for-ai"
 haberDegeri: 85
 featured: false
 breaking: false

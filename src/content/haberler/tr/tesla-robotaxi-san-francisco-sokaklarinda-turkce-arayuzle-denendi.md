@@ -12,6 +12,9 @@ key_points:
   - "Araç, Tesla'nın otonom sürüş yazılımı ile yönetildi"
   - "Uygulama üzerinden Türkçe arayüz desteği sunuluyor"
 kaynakIzi: "v1.QfyCsqj9DWZaGQBk.98FqQ+0sYdmirx8xrrNiXjuHmjvTKeC35Y5wdm3T1RKuxDGWNr107dZ/6Pcp3c8ElHmrP47P4x4LEv3ZfeXvPnB6sZ85eMUYbW79BppcjIfPf9Mju4ZmrhZmM5aw8gYljPlyytxxKXfzmTLNuOTYrsGTj/JVHD0ggw=="
+kaynakAdlari:
+  - ad: "ShiftDelete"
+    url: "https://shiftdelete.net/taksicilerin-belalisi-tesla-robotaxiye-bindik-vlog"
 featured: false
 breaking: false
 draft: false

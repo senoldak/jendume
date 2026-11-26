@@ -21,6 +21,9 @@ rakamlar:
   - etiket: "Revenue growth"
     deger: "45%"
 kaynakIzi: "v1.eUhJ9dqB0Rkz/Y9T.X+YOHhXQawFA6/k3jl18jZNKHcd1cEBRNW0LMEJoseNZQnkP/zU83ktSX/QdnUFmGVd76S/pyLQrxEniWDMgibAFmoAHc3IOVbYS8cV9g9+K5wyaMp7OpAHLBpCF1PYJKfw/9wIOv88m/+LubyferRt69Ac2IzB5VgZ1rilFqbrUlZc="
+kaynakAdlari:
+  - ad: "TechCrunch"
+    url: "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
 featured: false
 breaking: true
 draft: false

@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Küresel harcama"
     deger: "7 trilyon dolar"
 kaynakIzi: "v1.DwUkUKn4+VqQJv/S.FxTyokGkQZeNXKV/98C7XE/V49LeQ/Gt4EocgiIdVg4G1u0dFW6HPZfGoyqCg8Vmt71Do9BqXOnAavYxsdOCI2Pc47u2OgDx/auzCEzBl5j7JlUg4cM4f7ncMDyABrr9JkKWyeohGGvWuR+zRCekrlwz2PKfGel3PQBY2DNwvJfEI5PZm5t8zm8JufRkHaBUyejgHVqYZXaDDraAjIx55+Cxj01QSVSVMOLMl+Q1ayA4NVvivDA="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle"
 featured: false
 breaking: false
 draft: false

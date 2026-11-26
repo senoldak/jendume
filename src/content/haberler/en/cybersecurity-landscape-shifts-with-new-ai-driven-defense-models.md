@@ -20,6 +20,9 @@ rakamlar:
   - etiket: "CVEs logged in the last month"
     deger: "13,000"
 kaynakIzi: "v1.tcdg0E7wbzpIvY4E.hqiH5FpyOosRAiXR/q3FYtE6DDObhPuNS2KGK1fLKSNYQVCKV6b0dGnLR9oYedMQyVU7D9gnohvyHk+r0McopWBx/h7SUO0e97E177wzOPj2vn0jjjL8Vmi1M7QvDD2kGoRhDZFLoW9AnRX2VZBTm0d4p+FMu5YdYHm2laggxbOIHyFbrdQ5P+dCCfV+Xc7C7yIZJ9Uw+Kog7rFPMeJZ8mOU88j50ctRWLHNaxTronfmmAuV6b0Xer1vL7lIMWqLyEdKsRnJYmld5ZJMxUiu5kf1NDOTIRCK2W78O9sEr6nxbLgESJL4xs4ZojiBzSCQmyGkOgHzo85CwS2AKWFD9KH09p0="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91637523/ais-new-business-model-break-the-internet-then-sell-the-fix?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 haberDegeri: 80
 featured: false
 breaking: false

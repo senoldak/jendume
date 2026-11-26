@@ -22,6 +22,9 @@ rakamlar:
   - etiket: "Net income"
     deger: "3.7 billion dollars"
 kaynakIzi: "v1.qhbvBGDjL39RD23+.xjN+4CBF/F1SbOqZNdcFeGfWd8J5hzWtJwYr61mV0vM5C20p6cg1ZTg+JlD+3vc6/pOHrQ9SLQFHDpNNtXuIjwEEukujfLCFz9q3txrxs2NfngOmaT/b88ZmYvUGZI34FEkomDk+BGu+WvYLCg=="
+kaynakAdlari:
+  - ad: "The Next Web"
+    url: "https://thenextweb.com/news/amex-job-cuts-ai-agents-run-rogue"
 featured: false
 breaking: false
 draft: false

@@ -17,6 +17,9 @@ rakamlar:
   - etiket: "ARR growth"
     deger: "52%"
 kaynakIzi: "v1.CLRl0YILgUwU+9Bm.TkKczLjuqCfCqwk0rbetVK/+i9pp8PsneFQMWcBziBVImZtmrCdm/LNmn86UrjikOsBW4x5/8KXsmXivzqOE/vg5al2u/eCdMwXesYG2e0r3PJy5E3oWl8YbspTZKhjZ8Zdn0SCZArSat5uAdpX4rVfAbEKGmWMqKNbC5SN/c/BGCiFrDTdffqa5IOW9NvlN+QAh2YOXfRyFhyz1bJkIHWW/BbZtO57i8OwVmfiuGoc="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/19/nice-bets-the-company-on-ai-data-and-accountability-and-the-legacy-business-buys-it-time/"
 featured: false
 breaking: false
 draft: false

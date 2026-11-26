@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Toplam kazanç"
     deger: "700 dolar"
 kaynakIzi: "v1.5zshH7NapB+QnHc5.WO3PHR0e/RHfKhwQ5tK344I7dLHiYWkImVPZ8LRr8SO+XogAuaY+CLHM9dXCcSKu9Itf4lDP6MCZl10WGvchgO0920h0oS/LT8qUZc7taf90lPedEjVBlZpwbxRbAlRoJP8Anq9SuxsQtpMYmJ2gSMR+kA=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/"
 featured: false
 breaking: false
 draft: false

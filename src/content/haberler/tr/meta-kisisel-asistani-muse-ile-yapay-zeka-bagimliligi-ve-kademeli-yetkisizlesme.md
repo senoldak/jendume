@@ -12,6 +12,9 @@ key_points:
   - "Uzmanlar yapay zekâ bağımlılığının 'kademeli yetkisizleşme' riskine yol açtığını belirtiyor."
   - "Araştırmalar yapay zekâ kullanımının eleştirel düşünme becerilerini azalttığını gösteriyor."
 kaynakIzi: "v1.Q9isd88Hc/ROD/Gl./HbOsl859HMAI6mUrDbCyklg/ond99O/N2DHDKW2QSoZPRVpPXONdP+cMol7e68eNLIHC4tLTx/q/R6z7v54nRnK6rlX16x8dVceM8L1MeZOq04daYhfd9dekHdYzbwCHem1+ITElfpnKXzG+ucoGg=="
+kaynakAdlari:
+  - ad: "Futurism"
+    url: "https://futurism.com/artificial-intelligence/ai-humans-empty-vessels"
 featured: false
 breaking: false
 draft: false

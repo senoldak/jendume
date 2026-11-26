@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Purchase intent"
     deger: "25 percent"
 kaynakIzi: "v1.DSX8I7rJJPPmxkZ/.dVMihBlmATNmBb02/cyR4IeN9P6dRrq0vG6ifIsBnvpSVrshHthmGauEV/FEYrNUudWjcWgTRP8sDPJZM4vksFBWytEVpEMp9u+Z2KB69dKJntIv0k+7jG4NO43oB7LAYfAcnuk9RMUiJeRk2VrR8wBPals="
+kaynakAdlari:
+  - ad: "Engadget"
+    url: "https://www.engadget.com/2309033/biggest-disadvantages-using-ai-glasses/"
 haberDegeri: 72
 featured: false
 breaking: false

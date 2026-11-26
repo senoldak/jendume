@@ -13,6 +13,9 @@ key_points:
   - "Copyright regulations for creative industries"
   - "National security and foreign policy implications of AI"
 kaynakIzi: "v1.H4WJBrpatY0I6xuD.4GFYBFds3RkuLcvQw5utD26WdmLSKJePpYxqQ8MJdRmSxryELsESnuxh56Ebso9JbHZLDwuqbeRf5C8kEinz6v7u8wnYdIoI9DYHIGYBTF9UOc+jWYeKn14z9BsC2sWAZPgfawJOAqpo1/ylnqtL3WF/lHX2Q7cLDbT7NZltnOsySUnMskPM9Wi2bSz1lvvApUcBjf49hWH9UHdKkKtbvQdHzjfKkgZOEvc+oBgMHIZYLz/CqYkKhoqGAEwtMbAWpls7IHy3nl7OLGElwWGhIV1Up5hRihD4LfS3"
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/australia-news/2026/nov/23/will-fragile-bipartisanship-on-ai-survive-silly-season-or-is-parliament-heading-for-a-holiday-meltdown-the-agenda"
 haberDegeri: 78
 featured: false
 breaking: false

@@ -12,6 +12,9 @@ key_points:
   - "Veeam introduced Intelligent ResOps to detect and reverse unauthorized data changes by AI agents."
   - "Microsoft 365 is the first generally available workload, with Okta and developer tools coming soon."
 kaynakIzi: "v1.rLJpHIDI2XvZvHqS.uiJgXicQKLIJR91OnHK9OYGdW9gdWMsTpBvL1P0mvYmHVSQONw3zVswzgfl9XQpGmBRqKiRElfiYo+gIPMq8WyHaWyZ2Zdo9uTgltYRmIutJtL/iLtwT2sd5K/SLnHQdcpcJXkB0h21fivtRvWvknAzx7ZOKy6KZnGX8ZU//symFBnhWeKKRQu0lvwq272H72Ojp2hV0UApiiWX9t35m14a2PlYkMw=="
+kaynakAdlari:
+  - ad: "SiliconANGLE"
+    url: "https://siliconangle.com/2026/10/16/the-agentic-ai-era-is-forcing-security-and-resilience-into-a-single-discipline/"
 featured: false
 breaking: false
 draft: false

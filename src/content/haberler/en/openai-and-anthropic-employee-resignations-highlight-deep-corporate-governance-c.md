@@ -13,6 +13,9 @@ key_points:
   - "Experts emphasize that current corporate governance models in frontier AI labs resemble autocracies."
   - "Democratizing the workplace and empowering tech workers are proposed as necessary steps for safe AI development."
 kaynakIzi: "v1.C8eey0KOmiF62CL5.E7fYMijbJV5V/g4OV0s4LRfVYLMYY4VmcOYMShM/5Y7PsyatgJRMe7az+n094KKbh1mpcg+vA4qpGsoqNyp8D6y2/lFmPCXRt05dgNb3JQPvIUS6UxEGB7IbOr5/APRXmJXsJ3gtGSojzL7Z9Qz61SZAa4BWL9SXABIOUpb+EZSAbh4ZF4JX4MYWb5q+zfqmWrLVf6RZqorl9ThFWTjOhbbw+x9P31/PVg=="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/commentisfree/2026/nov/19/tech-workers-quit-jobs-raise-alarm-worry-ai-humanity-autocracies"
 haberDegeri: 72
 featured: false
 breaking: false

@@ -12,6 +12,9 @@ key_points:
   - "US Nist evaluation reports reveal political censorship present in downloaded DeepSeek models."
   - "Oxford Professor Michael Wooldridge warns that inputted data could be accessed by the Chinese state."
 kaynakIzi: "v1.EPviKaBWCVRn1vOH./CfCgIgy4efCp+0i8Cg/soD2RWxze5L0T5vOIL5EYtfHva7kXkPZ4XE2/zTSmId1xQ/zFpSHnMAeEbxitHQLOxSFxHNFZIg3l4p3YYO0TpdKegOtANGrW+E/EYf2kklcmhZTYKyhRuVK4J2XYn/CxRvkppy+JRSYPKj+6SlZXQvJ10XV36d9vhzykpV8nwC6zleFg47njIVpPhX3e+NEBPOKvSU="
+kaynakAdlari:
+  - ad: "The Guardian"
+    url: "https://www.theguardian.com/business/2026/oct/17/why-britain-should-reject-the-lure-of-cheap-and-scary-chinese-ai"
 featured: false
 breaking: false
 draft: false

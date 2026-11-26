@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Enflasyon üstü bütçe artışı"
     deger: "%53"
 kaynakIzi: "v1.4TA4SvwG6OBfFcFh.0NVl69RHVd0eZmTuxQKngcJGEfmzk381Bx/Gydig0YGXyTDmqAKm0+UXJnGTf6qHqr2z5dVdd9WvreI+smDq7Sld3z/HqqnQ1SnsnUah9qEMjMHDgbn63Pi74y9+brxwqWK5cH3Zf3Zho4IB+s9xqsyvhtyFlq19rcWi78MrkAohNeDCzcrdECdU8Yzu5vxLbVsNAuInZYC5WE8+y5NYTanXspNmZyP786/xrnc58ZoY2gJczVPHnxuSzRmB4yW4"
+kaynakAdlari:
+  - ad: "TechRadar"
+    url: "https://www.techradar.com/pro/ai-isnt-having-much-of-an-effect-on-company-profits-which-is-putting-more-scrutiny-on-why-bosses-should-pay-for-it"
 featured: false
 breaking: false
 draft: false

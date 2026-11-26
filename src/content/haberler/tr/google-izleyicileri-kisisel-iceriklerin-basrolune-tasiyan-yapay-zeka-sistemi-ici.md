@@ -13,6 +13,9 @@ key_points:
   - "İzleme geçmişine dayalı kişiselleştirilmiş video üretimi"
   - "Geleneksel ortak izleme kültürünü değiştirme potansiyeli"
 kaynakIzi: "v1.L2dAmB6M4E4RyUIR.47ij83iyFULbYC/P4oWd0aLVcG5tfgMMxwJJsUQEnUw5dyysdA4eD3WJfWeP9IrwkNIdnrJh/JLZAzSZC1GdUjA13v1K/v6n0j49bhQdunXqJ17rjwviBg/NeDskMUOLnb2+mMk37M/qqoQrx+yqzm6fe81ZCd35FUQdCQ=="
+kaynakAdlari:
+  - ad: "Donanım Günlüğü"
+    url: "https://donanimgunlugu.com/google-televizyonu-tepeden-tirnaga-441667"
 haberDegeri: 70
 featured: false
 breaking: false

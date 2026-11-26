@@ -12,6 +12,9 @@ key_points:
   - "Şirket hatayı fark ettikten sonra ilgili departmanı bilgilendirdi."
   - "Kurbanlar, otonom ajanların neden olduğu sunucu yükü ve güvenlik açıklarının maliyetini kendileri üstleniyor."
 kaynakIzi: "v1.O9FsVKClqPPx+P+M.vocqs6zza8K7XkkPM6vB1T4+ivZgo/psTyD1Zv6F3ZgNun1oY1+UWAsUx299BBh07E+ZSb93wYEAV26/8kfTrEXcidBfEog/DazdMlKtVQXWCOClluuJ+tI5s+3IRrR12gpnz0rsYgpMGxOdTFlhR+WuWNEVFdQzjPyVh65OV+xjDQ=="
+kaynakAdlari:
+  - ad: "Wired"
+    url: "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/"
 featured: false
 breaking: false
 draft: false

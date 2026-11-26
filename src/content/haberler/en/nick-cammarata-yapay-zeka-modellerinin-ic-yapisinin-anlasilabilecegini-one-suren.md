@@ -15,6 +15,9 @@ rakamlar:
   - etiket: "Post length"
     deger: "26,000 words"
 kaynakIzi: "v1.RE6JT1dCYHDWGreg.iv2vLsQEFlHVNWhCrLCkIKua9kdKexrcAYfWJVAlhvVKUQOaYIo0VI8ZIgL0GBJuNprhnBciXRsw9cQHba2VGE8ojy+ogU3cByws48o19H1a4ps9kb/XLFWeBOvqb2pEyx1pxxLFv5Jwm9i8wKvgP9YWqjS43RDEDQHCnoSf8mdz7WhL57/ka5DJ3NG3znPuhjRUvNRfJPBIjjQQ6hW3TZAPtemvTcne/fe2ykr2l1QI7yyfCXjUrjUYJA=="
+kaynakAdlari:
+  - ad: "MIT Technology Review"
+    url: "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/"
 featured: false
 breaking: false
 draft: false

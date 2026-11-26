@@ -16,6 +16,9 @@ rakamlar:
   - etiket: "Enerji anlaşması"
     deger: "20 yıl"
 kaynakIzi: "v1.dVBZtFm0tDWaBxxk.D81SVMc7Yu9+pIpRV9NSSapVgQQ5HYW+tEvW+FDZpE8Lso7cvHO5c3xKN2c+9Vvp3FgdDG8lINhUfDkHS5X6hjDjBKQIV4qRLEoCpYWBBwrd+hoF0sWjCQLQ36ltt3PdhkFq9NL+GwUt/Mt56k3qRyNwsjEr8cyYkAFX1Yy/DyXGRuCT/eLq4GbNXy4tsgUe7Ibtlwed9X3aaWMmqCWWZwTe2T9BOSOtBUWdLQgv07rA6Kfb5XtjzkaBO3F9cX5Tn8M5wAfmy8QLMuupzOlrC2JZCM5oqsF015MYbbZyqbqKOyDr6FdXLuYb242RiDl3FBXzNp1/yME4EiuDBSSbgYUWTKcnoXjF+Ft8CHwiNmOkGKoeyVkjSvsmTg=="
+kaynakAdlari:
+  - ad: "Fast Company"
+    url: "https://www.fastcompany.com/91619326/the-ai-infrastructure-race-ive-seen-this-movie-before-technology-ai-infrastructure?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss"
 featured: false
 breaking: false
 draft: false

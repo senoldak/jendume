@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Meeting time increase"
     deger: "20%"
 kaynakIzi: "v1.pdJZwlG7NAZTMlUb.+VQgG55Ij9ZqQyX6RAKK7gJVxXt+3ETwJuo0a1hS79yPubTyJiyh5fzco5MwYMaSNVTxZwnYBSMBAkKd0/jQeJFoXaaDyI8oCunnxK+CtNwGzZj1tNqIhu7YLl6HvAPPCh2c8IHaQKCOvwDjTd+GJQAJBegs7vbbj2RQdOFYiwkGDnS1U0Bf9LViMHkVmGiipw=="
+kaynakAdlari:
+  - ad: "Webtekno"
+    url: "https://www.webtekno.com/yapay-zeka-isimizi-elimizden-alacak-mi-sorusuna-ornek-bir-yanit-h227425.html"
 featured: false
 breaking: false
 draft: false

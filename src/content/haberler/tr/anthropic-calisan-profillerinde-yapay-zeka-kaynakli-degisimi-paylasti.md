@@ -19,6 +19,9 @@ rakamlar:
   - etiket: "Departman geçiş ihtimali"
     deger: "%50"
 kaynakIzi: "v1.pIYMiTUJ7GxORc8x./GBUkGGmcepJWsYcx1WlhlYKmuDy1623LoEWVs3B4LxlFkUoF4vxjpY1I8DJw+HzEzFA9lFaCJhnwSiBP6vubu0kfK+rM903/ylx51eyqt4nAw/MYPabIcUkYG0emO+OwT2S9oZykv2fcbIByV59zsiYhoc4Q/QJCXudWDu2+xcFZMi5QRp6JlnDtcluk82Mjb5frnDsflTrNEoa5qg2QIRkMA2q9GLg4Q=="
+kaynakAdlari:
+  - ad: "Webrazzi"
+    url: "https://webrazzi.com/2026/10/19/anthropicte-junior-calisanlarin-payi-azalirken-toplantilara-ayrilan-sure-artiyor/"
 featured: false
 breaking: false
 draft: false
