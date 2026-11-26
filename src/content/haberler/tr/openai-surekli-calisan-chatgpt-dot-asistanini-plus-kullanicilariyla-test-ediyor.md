@@ -7,7 +7,7 @@ date: 2026-11-20T07:51:02.465Z
 esId: "openai-is-testing-proactive-chatgpt-dot-agents-with-plus-subscribers"
 bolge: "Küresel"
 perspektif: "Bu yapay zekâ asistanları, kullanıcıların denetimine gerek kalmadan arka planda karmaşık görevleri yürüterek günlük iş verimliliğini değiştirmeyi amaçlıyor."
-why_matters: "Bu gelişme, yapay zekânın sohbet eden bir araç olmaktan çıkıp bilgisayarları yönetebilen ve arka planda görev yapabilen özerk bir yapıya dönüşmesini sağlıyorluiçermekte olduğu işlevlerle dikkat çekiyor ve kullanıcılara doğrudan zaman kazandırıyor olgusunu barındırıyor, ancak kaynak metindeki teknik özellikleri öne çıkarıyor."
+why_matters: "Bu gelişme, yapay zekânın sohbet eden bir araç olmaktan çıkıp bilgisayarları yönetebilen ve arka planda görev yapabilen özerk bir yapıya dönüşmesini sağlıyor."
 key_points:
   - "Dots asistanları aylık 20 dolarlık ChatGPT Plus kullanıcılarıyla test edilmeye başlandı"
   - "Asistanlar 4 binden fazla uygulamaya bağlanarak özerk çalışabiliyor"

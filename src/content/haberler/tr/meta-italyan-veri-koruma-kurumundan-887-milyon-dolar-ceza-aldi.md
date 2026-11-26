@@ -7,7 +7,7 @@ date: 2026-11-15T17:50:53.819Z
 esId: "meta-fined-887-million-by-italian-data-watchdog-over-photo-access"
 bolge: "Avrupa"
 perspektif: "Bu karar, veri işleme süreçlerinde kullanıcı rızasının ve şeffaflığın ne kadar kritik olduğunu göstererek büyük teknoloji şirketlerinin uygulamalarını yeniden şekillendiriyor."
-why_matters: "Avrupa'daki otoritelerin veri gizliliği ihlallerine karşı küresel gelir üzerinden oranlayarak uyguladığı yüksek meblağlı para cezaları, şirketlerin varsayılan ayarlarını değiştirmesini zorunlu kılıyoryur.', katı yaptırımların bir örneğini oluşturuyor."
+why_matters: "Avrupa'daki otoritelerin veri gizliliği ihlallerine karşı küresel gelir üzerinden oranlayarak uyguladığı yüksek meblağlı para cezaları, şirketlerin varsayılan ayarlarını değiştirmesini zorunlu kılıyor."
 key_points:
   - "İtalyan veri koruma kurumu Meta'ya 805 milyon euro ceza verdi."
   - "Cezanın gerekçesi kullanıcı fotoğrafları için özel onay alınmaması."

@@ -7,7 +7,7 @@ date: 2026-11-19T15:51:03.569Z
 esId: "shepherd-framework-brings-version-control-to-autonomous-ai-agents"
 bolge: "Küresel"
 perspektif: "Otonom ajanların karmaşık görevleri yerine getirirken hata yapma veya beklenmedik eylemlerde bulunma riski artıyor; bu sistem, insan denetimini merkeze alarak yapay zekâ güvenliğini artırıyor."
-why_matters: "Sistem, yazılım geliştirme süreçlerindeki sürüm kontrolü mantığını yapay zekâ ajanlarına uyarlayarak Python tabanlı açık kaynaklı bir altyapı sunuyor ve ajan yönetiminin demokratikleştirilmesini amaçlıyoryla öne çıkıyor ailesini genişletiyorydu şeklinde değil, doğrudan olgularla çalışıyor."
+why_matters: "Sistem, yazılım geliştirme süreçlerindeki sürüm kontrolü mantığını yapay zekâ ajanlarına uyarlayarak Python tabanlı açık kaynaklı bir altyapı sunuyor ve ajan yönetiminin demokratikleştirilmesini amaçlıyor."
 key_points:
   - "Otonom ajanlar için sürüm kontrolü sistemi"
   - "Hatalı eylemleri engellemek için meta-ajan denetimi"

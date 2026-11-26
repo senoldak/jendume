@@ -7,7 +7,7 @@ date: 2026-11-17T11:51:04.290Z
 esId: "sarvam-ai-launches-sarvam-token-factory-for-open-weight-models-in-india"
 bolge: "Hindistan"
 perspektif: "Bu gelişme, geliştiricilerin denizaşırı bulutlara gitmeden düşük gecikmeyle yapay zekâ modellerine erişmesini sağlayarak yerel yapay zekâ altyapısını güçlendiriyor."
-why_matters: "Platform, veri trafiğinin yurt dışına çıkmasını önleyerek Hindistan'daki ekiplere küresel standartlarda maliyet avantajı ve hız sunuyorbilirliği artırıyorveyoruz."
+why_matters: "Platform, veri trafiğinin yurt dışına çıkmasını önleyerek Hindistan'daki ekiplere küresel standartlarda maliyet avantajı ve hız sunuyor."
 key_points:
   - "Günlük 450 milyardan fazla DeepSeek V4.1 Flash token işleniyor"
   - "Sekiz farklı açık ağırlıklı model tek API üzerinden sunuluyor"

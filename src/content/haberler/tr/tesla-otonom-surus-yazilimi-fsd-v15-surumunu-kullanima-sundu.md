@@ -7,7 +7,7 @@ date: 2026-11-22T03:50:52.079Z
 esId: "tesla-rolls-out-full-self-driving-v15-software-update"
 bolge: "Küresel"
 perspektif: "Otonom sürüş sistemlerindeki bu yapay zekâ tabanlı gelişmeler, gelecekte trafikte güvenlik standartlarını yükseltirken sürücü müdahalesini en aza indirmeyi hedefliyor."
-why_matters: "Otonom sürüş teknolojilerinin yapay zekâ ile desteklenmesi, yollarda insan hatalarını azaltarak sürüş güvenliğini artırmayı amaçlıyoray amaçlıyor."
+why_matters: "Otonom sürüş teknolojilerinin yapay zekâ ile desteklenmesi, yollarda insan hatalarını azaltarak sürüş güvenliğini artırmayı amaçlıyor."
 key_points:
   - "FSD V15 sürümü kademeli olarak kullanıma sunulmaya başlandı."
   - "Tesla Reality View ile gerçek zamanlı sanal çevre görselleştirmesi getirildi."
