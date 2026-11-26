@@ -16,4 +16,6 @@ breaking: false
 draft: false
 ---
 
-Android, kullanıcıların mobil dolandırıcılıktan korunmasını sağlamak amacıyla Google Mesajlar uygulamasında yeni güvenlik özelliklerini hayata geçiriyor. Tanınmayan göndericilerle yapılan yazışmalardaki potansiyel dolandırıcılık girişimlerini erkenden fark etmek için bulut tabanlı Gemini yapay zekâ modellerinden yararlanılıyor. Dolandırıcıların niyetlerini yavaş yavaş kurdukları sohbetlerle gizlemeye çalıştığını belirten geliştiriciler, bu güvenli bulut analizi sayesinde mevcut savunma mekanizmalarının daha da güçlendirildiğini ifade ediyor. Yeni gelişmiş koruma ayarının önümüzdeki haftalarda kademeli olarak kullanıcıların erişimine sunulması bekleniyor.
+Android, kullanıcıların mobil dolandırıcılıktan korunmasını sağlamak amacıyla Google Mesajlar uygulamasında yeni güvenlik özelliklerini hayata geçiriyor. Tanınmayan göndericilerle yapılan yazışmalardaki potansiyel dolandırıcılık girişimlerini erkenden fark etmek için bulut tabanlı Gemini yapay zekâ modellerinden yararlanılıyor.
+
+Dolandırıcıların niyetlerini yavaş yavaş kurdukları sohbetlerle gizlemeye çalıştığını belirten geliştiriciler, bu güvenli bulut analizi sayesinde mevcut savunma mekanizmalarının daha da güçlendirildiğini ifade ediyor. Yeni gelişmiş koruma ayarının önümüzdeki haftalarda kademeli olarak kullanıcıların erişimine sunulması bekleniyor.

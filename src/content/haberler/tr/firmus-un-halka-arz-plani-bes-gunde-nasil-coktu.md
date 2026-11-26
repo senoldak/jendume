@@ -11,4 +11,6 @@ breaking: false
 draft: false
 ---
 
-Avustralya merkezli yapay zekâ girişimi Firmus, kısa süre önce piyasa değeri açısından ülkenin en büyük şirketleriyle yarışmaya hazırlanıyordu. Ancak şirketin borsa planı beklenmedik bir şekilde, sadece beş gün içinde tamamen suya düştü. Kurucu ortak Oliver Curtis'in geçmişteki mahkumiyeti ve şirketin iş modeli etrafındaki soru işaretleri, bu ani çöküşün merkezinde yer aldı. Sektör analistleri, yaşanan bu olayın yapay zekâ yatırımlarındaki spekülatif balonu ve güven sorunlarını bir kez daha gözler önüne serdiğini belirtiyor.
+Avustralya merkezli yapay zekâ girişimi Firmus, kısa süre önce piyasa değeri açısından ülkenin en büyük şirketleriyle yarışmaya hazırlanıyordu. Ancak şirketin borsa planı beklenmedik bir şekilde, sadece beş gün içinde tamamen suya düştü.
+
+Kurucu ortak Oliver Curtis'in geçmişteki mahkumiyeti ve şirketin iş modeli etrafındaki soru işaretleri, bu ani çöküşün merkezinde yer aldı. Sektör analistleri, yaşanan bu olayın yapay zekâ yatırımlarındaki spekülatif balonu ve güven sorunlarını bir kez daha gözler önüne serdiğini belirtiyor.

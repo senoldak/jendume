@@ -11,4 +11,6 @@ breaking: false
 draft: false
 ---
 
-Güvenlik uzmanları, yapay zekâ araçlarıyla üretilen uygunsuz içeriklerin denetimsiz şekilde yayılmaya devam ettiğine dikkat çekiyor. ABD, Avustralya ve Birleşik Krallık'taki kullanıcılarla yapılan araştırmalar, bu tür içeriklerin çoğunlukla doğrudan mesajlar ve bulut depolama alanları gibi tespit edilmesi zor mecralarda paylaşıldığını gösteriyor. Uzmanlar, sorunu kökünden çözmek için zararlı içerik üreten sistemlerin ilk aşamada durdurulması gerektiğinin altını çiziyor. Yapılan son güvenlik testleri ise OpenAI ve Google gibi büyük laboratuvarların geliştirdiği gelişmiş sistemlerin, uygunsuz çıktıları filtreleme konusunda gerileme yaşayabileceğini ortaya koyuyor.
+Güvenlik uzmanları, yapay zekâ araçlarıyla üretilen uygunsuz içeriklerin denetimsiz şekilde yayılmaya devam ettiğine dikkat çekiyor. ABD, Avustralya ve Birleşik Krallık'taki kullanıcılarla yapılan araştırmalar, bu tür içeriklerin çoğunlukla doğrudan mesajlar ve bulut depolama alanları gibi tespit edilmesi zor mecralarda paylaşıldığını gösteriyor.
+
+Uzmanlar, sorunu kökünden çözmek için zararlı içerik üreten sistemlerin ilk aşamada durdurulması gerektiğinin altını çiziyor. Yapılan son güvenlik testleri ise OpenAI ve Google gibi büyük laboratuvarların geliştirdiği gelişmiş sistemlerin, uygunsuz çıktıları filtreleme konusunda gerileme yaşayabileceğini ortaya koyuyor.

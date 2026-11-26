@@ -11,4 +11,6 @@ breaking: true
 draft: false
 ---
 
-Epic Games is adopting an AI-first development strategy for its major collaboration with the Walt Disney Company, shifting toward fully automated workflows. According to internal reports, an upcoming Marvel and Star Wars-themed shooter will rely on AI models to write code and generate art assets, moving away from traditional hand-written development. Human developers will transition into management roles, overseeing and guiding the AI-generated outputs rather than creating them from scratch. While this represents a major technological leap for the Unreal Engine maker, the internal shakeup and slower-than-expected progress have reportedly resulted in the indefinite delay of the project's planned release.
+Epic Games is adopting an AI-first development strategy for its major collaboration with the Walt Disney Company, shifting toward fully automated workflows. According to internal reports, an upcoming Marvel and Star Wars-themed shooter will rely on AI models to write code and generate art assets, moving away from traditional hand-written development.
+
+Human developers will transition into management roles, overseeing and guiding the AI-generated outputs rather than creating them from scratch. While this represents a major technological leap for the Unreal Engine maker, the internal shakeup and slower-than-expected progress have reportedly resulted in the indefinite delay of the project's planned release.

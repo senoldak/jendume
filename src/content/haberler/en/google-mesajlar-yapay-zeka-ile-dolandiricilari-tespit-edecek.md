@@ -16,4 +16,6 @@ breaking: false
 draft: false
 ---
 
-Android is rolling out new scam defense features designed to help users avoid mobile fraud, featuring enhanced protections within Google Messages. Building on previous scam detection tools, a new enhanced protection setting will utilize cloud-based Gemini AI models to quickly evaluate potential scam intentions in chats with unrecognized senders. Google notes that scammers often disguise their true motives behind slow-burn conversations, making this secure cloud analysis a vital addition to existing safeguards. The new setting is scheduled to roll out to users in the coming weeks.
+Android is rolling out new scam defense features designed to help users avoid mobile fraud, featuring enhanced protections within Google Messages. Building on previous scam detection tools, a new enhanced protection setting will utilize cloud-based Gemini AI models to quickly evaluate potential scam intentions in chats with unrecognized senders.
+
+Google notes that scammers often disguise their true motives behind slow-burn conversations, making this secure cloud analysis a vital addition to existing safeguards. The new setting is scheduled to roll out to users in the coming weeks.

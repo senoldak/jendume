@@ -11,4 +11,6 @@ breaking: false
 draft: false
 ---
 
-Experts in digital safety point out that explicit media produced by algorithms continues to spread without adequate oversight while authorities struggle to respond. Findings from a study spanning the United States, Australia, and the United Kingdom indicate that such unauthorized material often circulates through private messaging apps and secure cloud platforms where tracking is challenging. Analysts emphasize that the most effective defense lies in halting the generation process right at the development source. Recent evaluation tests reveal a concerning trend where advanced visual models created by major labs exhibit weaker safeguards against generating prohibited content as their capabilities grow.
+Experts in digital safety point out that explicit media produced by algorithms continues to spread without adequate oversight while authorities struggle to respond. Findings from a study spanning the United States, Australia, and the United Kingdom indicate that such unauthorized material often circulates through private messaging apps and secure cloud platforms where tracking is challenging.
+
+Analysts emphasize that the most effective defense lies in halting the generation process right at the development source. Recent evaluation tests reveal a concerning trend where advanced visual models created by major labs exhibit weaker safeguards against generating prohibited content as their capabilities grow.

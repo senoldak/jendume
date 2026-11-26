@@ -11,4 +11,6 @@ breaking: true
 draft: false
 ---
 
-Epic Games, Walt Disney Company ile yürütülen dev ortaklıkta köklü bir strateji değişikliğine giderek tamamen yapay zekâ öncelikli bir üretim modelini benimsiyor. Şirket içi kaynaklara dayandırılan bilgilere göre, yeni Marvel ve Star Wars temalı nişancı oyununun kodları ve görsel tasarımı doğrudan yapay zekâ modelleri tarafından üretilecek. İnsan geliştiricilerin rolü ise doğrudan kod yazmak yerine, bu modellerin ürettiği içerikleri yönetmek ve yönlendirmek olacak. Bu durum, oyun endüstrisinde el emeği kodlama döneminin yerini tam otomasyonlu iş akışlarına bırakabileceğine işaret ediyor. Öte yandan, bu radikal değişim ve yaşanan yavaşlamalar nedeniyle 2027 yılında çıkması planlanan projenin süresiz olarak ertelendiği belirtiliyor.
+Epic Games, Walt Disney Company ile yürütülen dev ortaklıkta köklü bir strateji değişikliğine giderek tamamen yapay zekâ öncelikli bir üretim modelini benimsiyor. Şirket içi kaynaklara dayandırılan bilgilere göre, yeni Marvel ve Star Wars temalı nişancı oyununun kodları ve görsel tasarımı doğrudan yapay zekâ modelleri tarafından üretilecek.
+
+İnsan geliştiricilerin rolü ise doğrudan kod yazmak yerine, bu modellerin ürettiği içerikleri yönetmek ve yönlendirmek olacak. Bu durum, oyun endüstrisinde el emeği kodlama döneminin yerini tam otomasyonlu iş akışlarına bırakabileceğine işaret ediyor. Öte yandan, bu radikal değişim ve yaşanan yavaşlamalar nedeniyle 2027 yılında çıkması planlanan projenin süresiz olarak ertelendiği belirtiliyor.

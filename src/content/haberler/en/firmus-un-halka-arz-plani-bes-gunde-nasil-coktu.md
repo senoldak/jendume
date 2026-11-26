@@ -11,4 +11,6 @@ breaking: false
 draft: false
 ---
 
-Australian AI company Firmus was recently preparing to enter the market with a valuation that would put it among the country's corporate giants. However, the anticipated stock market debut dramatically fell apart in less than a week. The collapse centered around co-founder Oliver Curtis and mounting skepticism regarding the startup's massive valuation and data center plans. Industry observers note that the swift reversal serves as a stark reminder of the risks within the booming AI investment landscape.
+Australian AI company Firmus was recently preparing to enter the market with a valuation that would put it among the country's corporate giants. However, the anticipated stock market debut dramatically fell apart in less than a week.
+
+The collapse centered around co-founder Oliver Curtis and mounting skepticism regarding the startup's massive valuation and data center plans. Industry observers note that the swift reversal serves as a stark reminder of the risks within the booming AI investment landscape.
