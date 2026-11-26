@@ -7,6 +7,7 @@ date: 2026-11-24T05:50:52.582Z
 esId: "openai-begins-rolling-out-gpt-6-2-model-to-chatgpt-users"
 bolge: "Küresel"
 perspektif: "GPT-6.2, kullanıcıların ayrıntılı yönergeleri izlemesini ve görseller hakkında sorulan soruları daha iyi yanıtlamasını sağlıyor."
+why_matters: "Modelin Plus, Pro, Business ve Enterprise paketlerine kademli olarak dağıtılması, küresel ölçekteki kullanıcıların yeni yeteneklere erişmesini sağlıyor."
 key_points:
   - "GPT-6.2 Sol tabanlı model ChatGPT sohbet sekmesinde dağıtılıyor."
   - "Görsel anlama değerlendirmesinde GPT-6.2 %71,7 puan aldı."

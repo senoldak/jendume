@@ -7,6 +7,7 @@ date: 2026-11-18T19:50:53.615Z
 esId: "sam-altman-and-greg-brockman-emphasize-human-control-over-ai-future"
 bolge: "Küresel"
 perspektif: "Yapay zekânın otonom karar verici haline gelmesi, insanlığın geleceği üzerindeki kontrolünü kaybetme riski taşıyor; bu tartışma, teknolojinin güvenli gelişimi için kritik bir dönemeçte olduğumuzu gösteriyor."
+why_matters: "Gelişen yapay zekâ modellerinin düşünce zinciri izleme yöntemlerini zayıflatması, şirketlerin yeni denetim teknolojileri geliştirmesini ve mühendis kaynaklarını güvenlik için yeniden yönlendirmesini zorunlu kılıyor."
 key_points:
   - "İnsan kontrolünün korunması gerekliliği"
   - "Düşünce zinciri izleme yöntemlerinin yetersizliği"

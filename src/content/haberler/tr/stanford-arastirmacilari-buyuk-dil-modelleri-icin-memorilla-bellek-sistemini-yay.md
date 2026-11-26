@@ -7,6 +7,7 @@ date: 2026-11-14T13:50:54.599Z
 esId: "stanford-researchers-open-source-memorilla-memory-system-for-large-language-mode"
 bolge: "Küresel"
 perspektif: "Bu gelişme, büyük dil modellerinin devasa metinleri işlerken karşılaştığı hız ve maliyet sorunlarını aşarak yapay zekânın çok daha büyük veri setlerini verimli ve hızlı bir şekilde analiz etmesini sağlıyor."
+why_matters: "Modül, bellek tüketimini ciddi oranda düşürerek donanım maliyetlerini azaltıyor ve çıkarım süreçlerini hızlandırarak kurumsal yapay zekâ altyapılarının ölçeklenebilirliğini güçlendiriyor."
 key_points:
   - "Memorilla, tüm belge koleksiyonlarını donmuş büyük dil modelleri için 16 bellek jetonuna dönüştürüyor."
   - "FactKG testinde Qwen3-8B modeli %84,33 doğruluk oranına ulaştı."

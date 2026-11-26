@@ -7,6 +7,7 @@ date: 2026-11-13T19:50:51.882Z
 esId: "google-researcher-s-claim-of-ai-agents-discovering-an-ancient-maya-site-debunked"
 bolge: "Kuzey Amerika"
 perspektif: "Bu olay, yapay zekâ modellerinin ve otonom ajanların mevcut akademik literatürü ve verileri doğrulamadan sunduğu sonuçların bilimsel dezenformasyona yol açabileceğini gösteriyor. Uzmanların yıllara dayanan emeğinin göz ardı edilmesi riskine ve akran denetiminin hayati önemine dikkat çekiyor."
+why_matters: "Mevcut bilimsel çalışmaların yapay zekâ araçları tarafından sahiplenilmesi, akademik etik ve bilgi güvenilirliği açısından ciddi soru işaretleri doğuruyor."
 key_points:
   - "Araştırmacının yapay zekâ ajanları 72 saatten kısa sürede sonuç ürettiğini iddia etti."
   - "Maya kenti Tulane Üniversitesi araştırmacıları tarafından 2025'te 95 bin kilometrekarelik lidar verisiyle zaten haritalandırılmıştı."

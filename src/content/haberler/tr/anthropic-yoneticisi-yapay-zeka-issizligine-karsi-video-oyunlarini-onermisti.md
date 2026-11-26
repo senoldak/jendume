@@ -7,6 +7,7 @@ date: 2026-11-25T05:50:52.498Z
 esId: "anthropic-ceo-once-suggested-video-games-could-prevent-ai-driven-unrest"
 bolge: "ABD"
 perspektif: "Yapay zekâ liderlerinin iş gücü piyasasındaki olası sarsıntılara yaklaşımı, gelecekteki toplumsal modellerin nasıl şekilleneceğine dair önemli ipuçları veriyor."
+why_matters: "Yapay zekâ liderlerinin olası işsizlik senaryolarına yaklaşımı, teknolojinin toplumsal etkilerinin şimdiden nasıl planlandığını gösteriyor."
 key_points:
   - "Anthropic CEO'su Dario Amodei geçmişte video oyunlarını toplumsal huzursuzluğa karşı önermişti"
   - "Amodei günümüzde evrensel temel gelir modelini destekliyor"
