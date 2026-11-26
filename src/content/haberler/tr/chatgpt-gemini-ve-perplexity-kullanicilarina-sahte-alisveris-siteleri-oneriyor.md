@@ -7,7 +7,7 @@ date: 2026-11-14T19:50:50.670Z
 esId: "chatgpt-gemini-and-perplexity-keep-recommending-scam-websites-to-shoppers"
 bolge: "Küresel"
 perspektif: "Yapay zekâ sohbet botlarının güvenilir ve kesin yanıtlar sunuyormuş gibi görünmesi, kullanıcıların sahte alışveriş sitelerine karşı daha savunmasız olmasına yol açıyor."
-why_matters: "Yapay zekâ modellerinin yönlendirdiği sahte sitelerin, kullanıcıların banka ve kredi kartı bilgilerini ele geçirmeyi amaçlayan dolandırıcılıklar için yeni bir zemin hazırladığını gösteriyorur [sic -> gösteriyor]. dejital [sic -> dijital] güvenlik risklerini artırıyorur [sic -> artırıyor]. (Aralıksız düzeltme: Yapay zekâ modellerinin yönlendirdiği sahte sitelerin, kullanıcıların banka ve kredi kartı bilgilerini hedef alan dolandırıcılıklar için yeni bir zemin hazırladığını gösteriyor.) kurallara uygun olarak yeniden düzenlendi:\n\nYapay zekâ botlarının güvenlik açıklarından faydalanan dolandırıcıların, kullanıcıların banka ve kredi kartı bilgilerini hedef alan sahte siteler üzerinden büyük bir tehdit oluşturduğunu gösteriyor."
+why_matters: "Yapay zekâ modellerinin yönlendirdiği sahte siteler, banka ve kredi kartı bilgilerini hedef alan dolandırıcılıklara yeni bir zemin hazırlıyor."
 key_points:
   - "Perplexity testlerde %15 oranında riskli site gösterdi."
   - "ChatGPT %8, Gemini ise %4 oranında şüpheli site önerdi."

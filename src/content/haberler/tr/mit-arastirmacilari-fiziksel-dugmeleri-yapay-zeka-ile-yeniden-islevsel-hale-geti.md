@@ -7,7 +7,7 @@ date: 2026-11-24T21:50:51.499Z
 esId: "mit-researchers-use-ai-agents-to-reprogram-physical-controls-for-digital-tasks"
 bolge: "ABD"
 perspektif: "Dijitalleşme ile kaybettiğimiz fiziksel kontrol hissini yapay zekâ ile geri kazandırıyor; bu da yaratıcı iş akışlarında hız ve verimlilik sağlıyor."
-why_matters: "Sistem, yapay zekâ ajanlarının API, MCP sunucuları ve görme-dil modelleri üzerinden topladığı yazılım bağlamını kullanarak fiziksel denetimleri özelleştirilmiş işlevlerle eşleştiriyor.ana"
+why_matters: "Sistem, yapay zekâ ajanlarının API, MCP sunucuları ve görme-dil modelleri üzerinden topladığı yazılım bağlamını kullanarak fiziksel denetimleri özelleştirilmiş işlevlerle eşleştiriyor."
 key_points:
   - "TangiMap, dijital yazılım işlevlerini fiziksel düğmelere atayan bir sistemdir."
   - "Yapay zekâ ajanları, yazılım bağlamını analiz ederek kontrolleri dinamik olarak günceller."
