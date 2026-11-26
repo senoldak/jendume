@@ -5,6 +5,7 @@ import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
 import { gizliKaynaklar } from './gizli.mjs';
+import { paragraflaraBol, paragrafOranlari } from './dil-tr.mjs';
 import { gosterilecekKaynaklar } from '../../src/lib/kaynak-adlari.mjs';
 
 export const USER_AGENT = 'jendume-bot/1.0 (+https://github.com/senoldak/jendume)';
@@ -316,7 +317,8 @@ export async function ucDilliHaberYaz(rot, paket) {
     const icerik = paket[dil];
     if (!icerik) continue;
     const description = tipografi(guvenli(icerik.description)).replace(/\s+/g, ' ');
-    const body = tipografi(guvenli(icerik.body));
+    // Model gövdeyi tek blok döndürdüyse cümle sınırlarından bölünür; eş dil paragraflıysa onun oranları izlenir.
+    const body = paragraflaraBol(tipografi(guvenli(icerik.body)), paragrafOranlari(paket[dil === 'tr' ? 'en' : 'tr']?.body));
     // Türkçe başlıkta "Her Kelimesi Büyük" alışkanlığı cümle düzenine iner; özel adlar metinden okunur.
     const hamBaslik = tipografi(guvenli(icerik.title), { baslik: true });
     const title = dil === 'tr' ? cumleDuzeni(hamBaslik, `${description}
