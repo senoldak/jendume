@@ -95,11 +95,13 @@ test('Gemini cevap vermezse (null) redaksiyon atılır, sorun yoksa taslak aynen
   assert.equal(r.t.tr.body, iyiGovde);
 });
 
-test('why_matters perspektifle aynıysa istemde uyarı çıkar', async () => {
+test('why_matters perspektifle aynı olsa da istem yeniden yazım istemez (cümle düzeltmeli redaksiyon)', async () => {
   let istem = '';
   const ayni = `${uydur(10, 8)}.`;
   await dilRedakte(taslak(iyiGovde, { perspektif: ayni, why_matters: ayni }), KAYNAK, { kall: async (a) => (a.sistem === SISTEM_TR && (istem = a.prompt), null) });
-  assert.ok(istem.includes('why_matters perspektif ile aynı'));
+  assert.ok(istem.length > 0);
+  assert.doesNotMatch(istem, /farklı bir açıdan|perspektif ile aynı/);
+  assert.doesNotMatch(SISTEM_TR, /farklı bir açıdan/);
 });
 
 // --- EN redaksiyonu (19 Kasım 2026)

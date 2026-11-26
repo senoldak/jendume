@@ -22,7 +22,6 @@ Ek kurallar:
 - Yüzde için % işareti kullan (%8,6); yukarıdaki "yüzde 8,6" örnekleri bu konuda geçersiz.
 - Yapay zekâ terimlerinde yerleşik Türkçe karşılığı varsa onu kullan, ürün ve model adlarını olduğu gibi bırak: agent → ajan, benchmark → kıyaslama testi, reward hacking → ödül istismarı, pipeline → işlem hattı. Yerleşik karşılığı olmayan terimi ilk geçtiği yerde kısa bir açıklamayla ver.
 - "yapay zekâ" her yerde aynı yazılır (TDK: zekâ).
-- why_matters alanı perspektif alanıyla aynıysa ya da onu tekrar ediyorsa, why_matters'ı farklı bir açıdan yeniden yaz; yalnızca metindeki olguları kullan.
 - Yalnızca verilen alanları döndür; başka alan, başka dil ekleme.`;
 
 export const REDAKSIYON_SEMASI = {
@@ -37,8 +36,6 @@ export const REDAKSIYON_SEMASI = {
   },
   required: ['title', 'description', 'body'],
 };
-
-const sadelestir = (s) => String(s ?? '').replace(/\s+/g, ' ').trim().toLocaleLowerCase('tr').replace(/[^\p{L}\p{N} ]/gu, '');
 
 // Güvenli kod düzeltmeleri: yalnız TR düzyazı alanları.
 export function trDuzelt(t) {
@@ -73,12 +70,13 @@ function istem(tr, kaynak, sorunMetni, ek = '') {
     if (v === undefined || v === null || v === '' || (Array.isArray(v) && !v.length)) continue;
     alanlar[k] = v;
   }
-  const tekrar = sadelestir(tr.why_matters) && sadelestir(tr.why_matters) === sadelestir(tr.perspektif);
+  // why_matters perspektifle aynı olsa da "yeniden yaz" istenmez (26 Kasım 2026): redaksiyon yalnız cümle düzeltir, haber
+  // sayfası iki alandan yalnız birini gösterir (why_matters || perspektif), okur aynı cümleyi iki kez görmez.
   // Kelime aralığı açıkça verilir (19 Kasım 2026): "metni kısaltma" tek başına yetmiyordu, redaksiyon gövdeyi %20 kısaltıp atılıyordu.
   const n = kelimeSayisi(tr.body);
   return `Aşağıdaki Türkçe haber alanlarının dilini düzelt. Olguları değiştirme; metni kısaltma.
 Gövde ${n} kelime; senin gövden ${Math.ceil(n * 0.95)} ile ${Math.floor(n * 1.1)} kelime arasında olmalı. Cümle silme: cümleleri yerinde düzelt.
-${tekrar ? "\nUYARI: why_matters perspektif ile aynı. why_matters'ı farklı bir açıdan, yalnızca KAYNAK METİN'deki olgularla yeniden yaz.\n" : ''}${ek ? `\n${ek}\n` : ''}
+${ek ? `\n${ek}\n` : ''}
 KAYNAK METİN (olgu doğrulaması için; kaynaktan yeni bilgi ekleme):
 ${kaynak}
 
