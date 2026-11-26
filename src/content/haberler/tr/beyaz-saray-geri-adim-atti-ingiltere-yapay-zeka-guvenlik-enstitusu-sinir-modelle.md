@@ -15,7 +15,7 @@ ABD Beyaz Saray yönetimi, İngiltere’nin Yapay Zekâ Güvenlik Enstitüsü’
 
 Eylül ayında ABD yönetimi, Amerikan yapay zekâ şirketlerine modellerini İngiliz denetim kurumuyla paylaşmama yönünde telkinde bulunmuş ve bunun ardından Anthropic, yeni Claude Mythos 5.1 modeline erken erişimi kısıtlamıştı. İngiltere Yapay Zekâ Bakanı Kanishka Narayan’ın yürüttüğü diplomatik girişimlerin ardından bu kısıtlama kaldırıldı.
 
-## Kritik Altyapılar İçin Yeni Bildirim Kuralları
+## Kritik altyapılar için yeni bildirim kuralları
 
 İngiltere Başbakanı Andy Burnham daha önce Birleşmiş Milletler Genel Kurulu’nda uluslararası yapay zekâ denetimi çağrısı yapmış, güvenlik kurumları da gelişmiş modellerin kötü niyetli aktörler tarafından istismar edilebileceği uyarısında bulunmuştu.
 

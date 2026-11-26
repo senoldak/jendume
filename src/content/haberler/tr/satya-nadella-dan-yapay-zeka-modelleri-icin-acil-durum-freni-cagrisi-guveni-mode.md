@@ -15,7 +15,7 @@ Microsoft Yönetim Kurulu Başkanı ve Üst Yöneticisi Satya Nadella, 10 Ekim 2
 
 Nadella’ya göre hem kapalı hem de açık ağırlıklı gelişmiş modeller, kurumların kendi içinden doğabilecek potansiyel birer risk gibi ele alınmalı. Bu yaklaşımda yapay zekâ modeli, görevleri yürüten ve araçlara erişen yazılım katmanından ayrıştırılıyor; böylece güvenlik sınırları modelin kendi kararına bırakılmıyor.
 
-## İnsan Kontrolü ve “Acil Durum Freni”
+## İnsan kontrolü ve “Acil durum freni”
 
 Önerilen mimarinin merkezinde Nadella’nın “acil durum freni” olarak adlandırdığı mekanizma yer alıyor. Yetkili bir insan operatörün, görev yürütmekte olan otonom bir yapay zekâ sistemini istediği anda duraklatabilmesi veya tamamen kapatabilmesi şart koşuluyor.
 

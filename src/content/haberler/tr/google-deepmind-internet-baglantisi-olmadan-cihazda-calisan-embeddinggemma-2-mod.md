@@ -15,7 +15,7 @@ Google DeepMind, metin, kod, görüntü, ses ve video verilerini doğrudan kulla
 
 Gemma 4 mimarisi üzerine inşa edilen ve ticari kullanıma izin veren Apache 2.0 lisansıyla yayımlanan EmbeddingGemma 2, 740 milyon parametreye sahip. Bu kompakt yapı sayesinde model, yüksek kapasiteli bulut sunucularına ihtiyaç duymadan dizüstü bilgisayarlarda ve akıllı cihazlarda doğrudan çalışabiliyor.
 
-## Sesli Nottan Videoya Doğrudan Arama
+## Sesli nottan videoya doğrudan arama
 
 Çok modlu yapısı sayesinde kullanıcılar, yalnızca kısa bir sesli not veya yazılı tarif kullanarak cihazlarındaki saatlerce süren ses kayıtları ya da videolar içinden aradıkları tam sahneyi bulabiliyor.
 

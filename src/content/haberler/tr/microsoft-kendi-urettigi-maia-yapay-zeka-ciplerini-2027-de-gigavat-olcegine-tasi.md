@@ -15,7 +15,7 @@ Microsoft, yapay zekâ modellerini çalıştıran veri merkezlerinde kendi tasar
 
 Halihazırda ABD, Avrupa ve Avustralya’daki veri merkezlerinde Microsoft Copilot servislerini çalıştıran Maia 200 çipleri, hem OpenAI modellerini hem de açık kaynaklı sistemleri destekliyor. Şirket verilerine göre Maia 200, Teams üzerindeki işlemlerde yaygın grafik işlemcilere kıyasla watt başına 1,7 kata kadar daha fazla üretim sağlıyor.
 
-## Maia 300 ile Enerji Verimliliği Hedefi
+## Maia 300 ile enerji verimliliği hedefi
 
 Microsoft Üst Yöneticisi Satya Nadella’nın şirketin kendi donanımına yaptığı en büyük yatırım olarak nitelendirdiği programın bir sonraki adımı olan Maia 300, 2027 yılında kullanıma sunulacak. Uzun bağlamlı girdiler, hızlı sohbetler ve otonom ajan görevleri için tasarlanan Maia 300’ün, megavat başına yüzde 40 daha yüksek verimlilik sunması hedefleniyor.
 

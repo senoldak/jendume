@@ -15,7 +15,7 @@ Meta bünyesindeki Süperzekâ Laboratuvarı, şirketin en üst düzey yapay zek
 
 Şirketin paylaştığı teknik değerlendirme verilerine göre Muse Wonder ve Muse Wonder Full, sektörün önde gelen modellerinden Fable 5.1 ve GPT-6 Astra ile karşılaştırılabilir test sonuçlarına ulaşıyor. Modeller, hem kişisel asistanları hem de kurumsal iş akışı ajanlarını çalıştırmak üzere optimize edildi.
 
-## Maliyet ve Erişim Dengesi
+## Maliyet ve erişim dengesi
 
 Yeni model ailesinin ölçeği kullanım fiyatlarına da yansıdı. Meta Model API üzerinden erişime açılan Muse Wonder, her 1 milyon girdi birimi için 4 dolar, her 1 milyon çıktı birimi içinse 20 dolar üzerinden fiyatlandırılıyor.
 

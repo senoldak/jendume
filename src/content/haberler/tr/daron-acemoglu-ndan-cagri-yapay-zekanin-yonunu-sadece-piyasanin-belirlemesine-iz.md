@@ -15,7 +15,7 @@ Bilim Akademisi üyesi ve 2024 Nobel İktisat Ödülü sahibi Prof. Dr. Daron Ac
 
 Acemoğlu’na göre teknolojinin insanlığa kendiliğinden refah getireceği düşüncesi tarihsel olarak doğru değil. Sanayi devriminden bugüne teknolojik sıçramalar, ancak çalışanların sesini duyurabildiği, kurumların adil kurallar koyduğu ve bilimin toplumsal yararı gözettiği dönemlerde geniş kitlelerin yaşam standardını yükseltti.
 
-## İnsanı İkame Eden Değil, İnsanı Güçlendiren Teknoloji
+## İnsanı ikame eden değil, insanı güçlendiren teknoloji
 
 Yapay zekânın mevcut gelişim rotasının çoğu zaman insan emeğini devre dışı bırakmaya ve bilgiyi birkaç merkeze toplamaya odaklandığını belirten Acemoğlu, alternatif bir yolun mümkün olduğunu vurguluyor: yapay zekâyı öğretmenlerin, sağlık çalışanlarının, mühendislerin ve işçilerin karar alma kapasitesini artıran güvenilir bir yardımcı olarak tasarlamak.
 

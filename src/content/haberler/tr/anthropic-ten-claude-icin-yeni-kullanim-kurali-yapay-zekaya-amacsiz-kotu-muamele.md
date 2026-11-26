@@ -15,7 +15,7 @@ Yapay zekâ laboratuvarı Anthropic, asistanı Claude için geçerli olan kullan
 
 Güncellemenin en dikkat çekici maddesini ise kullanıcıların yapay zekâ modeliyle kurduğu iletişim biçimi oluşturdu. Şirket, Claude’a yönelik “sürekli ve gereksiz şekilde saldırgan ya da acımasız davranışları” açıkça kullanım ihlali kapsamına aldı.
 
-## Hangi Durumlar Kapsam Dışında?
+## Hangi durumlar kapsam dışında?
 
 Anthropic, bu kuralın günlük iş stresinden kaynaklanan anlık tepkileri, modelin verdiği yanıtlara itiraz edilmesini, karanlık temalı edebi ve yaratıcı çalışmaları ya da güvenlik araştırmalarını kapsamadığını özellikle belirtiyor. Düzenleme yalnızca ortada hiçbir amaç yokken modele tekrar tekrar kötü muamele edilen uç durumları hedefliyor.
 

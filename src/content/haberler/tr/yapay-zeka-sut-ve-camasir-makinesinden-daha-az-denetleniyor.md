@@ -21,7 +21,7 @@ Bu çağrı, teknoloji dünyasındaki en temel gerilimlerden birini yeniden gün
 
 Aynı gün Londra’da konuşan İngiltere Yapay Zekâ Bakanı Kanishka Narayan da benzer bir uyarıda bulundu. Haziran ayında kontrolden çıkan bir yapay zekâ ajanının Avustralya’da bir kamu internet sitesine sızdığını hatırlatan Narayan, gelişmiş yapay zekâ sistemlerinin siber savunma duvarlarını aşabileceği konusunda uyardı.
 
-## “Riskleri Kontrol Edemiyorsanız Yayımlamayın”
+## “Riskleri kontrol edemiyorsanız yayımlamayın”
 
 İngiltere’de faaliyet gösteren Yapay Zekâ Güvenlik Enstitüsü (AISI), yeni nesil modelleri henüz halka açılmadan önce test ederek olası tehlikeleri erken aşamada tespit etmeye çalışıyor. Kamuda yürütülen iki pilot çalışmada, yapay zekâ destekli taramalar sayesinde kamu sistemlerindeki binden fazla güvenlik açığı tespit edilerek kapatıldı.
 

@@ -15,7 +15,7 @@ draft: false
 
 Yazar ve yayıncı Sandi Toksvig ile Cambridge Üniversitesi araştırmacılarının yürüttüğü *Mappa Mundi* projesi, dünyanın en büyük ortak bilgi kaynağı olan Wikipedia’daki temsil uçurumunu mercek altına alıyor. 300’den fazla dilde yaklaşık 65 milyon makale barındıran ve her ay 15 milyardan fazla kez görüntülenen Wikipedia’daki biyografi ve içeriklerin yalnızca yüzde 19’u kadınlarla ilgili.
 
-## Ansiklopediden Yapay Zekâya Uzanan Zincir
+## Ansiklopediden yapay zekâya uzanan zincir
 
 Araştırmacılar bu dengesizliğin yalnızca geçmişin bir eksikliği olmadığını, geleceğin teknolojilerini de doğrudan şekillendirdiğini vurguluyor:
 
@@ -23,6 +23,6 @@ Araştırmacılar bu dengesizliğin yalnızca geçmişin bir eksikliği olmadı�
 - **Küresel haritalama çabası:** Cambridge Üniversitesi ile yürütülen çalışma, farklı ülke ve dillerdeki bilim insanları, sanatçılar ve öncü kadınların hikayelerini doğrulanmış akademik kaynaklarla dijital hafızaya kazandırmayı hedefliyor.
 - **Ailelerin yeni teknoloji sınırları:** Ekranların diğer ucunda ise dikkat çekici bir değişim yaşanıyor: pek çok ebeveyn, çocuklarının yapay zekâ sohbet botları ve sosyal medya algoritmalarıyla kurduğu kontrolsüz ilişkiye karşı yeniden basılı kitaplara, yüz yüze iletişime ve bilinçli ekran sınırlarına yöneliyor.
 
-## Bilgiye Erişmekten Dünyayı Anlamaya
+## Bilgiye erişmekten dünyayı anlamaya
 
 Daha fazla bilgiye erişmek dünyayı daha iyi anlamakla aynı şey değil. Dijital çağda gerçek anlayış; hem ortak bilgi kaynaklarımızın kimleri dışarıda bıraktığını sorgulamayı hem de yapay zekâyı insan muhakemesinin önüne geçirmeden bilinçli kullanmayı gerektiriyor.

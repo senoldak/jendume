@@ -15,7 +15,7 @@ Gelişmiş yapay zekâ modelleri siber güvenlik dünyasını her iki cephede de
 
 Dünya genelinde farklı sektörlerden 625 binden fazla kurumu koruyan siber güvenlik şirketi Sophos, OpenAI Daybreak modelleriyle geliştirdiği ajan mimarisi sayesinde güvenlik vakalarını inceleme süresini yüzde 96 oranında kısalttığını açıkladı.
 
-## Son Karar Her Zaman İnsan Uzmanlarda
+## Son karar her zaman insan uzmanlarda
 
 Şirketin Baş Teknoloji Sorumlusu John Peterson, her gün çok farklı saldırı türleriyle karşılaştıklarını ve savunma tarafının tepki süresinin kritik önem taşıdığını vurguluyor. Yapay zekâ ajanları binlerce sistem kaydını ve şüpheli hareketi saniyeler içinde tarayarak ön analizi hazırlıyor.
 

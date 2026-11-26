@@ -15,7 +15,7 @@ Yapay zekâ girişimi TypeSafe AI, Andreessen Horowitz liderliğinde yürütüle
 
 15 Eylül 2026 tarihinde kullanıma sunulan Jev modeli, geleneksel büyük dil modellerinden farklı bir çalışma mantığına dayanıyor. Uzun doğal dil metinleri üretmek yerine, belirli sonuçların gerçekleşme olasılıklarını hesaplayarak “kalibre edilmiş kararlar” adı verilen yapılandırılmış çıktılar üretiyor.
 
-## Kurumsal Otomasyonda Hız ve Doğruluk
+## Kurumsal otomasyonda hız ve doğruluk
 
 Şirket, Jev modelinin özellikle yazılım otomasyonu, veri sınıflandırma ve diğer yapay zekâ sistemlerinin ürettiği sonuçların denetlenmesi gibi hata payının düşük olması gereken alanlar için geliştirildiğini belirtiyor.
 

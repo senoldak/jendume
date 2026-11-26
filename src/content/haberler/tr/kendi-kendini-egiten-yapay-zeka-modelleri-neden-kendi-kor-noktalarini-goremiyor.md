@@ -15,7 +15,7 @@ Sakana AI ve Kaliforniya Üniversitesi (UC Berkeley) araştırmacıları, bir di
 
 Bilimsel araştırmaların uç noktalarında bir sonucun doğruluğunu test etmek her zaman kolay olmuyor; örneğin tek bir plazma fiziği simülasyonu 120 milyon işlemci saatinden fazla sürebiliyor. Bu gibi durumlarda modelin kendi çıktısını denetlemesi hız kazandırsa da önemli bir açmaz yaratıyor.
 
-## Aynı Kör Noktayı Paylaşmak
+## Aynı kör noktayı paylaşmak
 
 Araştırma sonuçları, modelin görev çözme ve iş bölümü yapma becerisinin bu yöntemle belirgin biçimde arttığını ortaya koydu. Ancak aynı model hem çözücü hem de hakem olduğunda, kendi bilgi eksiklerini ve kör noktalarını fark edemiyor.
 

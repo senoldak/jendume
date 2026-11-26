@@ -15,7 +15,7 @@ Microsoft Research bünyesindeki araştırmacılar, kendi kendine hipotez kurup 
 
 Araştırma ekibi, aynı görev üzerinde çalışan bir yapay zekâ ajanını 8 bağımsız denemede gözlemledi. Aynı hesaplama gücü verilmesine rağmen denemelerin nihai başarı puanları 68,3 ile 100,0 arasında büyük farklılıklar gösterdi ve ek işlem gücü verilmesi bu farkı kapatmadı.
 
-## “Fikir Havzası” Tuzağından Çıkış
+## “Fikir havzası” tuzağından çıkış
 
 Üretilen tüm çözümleri iki boyutlu bir harita üzerinde inceleyen bilim insanları, tek bir denemedeki ajanın neredeyse her zaman ilk bulduğu çözümün etrafındaki dar bir “fikir havzası” içinde kaldığını tespit etti. Ajan, kalan tüm enerjisini daha iyi bir yol aramak yerine mevcut ortalama fikri cilalamaya harcıyor.
 

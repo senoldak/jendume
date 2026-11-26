@@ -1,6 +1,6 @@
 // JEN DUME — kelimelerin ötesinde
 // İki dilli (TR, EN) haber botu ortak yardımcıları.
-import { cumleDuzeni } from './baslik-duzeni.mjs';
+import { araBasliklariDuzenle, cumleDuzeni } from './baslik-duzeni.mjs';
 import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
@@ -318,7 +318,9 @@ export async function ucDilliHaberYaz(rot, paket) {
     if (!icerik) continue;
     const description = tipografi(guvenli(icerik.description)).replace(/\s+/g, ' ');
     // Model gövdeyi tek blok döndürdüyse cümle sınırlarından bölünür; eş dil paragraflıysa onun oranları izlenir.
-    const body = paragraflaraBol(tipografi(guvenli(icerik.body)), paragrafOranlari(paket[dil === 'tr' ? 'en' : 'tr']?.body));
+    const bolunmus = paragraflaraBol(tipografi(guvenli(icerik.body)), paragrafOranlari(paket[dil === 'tr' ? 'en' : 'tr']?.body));
+    // TR ara başlıklar cümle düzenine iner; EN'de "Title Case" İngilizce başlık geleneği olduğu için dokunulmaz.
+    const body = dil === 'tr' ? araBasliklariDuzenle(bolunmus, icerik.description ?? '') : bolunmus;
     // Türkçe başlıkta "Her Kelimesi Büyük" alışkanlığı cümle düzenine iner; özel adlar metinden okunur.
     const hamBaslik = tipografi(guvenli(icerik.title), { baslik: true });
     const title = dil === 'tr' ? cumleDuzeni(hamBaslik, `${description}
