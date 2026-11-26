@@ -7,7 +7,6 @@ date: 2026-11-24T05:50:52.582Z
 esId: "mit-researchers-find-human-brains-process-languages-with-a-shared-neural-code"
 bolge: "ABD"
 perspektif: "Araştırma, insan beyninin farklı dil yapılarını nasıl ortak bir sinirsel zeminde buluşturduğunu kanıtlayarak dilbilim ve sinirbilim arasındaki etkileşimi somut verilerle ortaya koyuyor."
-why_matters: "Bu çalışma, klinik teşhis araçlarının ve dil koruma teknolojilerinin yalnızca yaygın dillerle sınırlı kalmayıp dünya genelindeki tüm dilleri kapsayacak şekilde geliştirilmesine imkân tanıyor. Key_points: [\"21 farklı dilde beyin tepkileri analiz edildi\", \"Yapay zekâ modelleri diller arası ortak sinirsel kodu çözdü\", \"Çalışma klinik araçların kapsayıcılığını artırabilir\"]"
 key_points:
   - "21 farklı dilde beyin tepkileri analiz edildi"
   - "Yapay zekâ modelleri diller arası ortak sinirsel kodu çözdü"

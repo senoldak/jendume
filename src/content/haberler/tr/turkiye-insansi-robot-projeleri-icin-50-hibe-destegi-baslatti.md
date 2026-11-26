@@ -7,7 +7,6 @@ date: 2026-11-24T03:50:48.950Z
 esId: "turkey-launches-50-percent-grant-support-for-humanoid-robot-projects"
 bolge: "Türkiye"
 perspektif: "Bu destek programı, Türkiye'nin yapay zekâ destekli robot teknolojilerindeki geliştirme kapasitesini artırarak üretimde dışa bağımlılığı azaltmayı ve yüksek katma değerli üretimi teşvik etmeyi hedefliyor."
-why_matters: "Bu destek programı, yerli insansı robot teknolojilerinin geliştirilmesini hızlandırarak sanayide otomasyonu ve yapay zekâ entegrasyonunu güçlendiriyor kanalını açıyor ve yaygınlaştırıyor demektir dersek de, bu şekilde kalabilir, yerli insansı robot teknolojilerinin geliştirilmesini hızlandırarak sanayide otomasyonu ve yapay zekâ entegrasyonunu güçlendiriyor, sanayi sektörünün dönüşümüne katkı sunuyor demek istedikçe bu gayet somut ve özgündür yine de kısa tutalım: Bu destek programı, yerli insansı robot teknolojilerinin geliştirilmesini hızlandırarak sanayide otomasyonu ve yapay zekâ entegrasyonunu güçlendiriyor sanayi dönüşümünü hızlandırıyor diyebiliriz, evet aynen bıraktık, sorun yok yeterince farklı açıda ve olgu içeriyor çünkü otomasyon ve dönüşüm vurgusu perspektif alanından farklılaştırılmıştır doğrudan kapasite kelimesini içermez, aksine otomasyon kelimesini kullanır bu yüzden tamamen farklıdır. Tekrar etmemektedir bu sayede kurallara tam uymaktadır."
 key_points:
   - "Proje bütçesine %50 hibe desteği"
   - "Son başvuru tarihi 31 Aralık 2026"

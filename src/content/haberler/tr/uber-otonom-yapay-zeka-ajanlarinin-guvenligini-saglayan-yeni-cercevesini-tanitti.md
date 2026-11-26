@@ -7,7 +7,6 @@ date: 2026-11-15T21:50:48.747Z
 esId: "uber-introduces-secure-ai-framework-to-govern-autonomous-agents"
 bolge: "Küresel"
 perspektif: "Otonom yapay zekâ ajanlarının iş dünyasında ve günlük hayatta yaygınlaşmasıyla birlikte güvenlik riskleri de artıyor; bu tür kapsamlı çerçeveler ajanların güvenli ve kontrollü çalışmasını sağlayarak olası kötüye kullanımın önüne geçiyor."
-why_matters: "Şirketlerin otonom sistemleri üretim ortamında ölçeklendirirken güvenlik ile operasyonel maliyetler arasında doğru dengeyi kurması gerekiyorün gerekliliğini ortaya koyuyorün. Şirketlerin otonom sistemleri üretim ortamında ölçeklendirirken güvenlik ile operasyonel maliyetler arasında doğru dengeyi kurması gerekiyorün gerekliliğini ortaya koyuyor. Şirketlerin otonom sistemleri üretim ortamında ölçeklendirirken güvenlik ile operasyonel maliyetler arasında doğru dengeyi kurması gerekiyor gerekliliğini ortaya koyuyorsa, süreçlerin sürdürülebilirliği açısından kritik önem taşıyor."
 key_points:
   - "Ajan yaşam döngüsünü kapsayan üç katmanlı güvenlik çerçevesi geliştirildi"
   - "Argus aracı ile kaynak kodu ve istemler otomatik olarak analiz ediliyor"

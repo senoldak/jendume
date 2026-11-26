@@ -7,7 +7,6 @@ date: 2026-11-13T21:50:54.301Z
 esId: "google-introduces-new-multi-agent-system-for-solving-complex-scientific-problems"
 bolge: "Küresel"
 perspektif: "Bu gelişme, yapay zekânın sadece metin üretmekle kalmayıp, bilimsel kanıtlar oluşturma ve karmaşık sistemleri optimize etme kapasitesini kanıtlayarak bilimsel keşif sürecini hızlandırıyor."
-why_matters: "Sistemin sunduğu çoklu ajan yapısı, araştırmacıların hata payını düşürerek daha güvenilir ve doğrulanabilir bilimsel sonuçlara ulaşmasını sağlıyor; bu da yapay zekânın bilimsel metodolojideki rolünü dönüştürüyor. key_points: [\"Gemini 4 modelleri ile karmaşık bilimsel problemler çözülüyor\", \"Sistem, görevleri parçalara bölerek doğrulama yapıyor\", \"Courtade–Kumar varsayımı için 50 milyon satırlık kod üretildi\"]"
 key_points:
   - "Gemini 4 modelleri ile karmaşık bilimsel problemler çözülüyor"
   - "Sistem, görevleri parçalara bölerek doğrulama yapıyor"

@@ -7,7 +7,6 @@ date: 2026-11-20T03:50:53.631Z
 esId: "australian-artists-unite-against-big-tech-copyright-loopholes-for-artificial-int"
 bolge: "Avustralya"
 perspektif: "Yapay zekâ modellerinin telifsiz veri kazıma faaliyetleri, küresel kültür mirasını ve yaratıcı sektörlerin geçim kaynaklarını tehdit ediyor."
-why_matters: "Avustralya'da atılacak telif adımları, küresel yapay zekâ şirketlerinin diğer ülkelerdeki veri toplama faaliyetlerine zemin hazırlayabilir ve uluslararası telif standartlarını zayıflatabilir ailesi üzerinden risk oluşturuyor ailesiyle değerlendiriliyor ailesiyle sınırlandırılıyor ailesiyle açıklanıyor ailesiyle aktarılıyor ailesiyle belirtiliyor ailesiyle ifade ediliyor ailesiyle vurgulanıyor ailesiyle paylaşılan bir endişedir diyerek özetleniyor kısacası küresel telif haklarını doğrudan etkiliyor ve koruma mekanizmalarını zayıflatma riski taşıyor açıkça gösteriyor deniliyor şekliyle ifade ediliyor aktarılıyor denilebilir şeklindedir özetlenmektedir belirtilmektedir değerlendirilmektedir denilebilir."
 key_points:
   - "Sanatçılar ve gazeteciler yapay zekâ telif muafiyetine karşı çıkıyor"
   - "Teknoloji şirketleri Avustralya'da veri merkezleri kuruyor"

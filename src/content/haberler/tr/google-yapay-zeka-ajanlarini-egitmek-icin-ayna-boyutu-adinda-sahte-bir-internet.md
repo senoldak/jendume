@@ -7,7 +7,6 @@ date: 2026-11-19T17:50:54.109Z
 esId: "google-builds-a-mirror-dimension-internet-to-train-and-test-ai-browsing-agents"
 bolge: "Küresel"
 perspektif: "Ayna Boyutu, Chrome yapay zekâ ajanlarının gerçek internet ortamında karşılaşabilecekleri güvenlik açıklarına ve saldırılara karşı izole bir ortamda test edilmesini sağlıyor."
-why_matters: "Simülasyon ortamı, ajanların gerçek Chrome tarayıcısını kullanarak web sitelerinde gezinmesine ve karmaşık görevleri güvenli bir şekilde yerine getirmesine olanak tanıyoriru veriyor demeyelim de olanak tanıyor demeliyiz, evet aynen öyle oldu ama zaten tam yazdık). Simülasyon ortamı, ajanların gerçek Chrome tarayıcısını kullanarak web sitelerinde gezinmesine ve karmaşık görevleri güvenli bir şekilde yerine getirmesine olanak tanıyoruygun şekilde hazırlandı."
 key_points:
   - "Ayna Boyutu, gerçek internetin bileşenlerini içeren izole bir simülasyon ortamıdır."
   - "Ajanlar, gerçek internete çıkmadan önce komut enjeksiyonu gibi saldırılara karşı test ediliyor."

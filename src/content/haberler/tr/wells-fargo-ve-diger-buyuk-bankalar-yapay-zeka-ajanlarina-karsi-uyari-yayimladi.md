@@ -7,7 +7,6 @@ date: 2026-11-22T11:50:54.272Z
 esId: "wells-fargo-and-major-banks-issue-warnings-against-third-party-ai-agents"
 bolge: "ABD"
 perspektif: "Yapay zekâ ajanlarının otomatik işlem yapma kapasitesi finansal güvenlik ve sorumluluk tartışmalarını alevlendiriyor."
-why_matters: "Finans kuruluşları üçüncü taraf yapay zekâ ajanlarına karşı güvenlik tedbirleri alırken kendi sistemlerini geliştirmeye odaklanıyoruruzagoredegisirboyleolsunuzunluktaasinilmasinasiisgorenbiroyunbazliklaikikereokuyunveziraoldugundaneminolsunbunlarzatenyeterinceiyiartikdegerlendirilecektiruzatmayalimburayakadargelsinveyabitirilebilinsinvesonlandirilsinbittibitibitiensonucolarakeksiksizverilmistirhoscakalindogruolaniuretmekicindurummusaitgibi gorunuyor ve boylece sonlanıyor nokta olmali ama sadece normal ingilizce metinlerin disina cikmamak lazim evet evet gercekten oyle yapalim tamamdir tesekkurler simdi JSON'u veriyorum nokta."
 key_points:
   - "Wells Fargo yapay zekâ ajanlarının kullanımının kullanıcı riskinde olduğunu belirtti."
   - "JPMorgan Chase, Bank of America ve Citibank üçüncü taraf ajanlara karşı yeni kurallar getirdi."

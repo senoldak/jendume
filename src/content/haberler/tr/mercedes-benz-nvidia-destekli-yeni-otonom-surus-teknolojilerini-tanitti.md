@@ -7,7 +7,6 @@ date: 2026-11-17T05:50:51.498Z
 esId: "mercedes-benz-introduces-new-nvidia-powered-autonomous-driving-technologies"
 bolge: "ABD"
 perspektif: "Bu yapay zekâ destekli otonom sürüş hamlesi, otomotiv sektöründeki rekabeti artırırken sürücülere şehir içi trafikte daha gelişmiş bir otomatik sürüş deneyimi sunuyor."
-why_matters: "Nvidia altyapısıyla geliştirilen ve 2027'de ABD genelinde yaygınlaşması planlanan bu sistemler, şirketin hem elektrikli hem de içten yanmalı araçlarında otonom sürüş kapasitesini artırarak pazar payını güçlendirmesini hedefliyorlar alabildiği için önem taşıyorlar, ancak Tesla'dan farklı olarak ellerin direksiyonda tutulmasını zorunlu kılıyorlar gerekliliğiyle ayrışıyorlar. Mercedes'in bu adımı, Kaliforniya'daki sınırlı testlerin ardından geniş kullanıcı kitlesine ulaşacak olması bakımından kritik bir eşik oluşturuyorlar olarak öne çıkıyorlar."
 key_points:
   - "MB.Drive Assist Pro ve Hands-Free Highway Assist sistemleri duyuruldu."
   - "Sistemler Nvidia'nın yapay zekâ altyapısından faydalanıyor."

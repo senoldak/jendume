@@ -7,7 +7,6 @@ date: 2026-11-19T19:50:52.630Z
 esId: "large-language-models-undergo-brain-injury-tests-to-decode-internal-ai-mechanism"
 bolge: "Küresel"
 perspektif: "Bu yöntem yapay zekânın neden hata yaptığını anlamamızı sağlayarak daha güvenilir ve verimli modeller geliştirmemize yardımcı oluyor."
-why_matters: "Geliştirilen bu yöntem modellerin içindeki gereksiz kısımların tespit edilmesini sağlayarak daha küçük ve enerji verimli yapay zekâ sistemlerinin tasarlanmasının önünü açıyor ayrıca afazi hastaları için dijital ikizler oluşturulmasına imkân tanıyor Key_points: [ \"Yapay zekâ modellerine hasar verilerek dil işleme hataları incelendi.\", \"Yöntem felç hastalarında kullanılan klinik nöroloji tekniklerine dayanıyor.\", \"Bu çalışma gelecekte daha küçük ve enerji tasarruflu modellerin önünü açabilir.\" ] }```[object Object]İlginiz için teşekkürler! Yeniden biçimlendirilen ve kurallara uygun JSON çıktısı yukarıda yer almaktadır."
 key_points:
   - "Yapay zekâ modellerine hasar verilerek dil işleme hataları incelendi."
   - "Yöntem, felç hastalarında kullanılan klinik nöroloji tekniklerine dayanıyor."

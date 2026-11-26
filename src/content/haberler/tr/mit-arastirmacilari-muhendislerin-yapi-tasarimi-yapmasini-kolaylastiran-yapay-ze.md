@@ -7,7 +7,6 @@ date: 2026-11-13T05:50:50.161Z
 esId: "mit-researchers-develop-ai-copilot-system-to-help-engineers-design-better-struct"
 bolge: "ABD"
 perspektif: "Bu yeni yapay zekâ sistemi, mühendislerin karmaşık tasarımlar üzerinde kontrol sahibi olmasını sağlayarak algoritma tabanlı tasarımların endüstride daha güvenle ve yaygın şekilde kullanılmasının önünü açıyor."
-why_matters: "İnsan girdisini algoritmik süreçle buluşturan bu yaklaşım, imal edilebilirliği ve burkulma yükünü artırarak daha pratik yapılar elde edilmesini sağlıyorye yardımcı oluyorveyabenzeri avantajları öne çıkarıyor.. Ancak metne sadık kalırsak: İnsan girdisini algoritmik süreçle buluşturan bu yaklaşım, imal edilebilirliği ve burkulma yükünü artırarak daha pratik yapılar elde edilmesini sağlıyor demektir eklemeden doğru olmalıdır."
 key_points:
   - "Sistem toplam tasarım süresine yalnızca 15 saniye ekliyor."
   - "İmal edilebilirlik ve doğrusal burkulma yükünü %39 artırıyor."

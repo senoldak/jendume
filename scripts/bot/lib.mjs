@@ -5,7 +5,7 @@ import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
 import { gizliKaynaklar } from './gizli.mjs';
-import { paragraflaraBol, paragrafOranlari } from './dil-tr.mjs';
+import { ozetAlaniTemizle, paragraflaraBol, paragrafOranlari } from './dil-tr.mjs';
 import { gosterilecekKaynaklar } from '../../src/lib/kaynak-adlari.mjs';
 
 export const USER_AGENT = 'jendume-bot/1.0 (+https://github.com/senoldak/jendume)';
@@ -324,9 +324,11 @@ export async function ucDilliHaberYaz(rot, paket) {
     const title = dil === 'tr' ? cumleDuzeni(hamBaslik, `${description}
 ${body}`) : hamBaslik;
     const bolge = icerik.bolge || paket.bolge;
-    const perspektif = icerik.perspektif || paket.perspektif;
-    const why_matters = icerik.why_matters || paket.why_matters;
-    const key_points = icerik.key_points || paket.key_points;
+    // Kısa okur alanları temizlenir; kurtarılamayan alan yazılmaz (ozetAlaniTemizle, 26 Kasım 2026).
+    const perspektif = ozetAlaniTemizle(icerik.perspektif || paket.perspektif);
+    const why_matters = ozetAlaniTemizle(icerik.why_matters || paket.why_matters);
+    const hamMaddeler = icerik.key_points || paket.key_points;
+    const key_points = (Array.isArray(hamMaddeler) ? hamMaddeler : []).map((p) => ozetAlaniTemizle(p, { azami: 300, cumle: false })).filter(Boolean);
     const rakamlar = (Array.isArray(icerik.rakamlar) ? icerik.rakamlar : []).filter((r) => r?.etiket && r?.deger).slice(0, 4);
 
     const fm = [

@@ -7,7 +7,6 @@ date: 2026-11-14T11:50:49.267Z
 esId: "china-s-3-2-billion-ai-projects-face-uncertainty-amid-us-export-controls"
 bolge: "Çin"
 perspektif: "Bu gelişme, küresel yapay zekâ yarışında donanım bağımlılığının yarattığı kırılganlığı gözler önüne seriyor ve Çin'in teknolojik bağımsızlık stratejisini hızlandırmaya zorluyor."
-why_matters: "ABD'nin ihracat denetimleri, Çin'in veri merkezleri ve üniversitelerindeki 3,2 milyar dolarlık projelerin donanım tedarikini aksatarak, ülkenin yapay zekâ geliştirme süreçlerini yerli alternatiflere yönelmeye mecbur bırakıyor ve sektördeki maliyet dengelerini değiştiriyor. key_points: [\"3,2 milyar dolarlık proje riski\", \"Nvidia H100, H200 ve H800 bağımlılığı\", \"ABD ihracat denetimlerinin sıkılaşması\"]"
 key_points:
   - "3,2 milyar dolarlık proje riski"
   - "Nvidia H100, H200 ve H800 bağımlılığı"
