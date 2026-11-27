@@ -5,7 +5,7 @@ import { mkdir, readFile, readdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { geminiCagir } from './istemci.mjs';
 import { gizliKaynaklar } from './gizli.mjs';
-import { ozetAlaniTemizle, paragraflaraBol, paragrafOranlari } from './dil-tr.mjs';
+import { kalkanNotlari, ozetAlaniTemizle, paragraflaraBol, paragrafOranlari } from './dil-tr.mjs';
 import { gosterilecekKaynaklar } from '../../src/lib/kaynak-adlari.mjs';
 
 export const USER_AGENT = 'jendume-bot/1.0 (+https://github.com/senoldak/jendume)';
@@ -318,7 +318,8 @@ export async function ucDilliHaberYaz(rot, paket) {
     if (!icerik) continue;
     const description = tipografi(guvenli(icerik.description)).replace(/\s+/g, ' ');
     // Model gövdeyi tek blok döndürdüyse cümle sınırlarından bölünür; eş dil paragraflıysa onun oranları izlenir.
-    const bolunmus = paragraflaraBol(tipografi(guvenli(icerik.body)), paragrafOranlari(paket[dil === 'tr' ? 'en' : 'tr']?.body));
+    const hamBody = tipografi(guvenli(icerik.body));
+    const bolunmus = paragraflaraBol(hamBody, paragrafOranlari(paket[dil === 'tr' ? 'en' : 'tr']?.body));
     // TR ara başlıklar cümle düzenine iner; EN'de "Title Case" İngilizce başlık geleneği olduğu için dokunulmaz.
     const body = dil === 'tr' ? araBasliklariDuzenle(bolunmus, icerik.description ?? '') : bolunmus;
     // Türkçe başlıkta "Her Kelimesi Büyük" alışkanlığı cümle düzenine iner; özel adlar metinden okunur.
@@ -371,6 +372,13 @@ ${body}`) : hamBaslik;
     const langDir = path.join(rot, 'src/content/haberler', dil);
     await mkdir(langDir, { recursive: true });
     await writeFile(path.join(langDir, `${dosyaAdi[dil]}.md`), `${fm.join('\n')}\n\n${body}\n`, 'utf8');
+    // Kalkan bir şeyi değiştirdiyse günlüğe tek satır (27 Kasım 2026): turda ne kadar devreye girdikleri görülsün.
+    const notlar = kalkanNotlari({
+      govde: [hamBody, body],
+      alanlar: { perspektif: [icerik.perspektif || paket.perspektif, perspektif], why_matters: [icerik.why_matters || paket.why_matters, why_matters] },
+      maddeler: [hamMaddeler, key_points],
+    });
+    for (const n of notlar) console.log(`kalkan: ${n} — ${dil}/${dosyaAdi[dil]}`);
   }
 
   return slug;
