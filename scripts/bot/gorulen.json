@@ -10232,7 +10232,20 @@
     "kd9a613:c73babb56ea2a893": "2026-11-27T10:44:51.033Z",
     "k78637d:50e8f8c0e3595712": "2026-11-27T10:44:51.033Z",
     "kd9a613:4bdad0cef9f16993": "2026-11-27T10:44:51.033Z",
-    "kea595f:9790a1715ec7369d": "2026-11-27T10:44:51.033Z"
+    "kea595f:9790a1715ec7369d": "2026-11-27T10:44:51.033Z",
+    "k38ef42:1ba08455cf12d09d": "2026-11-27T11:50:48.597Z",
+    "k38ef42:192f41026e9b77da": "2026-11-27T11:50:48.597Z",
+    "k38ef42:e3657048ef587dd7": "2026-11-27T11:50:48.597Z",
+    "k12b4a6:b93975c83efe2bb0": "2026-11-27T11:50:48.597Z",
+    "k12b4a6:3ebd8e0f715c19f2": "2026-11-27T11:50:48.597Z",
+    "k38ef42:4378cb4d96687ce3": "2026-11-27T11:50:48.597Z",
+    "k38ef42:01c35c13b1164af6": "2026-11-27T11:50:48.597Z",
+    "k38ef42:73e8989782e2cfa8": "2026-11-27T11:50:48.597Z",
+    "kad5125:48391a67673ada68": "2026-11-27T11:50:48.597Z",
+    "ke6dccd:de416305b5e77a52": "2026-11-27T11:50:48.597Z",
+    "k6582b6:c1d99f12b8dd24cd": "2026-11-27T11:50:48.597Z",
+    "k74f74a:a94ae800e7222d5e": "2026-11-27T11:50:48.597Z",
+    "k74f74a:697927a0cf8a34de": "2026-11-27T11:50:48.597Z"
   },
   "hatalar": {
     "kd9a613:6a07097c5decbbe9": {
@@ -25090,7 +25103,13 @@
     "haber:apple-minimax-tarafindan-gelistirilen-talkie-uygulamasini-app-store-dan-kaldirdi|kd4ca61:82fb5f385c0f12d3": "2026-11-27T10:44:51.033Z",
     "haber:cinli-teknoloji-devleri-yapay-zeka-harcamalarini-hizla-artiriyor|kd4ca61:82fb5f385c0f12d3": "2026-11-27T10:44:51.033Z",
     "haber:ubisoft-oyun-gelistirme-sureclerini-uretken-yapay-zeka-ile-donusturmek-icin-yeni|kad5125:7968bc4951c168a2": "2026-11-27T10:44:51.033Z",
-    "haber:dijital-partnerlerle-kurulan-duygusal-baglar-ayrilik-acisini-gercek-kiliyor|kd9a613:d2859c0cd805961c": "2026-11-27T10:44:51.033Z"
+    "haber:dijital-partnerlerle-kurulan-duygusal-baglar-ayrilik-acisini-gercek-kiliyor|kd9a613:d2859c0cd805961c": "2026-11-27T10:44:51.033Z",
+    "haber:chatgpt-wallet-yapay-zeka-ajanlarinin-odeme-yapmasini-sagladi|k38ef42:4378cb4d96687ce3": "2026-11-27T11:50:48.597Z",
+    "haber:oppo-find-x10-serisine-manus-destekli-ajan-modu-ekledi|k38ef42:4378cb4d96687ce3": "2026-11-27T11:50:48.597Z",
+    "haber:microsoft-yoneticisi-satya-nadella-yapay-zeka-ajanlarinin-internet-ekonomisini-d|kad5125:48391a67673ada68": "2026-11-27T11:50:48.597Z",
+    "haber:bilim-insanlari-yapay-zeka-ajanlarinin-arastirma-sinirlarini-belirliyor|k6582b6:c1d99f12b8dd24cd": "2026-11-27T11:50:48.597Z",
+    "haber:bilimsel-yayin-sira-degisimi|k6582b6:c1d99f12b8dd24cd": "2026-11-27T11:50:48.597Z",
+    "haber:buyuk-dil-modelleri-zihin-tasiyor-olabilir-mi|k6582b6:c1d99f12b8dd24cd": "2026-11-27T11:50:48.597Z"
   },
   "ayni": {
     "k36ff38:4328dd15a91d5aea|k38ef42:50f4aa4a75a86149": "2026-10-28T11:51:53.694Z",
@@ -32853,6 +32872,66 @@
       "puan": 82,
       "olcek": 100,
       "zaman": "2026-11-27T10:44:51.033Z"
+    },
+    "k38ef42:192f41026e9b77da": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k38ef42:e3657048ef587dd7": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k74f74a:697927a0cf8a34de": {
+      "puan": 85,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k12b4a6:b93975c83efe2bb0": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k12b4a6:3ebd8e0f715c19f2": {
+      "puan": 45,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k38ef42:4378cb4d96687ce3": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k38ef42:01c35c13b1164af6": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k38ef42:73e8989782e2cfa8": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "kad5125:48391a67673ada68": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "ke6dccd:de416305b5e77a52": {
+      "puan": 0,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k6582b6:c1d99f12b8dd24cd": {
+      "puan": 60,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
+    },
+    "k74f74a:a94ae800e7222d5e": {
+      "puan": 90,
+      "olcek": 100,
+      "zaman": "2026-11-27T11:50:48.597Z"
     }
   },
   "yayinlanan": {
@@ -33271,25 +33350,15 @@
     "walmart-ve-abd-perakende-sektorunde-yapay-zeka-tabanli-gozetim-tartismalari-buyu": {
       "zaman": "2026-11-27T10:44:51.033Z",
       "basliklarSifreli": "v1.DMaEg3xO/4nABh/a.kG9ggLtAe0dCYmu/mEwSBsjMWJ7WhIXFRFEKiJc1zMouWabC4WJTCZrXoLXS4nonPmK8qFPzl1mPghzTNeI3fDHfvNVVcImpBaFO7xdg+8VHJ9sbX+KbSJOBfrLklF8/rOQ76FEId9GcAO6C1LiapJ7n"
+    },
+    "isvicre-ulusal-siber-guvenlik-merkezi-ilk-yapay-zeka-ajani-saldirilarini-aciklad": {
+      "zaman": "2026-11-27T11:50:48.597Z",
+      "basliklarSifreli": "v1.HgJrJmtrWo4ZDUUf.Xs3HmY8qC7M9C5NeR8U9cygYXjTk/PVWeBTuYCOTlzKss/ND+R+O4ruKNss/i8L8eCGVzVEQ6OTjo5kjaWYxEvo/8W3DWKZUh72mFuJ1xfxQaW3dzTSaY7Sy8ywkJFY="
     }
   },
   "havuz": [],
   "taranan": {
     "k4f0fb7:8f5ef711bcc94ace": "2026-10-28T11:51:05.000Z",
-    "k4f0fb7:bc08c8b2fa6b6cfc": "2026-10-28T11:31:05.000Z",
-    "k4f0fb7:2c38abe10442b985": "2026-10-28T11:11:05.000Z",
-    "k4f0fb7:8d30dc1213cb2574": "2026-10-28T10:46:07.000Z",
-    "k59b8ca:c61e7f45904a32bc": "2026-10-28T11:27:30.000Z",
-    "kd9a613:681d6ed0987008c2": "2026-10-28T11:30:01.000Z",
-    "k09feb3:c0b932b46ab2b4d9": "2026-10-28T11:15:00.000Z",
-    "k09feb3:d6e71cb70fa9e07b": "2026-10-28T10:56:24.000Z",
-    "k38ef42:50f4aa4a75a86149": "2026-10-28T11:30:00.000Z",
-    "k2d427e:0ed3e23c594b85ff": "2026-10-28T11:22:11.000Z",
-    "k74f74a:7e55ad3edcabe67a": "2026-10-28T11:46:03.000Z",
-    "k74f74a:d8533962434471f4": "2026-10-28T11:43:13.000Z",
-    "k74f74a:1a7571138db2dd44": "2026-10-28T11:25:47.000Z",
-    "kd4ca61:ae510a3f3e9a755e": "2026-10-28T11:00:01.000Z",
-    "kd4ca61:d116e36785533de2": "2026-10-28T10:54:29.000Z",
     "k621881:fda3444a36badd97": "2026-10-28T13:00:00.000Z",
     "k621881:47f7020a52f22ddc": "2026-10-28T12:00:00.000Z",
     "k4f0fb7:e48daf7945bee5b8": "2026-10-28T13:36:04.000Z",
@@ -33329,7 +33398,6 @@
     "k2d427e:3bc325eddc47d5e7": "2026-10-28T12:00:30.000Z",
     "k2d427e:003330126ef4e16e": "2026-10-28T12:00:00.000Z",
     "k2d427e:6ba4a7340a74a601": "2026-10-28T12:00:00.000Z",
-    "k2d427e:29f9fd8dfcbe0fb2": "2026-10-28T11:50:46.000Z",
     "k74f74a:a7c7f52570b62be5": "2026-10-28T13:11:18.000Z",
     "k74f74a:b95b0c219768d7af": "2026-10-28T12:51:15.000Z",
     "k74f74a:fd3e48f2b0640219": "2026-10-28T12:33:18.000Z",
@@ -33380,7 +33448,6 @@
     "kad5125:7f73d364cef384b4": "2026-10-28T14:00:29.000Z",
     "kad5125:3df68be053580692": "2026-10-28T13:00:04.000Z",
     "kad5125:120b8dad60e656ad": "2026-10-28T12:00:20.000Z",
-    "kad5125:91059ca82c769ddd": "2026-10-28T11:00:42.000Z",
     "k39a0e6:41c050305e0e48b0": "2026-10-28T15:20:17.000Z",
     "k39a0e6:cacc3a5548121393": "2026-10-28T14:00:08.000Z",
     "k2d427e:445d367da671cef8": "2026-10-28T15:45:12.000Z",
@@ -43481,6 +43548,19 @@
     "kad5125:7968bc4951c168a2": "2026-11-27T10:00:31.000Z",
     "k39a0e6:169f47cb0379ee23": "2026-11-27T10:40:02.000Z",
     "k39a0e6:e988ce1fcace2a52": "2026-11-27T10:05:14.000Z",
-    "kd4ca61:82fb5f385c0f12d3": "2026-11-27T10:13:44.000Z"
+    "kd4ca61:82fb5f385c0f12d3": "2026-11-27T10:13:44.000Z",
+    "k6582b6:c1d99f12b8dd24cd": "2026-11-27T10:50:40.000Z",
+    "k12b4a6:b93975c83efe2bb0": "2026-11-27T11:31:00.000Z",
+    "k12b4a6:3ebd8e0f715c19f2": "2026-11-27T11:30:00.000Z",
+    "k38ef42:192f41026e9b77da": "2026-11-27T11:40:00.000Z",
+    "k38ef42:e3657048ef587dd7": "2026-11-27T11:35:55.000Z",
+    "k38ef42:4378cb4d96687ce3": "2026-11-27T11:30:00.000Z",
+    "k38ef42:01c35c13b1164af6": "2026-11-27T11:15:00.000Z",
+    "k38ef42:1ba08455cf12d09d": "2026-11-27T11:12:00.000Z",
+    "k38ef42:73e8989782e2cfa8": "2026-11-27T11:05:00.000Z",
+    "kad5125:48391a67673ada68": "2026-11-27T11:00:12.000Z",
+    "k74f74a:697927a0cf8a34de": "2026-11-27T11:31:03.000Z",
+    "k74f74a:a94ae800e7222d5e": "2026-11-27T10:48:11.000Z",
+    "ke6dccd:de416305b5e77a52": "2026-11-27T11:00:00.000Z"
   }
 }
